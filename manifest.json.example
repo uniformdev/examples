@@ -1,0 +1,56 @@
+{
+  "project": {
+    "pz": {
+      "enr": {
+        "interest": {
+          "cap": 100
+        }
+      },
+      "sig": {
+        "unfrmconfRegistered": {
+          "str": 50,
+          "cap": 50,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "CK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "true"
+                },
+                "cookieName": "unfrmconf_registered"
+              }
+            ]
+          }
+        },
+        "utmCampaign": {
+          "str": 50,
+          "cap": 50,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "unfrmconf"
+                },
+                "queryName": "utm_campaign"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {
+      "Why Attend Photo Location Test": {}
+    }
+  }
+}
