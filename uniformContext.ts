@@ -1,4 +1,4 @@
-import { CookieTransitionDataStore, debugConsoleLogDrain, Context, ManifestV2 } from '@uniformdev/context';
+import { CookieTransitionDataStore, Context, ManifestV2, enableContextDevTools, enableDebugConsoleLogDrain } from '@uniformdev/context';
 import { NextPageContext } from 'next';
 import manifest from './manifest.json';
 import { NextCookieAdapter } from './uniform-next-sdk';
@@ -12,10 +12,11 @@ export function createUniformContext(serverContext?: NextPageContext) {
     transitionStore: new CookieTransitionDataStore({
       cookieAdapter,
     }),
+    plugins: [
+      enableContextDevTools(),
+      enableDebugConsoleLogDrain('debug')
+    ]
   });
-
-  // TODO: debug temp
-  context.events.on('log', debugConsoleLogDrain);
 
   return context;
 }

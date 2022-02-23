@@ -1,4 +1,4 @@
-import { ManifestInstance } from "@uniformdev/context"
+import { getEnrichmentVectorKey, ManifestInstance } from "@uniformdev/context"
 import { ComponentType, Page, TalkData } from "../../lib/models"
 
 const talkList: TalkData[] = [
@@ -9,7 +9,7 @@ const talkList: TalkData[] = [
     tags: ['Developers'],
     pz: {
       crit: [{
-        l: ManifestInstance.getEnrichmentVectorKey('interest', 'developer'),
+        l: getEnrichmentVectorKey('interest', 'developer'),
         op: '+'
       }]
     }
@@ -21,10 +21,10 @@ const talkList: TalkData[] = [
     tags: ['Developers', 'Marketers'],
     pz: {
       crit: [{
-        l: ManifestInstance.getEnrichmentVectorKey('interest', 'developer'),
+        l: getEnrichmentVectorKey('interest', 'developer'),
         op: '+'
       }, {
-        l: ManifestInstance.getEnrichmentVectorKey('interest', 'marketer'),
+        l: getEnrichmentVectorKey('interest', 'marketer'),
         op: '+'
       }]
     }
@@ -36,7 +36,7 @@ const talkList: TalkData[] = [
     tags: ['Marketers'],
     pz: {
       crit: [{
-        l: ManifestInstance.getEnrichmentVectorKey('interest', 'marketer'),
+        l: getEnrichmentVectorKey('interest', 'marketer'),
         op: '+'
       }]
     }
@@ -48,7 +48,7 @@ const talkList: TalkData[] = [
     tags: ['Developers'],
     pz: {
       crit: [{
-        l: ManifestInstance.getEnrichmentVectorKey('interest', 'developer'),
+        l: getEnrichmentVectorKey('interest', 'developer'),
         op: '+'
       }]
     }
@@ -60,7 +60,7 @@ const talkList: TalkData[] = [
     tags: ['Marketers'],
     pz: {
       crit: [{
-        l: ManifestInstance.getEnrichmentVectorKey('interest', 'marketer'),
+        l: getEnrichmentVectorKey('interest', 'marketer'),
         op: '+'
       }]
     }
@@ -98,7 +98,7 @@ const indexPage: Page = {
           id: 'developer',
           pz: {
             crit: [{
-              l: ManifestInstance.getEnrichmentVectorKey('interest', 'developer'),
+              l: getEnrichmentVectorKey('interest', 'developer'),
               op: "+"
             }]
           }
@@ -112,7 +112,7 @@ const indexPage: Page = {
           id: 'marketer',
           pz: {
             crit: [{
-              l: ManifestInstance.getEnrichmentVectorKey('interest', 'marketer'),
+              l: getEnrichmentVectorKey('interest', 'marketer'),
               op: "+"
             }]
           }

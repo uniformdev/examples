@@ -7,6 +7,9 @@ import '../styles/style.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+import { EmbeddedContextDevTools } from "@uniformdev/context-devtools";
+import '@uniformdev/context-devtools/style';
+
 function MyApp({ Component, pageProps, serverUniformContext }: UniformAppProps) {
   return (
     <UniformContext context={serverUniformContext || createUniformContext()}>
@@ -15,6 +18,14 @@ function MyApp({ Component, pageProps, serverUniformContext }: UniformAppProps) 
         <Component {...pageProps} />
         <Footer />
       </div>
+      <EmbeddedContextDevTools
+        initialSettings={{
+          apiHost: "https://canary.uniform.app",
+          apiKey:
+            "",
+          projectId: "",
+        }}
+      />
     </UniformContext>
   );
 }

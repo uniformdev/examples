@@ -6,7 +6,7 @@ export const PersonalizedHero: React.FC<PersonalizedHeroData> = ({ variations })
   return (
     <Personalize
       variations={variations}
-      trackingEventName="heroPersonalized"
+      name="heroPersonalized"
       component={Hero}
     />
   );
