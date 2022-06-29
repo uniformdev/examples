@@ -1,11 +1,18 @@
-import { Track } from '@uniformdev/context-react';
-import Link from 'next/link';
-import { BaseHeroData } from '../lib/models';
-import Splitter from './Splitter';
+import { Track } from "@uniformdev/context-react";
+import Link from "next/link";
+import { BaseHeroData } from "../lib/models";
+import Splitter from "./Splitter";
 
-export const Hero: React.FC<BaseHeroData> = ({ title, description, buttonText, image, buttonLinkSlug, beh }) => {
+export const Hero: React.FC<BaseHeroData> = ({
+  title,
+  description,
+  buttonText,
+  image,
+  buttonLinkSlug,
+  enrichments,
+}) => {
   return (
-    <Track behavior={beh}>
+    <Track behavior={enrichments}>
       <div className="pt-24">
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left min-h-500">
@@ -13,7 +20,7 @@ export const Hero: React.FC<BaseHeroData> = ({ title, description, buttonText, i
             <h1 className="my-4 text-5xl font-bold leading-tight">{title}</h1>
             <p className="leading-normal text-2xl mb-8">{description}</p>
 
-            <Link href={'/[[...slug]]'} as={buttonLinkSlug}>
+            <Link href={"/[[...slug]]"} as={buttonLinkSlug}>
               <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">
                 {buttonText}
               </button>
