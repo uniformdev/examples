@@ -1,11 +1,13 @@
 import { UniformContext } from "@uniformdev/context-react";
 import { type UniformAppProps } from "@uniformdev/context-next";
-import { createUniformContext } from "../uniformContext";
+import { createUniformContext } from "../lib/uniform/uniformContext";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/style.css";
 
 import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
+
+const clientContext = createUniformContext();
 
 function MyApp({
   Component,
@@ -13,18 +15,18 @@ function MyApp({
   serverUniformContext,
 }: UniformAppProps) {
   return (
-    <UniformContext context={serverUniformContext || createUniformContext()}>
-      <div className="leading-normal tracking-normal text-white gradient">
+    // IMPORTANT: needed to wrap the app in UniformContext
+    <UniformContext context={serverUniformContext ?? clientContext}>
+      <>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
-      </div>
+      </>
       <ToggleEmbeddedContextDevTools
         initialSettings={{
-          apiHost: "https://canary.uniform.app",
-          // add your own project ID and API key
-          apiKey: "",
-          projectId: "",
+          apiHost: "https://uniform.app",
+          apiKey: process.env.UNIFORM_API_KEY,
+          projectId: process.env.UNIFORM_PROJECT_ID,
         }}
       />
     </UniformContext>
