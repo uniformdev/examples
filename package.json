@@ -8,8 +8,8 @@
     "build": "run-s context:manifest build:next",
     "build:next": "next build",
     "context:manifest": "uniform context manifest download --output ./lib/uniform/context-manifest.json",
-    "export": "next export",
-    "ci:build": "next build && next export",
+    "export:next": "next export",
+    "ci:build": "run-s context:manifest build:next export:next",
     "lint": "next lint",
     "postinstall": "cpx node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/uniform"
   },

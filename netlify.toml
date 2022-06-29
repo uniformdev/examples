@@ -1,3 +1,7 @@
+[build]
+  publish = "out/"
+  command = "npm run ci:build"
+
 [[edge_functions]]
    path = "/*"
    function = "context-middleware"
