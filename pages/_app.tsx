@@ -16,7 +16,7 @@ function MyApp({
 }: UniformAppProps) {
   return (
     // IMPORTANT: needed to wrap the app in UniformContext
-    <UniformContext context={serverUniformContext ?? clientContext}>
+    <UniformContext context={serverUniformContext ?? clientContext} outputType="edge">
       <>
         <Navbar />
         <Component {...pageProps} />
