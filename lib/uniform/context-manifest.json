@@ -1,0 +1,82 @@
+{
+  "project": {
+    "pz": {
+      "agg": {
+        "submitCallForPapers": {
+          "inputs": [
+            {
+              "dim": "callForPapers"
+            }
+          ]
+        },
+        "nonTechies": {
+          "inputs": [
+            {
+              "dim": "1_mkt"
+            }
+          ]
+        },
+        "techies": {
+          "inputs": [
+            {
+              "dim": "1_dev"
+            }
+          ]
+        }
+      },
+      "enr": {
+        "1": {
+          "cap": 100
+        },
+        "interest": {
+          "cap": 100
+        }
+      },
+      "sig": {
+        "callForPapers": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "unfrmconf"
+                },
+                "queryName": "utm_campaign"
+              }
+            ]
+          }
+        },
+        "registrationComplete": {
+          "str": 100,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "CK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "true"
+                },
+                "cookieName": "unfrmconf_registered"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {
+      "whyAttendTest": {}
+    }
+  }
+}
