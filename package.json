@@ -3,15 +3,15 @@
   "private": true,
   "scripts": {
     "start": "next start",
-    "dev": "run-s context:manifest dev:next",
+    "dev": "run-s copy:deno context:manifest dev:next",
     "dev:next": "next dev",
-    "build": "run-s context:manifest build:next",
+    "build": "run-s copy:deno context:manifest build:next",
     "build:next": "next build",
     "context:manifest": "uniform context manifest download --output ./lib/uniform/context-manifest.json",
-    "export:next": "next export",
-    "ci:build": "run-s context:manifest build:next export:next",
+    "export": "next export",
+    "ci:build": "run-s build export",
     "lint": "next lint",
-    "postinstall": "cpx node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/uniform"
+    "copy:deno": "cpx node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/uniform"
   },
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
