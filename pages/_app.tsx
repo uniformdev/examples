@@ -16,19 +16,13 @@ function MyApp({
 }: UniformAppProps) {
   return (
     // IMPORTANT: needed to wrap the app in UniformContext
-    <UniformContext context={serverUniformContext ?? clientContext} outputType="edge">
-      <>
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
-      </>
-      <ToggleEmbeddedContextDevTools
-        initialSettings={{
-          apiHost: "https://uniform.app",
-          apiKey: process.env.UNIFORM_API_KEY,
-          projectId: process.env.UNIFORM_PROJECT_ID,
-        }}
-      />
+    <UniformContext
+      context={serverUniformContext ?? clientContext}
+      outputType="edge"
+    >
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
     </UniformContext>
   );
 }
