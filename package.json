@@ -18,7 +18,7 @@
     "@uniformdev/cli": "16.1.1-alpha.334",
     "@uniformdev/context": "16.1.1-alpha.334",
     "@uniformdev/context-devtools": "16.1.1-alpha.334",
-    "@uniformdev/context-edge-netlify": "^16.1.1-alpha.238",
+    "@uniformdev/context-edge-netlify": "^16.1.1-alpha.334",
     "@uniformdev/context-next": "16.1.1-alpha.334",
     "@uniformdev/context-react": "16.1.1-alpha.334",
     "cookie": "^0.4.2",
