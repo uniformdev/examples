@@ -37,7 +37,7 @@ const Nav = () => {
     router.events.on("routeChangeStart", () => {
       setSubmenuVisible(false);
     });
-  }, []);
+  }, [router.events]);
 
   useScrollPosition(({ currPos }) => {
     setScrolled(currPos.y < 0);
