@@ -1,6 +1,6 @@
 [build]
-  publish = "out/"
-  command = "npm run ci:build"
+  publish = ".next"
+  command = "npm run build"
 
 [[edge_functions]]
    path = "/*"
