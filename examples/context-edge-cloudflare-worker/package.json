@@ -1,5 +1,5 @@
 {
-  "name": "worker-typescript-template",
+  "name": "@uniformdev/context-edge-cloudflare-worker-example",
   "version": "1.0.0",
   "description": "Cloudflare worker TypeScript template",
   "main": "dist/worker.js",
@@ -10,8 +10,8 @@
     "test": "jest --config jestconfig.json --verbose",
     "download:manifest": "uniform context manifest download --output ./src/uniform/context-manifest.json"
   },
-  "author": "author",
-  "license": "MIT OR Apache-2.0",
+  "author": "Uniform Systems, Inc.",
+  "license": "MIT",
   "eslintConfig": {
     "root": true,
     "extends": [
