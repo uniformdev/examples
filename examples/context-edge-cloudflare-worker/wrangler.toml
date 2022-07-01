@@ -1,0 +1,14 @@
+name = "your-worker-name"
+type = "javascript"
+zone_id = ""
+account_id = "enter-your-account-id-here"
+route = ""
+workers_dev = true
+
+[build]
+command = "npm install && npm run download:manifest && npm run build"
+[build.upload]
+format = "service-worker"
+
+[vars]
+ORIGIN_URL = "yourstaticsite.com"
