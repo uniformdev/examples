@@ -1,14 +1,14 @@
-name = "uniformedgep13ndemo"
+name = "your-worker-name"
 type = "javascript"
 zone_id = ""
-account_id = "ca9d167d98b5dfa4b400486b6c6794c7"
+account_id = "enter-your-account-id-here"
 route = ""
 workers_dev = true
 
 [build]
-command = "npm install && npm run build"
+command = "npm install && npm run download:manifest && npm run build"
 [build.upload]
 format = "service-worker"
 
 [vars]
-ORIGIN_URL = "nesidemostatic.netlify.app"
+ORIGIN_URL = "yourstaticsite.com"

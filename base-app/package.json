@@ -9,7 +9,7 @@
     "build:next": "next build",
     "context:manifest": "uniform context manifest download --output ./lib/uniform/context-manifest.json",
     "export": "next export",
-    "ci:build": "next build && next export",
+    "ci:build": "run-s build export",
     "lint": "next lint"
   },
   "dependencies": {
