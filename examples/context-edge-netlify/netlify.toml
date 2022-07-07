@@ -3,5 +3,8 @@
   command = "npm run build"
 
 [[edge_functions]]
-   path = "/*"
-   function = "context-middleware"
+  path = "/*"
+  function = "context-middleware"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
