@@ -1,0 +1,39 @@
+composition:
+  _id: d4364c8c-61a2-4e6f-94e2-9a1a4052ae70
+  type: defaultPage
+  _name: Home Page
+  _slug: /
+  slots:
+    body:
+      - type: $personalization
+        slots:
+          pz:
+            - type: defaultBody
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: architecturePageView
+                        r: 0
+                        op: '>'
+                    name: ''
+                contentId:
+                  type: text
+                  value: home-for-architecture
+            - type: defaultBody
+              parameters:
+                contentId:
+                  type: text
+                  value: home
+        parameters:
+          count:
+            type: text
+            value: '1'
+          trackingEventName:
+            type: text
+            value: home-page
+  parameters: {}
+created: '2022-07-11T21:16:05.923132+00:00'
+modified: '2022-07-11T21:34:26.16393+00:00'
+pattern: false
