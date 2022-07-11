@@ -1,0 +1,19 @@
+id: defaultPage
+name: Default Page
+permissions: []
+icon: file-document
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: body
+    name: body
+    maxComponents: 1
+    minComponents: 1
+    allowedComponents:
+      - defaultBody
+      - $personalization
+    inheritAllowedComponents: false
+titleParameter: ''
+canBeComposition: true
+created: '2022-07-11T22:02:59.085775+00:00'
+updated: '2022-07-11T22:36:59.835753+00:00'
