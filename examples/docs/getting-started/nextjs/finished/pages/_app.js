@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
     <UniformContext context={context}>
       <Component {...pageProps} />
     </UniformContext>
-  );
+);
 }
 
 export default MyApp;
