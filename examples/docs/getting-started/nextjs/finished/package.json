@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@uniformdev/canvas": "^16.2.4",
+    "@uniformdev/canvas-react": "^16.2.4",
     "@uniformdev/cli": "^16.2.4",
     "@uniformdev/context": "^16.2.4",
     "@uniformdev/context-react": "^16.2.4",
