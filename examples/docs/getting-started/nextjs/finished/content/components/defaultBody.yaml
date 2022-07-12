@@ -1,0 +1,17 @@
+id: defaultBody
+name: Default Body
+permissions: []
+icon: menu-boxed
+parameters:
+  - id: contentId
+    name: Content ID
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: ''
+canBeComposition: false
+created: '2022-07-11T22:02:59.102717+00:00'
+updated: '2022-07-11T22:37:00.051892+00:00'
