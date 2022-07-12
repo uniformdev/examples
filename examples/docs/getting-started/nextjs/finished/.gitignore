@@ -36,3 +36,7 @@ yarn-error.log*
 
 # uniform
 contextManifest.json
+.env
+
+# ignore for the sake of StackBlitz
+package-lock.json
