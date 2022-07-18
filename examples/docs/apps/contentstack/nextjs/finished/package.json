@@ -1,0 +1,44 @@
+{
+  "name": "contentstack-nextjs-starter-app",
+  "description": "A starter app for Contentstack and Nextjs",
+  "version": "1.2.0",
+  "private": true,
+  "author": "Contentstack",
+  "scripts": {
+    "dev": "npm run download:manifest && next dev",
+    "build": "npm run download:manifest && next build",
+    "download:manifest": "uniform context manifest download --output ./contextManifest.json",
+    "start": "next start",
+    "lint": "eslint pages/**/*.js templates/**/*.js"
+  },
+  "dependencies": {
+    "@uniformdev/cli": "^16.0.0",
+    "@uniformdev/context": "^16.0.0",
+    "@uniformdev/context-react": "^16.0.0",
+    "contentstack": "^3.13.3",
+    "html-react-parser": "^1.4.0",
+    "json-viewer-js": "^1.0.7",
+    "moment": "^2.29.1",
+    "next": "^12.1.6",
+    "next-pwa": "^5.3.1",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-json-view": "^1.21.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "buffer": "^6.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0"
+  }
+}

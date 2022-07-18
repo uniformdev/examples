@@ -1,6 +1,6 @@
 import Navigation from "./Navigation";
 
-import content from "../../lib/content.json";
+import content from "../../content/content.json";
 
 export default function Body(props) {
   const { fields } = props;

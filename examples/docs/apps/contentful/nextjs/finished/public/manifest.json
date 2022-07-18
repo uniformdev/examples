@@ -1,0 +1,9 @@
+{
+  "name": "UniformConf",
+  "short_name": "UniformConf",
+  "theme_color": "#1d3557",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}

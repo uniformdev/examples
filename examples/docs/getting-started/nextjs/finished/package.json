@@ -1,10 +1,12 @@
 {
-  "name": "my-uniform-app",
+  "name": "getting-started",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run download:manifest && next dev",
-    "build": "npm run download:manifest && next build",
+    "dev": "run-s download:manifest next:dev",
+    "next:dev": "next dev",
+    "build": "run-s download:manifest next:build",
+    "next:build": "next build",
     "download:manifest": "uniform context manifest download --output ./contextManifest.json",
     "uniform:pull:signals": "uniform context signal pull ./content/signals",
     "uniform:pull:components": "uniform canvas component pull ./content/components",

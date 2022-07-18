@@ -1,0 +1,16 @@
+id: registeredForEvent
+name: Registered for Event
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - type: CK
+      match:
+        cs: false
+        op: '='
+        rhs: 'true'
+      cookieName: unfrmconf_registered
+dur: p
+description: ''
+str: 50
