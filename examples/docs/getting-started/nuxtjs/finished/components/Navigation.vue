@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Content } from "../../types";
+import type { Content } from "../types";
 
 const props = defineProps<{ content: Content }>();
 const links = computed(() => props.content.filter((c) => c.url));
