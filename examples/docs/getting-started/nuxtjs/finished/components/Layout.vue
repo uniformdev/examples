@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Content, Fields } from "../../types";
+import type { Content, Fields } from "../types";
 import Body from "./Body.vue";
 import Footer from "./Footer.vue";
 

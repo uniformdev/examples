@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Layout from "../src/components/Layout.vue";
+import Layout from "../components/Layout.vue";
 import content from "../lib/content.json";
 
 const route = useRoute();
