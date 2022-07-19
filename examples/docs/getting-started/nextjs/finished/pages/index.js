@@ -41,7 +41,7 @@ export async function getStaticProps() {
 export default function Home({ composition, fields }) {
   return (
     <Composition data={composition} resolveRenderer={resolveRenderer}>
-        <LayoutCanvas composition={composition} fields={fields} />
+      <LayoutCanvas composition={composition} fields={fields} />
     </Composition>
   );
 }
