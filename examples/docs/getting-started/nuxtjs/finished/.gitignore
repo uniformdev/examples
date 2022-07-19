@@ -36,5 +36,3 @@ dist
 # uniform
 contextManifest.json
 
-# ignore for the sake of StackBlitz
-package-lock.json
