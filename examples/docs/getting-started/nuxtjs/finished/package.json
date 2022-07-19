@@ -1,0 +1,33 @@
+{
+  "name": "my-uniform-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run download:manifest && nuxt dev",
+    "build": "npm run download:manifest && nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "download:manifest": "uniform context manifest download --output ./contextManifest.json",
+    "uniform:pull:signals": "uniform context signal pull ./content/signals",
+    "uniform:pull:components": "uniform canvas component pull ./content/components",
+    "uniform:pull:compositions": "uniform canvas composition pull ./content/compositions",
+    "uniform:pull": "run-s uniform:pull:signals uniform:pull:components uniform:pull:compositions",
+    "uniform:push:signals": "uniform context signal push ./content/signals",
+    "uniform:push:components": "uniform canvas component push ./content/components",
+    "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
+    "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
+    "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions"
+  },
+  "devDependencies": {
+    "@uniformdev/cli": "^16.2.4",
+    "npm-run-all": "^4.1.5",
+    "nuxt": "3.0.0-rc.5"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "^16.0.1-nuxt.187",
+    "@uniformdev/canvas-vue": "^16.0.1-nuxt.187",
+    "@uniformdev/context": "^16.0.1-nuxt.187",
+    "@uniformdev/context-vue": "^16.0.1-nuxt.187",
+    "@uniformdev/uniform-nuxt": "^16.0.1-nuxt.187"
+  }
+}
