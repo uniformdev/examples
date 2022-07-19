@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { Fields } from "../../types";
-import content from "../../lib/content.json";
+import type { Fields } from "../types";
+import content from "../lib/content.json";
 import Navigation from "./Navigation.vue";
 
 defineProps<{ fields: Fields }>();
