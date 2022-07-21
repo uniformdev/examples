@@ -1,0 +1,14 @@
+[build]
+  base = "/uniformconf-gatsby"
+  publish = "/uniformconf-gatsby/public/"
+  command = "npm run build"
+
+[template.environment]
+  UNIFORM_API_KEY = "Add your Uniform API key"
+  UNIFORM_PROJECT_ID = "Add your Uniform Project ID"
+
+[[redirects]]
+  from = "/"
+  to = "/home"
+  status = 200
+  force = true
