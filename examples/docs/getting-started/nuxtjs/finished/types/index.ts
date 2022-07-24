@@ -1,4 +1,4 @@
-import content from "../lib/content.json";
+import content from "../content/content.json";
 
 export type Content = typeof content;
 
