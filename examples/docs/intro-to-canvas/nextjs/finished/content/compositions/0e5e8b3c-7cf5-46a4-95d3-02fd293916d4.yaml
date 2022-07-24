@@ -1,0 +1,16 @@
+composition:
+  _id: 0e5e8b3c-7cf5-46a4-95d3-02fd293916d4
+  type: defaultPage
+  _name: Home Page
+  _slug: /
+  slots:
+    body:
+      - type: defaultBody
+        parameters:
+          contentId:
+            type: text
+            value: home
+  parameters: {}
+created: '2022-06-27T18:34:15.617587+00:00'
+modified: '2022-06-28T12:00:35.276279+00:00'
+pattern: false

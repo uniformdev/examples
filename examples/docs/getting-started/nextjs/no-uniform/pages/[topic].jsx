@@ -1,6 +1,6 @@
 import Layout from "../src/components/Layout";
 
-import content from "../lib/content.json";
+import content from "../content/content.json";
 
 //
 //Next.js uses this function to determine the

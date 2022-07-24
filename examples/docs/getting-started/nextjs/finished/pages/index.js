@@ -2,7 +2,7 @@ import { CanvasClient } from "@uniformdev/canvas";
 import { Composition } from "@uniformdev/canvas-react";
 import LayoutCanvas from "../src/components/LayoutCanvas";
 
-import content from "../lib/content.json";
+import content from "../content/content.json";
 import doEnhance from "../lib/enhancer";
 import resolveRenderer from "../lib/resolveRenderer";
 
@@ -10,7 +10,6 @@ async function getComposition(slug) {
   const client = new CanvasClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,
-    apiHost: process.env.UNIFORM_CLI_BASE_URL,
   });
   const { composition } = await client.getCompositionBySlug({
     slug,
@@ -41,7 +40,7 @@ export async function getStaticProps() {
 export default function Home({ composition, fields }) {
   return (
     <Composition data={composition} resolveRenderer={resolveRenderer}>
-      <LayoutCanvas composition={composition} fields={fields} />
+        <LayoutCanvas composition={composition} fields={fields} />
     </Composition>
   );
 }
