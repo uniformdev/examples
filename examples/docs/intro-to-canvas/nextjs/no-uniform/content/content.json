@@ -1,0 +1,37 @@
+[
+  {
+    "id": "home",
+    "url": "/",
+    "fields": {
+      "title": "Home",
+      "description": "Welcome to the Intro to Canvas tutorial site."
+    }
+  },
+  {
+    "id": "development",
+    "url": "/development",
+    "type": "topic",
+    "fields": {
+      "title": "Development",
+      "description": "Content about development."
+    }
+  },
+  {
+    "id": "architecture",
+    "url": "/architecture",
+    "type": "topic",
+    "fields": {
+      "title": "Architecture",
+      "description": "Content about architecture."
+    }
+  },
+  {
+    "id": "authoring",
+    "url": "/authoring",
+    "type": "topic",
+    "fields": {
+      "title": "Authoring",
+      "description": "Content about authoring."
+    }
+  }
+]
