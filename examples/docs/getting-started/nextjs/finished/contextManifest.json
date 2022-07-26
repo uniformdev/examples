@@ -1,0 +1,28 @@
+{
+  "project": {
+    "pz": {
+      "sig": {
+        "architecturePageView": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "path": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "/architecture"
+                },
+                "type": "PV"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}
