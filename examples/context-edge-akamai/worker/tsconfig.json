@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "ES2015",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+  },
+  "include": ["**/*.ts", "src/bundle.json"],
+  "exclude": ["node_modules", "dist"],
+}

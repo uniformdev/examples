@@ -1,0 +1,14 @@
+{
+    "name": "Standard TLS Auto DV",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "autoDomainValidation",
+            "options": {
+                "autodv": ""
+            }
+        }
+    ],
+    "criteria": [],
+    "criteriaMustSatisfy": "all"
+}

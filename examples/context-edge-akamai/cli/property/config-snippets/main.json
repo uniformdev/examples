@@ -1,0 +1,49 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            "#include:Standard_TLS_Auto_DV.json",
+            "#include:Offload_origin.json",
+            "#include:EW_HTML_Pages.json",
+            "#include:Minimize_payload.json"
+        ],
+        "behaviors": [
+            {
+                "name": "origin",
+                "options": {
+                    "cacheKeyHostname": "ORIGIN_HOSTNAME",
+                    "compress": true,
+                    "enableTrueClientIp": false,
+                    "forwardHostHeader": "ORIGIN_HOSTNAME",
+                    "httpPort": 80,
+                    "httpsPort": 443,
+                    "originCertificate": "",
+                    "originSni": true,
+                    "originType": "CUSTOMER",
+                    "ports": "",
+                    "verificationMode": "PLATFORM_SETTINGS",
+                    "hostname": "[!!! YOUR ORIGIN HOSTNAME !!!]"
+                }
+            },
+            {
+                "name": "cpCode",
+                "options": {
+                    "value": {
+                        "id": [!!! YOUR CODE CODE ID !!!],
+                        "description": "[!!! YOUR CP CODE NAME !!!]",
+                        "products": [
+                            "[!!! YOUR PRODUCT ID !!!]"
+                        ],
+                        "cpCodeLimits": null,
+                        "name": "[!!! YOUR CP CODE NAME !!!]"
+                    }
+                }
+            }
+        ],
+        "options": {
+            "is_secure": true
+        },
+        "variables": [],
+        "comments": "The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins."
+    }
+}

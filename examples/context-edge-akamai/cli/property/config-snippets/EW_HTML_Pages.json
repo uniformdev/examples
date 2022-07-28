@@ -1,0 +1,56 @@
+{
+    "name": "EW: HTML Pages",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "edgeWorker",
+            "options": {
+                "enabled": true,
+                "createEdgeWorker": "",
+                "edgeWorkerId": "[!!! YOUR EDGEWORKER ID !!!]",
+                "resourceTier": ""
+            }
+        },
+        {
+            "name": "caching",
+            "options": {
+                "behavior": "BYPASS_CACHE"
+            }
+        },
+        {
+            "name": "downstreamCache",
+            "options": {
+                "behavior": "BUST"
+            }
+        },
+        {
+            "name": "tieredDistribution",
+            "options": {
+                "enabled": true
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "fileExtension",
+            "options": {
+                "matchOperator": "IS_ONE_OF",
+                "values": [
+                    "html",
+                    "htm",
+                    "EMPTY_STRING"
+                ],
+                "matchCaseSensitive": false
+            }
+        },
+        {
+            "name": "requestHeader",
+            "options": {
+                "headerName": "x-uniform-worker",
+                "matchOperator": "DOES_NOT_EXIST",
+                "matchWildcardName": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}
