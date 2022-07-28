@@ -1,0 +1,29 @@
+{
+  "project": {
+    "pz": {
+      "sig": {
+        "emailCampaign2022": {
+          "str": 1,
+          "cap": 1,
+          "dur": "s",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "email2022"
+                },
+                "queryName": "utm_campaign"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}
