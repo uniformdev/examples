@@ -3,9 +3,8 @@ import {
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
   CompositionListAPIResponse,
-  RootComponentInstance,
 } from "@uniformdev/canvas";
-import doEnhance from "lib/enhancer";
+import runEnhancers from "./enhancers";
 import getConfig from "next/config";
 
 const {
@@ -26,7 +25,7 @@ export async function getCompositionBySlug(slug: string, preview: boolean) {
         ? CANVAS_DRAFT_STATE
         : CANVAS_PUBLISHED_STATE,
   });
-  await doEnhance(composition);
+  await runEnhancers(composition);
   return composition;
 }
 
