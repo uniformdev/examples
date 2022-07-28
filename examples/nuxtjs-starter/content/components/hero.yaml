@@ -1,0 +1,25 @@
+id: hero
+name: Hero
+permissions: []
+icon: image-text
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+      multiline: true
+      linesCount: '3'
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2022-07-28T02:14:43.71434+00:00'
+updated: '2022-07-28T03:10:34.632985+00:00'
