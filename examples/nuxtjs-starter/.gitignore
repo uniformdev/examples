@@ -32,7 +32,3 @@ dist
 
 # vercel
 .vercel
-
-# uniform
-contextManifest.json
-
