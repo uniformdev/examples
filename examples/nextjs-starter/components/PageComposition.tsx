@@ -37,10 +37,19 @@ export default function PageComposition({
   composition: RootComponentInstance;
   navLinks: Array<NavLink>;
 }) {
+  const [showPreviewToggle, setShowPreviewToggle] = React.useState<boolean>(false);
   const { serverRuntimeConfig } = getConfig();
   const { projectId, apiKey, apiHost } = serverRuntimeConfig;
   const { metaTitle } = composition.parameters || {};
   const title = metaTitle?.value as string;
+
+  React.useEffect(() => {
+    // Stackblitz does not support some crypto api inside webcontainers which are required for preview api.
+    if (!window.location.host.includes('.webcontainer.io')) {
+      setShowPreviewToggle(true);
+    }
+  }, [])
+
   return (
     <>
       <Head>
@@ -60,7 +69,7 @@ export default function PageComposition({
         />
         <Footer />
       </>
-      <PreviewDevPanel preview={preview} compositionId={composition._id} />
+      {showPreviewToggle && <PreviewDevPanel preview={preview} compositionId={composition._id} />}
     </>
   );
 }
