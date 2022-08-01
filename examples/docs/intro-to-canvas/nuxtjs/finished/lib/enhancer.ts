@@ -1,11 +1,15 @@
-import { enhance, EnhancerBuilder } from "@uniformdev/canvas";
-
-import content from "../lib/content.json";
+import {
+  enhance,
+  EnhancerBuilder,
+  type ComponentInstance,
+  type ComponentEnhancerFunction,
+} from "@uniformdev/canvas";
+import content from "../content/content.json";
 
 // Uses the parameter value from the composition
 // to look up the topic from the data file. If
 // the topic is found, the fields are returned.
-const dataEnhancer = async ({ component }) => {
+const dataEnhancer: ComponentEnhancerFunction = async ({ component }) => {
   const contentId = component?.parameters?.contentId?.value;
   if (contentId) {
     const topic = content.find((e) => e.id == contentId);
@@ -15,12 +19,13 @@ const dataEnhancer = async ({ component }) => {
   }
 };
 
-export default async function doEnhance(composition) {
+export default async function doEnhance(composition: ComponentInstance) {
   const enhancedComposition = { ...composition };
   const enhancers = new EnhancerBuilder().data("fields", dataEnhancer);
   await enhance({
     composition: enhancedComposition,
     enhancers,
+    context: {},
   });
 
   return enhancedComposition;
