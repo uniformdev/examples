@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import LayoutCanvas from "../components/LayoutCanvas.vue";
-import content from "../lib/content.json";
+import content from "../content/content.json";
 import doEnhance from "../lib/enhancer";
 import resolveRenderer from "../lib/resolveRenderer";
 

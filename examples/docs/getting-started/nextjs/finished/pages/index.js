@@ -10,13 +10,6 @@ async function getComposition(slug) {
   const client = new CanvasClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,
-    apiHost: process.env.UNIFORM_CLI_BASE_URL || "https://uniform.app",
-    fetch: (request, options) =>
-        fetch(request, {
-          ...options,
-          mode: 'no-cors',
-          headers: { ...options.headers, 'x-bypass-cache': 'true' },
-        }),
   });
   const { composition } = await client.getCompositionBySlug({
     slug,

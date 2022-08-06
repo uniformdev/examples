@@ -19,15 +19,15 @@
     "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions"
   },
   "devDependencies": {
-    "@uniformdev/cli": "16.2.1-nuxt.338",
+    "@uniformdev/cli": "^17.0.0",
     "npm-run-all": "4.1.5",
     "nuxt": "3.0.0-rc.6"
   },
   "dependencies": {
-    "@uniformdev/canvas": "16.2.1-nuxt.338",
-    "@uniformdev/canvas-vue": "16.2.1-nuxt.338",
-    "@uniformdev/context": "16.2.1-nuxt.338",
-    "@uniformdev/context-vue": "16.2.1-nuxt.338",
-    "@uniformdev/uniform-nuxt": "16.2.1-nuxt.338"
+    "@uniformdev/canvas": "^17.0.0",
+    "@uniformdev/canvas-vue": "^17.0.0",
+    "@uniformdev/context": "^17.0.0",
+    "@uniformdev/context-vue": "^17.0.0",
+    "@uniformdev/uniform-nuxt": "^17.0.0"
   }
 }
