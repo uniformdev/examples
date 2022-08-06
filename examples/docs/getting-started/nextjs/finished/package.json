@@ -17,24 +17,19 @@
     "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
     "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
     "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions",
-    "start": "next start",
-    "start:stackblitz": "npm install && next dev"
+    "start": "next start"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^16.2.4",
-    "@uniformdev/canvas-react": "^16.2.4",
-    "@uniformdev/cli": "^16.2.4",
-    "@uniformdev/context": "^16.2.4",
-    "@uniformdev/context-react": "^16.2.4",
+    "@uniformdev/canvas": "^17.0.0",
+    "@uniformdev/canvas-react": "^17.0.0",
+    "@uniformdev/context": "^17.0.0",
+    "@uniformdev/context-react": "^17.0.0",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@uniformdev/cli": "^17.0.0",
     "npm-run-all": "^4.1.5"
-  },
-  "stackblitz": {
-    "startCommand": "npm run start:stackblitz",
-    "compileTrigger": "save"
   }
 }

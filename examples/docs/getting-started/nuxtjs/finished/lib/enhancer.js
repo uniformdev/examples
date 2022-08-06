@@ -1,6 +1,6 @@
 import { enhance, EnhancerBuilder } from "@uniformdev/canvas";
 
-import content from "../lib/content.json";
+import content from "../content/content.json";
 
 // Uses the parameter value from the composition
 // to look up the topic from the data file. If

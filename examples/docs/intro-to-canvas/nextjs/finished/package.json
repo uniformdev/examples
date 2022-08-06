@@ -15,14 +15,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^16.2.4",
-    "@uniformdev/canvas-react": "^16.2.4",
-    "@uniformdev/cli": "^16.2.4",
+    "@uniformdev/canvas": "^17.0.0",
+    "@uniformdev/canvas-react": "^17.0.0",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@uniformdev/cli": "^17.0.0",
     "npm-run-all": "^4.1.5"
   }
 }
