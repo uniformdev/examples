@@ -1,0 +1,29 @@
+{
+  "name": "intro-to-context-nuxt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-s download:manifest nuxt:dev",
+    "nuxt:dev": "nuxt dev",
+    "build": "run-s download:manifest nuxt:build",
+    "nuxt:build": "nuxt build",
+    "generate": "run-s download:manifest nuxt:generate",
+    "nuxt:generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "download:manifest": "uniform context manifest download --output ./contextManifest.json",
+    "uniform:pull": "uniform context signal pull ./content/signals",
+    "uniform:push": "uniform context signal push ./content/signals"
+  },
+  "devDependencies": {
+    "@uniformdev/cli": "^17.0.0",
+    "npm-run-all": "4.1.5",
+    "nuxt": "3.0.0-rc.6"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "^17.0.0",
+    "@uniformdev/canvas-vue": "^17.0.0",
+    "@uniformdev/context": "^17.0.0",
+    "@uniformdev/context-vue": "^17.0.0",
+    "@uniformdev/uniform-nuxt": "^17.0.0"
+  }
+}
