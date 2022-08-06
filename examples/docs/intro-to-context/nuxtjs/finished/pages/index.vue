@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import HomeLayout from "../components/HomeLayout.vue";
 import content from "../content/content.json";
+import HomeLayout from "../components/HomeLayout.vue";
 
 const slug = "/";
 const topic = content.find((e) => e.url == slug);

@@ -1,11 +1,16 @@
 <script lang="ts" setup>
-import { type PersonalizedVariant } from "@uniformdev/context";
-import { Personalize } from "@uniformdev/context-vue";
 import Body from "./Body.vue";
 import Footer from "./Footer.vue";
 import variantsJson from "../content/home-variants.json";
+import { type PersonalizedVariant } from "@uniformdev/context";
+import { Personalize } from "@uniformdev/context-vue";
 
-defineProps<{ fields: { title: string; description: string } }>();
+defineProps<{ 
+  fields: { 
+    title: string; 
+    description: string 
+  } 
+}>();
 const variants = variantsJson as PersonalizedVariant[];
 </script>
 
