@@ -9,7 +9,7 @@
     "uniform:push:components": "uniform canvas component push ./content/components",
     "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
     "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
-    "uniform:push": "run-suniform:push:signals uniform:push:components uniform:push:compositions",
+    "uniform:push": "run-s uniform:push:components uniform:push:compositions",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
