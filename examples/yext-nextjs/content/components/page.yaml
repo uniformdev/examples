@@ -1,0 +1,32 @@
+id: page
+name: Page
+permissions: []
+icon: file-document
+parameters:
+  - id: metaTitle
+    name: Meta Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - hero
+      - $personalization
+      - $test
+      - $localization
+      - productList
+      - featuredProduct
+    inheritAllowedComponents: false
+slugSettings:
+  unique: global
+  required: 'yes'
+  regularExpression: ''
+  regularExpressionMessage: ''
+titleParameter: ''
+canBeComposition: true
+created: '2022-08-30T00:16:24.411663+00:00'
+updated: '2022-08-30T00:22:45.183232+00:00'
