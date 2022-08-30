@@ -1,0 +1,28 @@
+id: productList
+name: Product List
+permissions: []
+icon: list
+parameters:
+  - id: products
+    name: Products
+    type: yext-entity-query
+    helpText: ''
+    typeConfig:
+      line1: ${rawData.brand}
+      line2: ${rawData.price.value} ${rawData.price.currencyCode}
+      displayName: name
+      verticalKey: products
+      allowedFacets:
+        brand:
+          id: brand
+          displayName: Brand
+        price.value:
+          id: price.value
+          displayName: Price Value
+      experienceKey: my-experience
+useTeamPermissions: true
+slots: []
+titleParameter: ''
+canBeComposition: false
+created: '2022-08-30T00:22:33.492782+00:00'
+updated: '2022-08-30T00:22:33.492782+00:00'
