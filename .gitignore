@@ -4,3 +4,6 @@ transpiled
 /.idea/
 .vscode
 .DS_Store
+
+# Local Netlify folder
+.netlify
