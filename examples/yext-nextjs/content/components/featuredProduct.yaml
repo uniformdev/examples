@@ -1,0 +1,31 @@
+id: featuredProduct
+name: Featured Product
+permissions: []
+icon: shopping-cart
+parameters:
+  - id: product
+    name: Product
+    type: yext-entity-selector
+    helpText: ''
+    typeConfig:
+      required: true
+      multiSelect: false
+      allowedFolders:
+        laptops:
+          id: laptops
+          name: Laptops
+          parentId: products
+        monitors:
+          id: monitors
+          name: Monitors
+          parentId: products
+        products:
+          id: products
+          name: Products
+          parentId: '0'
+useTeamPermissions: true
+slots: []
+titleParameter: ''
+canBeComposition: false
+created: '2022-08-30T00:18:38.726151+00:00'
+updated: '2022-08-30T00:19:27.503+00:00'
