@@ -23,14 +23,14 @@
     "postinstall": "run-s copy:deno"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^17.1.0",
-    "@uniformdev/canvas-react": "^17.1.0",
-    "@uniformdev/cli": "^17.1.0",
-    "@uniformdev/context": "^17.1.0",
-    "@uniformdev/context-devtools": "^17.1.0",
-    "@uniformdev/context-edge-netlify": "^17.1.0",
-    "@uniformdev/context-next": "^17.1.0",
-    "@uniformdev/context-react": "^17.1.0",
+    "@uniformdev/canvas": "^17.2.0",
+    "@uniformdev/canvas-react": "^17.2.0",
+    "@uniformdev/cli": "^17.2.0",
+    "@uniformdev/context": "^17.2.0",
+    "@uniformdev/context-devtools": "^17.2.0",
+    "@uniformdev/context-edge-netlify": "^17.2.0",
+    "@uniformdev/context-next": "^17.2.0",
+    "@uniformdev/context-react": "^17.2.0",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
