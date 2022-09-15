@@ -32,3 +32,6 @@ dist
 
 # vercel
 .vercel
+
+# ignore for the sake of StackBlitz
+package-lock.json
