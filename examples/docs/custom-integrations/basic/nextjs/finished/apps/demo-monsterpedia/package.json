@@ -1,6 +1,6 @@
 {
   "name": "demo-monsterpedia",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "canvas:pull": "uniform canvas component pull ./canvas/demo-monsterpedia.yaml && uniform canvas composition pull ./canvas/demo-monsterpedia.yaml",
@@ -14,32 +14,33 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^16.0.0",
-    "@uniformdev/canvas-react": "^16.0.0",
-    "@uniformdev/cli": "^16.0.0",
+    "@uniformdev/canvas": "^17.2.0",
+    "@uniformdev/canvas-react": "^17.2.0",
     "canvas-monsterpedia": "*",
-    "chart.js": "^3.7.1",
+    "chart.js": "^3.9.1",
     "color": "^4.2.3",
-    "next": "12.1.5",
-    "react": "17.0.2",
-    "react-chartjs-2": "^4.1.0",
-    "react-dom": "17.0.2"
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@storybook/addon-actions": "^6.4.22",
-    "@storybook/addon-essentials": "^6.4.22",
-    "@storybook/addon-interactions": "^6.4.22",
-    "@storybook/addon-links": "^6.4.22",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.4.22",
-    "@storybook/testing-library": "^0.0.11",
-    "autoprefixer": "^10.4.4",
+    "@babel/core": "^7.19.1",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@uniformdev/cli": "^17.2.0",
+    "autoprefixer": "^10.4.11",
     "babel-loader": "^8.2.5",
-    "dotenv": "^16.0.0",
-    "eslint": "8.13.0",
-    "eslint-config-next": "12.1.5",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.24"
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
+    "eslint-plugin-storybook": "^0.6.4",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
