@@ -20,5 +20,8 @@ module.exports = {
       },
     },
   ],
-  "framework": "@storybook/react"
+  "framework": "@storybook/react",
+  "core": {
+    "builder": "@storybook/builder-webpack5"
+  }
 }
