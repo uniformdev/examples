@@ -6,7 +6,7 @@ export default function LandingPageLayout({ composition }) {
   return (
     <div className="container">
       <Head>
-        <title>Uniform Demo: {name}</title>
+        <title>{`Uniform Demo: ${name}`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-white">
