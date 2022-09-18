@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false, /** Must use Babel in order for Stackblitz to work */
+  swcMinify: true,
 }
 
 module.exports = nextConfig
