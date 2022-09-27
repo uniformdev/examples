@@ -2,17 +2,12 @@ import manifest from "../../lib/uniform/contextManifest.json" assert { type: "js
 import {
   createEdgeContext,
   createUniformEdgeHandler,
-  // buildNetlifyQuirks,
+  buildNetlifyQuirks,
 } from "../../lib/uniform/index.deno.js";
-
-const IGNORED_PATHS = /\/.*\.(ico|png|jpg|jpeg|svg|css|js|json)(?:\?.*|$)$/g;
 
 export default async (request, netlifyContext) => {
   // ignoring requests that are not pages
-  if (
-    request.method.toUpperCase() !== "GET" ||
-    request.url.match(IGNORED_PATHS)
-  ) {
+  if (!shouldProcess) {
     return await netlifyContext.next({ sendConditionalRequest: true });
   }
 
@@ -20,25 +15,19 @@ export default async (request, netlifyContext) => {
     manifest: manifest,
     request,
   });
-
   const originResponse = await netlifyContext.next();
-
   const handler = createUniformEdgeHandler();
+  const quirks = {
+    ...buildNetlifyQuirks(netlifyContext),
+    ...(await getCDPData(netlifyContext)),
+  };
+  console.log({ quirks });
   const { processed, response } = await handler({
     context,
     request,
     response: originResponse,
-    quirks: {},
-    //buildNetlifyQuirks(netlifyContext),
+    quirks,
   });
-
-  // logging, feel free to remove it
-  if (processed) {
-    console.log("Edge Function processed request: ", {
-      url: request.url,
-      processed,
-    });
-  }
 
   if (!processed) {
     return response;
@@ -53,3 +42,24 @@ export default async (request, netlifyContext) => {
     },
   });
 };
+
+async function getCDPData(netlifyContext) {
+  const vid = netlifyContext.cookies.get("vid");
+  console.log({ visitorId: vid });
+  const visitorResponse = await fetch(
+    `https://cdpmock.netlify.app/profile/v1/spaces/space_1/collections/users/profiles/user_id:${vid}/traits`
+  );
+  if (!visitorResponse.ok) {
+    console.log("Error fetching CDP data");
+  }
+  const visitorData = await visitorResponse.json();
+  console.log({ visitorData });
+  return visitorData?.traits;
+}
+
+function shouldProcess(request) {
+  const IGNORED_PATHS = /\/.*\.(ico|png|jpg|jpeg|svg|css|js|json)(?:\?.*|$)$/g;
+  return (
+    request.method.toUpperCase() === "GET" || !request.url.match(IGNORED_PATHS)
+  );
+}
