@@ -1,14 +1,17 @@
 composition:
-  _id: d4364c8c-61a2-4e6f-94e2-9a1a4052ae70
-  type: defaultPage
   _name: Home Page
+  _id: d4364c8c-61a2-4e6f-94e2-9a1a4052ae70
   _slug: /
+  type: defaultPage
+  parameters: {}
   slots:
     body:
-      - type: $personalization
+      - _id: 0f4f3ddd-2342-47c4-b6ad-cae6ecb3d671
+        type: $personalization
         slots:
           pz:
-            - type: defaultBody
+            - _id: a51852dd-51a0-49ac-8f34-c4cab43c1423
+              type: defaultBody
               parameters:
                 $pzCrit:
                   type: $pzCrit
@@ -17,23 +20,28 @@ composition:
                       - l: architecturePageView
                         r: 0
                         op: '>'
-                    name: ''
+                    name: architecture-variant
                 contentId:
                   type: text
                   value: home-for-architecture
-            - type: defaultBody
+            - _id: 7e100305-d4ce-4835-a0ab-442b8bb2b0cd
+              type: defaultBody
               parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: default-variant
                 contentId:
                   type: text
                   value: home
         parameters:
           count:
-            type: text
+            type: number
             value: '1'
           trackingEventName:
             type: text
-            value: home-page
-  parameters: {}
-created: '2022-07-11T22:04:14.364925+00:00'
-modified: '2022-07-11T22:04:14.364925+00:00'
+            value: home-page-personalization
+created: '2022-09-27T12:48:25.734577+00:00'
+modified: '2022-09-27T12:51:01.815895+00:00'
 pattern: false
