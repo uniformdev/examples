@@ -1,6 +1,5 @@
 id: defaultBody
 name: Default Body
-permissions: []
 icon: menu-boxed
 parameters:
   - id: contentId
@@ -11,7 +10,7 @@ parameters:
       required: true
 useTeamPermissions: true
 slots: []
-titleParameter: ''
+titleParameter: contentId
 canBeComposition: false
-created: '2022-07-11T22:02:59.102717+00:00'
-updated: '2022-07-11T22:37:00.051892+00:00'
+created: '2022-09-27T12:48:24.278934+00:00'
+updated: '2022-09-27T12:50:09.902959+00:00'
