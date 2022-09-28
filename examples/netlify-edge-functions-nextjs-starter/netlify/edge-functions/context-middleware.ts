@@ -46,6 +46,9 @@ export default async (request, netlifyContext) => {
 async function getCDPData(netlifyContext) {
   const vid = netlifyContext.cookies.get("vid");
   console.log({ visitorId: vid });
+  if (!vid) {
+    return {};
+  }
   const visitorResponse = await fetch(
     `https://cdpmock.netlify.app/profile/v1/spaces/space_1/collections/users/profiles/user_id:${vid}/traits`
   );
