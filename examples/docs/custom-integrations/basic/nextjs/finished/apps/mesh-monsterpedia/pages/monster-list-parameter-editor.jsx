@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   EntrySearch,
-  useUniformMeshLocation,
+  useMeshLocation,
 } from "@uniformdev/mesh-sdk-react";
 import { LoadingIndicator } from "@uniformdev/design-system";
 import { createClient } from "monsterpedia";
@@ -26,7 +26,7 @@ function getSearchResults(filter, monsters) {
 }
 
 export default function MonsterListParameterEditor() {
-  const { value, setValue, metadata } = useUniformMeshLocation();
+  const { value, setValue, metadata } = useMeshLocation();
   const client = createClient(metadata?.settings?.baseUrl);
   const [loading, setLoading] = useState(true);
   const [monsters, setMonsters] = useState([]);
