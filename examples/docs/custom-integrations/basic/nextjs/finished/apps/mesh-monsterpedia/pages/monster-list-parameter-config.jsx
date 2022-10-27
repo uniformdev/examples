@@ -1,9 +1,9 @@
 import React from "react";
 import { Input } from "@uniformdev/design-system";
-import { useUniformMeshLocation } from "@uniformdev/mesh-sdk-react";
+import { useMeshLocation } from "@uniformdev/mesh-sdk-react";
 
 export default function MonsterListParameterConfig() {
-  const { value, setValue } = useUniformMeshLocation();
+  const { value, setValue } = useMeshLocation();
   async function onChangeFilter(e) {
     await setValue({ filter: e.target.value });
   }

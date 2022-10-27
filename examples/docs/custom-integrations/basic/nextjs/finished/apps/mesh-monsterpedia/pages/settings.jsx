@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useUniformMeshLocation } from "@uniformdev/mesh-sdk-react";
+import { useMeshLocation } from "@uniformdev/mesh-sdk-react";
 import {
   Heading,
   Input,
@@ -10,7 +10,7 @@ import {
 import { createClient, DEFAULT_BASE_MONSTER_URL } from "monsterpedia";
 
 export default function Settings() {
-  const { value, setValue } = useUniformMeshLocation();
+  const { value, setValue } = useMeshLocation();
   const [isWorking, setIsWorking] = useState(false);
   const [message, setMessage] = useState(undefined);
   const [baseUrl, setBaseUrl] = useState(value?.baseUrl);
