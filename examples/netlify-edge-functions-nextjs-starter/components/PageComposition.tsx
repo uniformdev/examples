@@ -7,15 +7,14 @@ import {
   Composition,
   DefaultNotImplementedComponent,
   Slot,
+  createApiEnhancer,
+  useCompositionInstance,
 } from "@uniformdev/canvas-react";
+import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
+
 import Hero from "./Hero";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
-
-const PreviewDevPanel = dynamic(
-  () => import("lib/uniform/preview/PreviewDevPanel"),
-  { ssr: false }
-);
 
 // register your new components here
 export function componentResolver(
@@ -28,7 +27,6 @@ export function componentResolver(
 }
 
 export default function PageComposition({
-  preview,
   composition,
   navLinks,
 }: {
@@ -36,6 +34,12 @@ export default function PageComposition({
   composition: RootComponentInstance;
   navLinks: Array<NavLink>;
 }) {
+  const { composition: compositionInstance } = useCompositionInstance({
+    composition,
+    enhance: createApiEnhancer({
+      apiUrl: "/api/preview",
+    }),
+  });
   const { metaTitle } = composition?.parameters || {};
   const title = metaTitle?.value as string;
   if (!composition) {
@@ -48,12 +52,17 @@ export default function PageComposition({
       </Head>
       <>
         <Navigation navLinks={navLinks} />
-        <Composition data={composition} resolveRenderer={componentResolver}>
-          <Slot name="content" />
-        </Composition>
+        {compositionInstance && (
+          <Composition
+            data={compositionInstance}
+            resolveRenderer={componentResolver}
+          >
+            <Slot name="content" />
+          </Composition>
+        )}
         <Footer />
       </>
-      <PreviewDevPanel preview={preview} compositionId={composition?._id} />
+      <ToggleEmbeddedContextDevTools />
     </>
   );
 }

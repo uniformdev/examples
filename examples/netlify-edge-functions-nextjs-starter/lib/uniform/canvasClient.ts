@@ -21,12 +21,23 @@ export const canvasClient = new CanvasClient({
   projectId,
 });
 
+const compositionExceptionHandler = (e: { statusCode: number | undefined }) => {
+  if (e.statusCode === 404) {
+    return { composition: {} };
+  }
+};
+
 export async function getCompositionBySlug(slug: string, preview: boolean) {
-  const { composition } = await canvasClient.getCompositionBySlug({
-    slug,
-    state: getState(preview),
-  });
-  await runEnhancers(composition);
+  const { composition } =
+    (await canvasClient
+      .getCompositionBySlug({
+        slug,
+        state: getState(preview),
+      })
+      .catch(compositionExceptionHandler)) || {};
+  if (composition) {
+    await runEnhancers(composition);
+  }
   return composition;
 }
 
@@ -52,7 +63,7 @@ export const getCompositionPaths = async () => {
   });
 
   return pages.compositions
-    .filter((c) => c.composition._slug && c.composition._slug !== "/")
+    .filter((c) => c.composition._slug)
     .map((c) =>
       c.composition._slug?.startsWith("/")
         ? `${c.composition._slug}`
