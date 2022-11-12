@@ -1,7 +1,7 @@
-name = "your-worker-name"
+name = "charliebanana"
 type = "javascript"
 zone_id = ""
-account_id = "enter-your-account-id-here"
+account_id = "f39f700e75c45960a1b4e1ad200acd82"
 route = ""
 workers_dev = true
 
@@ -11,4 +11,6 @@ command = "npm install && npm run download:manifest && npm run build"
 format = "service-worker"
 
 [vars]
-ORIGIN_URL = "yourstaticsite.com"
+ORIGIN_URL = "charliebanana.z5.web.core.windows.net"
+
+compatibility_date = "2022-11-12"
