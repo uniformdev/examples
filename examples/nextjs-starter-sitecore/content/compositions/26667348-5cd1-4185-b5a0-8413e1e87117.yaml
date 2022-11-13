@@ -1,0 +1,45 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 70a96c3f-ceae-492b-bc6f-e6f97edb4489
+        type: $personalization
+        slots:
+          pz:
+            - _id: 3627f8a0-5ac4-41b1-a0bc-ad5561a37821
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: launchCampaign
+                        r: 0
+                        op: '>'
+                    name: 'Hero: We are launched!'
+                datasource:
+                  type: sitecoreItem
+                  value: '{E0C99DD1-359F-41CD-81BE-349CCC85BF1E}'
+            - _id: bed0aaca-fc64-463d-b61f-0362da3e6de6
+              type: hero
+              parameters:
+                datasource:
+                  type: sitecoreItem
+                  value: '{EA524586-0BB5-4DB9-9D07-6F8FDF8CED4A}'
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Home Hero
+created: '2022-11-12T23:06:04.36564+00:00'
+modified: '2022-11-13T00:58:24.56166+00:00'
+pattern: false

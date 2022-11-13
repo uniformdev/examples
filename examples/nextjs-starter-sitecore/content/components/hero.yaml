@@ -1,0 +1,17 @@
+id: hero
+name: Hero
+icon: image-text
+parameters:
+  - id: datasource
+    name: Data Source
+    type: sitecoreItem
+    helpText: ''
+    typeConfig:
+      required: true
+      datasourceLocation: >-
+        {49C3AE19-A2E2-47AF-A679-4988DE59B7D5}|{DAC24EDD-44FB-42EF-9ECD-1E8DAF706386}
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2022-11-12T23:06:03.862393+00:00'
+updated: '2022-11-12T23:54:33.731484+00:00'
