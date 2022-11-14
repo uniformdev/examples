@@ -13,13 +13,13 @@ type HeroProps = ComponentProps<{
 const Hero: React.FC<HeroProps> = ({ datasource }: HeroProps) => {
   const { TeaserTitle, TeaserSummary } = datasource || {};
   return (
-    <>
+    <div>
       <h1 className="title">{TeaserTitle}</h1>
       <div
         className="description"
         dangerouslySetInnerHTML={{ __html: TeaserSummary }}
       />
-    </>
+    </div>
   );
 };
 
