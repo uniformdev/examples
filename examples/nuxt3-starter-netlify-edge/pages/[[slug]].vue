@@ -32,7 +32,10 @@ if (!composition.value) {
 const { compositions }: CompositionGetListResponse =
   await $uniformCanvasClient.getCompositionList({
     skipEnhance: true,
-    state: $preview ? CANVAS_DRAFT_STATE : CANVAS_PUBLISHED_STATE,
+    state:
+      $preview || process.env.NODE_ENV === "development"
+        ? CANVAS_DRAFT_STATE
+        : CANVAS_PUBLISHED_STATE,
   });
 const { metaTitle } = composition.value?.parameters || {};
 const title = metaTitle?.value as string;
@@ -44,6 +47,7 @@ const navLinks = compositions
       url: c.composition._slug,
     };
   });
+console.log({ navLinks, $preview });
 </script>
 
 <template>

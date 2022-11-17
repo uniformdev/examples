@@ -1,0 +1,56 @@
+composition:
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  type: page
+  _name: Home
+  _slug: /
+  slots:
+    content:
+      - type: $personalization
+        slots:
+          pz:
+            - type: hero
+              parameters:
+                title:
+                  type: text
+                  value: We are launched!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: launchCampaign
+                        r: 0
+                        op: '>'
+                    name: 'Hero: We are launched!'
+                description:
+                  type: text
+                  value: >-
+                    <p>Showing personalized content since "Launch Campaign"
+                    signal has a score.</p>
+
+                    <p>Check dev tools for more logging info.</p> 
+            - type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Welcome.
+                description:
+                  type: text
+                  value: >-
+                    <p>This is default content shown to every visitor. </p>
+
+                    <p>Trigger campaign-based personalization <a
+                    href="/?utm_campaign=launch">now</a>!</p>
+        parameters:
+          count:
+            type: text
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Home Hero
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+created: '2022-07-28T02:15:48.244994+00:00'
+modified: '2022-07-28T04:17:25.626569+00:00'
+pattern: false

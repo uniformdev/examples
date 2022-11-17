@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     projectId: process.env.UNIFORM_PROJECT_ID,
     readOnlyApiKey: process.env.UNIFORM_API_KEY,
     apiHost: process.env.UNIFORM_CLI_BASE_URL,
-    outputType: "standard",
+    outputType: process.env.NODE_ENV === "development" ? "standard" : "edge",
     manifest: manifest as ManifestV2,
     defaultConsent: true,
   },
