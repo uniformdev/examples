@@ -12,8 +12,10 @@ interface Props {
 defineProps<Props>();
 </script>
 <template>
-  <h1 class="title">{{ datasource.TeaserTitle }}</h1>
-  <div class="description" v-html="datasource?.TeaserSummary" />
+  <div>
+    <h1 class="title">{{ datasource.TeaserTitle }}</h1>
+    <div class="description" v-html="datasource?.TeaserSummary" />
+  </div>
 </template>
 
 <style scoped>
