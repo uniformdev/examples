@@ -23,7 +23,7 @@ const navLinks = compositions
   .map((c) => {
     return {
       title: c.composition._name,
-      url: c.composition._slug,
+      url: c.composition._slug ?? '#',
     };
   });
 </script>
