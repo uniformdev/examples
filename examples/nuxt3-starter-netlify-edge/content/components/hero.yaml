@@ -1,25 +1,16 @@
 id: hero
 name: Hero
-permissions: []
 icon: image-text
 parameters:
-  - id: title
-    name: Title
-    type: text
+  - id: datasource
+    name: Datasource
+    type: sitecoreItem
     helpText: ''
     typeConfig:
-      required: true
-  - id: description
-    name: Description
-    type: text
-    helpText: ''
-    typeConfig:
-      required: false
-      multiline: true
-      linesCount: '3'
+      datasourceLocation: >-
+        {49C3AE19-A2E2-47AF-A679-4988DE59B7D5}|{6AA25831-0944-4A79-9AFF-7BAC39E03557}|{B265C694-AF8B-4894-96D7-66A3D6D703C5}
 useTeamPermissions: true
 slots: []
-titleParameter: title
 canBeComposition: false
-created: '2022-07-28T02:14:43.71434+00:00'
-updated: '2022-07-28T03:10:34.632985+00:00'
+created: '2022-11-17T18:31:13.142581+00:00'
+updated: '2022-11-18T15:42:41.83215+00:00'

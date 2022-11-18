@@ -22,21 +22,21 @@
     "start": "nuxt start",
     "start:stackblitz": "npm install && nuxt dev",
     "copy:deno": "shx cp node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/uniform/context",
-    "postinstall": "run-s copy:deno"
+    "postinstall": "run-s copy:deno && nuxt prepare"
   },
   "devDependencies": {
-    "@uniformdev/cli": "17.3.1-alpha.146",
+    "@uniformdev/cli": "17.5.1-alpha.7",
     "npm-run-all": "4.1.5",
-    "nuxt": "3.0.0-rc.12",
+    "nuxt": "3.0.0",
     "shx": "^0.3.4"
   },
   "dependencies": {
-    "@uniformdev/canvas": "17.3.1-alpha.146",
-    "@uniformdev/canvas-vue": "17.3.1-alpha.146",
-    "@uniformdev/context-edge-netlify": "17.3.1-alpha.146",
-    "@uniformdev/context": "17.3.1-alpha.146",
-    "@uniformdev/context-vue": "17.3.1-alpha.146",
-    "@uniformdev/uniform-nuxt": "17.3.1-alpha.146",
+    "@uniformdev/canvas": "17.5.1-alpha.7",
+    "@uniformdev/canvas-vue": "17.5.1-alpha.7",
+    "@uniformdev/context-edge-netlify": "17.5.1-alpha.7",
+    "@uniformdev/context": "17.5.1-alpha.7",
+    "@uniformdev/context-vue": "17.5.1-alpha.7",
+    "@uniformdev/uniform-nuxt": "17.5.1-alpha.7",
     "@uniformdev/canvas-sitecore": "17.1.1-alpha.18"
   },
   "stackblitz": {

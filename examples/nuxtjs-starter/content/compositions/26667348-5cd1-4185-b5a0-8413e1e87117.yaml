@@ -1,18 +1,21 @@
 composition:
-  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
-  type: page
   _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
   _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
   slots:
     content:
-      - type: $personalization
+      - _id: 286df970-a248-4080-8c9b-3ddc1cd674a8
+        type: $personalization
         slots:
           pz:
-            - type: hero
+            - _id: 18a93a3a-b904-4c9e-815b-e1e02019fe3c
+              type: hero
               parameters:
-                title:
-                  type: text
-                  value: We are launched!
                 $pzCrit:
                   type: $pzCrit
                   value:
@@ -20,37 +23,20 @@ composition:
                       - l: launchCampaign
                         r: 0
                         op: '>'
-                    name: 'Hero: We are launched!'
-                description:
-                  type: text
-                  value: >-
-                    <p>Showing personalized content since "Launch Campaign"
-                    signal has a score.</p>
-
-                    <p>Check dev tools for more logging info.</p> 
-            - type: hero
+                    name: ''
+                datasource:
+                  type: sitecoreItem
+                  value: '{ECAF5D71-8CC3-4E6B-A018-2D8DFA0FF3DA}'
+            - _id: 86bb5959-fd9e-47f5-b302-53acbff2ea55
+              type: hero
               parameters:
-                title:
-                  type: text
-                  value: Welcome.
-                description:
-                  type: text
-                  value: >-
-                    <p>This is default content shown to every visitor. </p>
-
-                    <p>Trigger campaign-based personalization <a
-                    href="/?utm_campaign=launch">now</a>!</p>
+                datasource:
+                  type: sitecoreItem
+                  value: '{E0C99DD1-359F-41CD-81BE-349CCC85BF1E}'
         parameters:
-          count:
-            type: text
-            value: '1'
           trackingEventName:
             type: text
             value: Home Hero
-  parameters:
-    metaTitle:
-      type: text
-      value: Home
-created: '2022-07-28T02:15:48.244994+00:00'
-modified: '2022-07-28T04:17:25.626569+00:00'
+created: '2022-11-17T18:31:13.454182+00:00'
+modified: '2022-11-18T17:06:38.042601+00:00'
 pattern: false

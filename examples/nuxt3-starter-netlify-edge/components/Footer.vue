@@ -7,7 +7,6 @@
       </a>
     </div>
     <div class="uniform-buttons">
-      <PreviewToggle />
       <ForgetMe />
     </div>
   </footer>

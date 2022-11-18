@@ -10,8 +10,8 @@ import {
   createApiEnhancer,
 } from "@uniformdev/canvas-vue";
 
-const { slug: slugWithoutSlash } = useRoute().params;
-const slug = `/${slugWithoutSlash}`;
+const { slug: compositionSlug } = useRoute().params;
+const slug = !compositionSlug ? "/" : compositionSlug;
 const { $useComposition, $uniformCanvasClient, $preview } = useNuxtApp();
 const { data: rawComposition } = await $useComposition({ slug });
 const { data: enhancedComposition } = await useEnhance(

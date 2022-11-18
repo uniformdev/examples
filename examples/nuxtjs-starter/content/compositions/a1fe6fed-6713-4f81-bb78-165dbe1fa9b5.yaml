@@ -1,0 +1,20 @@
+composition:
+  _name: About
+  _id: a1fe6fed-6713-4f81-bb78-165dbe1fa9b5
+  _slug: about
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: About Us
+  slots:
+    content:
+      - _id: 3344a603-182c-4c64-9d4a-5f8cfd790961
+        type: hero
+        parameters:
+          datasource:
+            type: sitecoreItem
+            value: '{D24907F7-1A25-43DC-A5A2-FCB1E55EBBB6}'
+created: '2022-11-17T19:39:50.940349+00:00'
+modified: '2022-11-18T17:03:13.966943+00:00'
+pattern: false
