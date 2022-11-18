@@ -1,6 +1,8 @@
 import { createItemEnhancer } from "@uniformdev/canvas-sitecore";
 
-export const sitecoreItemEnhancer = () => {
+export const sitecoreItemEnhancer = (
+  pageId: string = "00000000-0000-0000-0000-000000000000"
+) => {
   const config = useRuntimeConfig();
   const { sitecoreApiUrl, sitecoreSiteName, sitecoreApiKey } = config;
 
@@ -8,7 +10,7 @@ export const sitecoreItemEnhancer = () => {
     throw "Sitecore connection details are not configured";
   }
   return createItemEnhancer({
-    pageId: "00000000-0000-0000-0000-000000000000",
+    pageId,
     config: {
       SITECORE_API_URL: sitecoreApiUrl,
       SITECORE_SITENAME: sitecoreSiteName,
@@ -16,6 +18,7 @@ export const sitecoreItemEnhancer = () => {
         SITECORE_API_KEY: sitecoreApiKey,
       },
     },
+    logger: consoleLogger,
     isPreview: false,
     modelOnly: false, // enable modelOnly after configuring model builders in Sitecore for all components and parameters
   });
@@ -52,3 +55,16 @@ const excludeFields = [
   "DisplayName",
   "HasChildren",
 ];
+
+const consoleLogger = {
+  // eslint-disable-next-line
+  trace: (...message: any[]) => console.log(message.join("\r")),
+  // eslint-disable-next-line
+  debug: (...message: any[]) => console.log(message.join("\r")),
+  // eslint-disable-next-line
+  info: (...message: any[]) => console.log(message.join("\r")),
+  // eslint-disable-next-line
+  warn: (...message: any[]) => console.log(message.join("\r")),
+  // eslint-disable-next-line
+  error: (...message: any[]) => console.log(message.join("\r")),
+};

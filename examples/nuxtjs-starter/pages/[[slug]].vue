@@ -34,8 +34,11 @@ const { compositions }: CompositionGetListResponse =
     skipEnhance: true,
     state: $preview ? CANVAS_DRAFT_STATE : CANVAS_PUBLISHED_STATE,
   });
-const { metaTitle } = composition.value?.parameters || {};
-const title = metaTitle?.value as string;
+
+// FYI: accessing composition level pageData
+const { browserTitle, metaDescription, showInNavigation } =
+  composition.value?.parameters?.pageData?.value || {};
+
 const navLinks = compositions
   .filter((c) => c.composition._slug)
   .map((c) => {
@@ -49,7 +52,7 @@ const navLinks = compositions
 <template>
   <div class="page">
     <Head>
-      <Title>{{ title }}</Title>
+      <Title>{{ browserTitle }}</Title>
     </Head>
     <Navigation :navLinks="navLinks" />
     <Composition

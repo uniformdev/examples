@@ -21,6 +21,7 @@ export default async function runEnhancers(
   composition: any,
   isPreview: boolean
 ) {
+  const pageId = composition ? getPageItemId(composition) : undefined;
   await enhance({
     composition,
     context: {
@@ -28,7 +29,7 @@ export default async function runEnhancers(
     },
     enhancers: new EnhancerBuilder().parameterType(
       "sitecoreItem",
-      compose(sitecoreItemEnhancer(), sitecoreModelConverter)
+      compose(sitecoreItemEnhancer(pageId), sitecoreModelConverter)
     ),
     // .parameterType(
     //   CANVAS_CONTENTFUL_PARAMETER_TYPES,
@@ -44,4 +45,12 @@ export default async function runEnhancers(
     //   algoliaQueryEnhancer()
     // ),
   });
+}
+
+function getPageItemId(composition: any): string | undefined {
+  if (!composition?.parameters) {
+    throw new Error("no composition");
+  }
+  const value = composition.parameters["pageData"]?.value;
+  return value ? value + "" : undefined;
 }
