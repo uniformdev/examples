@@ -3,7 +3,7 @@ import { compose, enhance, EnhancerBuilder } from "@uniformdev/canvas";
 import { createItemEnhancer } from "@uniformdev/canvas-sitecore";
 
 export default defineEventHandler(async (event: H3Event) => {
-  const body = await useBody(event);
+  const body = await readBody(event);
   const composition = body.composition;
 
   const config = useRuntimeConfig();
