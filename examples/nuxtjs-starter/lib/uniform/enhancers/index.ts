@@ -1,5 +1,5 @@
 import { enhance, compose, EnhancerBuilder } from "@uniformdev/canvas";
-import { sitecoreItemEnhancer } from "./sitecore";
+import { sitecoreItemEnhancer, sitecoreModelConverter } from "./sitecore";
 
 // import { cloudinaryEnhancer, CLOUDINARY_PARAMETER_TYPES } from "./cloudinary";
 
@@ -28,7 +28,7 @@ export default async function runEnhancers(
     },
     enhancers: new EnhancerBuilder().parameterType(
       "sitecoreItem",
-      sitecoreItemEnhancer()
+      compose(sitecoreItemEnhancer(), sitecoreModelConverter)
     ),
     // .parameterType(
     //   CANVAS_CONTENTFUL_PARAMETER_TYPES,

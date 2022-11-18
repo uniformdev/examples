@@ -2,9 +2,9 @@
 import { ComponentInstance } from "@uniformdev/canvas";
 
 interface Props {
-  datasource: {
-    TeaserTitle: string;
-    TeaserSummary?: string;
+  datasource?: {
+    teaserTitle: string;
+    teaserSummary?: string;
   };
   component: ComponentInstance;
 }
@@ -13,8 +13,8 @@ defineProps<Props>();
 </script>
 <template>
   <div>
-    <h1 class="title">{{ datasource.TeaserTitle }}</h1>
-    <div class="description" v-html="datasource?.TeaserSummary" />
+    <h1 class="title">{{ datasource?.teaserTitle }}</h1>
+    <div class="description" v-html="datasource?.teaserSummary" />
   </div>
 </template>
 
