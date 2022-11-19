@@ -3,6 +3,7 @@ import { type UniformAppProps } from "@uniformdev/context-next";
 import { createUniformContext } from "../lib/uniform/uniformContext";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 import "../styles/style.css";
 
 const clientContext = createUniformContext();

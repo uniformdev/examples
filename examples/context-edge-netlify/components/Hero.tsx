@@ -1,5 +1,6 @@
-import { Track } from "@uniformdev/context-react";
+import Image from "next/image";
 import Link from "next/link";
+import { Track } from "@uniformdev/context-react";
 import { BaseHeroData } from "../lib/models";
 import Splitter from "./Splitter";
 
@@ -28,11 +29,12 @@ export const Hero: React.FC<BaseHeroData> = ({
           </div>
           <div className="w-full md:w-3/5 py-6 text-center">
             {image && (
-              <img
+              <Image
                 className="w-full md:w-4/5 z-50 min-h-500 max-h-500 hidden md:block"
                 height={500}
                 src={image}
                 alt={buttonText}
+                priority={true}
               />
             )}
           </div>

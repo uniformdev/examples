@@ -1,21 +1,23 @@
-import { useUniformContext } from '@uniformdev/context-react';
-import { parse } from 'cookie';
-import React from 'react';
-import { useState } from 'react';
-import { RegistrationFormData } from '../lib/models';
-import Splitter from './Splitter';
+import { useUniformContext } from "@uniformdev/context-react";
+import { parse } from "cookie";
+import React from "react";
+import { useState } from "react";
+import { RegistrationFormData } from "../lib/models";
+import Splitter from "./Splitter";
 
 export const RegisterForm: React.FC<RegistrationFormData> = (fields) => {
   const [registered, setRegistered] = useState(
-    typeof document !== 'undefined' ? !!document.cookie.match(/unfrmconf_registered/) : false
+    typeof document !== "undefined"
+      ? !!document.cookie.match(/unfrmconf_registered/)
+      : false
   );
 
   const { context } = useUniformContext();
 
   const onRegister = () => {
-    document.cookie = 'unfrmconf_registered=true; path=/; samesite=lax';
+    document.cookie = "unfrmconf_registered=true; path=/; samesite=lax";
     context.update({
-      cookies: parse(document.cookie)
+      cookies: parse(document.cookie),
     });
     setRegistered(true);
   };
@@ -26,7 +28,9 @@ export const RegisterForm: React.FC<RegistrationFormData> = (fields) => {
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full">Uniform conf</p>
-            <h1 className="my-4 text-5xl font-bold leading-tight">{fields.heading}</h1>
+            <h1 className="my-4 text-5xl font-bold leading-tight">
+              {fields.heading}
+            </h1>
 
             <form>
               {registered ? (

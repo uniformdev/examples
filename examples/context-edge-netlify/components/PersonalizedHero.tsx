@@ -1,8 +1,10 @@
-import { Personalize } from '@uniformdev/context-react';
-import { PersonalizedHeroData } from '../lib/models';
-import { Hero } from './Hero';
+import { Personalize } from "@uniformdev/context-react";
+import { PersonalizedHeroData } from "../lib/models";
+import { Hero } from "./Hero";
 
-export const PersonalizedHero: React.FC<PersonalizedHeroData> = ({ variations }) => {
+export const PersonalizedHero: React.FC<PersonalizedHeroData> = ({
+  variations,
+}) => {
   return (
     <Personalize
       variations={variations}
