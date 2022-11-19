@@ -54,17 +54,16 @@ const Nav = () => {
     >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
-          <Link href="/">
-            <a
-              aria-label="home"
-              className={
-                isScrolled
-                  ? "no-underline hover:no-underline font-bold text-2xl lg:text-4xl  text-gray-800"
-                  : "no-underline hover:no-underline font-bold text-2xl lg:text-4xl  text-white"
-              }
-            >
-              <Logo />
-            </a>
+          <Link
+            href="/"
+            aria-label="home"
+            className={
+              isScrolled
+                ? "no-underline hover:no-underline font-bold text-2xl lg:text-4xl  text-gray-800"
+                : "no-underline hover:no-underline font-bold text-2xl lg:text-4xl  text-white"
+            }
+          >
+            <Logo />
           </Link>
         </div>
         <div className="block lg:hidden pr-4">
