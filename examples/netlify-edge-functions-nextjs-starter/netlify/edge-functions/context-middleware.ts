@@ -4,8 +4,10 @@ import {
   createUniformEdgeHandler,
   buildNetlifyQuirks,
 } from "../../lib/uniform/index.deno.js";
+// @ts-ignore: deno imports failing next build
+import type { Context } from "netlify:edge";
 
-export default async (request, netlifyContext) => {
+export default async (request: Request, netlifyContext: Context) => {
   // ignoring requests that are not pages
   if (!shouldProcess) {
     return await netlifyContext.next({ sendConditionalRequest: true });
@@ -36,14 +38,15 @@ export default async (request, netlifyContext) => {
   return new Response(response.body, {
     ...response,
     headers: {
-      ...response.headers,
-      "Cache-Control": "no-store, must-revalidate",
-      Expires: "0",
+      // ...response.headers, Symbol cannot be destructured
+      'Cache-Control': 'no-store, must-revalidate',
+      'Content-Type': 'text/html; charset=utf-8', // To apply automatic deno compression, more info https://deno.com/deploy/docs/compression
+      Expires: '0',
     },
   });
 };
 
-async function getCDPData(netlifyContext) {
+async function getCDPData(netlifyContext: Context) {
   const vid = netlifyContext.cookies.get("vid");
   console.log({ visitorId: vid });
   if (!vid) {
@@ -60,7 +63,7 @@ async function getCDPData(netlifyContext) {
   return visitorData?.traits;
 }
 
-function shouldProcess(request) {
+function shouldProcess(request: Request) {
   const IGNORED_PATHS = /\/.*\.(ico|png|jpg|jpeg|svg|css|js|json)(?:\?.*|$)$/g;
   return (
     request.method.toUpperCase() === "GET" || !request.url.match(IGNORED_PATHS)
