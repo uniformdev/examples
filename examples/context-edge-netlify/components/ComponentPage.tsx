@@ -5,9 +5,9 @@ export type PageProps = { page: Page };
 
 export const ComponentPage = ({
   page,
-  componentMapping
+  componentMapping,
 }: PageProps & {
-  componentMapping: Partial<Record<ComponentType, React.ComponentType<any>>>
+  componentMapping: Partial<Record<ComponentType, React.ComponentType<any>>>;
 }) => (
   <>
     {page?.components &&
@@ -18,4 +18,4 @@ export const ComponentPage = ({
         })
       )}
   </>
-)
+);
