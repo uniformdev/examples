@@ -1,6 +1,11 @@
 {
   "extends": ["config:base"],
-  "matchPackagePrefixes": ["@uniformdev"],
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["@uniformdev"],
+      "groupName": "Uniform"
+    }
+  ],
   "includePaths": [
     "examples/docs/getting-started/*",
     "examples/docs/intro-to-canvas/*",
