@@ -13,12 +13,12 @@
   ],
   "rangeStrategy": "bump",
   "includePaths": [
-    "examples/docs/getting-started/*",
-    "examples/docs/intro-to-canvas/*",
-    "examples/docs/intro-to-context/*",
-    "examples/netlify-edge-functions-nextjs-starter/*",
-    "examples/nextjs-starter/*",
-    "examples/nuxtjs-starter/*",
-    "examples/yext-nextjs/*"
+    "examples/docs/getting-started/**",
+    "examples/docs/intro-to-canvas/**",
+    "examples/docs/intro-to-context/**",
+    "examples/netlify-edge-functions-nextjs-starter/**",
+    "examples/nextjs-starter/**",
+    "examples/nuxtjs-starter/**",
+    "examples/yext-nextjs/**"
   ]
 }
