@@ -2,10 +2,16 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackagePrefixes": ["@uniformdev"],
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": ["^@uniformdev"],
+      "enabled": false
+    },
+    {
+      "matchPackagePatterns": ["^@uniformdev"],
       "groupName": "Uniform"
     }
   ],
+  "rangeStrategy": "bump",
   "includePaths": [
     "examples/docs/getting-started/*",
     "examples/docs/intro-to-canvas/*",
