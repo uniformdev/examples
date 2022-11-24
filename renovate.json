@@ -20,5 +20,14 @@
     "examples/nextjs-starter/**",
     "examples/nuxtjs-starter/**",
     "examples/yext-nextjs/**"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
   ]
 }
