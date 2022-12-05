@@ -23,7 +23,7 @@
   "dependencies": {
     "@uniformdev/canvas": "^17.6.0",
     "@uniformdev/canvas-react": "^17.6.0",
-    "@uniformdev/canvas-yext": "^17.1.1-alpha.19",
+    "@uniformdev/canvas-yext": "^17.1.1-alpha.20",
     "@uniformdev/cli": "^17.6.0",
     "@uniformdev/context": "^17.6.0",
     "@uniformdev/context-devtools": "^17.6.0",
