@@ -1,0 +1,15 @@
+id: algolia-pagination
+name: Pagination
+icon: browser
+parameters:
+  - id: paginationParams
+    name: Pagination Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Pagination
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2022-11-30T10:54:10.356692+00:00'
+updated: '2022-12-06T14:43:55.580031+00:00'

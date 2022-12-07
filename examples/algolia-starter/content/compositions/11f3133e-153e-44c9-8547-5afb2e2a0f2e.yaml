@@ -1,0 +1,191 @@
+composition:
+  _name: Algolia configurable components demo
+  _id: 11f3133e-153e-44c9-8547-5afb2e2a0f2e
+  _slug: /algolia-demo
+  type: algolia-page
+  parameters:
+    metaTitle:
+      type: text
+      value: Algolia Configurable Component
+  slots:
+    providers:
+      - type: algolia-instantSearch
+        slots:
+          widgets:
+            - type: algolia-searchBox
+              parameters:
+                searchBoxParams:
+                  type: algolia-components
+                  value:
+                    searchBoxProps:
+                      placeholder: Search for example 1
+                      searchAsYouType: true
+            - type: algolia-refinementList
+              parameters:
+                refinementListParams:
+                  type: algolia-components
+                  value:
+                    refinementListProps:
+                      limit: 10
+                      operator: and
+                      showMore: false
+                      attribute:
+                      searchable: false
+                      allowedIndex:
+                      escapeFacetValues: true
+            - type: algolia-hits
+              slots:
+                hitComponent:
+                  - type: algolia-hit
+            - type: algolia-pagination
+              parameters:
+                paginationParams:
+                  type: algolia-components
+                  value:
+                    paginationProps:
+                      padding: 3
+                      showLast: true
+                      showNext: true
+                      showFirst: true
+                      showPrevious: true
+        parameters:
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName:
+                stalledSearchDelay: 200
+      - type: algolia-instantSearch
+        slots:
+          widgets:
+            - type: algolia-basicComponents
+              slots:
+                hitComponent:
+                  - type: algolia-hit
+              parameters:
+                searchBoxParams:
+                  type: algolia-components
+                  value:
+                    searchBoxProps:
+                      placeholder: Search for example 2
+                      searchAsYouType: true
+                paginationParams:
+                  type: algolia-components
+                  value:
+                    paginationProps:
+                      padding: 3
+                      showLast: true
+                      showNext: true
+                      showFirst: true
+                      showPrevious: true
+                refinementListParams:
+                  type: algolia-components
+                  value:
+                    refinementListProps:
+                      limit: 10
+                      operator: and
+                      showMore: false
+                      attribute:
+                      searchable: false
+                      escapeFacetValues: true
+        parameters:
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName:
+                stalledSearchDelay: 200
+      - type: algolia-instantSearch
+        slots:
+          widgets:
+            - type: algolia-searchBox
+              parameters:
+                searchBoxParams:
+                  type: algolia-components
+                  value:
+                    searchBoxProps:
+                      placeholder: Search for example 3
+                      searchAsYouType: true
+            - type: algolia-index
+              slots:
+                widgets:
+                  - type: algolia-refinementList
+                    parameters:
+                      refinementListParams:
+                        type: algolia-components
+                        value:
+                          refinementListProps:
+                            limit: 10
+                            operator: and
+                            showMore: false
+                            attribute:
+                            searchable: false
+                            allowedIndex:
+                            escapeFacetValues: true
+                  - type: algolia-hits
+                    slots:
+                      hitComponent:
+                        - type: algolia-hit
+                  - type: algolia-pagination
+                    parameters:
+                      paginationParams:
+                        type: algolia-components
+                        value:
+                          paginationProps:
+                            padding: 3
+                            showLast: true
+                            showNext: true
+                            showFirst: true
+                            showPrevious: true
+              parameters:
+                indexParams:
+                  type: algolia-components
+                  value:
+                    indexProps: {}
+            - type: algolia-index
+              slots:
+                widgets:
+                  - type: algolia-refinementList
+                    parameters:
+                      refinementListParams:
+                        type: algolia-components
+                        value:
+                          refinementListProps:
+                            limit: 10
+                            operator: and
+                            showMore: false
+                            attribute:
+                            searchable: false
+                            allowedIndex:
+                            escapeFacetValues: true
+                  - type: algolia-hits
+                    slots:
+                      hitComponent:
+                        - type: algolia-hit
+                  - type: algolia-pagination
+                    parameters:
+                      paginationParams:
+                        type: algolia-components
+                        value:
+                          paginationProps:
+                            padding: 3
+                            showLast: true
+                            showNext: true
+                            showFirst: true
+                            showPrevious: true
+              parameters:
+                indexParams:
+                  type: algolia-components
+                  value:
+                    indexProps:
+                      indexName:
+        parameters:
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName:
+                stalledSearchDelay: 200
+created: '2022-11-30T10:54:12.17879+00:00'
+modified: '2022-12-07T10:24:13.09158+00:00'
+pattern: false
