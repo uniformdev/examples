@@ -1,0 +1,21 @@
+id: algolia-hits
+name: Hits
+icon: play-list-search
+parameters:
+  - id: hitsParams
+    name: Hits Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Hits
+useTeamPermissions: true
+slots:
+  - id: hitComponent
+    name: hitComponent
+    maxComponents: 1
+    allowedComponents:
+      - algolia-hit
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2022-11-30T10:54:09.15133+00:00'
+updated: '2022-12-07T10:19:24.416605+00:00'

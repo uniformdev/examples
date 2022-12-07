@@ -1,0 +1,39 @@
+id: algolia-basicComponents
+name: Basic Components
+icon: template
+parameters:
+  - id: searchBoxParams
+    name: Search Box Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Search Box
+  - id: refinementListParams
+    name: Refinement List Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Refinement List
+  - id: hitsParams
+    name: Hits Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Hits
+  - id: paginationParams
+    name: Pagination Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Pagination
+useTeamPermissions: true
+slots:
+  - id: hitComponent
+    name: hitComponent
+    maxComponents: 1
+    allowedComponents:
+      - algolia-hit
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2022-11-30T10:54:10.297128+00:00'
+updated: '2022-12-07T10:23:58.058738+00:00'
