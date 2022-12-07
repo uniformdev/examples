@@ -1,0 +1,15 @@
+id: algolia-refinementList
+name: Refinement List
+icon: image-text
+parameters:
+  - id: refinementListParams
+    name: Refinement List Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Refinement List
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2022-11-30T10:54:10.321403+00:00'
+updated: '2022-12-06T14:38:39.208815+00:00'

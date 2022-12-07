@@ -1,0 +1,9 @@
+id: algolia-hit
+name: Hit
+icon: play-list-search
+parameters: []
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2022-12-07T10:18:02.203596+00:00'
+updated: '2022-12-07T10:19:08.532131+00:00'
