@@ -5,12 +5,12 @@ import resolveRenderer from "../lib/resolveRenderer";
 import LayoutCanvas from "../components/LayoutCanvas.vue";
 
 const slug = "/";
-const topic = content.find((e) => e.url == slug);
+const topic = content.find((e) => e.url == slug)!;
 
-const { $useComposition } = useNuxtApp();
-const { data: compositionData } = await $useComposition({ slug });
-
-const composition = await doEnhance(compositionData.value.composition);
+const { composition } = await useUniformComposition({
+  slug,
+  enhance: (composition) => doEnhance(composition),
+});
 </script>
 
 <template>

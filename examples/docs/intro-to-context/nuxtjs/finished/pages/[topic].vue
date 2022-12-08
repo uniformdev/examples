@@ -7,5 +7,5 @@ const topic = content.find((entry) => entry.id == route.params.topic);
 </script>
 
 <template>
-  <Layout :content="content" :fields="topic.fields" />
+  <Layout v-if="topic" :content="content" :fields="topic.fields" />
 </template>
