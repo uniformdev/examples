@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Uniform Context project for Nuxt 3 (no-uniform)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This project is part of the following tutorial: https://docs.uniform.app/tutorials/intro-to-context
 
 ## Setup
 
