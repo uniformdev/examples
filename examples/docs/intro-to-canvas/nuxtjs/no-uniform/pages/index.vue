@@ -2,7 +2,7 @@
 import content from "../content/content.json";
 
 const slug = "/";
-const topic = content.find((e) => e.url == slug);
+const topic = content.find((e) => e.url == slug)!;
 </script>
 
 <template>

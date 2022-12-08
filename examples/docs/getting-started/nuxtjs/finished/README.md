@@ -1,20 +1,31 @@
-# Nuxt 3 Minimal Starter
+# Uniform Getting Started project for Nuxt 3 (finished)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This project is part of the following tutorial: https://docs.uniform.app/tutorials/getting-started
 
 ## Setup
 
-Make sure to install the dependencies:
+### Add environment variables
+
+Add your project ID and API key to the `.env` file.
+
+### Install the dependencies
 
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
+```
 
-# pnpm
-pnpm install --shamefully-hoist
+### Populate your project
+
+Push the Canvas and Context content and configurations to your project:
+
+```bash
+npm run uniform:push
+```
+
+Publish the content
+
+```bash
+npm run uniform:publish
 ```
 
 ## Development Server

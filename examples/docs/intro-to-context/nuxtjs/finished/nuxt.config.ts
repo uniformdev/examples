@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from "nuxt";
 import { ManifestV2 } from "@uniformdev/context";
 import manifest from "./contextManifest.json";
 
