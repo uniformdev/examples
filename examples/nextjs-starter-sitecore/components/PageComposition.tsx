@@ -6,7 +6,7 @@ import {
   Composition,
   Slot,
   createApiEnhancer,
-  useCompositionInstance,
+  useContextualEditing,
 } from "@uniformdev/canvas-react";
 import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import Navigation, { NavLink } from "./Navigation";
@@ -16,15 +16,15 @@ import Footer from "./Footer";
 import "./canvasComponents";
 
 export default function PageComposition({
-  composition,
+  composition: initialCompositionValue,
   navLinks,
 }: {
   preview: boolean;
   composition: RootComponentInstance;
   navLinks: Array<NavLink>;
 }) {
-  const { composition: compositionInstance } = useCompositionInstance({
-    composition,
+  const { composition: compositionInstance } = useContextualEditing({
+    initialCompositionValue,
     enhance: createApiEnhancer({
       apiUrl: `/api/enhance`,
     }),
