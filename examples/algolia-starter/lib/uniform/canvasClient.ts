@@ -1,5 +1,12 @@
-import { CanvasClient, CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from '@uniformdev/canvas';
-import getConfig from 'next/config';
+import {
+  CanvasClient,
+  CANVAS_DRAFT_STATE,
+  CANVAS_PUBLISHED_STATE,
+} from "@uniformdev/canvas";
+import runEnhancers from "./enhancers";
+
+import getConfig from "next/config";
+import { GetStaticPropsContext } from "next";
 
 const {
   serverRuntimeConfig: { apiKey, apiHost, projectId },
@@ -11,10 +18,34 @@ export const canvasClient = new CanvasClient({
   projectId,
 });
 
-export async function getCompositionBySlug(slug: string, preview: boolean) {
+export const getState = (preview: boolean | undefined) =>
+  process.env.NODE_ENV === "development" || preview
+    ? CANVAS_DRAFT_STATE
+    : CANVAS_PUBLISHED_STATE;
+
+export async function getCompositionBySlug(
+  slug: string,
+  context: GetStaticPropsContext
+) {
   const { composition } = await canvasClient.getCompositionBySlug({
     slug,
-    state: process.env.NODE_ENV === 'development' || preview ? CANVAS_DRAFT_STATE : CANVAS_PUBLISHED_STATE,
+    state: getState(context.preview),
   });
+  await runEnhancers(composition, context);
   return composition;
 }
+
+export const getCompositionPaths = async () => {
+  const pages = await canvasClient.getCompositionList({
+    skipEnhance: true,
+    state: getState(undefined),
+  });
+
+  return pages.compositions
+    .filter((c) => c.composition._slug)
+    .map((c) =>
+      c.composition._slug?.startsWith("/")
+        ? `${c.composition._slug}`
+        : `/${c.composition._slug}`
+    );
+};
