@@ -18,9 +18,10 @@
     "react-instantsearch-hooks-web": "^6.32.0",
     "algoliasearch": "^4.14.2",
     "instantsearch.css": "^7.4.5",
-    "@uniformdev/canvas": "^17.1.0",
-    "@uniformdev/canvas-react": "^17.1.0",
-    "@uniformdev/cli": "^17.1.0",
+    "@uniformdev/canvas": "^17.7.0",
+    "@uniformdev/canvas-algolia": "17.1.1-alpha.27",
+    "@uniformdev/canvas-react": "^17.7.0",
+    "@uniformdev/cli": "^17.7.0",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
