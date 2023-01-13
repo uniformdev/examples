@@ -1,0 +1,16 @@
+id: visitorsFromSf
+name: Visitors from SF
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: ntl-city
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: San Francisco
+dur: p
+description: ''
+str: 50

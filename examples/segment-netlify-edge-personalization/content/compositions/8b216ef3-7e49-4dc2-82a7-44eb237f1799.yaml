@@ -1,0 +1,35 @@
+composition:
+  _name: For Marketers
+  _id: 8b216ef3-7e49-4dc2-82a7-44eb237f1799
+  _slug: /for-marketers
+  type: page
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: p
+          key: m
+          str: 50
+    metaTitle:
+      type: text
+      value: For Marketers
+  slots:
+    content:
+      - _id: 7f40baf9-bd61-4119-b456-50bc0f013896
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Marketer? Alrighty!
+          description:
+            type: text
+            value: >-
+              Now your visitor profile got +50 to the
+              <code>Persona:Marketer</code> enrichment score. 
+
+              <br />
+
+              Check Chrome extension for more info
+created: '2022-11-17T22:51:38.216231+00:00'
+modified: '2022-11-17T22:54:22.06061+00:00'
+pattern: false

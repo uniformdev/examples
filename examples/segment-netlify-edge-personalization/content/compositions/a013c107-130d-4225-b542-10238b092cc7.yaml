@@ -1,0 +1,35 @@
+composition:
+  _name: For Developers
+  _id: a013c107-130d-4225-b542-10238b092cc7
+  _slug: /for-developers
+  type: page
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: p
+          key: d
+          str: 50
+    metaTitle:
+      type: text
+      value: For Developers
+  slots:
+    content:
+      - _id: acda34f2-43d4-4103-aa88-b38e1a1493e1
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: OK, developer.
+          description:
+            type: text
+            value: >-
+              Now your visitor profile got +50 to the
+              <code>Persona:Developer</code> enrichment score. 
+
+              <br />
+
+              Check Chrome extension for more info
+created: '2022-11-17T22:50:21.282184+00:00'
+modified: '2022-11-17T22:54:07.743331+00:00'
+pattern: false
