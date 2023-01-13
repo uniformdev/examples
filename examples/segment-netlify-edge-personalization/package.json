@@ -1,0 +1,58 @@
+{
+  "name": "@uniformdev/nextjs-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-s download:manifest next:dev",
+    "next:dev": "next dev",
+    "build": "run-s copy:deno download:manifest next:build",
+    "next:build": "next build",
+    "download:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
+    "uniform:pull:signals": "uniform context signal pull ./content/signals",
+    "uniform:pull:quirks": "uniform context quirk pull ./content/quirks",
+    "uniform:pull:enrichments": "uniform context enrichment pull ./content/enrichments",
+    "uniform:pull:components": "uniform canvas component pull ./content/components",
+    "uniform:pull:compositions": "uniform canvas composition pull ./content/compositions",
+    "uniform:pull": "run-s uniform:pull:signals uniform:pull:quirks  uniform:pull:enrichments uniform:pull:components uniform:pull:compositions",
+    "uniform:push:signals": "uniform context signal push ./content/signals",
+    "uniform:push:quirks": "uniform context quirk push ./content/quirks",
+    "uniform:push:enrichments": "uniform context enrichment push ./content/enrichments",
+    "uniform:push:components": "uniform canvas component push ./content/components",
+    "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
+    "uniform:context:publish": "uniform context manifest publish",
+    "uniform:canvas:publish": "uniform canvas composition push ./content/compositions --state published",
+    "uniform:publish": "run-s uniform:context:publish uniform:canvas:publish",
+    "uniform:push": "run-s uniform:push:signals uniform:push:quirks uniform:push:enrichments uniform:push:components uniform:push:compositions uniform:context:publish uniform:canvas:publish",
+    "start": "next start",
+    "start:stackblitz": "npm install && next dev",
+    "copy:deno": "shx cp node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/uniform",
+    "postinstall": "run-s copy:deno"
+  },
+  "dependencies": {
+    "@segment/snippet": "^4.15.3",
+    "@uniformdev/canvas": "^17.7.0",
+    "@uniformdev/canvas-next": "^17.7.0",
+    "@uniformdev/canvas-react": "^17.7.0",
+    "@uniformdev/cli": "^17.7.0",
+    "@uniformdev/context": "^17.7.0",
+    "@uniformdev/context-devtools": "^17.7.0",
+    "@uniformdev/context-edge-netlify": "^17.7.0",
+    "@uniformdev/context-next": "^17.7.0",
+    "@uniformdev/context-react": "^17.7.0",
+    "next": "^13.1.2",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.2",
+    "@types/react": "^18.0.15",
+    "npm-run-all": "^4.1.5",
+    "shx": "^0.3.4",
+    "typescript": "^4.7.4"
+  },
+  "stackblitz": {
+    "startCommand": "npm run start:stackblitz",
+    "compileTrigger": "save"
+  }
+}
