@@ -2,7 +2,6 @@ import {
   CanvasClient,
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
-  CompositionListAPIResponse,
 } from "@uniformdev/canvas";
 import runEnhancers from "./enhancers";
 import getConfig from "next/config";
@@ -10,6 +9,11 @@ import getConfig from "next/config";
 const {
   serverRuntimeConfig: { apiKey, apiHost, projectId },
 } = getConfig();
+
+export const getState = (preview: boolean | undefined) =>
+  process.env.NODE_ENV === "development" || preview
+    ? CANVAS_DRAFT_STATE
+    : CANVAS_PUBLISHED_STATE;
 
 export const canvasClient = new CanvasClient({
   apiKey,
@@ -20,24 +24,17 @@ export const canvasClient = new CanvasClient({
 export async function getCompositionBySlug(slug: string, preview: boolean) {
   const { composition } = await canvasClient.getCompositionBySlug({
     slug,
-    state:
-      process.env.NODE_ENV === "development" || preview
-        ? CANVAS_DRAFT_STATE
-        : CANVAS_PUBLISHED_STATE,
+    state: getState(preview),
   });
   await runEnhancers(composition);
   return composition;
 }
 
 export async function getCompositionsForNavigation(preview: boolean) {
-  const response: CompositionListAPIResponse =
-    await canvasClient.getCompositionList({
-      skipEnhance: true,
-      state:
-        process.env.NODE_ENV === "development" || preview
-          ? CANVAS_DRAFT_STATE
-          : CANVAS_PUBLISHED_STATE,
-    });
+  const response = await canvasClient.getCompositionList({
+    skipEnhance: true,
+    state: getState(preview),
+  });
   return response.compositions
     .filter((c) => c.composition._slug)
     .map((c) => {
@@ -47,3 +44,18 @@ export async function getCompositionsForNavigation(preview: boolean) {
       };
     });
 }
+
+export const getCompositionPaths = async () => {
+  const pages = await canvasClient.getCompositionList({
+    skipEnhance: true,
+    state: getState(undefined),
+  });
+
+  return pages.compositions
+    .filter((c) => c.composition._slug)
+    .map((c) =>
+      c.composition._slug?.startsWith("/")
+        ? `${c.composition._slug}`
+        : `/${c.composition._slug}`
+    );
+};
