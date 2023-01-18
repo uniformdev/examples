@@ -2,62 +2,62 @@ import React, { ComponentType } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import getConfig from "next/config";
-import { ComponentInstance, RootComponentInstance } from "@uniformdev/canvas";
+import { RootComponentInstance } from "@uniformdev/canvas";
 import {
-  ComponentProps,
   Composition,
-  DefaultNotImplementedComponent,
   Slot,
+  useContextualEditing,
+  createApiEnhancer,
 } from "@uniformdev/canvas-react";
 import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
-import Hero from "./Hero";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
+
+// IMPORTANT: importing all components registered in Canvas
+import "./canvasComponents";
 
 const PreviewDevPanel = dynamic(
   () => import("lib/uniform/preview/PreviewDevPanel")
 );
 
-// register your new components here
-export function componentResolver(
-  component: ComponentInstance
-): ComponentType<ComponentProps<any>> | null {
-  if (component.type == "hero") {
-    return Hero;
-  }
-  return DefaultNotImplementedComponent;
-}
+const { serverRuntimeConfig } = getConfig();
+const { projectId, apiKey, apiHost } = serverRuntimeConfig;
 
 export default function PageComposition({
   preview,
-  composition,
+  composition: initialCompositionValue,
   navLinks,
 }: {
   preview: boolean;
   composition: RootComponentInstance;
   navLinks: Array<NavLink>;
 }) {
-  const [showPreviewToggle, setShowPreviewToggle] = React.useState<boolean>(false);
-  const { serverRuntimeConfig } = getConfig();
-  const { projectId, apiKey, apiHost } = serverRuntimeConfig;
-  const { metaTitle } = composition.parameters || {};
-  const title = metaTitle?.value as string;
+  const [showPreviewToggle, setShowPreviewToggle] =
+    React.useState<boolean>(false);
+
+  const { composition } = useContextualEditing({
+    initialCompositionValue,
+    enhance: createApiEnhancer({
+      apiUrl: "/api/preview",
+    }),
+  });
 
   React.useEffect(() => {
     // Stackblitz does not support some crypto api inside webcontainers which are required for preview api.
-    if (!window.location.host.includes('.webcontainer.io')) {
+    if (!window.location.host.includes(".webcontainer.io")) {
       setShowPreviewToggle(true);
     }
-  }, [])
+  }, []);
 
+  const { metaTitle } = composition?.parameters || {};
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{metaTitle?.value as string}</title>
       </Head>
       <>
         <Navigation navLinks={navLinks} />
-        <Composition data={composition} resolveRenderer={componentResolver}>
+        <Composition data={composition}>
           <Slot name="content" />
         </Composition>
         <ToggleEmbeddedContextDevTools
@@ -69,7 +69,9 @@ export default function PageComposition({
         />
         <Footer />
       </>
-      {showPreviewToggle && <PreviewDevPanel preview={preview} compositionId={composition._id} />}
+      {showPreviewToggle && (
+        <PreviewDevPanel preview={preview} compositionId={composition._id} />
+      )}
     </>
   );
 }
