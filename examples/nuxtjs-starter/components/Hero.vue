@@ -10,8 +10,10 @@ interface Props {
 defineProps<Props>();
 </script>
 <template>
-  <h1 class="title">{{ title }}</h1>
-  <div class="description" v-html="description" />
+  <div>
+    <h1 class="title">{{ title }}</h1>
+    <div class="description" v-html="description" />
+  </div>
 </template>
 
 <style scoped>

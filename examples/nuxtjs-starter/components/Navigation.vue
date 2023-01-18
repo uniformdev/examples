@@ -8,17 +8,12 @@ export interface Props {
 }
 
 const props = defineProps<Props>();
-
-const isNoteVisible = props.navLinks.length <= 1;
 </script>
 
 <template>
   <div class="navigation">
     <span v-for="({ url, title }, i) in navLinks">
       <NuxtLink :key="url" :href="url">{{ title }}</NuxtLink>
-    </span>
-    <span v-if="isNoteVisible" class="note">
-      (create a new composition to see a link to it here...)
     </span>
   </div>
 </template>
