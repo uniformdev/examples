@@ -1,0 +1,23 @@
+{
+  "type": "playground",
+  "displayName": "Mesh Playground",
+  "category": "unknown",
+  "locations": {
+    "install": {
+      "description": [
+        "It's an integration from mesh",
+        "This text comes from the custom app manifest JSON."
+      ],
+      "informationUrl": "https://uniform.dev/just-an-example-that-does-not-exist-hows-the-404-page"
+    },
+    "settings": {
+      "url": "/",
+      "locations": {
+        "settingsDialog": {
+          "url": "/"
+        }
+      }
+    }
+  },
+  "baseLocationUrl": "http://localhost:9000"
+}
