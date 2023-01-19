@@ -207,7 +207,7 @@ function IntegrationSettings() {
 
   const { value, setValue } = useMeshLocation<'settings', { setting: string }>('settings');
 
-  const [settingValue, setSettingValue] = useState(value.setting);
+  const [settingValue, setSettingValue] = useState(value?.setting ?? '');
 
   return (
     <div>
