@@ -26,7 +26,7 @@ export async function getCompositionBySlug(slug: string, preview: boolean) {
     slug,
     state: getState(preview),
   });
-  await runEnhancers(composition);
+  await runEnhancers(composition, { preview });
   return composition;
 }
 
