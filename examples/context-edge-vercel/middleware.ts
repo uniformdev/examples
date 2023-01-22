@@ -10,11 +10,27 @@ import manifest from "./lib/uniform/context-manifest.json";
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const data = request.headers.get("x-nextjs-data");
+  const previewDataCookie = request.cookies.get("__next_preview_data");
+
+  // add more ignore path filters so you do not process more requests than needed
   if (
     path.startsWith("/images") ||
     path.startsWith("/_next") ||
+    path.startsWith("/api/enhance") ||
+    path.startsWith("/api/revalidate") ||
+    Boolean(previewDataCookie) ||
     Boolean(data)
   ) {
+    return NextResponse.next();
+  }
+
+  const {
+    nextUrl: { search },
+  } = request;
+  const urlSearchParams = new URLSearchParams(search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  // disabling middleware in preview
+  if (params.is_incontext_editing_mode === "true") {
     return NextResponse.next();
   }
 
