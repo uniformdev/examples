@@ -1,23 +1,35 @@
 {
-  "type": "playground",
-  "displayName": "Mesh Playground",
-  "category": "unknown",
+  "type": "integration-hello-world",
+  "displayName": "Uniform Integration Hello World",
+  "baseLocationUrl": "http://localhost:9000",
   "locations": {
-    "install": {
-      "description": [
-        "It's an integration from mesh",
-        "This text comes from the custom app manifest JSON."
-      ],
-      "informationUrl": "https://uniform.dev/just-an-example-that-does-not-exist-hows-the-404-page"
+    "dataConnectors": [
+      {
+        "type": "playground",
+        "displayName": "Integration Playground",
+        "dataArchetypes": {
+          "default": {
+            "displayName": "Integration Playground",
+            "dataEditorUrl": "/",
+            "typeEditorUrl": "/"
+          }
+        },
+        "dataSourceEditorUrl": "/"
+      }
+    ],
+    "canvas": {
+      "parameterTypes": [
+        {
+          "type": "playground",
+          "editorUrl": "/",
+          "displayName": "Integration Playground",
+          "configureUrl": "/",
+          "renderableInPropertyPanel": true
+        }
+      ]
     },
     "settings": {
-      "url": "/",
-      "locations": {
-        "settingsDialog": {
-          "url": "/"
-        }
-      }
+      "url": "/"
     }
-  },
-  "baseLocationUrl": "http://localhost:9000"
+  }
 }

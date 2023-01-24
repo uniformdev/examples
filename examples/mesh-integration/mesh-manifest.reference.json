@@ -1,0 +1,78 @@
+{
+  "type": "integration-reference",
+  "displayName": "Integration Reference",
+  "category": "analytics",
+  "baseLocationUrl": "http://localhost:9000",
+  "locations": {
+    "install": {
+      "description": [
+        "Describe your mesh integration",
+        "Each array element will create a new paragraph on the install dialog.",
+        "<html> is not allowed."
+      ],
+      "informationUrl": "https://yoursite.com/info-about-this-mesh-app"
+    },
+
+    "dataConnectors": [
+      {
+        "type": "reference",
+        "badgeIconUrl": "https://uniform.app/loading.gif",
+        "displayName": "Integration Reference",
+        "dataArchetypes": {
+          "default": {
+            "displayName": "Reference Archetype",
+            "dataEditorUrl": "/reference/data-resource",
+            "typeEditorUrl": "/reference/data-type",
+            "typeEditorLocations": {
+              "teDialog": {
+                "url": "../named-dialog"
+              }
+            },
+            "dataEditorUrlLocations": {
+              "deDialog": {
+                "url": "../named-dialog"
+              }
+            }
+          }
+        },
+        "dataSourceEditorUrl": "/reference/data-source",
+        "dataSourceEditorLocations": {
+          "dceDialog": {
+            "url": "../named-dialog"
+          }
+        }
+      }
+    ],
+
+    "canvas": {
+      "parameterTypes": [
+        {
+          "type": "reference",
+          "editorUrl": "/reference/parameter-type",
+          "displayName": "Reference Parameter",
+          "editorLocations": {
+            "ptEdit": {
+              "url": "../named-dialog"
+            }
+          },
+          "configureUrl": "/reference/parameter-type-config",
+          "configurationLocations": {
+            "ptConfigure": {
+              "url": "../named-dialog"
+            }
+          },
+          "renderableInPropertyPanel": true
+        }
+      ]
+    },
+
+    "settings": {
+      "url": "/reference/settings",
+      "locations": {
+        "settingsDialog": {
+          "url": "../named-dialog"
+        }
+      }
+    }
+  }
+}
