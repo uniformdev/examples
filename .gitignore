@@ -7,3 +7,5 @@ transpiled
 
 # Local Netlify folder
 .netlify
+
+.next
