@@ -8,8 +8,8 @@
     "build": "echo \"No build script setup\""
   },
   "dependencies": {
-    "@uniformdev/canvas": "16.2.0",
-    "@uniformdev/canvas-react": "16.2.0",
+    "@uniformdev/canvas": "16.2.4",
+    "@uniformdev/canvas-react": "16.2.4",
     "esm": "^3.2.25",
     "node-fetch": "^2.6.1"
   },
