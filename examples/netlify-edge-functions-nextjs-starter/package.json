@@ -28,7 +28,7 @@
     "@uniformdev/cli": "^18.0.0",
     "@uniformdev/context": "^18.0.0",
     "@uniformdev/context-devtools": "^18.0.0",
-    "@uniformdev/context-edge-netlify": "^17.5.0",
+    "@uniformdev/context-edge-netlify": "^17.7.0",
     "@uniformdev/context-next": "^18.0.0",
     "@uniformdev/context-react": "^18.0.0",
     "next": "^13.0.4",
