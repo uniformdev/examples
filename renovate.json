@@ -14,12 +14,21 @@
   ],
   "rangeStrategy": "bump",
   "includePaths": [
+    "examples/context-edge-akamai/**",
+    "examples/context-edge-cloudflare-worker/**",
+    "examples/context-edge-netlify/**",
+    "examples/context-edge-vercel/**",
     "examples/docs/getting-started/**",
     "examples/docs/intro-to-canvas/**",
     "examples/docs/intro-to-context/**",
+    "examples/gatsby/**",
+    "examples/gatsby5/**",
+    "examples/mesh-integration/**",
     "examples/netlify-edge-functions-nextjs-starter/**",
+    "examples/nextjs-starter-sitecore/**",
     "examples/nextjs-starter/**",
     "examples/nuxtjs-starter/**",
+    "examples/segment-netlify-edge-personalization/**",
     "examples/yext-nextjs/**"
   ],
   "ignorePaths": [
