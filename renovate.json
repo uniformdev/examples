@@ -39,5 +39,8 @@
     "**/test/**",
     "**/tests/**",
     "**/__fixtures__/**"
-  ]
+  ],
+  "encrypted": {
+    "npmToken": "wcFMA/xDdHCJBTolAQ//di37lepyq7o0hNSP7FBGzsQPkO40rZVsz1AKfp3+yZYW2/HYAbY+LIvH8NaEt/FwmA9f4+wELIKsS+9i1CxUoEInHPK/K5G1f0nGPGtIvoosBMg25tCwDG1urZnWZLtizg58I3G2lb/SQ4od6wcqr93KofbvU8TCL4lr2FAy3BwblRwddWp7wkDIxPb263bPl5SXD0KfoEVhjMXNsmlbJt9J2o4ZmCiqsuFlc2zr5wPWgAGIDI3fqX5cgDEdcViTA5g6v4g4/aPrmWc4pqtwWupzZansb0AfLSA/0B630TOgU8V6BVDeOY0wyPH+T2xnNFEW7c3HfLlyJH/Tv/QP/QAClOft8ZLqKzHQmfQ/VnCxRwi9vkDzdRamsLBtqcZ21RjCG0RqtBGdNbvJMo49jvJq0XNN6FiiCq/hLxsEsJJgZv1LP/KxxdQh41l8T6O9MKlhqO0LGIsdPHDIWnmw+Jgz6DA56k0SbLSqoB8uxNUW7uFb1Wqod8CyZ/vpNarowGor07u/WERjv2ZiiVS2FH22pXUbrWMj8B9nAOW7BhBMs7bA52KfTKvDBXJh1/8VuN762aFaaYP5A4BJkW8jofbha6j4+xRncytfxM4+iZs3sdqjjEy46Zvg5R7NYYejlZcygLazcyGzbLh6qGutB9xNxn4jpFgbEOnIBkKouJ3SgQF2bwD0WQ/jyFoE/4b1U9dFolK7GBCGm6i5klVwacBeGYtHHIXh6xodJG9avnsYeLUso+9qkus0WWUWnFgouS+cywTfNHoEz9h2MkeWAxATu/bUdz7Y3dOOtcmmsPQODUZstPXEddZRqqCzIV/Do5+Vk+dB4SdaMhcVzZoirfmP5g"
+  }
 }
