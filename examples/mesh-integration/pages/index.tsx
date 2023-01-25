@@ -40,7 +40,7 @@ const HelloWorldMeshApp: NextPage = () => {
               buttonType="secondaryInvert"
               onClick={() => console.log(`${type} location metadata`, metadata)}
             >
-              Log to console
+              Log to browser console
             </Button>
           </td>
         </tr>
