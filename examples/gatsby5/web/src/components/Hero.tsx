@@ -1,4 +1,4 @@
-import { Slot } from "@uniformdev/canvas-react";
+import { UniformSlot } from "@uniformdev/canvas-react";
 import * as React from "react";
 type HeroProps = {
   title: string;
@@ -14,7 +14,7 @@ export const Hero = ({ title, description, image, children }: HeroProps) => {
         <h1 className="text-4xl mb-5">{title}</h1>
         <p className="mb-5">{description}</p>
         <div>
-          <Slot name="ctas" />
+          <UniformSlot name="ctas" />
         </div>
       </div>
       <div>

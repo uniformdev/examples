@@ -5,9 +5,9 @@ import getConfig from "next/config";
 import { ComponentInstance, RootComponentInstance } from "@uniformdev/canvas";
 import {
   ComponentProps,
-  Composition,
+  UniformComposition,
   DefaultNotImplementedComponent,
-  Slot,
+  UniformSlot,
 } from "@uniformdev/canvas-react";
 import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import Hero from "./Hero";
@@ -66,9 +66,12 @@ export default function PageComposition({
       </Head>
       <>
         <Navigation navLinks={navLinks} />
-        <Composition data={composition} resolveRenderer={componentResolver}>
-          <Slot name="content" />
-        </Composition>
+        <UniformComposition
+          data={composition}
+          resolveRenderer={componentResolver}
+        >
+          <UniformSlot name="content" />
+        </UniformComposition>
         <ToggleEmbeddedContextDevTools
           initialSettings={{
             apiHost: apiHost,

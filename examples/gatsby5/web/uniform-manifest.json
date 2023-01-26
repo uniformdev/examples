@@ -1,17 +1,8 @@
 {
   "project": {
     "pz": {
-      "agg": {
-        "driver": {
-          "inputs": [
-            {
-              "dim": "driverCampaign"
-            }
-          ]
-        }
-      },
       "sig": {
-        "driverCampaign": {
+        "architecturePageView": {
           "str": 50,
           "cap": 100,
           "dur": "p",
@@ -20,13 +11,12 @@
             "type": "G",
             "clauses": [
               {
-                "type": "QS",
-                "match": {
+                "path": {
                   "cs": false,
                   "op": "=",
-                  "rhs": "driverlaunch"
+                  "rhs": "/architecture"
                 },
-                "queryName": "utm_campaign"
+                "type": "PV"
               }
             ]
           }

@@ -10,7 +10,7 @@ defineProps<{ title: string }>();
       <Title>{{ title }}</Title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <SlotContent name="body" />
+    <UniformSlot name="body" />
     <Footer />
   </div>
 </template>
