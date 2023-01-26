@@ -4,10 +4,10 @@ import dynamic from "next/dynamic";
 import getConfig from "next/config";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import {
-  Composition,
-  Slot,
-  useContextualEditing,
-  createApiEnhancer,
+  UniformComposition,
+  UniformSlot,
+  useUniformContextualEditing,
+  createUniformApiEnhancer,
 } from "@uniformdev/canvas-react";
 import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import Navigation, { NavLink } from "./Navigation";
@@ -35,9 +35,9 @@ export default function PageComposition({
   const [showPreviewToggle, setShowPreviewToggle] =
     React.useState<boolean>(false);
 
-  const { composition } = useContextualEditing({
+  const { composition } = useUniformContextualEditing({
     initialCompositionValue,
-    enhance: createApiEnhancer({
+    enhance: createUniformApiEnhancer({
       apiUrl: "/api/preview",
     }),
   });
@@ -57,9 +57,9 @@ export default function PageComposition({
       </Head>
       <>
         <Navigation navLinks={navLinks} />
-        <Composition data={composition}>
-          <Slot name="content" />
-        </Composition>
+        <UniformComposition data={composition}>
+          <UniformSlot name="content" />
+        </UniformComposition>
         <ToggleEmbeddedContextDevTools
           initialSettings={{
             apiHost: apiHost,

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "run-s download:manifest next:dev",
-    "next:dev": "next dev",
+    "next:dev": "next dev --port 3001",
     "build": "run-s download:manifest next:build",
     "next:build": "next build",
     "download:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
@@ -21,14 +21,14 @@
     "start:stackblitz": "npm install && next dev"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^18.0.0",
-    "@uniformdev/canvas-react": "^18.0.0",
-    "@uniformdev/canvas-next": "^18.0.0",
-    "@uniformdev/cli": "^18.0.0",
-    "@uniformdev/context": "^18.0.0",
-    "@uniformdev/context-devtools": "^18.0.0",
-    "@uniformdev/context-next": "^18.0.0",
-    "@uniformdev/context-react": "^18.0.0",
+    "@uniformdev/canvas": "18.2.0",
+    "@uniformdev/canvas-react": "18.2.0",
+    "@uniformdev/canvas-next": "18.2.0",
+    "@uniformdev/cli": "18.2.0",
+    "@uniformdev/context": "18.2.0",
+    "@uniformdev/context-devtools": "18.2.0",
+    "@uniformdev/context-next": "18.2.0",
+    "@uniformdev/context-react": "18.2.0",
     "next": "^13.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
