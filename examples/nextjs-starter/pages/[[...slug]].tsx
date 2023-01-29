@@ -1,12 +1,26 @@
 import { GetStaticPropsContext } from "next";
-import PageComposition from "@/components/PageComposition";
+import PageComposition, {
+  PageCompositionProps,
+} from "@/components/PageComposition";
 import {
   getCompositionBySlug,
   getCompositionPaths,
   getCompositionsForNavigation,
 } from "lib/uniform/canvasClient";
 
-const CanvasPage = (props) => PageComposition(props);
+const CanvasPage = ({
+  composition,
+  ...props
+}: Omit<PageCompositionProps, "composition"> & {
+  composition?: PageCompositionProps["composition"];
+}) => {
+  if (composition) {
+    return <PageComposition {...props} composition={composition} />;
+  }
+
+  // TODO: add loading indicator
+  return null;
+};
 
 export default CanvasPage;
 
