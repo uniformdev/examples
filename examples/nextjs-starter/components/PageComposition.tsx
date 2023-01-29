@@ -23,15 +23,17 @@ const PreviewDevPanel = dynamic(
 const { serverRuntimeConfig } = getConfig();
 const { projectId, apiKey, apiHost } = serverRuntimeConfig;
 
+export interface PageCompositionProps {
+  preview: boolean;
+  composition: RootComponentInstance;
+  navLinks: Array<NavLink>;
+}
+
 export default function PageComposition({
   preview,
   composition: initialCompositionValue,
   navLinks,
-}: {
-  preview: boolean;
-  composition: RootComponentInstance;
-  navLinks: Array<NavLink>;
-}) {
+}: PageCompositionProps) {
   const [showPreviewToggle, setShowPreviewToggle] =
     React.useState<boolean>(false);
 
