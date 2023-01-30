@@ -1,4 +1,4 @@
-import { Button, useMeshLocation, useUniformMeshSdk } from '@uniformdev/mesh-sdk-react';
+import { Button, Heading, useMeshLocation, useUniformMeshSdk } from '@uniformdev/mesh-sdk-react';
 import { useState } from 'react';
 
 export function HowToUseDialogs({ namedDialogName }: { namedDialogName: string }) {
@@ -9,9 +9,8 @@ export function HowToUseDialogs({ namedDialogName }: { namedDialogName: string }
 
   return (
     <div>
-      <p>
-        <strong>Dialog Demo</strong>
-      </p>
+      <Heading level={4}>Dialog Example</Heading>
+
       <div>
         {location.dialogContext ? (
           `Currently in a dialog, hiding dialog demo options (dialog id: ${location.dialogContext.dialogId}). NOTE: if used in a dialog, the current location must call dialogContext.returnDialogValue() once instead of binding reactively to setValue(). If you type in the text box above it will dismiss after one character is typed due to this limitation.`

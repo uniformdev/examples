@@ -1,4 +1,4 @@
-import { Button, useMeshLocation } from '@uniformdev/mesh-sdk-react';
+import { Button, Heading, useMeshLocation } from '@uniformdev/mesh-sdk-react';
 
 export function HowToUseValidation() {
   const location = useMeshLocation();
@@ -9,9 +9,8 @@ export function HowToUseValidation() {
 
   return (
     <div>
-      <p>
-        <strong>Validation Demo</strong>
-      </p>
+      <Heading level={4}>Validation Example</Heading>
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
         <Button
           onClick={async () => {

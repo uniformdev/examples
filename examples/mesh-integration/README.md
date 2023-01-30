@@ -16,4 +16,6 @@ This is an example of a Uniform Mesh Integration application that extends the Un
 
 ## Advanced Usage
 
-The `mesh-manifest-reference.json` file shows the full configuration possible in the integration manifest, and `/pages/reference` has commented examples of more serious versions of each location.
+This project also contains reference material showing the full configurations and patterns possible with integrations. Refer to `mesh-manifest.reference.json` and `/pages/reference`, which provides a good starting point to copy from when implementing new locations.
+
+To activate all reference locations in a 'reference integration', copy the contents of `mesh-manifest-reference.json` into an integration definition on your Uniform Team, under Settings -> Custom Integrations. This manifest file shows the full configuration possible in the integration manifest, and wires up the reference locations in `/pages/reference` to illustrate more advanced usage.

@@ -1,13 +1,13 @@
 import {
+  Callout,
   createLocationValidator,
   DataSourceEditor,
-  RequestUrl,
-  RequestUrlInput,
   useMeshLocation,
-  useRequest,
 } from '@uniformdev/mesh-sdk-react';
 import type { NextPage } from 'next';
+import { useEffect } from 'react';
 
+import { HowToEditRequests } from '../../reference-lib/HowToEditRequests';
 import { HowToUseDialogs } from '../../reference-lib/HowToUseDialogs';
 
 /*
@@ -25,12 +25,24 @@ import { HowToUseDialogs } from '../../reference-lib/HowToUseDialogs';
 // when fetching data types, without seeing the secret values.
 
 const DataSource: NextPage = () => {
-  const { setValue, metadata } = useMeshLocation('dataSource');
+  const { setValue } = useMeshLocation('dataSource');
+
+  // In most cases some of the attributes of the location are not user-editable
+  // we can use an effect to ensure that those attributes are always set up correctly
+  useEffect(() => {
+    setValue((currentValue) => ({
+      newValue: { ...currentValue, baseUrl: 'https://pokeapi.co/api/v2' },
+    }));
+  }, [setValue]);
 
   // to perform custom validation, one can intercept setValue calls
   const setValidatedValue = createLocationValidator(setValue, (newValue, currentResult) => {
     if (newValue.baseUrl.startsWith('ftp://')) {
-      return { isValid: false, validationMessage: 'Its not 1996.' };
+      return {
+        isValid: false,
+        validationMessage:
+          'createLocationValidator example: ftp protocol is not allowed. It is not 1996 any more.',
+      };
     }
 
     return currentResult ?? { isValid: true };
@@ -39,13 +51,13 @@ const DataSource: NextPage = () => {
   return (
     <DataSourceEditor onChange={setValidatedValue}>
       <div>
-        <p>Data Source Base URL (pid: {metadata.projectId})</p>
-        <RequestUrlInput />
+        <Callout type="tip">
+          Dev tip: The URL is being set each time the editor loads with an effect, to simulate a UI where the
+          URL is fixed to a specific API and cannot be edited. Remove the effect code before changing the URL
+          below, or it will revert on each load.
+        </Callout>
 
-        <QueryStringParamEditor paramName="q" />
-
-        <p>Current full URL of data source</p>
-        <RequestUrl />
+        <HowToEditRequests />
 
         <HowToUseDialogs namedDialogName="dceDialog" />
       </div>
@@ -54,31 +66,3 @@ const DataSource: NextPage = () => {
 };
 
 export default DataSource;
-
-// planning to make this simpler
-function QueryStringParamEditor({ paramName }: { paramName: string }) {
-  const { request, dispatch } = useRequest();
-
-  // we could use some helpers so we don't have to also find array indices...
-  // useQueryString? useHeader? (for the common single key use-case, not for multi-valued)
-  const paramIndex = request.parameters.findIndex((f) => f.key === paramName);
-
-  return (
-    <div>
-      <label htmlFor="qs">Text box sets query string parameter (q)</label>
-      <br />
-      <input
-        type="text"
-        id="qs"
-        value={request.parameters[paramIndex]?.value ?? ''}
-        onChange={(e) =>
-          dispatch({
-            type: 'updateParameter',
-            parameter: { key: paramName, value: e.currentTarget.value },
-            index: paramIndex >= 0 ? paramIndex : undefined,
-          })
-        }
-      />
-    </div>
-  );
-}

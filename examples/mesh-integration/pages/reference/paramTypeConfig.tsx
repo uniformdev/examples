@@ -10,8 +10,9 @@ const ParamTypeConfig: NextPage = () => {
 
   return (
     <div>
-      <p>Param type config (pid: {metadata.projectId})</p>
+      <p>Parameter type configuration location (pid: {metadata.projectId})</p>
       <Input
+        label="Example of setting a parameter configuration key"
         type="text"
         value={value?.config ?? ''}
         onChange={(e) => setValue((previous) => ({ newValue: { ...previous, config: e.target.value } }))}

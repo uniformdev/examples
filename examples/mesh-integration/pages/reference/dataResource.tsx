@@ -6,6 +6,7 @@ import {
 } from '@uniformdev/mesh-sdk-react';
 import type { NextPage } from 'next';
 
+import { HowToFetchData } from '../../reference-lib/HowToFetchData';
 import { HowToUseDialogs } from '../../reference-lib/HowToUseDialogs';
 import { HowToUseValidation } from '../../reference-lib/HowToUseValidation';
 
@@ -27,14 +28,15 @@ const DataResourceHelloWorld: NextPage = () => {
       <DataResourceVariablesList setVariables={setValue} />
       <HowToUseDialogs namedDialogName="deDialog" />
       <HowToUseValidation />
+      <HowToFetchData />
     </div>
   );
 };
 
-// default vars vs custom
-// custom vartype editors
-// fetching data types
-// readonly
+/**
+ * Example showing how to write declarative validation.
+ * This works well with libraries such as `zod`.
+ */
 const DataResourceCustomValidation: NextPage = () => {
   const { setValue } = useMeshLocation('dataResource');
 
@@ -54,6 +56,12 @@ const DataResourceCustomValidation: NextPage = () => {
   );
 };
 
+/**
+ * Example showing how to use the standard variables list component,
+ * but render something custom for specific types of variables.
+ *
+ * The data source or data type editor would set the type of the variable.
+ */
 const DataResourceTypeBasedVariables: NextPage = () => {
   const { setValue } = useMeshLocation('dataResource');
 
@@ -76,6 +84,7 @@ const DataResourceTypeBasedVariables: NextPage = () => {
   );
 };
 
+/** Example showing how to access and render variables without using the DataResourceVariablesList component */
 const DataResourceCustom: NextPage = () => {
   const { value, metadata } = useMeshLocation('dataResource');
 
