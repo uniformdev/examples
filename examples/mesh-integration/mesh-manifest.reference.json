@@ -21,24 +21,24 @@
         "dataArchetypes": {
           "default": {
             "displayName": "Reference Archetype",
-            "dataEditorUrl": "/reference/data-resource",
-            "typeEditorUrl": "/reference/data-type",
+            "dataEditorUrl": "/reference/dataResource",
+            "typeEditorUrl": "/reference/dataType",
             "typeEditorLocations": {
               "teDialog": {
-                "url": "../named-dialog"
+                "url": "../namedDialog"
               }
             },
             "dataEditorUrlLocations": {
               "deDialog": {
-                "url": "../named-dialog"
+                "url": "../namedDialog"
               }
             }
           }
         },
-        "dataSourceEditorUrl": "/reference/data-source",
+        "dataSourceEditorUrl": "/reference/dataSource",
         "dataSourceEditorLocations": {
           "dceDialog": {
-            "url": "../named-dialog"
+            "url": "../namedDialog"
           }
         }
       }
@@ -48,17 +48,17 @@
       "parameterTypes": [
         {
           "type": "reference",
-          "editorUrl": "/reference/parameter-type",
+          "editorUrl": "/reference/paramType",
           "displayName": "Reference Parameter",
           "editorLocations": {
             "ptEdit": {
-              "url": "../named-dialog"
+              "url": "../namedDialog"
             }
           },
-          "configureUrl": "/reference/parameter-type-config",
+          "configureUrl": "/reference/paramTypeConfig",
           "configurationLocations": {
             "ptConfigure": {
-              "url": "../named-dialog"
+              "url": "../namedDialog"
             }
           },
           "renderableInPropertyPanel": true
@@ -70,7 +70,7 @@
       "url": "/reference/settings",
       "locations": {
         "settingsDialog": {
-          "url": "../named-dialog"
+          "url": "../namedDialog"
         }
       }
     }

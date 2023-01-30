@@ -1,73 +1,80 @@
-/* eslint-disable no-console */
-import { Button, Heading, Label, Textarea, useMeshLocation } from '@uniformdev/mesh-sdk-react';
+import { Callout, Heading, useMeshLocation } from '@uniformdev/mesh-sdk-react';
 import type { NextPage } from 'next';
 
-/** A 'hello, world' location that lets you see its details and edit its value */
+/** A 'hello, world' location that lets you see location details */
 const HelloWorldMeshApp: NextPage = () => {
-  const { type, metadata, value, setValue } = useMeshLocation();
+  const { type, metadata, value } = useMeshLocation();
 
   // This component is an example of a _location_ for a Uniform Integration. Locations are rendered
-  // within the Uniform Dashboard and allowed to have limited access to read and update values
-  // related to their location. For example, a parameter type receives the value of the parameter,
+  // within the Uniform Dashboard and are provided with read-only location-specific metadata, and a value
+  // that the UI can read and write to. For example, a parameter type receives the value of the parameter,
   // and can request to set that value, send validation results, etc.
 
   // Each type of location has unique typings for its value and metadata.
-  // Check out the location examples in `/reference` for how to build more specific locations
-  // than this general location. Integrations need only implement the location(s) they wish to
-  // extend. All locations are optional in the manifest.
+  // Check out the location examples in `/reference` for how to build specific locations.
+  // Integrations need only implement the location(s) they wish to extend;
+  // all locations are optional in the manifest.
 
   return (
-    <div>
-      <Heading level={3}>Welcome to Uniform Integrations!</Heading>
+    <div className="helloWrapper">
+      <Heading level={4}>Welcome to Uniform Integrations!</Heading>
 
-      <table cellPadding={4}>
-        <tr>
-          <td>
-            <strong>Current location:</strong>
-          </td>
-          <td>{type}</td>
-        </tr>
+      <p>
+        This content is being rendered from within your Uniform Integration application in the{' '}
+        <code>{type}</code> location.
+      </p>
 
-        <tr>
-          <td>
-            <strong>Metadata</strong>
-            <br />
-            <small>Extra context data provided to the location</small>
-          </td>
-          <td>
-            <Button
-              type="button"
-              buttonType="secondaryInvert"
-              onClick={() => console.log(`${type} location metadata`, metadata)}
-            >
-              Log to browser console
-            </Button>
-          </td>
-        </tr>
+      <Callout type="tip">
+        This is a read-only preview. Want to make this location your own? Follow these steps:
+        <ol>
+          <li>
+            Copy <code>/pages/reference/{type}.tsx</code> to <code>/pages/{type}.tsx</code>
+          </li>
+          <li>
+            In <code>mesh-manifest.json</code>, change the URL for this location from <code>/</code> to{' '}
+            <code>/{type}</code>
+          </li>
+          <li>In the Uniform dashboard, go to your Team &rarr; Settings &rarr; Custom Integrations</li>
+          <li>
+            Edit your integration and paste in the updated <code>mesh-manifest.json</code>
+          </li>
+        </ol>
+      </Callout>
+
+      <table>
+        <tbody>
+          <tr>
+            <th>Current location:</th>
+            <td>
+              <pre>{type}</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <span>Location value:</span>
+              <small>Can be updated</small>
+              {/*
+                To update a location, use the `setValue` function exposed by useMeshLocation.
+                See the reference locations in pages/reference for examples of doing this.
+               */}
+            </th>
+            <td>
+              <pre>{JSON.stringify(value, null, 2) || 'no value yet'}</pre>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <span>Metadata:</span>
+              <small>Extra context data</small>
+            </th>
+            <td>
+              <pre>{JSON.stringify(metadata, null, 2) || 'no metadata is provided to this location'}</pre>
+            </td>
+          </tr>
+        </tbody>
       </table>
-
-      <div>
-        <Label htmlFor="locationValue">Location Value (live updates when valid JSON)</Label>
-        <Textarea
-          id="locationValue"
-          value={JSON.stringify(value, null, 2)}
-          onChange={(e) => {
-            try {
-              const newValue = JSON.parse(e.currentTarget.value);
-              console.log('Location value updated', newValue);
-              setValue((_previous) => {
-                // setValue's delegate is provided with the previous value to
-                // apply changes to, like React's setState. We ignore it here,
-                // since we are setting the entire value every time.
-                return newValue;
-              });
-            } catch {
-              // the textarea was not valid JSON, so skip updating
-              // in most cases, UI components will set parts of the value so this is not needed
-            }
-          }}
-        />
-      </div>
     </div>
   );
 };
