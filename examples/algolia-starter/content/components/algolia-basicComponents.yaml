@@ -26,6 +26,12 @@ parameters:
     helpText: ''
     typeConfig:
       selectedComponent: Pagination
+  - id: pageSize
+    name: Page Size
+    type: number
+    helpText: ''
+    typeConfig:
+      min: '1'
 useTeamPermissions: true
 slots:
   - id: hitComponent
@@ -35,5 +41,5 @@ slots:
       - algolia-hit
     inheritAllowedComponents: false
 canBeComposition: false
-created: '2022-11-30T10:54:10.297128+00:00'
-updated: '2022-12-07T10:23:58.058738+00:00'
+created: '2023-02-01T14:54:19.547028+00:00'
+updated: '2023-02-01T15:16:22.993748+00:00'
