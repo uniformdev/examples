@@ -1,7 +1,5 @@
 import React, { ComponentType } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import getConfig from "next/config";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import {
   Composition,
@@ -9,9 +7,8 @@ import {
   useContextualEditing,
   createApiEnhancer,
 } from "@uniformdev/canvas-react";
-
+import componentResolver from "@/components/componentResolver";
 import Footer from "./Footer";
-
 import "./components";
 
 export default function PageComposition({
@@ -40,7 +37,7 @@ export default function PageComposition({
         <title>{title}</title>
       </Head>
       <>
-        <Composition data={compositionInstance}>
+        <Composition data={compositionInstance} resolveRenderer={componentResolver}>
           <Slot name="content" />
         </Composition>
 
