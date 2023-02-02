@@ -1,6 +1,8 @@
 {
   "type": "integration-reference",
   "displayName": "Integration Reference",
+  "logoIconUrl": "https://uniform.app/loading.gif",
+  "badgeIconUrl": "https://uniform.app/loading.gif",
   "category": "analytics",
   "baseLocationUrl": "http://localhost:9000",
   "locations": {
