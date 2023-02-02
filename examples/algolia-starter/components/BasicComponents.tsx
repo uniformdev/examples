@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentProps } from '@uniformdev/canvas-react';
-import {Configure, Pagination, RefinementList, SearchBox} from 'react-instantsearch-hooks-web';
+import { Configure, Pagination, RefinementList, SearchBox } from 'react-instantsearch-hooks-web';
 import ErrorPropertyCallout from '@/components/ErrorPropertyCallout';
 import { renderHits } from "@/components/HitComponents";
 
