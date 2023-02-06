@@ -4,9 +4,9 @@ import dynamic from "next/dynamic";
 import { ComponentInstance, RootComponentInstance } from "@uniformdev/canvas";
 import {
   ComponentProps,
-  Composition,
+  UniformComposition,
   DefaultNotImplementedComponent,
-  Slot,
+  UniformSlot,
 } from "@uniformdev/canvas-react";
 import Hero from "./Hero";
 import Navigation, { NavLink } from "./Navigation";
@@ -48,9 +48,12 @@ export default function PageComposition({
       </Head>
       <>
         <Navigation navLinks={navLinks} />
-        <Composition data={composition} resolveRenderer={componentResolver}>
-          <Slot name="content" />
-        </Composition>
+        <UniformComposition
+          data={composition}
+          resolveRenderer={componentResolver}
+        >
+          <UniformSlot name="content" />
+        </UniformComposition>
         <Footer />
       </>
       <PreviewDevPanel preview={preview} compositionId={composition?._id} />

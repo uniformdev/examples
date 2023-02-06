@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Slot } from "@uniformdev/canvas-react";
+import { UniformSlot } from "@uniformdev/canvas-react";
 
 import Footer from "./Footer";
 
@@ -10,7 +10,7 @@ export default function LayoutCanvas({ title }) {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Slot name="body" />
+      <UniformSlot name="body" />
       <Footer />
     </div>
   );

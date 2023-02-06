@@ -1,5 +1,5 @@
 import React from "react"
-import { Slot } from "@uniformdev/canvas-react"
+import { UniformSlot } from "@uniformdev/canvas-react"
 
 function TalkList({ title }) {
   return (
@@ -10,7 +10,7 @@ function TalkList({ title }) {
             className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
             dangerouslySetInnerHTML={{ __html: title }}
           />
-          <Slot name="talks">
+          <UniformSlot name="talks">
             {({ child, key }) => (
               <div
                 key={key}
@@ -19,7 +19,7 @@ function TalkList({ title }) {
                 {child}
               </div>
             )}
-          </Slot>
+          </UniformSlot>
         </div>
       </section>
     </fieldset>
