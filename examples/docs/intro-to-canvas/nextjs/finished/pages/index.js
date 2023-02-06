@@ -1,5 +1,5 @@
 import { CanvasClient } from "@uniformdev/canvas";
-import { Composition } from "@uniformdev/canvas-react";
+import { UniformComposition } from "@uniformdev/canvas-react";
 
 import LayoutCanvas from "../src/components/LayoutCanvas";
 
@@ -40,8 +40,8 @@ export async function getStaticProps() {
 
 export default function Home({ composition, fields }) {
   return (
-    <Composition data={composition} resolveRenderer={resolveRenderer}>
-        <LayoutCanvas composition={composition} fields={fields} />
-    </Composition>
+    <UniformComposition data={composition} resolveRenderer={resolveRenderer}>
+      <LayoutCanvas composition={composition} fields={fields} />
+    </UniformComposition>
   );
 }

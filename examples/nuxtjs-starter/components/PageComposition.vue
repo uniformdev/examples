@@ -26,7 +26,6 @@ const props = defineProps<Props>();
 const { composition } = props;
 const { metaTitle } = composition?.parameters || {};
 const title = metaTitle?.value as string;
-
 </script>
 
 <template>
@@ -35,9 +34,12 @@ const title = metaTitle?.value as string;
       <Title>{{ title }}</Title>
     </Head>
     <Navigation :navLinks="navLinks" />
-    <Composition :data="composition" :resolveRenderer="componentResolver">
-      <SlotContent name="content" />
-    </Composition>
+    <UniformComposition
+      :data="composition"
+      :resolveRenderer="componentResolver"
+    >
+      <UniformSlot name="content" />
+    </UniformComposition>
     <Footer />
   </div>
 </template>

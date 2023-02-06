@@ -25,8 +25,8 @@ import {
 } from "@uniformdev/canvas-sanity";
 import {
   ComponentProps,
-  Composition,
-  useContextualEditing,
+  UniformComposition,
+  UniformCompositionProps,
 } from "@uniformdev/canvas-react";
 import { Default } from "../components/Default";
 
@@ -98,44 +98,37 @@ export function componentResolutionRenderer(
   switch (component.type) {
     case "hero":
       return Hero;
-      break;
     case "callToAction":
       return CTA;
-      break;
     case "genericCard":
       return GenericCard;
-      break;
     case "genericGrid":
       return GenericGrid;
-      break;
     case "offering":
       return OfferingCard;
-      break;
     case "offeringGrid":
       return OfferingGrid;
-      break;
     default:
       return Default;
-      break;
   }
 }
 
 const Homepage = (props: PageProps) => {
   const { serverData } = props;
-  const { composition: initialCompositionValue } = serverData as any;
-  const { composition } = useContextualEditing({
-    initialCompositionValue,
-    enhance: async ({ composition }) => {
+  const { composition } = serverData as any;
+  const contextualEditingEnhancer: UniformCompositionProps["contextualEditingEnhancer"] =
+    async ({ composition }) => {
       await enhanceComposition(composition);
       return composition;
-    },
-  });
+    };
+
   return (
     <PageComponent>
-      <Composition
+      <UniformComposition
         data={composition}
         resolveRenderer={componentResolutionRenderer}
-      ></Composition>
+        contextualEditingEnhancer={contextualEditingEnhancer}
+      ></UniformComposition>
     </PageComponent>
   );
 };

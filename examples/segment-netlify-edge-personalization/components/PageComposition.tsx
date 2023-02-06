@@ -2,10 +2,9 @@ import React from "react";
 import Head from "next/head";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import {
-  Composition,
-  Slot,
-  createApiEnhancer,
-  useContextualEditing,
+  UniformComposition,
+  UniformSlot,
+  createUniformApiEnhancer,
 } from "@uniformdev/canvas-react";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
@@ -19,11 +18,8 @@ export default function PageComposition({
   composition: RootComponentInstance;
   navLinks: Array<NavLink>;
 }) {
-  const { composition: compositionInstance } = useContextualEditing({
-    initialCompositionValue: composition,
-    enhance: createApiEnhancer({
-      apiUrl: "/api/preview",
-    }),
+  const contextualEditingEnhancer = createUniformApiEnhancer({
+    apiUrl: "/api/preview",
   });
   const { metaTitle } = composition?.parameters || {};
   const title = metaTitle?.value as string;
@@ -36,10 +32,13 @@ export default function PageComposition({
         <title>{title}</title>
       </Head>
       <Navigation navLinks={navLinks} />
-      {compositionInstance && (
-        <Composition data={compositionInstance}>
-          <Slot name="content" />
-        </Composition>
+      {!composition ? null : (
+        <UniformComposition
+          data={composition}
+          contextualEditingEnhancer={contextualEditingEnhancer}
+        >
+          <UniformSlot name="content" />
+        </UniformComposition>
       )}
       <Footer />
     </>

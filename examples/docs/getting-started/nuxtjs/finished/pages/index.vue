@@ -14,11 +14,11 @@ const { composition } = await useUniformComposition({
 </script>
 
 <template>
-  <Composition
+  <UniformComposition
     v-if="composition"
     :data="composition"
     :resolve-renderer="resolveRenderer"
   >
     <LayoutCanvas :title="topic.fields.title" />
-  </Composition>
+  </UniformComposition>
 </template>
