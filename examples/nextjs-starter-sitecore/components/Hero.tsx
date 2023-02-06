@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ datasource }: HeroProps) => {
   );
 };
 
-// making sure `<Slot />` how to render components with type 'hero'
+// making sure `<UniformSlot />` how to render components with type 'hero'
 registerUniformComponent({
   type: "hero",
   component: Hero,
