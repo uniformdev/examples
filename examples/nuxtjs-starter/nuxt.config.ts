@@ -11,5 +11,6 @@ export default defineNuxtConfig({
     apiHost: process.env.UNIFORM_CLI_BASE_URL,
     manifest: manifest as ManifestV2,
     defaultConsent: true,
+    outputType: "standard",
   },
 });
