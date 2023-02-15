@@ -24,13 +24,13 @@ const { projectId, apiKey, apiHost } = serverRuntimeConfig;
 
 export interface PageCompositionProps {
   preview: boolean;
-  composition: RootComponentInstance;
+  data: RootComponentInstance;
   navLinks: Array<NavLink>;
 }
 
 export default function PageComposition({
   preview,
-  composition,
+  data: composition,
   navLinks,
 }: PageCompositionProps) {
   const [showPreviewToggle, setShowPreviewToggle] =
