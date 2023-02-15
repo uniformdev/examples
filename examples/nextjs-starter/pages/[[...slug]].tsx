@@ -1,50 +1,96 @@
-import { GetStaticPropsContext } from "next";
-import PageComposition, {
-  PageCompositionProps,
-} from "@/components/PageComposition";
+import PageComposition from "@/components/PageComposition";
 import {
-  getCompositionBySlug,
-  getCompositionPaths,
-  getCompositionsForNavigation,
-} from "lib/uniform/canvasClient";
+  withUniformGetStaticProps,
+  withUniformGetStaticPaths,
+} from "@uniformdev/canvas-next/slug";
+import { getCompositionsForNavigation } from "@/uniformlib/canvasClient";
+import runEnhancers from "@/uniformlib/enhancers";
 
-const CanvasPage = ({
-  composition,
-  ...props
-}: Omit<PageCompositionProps, "composition"> & {
-  composition?: PageCompositionProps["composition"];
-}) => {
-  if (composition) {
-    return <PageComposition {...props} composition={composition} />;
-  }
+export const getStaticProps = withUniformGetStaticProps({
+  param: "slug",
+  preview: process.env.NODE_ENV === "development",
+  callback: async (context, composition) => {
+    if (composition) {
+      await runEnhancers(composition, context);
+    } else {
+      return {
+        notFound: true,
+      };
+    }
+    const { preview = false } = context || {};
+    const navLinks = await getCompositionsForNavigation(preview);
+    return {
+      // Enhanced composition data will be injected later, so no need to do it yourself
+      props: { navLinks, preview },
+      // Specifying some NextJS ISG params per page.
+      // revalidate: 100,
+    };
+  },
+});
 
-  // TODO: add loading indicator
-  return null;
-};
+export const getStaticPaths = withUniformGetStaticPaths({
+  preview: process.env.NODE_ENV === "development",
+});
 
-export default CanvasPage;
+export default PageComposition;
 
-export async function getStaticProps(context: GetStaticPropsContext) {
-  const { slug } = context?.params || {};
-  const slugString = Array.isArray(slug) ? slug.join("/") : slug;
-  const { preview } = context;
-  const slashedSlug = !slugString
-    ? "/"
-    : slugString.startsWith("/")
-    ? slugString
-    : `/${slugString}`;
-  const composition = await getCompositionBySlug(slashedSlug, preview);
-  const navLinks = await getCompositionsForNavigation(preview);
-  return {
-    props: {
-      composition,
-      navLinks,
-      preview: preview ?? false,
-    },
-  };
-}
+// ===========================================================================
+// Low- level implementation of getStaticProps without the canvas-next helpers
+// ===========================================================================
+// const getStaticProps = async (context: GetStaticPropsContext) => {
+//   const canvasClient = new CanvasClient({
+//     apiKey: process.env.UNIFORM_API_KEY,
+//     apiHost: process.env.UNIFORM_CLI_BASE_URL,
+//     projectId: process.env.UNIFORM_PROJECT_ID,
+//   });
+//
+//   const slug = context?.params?.id;
+//   const { preview } = context;
+//   const slugString = Array.isArray(slug) ? slug.join("/") : slug;
+//   const slashedSlug = !slugString
+//     ? "/"
+//     : slugString.startsWith("/")
+//       ? slugString
+//       : `/${slugString}`;
+//
+//   const { composition } = await canvasClient.getCompositionBySlug({
+//     slug,
+//     state: process.env.NODE_ENV === "development"
+//       ? CANVAS_DRAFT_STATE
+//       : CANVAS_PUBLISHED_STATE,
+//   });
+//
+//   return {
+//     props: {
+//       composition,
+//       preview: Boolean(preview),
+//     },
+//   };
+// }
 
-export async function getStaticPaths() {
-  const paths = await getCompositionPaths();
-  return { paths, fallback: true };
-}
+// ===========================================================================
+// Low- level implementation of getStaticPaths without the canvas-next helpers
+// ===========================================================================
+// const getStaticPaths = async () => {
+//   const canvasClient = new CanvasClient({
+//     apiKey: process.env.UNIFORM_API_KEY,
+//     apiHost: process.env.UNIFORM_CLI_BASE_URL,
+//     projectId: process.env.UNIFORM_PROJECT_ID,
+//   });
+//
+//   const pages = await canvasClient.getCompositionList({
+//     skipEnhance: true,
+//     state: process.env.NODE_ENV === "development"
+//       ? CANVAS_DRAFT_STATE
+//       : CANVAS_PUBLISHED_STATE,
+//   });
+//
+//   const paths = pages.compositions
+//     .filter((c) => c.composition._slug)
+//     .map((c) =>
+//       c.composition._slug?.startsWith("/")
+//         ? `${c.composition._slug}`
+//         : `/${c.composition._slug}`
+//     );
+//   return { paths, fallback: true };
+// }

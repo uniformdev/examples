@@ -1,11 +1,15 @@
-import { createPreviewHandler } from "@uniformdev/canvas-next";
-import runEnhancers from "lib/uniform/enhancers";
+import { GetStaticPropsContext } from "next";
 import getConfig from "next/config";
+import { createPreviewHandler } from "@uniformdev/canvas-next";
+import runEnhancers from "@/uniformlib/enhancers";
+
+const context: GetStaticPropsContext = {
+  preview: true,
+};
 
 const handler = createPreviewHandler({
   secret: () => getConfig().serverRuntimeConfig.previewSecret,
-  resolveFullPath: ({ slug }) => slug,
-  enhance: async (composition) => runEnhancers(composition, { preview: true }),
+  enhance: (composition) => runEnhancers(composition, context),
 });
 
 export default handler;
