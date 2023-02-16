@@ -26,6 +26,14 @@ parameters:
     helpText: ''
     typeConfig:
       selectedComponent: Pagination
+  - id: pageSize
+    name: Page Size
+    type: number
+    helpText: >-
+      This parameter provides a way to set number of hits returned for each
+      page. By default, its value is 20.
+    typeConfig:
+      min: '1'
 useTeamPermissions: true
 slots:
   - id: hitComponent
@@ -35,5 +43,5 @@ slots:
       - algolia-hit
     inheritAllowedComponents: false
 canBeComposition: false
-created: '2022-11-30T10:54:10.297128+00:00'
-updated: '2022-12-07T10:23:58.058738+00:00'
+created: '2023-02-02T08:20:24.916884+00:00'
+updated: '2023-02-02T08:20:24.916884+00:00'
