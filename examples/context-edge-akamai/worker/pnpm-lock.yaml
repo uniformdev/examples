@@ -7,10 +7,10 @@ specifiers:
   '@rollup/plugin-typescript': 8.3.2
   '@types/akamai-edgeworkers': 1.0.10
   '@types/node': ^17.0.44
-  '@uniformdev/cli': ^18.11.0
-  '@uniformdev/context': ^18.11.0
-  '@uniformdev/context-edge': ^18.11.0
-  '@uniformdev/context-edge-akamai': ^18.11.0
+  '@uniformdev/cli': ^18.12.0
+  '@uniformdev/context': ^18.12.0
+  '@uniformdev/context-edge': ^18.12.0
+  '@uniformdev/context-edge-akamai': ^18.12.0
   dotenv: ^16.0.1
   rimraf: ^3.0.2
   rollup: 2.74.1
@@ -21,8 +21,8 @@ specifiers:
   typescript: ^4.7.2
 
 dependencies:
-  '@uniformdev/context-edge': 18.11.0
-  '@uniformdev/context-edge-akamai': 18.11.0
+  '@uniformdev/context-edge': 18.12.0
+  '@uniformdev/context-edge-akamai': 18.12.0
 
 devDependencies:
   '@rollup/plugin-commonjs': 22.0.0_rollup@2.74.1
@@ -31,8 +31,8 @@ devDependencies:
   '@rollup/plugin-typescript': 8.3.2_faevwvm44lwfnesbzt627ggdse
   '@types/akamai-edgeworkers': 1.0.10
   '@types/node': 17.0.44
-  '@uniformdev/cli': 18.11.0
-  '@uniformdev/context': 18.11.0
+  '@uniformdev/cli': 18.12.0
+  '@uniformdev/context': 18.12.0
   dotenv: 16.0.1
   rimraf: 3.0.2
   rollup: 2.74.1
@@ -162,11 +162,11 @@ packages:
       '@types/node': 17.0.44
     dev: true
 
-  /@uniformdev/cli/18.11.0:
-    resolution: {integrity: sha512-xhgWO5lUWVqbm5uRqcU8I0q55HaYM+UV0zWN44KMyelsIYFFOlgZxmpg9oH6H50CBuODwqlnQOwvVm7wZ4OWyw==}
+  /@uniformdev/cli/18.12.0:
+    resolution: {integrity: sha512-0caCiab5lQkQb5LVOj31mt0QThwFfaj18EvmKcmdbd6UDdqFulPBwk3NXb20KjUShpy0APVnbmKbhrHRtlO24A==}
     hasBin: true
     dependencies:
-      '@uniformdev/uniform-new': 18.11.0
+      '@uniformdev/uniform-new': 18.12.0
       diff: 5.1.0
       dotenv: 16.0.3
       https-proxy-agent: 5.0.1
@@ -180,23 +180,23 @@ packages:
       - supports-color
     dev: true
 
-  /@uniformdev/context-edge-akamai/18.11.0:
-    resolution: {integrity: sha512-lUSkaSTV/26jS4oTnoZPcxyorMFfD5IeYEDBLY/VrYzFY44Kah33EyqcujSVtkOoCKICEipJ/krd6RrtXrj9jQ==}
+  /@uniformdev/context-edge-akamai/18.12.0:
+    resolution: {integrity: sha512-FlUTP9co1hZNnsv6pVs/cn8gkelhpZkcVw8W2jiHnzCpSgpn1tAiQNZzzerVJ4vAAuPXvzz8uWnKSw4jksIwig==}
     dependencies:
-      '@uniformdev/context': 18.11.0
-      '@uniformdev/context-edge': 18.11.0
+      '@uniformdev/context': 18.12.0
+      '@uniformdev/context-edge': 18.12.0
       core-js: 3.27.1
     dev: false
 
-  /@uniformdev/context-edge/18.11.0:
-    resolution: {integrity: sha512-Ovx+KoDm9hlMawraMM+06q5ZU903bqvOo5ojGtbhB7lmVb5Lg+NYeqMNL90smHfK58UoPDUxFfVN7fbb+mX1kA==}
+  /@uniformdev/context-edge/18.12.0:
+    resolution: {integrity: sha512-JwPsPTtkhN/NTWHvcGV6+5c99FTjrnyzF8E+7oKy52G/ZIfCTgNE1RzRWKLigP2WFQi+GCRcaQfkTiLDNSjQ/w==}
     dependencies:
-      '@uniformdev/context': 18.11.0
+      '@uniformdev/context': 18.12.0
       cookie: 0.5.0
     dev: false
 
-  /@uniformdev/context/18.11.0:
-    resolution: {integrity: sha512-VfJ8z9F1v6Hy4a+WD1K1XSQSywe8J5sLd+pyGvAoLKpo0jB32PqY/PCArqDkq69d8ksUFD0wZug+U9beVi4eMA==}
+  /@uniformdev/context/18.12.0:
+    resolution: {integrity: sha512-n2Gq6QMa6cHK8ng9pPy8gQJnhbLh58cT1gP84qnGNElZc3NNp2hn9ir/0e2bXtvHFqoBc7jX2VXOCKme/tt3IA==}
     dependencies:
       dequal: 2.0.2
       js-cookie: 3.0.1
@@ -204,8 +204,8 @@ packages:
       p-limit: 3.1.0
       rfdc: 1.3.0
 
-  /@uniformdev/uniform-new/18.11.0:
-    resolution: {integrity: sha512-v1SI6OEtrEmr6RCP5t5sKBV00yJJsLkHQ9adDHpbc5xcP73aYazkc2GgZDXuccugzvEiGKJwNnAlOmgrWm5QEQ==}
+  /@uniformdev/uniform-new/18.12.0:
+    resolution: {integrity: sha512-+xoKhJ0P/wMegskA/wWdPM+blOso0KUSF0IKzfKS9osoInBgOq/iG0Se1mSfq7zXSyU9phQlveRAYBUca3D1Bw==}
     dependencies:
       degit: 2.8.4
       execa: 5.1.1
