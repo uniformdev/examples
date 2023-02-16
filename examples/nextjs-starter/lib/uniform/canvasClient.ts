@@ -3,10 +3,11 @@ import {
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
 } from "@uniformdev/canvas";
+import { ProjectMapClient } from '@uniformdev/project-map';
 import getConfig from "next/config";
 
 const {
-  serverRuntimeConfig: { apiKey, apiHost, projectId },
+  serverRuntimeConfig: { apiKey, apiHost, projectId, projectMapId },
 } = getConfig();
 
 export const getState = (preview: boolean | undefined) =>
@@ -20,17 +21,24 @@ export const canvasClient = new CanvasClient({
   projectId,
 });
 
+export const projectMapClient = new ProjectMapClient({
+  apiKey,
+  apiHost,
+  projectId,
+});
+
 export async function getCompositionsForNavigation(preview: boolean) {
-  const response = await canvasClient.getCompositionList({
-    skipEnhance: true,
+  const response = await projectMapClient.getNodes({
+    projectMapId,
     state: getState(preview),
   });
-  return response.compositions
-    .filter((c) => c.composition._slug)
-    .map((c) => {
+
+  return response.nodes
+    .filter((node) => node.path)
+    .map((node) => {
       return {
-        title: c.composition._name,
-        url: c.composition._slug,
+        title: node.name,
+        url: node.path,
       };
     });
 }
