@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentProps } from '@uniformdev/canvas-react';
-import { Pagination, RefinementList, SearchBox } from 'react-instantsearch-hooks-web';
+import { Configure, Pagination, RefinementList, SearchBox } from 'react-instantsearch-hooks-web';
 import ErrorPropertyCallout from '@/components/ErrorPropertyCallout';
 import { renderHits } from "@/components/HitComponents";
 
@@ -34,10 +34,11 @@ type CanvasBasicComponentsProps = {
       showLast?: boolean;
     };
   };
+  pageSize?: number;
 };
 
 const CanvasBasicComponents = (componentProps: ComponentProps<CanvasBasicComponentsProps>) => {
-  const { component, searchBoxParams, refinementListParams, paginationParams } = componentProps || {};
+  const { component, searchBoxParams, refinementListParams, paginationParams, pageSize } = componentProps || {};
   const refinementListProps = refinementListParams?.refinementListProps;
 
   if (!refinementListProps?.attribute) {
@@ -50,6 +51,7 @@ const CanvasBasicComponents = (componentProps: ComponentProps<CanvasBasicCompone
 
   return (
     <>
+      <Configure hitsPerPage={pageSize}/>
       <div className="searchBox">
         <SearchBox {...searchBoxParams?.searchBoxProps} />
       </div>

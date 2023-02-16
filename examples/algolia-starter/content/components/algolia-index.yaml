@@ -22,5 +22,5 @@ slots:
       - algolia-basicComponents
     inheritAllowedComponents: false
 canBeComposition: false
-created: '2022-11-30T10:54:09.008895+00:00'
-updated: '2022-12-06T14:40:16.678681+00:00'
+created: '2023-02-02T08:20:25.029524+00:00'
+updated: '2023-02-02T08:20:25.029524+00:00'
