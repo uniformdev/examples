@@ -8,7 +8,7 @@ const context: GetStaticPropsContext = {
 };
 
 const handler = createPreviewHandler({
-  secret: () => getConfig().serverRuntimeConfig.previewSecret,
+  secret: () => process.env.UNIFORM_PREVIEW_SECRET,
   enhance: (composition) => runEnhancers(composition, context),
 });
 

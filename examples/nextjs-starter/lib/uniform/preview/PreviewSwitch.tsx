@@ -2,7 +2,10 @@ import { useRouter } from "next/router";
 
 function PreviewSwitch({ previewing }: { previewing: boolean }) {
   const router = useRouter();
-  const previewSecret = "hello-world";
+  // Usually you won't expose secret to front-end bundle,
+  // and regular env variable is not available on front-end,
+  // but for the sake of this starter we are doing it :)
+  const previewSecret = process.env.UNIFORM_PREVIEW_SECRET || 'hello-world';
   return (
     <button
       type="button"
