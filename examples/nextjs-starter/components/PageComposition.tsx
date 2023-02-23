@@ -12,9 +12,6 @@ import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
 
-// IMPORTANT: importing all components registered in Canvas
-import "./canvasComponents";
-
 const PreviewDevPanel = dynamic(
   () => import("lib/uniform/preview/PreviewDevPanel")
 );
