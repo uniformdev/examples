@@ -2265,35 +2265,35 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
-"@uniformdev/canvas-react@^18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-18.15.0.tgz#0e35501ba3e0c663dfb688c9d58e67bed6df4f1e"
-  integrity sha512-yWWdsoLxic0MdJiAg9VbUZW+8Fy/vFOVHybPps2FCLLwQCu2FQgi7QJOI5jTtjnKUENqpXEa1vdEsqLnpF0vRg==
+"@uniformdev/canvas-react@^18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-18.16.0.tgz#c932b74f53410a1f6d2e553d8e1c73b615464158"
+  integrity sha512-oDikB3bUuogSutDI0sJdzqSXLXy57+OV5Gnrpu6VKwQ72xhGi+rlE5N8m/DJTiI7de1SUPF2GI/NUy8ghjS1JA==
   dependencies:
-    "@uniformdev/canvas" "18.15.0"
-    "@uniformdev/context" "18.15.0"
-    "@uniformdev/context-react" "18.15.0"
+    "@uniformdev/canvas" "18.16.0"
+    "@uniformdev/context" "18.16.0"
+    "@uniformdev/context-react" "18.16.0"
 
-"@uniformdev/canvas-sanity@^18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-sanity/-/canvas-sanity-18.15.0.tgz#2b58ffc59154624f7c828aeef5a2b4ddd96f6ae7"
-  integrity sha512-1drLip9xS0nEraZY8sN6LyJSejgYsuZtIa0FFlNAHeXmMfWgiVHQASQN+KCRbpPRQym+4qNXpHgTyK1rPN24Pw==
+"@uniformdev/canvas-sanity@^18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-sanity/-/canvas-sanity-18.16.0.tgz#39c49a189dfb823a463f42e9f2d330113924ffdf"
+  integrity sha512-Za7jSWiuSZRJY3zh31yOfXzhHPFluknpkZrQss6y2MlVbfUqXA/WMov8qoWdWzXdJc3RIi71i9baXxW5dbMsLA==
   dependencies:
-    "@uniformdev/canvas" "18.15.0"
+    "@uniformdev/canvas" "18.16.0"
 
-"@uniformdev/canvas@18.15.0", "@uniformdev/canvas@^18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-18.15.0.tgz#5871fa5ae7c1abb2d9d7901f44b06ee74dc588dc"
-  integrity sha512-k36rA8ljrOMwid3CFu1Suh+uL+v9aryAaZCZC6ipMorWLoUny4DfgHpTz5txlIAUvExXoFezOd/5B+1as0FbUg==
+"@uniformdev/canvas@18.16.0", "@uniformdev/canvas@^18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-18.16.0.tgz#db2d18a25ecd5a6981749d70ffcf3cffb9e6096c"
+  integrity sha512-GQtU+hYzEfXjc3HR2pkuOqX15cmvk2N0mKONaTL/vknlEG4LrZBRjjwd+J2DWpoWervC2Cl0wkT32cIpxhv4QQ==
   dependencies:
-    "@uniformdev/context" "18.15.0"
+    "@uniformdev/context" "18.16.0"
 
-"@uniformdev/cli@^18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-18.15.0.tgz#5ad094e11bf9c098c77d80b5f594e559861d4007"
-  integrity sha512-gHCRMKd4+oZJ9XDVzmfrzkC9WWWRpPwztupJ87j5JK7xEsJRfEFfCHGQe2UqMeXQDt1oLFS+cwHE6t5HQjRRzw==
+"@uniformdev/cli@^18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-18.16.0.tgz#1e6033839883d2361fb1995ecf4f01c4093969cd"
+  integrity sha512-6PDiQWJmEDNwACHZTIknShJNdPu+7dy1bZxYNxyW87l6nxAj94ERk1gOG1UWD0W/AMLQCLuym51o2gIFo8ILaA==
   dependencies:
-    "@uniformdev/uniform-new" "18.15.0"
+    "@uniformdev/uniform-new" "18.16.0"
     diff "^5.0.0"
     dotenv "^16.0.3"
     https-proxy-agent "^5.0.1"
@@ -2302,19 +2302,19 @@
     lodash.isequalwith "^4.4.0"
     yargs "^17.6.2"
 
-"@uniformdev/context-react@18.15.0", "@uniformdev/context-react@^18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-18.15.0.tgz#0a950e67c2e3808b17c2b8d610de22f581abc98a"
-  integrity sha512-+uMUmgosg5UxpEPysvFjWQWwEdiV4brL2YMH0saVxkOn0kLBlCqLfeOsSrgmLIcIGY+jaYFNHFJuZNOA9eSbjw==
+"@uniformdev/context-react@18.16.0", "@uniformdev/context-react@^18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-18.16.0.tgz#b2d66e56e1ebe5a131547070184d27fdd3b99d45"
+  integrity sha512-nHIx0bzmgkgnNIDl9FpfjNo+bvnqq2B30Yfd5ZRmTAnawE8ykD/1WPY7kmO+7aFBI2hDhEDD74WX/iDn8qi/7Q==
   dependencies:
-    "@uniformdev/context" "18.15.0"
+    "@uniformdev/context" "18.16.0"
     cookie "0.5.0"
     dequal "2.0.3"
 
-"@uniformdev/context@18.15.0", "@uniformdev/context@^18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-18.15.0.tgz#f0b27799a7df98bda1a33414173af1cbb56a5c03"
-  integrity sha512-2W+wlhoLnq1mng+pWNWqFhdpoUtA6MtA8ZP5gPAU99mcBpKF+JJTs2J1frQWQ13NR9UcD8XYvJYvHUwn1eHi8g==
+"@uniformdev/context@18.16.0", "@uniformdev/context@^18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-18.16.0.tgz#f45f4aec3cd5da42a444c8d73a0710b5aaea0a49"
+  integrity sha512-2QNgynMTAvuaeaJOHfhfAemvd+FjLpj4GJ44xTjxPJPk7/qO9Ya9q702v/ccks+u80n0KCWZGSDcSW2Ndos62Q==
   dependencies:
     dequal "^2.0.2"
     js-cookie "3.0.1"
@@ -2322,19 +2322,19 @@
     p-limit "^3.1.0"
     rfdc "^1.3.0"
 
-"@uniformdev/project-map@^18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-18.15.0.tgz#1f50b5f1e759204b40b3940c7e5f21280d075f85"
-  integrity sha512-vT0SoDWQhcxkb+QOGHL3OW1p6lW5mcJa/pnlZU9w3jiJf9HA1GBesoaqcV46d5Igd+N4czbJjHZlMpHnZTOTiw==
+"@uniformdev/project-map@^18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-18.16.0.tgz#dda4c3cdf83a527abaa9d50c6564caa1587505db"
+  integrity sha512-xaqUybL/jm1D11AbYQ8D2I+6I+ElMoaVrAv8t1rYUM92ajrBQiWdiA0G8sYeXvDQPqj/6j80bF6nuKgTlGVRUw==
   dependencies:
-    "@uniformdev/canvas" "18.15.0"
-    "@uniformdev/context" "18.15.0"
+    "@uniformdev/canvas" "18.16.0"
+    "@uniformdev/context" "18.16.0"
     p-limit "^3.1.0"
 
-"@uniformdev/uniform-new@18.15.0":
-  version "18.15.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/uniform-new/-/uniform-new-18.15.0.tgz#d198df82cbd6fbce700a5cde603f16aa83c536ae"
-  integrity sha512-ZlCAtNq+eM9/Elb+j9r6eiWJUw9iZGhBUdxtFf26HKeqiJ4jIYyC4Krxi8BigF3lRhtbKLkZC3GPEVRmt1j4Iw==
+"@uniformdev/uniform-new@18.16.0":
+  version "18.16.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/uniform-new/-/uniform-new-18.16.0.tgz#fe70e43159f9604abda84c6599345866c394d610"
+  integrity sha512-iemxQNrRdX6Xtf1EUQtV3yahtfl1c0Nwr+w4sygAFtgENVqI26y28yxOKbgcipfAmKfd/YhhUwbIiuGYLwckwA==
   dependencies:
     execa "5.1.1"
     fs-jetpack "5.1.0"
