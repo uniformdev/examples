@@ -20,6 +20,17 @@ import { HowToUseValidation } from '../../reference-lib/HowToUseValidation';
 // the UI from the standard 'HTTP Request' data connector will be used in its place automatically.
 // This enables integration developers to produce fewer UIs if only looking to customize part of a data connector.
 
+/*
+ * Data Resource name proposal: if you would like to propose a default name for new data resources of this archetype,
+ * setting the special `proposedName` variable will signal to the UI that you are providing a custom
+ * default name. Note that this only applies when creating new data resources; as soon as it has been saved once, the proposed name
+ * is ignored, and the existing name is always used.
+
+  useEffect(() => {
+    setValue((prev) => ({ newValue: { ...prev, proposedName: 'My Custom Proposed Data Resource Name' } }));
+  }, [setValue]);
+ */
+
 const DataResourceHelloWorld: NextPage = () => {
   const { setValue } = useMeshLocation('dataResource');
 
