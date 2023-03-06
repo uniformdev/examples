@@ -24,6 +24,19 @@ import { HowToUseDialogs } from '../../reference-lib/HowToUseDialogs';
 // Only users with manage data source or admin permissions may decrypt secrets. All others can use them via delegation
 // when fetching data types, without seeing the secret values.
 
+/*
+ * Data Source name proposal: if you would like to propose a default name for new data sources,
+ * setting the special `custom.proposedName` property will signal to the UI that you are providing a custom
+ * default name. Note that this only applies when creating new data sources; as soon as it has been saved once, the proposed name
+ * is ignored, and the existing name is always used.
+
+  useEffect(() => {
+    setValue((prev) => ({
+      newValue: { ...prev, custom: { ...prev.custom, proposedName: 'My Custom Proposed Name' } },
+    }));
+  }, [setValue]);
+ */
+
 const DataSource: NextPage = () => {
   const { setValue } = useMeshLocation('dataSource');
 
