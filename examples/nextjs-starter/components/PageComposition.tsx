@@ -1,4 +1,4 @@
-import React, { ComponentType } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import getConfig from "next/config";
@@ -11,6 +11,7 @@ import {
 import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
+import { UniformDeployedPreviewBanner } from '@/components/UniformDeployedPreviewBanner';
 
 const PreviewDevPanel = dynamic(
   () => import("lib/uniform/preview/PreviewDevPanel")
@@ -50,7 +51,8 @@ export default function PageComposition({
       <Head>
         <title>{metaTitle?.value as string}</title>
       </Head>
-      <>
+      <UniformDeployedPreviewBanner />
+      <main className="main">
         <Navigation navLinks={navLinks} />
         <UniformComposition
           data={composition}
@@ -66,7 +68,7 @@ export default function PageComposition({
           }}
         />
         <Footer />
-      </>
+      </main>
       {showPreviewToggle && (
         <PreviewDevPanel preview={preview} compositionId={composition._id} />
       )}
