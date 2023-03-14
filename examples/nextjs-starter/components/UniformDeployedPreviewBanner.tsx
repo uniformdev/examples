@@ -26,6 +26,7 @@ export const UniformDeployedPreviewBanner = () => {
         This is a Uniform-deploy preview.
       </span>
       <Link
+        className="uniform-allow-click"
         target="_blank"
         href="https://docs.uniform.app/getting-started/starters"
       >
