@@ -2265,56 +2265,71 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
-"@uniformdev/canvas-react@^18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-18.16.0.tgz#c932b74f53410a1f6d2e553d8e1c73b615464158"
-  integrity sha512-oDikB3bUuogSutDI0sJdzqSXLXy57+OV5Gnrpu6VKwQ72xhGi+rlE5N8m/DJTiI7de1SUPF2GI/NUy8ghjS1JA==
+"@uniformdev/canvas-react@^18.20.0":
+  version "18.20.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-react/-/canvas-react-18.20.0.tgz#11cbcd088dcf11e886d1197e4cac08f32b40d90d"
+  integrity sha512-wSjNvd1au0jCBNYOx2hvvkQg3ID/WwWLvpHFOgZmulGNPIJ8qcIGyNR21Bu1jkpNj6uOUP6pRefDNt/klHCZJw==
   dependencies:
-    "@uniformdev/canvas" "18.16.0"
-    "@uniformdev/context" "18.16.0"
-    "@uniformdev/context-react" "18.16.0"
+    "@uniformdev/canvas" "18.20.0"
+    "@uniformdev/context" "18.20.0"
+    "@uniformdev/context-react" "18.20.0"
 
-"@uniformdev/canvas-sanity@^18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-sanity/-/canvas-sanity-18.16.0.tgz#39c49a189dfb823a463f42e9f2d330113924ffdf"
-  integrity sha512-Za7jSWiuSZRJY3zh31yOfXzhHPFluknpkZrQss6y2MlVbfUqXA/WMov8qoWdWzXdJc3RIi71i9baXxW5dbMsLA==
+"@uniformdev/canvas-sanity@^18.20.0":
+  version "18.20.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas-sanity/-/canvas-sanity-18.20.0.tgz#1b13ab776d1089a3121785332b7bb339b1e7bfa8"
+  integrity sha512-XGWfLToD7WkUFzt+zobn985AktfDcEdW83iFsKfoHXnbA77rExIY47JJJCD2gkQOix49pLUGYQWP7hIRLOHNXw==
   dependencies:
-    "@uniformdev/canvas" "18.16.0"
+    "@uniformdev/canvas" "18.20.0"
 
-"@uniformdev/canvas@18.16.0", "@uniformdev/canvas@^18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-18.16.0.tgz#db2d18a25ecd5a6981749d70ffcf3cffb9e6096c"
-  integrity sha512-GQtU+hYzEfXjc3HR2pkuOqX15cmvk2N0mKONaTL/vknlEG4LrZBRjjwd+J2DWpoWervC2Cl0wkT32cIpxhv4QQ==
+"@uniformdev/canvas@18.20.0", "@uniformdev/canvas@^18.20.0":
+  version "18.20.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/canvas/-/canvas-18.20.0.tgz#217490939a142d000105e4b0034726b0ce9ab2dd"
+  integrity sha512-8G77UdswNMeG5k4fAWOJ6QnepbpEBiBMvczyqk3nufx+X3fcX03QWYpdLV1tpKqlfuNrNyVVsgTLWgv5Eewz5Q==
   dependencies:
-    "@uniformdev/context" "18.16.0"
+    "@uniformdev/context" "18.20.0"
 
-"@uniformdev/cli@^18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-18.16.0.tgz#1e6033839883d2361fb1995ecf4f01c4093969cd"
-  integrity sha512-6PDiQWJmEDNwACHZTIknShJNdPu+7dy1bZxYNxyW87l6nxAj94ERk1gOG1UWD0W/AMLQCLuym51o2gIFo8ILaA==
+"@uniformdev/cli@^18.20.0":
+  version "18.20.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/cli/-/cli-18.20.0.tgz#c1f7c41c5cf97e3283c2292d61f24ff81714af40"
+  integrity sha512-YJZcLBBMmfEYBcR5oGXrLHFoCB6ijyt4HeMvNX8i8M5fM/2wvg1WHfP8f3OfmetdGOq/EVNe6LMbxKmonI1WsA==
   dependencies:
-    "@uniformdev/uniform-new" "18.16.0"
+    "@uniformdev/canvas" "18.20.0"
+    "@uniformdev/context" "18.20.0"
+    "@uniformdev/project-map" "18.20.0"
+    chalk "^5.2.0"
     diff "^5.0.0"
     dotenv "^16.0.3"
+    execa "5.1.1"
+    fs-jetpack "5.1.0"
+    graphql "16.6.0"
+    graphql-request "5.1.0"
     https-proxy-agent "^5.0.1"
+    inquirer "8.2.5"
+    isomorphic-git "1.21.0"
     isomorphic-unfetch "^3.1.0"
     js-yaml "^4.1.0"
+    jsonwebtoken "9.0.0"
     lodash.isequalwith "^4.4.0"
+    open "8.4.0"
+    ora "6.1.2"
+    posthog-node "2.5.3"
+    slugify "1.6.5"
     yargs "^17.6.2"
+    zod "3.21.0"
 
-"@uniformdev/context-react@18.16.0", "@uniformdev/context-react@^18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-18.16.0.tgz#b2d66e56e1ebe5a131547070184d27fdd3b99d45"
-  integrity sha512-nHIx0bzmgkgnNIDl9FpfjNo+bvnqq2B30Yfd5ZRmTAnawE8ykD/1WPY7kmO+7aFBI2hDhEDD74WX/iDn8qi/7Q==
+"@uniformdev/context-react@18.20.0", "@uniformdev/context-react@^18.20.0":
+  version "18.20.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context-react/-/context-react-18.20.0.tgz#e84a9e97abe82966ee6cfdb52d419f550f3aa1cd"
+  integrity sha512-4dca8BdXxkpJwk/oYNhI19oiBFmgMb+etnmFAKjsyYLvX8yjmocWOiQvZE6YjZhjeg0I72Yd5OqbJ/lCi2q0uQ==
   dependencies:
-    "@uniformdev/context" "18.16.0"
+    "@uniformdev/context" "18.20.0"
     cookie "0.5.0"
     dequal "2.0.3"
 
-"@uniformdev/context@18.16.0", "@uniformdev/context@^18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-18.16.0.tgz#f45f4aec3cd5da42a444c8d73a0710b5aaea0a49"
-  integrity sha512-2QNgynMTAvuaeaJOHfhfAemvd+FjLpj4GJ44xTjxPJPk7/qO9Ya9q702v/ccks+u80n0KCWZGSDcSW2Ndos62Q==
+"@uniformdev/context@18.20.0", "@uniformdev/context@^18.20.0":
+  version "18.20.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/context/-/context-18.20.0.tgz#1321f053969023d18905002dde235737bead5a8e"
+  integrity sha512-MyQ2Qzjz7sgGr0rFSusoUfsmwm/xUUlCnZQlIU8luBPpkJ9ctXkAg4piXT75VVRP2dXphgG1sfaVYk+UpX60xQ==
   dependencies:
     dequal "^2.0.2"
     js-cookie "3.0.1"
@@ -2322,33 +2337,13 @@
     p-limit "^3.1.0"
     rfdc "^1.3.0"
 
-"@uniformdev/project-map@^18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-18.16.0.tgz#dda4c3cdf83a527abaa9d50c6564caa1587505db"
-  integrity sha512-xaqUybL/jm1D11AbYQ8D2I+6I+ElMoaVrAv8t1rYUM92ajrBQiWdiA0G8sYeXvDQPqj/6j80bF6nuKgTlGVRUw==
+"@uniformdev/project-map@18.20.0", "@uniformdev/project-map@^18.20.0":
+  version "18.20.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/project-map/-/project-map-18.20.0.tgz#b53c0d652d4215dda224cd9d73d5cd738e565cf9"
+  integrity sha512-QIfmibSPuCx57m40yZOhlEZJ7wjd76jlUCOREwYbnAEl7MyZt8clIRafPP2c1py7qQCOKVH0iN6CNxx5F4xWIw==
   dependencies:
-    "@uniformdev/canvas" "18.16.0"
-    "@uniformdev/context" "18.16.0"
-    p-limit "^3.1.0"
-
-"@uniformdev/uniform-new@18.16.0":
-  version "18.16.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/uniform-new/-/uniform-new-18.16.0.tgz#fe70e43159f9604abda84c6599345866c394d610"
-  integrity sha512-iemxQNrRdX6Xtf1EUQtV3yahtfl1c0Nwr+w4sygAFtgENVqI26y28yxOKbgcipfAmKfd/YhhUwbIiuGYLwckwA==
-  dependencies:
-    execa "5.1.1"
-    fs-jetpack "5.1.0"
-    graphql "16.6.0"
-    graphql-request "5.1.0"
-    inquirer "8.2.5"
-    isomorphic-git "1.21.0"
-    jsonwebtoken "9.0.0"
-    open "8.4.0"
-    ora "6.1.2"
-    posthog-node "2.2.3"
-    slugify "1.6.5"
-    yargs "17.6.2"
-    zod "3.20.2"
+    "@uniformdev/canvas" "18.20.0"
+    "@uniformdev/context" "18.20.0"
 
 "@vercel/webpack-asset-relocator-loader@^1.7.0":
   version "1.7.3"
@@ -3349,7 +3344,7 @@ chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^5.0.0:
+chalk@^5.0.0, chalk@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.2.0.tgz#249623b7d66869c673699fb66d65723e54dfcfb3"
   integrity sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==
@@ -8271,10 +8266,10 @@ postcss@^8.4.18, postcss@^8.4.20:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-posthog-node@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/posthog-node/-/posthog-node-2.2.3.tgz#9fda0dfe92dedc0716b87a68a26c05eed95bdd5a"
-  integrity sha512-dYlLZhrDus+uRov/Hh+EiRlMoMhRKchNjNa7mNE2iWmKg/ryOTipf0XYKS9UKdki7aU1NzWFhnLe11HF615XuA==
+posthog-node@2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/posthog-node/-/posthog-node-2.5.3.tgz#d0ce179edcc5022d492feb69f6b14a6b60c440cc"
+  integrity sha512-kDmBjQHguPrh/rUTKmB0+Hj7C3fq2t+/fcfQkDBGz0f0fEF2WxV5yyxRmd2IF/hFmHxMrGLDkEVjKr78B+judg==
   dependencies:
     axios "^0.27.0"
 
@@ -10266,19 +10261,6 @@ yargs-parser@^21.1.1:
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.1.1.tgz#9096bceebf990d21bb31fa9516e0ede294a77d35"
   integrity sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==
 
-yargs@17.6.2, yargs@^17.6.2:
-  version "17.6.2"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.6.2.tgz#2e23f2944e976339a1ee00f18c77fedee8332541"
-  integrity sha512-1/9UrdHjDZc0eOU0HxOHoS78C69UD3JRMvzlJ7S79S2nTaWRA/whGCTV8o9e/N/1Va9YIV7Q4sOxD8VV4pCWOw==
-  dependencies:
-    cliui "^8.0.1"
-    escalade "^3.1.1"
-    get-caller-file "^2.0.5"
-    require-directory "^2.1.1"
-    string-width "^4.2.3"
-    y18n "^5.0.5"
-    yargs-parser "^21.1.1"
-
 yargs@^15.3.1, yargs@^15.4.1:
   version "15.4.1"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.4.1.tgz#0d87a16de01aee9d8bec2bfbf74f67851730f4f8"
@@ -10295,6 +10277,19 @@ yargs@^15.3.1, yargs@^15.4.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
+
+yargs@^17.6.2:
+  version "17.6.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.6.2.tgz#2e23f2944e976339a1ee00f18c77fedee8332541"
+  integrity sha512-1/9UrdHjDZc0eOU0HxOHoS78C69UD3JRMvzlJ7S79S2nTaWRA/whGCTV8o9e/N/1Va9YIV7Q4sOxD8VV4pCWOw==
+  dependencies:
+    cliui "^8.0.1"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.3"
+    y18n "^5.0.5"
+    yargs-parser "^21.1.1"
 
 yeast@0.1.2:
   version "0.1.2"
@@ -10324,7 +10319,7 @@ yurnalist@^2.1.0:
     read "^1.0.7"
     strip-ansi "^5.2.0"
 
-zod@3.20.2:
-  version "3.20.2"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.20.2.tgz#068606642c8f51b3333981f91c0a8ab37dfc2807"
-  integrity sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==
+zod@3.21.0:
+  version "3.21.0"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.21.0.tgz#9e3cbbf741071bfed9c000d2b4e64d4d97291d12"
+  integrity sha512-UYdykTcVxB6lfdyLzAqLyyYAlOcpoluECvjsdoaqfQmz9p+3LRaIqYcNiL/J2kFYp66fBM8wwBvIGVEjq7KtZw==
