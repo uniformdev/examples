@@ -22,16 +22,16 @@ export const UniformDeployedPreviewBanner = () => {
 
   return isVisible ? (
     <div className="deployed-preview-banner">
-      <span>
-        This is a Uniform-deploy preview.
-      </span>
-      <Link
-        className="uniform-allow-click"
-        target="_blank"
-        href="https://docs.uniform.app/getting-started/starters"
-      >
-        Click here to learn how switch to your own!
-      </Link>
+      <p>This preview is powered by a pre-deployed site. Click {' '}
+        <Link
+          data-is-rendered-by-uniform
+          target="_blank"
+          href="https://docs.uniform.app/getting-started/starters"
+        >
+          here
+        </Link>
+        {' '}to learn how to set up your own.
+      </p>
     </div>
   ) : null;
 }
