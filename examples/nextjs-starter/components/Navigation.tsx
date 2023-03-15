@@ -28,7 +28,7 @@ const Navigation: React.FC<NavigationProps> = ({
       ))}
       {links.length <= 1 ? (
         <span className="note">
-          (create a new composition to see a link to it here...)
+          (add another node in project map to see new link here)
         </span>
       ) : null}
     </div>
