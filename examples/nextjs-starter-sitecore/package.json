@@ -21,15 +21,15 @@
     "start:stackblitz": "npm install && next dev"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^18.16.0",
-    "@uniformdev/canvas-react": "^18.16.0",
-    "@uniformdev/canvas-next": "^18.16.0",
+    "@uniformdev/canvas": "^18.22.0",
+    "@uniformdev/canvas-react": "^18.22.0",
+    "@uniformdev/canvas-next": "^18.22.0",
     "@uniformdev/canvas-sitecore": "17.1.1-alpha.36",
-    "@uniformdev/cli": "^18.16.0",
-    "@uniformdev/context": "^18.16.0",
-    "@uniformdev/context-devtools": "^18.16.0",
-    "@uniformdev/context-next": "^18.16.0",
-    "@uniformdev/context-react": "^18.16.0",
+    "@uniformdev/cli": "^18.22.0",
+    "@uniformdev/context": "^18.22.0",
+    "@uniformdev/context-devtools": "^18.22.0",
+    "@uniformdev/context-next": "^18.22.0",
+    "@uniformdev/context-react": "^18.22.0",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
