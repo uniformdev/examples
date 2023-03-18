@@ -1,24 +1,6 @@
-import Document, {
-  DocumentContext,
-  DocumentInitialProps,
-  Head,
-  Html,
-  Main,
-  NextScript,
-} from "next/document";
-import { enableNextSsr } from "@uniformdev/context-next";
-import { createUniformContext } from "../lib/uniform/uniformContext";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
-  // IMPORTANT: needed to enable the SSR elements
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
-    const serverTracker = createUniformContext(ctx);
-    enableNextSsr(ctx, serverTracker);
-    return await Document.getInitialProps(ctx);
-  }
-
   render(): React.ReactElement {
     return (
       <Html lang="en">

@@ -2,10 +2,10 @@
   "project": {
     "pz": {
       "agg": {
-        "submitCallForPapers": {
+        "techies": {
           "inputs": [
             {
-              "dim": "callForPapers"
+              "dim": "1_dev"
             }
           ]
         },
@@ -16,19 +16,16 @@
             }
           ]
         },
-        "techies": {
+        "submitCallForPapers": {
           "inputs": [
             {
-              "dim": "1_dev"
+              "dim": "callForPapers"
             }
           ]
         }
       },
       "enr": {
         "1": {
-          "cap": 100
-        },
-        "interest": {
           "cap": 100
         }
       },

@@ -1,14 +1,10 @@
 import { createElement } from "react";
-import { ComponentType, Page } from "../lib/models";
+import { Page } from "../lib/models";
+import componentMapping from "./componentMapping";
 
 export type PageProps = { page: Page };
 
-export const ComponentPage = ({
-  page,
-  componentMapping
-}: PageProps & {
-  componentMapping: Partial<Record<ComponentType, React.ComponentType<any>>>
-}) => (
+export const ComponentPage = ({ page }: PageProps) => (
   <>
     {page?.components &&
       page.components.map((component, index) =>
@@ -18,4 +14,4 @@ export const ComponentPage = ({
         })
       )}
   </>
-)
+);
