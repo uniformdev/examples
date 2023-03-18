@@ -15,7 +15,7 @@ const indexPage: Page = {
           description:
             "Now check out the conference sessions and add them to your agenda",
           image:
-            "//images.ctfassets.net/qefyoudbvm9s/26T6EMvuCgohcpN4uacXTc/83576ffec18a5aba6903a1df98b1ccee/success.svg",
+            "https://images.ctfassets.net/qefyoudbvm9s/26T6EMvuCgohcpN4uacXTc/83576ffec18a5aba6903a1df98b1ccee/success.svg",
           id: "registered",
           pz: {
             crit: [
@@ -34,7 +34,7 @@ const indexPage: Page = {
           description:
             "Hey, we think you may be a developer. This might be of interest to you!",
           image:
-            "//images.ctfassets.net/qefyoudbvm9s/5y9i3cZVJslNZOY7Is0UEh/c0c53b561e81092f279fb6cccb2cd415/developer.svg",
+            "https://images.ctfassets.net/qefyoudbvm9s/5y9i3cZVJslNZOY7Is0UEh/c0c53b561e81092f279fb6cccb2cd415/developer.svg",
           id: "dev",
           pz: {
             crit: [
@@ -52,7 +52,7 @@ const indexPage: Page = {
           description:
             "Hey, we think you may be a marketer. This might be of interest to you!",
           image:
-            "//images.ctfassets.net/qefyoudbvm9s/2HquYLn9LDf6yqxmQ2525o/8fea360afc9f55883e3866a853c26503/marketer.svg",
+            "https://images.ctfassets.net/qefyoudbvm9s/2HquYLn9LDf6yqxmQ2525o/8fea360afc9f55883e3866a853c26503/marketer.svg",
           id: "mktg",
           pz: {
             crit: [
@@ -69,7 +69,7 @@ const indexPage: Page = {
           buttonText: "Submit your talk",
           description: "We can't wait to receive your talk submission!",
           image:
-            "//images.ctfassets.net/qefyoudbvm9s/61CDPV29br6sNo9wwH2VRg/49bbfdbb5e192bdcae7dec41b9342078/registered.svg",
+            "https://images.ctfassets.net/qefyoudbvm9s/61CDPV29br6sNo9wwH2VRg/49bbfdbb5e192bdcae7dec41b9342078/registered.svg",
           id: "utmCampaign",
           pz: {
             crit: [
@@ -88,7 +88,7 @@ const indexPage: Page = {
           description:
             "Whether you are a developer or a marketer, we got great content for you.",
           image:
-            "//images.ctfassets.net/qefyoudbvm9s/1SvhzHGTcZUWO0J92wzBWq/868898caff791fa28b83f3108ff26b91/default.svg",
+            "https://images.ctfassets.net/qefyoudbvm9s/1SvhzHGTcZUWO0J92wzBWq/868898caff791fa28b83f3108ff26b91/default.svg",
           id: "default",
         },
       ],
