@@ -40,8 +40,6 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  console.log("!!!!!!! Edge middleware processing request", { request });
-
   const serverCookieValue = request
     ? parse(request.headers.get("cookie") ?? "")[UNIFORM_DEFAULT_COOKIE_NAME]
     : undefined;
@@ -54,8 +52,6 @@ export async function middleware(request: NextRequest) {
     }),
   });
 
-  console.log("!!!!!!! Running edge middleware");
-
   const handler = createUniformEdgeMiddleware();
 
   const response = await handler({
@@ -65,8 +61,6 @@ export async function middleware(request: NextRequest) {
   });
 
   response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
-
-  console.log("!!!!!!! Returning edge middleware");
 
   return response;
 }
