@@ -39,7 +39,7 @@ const indexPage: Page = {
           pz: {
             crit: [
               {
-                l: getEnrichmentVectorKey("interest", "dev"),
+                l: getEnrichmentVectorKey("1", "dev"),
                 op: "+",
               },
             ],
@@ -57,7 +57,7 @@ const indexPage: Page = {
           pz: {
             crit: [
               {
-                l: getEnrichmentVectorKey("interest", "mktg"),
+                l: getEnrichmentVectorKey("1", "mktg"),
                 op: "+",
               },
             ],
@@ -107,7 +107,7 @@ const developersPage: Page = {
       description: "This page is for developers!",
       image: null,
       enrichments: {
-        cat: "interest",
+        cat: "1",
         key: "dev",
         str: 50,
       },
@@ -126,7 +126,7 @@ const marketersPage: Page = {
       description: "This content is for marketers!",
       image: null,
       enrichments: {
-        cat: "interest",
+        cat: "1",
         key: "mktg",
         str: 50,
       },
@@ -147,14 +147,26 @@ const registrationPage: Page = {
   ],
 };
 
-const _pages: Record<string, Page> = {
+export const pages: Record<string, Page> = {
   "/": indexPage,
   "/developers": developersPage,
   "/marketers": marketersPage,
   "/registration": registrationPage,
 };
 
-export const getPage = async (path: string): Promise<Page> => {
-  const pageComponents = _pages[path];
+export const getPage = async (
+  slug: string | string[] | undefined
+): Promise<Page> => {
+  const path = getPathFromSlug(slug);
+  const pageComponents = pages[path];
   return pageComponents || [];
+};
+
+const getPathFromSlug = (slug?: string | string[] | null): string => {
+  // home page fallback
+  if (!slug) {
+    return "/";
+  }
+  const slugString = Array.isArray(slug) ? slug.join("/") : slug;
+  return slugString.startsWith("/") ? slugString : `/${slugString}`;
 };
