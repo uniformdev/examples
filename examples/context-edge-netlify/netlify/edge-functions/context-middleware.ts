@@ -7,8 +7,7 @@ import {
   buildNetlifyQuirks,
 } from "../../lib/uniform/index.deno.js";
 
-const IGNORED_PATHS =
-  "/(.*?trpc.*?|(?!static|.*\\..*|_next|images|img|api|favicon.ico).*)";
+const IGNORED_PATHS = /\/.*\.(ico|png|jpg|jpeg|svg|css|js|json)(?:\?.*|$)$/g;
 
 export default async (request: Request, netlifyContext: Context) => {
   // ignoring requests that are not pages
