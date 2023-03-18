@@ -32,6 +32,7 @@ export const Hero: React.FC<BaseHeroData> = ({
               <Image
                 className="w-full md:w-4/5 z-50 min-h-500 max-h-500 hidden md:block"
                 height={500}
+                width={500}
                 src={image}
                 alt={buttonText}
                 priority={true}
