@@ -8,9 +8,10 @@
     "gatsby"
   ],
   "scripts": {
-    "dev": "yarn uniform:download-manifest && gatsby develop",
-    "start": "gatsby develop",
-    "build": "yarn uniform:download-manifest && gatsby build",
+    "dev": "run-s uniform:download-manifest gatsby:develop",
+    "gatsby:develop": "gatsby develop",
+    "gatsby:build": "gatsby build",
+    "build": "run-s uniform:download-manifest && gatsby:build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
@@ -45,6 +46,7 @@
     "@types/react-dom": "^18.0.9",
     "autoprefixer": "^10.4.13",
     "gatsby-plugin-postcss": "^6.2.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3"
