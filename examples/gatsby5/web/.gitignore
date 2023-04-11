@@ -25,3 +25,5 @@
 *.tsbuildinfo
 
 /src/gatsby-types.d.ts
+
+uniform-manifest.json

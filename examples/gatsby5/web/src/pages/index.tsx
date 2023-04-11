@@ -27,6 +27,7 @@ import {
   ComponentProps,
   UniformComposition,
   UniformCompositionProps,
+  UniformSlot,
 } from "@uniformdev/canvas-react";
 import { Default } from "../components/Default";
 
@@ -128,7 +129,9 @@ const Homepage = (props: PageProps) => {
         data={composition}
         resolveRenderer={componentResolutionRenderer}
         contextualEditingEnhancer={contextualEditingEnhancer}
-      ></UniformComposition>
+      >
+        <UniformSlot name="content" />
+      </UniformComposition>
     </PageComponent>
   );
 };
