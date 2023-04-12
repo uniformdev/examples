@@ -39,6 +39,13 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
+    {
+      resolve: `../uniform-source-plugin`,
+      options: {
+        uniformApiKey: process.env.UNIFORM_API_KEY,
+        uniformProjectId: process.env.UNIFORM_PROJECT_ID,
+      },
+    },
   ],
 };
 

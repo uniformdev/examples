@@ -70,9 +70,8 @@ export const getComposition = async (path: string) => {
     apiKey: process.env.GATSBY_UNIFORM_API_KEY,
     projectId: process.env.GATSBY_UNIFORM_PROJECT_ID,
   });
-  console.log({ path });
   const { composition } = await client.getCompositionBySlug({
-    slug: !path ? "/" : path,
+    slug: path === "dev-404-page" ? "/" : path,
     state:
       process.env.NODE_ENV === "development"
         ? CANVAS_DRAFT_STATE
@@ -80,6 +79,7 @@ export const getComposition = async (path: string) => {
   });
   return composition;
 };
+
 // Function to fetch Composition serverside for use in the page component.
 export async function getServerData({
   headers,
@@ -88,6 +88,7 @@ export async function getServerData({
   query,
   params,
 }: GetServerDataProps): GetServerDataReturn {
+  // console.log({ headers, method, url, query, params });
   let { path } = params || {};
   const { slug } = query || {};
   console.log({ path, slug });
@@ -98,15 +99,13 @@ export async function getServerData({
       props: {},
     };
   }
-
   const composition = await getComposition(
     (path as string) || (slug as string) || "/"
   );
 
-  console.log({ composition });
   // Enhance composition
   await enhanceComposition(composition);
-
+  console.log({ composition });
   // Return enhanced composition
   return {
     status: 200,
@@ -136,7 +135,7 @@ export function componentResolutionRenderer(
   }
 }
 
-const Homepage = (props: PageProps) => {
+const Page = (props: PageProps) => {
   const { serverData } = props;
   const { composition } = (serverData as any) || {};
   const contextualEditingEnhancer: UniformCompositionProps["contextualEditingEnhancer"] =
@@ -145,7 +144,6 @@ const Homepage = (props: PageProps) => {
       return composition;
     };
 
-  console.log({ composition });
   return (
     <PageComponent>
       <UniformComposition
@@ -159,4 +157,4 @@ const Homepage = (props: PageProps) => {
   );
 };
 
-export default Homepage;
+export default Page;
