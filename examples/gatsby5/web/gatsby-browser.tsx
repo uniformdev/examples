@@ -19,7 +19,7 @@ export const wrapPageElement: GatsbyBrowser["wrapPageElement"] = ({
   element,
 }) => {
   return (
-    <UniformContext context={context} outputType={process.env.GATSBY_UNIFORM_OUTPUT_MODE || "standard"}>
+    <UniformContext context={context} outputType={"standard"}>
       {element}
     </UniformContext>
   );
