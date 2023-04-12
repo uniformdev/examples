@@ -1,24 +1,30 @@
-import { UniformSlot } from "@uniformdev/canvas-react";
 import * as React from "react";
+import { CTA } from "./CTA";
+
 type HeroProps = {
-  title: string;
-  description: string;
-  image: string;
+  content: {
+    title: string;
+    description: string;
+    image: string;
+    ctaTitle?: string;
+    ctaLink?: string;
+  };
 };
 
-export const Hero = ({ title, description, image }: HeroProps) => {
+export const Hero = ({ content }: HeroProps) => {
+  const { title, description, image, ctaTitle, ctaLink } = content || {};
   return (
     <div className="grid grid-cols-2 py-[3em]">
       <div className="mb-5">
         <h1 className="text-4xl mb-5">{title}</h1>
         <p className="mb-5">{description}</p>
+        {ctaTitle && ctaLink ? <CTA title={ctaTitle} link={ctaLink} /> : null}
+      </div>
+      {image ? (
         <div>
-          <UniformSlot name="ctas" />
+          <img src={image} width="500px" />
         </div>
-      </div>
-      <div>
-        <img src={image} width="500px" />
-      </div>
+      ) : null}
     </div>
   );
 };

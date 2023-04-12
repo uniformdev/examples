@@ -45,6 +45,7 @@ export async function enhanceComposition(composition: RootComponentInstance) {
     modifyQuery: (options) => {
       options.query = `*[_id == $id][0] { 
         "offeringImage": offeringImage.asset->url,
+        "image": image.asset->url,
         ...
       }`;
 

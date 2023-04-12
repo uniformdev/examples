@@ -4,6 +4,11 @@ export default {
   title: 'Offering',
   fields: [
     {
+      name: 'title',
+      type: 'string',
+      title: 'Title',
+    },
+    {
       name: 'offeringName',
       type: 'string',
       title: 'Offering Name',
