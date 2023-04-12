@@ -2,9 +2,12 @@
 
 const route = useRoute();
 const slug = `/${route.params.slug ?? ""}`;
-const { composition } = await useUniformEnhancedComposition({ slug });
+const { composition, error } = await useUniformEnhancedComposition({ slug });
 const navLinks = [{ url: "/", title: "Home" }];
 
+if(error?.value) {
+  console.error('Error fetching composition from Uniform', error.value);
+}
 </script>
 
 <template>
