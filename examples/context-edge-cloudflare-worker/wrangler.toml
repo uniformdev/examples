@@ -1,16 +1,12 @@
-name = "charliebanana"
-type = "javascript"
-zone_id = ""
+name = "your-worker-name"
+main = "src/index.ts"
 account_id = "f39f700e75c45960a1b4e1ad200acd82"
 route = ""
 workers_dev = true
+compatibility_date = "2023-04-11"
 
 [build]
 command = "npm install && npm run download:manifest && npm run build"
-[build.upload]
-format = "service-worker"
 
 [vars]
-ORIGIN_URL = "charliebanana.z5.web.core.windows.net"
-
-compatibility_date = "2022-11-12"
+ORIGIN_URL = "yoursite.z5.web.core.windows.net"
