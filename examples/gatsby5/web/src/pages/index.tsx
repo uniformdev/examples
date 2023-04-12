@@ -105,7 +105,7 @@ export function componentResolutionRenderer(
       return GenericCard;
     case "genericGrid":
       return GenericGrid;
-    case "offering":
+    case "offeringCard":
       return OfferingCard;
     case "offeringGrid":
       return OfferingGrid;
