@@ -1,7 +1,7 @@
 export default {
-  name: 'genericContent',
+  name: 'hero',
   type: 'document',
-  title: 'Generic content',
+  title: 'Hero',
   fields: [
     {
       name: 'title',
@@ -9,9 +9,14 @@ export default {
       title: 'Title',
     },
     {
-      name: 'body',
-      title: 'Body',
+      name: 'description',
       type: 'text',
+      title: 'Description',
+    },
+    {
+      name: 'image',
+      type: 'image',
+      title: 'Image',
     },
     {
       name: 'ctaLink',
