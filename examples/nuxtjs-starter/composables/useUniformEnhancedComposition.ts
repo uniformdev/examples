@@ -1,7 +1,6 @@
-export async function useUniformEnhancedComposition(parameters: any) {
+export async function useUniformEnhancedComposition(parameters: Parameters<typeof useUniformComposition>[0]) {
   const results = await useUniformComposition({
     ...parameters,
-    unstable_resolveData: true,
     enhance: async (composition) => {
       const { composition: enhancedComposition } = await $fetch(
         "/api/enhance",
