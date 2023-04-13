@@ -9,7 +9,7 @@ import {
 import { CANVAS_SANITY_PARAMETER_TYPES } from "@uniformdev/canvas-sanity";
 import { sanityEnhancer } from "./sanity";
 
-export const getComposition = async (path: string) => {
+export const getComposition = async (path: string, preview: boolean) => {
   const client = new CanvasClient({
     apiKey: process.env.GATSBY_UNIFORM_API_KEY,
     projectId: process.env.GATSBY_UNIFORM_PROJECT_ID,
@@ -18,7 +18,7 @@ export const getComposition = async (path: string) => {
   const { composition } = await client.getCompositionBySlug({
     slug: !path ? "/" : path,
     state:
-      process.env.NODE_ENV === "development"
+      preview || process.env.NODE_ENV === "development"
         ? CANVAS_DRAFT_STATE
         : CANVAS_PUBLISHED_STATE,
   });
