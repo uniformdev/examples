@@ -3,23 +3,14 @@
 This is an example supporting [this tutorial](https://docs.uniform.app/context/reference/cloudflare).
 
 ## Pre-requisites
-1. Node 16.x.
-   On newer versions of node.js, you may get the following error during `npm run build`:
-
-    ```
-    opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
-    library: 'digital envelope routines',
-    reason: 'unsupported',
-    code: 'ERR_OSSL_EVP_UNSUPPORTED'
-    ```
 1. Set `NPM_TOKEN` environment variable to the value provided by your Uniform rep. This will be needed to be able to run `npm install` since this project is using some private packages.
-1. Uniform project with at least 1 signal or enrichment created. Publish from the Personalization section at least once.
+2. Uniform project with at least 1 signal or enrichment created. Publish from the Personalization section at least once.
 
-1. Wrangler CLI installed (version 2):
+3. Wrangler CLI installed (version 2):
     ```bash
     npm i @cloudflare/wrangler -g
     ```
-1. A static site generated with `outputType=edge` and available for the worker to connect to.
+4. A static site generated with `outputType=edge` and available for the worker to connect to.
 
 ## Setup
 

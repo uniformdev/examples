@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'sd-joyride-cms',
+  title: 'Sanity Project',
 
-  projectId: 'pbehz600',
+  projectId: '0h0bmmfp',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
