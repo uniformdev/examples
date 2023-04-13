@@ -1,4 +1,6 @@
 import path from "path";
+import { enhanceComposition } from "./src/lib/canvas";
+import { RootComponentInstance } from "@uniformdev/canvas/.";
 
 exports.createPages = async function ({ actions, graphql }) {
   const { data } = await graphql(`
@@ -23,17 +25,29 @@ exports.createPages = async function ({ actions, graphql }) {
       }
     }
   `);
-  data.allCompositions.compositions.forEach((c) => {
-    const slug = c.node.slug;
-    const composition = c.node.composition;
-    composition.slots = c.node.slots ? JSON.parse(c.node.slots) : {};
-    composition.parameters = c.node?.parameters
-      ? JSON.parse(c.node?.parameters)
-      : {};
+
+  const compositions = data.allCompositions.compositions.map((c: any) =>
+    parseComposition(c.node)
+  );
+
+  const enhancedCompositions = await Promise.all(
+    compositions.map(async (composition: RootComponentInstance) => {
+      return await enhanceComposition(composition);
+    })
+  );
+
+  data.allCompositions.compositions.forEach((c: any, index: number) => {
     actions.createPage({
-      path: slug,
-      component: path.resolve(`./src/components/Page.tsx`),
-      context: { composition },
+      path: c.node.slug,
+      component: path.resolve(`./src/compositions/page.tsx`),
+      context: { composition: enhancedCompositions[index] },
     });
   });
 };
+
+function parseComposition(node: any): RootComponentInstance {
+  const { composition } = node || {};
+  composition.slots = node?.slots ? JSON.parse(node?.slots) : {};
+  composition.parameters = node?.parameters ? JSON.parse(node?.parameters) : {};
+  return composition;
+}
