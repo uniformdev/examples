@@ -11,12 +11,13 @@
     "dev": "run-s uniform:download-manifest gatsby:develop",
     "gatsby:develop": "gatsby develop",
     "gatsby:build": "gatsby build",
-    "build": "run-s uniform:download-manifest gatsby:build",
+    "build": "run-s build:plugin uniform:download-manifest gatsby:build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "uniform:fetch-map": "uniform project-map definition list",
-    "uniform:download-manifest": "uniform context manifest download --output ./uniform-manifest.json"
+    "uniform:download-manifest": "uniform context manifest download --output ./uniform-manifest.json",
+    "build:plugin": "cd ../uniform-source-plugin && npm install"
   },
   "dependencies": {
     "@sanity/client": "^3.4.1",

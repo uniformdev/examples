@@ -1,4 +1,7 @@
-import { UniformSlot } from "@uniformdev/canvas-react";
+import {
+  UniformSlot,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
 import * as React from "react";
 
 export const GenericGrid = ({ title }: { title: string }) => {
@@ -11,3 +14,8 @@ export const GenericGrid = ({ title }: { title: string }) => {
     </div>
   );
 };
+
+registerUniformComponent({
+  type: "genericGrid",
+  component: GenericGrid,
+});

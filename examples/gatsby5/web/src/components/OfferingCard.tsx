@@ -1,3 +1,4 @@
+import { registerUniformComponent } from "@uniformdev/canvas-react";
 import * as React from "react";
 
 export const OfferingCard = ({
@@ -21,3 +22,8 @@ export const OfferingCard = ({
     </div>
   );
 };
+
+registerUniformComponent({
+  type: "offeringCard",
+  component: OfferingCard,
+});
