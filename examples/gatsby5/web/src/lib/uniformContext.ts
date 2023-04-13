@@ -1,9 +1,11 @@
 import {
   Context,
+  CookieTransitionDataStore,
   ManifestV2,
   enableContextDevTools,
   enableDebugConsoleLogDrain,
 } from "@uniformdev/context";
+
 import manifest from "../../uniform-manifest.json";
 
 export function createUniformContext() {
@@ -15,9 +17,7 @@ export function createUniformContext() {
   const context = new Context({
     defaultConsent: true,
     manifest: manifest as ManifestV2,
-    // transitionStore: new NextCookieTransitionDataStore({
-    //   serverContext,
-    // }),
+    transitionStore: new CookieTransitionDataStore({}),
     plugins: plugins,
   });
 
