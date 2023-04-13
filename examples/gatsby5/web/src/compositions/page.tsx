@@ -1,21 +1,17 @@
 import React from "react";
-import {
-  UniformComposition,
-  UniformSlot,
-  // UniformCompositionProps,
-} from "@uniformdev/canvas-react";
-import { componentResolutionRenderer } from "../components";
+import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
 import { UniformContext } from "@uniformdev/context-react";
 import { createUniformContext } from "../lib/uniformContext";
 import Container from "../components/Container";
-// import { enhanceComposition } from "../lib/canvas";
+
+// IMPORTANT: importing all canvas registered components here
+import "../components/canvasComponents";
 
 const clientContext = createUniformContext();
 
 export default function PageComposition(props: any) {
   const { pageContext, contextualEditingEnhancer } = props;
   const { composition } = pageContext || {};
-
   return (
     <UniformContext
       context={clientContext}
@@ -28,7 +24,6 @@ export default function PageComposition(props: any) {
       <Container>
         <UniformComposition
           data={composition}
-          resolveRenderer={componentResolutionRenderer}
           contextualEditingEnhancer={contextualEditingEnhancer}
         >
           <UniformSlot name="content" />

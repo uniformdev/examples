@@ -1,3 +1,4 @@
+import { registerUniformComponent } from "@uniformdev/canvas-react";
 import * as React from "react";
 
 export const GenericCard = ({
@@ -23,3 +24,8 @@ export const GenericCard = ({
     </div>
   );
 };
+
+registerUniformComponent({
+  type: "genericCard",
+  component: GenericCard,
+});
