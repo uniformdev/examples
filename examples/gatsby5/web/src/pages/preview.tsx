@@ -12,7 +12,7 @@ export async function getServerData({
   query,
 }: GetServerDataProps): GetServerDataReturn {
   const { slug } = query || {};
-  const composition = await getComposition((slug as string) || "/");
+  const composition = await getComposition((slug as string) || "/", true);
   await enhanceComposition(composition);
   return {
     status: 200,
