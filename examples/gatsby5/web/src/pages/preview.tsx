@@ -5,8 +5,8 @@ import type {
   PageProps,
 } from "gatsby";
 import { UniformCompositionProps } from "@uniformdev/canvas-react";
-import { enhanceComposition, getComposition } from "../../lib/canvas";
-import PageComposition from "../../compositions/page";
+import { enhanceComposition, getComposition } from "../lib/canvas";
+import PageComposition from "../compositions/page";
 
 export async function getServerData({
   query,
