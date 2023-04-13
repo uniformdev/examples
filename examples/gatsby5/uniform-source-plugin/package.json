@@ -1,0 +1,22 @@
+{
+  "name": "@uniformdev/uniform-canvas-plugin",
+  "version": "1.0.0",
+  "description": "A Uniform Canvas plugin for Gatsby",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build script setup\""
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "18.34.0",
+    "@uniformdev/canvas-react": "18.34.0",
+    "@uniformdev/context": "18.34.0",
+    "node-fetch": "^2.6.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "author": "Uniform Systems",
+  "license": "TBD"
+}

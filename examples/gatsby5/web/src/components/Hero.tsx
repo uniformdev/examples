@@ -1,5 +1,6 @@
 import * as React from "react";
 import { CTA } from "./CTA";
+import { registerUniformComponent } from "@uniformdev/canvas-react";
 
 type HeroProps = {
   content: {
@@ -16,7 +17,7 @@ export const Hero = ({ content }: HeroProps) => {
   return (
     <div className="grid grid-cols-2 py-[3em]">
       <div className="mb-5">
-        <h1 className="text-4xl mb-5">{title}</h1>
+        <h1 className="text-4xl mb-5">{title || JSON.stringify(content)}</h1>
         <p className="mb-5">{description}</p>
         {ctaTitle && ctaLink ? <CTA title={ctaTitle} link={ctaLink} /> : null}
       </div>
@@ -28,3 +29,8 @@ export const Hero = ({ content }: HeroProps) => {
     </div>
   );
 };
+
+registerUniformComponent({
+  type: "hero",
+  component: Hero,
+});
