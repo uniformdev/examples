@@ -18,8 +18,8 @@
     "worker:status": "node ./scripts/check-status.js"
   },
   "dependencies": {
-    "@uniformdev/context-edge": "^18.22.0",
-    "@uniformdev/context-edge-akamai": "^18.22.0"
+    "@uniformdev/context-edge": "^18.34.0",
+    "@uniformdev/context-edge-akamai": "^18.34.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "22.0.0",
@@ -28,8 +28,8 @@
     "@rollup/plugin-typescript": "8.3.2",
     "@types/akamai-edgeworkers": "1.0.10",
     "@types/node": "^17.0.44",
-    "@uniformdev/cli": "^18.22.0",
-    "@uniformdev/context": "^18.22.0",
+    "@uniformdev/cli": "^18.34.0",
+    "@uniformdev/context": "^18.34.0",
     "dotenv": "^16.0.1",
     "rimraf": "^3.0.2",
     "rollup": "2.74.1",
