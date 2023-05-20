@@ -1,4 +1,5 @@
 # Gatsby starter for Uniform
+This starter showcases the latest Uniform capabilities with Gatsby and is enabled for personalization and A/B testing.
 
 ## Prerequisites
 1. Uniform account. Request access [here](https://uniform.dev/try) if you don't have one already.
