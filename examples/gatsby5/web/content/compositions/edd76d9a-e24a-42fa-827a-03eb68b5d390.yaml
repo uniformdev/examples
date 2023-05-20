@@ -1,0 +1,27 @@
+composition:
+  _name: Get a Ride
+  _id: edd76d9a-e24a-42fa-827a-03eb68b5d390
+  _slug: get-a-ride
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Get a ride!
+  slots:
+    content:
+      - _id: d3993118-4f08-46f8-b1f9-0c75bd80801e
+        type: hero
+        parameters:
+          image:
+            type: image
+            value: >-
+              https://images.unsplash.com/photo-1482029255085-35a4a48b7084?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80
+          title:
+            type: text
+            value: Get a ride in under 2 minutes!
+          description:
+            type: text
+            value: Guaranteed!
+created: '2023-05-19T23:00:08.444298+00:00'
+modified: '2023-05-20T22:16:17.359516+00:00'
+pattern: false

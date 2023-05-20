@@ -1,0 +1,251 @@
+composition:
+  _name: Home
+  _id: 95a0a24d-184d-4337-af0c-18fdc142693b
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 76b86325-64ba-43d0-9b40-e9b4532f9ca1
+        type: $personalization
+        slots:
+          pz:
+            - _id: c05ebdb6-e0b3-4e0d-a4ff-bb5bf1f66cb9
+              type: hero
+              parameters:
+                image:
+                  type: image
+                  value: >-
+                    https://images.unsplash.com/photo-1597893503977-e51f98d178e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80
+                title:
+                  type: text
+                  value: Let’s Take a Ride
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: launchCampaign
+                        r: 0
+                        op: '>'
+                    name: 'Hero: Personalized for the Launch campaign'
+                ctaLink:
+                  type: link
+                  value:
+                    path: /get-a-ride
+                    type: projectMapNode
+                    nodeId: 0c5a9b47-b211-43a5-94f4-0499fc900bce
+                    projectMapId: 0319583f-6257-4e60-99ed-1a1c1b855103
+                ctaTitle:
+                  type: text
+                  value: Get a Ride
+                description:
+                  type: text
+                  value: >-
+                    Wherever you want to be, let's take you there. Superfast. We
+                    put the Joy in Joyride.
+            - _id: bd5c5874-ddad-4a8d-b032-f1c03d47479b
+              type: hero
+              parameters:
+                image:
+                  type: image
+                  value: >-
+                    https://images.unsplash.com/photo-1473655587843-eda8944061e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80
+                title:
+                  type: text
+                  value: We are live!
+                ctaLink:
+                  type: link
+                  value:
+                    path: https://uniform.dev/demo
+                    type: url
+                ctaTitle:
+                  type: text
+                  value: Get a demo
+                description:
+                  type: text
+                  value: >+
+                    You are seeing this because Uniform tracker identified
+                    active signal "Launch Campaign"
+
+
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home Hero
+      - _id: c54cafd5-1daf-462c-b9e0-dc5f58bacf31
+        type: $test
+        slots:
+          test:
+            - _id: bd55bf6d-7c96-4834-b9b2-d6f4d8b6480c
+              type: genericGrid
+              slots:
+                items:
+                  - _id: 8af8d7c8-7aab-445e-82f7-0a765121aeaf
+                    type: genericCard
+                    parameters:
+                      text:
+                        type: text
+                        value: >-
+                          For those seeking adventure, joyriding can be a
+                          thrilling experience.
+
+                          It's the perfect opportunity to let go.
+                      title:
+                        type: text
+                        value: The Adventure of Joyriding
+                      content:
+                        type: sanityEntrySelector
+                        value: b4779353-c287-47eb-87a8-c03ee2b7ab84
+                      ctaLink:
+                        type: link
+                        value:
+                          path: /get-a-ride
+                          type: projectMapNode
+                          nodeId: 0c5a9b47-b211-43a5-94f4-0499fc900bce
+                          projectMapId: 0319583f-6257-4e60-99ed-1a1c1b855103
+                      ctaTitle:
+                        type: text
+                        value: Read more
+                  - _id: 5c4d13b0-06e3-4f58-b1ae-f415db3f16f1
+                    type: genericCard
+                    parameters:
+                      text:
+                        type: text
+                        value: >-
+                          For those who crave solitude, a solo joyride can be a
+                          peaceful and fulfilling experience.
+                      title:
+                        type: text
+                        value: The Joy of Solo Joyrides
+                      content:
+                        type: sanityEntrySelector
+                        value: ad3f2d70-a496-41b3-a0a2-fb30f6008f94
+                      ctaLink:
+                        type: link
+                        value:
+                          path: /get-a-ride
+                          type: projectMapNode
+                          nodeId: 0c5a9b47-b211-43a5-94f4-0499fc900bce
+                          projectMapId: 0319583f-6257-4e60-99ed-1a1c1b855103
+                      ctaTitle:
+                        type: text
+                        value: Read more
+                  - _id: f2c7eda5-6cc3-4416-a882-d42cd6a89612
+                    type: genericCard
+                    parameters:
+                      text:
+                        type: text
+                        value: >-
+                          Taking a joyride with friends is a great way to spend
+                          quality time together and create unforgettable
+                          memories.
+                      title:
+                        type: text
+                        value: Joyride with Friends
+                      content:
+                        type: sanityEntrySelector
+                        value: 62bc25fd-d952-4933-9450-092ab7f8d4a6
+                      ctaLink:
+                        type: link
+                        value:
+                          path: /get-a-ride
+                          type: projectMapNode
+                          nodeId: 0c5a9b47-b211-43a5-94f4-0499fc900bce
+                          projectMapId: 0319583f-6257-4e60-99ed-1a1c1b855103
+                      ctaTitle:
+                        type: text
+                        value: Try it with friends
+              parameters:
+                title:
+                  type: text
+                  value: Joyriding
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    testDistribution: 30
+            - _id: 6a14e261-b7d7-4670-bc63-7c92f2298a1b
+              type: offeringGrid
+              slots:
+                offerings:
+                  - _id: db405950-7c1c-4c24-a67b-3a0eedca59c5
+                    type: offeringCard
+                    parameters:
+                      name:
+                        type: text
+                        value: Ride a Bike
+                      image:
+                        type: image
+                        value: >-
+                          https://cdn.sanity.io/images/0h0bmmfp/production/3b78cd2562d1dfa3fe7016bcbff6983d50817553-128x128.png
+                      summary:
+                        type: text
+                        value: How to ride a bike
+                      offering:
+                        type: sanityEntrySelector
+                        value: 6d50220c-9094-4b12-b3c3-7ec29062c736
+                  - _id: 1227fae3-f220-4bd2-9b59-6e2e5ec82c74
+                    type: offeringCard
+                    parameters:
+                      name:
+                        type: text
+                        value: Ride a Scooter
+                      image:
+                        type: image
+                        value: >-
+                          https://cdn.sanity.io/images/0h0bmmfp/production/111d6c8aff7c87e4fc646fa4cd56ba13e1b1f242-128x115.png
+                      summary:
+                        type: text
+                        value: About scooter
+                      offering:
+                        type: sanityEntrySelector
+                        value: a2348bc3-a607-4811-a065-a7d59051b540
+                  - _id: d6afcf97-58f4-4b04-bef3-133455c805db
+                    type: offeringCard
+                    parameters:
+                      name:
+                        type: text
+                        value: Group Rides
+                      image:
+                        type: image
+                        value: >-
+                          https://cdn.sanity.io/images/0h0bmmfp/production/63b40af8204ce40f67604ad396215f0343638744-128x79.png
+                      summary:
+                        type: text
+                        value: Group Rides Summary
+                      offering:
+                        type: sanityEntrySelector
+                        value: b0ef1092-c952-4a13-af7d-6bb0ef242b95
+                  - _id: ccf31014-3c2f-4195-9ba9-7f5f2a41e1d5
+                    type: offeringCard
+                    parameters:
+                      name:
+                        type: text
+                        value: Private Rides
+                      image:
+                        type: image
+                        value: >-
+                          https://cdn.sanity.io/images/0h0bmmfp/production/2876e53c5fdeb4e532aa0e6909732509d57c5ca9-94x128.png
+                      summary:
+                        type: text
+                        value: Private Rides Summary
+                      offering:
+                        type: sanityEntrySelector
+                        value: 66e5b9ad-688b-47bd-b2b9-fb3c67c945d3
+              parameters:
+                title:
+                  type: text
+                  value: Our offerings
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    testDistribution: 70
+        parameters:
+          test:
+            type: testSelect
+            value: homepageCards
+created: '2023-05-19T23:00:09.744753+00:00'
+modified: '2023-05-20T22:20:46.653949+00:00'
+pattern: false

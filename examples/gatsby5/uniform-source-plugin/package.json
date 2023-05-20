@@ -8,10 +8,10 @@
     "build": "echo \"No build script setup\""
   },
   "dependencies": {
-    "@uniformdev/canvas": "18.34.0",
-    "@uniformdev/canvas-react": "18.34.0",
-    "@uniformdev/context": "18.34.0",
-    "@uniformdev/project-map": "18.34.0",
+    "@uniformdev/canvas": "19.10.0",
+    "@uniformdev/canvas-react": "19.10.0",
+    "@uniformdev/context": "19.10.0",
+    "@uniformdev/project-map": "19.10.0",
     "node-fetch": "^2.6.1"
   },
   "keywords": [

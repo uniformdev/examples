@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: callToAction
+name: 'Call to Action '
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: link
+    name: Link
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-05-19T22:58:26.752807+00:00'
+updated: '2023-05-19T23:00:00.217255+00:00'

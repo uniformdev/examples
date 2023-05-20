@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: offeringGrid
+name: Offering Grid
+icon: view-grid
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: offerings
+    name: Offerings
+    minComponents: 2
+    allowedComponents:
+      - offeringCard
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2023-05-19T22:58:28.527571+00:00'
+updated: '2023-05-19T23:00:01.594957+00:00'

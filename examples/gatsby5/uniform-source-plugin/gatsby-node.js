@@ -1,4 +1,8 @@
-const { CanvasClient, CANVAS_DRAFT_STATE } = require("@uniformdev/canvas");
+const {
+  CanvasClient,
+  CANVAS_DRAFT_STATE,
+  CANVAS_PUBLISHED_STATE,
+} = require("@uniformdev/canvas");
 const { ProjectMapClient } = require("@uniformdev/project-map");
 const fetch = require("node-fetch");
 
@@ -40,7 +44,10 @@ exports.sourceNodes = async ({
 
   const { compositions } = await canvasClient.getCompositionList({
     skipEnhance: true,
-    state: CANVAS_DRAFT_STATE,
+    state:
+      process.env.NODE_ENV === "development"
+        ? CANVAS_DRAFT_STATE
+        : CANVAS_PUBLISHED_STATE,
   });
 
   console.log(
