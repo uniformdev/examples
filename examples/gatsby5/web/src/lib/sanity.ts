@@ -1,16 +1,5 @@
-import {
-  CANVAS_DRAFT_STATE,
-  CANVAS_PUBLISHED_STATE,
-  CanvasClient,
-  enhance,
-  EnhancerBuilder,
-  RootComponentInstance,
-} from "@uniformdev/canvas";
 import createSanityClient from "@sanity/client";
-import {
-  CANVAS_SANITY_PARAMETER_TYPES,
-  createSanityEnhancer,
-} from "@uniformdev/canvas-sanity";
+import { createSanityEnhancer } from "@uniformdev/canvas-sanity";
 
 const sanityClient = createSanityClient({
   projectId: process.env.GATSBY_SANITY_PROJECT_ID,

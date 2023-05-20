@@ -1,24 +1,28 @@
-import { registerUniformComponent } from "@uniformdev/canvas-react";
 import * as React from "react";
+import {
+  UniformText,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
 
-export const GenericCard = ({
-  content,
-}: {
-  content: {
-    title: string;
-    ctaLink?: string;
-    ctaTitle?: string;
-    body?: string | any;
-  };
-}) => {
-  const { title, ctaLink = "#", ctaTitle, body } = content || {};
+type GenericCardProps = {
+  title: string;
+  text?: string | any;
+  ctaLink?: string;
+  ctaTitle?: string;
+};
+
+export const GenericCard = ({ ctaLink = "#" }: GenericCardProps) => {
   return (
     <div className="h-full flex flex-col justify-between">
-      <h3 className="text-xl font-medium text-center mb-5">{title}</h3>
-      <p className="px-10">{body}</p>
+      <UniformText
+        parameterId="title"
+        as="h3"
+        className="text-xl font-medium text-center mb-5"
+      />
+      <UniformText parameterId="text" as="p" className="px-10" />
       <a href={ctaLink}>
         <p className="text-center mt-5 text-[#c98686] font-semibold">
-          {ctaTitle}
+          <UniformText parameterId="ctaTitle" as="span" />
         </p>
       </a>
     </div>

@@ -13,9 +13,7 @@ export const Header = () => {
       <div className="flex space-x-10 col-span-8 justify-end items-center">
         <Link to="/get-a-ride">Get a ride</Link>
         <Link to="/drive-with-us">Drive with us</Link>
-        <Link to="/get-a-ride">About us</Link>
         <Link to="/safety">Safety</Link>
-
         <Link to="/login" className="px-2 py-1 bg-[#c98686] rounded">
           Log in
         </Link>

@@ -25,6 +25,12 @@ const config: GatsbyConfig = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
+     {
+    resolve: `gatsby-plugin-gatsby-cloud`,
+    options: {
+      mergeSecurityHeaders: false,
+    },
+  },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -47,6 +53,12 @@ const config: GatsbyConfig = {
       },
     },
   ],
+   developMiddleware: (app) => {
+    app.use((req, res, next) => {
+      res.setHeader('X-Frame-Options', 'ALLOWALL');
+      next();
+    });
+  },
 };
 
 export default config;
