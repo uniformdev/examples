@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: genericCard
+name: Generic Card
+icon: card-diamonds
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: text
+    name: Text
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '4'
+  - id: ctaTitle
+    name: Call to Action Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: ctaLink
+    name: Call to Action Link
+    type: link
+    helpText: ''
+    typeConfig: null
+  - id: content
+    name: Content
+    type: sanityEntrySelector
+    helpText: ''
+    typeConfig:
+      required: true
+      allowedContentTypes:
+        - genericContent
+      searchableFieldNames:
+        - title
+        - body
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-05-19T22:58:27.26943+00:00'
+updated: '2023-05-20T21:59:11.765018+00:00'

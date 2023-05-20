@@ -1,13 +1,18 @@
+import * as React from "react";
 import {
   UniformSlot,
+  UniformText,
   registerUniformComponent,
 } from "@uniformdev/canvas-react";
-import * as React from "react";
 
-export const GenericGrid = ({ title }: { title: string }) => {
+export const GenericGrid = () => {
   return (
     <div className="border-t-2 py-[4em]">
-      <h3 className="text-3xl text-center mb-10 font-medium">{title}</h3>
+      <UniformText
+        parameterId="title"
+        as="h3"
+        className="text-3xl text-center mb-10 font-medium"
+      />
       <div className="grid grid-cols-3 gap-5">
         <UniformSlot name="items" />
       </div>

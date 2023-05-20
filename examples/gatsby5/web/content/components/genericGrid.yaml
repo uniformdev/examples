@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: genericGrid
+name: Generic Grid
+icon: display-grid
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: items
+    name: Items
+    minComponents: 3
+    allowedComponents:
+      - genericCard
+      - hero
+      - offeringCard
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2023-05-19T22:58:27.521146+00:00'
+updated: '2023-05-19T23:00:00.74677+00:00'
