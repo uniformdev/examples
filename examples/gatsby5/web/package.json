@@ -20,10 +20,8 @@
     "build:plugin": "cd ../uniform-source-plugin && npm install"
   },
   "dependencies": {
-    "@sanity/client": "^3.4.1",
     "@uniformdev/canvas": "19.10.0",
     "@uniformdev/canvas-react": "19.10.0",
-    "@uniformdev/canvas-sanity": "19.10.0",
     "@uniformdev/cli": "19.10.0",
     "@uniformdev/context": "19.10.0",
     "@uniformdev/context-react": "19.10.0",
@@ -37,7 +35,6 @@
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-plugin-sitemap": "^6.2.0",
     "gatsby-source-filesystem": "^5.10.0",
-    "gatsby-source-sanity": "^7.6.0",
     "gatsby-transformer-sharp": "^5.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

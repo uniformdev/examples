@@ -6,7 +6,7 @@ import {
 
 export async function enhanceComposition(composition: RootComponentInstance) {
   // const enhancers = new EnhancerBuilder().parameterType(
-  // TODO: add any enhancers if needed
+  // TODO: add any enhancers if needed, for example, Sanity CMS
   //   CANVAS_SANITY_PARAMETER_TYPES,
   //   sanityEnhancer
   // );

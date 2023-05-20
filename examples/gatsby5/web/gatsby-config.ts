@@ -13,13 +13,6 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-netlify",
-    {
-      resolve: "gatsby-source-sanity",
-      options: {
-        projectId: "pbehz600",
-        dataset: "production",
-      },
-    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
