@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: display-fullwidth
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '5'
+  - id: image
+    name: Image
+    type: image
+    helpText: ''
+    typeConfig: null
+  - id: ctaTitle
+    name: Call to Action Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: ctaLink
+    name: Call to Action Link
+    type: link
+    helpText: ''
+    typeConfig:
+      required: false
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-05-19T22:58:27.887294+00:00'
+updated: '2023-05-20T21:40:15.62562+00:00'

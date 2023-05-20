@@ -1,0 +1,35 @@
+composition:
+  _name: Drive with Us
+  _id: 42187d05-6220-437d-b256-1bc958793252
+  _slug: drive-with-us
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Drive with Us
+  slots:
+    content:
+      - _id: 204a416c-e476-4bcf-b18b-21666ba22ec8
+        type: hero
+        parameters:
+          image:
+            type: image
+            value: >-
+              https://images.unsplash.com/photo-1516862523118-a3724eb136d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80
+          title:
+            type: text
+            value: Drive with us!
+          ctaLink:
+            type: link
+            value:
+              path: '4151234567'
+              type: tel
+          ctaTitle:
+            type: text
+            value: Call us
+          description:
+            type: text
+            value: Our drivers love partnering with us!
+created: '2023-05-19T22:58:32.378249+00:00'
+modified: '2023-05-20T22:15:17.977317+00:00'
+pattern: false
