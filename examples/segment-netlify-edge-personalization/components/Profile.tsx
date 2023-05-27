@@ -7,12 +7,11 @@ const Profile = () => {
   const scores = useScores();
   const [cookies] = useCookies();
   const [anonymousId, setAnonymousId] = useState();
-  const [userId, setUserId] = useState();
   const [trackerScores, setTrackerScores] = useState<any>();
 
   useEffect(() => {
     const friendlyScores = Object.keys(scores).map((k) => {
-      let persona = "Unknown";
+      let persona = k;
       if (k === "p_d") {
         persona = "Developer";
       } else if (k === "p_m") {
@@ -23,17 +22,14 @@ const Profile = () => {
 
     setTrackerScores(friendlyScores);
     setAnonymousId(cookies["ajs_anonymous_id"]);
-    setUserId(cookies["ajs_user_id"]);
   }, [scores, cookies]);
 
   return (
     <div>
       <h2>Current visitor scores from Uniform Tracker:</h2>
-      <div>{JSON.stringify(trackerScores)}</div>
+      <pre>{JSON.stringify(trackerScores)}</pre>
       <h2>Segment User Id:</h2>
-      <div>{anonymousId}</div>
-      <h2>Segment Anonymous User Id:</h2>
-      <div>{userId}</div>
+      <pre>{anonymousId}</pre>
       <Traits />
     </div>
   );

@@ -65,14 +65,20 @@ async function getCDPData(netlifyContext: Context) {
       Authorization: `Basic ${segmentBasicAuth}`,
     },
   });
-  console.log({ visitorResponse });
   if (!visitorResponse.ok) {
-    console.log("Error fetching CDP data");
+    if (visitorResponse.status === 404) {
+      console.log("Profile not found", { visitorId: ajs_anonymous_id });
+    } else {
+      console.log("Error fetching CDP data", {
+        status: visitorResponse.status,
+        statusText: visitorResponse.statusText,
+      });
+    }
     return {};
   }
   const visitorData = await visitorResponse.json();
   const traits = removeUnderscores(visitorData?.traits);
-  console.log({ traits });
+  console.log("Traits: ", { traits });
   return traits;
 }
 

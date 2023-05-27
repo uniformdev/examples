@@ -2,19 +2,26 @@ import { GetStaticPropsContext } from "next";
 import { getCompositionsForNavigation } from "lib/uniform/canvasClient";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import Identify from "@/components/Identify";
+import dynamic from "next/dynamic";
 
-const IdentifyPage = (props) => {
+const OverrideAnonymousId = dynamic(
+  () => import("@/components/OverrideAnonymousId"),
+  {
+    ssr: false,
+  }
+);
+
+const OverridePage = (props) => {
   return (
     <>
       <Navigation navLinks={props.navLinks} />
-      <Identify />
+      <OverrideAnonymousId />
       <Footer />
     </>
   );
 };
 
-export default IdentifyPage;
+export default OverridePage;
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   const { preview } = context;

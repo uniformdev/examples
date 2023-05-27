@@ -9,6 +9,7 @@ import {
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
 import "../lib/uniform/components";
+import TrackerScoreSync from "./TrackerScoreSync";
 
 export default function PageComposition({
   composition,
@@ -40,6 +41,7 @@ export default function PageComposition({
           <UniformSlot name="content" />
         </UniformComposition>
       )}
+      <TrackerScoreSync />
       <Footer />
     </>
   );

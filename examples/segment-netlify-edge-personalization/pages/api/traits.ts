@@ -1,5 +1,6 @@
 import { NextApiHandler } from "next";
 import getConfig from "next/config";
+import axios from "axios";
 
 const handleGet: NextApiHandler = async (req, res) => {
   const {
@@ -8,14 +9,14 @@ const handleGet: NextApiHandler = async (req, res) => {
 
   if (!segmentApiKey || !segmentSpaceId) {
     return res
-      .status(400)
+      .status(401)
       .json({ message: "Segment settings are not configured" });
   }
 
   const nextCookies = req.cookies;
   const ajs_anonymous_id = nextCookies.ajs_anonymous_id;
 
-  if (!segmentApiKey || !segmentSpaceId) {
+  if (!ajs_anonymous_id) {
     return res.status(401).json({
       message:
         "Segment identification hasn't taken place. No ajs_anonymous_id set",
@@ -23,23 +24,21 @@ const handleGet: NextApiHandler = async (req, res) => {
   }
 
   const url = `https://profiles.segment.com/v1/spaces/${segmentSpaceId}/collections/users/profiles/anonymous_id:${ajs_anonymous_id}/traits`;
-
   const basicAuth = Buffer.from(segmentApiKey + ":").toString("base64");
-
+  let statusText;
   try {
-    const response = await fetch(url, {
+    // IMPORTANT: using axios since standard fetch blows up parsing the response (something with gzip)
+    const resp = await axios.get(url, {
       headers: {
         Authorization: `Basic ${basicAuth}`,
+        "accept-encoding": "gzip,deflate",
       },
     });
-    const json = await response.json();
-    return res.status(200).json({
-      traits: json.traits,
-    });
+    res.status(200).json(resp.data);
   } catch (error) {
     console.log("error", error);
-    return res.status(500).json({
-      error,
+    res.status(500).json({
+      statusText,
     });
   }
 };
