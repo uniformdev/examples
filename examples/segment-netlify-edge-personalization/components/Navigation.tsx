@@ -19,7 +19,7 @@ const Navigation: React.FC<NavigationProps> = ({
   const links = [...navLinks];
   links.push({ url: "/simulator", title: "Simulator" });
   links.push({ url: "/profile", title: "Profile" });
-  links.push({ url: "/identify", title: "Identify" });
+  links.push({ url: "/override", title: "Override" });
 
   return (
     <div className="navigation">

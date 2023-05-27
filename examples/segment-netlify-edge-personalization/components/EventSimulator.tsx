@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 const EventSimulator = () => {
-  const [message, setMessage] = useState<string>("Simulate an event using one of the buttons below:");
+  const [message, setMessage] = useState<string>(
+    "Simulate an event using one of the buttons below:"
+  );
 
   const onOrderComplete = (e) => {
     e.preventDefault();
@@ -12,6 +14,16 @@ const EventSimulator = () => {
     });
     setMessage("'Order Completed' event dispatched (amount: 10000)");
   };
+
+  const onAddToCart = (e) => {
+    e.preventDefault();
+    global.analytics.track("Add to cart", {
+      product: "456",
+      category: "Beans",
+    });
+    setMessage("'Product add to cart' event dispatched");
+  };
+
   const onProductFavorite = (e) => {
     e.preventDefault();
     global.analytics.track("Product Favorited", {
@@ -23,9 +35,12 @@ const EventSimulator = () => {
 
   return (
     <div>
-      <h1>{message}</h1>
-      <button onClick={onProductFavorite}>Favorite Product</button>
-      <button onClick={onOrderComplete}>Complete Order</button>
+      <h2>{message}</h2>
+      <button onClick={onProductFavorite}>Favorite a product</button>
+      <hr />
+      <button onClick={onAddToCart}>Add to cart</button>
+      <hr />
+      <button onClick={onOrderComplete}>Complete an order</button>
     </div>
   );
 };
