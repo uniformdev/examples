@@ -59,18 +59,25 @@ exports.sourceNodes = async ({
     const { nodes } = await getProjectMapClient().getNodes({
       compositionId: c.composition._id,
     });
-    createNode({
-      ...c,
-      id: createNodeId(`Composition-${c.composition._id}`),
-      name: c.composition._name,
-      slug: nodes?.[0].path,
-      componentType: c.composition.type,
-      slots: JSON.stringify(c.composition.slots),
-      parameters: JSON.stringify(c.composition?.parameters),
-      internal: {
-        type: "Compositions",
-        contentDigest: createContentDigest(c),
-      },
-    });
+    const nodePath = nodes?.[0]?.path;
+    if (nodePath) {
+      createNode({
+        ...c,
+        id: createNodeId(`Composition-${c.composition._id}`),
+        name: c.composition._name,
+        slug: nodes?.[0]?.path ?? "",
+        componentType: c.composition.type,
+        slots: JSON.stringify(c.composition.slots),
+        parameters: JSON.stringify(c.composition?.parameters),
+        internal: {
+          type: "Compositions",
+          contentDigest: createContentDigest(c),
+        },
+      });
+    } else {
+      console.warn(
+        `Uniform: Project Map node for composition ${c.composition._id} could not be found, so this node was removed from gatsby schema.`
+      );
+    }
   }
 };

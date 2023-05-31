@@ -25,10 +25,11 @@ export default function PageComposition(props: any) {
     <UniformContext
       context={clientContext}
       outputType={
-        process.env.UNIFORM_OUTPUT_MODE
-          ? process.env.UNIFORM_OUTPUT_MODE
-          : "standard"
+        process.env.NODE_ENV === "development"
+          ? "standard"
+          : process.env.UNIFORM_OUTPUT_MODE
       }
+      includeTransferState="never"
     >
       <Container>
         <UniformComposition
