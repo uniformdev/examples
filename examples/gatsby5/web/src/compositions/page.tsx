@@ -29,7 +29,7 @@ export default function PageComposition(props: any) {
           ? "standard"
           : process.env.UNIFORM_OUTPUT_MODE
       }
-      includeTransferState="never"
+      includeTransferState="always"
     >
       <Container>
         <UniformComposition
