@@ -96,9 +96,6 @@ composition:
                       title:
                         type: text
                         value: The Adventure of Joyriding
-                      content:
-                        type: sanityEntrySelector
-                        value: b4779353-c287-47eb-87a8-c03ee2b7ab84
                       ctaLink:
                         type: link
                         value:
@@ -120,9 +117,6 @@ composition:
                       title:
                         type: text
                         value: The Joy of Solo Joyrides
-                      content:
-                        type: sanityEntrySelector
-                        value: ad3f2d70-a496-41b3-a0a2-fb30f6008f94
                       ctaLink:
                         type: link
                         value:
@@ -145,9 +139,6 @@ composition:
                       title:
                         type: text
                         value: Joyride with Friends
-                      content:
-                        type: sanityEntrySelector
-                        value: 62bc25fd-d952-4933-9450-092ab7f8d4a6
                       ctaLink:
                         type: link
                         value:
@@ -183,9 +174,6 @@ composition:
                       summary:
                         type: text
                         value: How to ride a bike
-                      offering:
-                        type: sanityEntrySelector
-                        value: 6d50220c-9094-4b12-b3c3-7ec29062c736
                   - _id: 1227fae3-f220-4bd2-9b59-6e2e5ec82c74
                     type: offeringCard
                     parameters:
@@ -199,9 +187,6 @@ composition:
                       summary:
                         type: text
                         value: About scooter
-                      offering:
-                        type: sanityEntrySelector
-                        value: a2348bc3-a607-4811-a065-a7d59051b540
                   - _id: d6afcf97-58f4-4b04-bef3-133455c805db
                     type: offeringCard
                     parameters:
@@ -215,9 +200,6 @@ composition:
                       summary:
                         type: text
                         value: Group Rides Summary
-                      offering:
-                        type: sanityEntrySelector
-                        value: b0ef1092-c952-4a13-af7d-6bb0ef242b95
                   - _id: ccf31014-3c2f-4195-9ba9-7f5f2a41e1d5
                     type: offeringCard
                     parameters:
@@ -231,9 +213,6 @@ composition:
                       summary:
                         type: text
                         value: Private Rides Summary
-                      offering:
-                        type: sanityEntrySelector
-                        value: 66e5b9ad-688b-47bd-b2b9-fb3c67c945d3
               parameters:
                 title:
                   type: text
@@ -247,5 +226,5 @@ composition:
             type: testSelect
             value: homepageCards
 created: '2023-05-19T23:00:09.744753+00:00'
-modified: '2023-05-20T22:20:46.653949+00:00'
+modified: '2023-05-31T00:10:10.833431+00:00'
 pattern: false

@@ -4,17 +4,6 @@ id: offeringCard
 name: Offering Card
 icon: card-hearts
 parameters:
-  - id: offering
-    name: Offering
-    type: sanityEntrySelector
-    helpText: ''
-    typeConfig:
-      allowedContentTypes:
-        - offering
-      searchableFieldNames:
-        - offeringName
-        - offeringImage
-        - offeringSummary
   - id: name
     name: Name
     type: text
@@ -37,4 +26,4 @@ slots: []
 titleParameter: name
 canBeComposition: false
 created: '2023-05-19T22:58:28.176719+00:00'
-updated: '2023-05-20T21:56:35.390108+00:00'
+updated: '2023-05-31T00:08:31.11539+00:00'
