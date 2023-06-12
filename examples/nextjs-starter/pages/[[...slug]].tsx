@@ -21,7 +21,7 @@ export const getStaticProps = withUniformGetStaticProps({
     const navLinks = await getCompositionsForNavigation(preview);
     return {
       // Enhanced composition data will be injected later, so no need to do it yourself
-      props: { navLinks, preview },
+      props: { navLinks },
       // Specifying some NextJS ISG params per page.
       // revalidate: 100,
     };

@@ -10,19 +10,17 @@ import {
 import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
-import { UniformDeployedPreviewBanner } from '@/components/UniformDeployedPreviewBanner';
+import { UniformDeployedPreviewBanner } from "@/components/UniformDeployedPreviewBanner";
 
 const { serverRuntimeConfig } = getConfig();
 const { projectId, apiKey, apiHost } = serverRuntimeConfig;
 
 export interface PageCompositionProps {
-  preview: boolean;
   data: RootComponentInstance;
   navLinks: Array<NavLink>;
 }
 
 export default function PageComposition({
-  preview,
   data: composition,
   navLinks,
 }: PageCompositionProps) {
