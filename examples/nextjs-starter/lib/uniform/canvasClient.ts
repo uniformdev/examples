@@ -3,7 +3,7 @@ import {
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
 } from "@uniformdev/canvas";
-import { ProjectMapClient } from '@uniformdev/project-map';
+import { ProjectMapClient } from "@uniformdev/project-map";
 import getConfig from "next/config";
 
 const {
@@ -30,9 +30,8 @@ export const projectMapClient = new ProjectMapClient({
 export async function getCompositionsForNavigation(preview: boolean) {
   const response = await projectMapClient.getNodes({
     projectMapId,
-    state: getState(preview),
+    state: getState(preview || process.env.NODE_ENV === "development"),
   });
-
   return response.nodes
     .filter((node) => node.path)
     .map((node) => {
