@@ -1,19 +1,14 @@
 import React from "react";
 import Head from "next/head";
-import getConfig from "next/config";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import {
   UniformComposition,
   UniformSlot,
   createUniformApiEnhancer,
 } from "@uniformdev/canvas-react";
-import { ToggleEmbeddedContextDevTools } from "@uniformdev/context-devtools";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
 import { UniformDeployedPreviewBanner } from "@/components/UniformDeployedPreviewBanner";
-
-const { serverRuntimeConfig } = getConfig();
-const { projectId, apiKey, apiHost } = serverRuntimeConfig;
 
 export interface PageCompositionProps {
   data: RootComponentInstance;
@@ -27,7 +22,6 @@ export default function PageComposition({
   const contextualEditingEnhancer = createUniformApiEnhancer({
     apiUrl: "/api/preview",
   });
-
   const { metaTitle } = composition?.parameters || {};
   return (
     <>
@@ -43,13 +37,6 @@ export default function PageComposition({
         >
           <UniformSlot name="content" />
         </UniformComposition>
-        <ToggleEmbeddedContextDevTools
-          initialSettings={{
-            apiHost: apiHost,
-            apiKey: apiKey,
-            projectId: projectId,
-          }}
-        />
         <Footer />
       </main>
     </>
