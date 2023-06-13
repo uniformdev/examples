@@ -27,10 +27,12 @@ export const projectMapClient = new ProjectMapClient({
   projectId,
 });
 
+// getting the first level nodes from project map
 export async function getCompositionsForNavigation(preview: boolean) {
   const response = await projectMapClient.getNodes({
     projectMapId,
     state: getState(preview || process.env.NODE_ENV === "development"),
+    depth: 1,
   });
   return response.nodes
     .filter((node) => node.path)
