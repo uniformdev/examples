@@ -25,6 +25,7 @@ export const projectMapClient = new ProjectMapClient({
   apiKey,
   apiHost,
   projectId,
+  bypassCache: true,
 });
 
 // getting the first level nodes from project map
