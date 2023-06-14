@@ -1,14 +1,14 @@
-import React from 'react';
-import { RefinementList } from 'react-instantsearch-hooks-web';
-import { ComponentProps } from '@uniformdev/canvas-react';
-import ErrorPropertyCallout from '@/components/ErrorPropertyCallout';
+import React from "react";
+import { RefinementList } from "react-instantsearch-hooks-web";
+import { ComponentProps } from "@uniformdev/canvas-react";
+import ErrorPropertyCallout from "@/components/ErrorPropertyCallout";
 
 type CanvasRefinementListProps = {
   refinementListParams?: {
     refinementListProps?: {
       allowedIndex?: string;
       attribute: string;
-      operator: 'and' | 'or';
+      operator: "and" | "or";
       limit?: number;
       showMore?: boolean;
       showMoreLimit?: number;
@@ -19,7 +19,9 @@ type CanvasRefinementListProps = {
   };
 };
 
-const CanvasRefinementList = ({ refinementListParams }: ComponentProps<CanvasRefinementListProps>) => {
+const CanvasRefinementList = ({
+  refinementListParams,
+}: ComponentProps<CanvasRefinementListProps>) => {
   const { refinementListProps } = refinementListParams || {};
 
   if (!refinementListProps?.attribute) {
@@ -32,7 +34,7 @@ const CanvasRefinementList = ({ refinementListParams }: ComponentProps<CanvasRef
 
   return (
     <div className="refinementList">
-      <span>{refinementListProps.attribute}</span>
+      <span>{refinementListProps?.attribute}</span>
       <RefinementList {...props} />
     </div>
   );

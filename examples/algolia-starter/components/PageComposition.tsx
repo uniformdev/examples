@@ -1,48 +1,25 @@
-import React, { ComponentType } from "react";
-import Head from "next/head";
+import React from "react";
 import { RootComponentInstance } from "@uniformdev/canvas";
-import {
-  Composition,
-  Slot,
-  useContextualEditing,
-  createApiEnhancer,
-} from "@uniformdev/canvas-react";
-import componentResolver from "@/components/componentResolver";
+import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
 import Footer from "./Footer";
-import "./components";
+import componentResolver from "@/components/componentResolver";
+
+export interface PageCompositionProps {
+  data: RootComponentInstance;
+}
 
 export default function PageComposition({
-  composition,
-}: {
-  preview: boolean;
-  composition: RootComponentInstance;
-}) {
-  const { composition: compositionInstance } = useContextualEditing({
-    initialCompositionValue: composition,
-    enhance: createApiEnhancer({
-      apiUrl: "/api/preview",
-    }),
-  });
-
-  if (!compositionInstance) {
-    return null;
-  }
-
-  const { metaTitle } = composition.parameters || {};
-  const title = metaTitle?.value as string;
-
+  data: composition,
+}: PageCompositionProps) {
   return (
-    <>
-      <Head>
-        <title>{title}</title>
-      </Head>
-      <>
-        <Composition data={compositionInstance} resolveRenderer={componentResolver}>
-          <Slot name="content" />
-        </Composition>
-
-        <Footer />
-      </>
-    </>
+    <main className="main">
+      <UniformComposition
+        data={composition}
+        resolveRenderer={componentResolver}
+      >
+        <UniformSlot name="search-content" />
+      </UniformComposition>
+      <Footer />
+    </main>
   );
 }

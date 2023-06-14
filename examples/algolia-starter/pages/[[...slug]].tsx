@@ -1,34 +1,23 @@
-import { GetStaticPropsContext } from "next";
 import PageComposition from "@/components/PageComposition";
-import {
-  getCompositionBySlug,
-  getCompositionPaths,
-} from "lib/uniform/canvasClient";
+import { withUniformGetServerSideProps } from "@uniformdev/canvas-next/route";
+import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from "@uniformdev/canvas";
 
-const CanvasPage = (props: any) => PageComposition(props);
+export const getServerSideProps = withUniformGetServerSideProps({
+  // fetching draft composition in dev mode for convenience
+  requestOptions: {
+    state:
+      process.env.NODE_ENV === "development"
+        ? CANVAS_DRAFT_STATE
+        : CANVAS_PUBLISHED_STATE,
+  },
+  handleComposition: async (routeResponse, _context, _defaultHandler) => {
+    const { composition } = routeResponse.compositionApiResponse || {};
+    return {
+      props: {
+        data: composition,
+      },
+    };
+  },
+});
 
-export default CanvasPage;
-
-export async function getStaticProps(context: GetStaticPropsContext) {
-  const { slug } = context?.params || {};
-  const slugString = Array.isArray(slug) ? slug.join("/") : slug;
-  const { preview = false } = context;
-  const slashedSlug = !slugString
-    ? "/"
-    : slugString.startsWith("/")
-    ? slugString
-    : `/${slugString}`;
-  const composition = await getCompositionBySlug(slashedSlug, context);
-  return {
-    props: {
-      composition,
-      preview,
-    },
-  };
-}
-
-export async function getStaticPaths() {
-  const paths = await getCompositionPaths();
-  console.log({ paths });
-  return { paths, fallback: true };
-}
+export default PageComposition;

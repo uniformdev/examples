@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { ComponentProps } from "@uniformdev/canvas-react";
 import { renderHits } from "@/components/HitComponents";
 
