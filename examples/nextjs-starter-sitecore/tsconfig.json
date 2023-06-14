@@ -2,6 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@/*": ["./*"],
+      "@/uniformlib/*": ["./lib/uniform/*"],
       "@/components/*": ["./components/*"],
       "@/styles/*": ["./styles/*"],
       "@/public/*": ["./public/*"]

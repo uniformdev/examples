@@ -1,30 +1,29 @@
-import { GetStaticPropsContext } from "next";
 import PageComposition from "@/components/PageComposition";
-import {
-  getCompositionBySlug,
-  getCompositionPaths,
-  getCompositionsForNavigation,
-} from "lib/uniform/canvasClient";
+import { withUniformGetServerSideProps } from "@uniformdev/canvas-next/route";
+import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from "@uniformdev/canvas";
+import { getCompositionsForNavigation } from "@/lib/uniform/canvasClient";
+import runEnhancers from "@/lib/uniform/enhancers";
 
-const CanvasPage = (props) => PageComposition(props);
-export default CanvasPage;
+export const getServerSideProps = withUniformGetServerSideProps({
+  // fetching draft composition in dev mode for convenience
+  requestOptions: {
+    state:
+      process.env.NODE_ENV === "development"
+        ? CANVAS_DRAFT_STATE
+        : CANVAS_PUBLISHED_STATE,
+  },
+  handleComposition: async (routeResponse, _context, _defaultHandler) => {
+    const { composition } = routeResponse.compositionApiResponse || {};
+    const { preview } = _context;
+    await runEnhancers(composition, preview);
+    const navLinks = await getCompositionsForNavigation(preview);
+    return {
+      props: {
+        data: composition,
+        navLinks,
+      },
+    };
+  },
+});
 
-export async function getStaticProps(context: GetStaticPropsContext) {
-  const slug = context?.params?.id;
-  const { preview } = context;
-  const slugString = Array.isArray(slug) ? slug.join("/") : slug;
-  const composition = await getCompositionBySlug(slugString, preview);
-  const navLinks = await getCompositionsForNavigation(preview);
-  return {
-    props: {
-      composition,
-      navLinks,
-      preview: preview ?? false,
-    },
-  };
-}
-
-export async function getStaticPaths() {
-  const paths = await getCompositionPaths();
-  return { paths, fallback: true };
-}
+export default PageComposition;

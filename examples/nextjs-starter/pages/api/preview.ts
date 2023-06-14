@@ -1,5 +1,4 @@
 import { GetStaticPropsContext } from "next";
-import getConfig from "next/config";
 import { createPreviewHandler } from "@uniformdev/canvas-next";
 import runEnhancers from "@/uniformlib/enhancers";
 

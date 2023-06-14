@@ -14,6 +14,7 @@ export const getServerSideProps = withUniformGetServerSideProps({
   handleComposition: async (routeResponse, _context, _defaultHandler) => {
     const { composition } = routeResponse.compositionApiResponse || {};
     const navLinks = await getCompositionsForNavigation(_context.preview);
+    console.log({ navLinks });
     return {
       props: {
         data: composition,

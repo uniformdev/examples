@@ -1,19 +1,16 @@
-import {
-  CanvasClient,
-  CANVAS_DRAFT_STATE,
-  CANVAS_PUBLISHED_STATE,
-} from "@uniformdev/canvas";
-import runEnhancers from "./enhancers";
 import getConfig from "next/config";
+import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from "@uniformdev/canvas";
+import { ProjectMapClient } from "@uniformdev/project-map";
 
 const {
   serverRuntimeConfig: { apiKey, apiHost, projectId },
 } = getConfig();
 
-export const canvasClient = new CanvasClient({
+export const projectMapClient = new ProjectMapClient({
   apiKey,
   apiHost,
   projectId,
+  bypassCache: true,
 });
 
 export const getState = (preview: boolean | undefined) =>
@@ -21,60 +18,19 @@ export const getState = (preview: boolean | undefined) =>
     ? CANVAS_DRAFT_STATE
     : CANVAS_PUBLISHED_STATE;
 
-export async function getCompositionBySlug(slug: string, preview: boolean) {
-  const compositionSlug = !slug
-    ? "/"
-    : slug.startsWith("/")
-    ? slug
-    : `/${slug}`;
-
-  const { composition } =
-    (await canvasClient
-      .getCompositionBySlug({
-        slug: compositionSlug,
-        state: getState(preview),
-      })
-      .catch(compositionExceptionHandler)) || {};
-  if (composition) {
-    await runEnhancers(composition, preview);
-  }
-  return composition;
-}
-
 export async function getCompositionsForNavigation(preview: boolean) {
-  const response = await canvasClient.getCompositionList({
-    skipEnhance: true,
-    state: getState(preview),
+  const response = await projectMapClient.getNodes({
+    state: getState(preview || process.env.NODE_ENV === "development"),
+    depth: 1,
   });
-  const compositionUrls = response.compositions
-    .filter((c) => c.composition._slug && c.composition._slug !== "/")
-    .map((c) => {
+  return response.nodes
+    .filter(
+      (node) => node.path && node.type === "composition" && node.compositionId
+    )
+    .map((node) => {
       return {
-        title: c.composition._name,
-        url: c.composition._slug,
+        title: node.name,
+        url: node.path,
       };
     });
-  compositionUrls.unshift({ title: "Home", url: "/" });
-  return compositionUrls;
 }
-
-export const getCompositionPaths = async () => {
-  const pages = await canvasClient.getCompositionList({
-    skipEnhance: true,
-    state: getState(undefined),
-  });
-
-  return pages.compositions
-    .filter((c) => c.composition._slug)
-    .map((c) =>
-      c.composition._slug?.startsWith("/")
-        ? `${c.composition._slug}`
-        : `/${c.composition._slug}`
-    );
-};
-
-const compositionExceptionHandler = (e: { statusCode: number | undefined }) => {
-  if (e.statusCode === 404) {
-    return { composition: {} };
-  }
-};
