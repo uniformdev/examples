@@ -4,12 +4,12 @@ import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from "@uniformdev/canvas";
 import { getCompositionsForNavigation } from "@/lib/uniform/canvasClient";
 
 export const getServerSideProps = withUniformGetServerSideProps({
+  // fetching draft composition in dev mode for convenience
   requestOptions: {
     state:
       process.env.NODE_ENV === "development"
         ? CANVAS_DRAFT_STATE
         : CANVAS_PUBLISHED_STATE,
-    diagnostics: true,
   },
   handleComposition: async (routeResponse, _context, _defaultHandler) => {
     const { composition } = routeResponse.compositionApiResponse || {};
