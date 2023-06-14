@@ -28,7 +28,7 @@ export const projectMapClient = new ProjectMapClient({
   bypassCache: true,
 });
 
-// getting the first level nodes from project map
+// getting the first level nodes of composition type from project map
 export async function getCompositionsForNavigation(preview: boolean) {
   const response = await projectMapClient.getNodes({
     projectMapId,
@@ -36,7 +36,9 @@ export async function getCompositionsForNavigation(preview: boolean) {
     depth: 1,
   });
   return response.nodes
-    .filter((node) => node.path)
+    .filter(
+      (node) => node.path && node.type === "composition" && node.compositionId
+    )
     .map((node) => {
       return {
         title: node.name,
