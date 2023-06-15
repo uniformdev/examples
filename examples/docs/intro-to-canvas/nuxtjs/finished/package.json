@@ -17,15 +17,15 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@uniformdev/cli": "^18.22.0",
+    "@uniformdev/cli": "^19.24.0",
     "npm-run-all": "^4.1.5",
     "nuxt": "3.0.0"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^18.22.0",
-    "@uniformdev/canvas-vue": "^18.22.0",
-    "@uniformdev/context": "^18.22.0",
-    "@uniformdev/context-vue": "^18.22.0",
-    "@uniformdev/uniform-nuxt": "^18.22.0"
+    "@uniformdev/canvas": "^19.24.0",
+    "@uniformdev/canvas-vue": "^19.24.0",
+    "@uniformdev/context": "^19.24.0",
+    "@uniformdev/context-vue": "^19.24.0",
+    "@uniformdev/uniform-nuxt": "^19.24.0"
   }
 }
