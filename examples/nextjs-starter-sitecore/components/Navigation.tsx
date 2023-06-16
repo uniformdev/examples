@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from "next/link";
 
 export interface NavigationProps {
@@ -15,16 +16,19 @@ const Navigation: React.FC<NavigationProps> = ({
   if (!navLinks) {
     return null;
   }
+
+  const links = [...navLinks.filter((l) => l.url !== "/")];
+  links.unshift({ url: "/", title: "Home" });
   return (
     <div className="navigation">
-      {navLinks.map((e: NavLink, i: number) => (
+      {links.map((e: NavLink, i: number) => (
         <span key={i}>
           <Link href={e.url}>{e.title}</Link>
         </span>
       ))}
-      {navLinks.length <= 1 ? (
+      {links.length <= 1 ? (
         <span className="note">
-          (create a new composition to see a link to it here...)
+          (add another node in project map to see new link here)
         </span>
       ) : null}
     </div>

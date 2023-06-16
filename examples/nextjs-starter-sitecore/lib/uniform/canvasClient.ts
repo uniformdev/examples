@@ -1,10 +1,15 @@
-import getConfig from "next/config";
 import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from "@uniformdev/canvas";
 import { ProjectMapClient } from "@uniformdev/project-map";
+import getConfig from "next/config";
 
 const {
   serverRuntimeConfig: { apiKey, apiHost, projectId },
 } = getConfig();
+
+export const getState = (preview: boolean | undefined) =>
+  process.env.NODE_ENV === "development" || preview
+    ? CANVAS_DRAFT_STATE
+    : CANVAS_PUBLISHED_STATE;
 
 export const projectMapClient = new ProjectMapClient({
   apiKey,
@@ -13,14 +18,10 @@ export const projectMapClient = new ProjectMapClient({
   bypassCache: true,
 });
 
-export const getState = (preview: boolean | undefined) =>
-  process.env.NODE_ENV === "development" || preview
-    ? CANVAS_DRAFT_STATE
-    : CANVAS_PUBLISHED_STATE;
-
+// getting the first level nodes of composition type from project map
 export async function getCompositionsForNavigation(preview: boolean) {
   const response = await projectMapClient.getNodes({
-    state: getState(preview || process.env.NODE_ENV === "development"),
+    state: getState(preview),
     depth: 1,
   });
   return response.nodes

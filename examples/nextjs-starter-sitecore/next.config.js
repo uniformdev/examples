@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  publicRuntimeConfig: {
-  },
   serverRuntimeConfig: {
     projectId: process.env.UNIFORM_PROJECT_ID,
     sitecoreApiUrl: process.env.SITECORE_API_URL,

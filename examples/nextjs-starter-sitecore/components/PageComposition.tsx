@@ -13,14 +13,14 @@ import Footer from "./Footer";
 import "./canvasComponents";
 
 export default function PageComposition({
-  composition,
+  data: composition,
   navLinks,
 }: {
   preview: boolean;
-  composition: RootComponentInstance;
+  data: RootComponentInstance;
   navLinks: Array<NavLink>;
 }) {
-  const contextualEditingEnhancer = createUniformApiEnhancer({
+  const enhancer = createUniformApiEnhancer({
     apiUrl: `/api/preview`,
   });
   const { metaTitle } = composition?.parameters || {};
@@ -34,7 +34,7 @@ export default function PageComposition({
         <Navigation navLinks={navLinks} />
         <UniformComposition
           data={composition}
-          contextualEditingEnhancer={contextualEditingEnhancer}
+          contextualEditingEnhancer={enhancer}
         >
           <UniformSlot name="content" />
         </UniformComposition>
