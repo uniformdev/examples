@@ -9,12 +9,13 @@ type HeroProps = ComponentProps<{
   description?: string;
 }>;
 
-const Hero: React.FC<HeroProps> = () => (
+const Hero: React.FC<HeroProps> = ({ description }) => (
   <div>
     <UniformText className="title" parameterId="title" as="h1" />
-    <div className="description">
-      <UniformText parameterId="description" />
-    </div>
+    <div
+      className="description"
+      dangerouslySetInnerHTML={{ __html: description }}
+    />
   </div>
 );
 
