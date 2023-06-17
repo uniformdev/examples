@@ -82,7 +82,7 @@ composition:
               parameters:
                 title:
                   type: text
-                  value: Welcome.
+                  value: Welcome!
                 description:
                   type: richText
                   value:
@@ -150,5 +150,5 @@ composition:
             type: text
             value: Home Hero
 created: '2023-06-12T22:10:45.19988+00:00'
-modified: '2023-06-12T22:26:07.776744+00:00'
+modified: '2023-06-17T00:00:30.232359+00:00'
 pattern: false
