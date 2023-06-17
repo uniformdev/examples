@@ -12,26 +12,14 @@ parameters:
       required: true
   - id: description
     name: Description
-    type: richText
+    type: text
     helpText: ''
     typeConfig:
-      elements:
-        builtIn:
-          - unorderedList
-          - orderedList
-          - link
-          - h1
-          - h2
-          - h3
-      required: false
-      formatting:
-        builtIn:
-          - bold
-          - italic
-          - underline
+      multiline: true
+      linesCount: '5'
 useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2023-06-12T22:10:44.827401+00:00'
-updated: '2023-06-12T22:24:00.021552+00:00'
+created: '2023-06-17T00:53:01.912219+00:00'
+updated: '2023-06-17T01:00:42.915419+00:00'

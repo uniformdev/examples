@@ -2,7 +2,6 @@ import {
   registerUniformComponent,
   ComponentProps,
   UniformText,
-  UniformRichText,
 } from "@uniformdev/canvas-react";
 
 type HeroProps = ComponentProps<{
@@ -14,7 +13,7 @@ const Hero: React.FC<HeroProps> = () => (
   <div>
     <UniformText className="title" parameterId="title" as="h1" />
     <div className="description">
-      <UniformRichText parameterId="description" />
+      <UniformText parameterId="description" />
     </div>
   </div>
 );
