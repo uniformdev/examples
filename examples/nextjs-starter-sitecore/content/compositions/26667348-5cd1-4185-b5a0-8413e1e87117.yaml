@@ -26,13 +26,13 @@ composition:
                     name: 'Hero: We are launched!'
                 datasource:
                   type: sitecoreItem
-                  value: '{E0C99DD1-359F-41CD-81BE-349CCC85BF1E}'
+                  value: '{A1ABE48A-A2DE-4838-9A1C-D2742D010A27}'
             - _id: bed0aaca-fc64-463d-b61f-0362da3e6de6
               type: hero
               parameters:
                 datasource:
                   type: sitecoreItem
-                  value: '{EA524586-0BB5-4DB9-9D07-6F8FDF8CED4A}'
+                  value: '{E0C99DD1-359F-41CD-81BE-349CCC85BF1E}'
         parameters:
           count:
             type: number
@@ -40,6 +40,6 @@ composition:
           trackingEventName:
             type: text
             value: Home Hero
-created: '2022-11-12T23:06:04.36564+00:00'
-modified: '2022-11-13T00:58:24.56166+00:00'
+created: '2023-06-14T00:26:21.764547+00:00'
+modified: '2023-06-16T23:36:07.601879+00:00'
 pattern: false

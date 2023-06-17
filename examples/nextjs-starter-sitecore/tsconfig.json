@@ -2,6 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@/*": ["./*"],
+      "@/uniformlib/*": ["./lib/uniform/*"],
       "@/components/*": ["./components/*"],
       "@/styles/*": ["./styles/*"],
       "@/public/*": ["./public/*"]
@@ -21,6 +23,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.tsx.off", "pages/[slug].tsx.off"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", ".next", "out", "worker"]
 }

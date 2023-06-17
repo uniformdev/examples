@@ -1,8 +1,0 @@
-id: p
-name: Persona
-cap: 100
-values:
-  - id: d
-    value: Developer
-  - id: m
-    value: Marketer

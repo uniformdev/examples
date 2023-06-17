@@ -1,6 +1,7 @@
 import {
   registerUniformComponent,
   ComponentProps,
+  UniformText,
 } from "@uniformdev/canvas-react";
 
 type HeroProps = ComponentProps<{
@@ -8,13 +9,12 @@ type HeroProps = ComponentProps<{
   description?: string;
 }>;
 
-const Hero: React.FC<HeroProps> = ({ title, description }: HeroProps) => (
+const Hero: React.FC<HeroProps> = () => (
   <div>
-    <h1 className="title">{title}</h1>
-    <div
-      className="description"
-      dangerouslySetInnerHTML={{ __html: description }}
-    />
+    <UniformText className="title" parameterId="title" as="h1" />
+    <div className="description">
+      <UniformText parameterId="description" />
+    </div>
   </div>
 );
 

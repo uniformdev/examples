@@ -1,3 +1,3 @@
-// ADD YOUR CAVAS COMPONENT IMPORTS HERE
-// OTHERWISE THEY WON'T BE RECOGNIZED BY SLOTS
+// IMPORTANT: all Canvas managed components have to be imported here in order to be discovered by the <UniformSlot /> and rendered:
+
 import "./Hero";

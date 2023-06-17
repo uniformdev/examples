@@ -9,10 +9,12 @@ composition:
       value: Home
   slots:
     content:
-      - type: $personalization
+      - _id: 9c3a3ced-4086-4fb0-92e1-bc5065233b42
+        type: $personalization
         slots:
           pz:
-            - type: hero
+            - _id: 7be09ea0-f7f2-40e9-868e-36865cc57b97
+              type: hero
               parameters:
                 title:
                   type: text
@@ -27,23 +29,24 @@ composition:
                     name: 'Hero: We are launched!'
                 description:
                   type: text
-                  value: >-
-                    <p>Showing personalized content since "Launch Campaign"
-                    signal has a score.</p>
-
-                    <p>Check dev tools for more logging info.</p> 
-            - type: hero
+                  value: |-
+                    <b>Launch Campaign</b> signal is active!
+                    <br />Therefore, showing personalized content.
+                    <br />
+                    <i>Check dev tools for more logging info.</i>
+            - _id: 3f20cbcc-b3d9-4213-9729-bfa79b201080
+              type: hero
               parameters:
                 title:
                   type: text
-                  value: Welcome.
+                  value: Welcome!
                 description:
                   type: text
                   value: >-
-                    <p>This is default content shown to every visitor. </p>
+                    This is default content shown to every visitor. <br />
 
-                    <p>Trigger campaign-based personalization <a
-                    href="/?utm_campaign=launch">now</a>!</p>
+                    Trigger campaign-based personalization by clicking <a
+                    href="/?utm_campaign=launch">here</a>.
         parameters:
           count:
             type: number
@@ -51,6 +54,6 @@ composition:
           trackingEventName:
             type: text
             value: Home Hero
-created: '2023-02-16T15:35:55.638176+00:00'
-modified: '2023-02-16T15:35:55.638176+00:00'
+created: '2023-06-17T00:53:03.896727+00:00'
+modified: '2023-06-17T01:03:40.491077+00:00'
 pattern: false
