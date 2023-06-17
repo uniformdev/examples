@@ -4,14 +4,7 @@ class MyDocument extends Document {
   render(): React.ReactElement {
     return (
       <Html lang="en">
-        <Head>
-          <link href="/favicon/favicon.ico" rel="icon" />
-          <link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
-          <meta
-            name="description"
-            content="UniformConf, a starter site from Uniform"
-          />
-        </Head>
+        <Head />
         <body className="leading-normal tracking-normal text-white gradient">
           <Main />
           <NextScript />
