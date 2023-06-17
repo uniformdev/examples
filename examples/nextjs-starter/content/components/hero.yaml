@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: hero
 name: Hero
 icon: image-text
@@ -13,12 +15,11 @@ parameters:
     type: text
     helpText: ''
     typeConfig:
-      required: false
       multiline: true
-      linesCount: '3'
+      linesCount: '5'
 useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2023-02-16T15:35:55.091438+00:00'
-updated: '2023-02-16T15:35:55.091438+00:00'
+created: '2023-06-17T00:53:01.912219+00:00'
+updated: '2023-06-17T01:00:42.915419+00:00'

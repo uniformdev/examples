@@ -1,8 +1,0 @@
-id: bigspenders
-name: Big Spenders
-description: ''
-options:
-  - name: 'true'
-    value: 'true'
-  - name: 'false'
-    value: 'false'

@@ -1,11 +1,11 @@
-import React from 'react';
-import { ComponentProps, Slot } from '@uniformdev/canvas-react';
-import componentResolver from './componentResolver';
-import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch } from 'react-instantsearch-hooks-web';
-import getConfig from 'next/config';
-import CanvasAlgoliaProvider from '../context/CanvasAlgoliaProvider';
-import ErrorPropertyCallout from '@/components/ErrorPropertyCallout';
+import React from "react";
+import { ComponentProps, UniformSlot } from "@uniformdev/canvas-react";
+import componentResolver from "./componentResolver";
+import algoliasearch from "algoliasearch/lite";
+import { InstantSearch } from "react-instantsearch-hooks-web";
+import getConfig from "next/config";
+import CanvasAlgoliaProvider from "../context/CanvasAlgoliaProvider";
+import ErrorPropertyCallout from "@/components/ErrorPropertyCallout";
 const {
   publicRuntimeConfig: { applicationId, algoliaApiKey },
 } = getConfig();
@@ -22,11 +22,16 @@ type CanvasInstantSearchProps = {
   };
 };
 
-const CanvasInstantSearch = ({ instantSearchParams, title }: ComponentProps<CanvasInstantSearchProps>) => {
+const CanvasInstantSearch = ({
+  instantSearchParams,
+  title,
+}: ComponentProps<CanvasInstantSearchProps>) => {
   const { instantSearchProps } = instantSearchParams || {};
 
   if (!instantSearchProps?.indexName) {
-    return <ErrorPropertyCallout title="Property 'indexName' was not defined for InstantSearch component." />;
+    return (
+      <ErrorPropertyCallout title="Property 'indexName' was not defined for InstantSearch component." />
+    );
   }
 
   return (
@@ -37,7 +42,7 @@ const CanvasInstantSearch = ({ instantSearchParams, title }: ComponentProps<Canv
         indexName={instantSearchProps.indexName}
         searchClient={searchClient}
       >
-        <Slot name="widgets" resolveRenderer={componentResolver} />
+        <UniformSlot name="widgets" resolveRenderer={componentResolver} />
       </InstantSearch>
     </CanvasAlgoliaProvider>
   );

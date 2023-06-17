@@ -1,4 +1,3 @@
-import getConfig from "next/config";
 import { UniformContext } from "@uniformdev/context-react";
 import { UniformAppProps } from "@uniformdev/context-next";
 import createUniformContext from "lib/uniform/uniformContext";
@@ -12,15 +11,12 @@ function MyApp({
   pageProps,
   serverUniformContext,
 }: UniformAppProps) {
-  const {
-    serverRuntimeConfig: { outputType },
-  } = getConfig();
   return (
     <UniformContext
       context={serverUniformContext ?? clientContext}
-      outputType={
-        process.env.NODE_ENV === "development" ? "standard" : outputType
-      }
+      outputType={"standard"}
+      // enable for edge-side rendering
+      //outputType={"edge"}
     >
       <Component {...pageProps} />
     </UniformContext>

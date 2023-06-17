@@ -1,14 +1,14 @@
 composition:
   _name: Algolia configurable components demo
   _id: 11f3133e-153e-44c9-8547-5afb2e2a0f2e
-  _slug: /algolia-demo
+  _slug: algolia-demo
   type: algolia-page
   parameters:
     metaTitle:
       type: text
       value: Algolia Configurable Component
   slots:
-    content:
+    search-content:
       - _id: 84518a7d-1cd8-4fe7-957b-afadbd29c901
         type: algolia-instantSearch
         slots:
@@ -32,7 +32,9 @@ composition:
                       limit: 10
                       operator: and
                       showMore: false
+                      attribute: brand
                       searchable: false
+                      allowedIndex: Products
                       escapeFacetValues: true
             - _id: 634756e8-64ae-40b7-811e-9f8c18fd6de6
               type: algolia-hits
@@ -60,151 +62,8 @@ composition:
             type: algolia-components
             value:
               instantSearchProps:
+                indexName: Products
                 stalledSearchDelay: 200
-      - _id: f03d1e23-8078-4f41-9a92-dfa48251dc82
-        type: algolia-instantSearch
-        slots:
-          widgets:
-            - _id: db20160a-517a-43be-86d8-7d00414f33f6
-              type: algolia-basicComponents
-              slots:
-                hitComponent:
-                  - _id: b7c3cd4b-d4d3-4c43-82f6-0ee18a74a301
-                    type: algolia-hit
-              parameters:
-                pageSize:
-                  type: number
-                  value: 20
-                searchBoxParams:
-                  type: algolia-components
-                  value:
-                    searchBoxProps:
-                      placeholder: Search for example 2
-                      searchAsYouType: true
-                paginationParams:
-                  type: algolia-components
-                  value:
-                    paginationProps:
-                      padding: 3
-                      showLast: true
-                      showNext: true
-                      showFirst: true
-                      showPrevious: true
-                refinementListParams:
-                  type: algolia-components
-                  value:
-                    refinementListProps:
-                      limit: 10
-                      operator: and
-                      showMore: false
-                      searchable: false
-                      escapeFacetValues: true
-        parameters:
-          instantSearchParams:
-            type: algolia-components
-            value:
-              instantSearchProps:
-                stalledSearchDelay: 200
-      - _id: 45d3a2ab-d93e-459d-85c8-a6defea574af
-        type: algolia-instantSearch
-        slots:
-          widgets:
-            - _id: b8c74afb-e98c-444b-af94-93bc5db94c8c
-              type: algolia-searchBox
-              parameters:
-                searchBoxParams:
-                  type: algolia-components
-                  value:
-                    searchBoxProps:
-                      placeholder: Search for example 3
-                      searchAsYouType: true
-            - _id: fe9945b1-b969-4b46-ba36-b5c107d20def
-              type: algolia-index
-              slots:
-                widgets:
-                  - _id: e03f7f1e-aeda-4d94-b3ca-efb5598e8bb5
-                    type: algolia-refinementList
-                    parameters:
-                      refinementListParams:
-                        type: algolia-components
-                        value:
-                          refinementListProps:
-                            limit: 10
-                            operator: and
-                            showMore: false
-                            searchable: false
-                            escapeFacetValues: true
-                  - _id: 36f25853-2b27-4321-9891-62a0436a34dc
-                    type: algolia-hits
-                    slots:
-                      hitComponent:
-                        - _id: 0a7565b6-6bcd-44a8-879c-797dec12e6e6
-                          type: algolia-hit
-                  - _id: b89d0040-860d-4910-8c22-6c057bb825b4
-                    type: algolia-pagination
-                    parameters:
-                      pageSize:
-                        type: number
-                        value: 20
-                      paginationParams:
-                        type: algolia-components
-                        value:
-                          paginationProps:
-                            padding: 3
-                            showLast: true
-                            showNext: true
-                            showFirst: true
-                            showPrevious: true
-              parameters:
-                indexParams:
-                  type: algolia-components
-                  value:
-                    indexProps: {}
-            - _id: 28214883-0885-4939-8f10-00d719b48cac
-              type: algolia-index
-              slots:
-                widgets:
-                  - _id: 08774feb-242e-4228-a9ca-9eeac9a39b63
-                    type: algolia-refinementList
-                    parameters:
-                      refinementListParams:
-                        type: algolia-components
-                        value:
-                          refinementListProps:
-                            limit: 10
-                            operator: and
-                            showMore: false
-                            searchable: false
-                            escapeFacetValues: true
-                  - _id: ab0bd7c9-2c47-4295-85fd-fa798a513a49
-                    type: algolia-hits
-                    slots:
-                      hitComponent:
-                        - _id: c055e34e-7047-4713-be58-ed2a353c3851
-                          type: algolia-hit
-                  - _id: 09388573-bf23-4622-8f57-131d84dadadd
-                    type: algolia-pagination
-                    parameters:
-                      paginationParams:
-                        type: algolia-components
-                        value:
-                          paginationProps:
-                            padding: 3
-                            showLast: true
-                            showNext: true
-                            showFirst: true
-                            showPrevious: true
-              parameters:
-                indexParams:
-                  type: algolia-components
-                  value:
-                    indexProps: {}
-        parameters:
-          instantSearchParams:
-            type: algolia-components
-            value:
-              instantSearchProps:
-                stalledSearchDelay: 200
-created: '2023-02-02T08:20:27.874447+00:00'
-modified: '2023-02-02T08:23:19.045088+00:00'
+created: '2023-06-14T00:48:54.017582+00:00'
+modified: '2023-06-14T01:10:55.302981+00:00'
 pattern: false

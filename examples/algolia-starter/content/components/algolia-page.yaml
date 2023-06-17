@@ -10,8 +10,8 @@ parameters:
       required: true
 useTeamPermissions: true
 slots:
-  - id: content
-    name: Content
+  - id: search-content
+    name: Search Content
     allowedComponents:
       - algolia-instantSearch
     inheritAllowedComponents: false

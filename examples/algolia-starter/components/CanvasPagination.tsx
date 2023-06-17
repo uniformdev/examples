@@ -1,6 +1,6 @@
-import React from 'react';
-import { Configure, Pagination } from 'react-instantsearch-hooks-web';
-import { ComponentProps } from '@uniformdev/canvas-react';
+import React from "react";
+import { Configure, Pagination } from "react-instantsearch-hooks-web";
+import { ComponentProps } from "@uniformdev/canvas-react";
 
 type CanvasPaginationProps = {
   paginationParams?: {
@@ -16,11 +16,14 @@ type CanvasPaginationProps = {
   pageSize?: number;
 };
 
-const CanvasPagination = ({ paginationParams, pageSize }: ComponentProps<CanvasPaginationProps>) => {
+const CanvasPagination = ({
+  paginationParams,
+  pageSize,
+}: ComponentProps<CanvasPaginationProps>) => {
   const { paginationProps } = paginationParams || {};
   return (
     <>
-      <Configure hitsPerPage={pageSize}/>
+      <Configure hitsPerPage={pageSize} />
       <div className="pagination">
         <Pagination {...paginationProps} />
       </div>
