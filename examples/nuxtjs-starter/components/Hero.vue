@@ -12,7 +12,9 @@ defineProps<Props>();
 <template>
   <div>
     <h1 class="title">{{ title }}</h1>
-    <div class="description" v-html="description" />
+    <div class="description">
+      <UniformRichText parameter-id="description" />
+    </div>
   </div>
 </template>
 

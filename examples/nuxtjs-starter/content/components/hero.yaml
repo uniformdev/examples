@@ -1,6 +1,5 @@
 id: hero
 name: Hero
-permissions: []
 icon: image-text
 parameters:
   - id: title
@@ -11,12 +10,32 @@ parameters:
       required: true
   - id: description
     name: Description
-    type: text
+    type: richText
     helpText: ''
     typeConfig:
+      elements:
+        builtIn:
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - h1
       required: false
-      multiline: true
-      linesCount: '3'
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
 useTeamPermissions: true
 slots: []
 titleParameter: title

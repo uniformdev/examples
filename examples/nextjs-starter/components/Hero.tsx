@@ -1,3 +1,4 @@
+import { UniformRichText } from "@uniformdev/canvas-next";
 import {
   registerUniformComponent,
   ComponentProps,
@@ -9,13 +10,10 @@ type HeroProps = ComponentProps<{
   description?: string;
 }>;
 
-const Hero: React.FC<HeroProps> = ({ description }) => (
+const Hero: React.FC<HeroProps> = () => (
   <div>
     <UniformText className="title" parameterId="title" as="h1" />
-    <div
-      className="description"
-      dangerouslySetInnerHTML={{ __html: description }}
-    />
+    <UniformRichText parameterId="description" className="description" />
   </div>
 );
 

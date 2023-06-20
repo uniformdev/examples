@@ -22,24 +22,115 @@ composition:
                         op: '>'
                     name: 'Hero: We are launched!'
                 description:
-                  type: text
-                  value: >-
-                    <p>Showing personalized content since "Launch Campaign"
-                    signal has a score.</p>
-
-                    <p>Check dev tools for more logging info.</p> 
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: Launch Campaign
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: ' signal is active!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: linebreak
+                              version: 1
+                            - mode: normal
+                              text: 'Therefore, showing personalized content. '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: linebreak
+                              version: 1
+                            - mode: normal
+                              text: Check dev tools for more logging info.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 2
+                              version: 1
+                          direction: ltr
+                      direction: ltr
             - type: hero
               parameters:
                 title:
                   type: text
                   value: Welcome.
                 description:
-                  type: text
-                  value: >-
-                    <p>This is default content shown to every visitor. </p>
-
-                    <p>Trigger campaign-based personalization <a
-                    href="/?utm_campaign=launch">now</a>!</p>
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: This is default content shown to every visitor.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: linebreak
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                Trigger campaign-based personalization by
+                                clicking 
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=launch
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: here
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: .
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                      direction: ltr
         parameters:
           count:
             type: text
