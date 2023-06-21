@@ -12,11 +12,32 @@ parameters:
       required: true
   - id: description
     name: Description
-    type: text
+    type: richText
     helpText: ''
     typeConfig:
-      multiline: true
-      linesCount: '5'
+      elements:
+        builtIn:
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - h1
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
 useTeamPermissions: true
 slots: []
 titleParameter: title
