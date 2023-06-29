@@ -1,0 +1,214 @@
+{
+  "signals": [
+    {
+      "id": "launchCampaign",
+      "name": "Launch Campaign",
+      "cap": 100,
+      "crit": {
+        "op": "&",
+        "type": "G",
+        "clauses": [
+          {
+            "type": "QS",
+            "match": {
+              "cs": false,
+              "op": "=",
+              "rhs": "launch"
+            },
+            "queryName": "utm_campaign"
+          }
+        ]
+      },
+      "dur": "p",
+      "description": "",
+      "str": 50
+    }
+  ],
+  "components": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "icon": "image-text",
+      "parameters": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "text",
+          "helpText": "",
+          "typeConfig": {
+            "required": true
+          }
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "text",
+          "helpText": "",
+          "typeConfig": {
+            "multiline": true,
+            "linesCount": "4"
+          }
+        }
+      ],
+      "useTeamPermissions": true,
+      "slots": [],
+      "titleParameter": "title",
+      "canBeComposition": false,
+      "created": "2023-06-29T04:47:25.223883+00:00",
+      "updated": "2023-06-29T04:47:25.223883+00:00"
+    },
+    {
+      "id": "page",
+      "name": "Page",
+      "icon": "file-document",
+      "parameters": [
+        {
+          "id": "metaTitle",
+          "name": "Meta Title",
+          "type": "text",
+          "helpText": "",
+          "typeConfig": {
+            "required": false
+          }
+        },
+        {
+          "id": "metaDescription",
+          "name": "Meta Description",
+          "type": "text",
+          "helpText": "",
+          "typeConfig": {
+            "required": false,
+            "multiline": true,
+            "linesCount": "4"
+          }
+        }
+      ],
+      "useTeamPermissions": true,
+      "slots": [
+        {
+          "id": "content",
+          "name": "Content",
+          "allowedComponents": [
+            "hero",
+            "$personalization",
+            "$test",
+            "$localization"
+          ],
+          "inheritAllowedComponents": false
+        }
+      ],
+      "slugSettings": {
+        "unique": "global",
+        "required": "yes",
+        "regularExpression": "",
+        "regularExpressionMessage": ""
+      },
+      "titleParameter": "metaTitle",
+      "canBeComposition": true,
+      "created": "2023-06-29T04:47:25.676613+00:00",
+      "updated": "2023-06-29T04:47:25.676613+00:00"
+    }
+  ],
+  "compositions": [
+    {
+      "composition": {
+        "_name": "Home",
+        "_id": "26667348-5cd1-4185-b5a0-8413e1e87117",
+        "_slug": "/",
+        "type": "page",
+        "parameters": {
+          "metaTitle": {
+            "type": "text",
+            "value": "Home"
+          }
+        },
+        "slots": {
+          "content": [
+            {
+              "_id": "9c3a3ced-4086-4fb0-92e1-bc5065233b42",
+              "type": "$personalization",
+              "slots": {
+                "pz": [
+                  {
+                    "_id": "7be09ea0-f7f2-40e9-868e-36865cc57b97",
+                    "type": "hero",
+                    "parameters": {
+                      "title": {
+                        "type": "text",
+                        "value": "We are launched!"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "launchCampaign",
+                              "r": 0,
+                              "op": ">"
+                            }
+                          ],
+                          "name": "Hero: We are launched!"
+                        }
+                      },
+                      "description": {
+                        "type": "text",
+                        "value": "You are seeing a personalized message."
+                      }
+                    }
+                  },
+                  {
+                    "_id": "3f20cbcc-b3d9-4213-9729-bfa79b201080",
+                    "type": "hero",
+                    "parameters": {
+                      "title": {
+                        "type": "text",
+                        "value": "Welcome!"
+                      },
+                      "description": {
+                        "type": "text",
+                        "value": "Trigger campaign-based personalization <a href=\"/?utm_campaign=launch\">now</a>."
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "count": {
+                  "type": "number",
+                  "value": "1"
+                },
+                "trackingEventName": {
+                  "type": "text",
+                  "value": "Home Hero"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "created": "2023-06-29T04:47:27.348771+00:00",
+      "modified": "2023-06-29T04:47:27.348771+00:00",
+      "pattern": false
+    }
+  ],
+  "projectMaps": [
+    {
+      "id": "8a35c419-5150-4f76-aa21-7e4976c9dfcb",
+      "name": "Sitemap",
+      "default": true
+    }
+  ],
+  "projectMapNodes": [
+    {
+      "id": "1dc5da6f-a5c6-4655-9bff-71e768907f47",
+      "name": "Home",
+      "type": "composition",
+      "data": {},
+      "order": 500,
+      "path": "/",
+      "compositionId": "26667348-5cd1-4185-b5a0-8413e1e87117",
+      "pathSegment": "",
+      "projectMapId": "8a35c419-5150-4f76-aa21-7e4976c9dfcb"
+    }
+  ]
+}
