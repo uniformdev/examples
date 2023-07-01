@@ -4,7 +4,8 @@ import {
   registerUniformComponent,
 } from "@uniformdev/canvas-next-rsc";
 
-export async function Page({ component }: ComponentProps) {
+export async function Page(props: ComponentProps) {
+  const { component } = props || {};
   return <UniformSlot name="content" data={component} />;
 }
 
