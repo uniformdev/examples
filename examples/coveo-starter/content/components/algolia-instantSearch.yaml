@@ -1,0 +1,25 @@
+id: algolia-instantSearch
+name: Instant Search
+icon: search-found
+parameters:
+  - id: instantSearchParams
+    name: Instant Search Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Instant Search
+useTeamPermissions: true
+slots:
+  - id: widgets
+    name: Widgets
+    allowedComponents:
+      - algolia-searchBox
+      - algolia-refinementList
+      - algolia-hits
+      - algolia-pagination
+      - algolia-index
+      - algolia-basicComponents
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-02-02T08:20:26.219959+00:00'
+updated: '2023-02-02T08:20:26.219959+00:00'

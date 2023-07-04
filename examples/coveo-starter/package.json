@@ -1,0 +1,44 @@
+{
+  "name": "coveo-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "uniform:pull:components": "uniform canvas component pull ./content/components",
+    "uniform:pull:compositions": "uniform canvas composition pull ./content/compositions",
+    "uniform:pull:project-map-definitions": "uniform project-map definition pull ./content/map/definitions",
+    "uniform:pull:project-map-nodes": "uniform project-map node pull ./content/map/nodes",
+    "uniform:pull": "run-s uniform:pull:components uniform:pull:compositions uniform:pull:project-map-definitions uniform:pull:project-map-nodes",
+    "uniform:push:components": "uniform canvas component push -m createOrUpdate ./content/components",
+    "uniform:push:compositions": "uniform canvas composition push -m createOrUpdate ./content/compositions",
+    "uniform:push:project-map-definitions": "uniform project-map definition push ./content/project-map/definitions",
+    "uniform:push:project-map-nodes": "uniform project-map node push ./content/project-map/nodes",
+    "uniform:push": "run-s uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes",
+    "uniform:publish": "uniform canvas composition push ./content/compositions --state published"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.12",
+    "@mui/icons-material": "^5.10.9",
+    "@uniformdev/canvas": "^19.30.0",
+    "@uniformdev/canvas-next": "^19.30.0",
+    "@uniformdev/project-map": "^19.30.0",
+    "@uniformdev/canvas-react": "^19.30.0",
+    "@uniformdev/cli": "^19.30.0",
+    "@coveo/headless": "^2.18.4",
+    "instantsearch.css": "^7.4.5",
+    "next": "^13.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-instantsearch-hooks-web": "^6.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.2",
+    "@types/react": "^18.0.15",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.7.4"
+  }
+}

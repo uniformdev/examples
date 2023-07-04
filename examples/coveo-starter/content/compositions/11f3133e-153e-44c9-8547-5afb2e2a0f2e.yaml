@@ -1,0 +1,69 @@
+composition:
+  _name: Algolia configurable components demo
+  _id: 11f3133e-153e-44c9-8547-5afb2e2a0f2e
+  _slug: algolia-demo
+  type: algolia-page
+  parameters:
+    metaTitle:
+      type: text
+      value: Algolia Configurable Component
+  slots:
+    search-content:
+      - _id: 84518a7d-1cd8-4fe7-957b-afadbd29c901
+        type: algolia-instantSearch
+        slots:
+          widgets:
+            - _id: 03c9bf6f-a12f-46af-baff-cb13044531c1
+              type: algolia-searchBox
+              parameters:
+                searchBoxParams:
+                  type: algolia-components
+                  value:
+                    searchBoxProps:
+                      placeholder: Search for example 1
+                      searchAsYouType: true
+            - _id: eeec0bc4-e81e-4e19-9b94-df52206135fb
+              type: algolia-refinementList
+              parameters:
+                refinementListParams:
+                  type: algolia-components
+                  value:
+                    refinementListProps:
+                      limit: 10
+                      operator: and
+                      showMore: false
+                      attribute: brand
+                      searchable: false
+                      allowedIndex: Products
+                      escapeFacetValues: true
+            - _id: 634756e8-64ae-40b7-811e-9f8c18fd6de6
+              type: algolia-hits
+              slots:
+                hitComponent:
+                  - _id: 330526dd-f977-417d-99ba-e194b5e413d1
+                    type: algolia-hit
+            - _id: d6ce8a6f-c087-4bdf-b907-96e6136ecfcf
+              type: algolia-pagination
+              parameters:
+                pageSize:
+                  type: number
+                  value: 20
+                paginationParams:
+                  type: algolia-components
+                  value:
+                    paginationProps:
+                      padding: 3
+                      showLast: true
+                      showNext: true
+                      showFirst: true
+                      showPrevious: true
+        parameters:
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName: Products
+                stalledSearchDelay: 200
+created: '2023-06-14T00:48:54.017582+00:00'
+modified: '2023-06-14T01:10:55.302981+00:00'
+pattern: false

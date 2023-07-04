@@ -1,0 +1,15 @@
+id: algolia-searchBox
+name: Search Box
+icon: search
+parameters:
+  - id: searchBoxParams
+    name: Search Box Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Search Box
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-02-02T08:20:25.513316+00:00'
+updated: '2023-02-02T08:20:25.513316+00:00'
