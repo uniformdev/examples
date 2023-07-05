@@ -1,161 +1,157 @@
-import React from "react";
+import React, {FC, useEffect, useMemo, useState} from "react";
 import {
-  Facet as FacetType,
   FacetState,
   buildFacet,
   FacetValue,
 } from "@coveo/headless";
 import headlessEngine from "../context/Engine";
 import {
-  Autocomplete,
-  Box,
-  Button,
-  Checkbox,
-  FormControl,
-  FormControlLabel,
-  FormGroup,
-  FormLabel,
-  TextField,
+    Autocomplete,
+    Box,
+    Button,
+    Checkbox,
+    FormControl,
+    FormControlLabel,
+    FormGroup,
+    FormLabel, Grid,
+    TextField,
 } from "@mui/material";
+import {capitalizeFirstLetter} from "../utils";
 
-export interface IFacetProps {
-  title: string;
-  field: string;
+
+interface FacetProps {
+    title: string;
+    field: string;
 }
 
-export default class Facet extends React.Component<IFacetProps, {}> {
-  private headlessFacet: FacetType;
-  state: FacetState & {
-    inputValue: "";
+const Facet: FC<FacetProps> = ({field, title}) => {
+  const facetsBuilder = useMemo(() => buildFacet(headlessEngine, {
+      options: {
+          numberOfValues: 5,
+          hasBreadcrumbs: true,
+          field,
+      },
+  }), []);
+
+  const [state, setState] = useState<FacetState & { inputValue?: string }>({
+    ...facetsBuilder.state,
+    inputValue: '',
+  });
+
+  useEffect(() => {
+    const updateState = () => {
+      setState(facetsBuilder.state);
+    };
+    facetsBuilder.subscribe(updateState);
+  }, []);
+
+  const toggleSelect = (value: FacetValue) => {
+      facetsBuilder.toggleSelect(value);
   };
 
-  constructor(props: any) {
-    super(props);
+  const showMore = () => {
+      facetsBuilder.showMoreValues();
+  };
 
-    this.headlessFacet = buildFacet(headlessEngine, {
-      options: {
-        numberOfValues: 5,
-        field: this.props.field,
-      },
-    });
+  const showLess = () => {
+      facetsBuilder.showLessValues();
+  };
 
-    this.state = {
-      ...this.headlessFacet.state,
-      inputValue: "",
-    };
-  }
-  componentDidMount() {
-    this.headlessFacet.subscribe(() => this.updateState());
-  }
-
-  componentWillUnmount() {
-    this.headlessFacet.subscribe(() => {});
-  }
-
-  updateState() {
-    this.setState(this.headlessFacet.state);
-  }
-
-  toggleSelect(value: FacetValue) {
-    this.headlessFacet.toggleSelect(value);
-  }
-
-  showMore() {
-    this.headlessFacet.showMoreValues();
-  }
-
-  showLess() {
-    this.headlessFacet.showLessValues();
-  }
-
-  getFacetValues() {
-    return this.state.values.map((value: FacetValue) => (
-      <Box mb={1} key={value.value}>
-        <FormControlLabel
-          label={`${value.value} (${value.numberOfResults})`}
-          control={
-            <Checkbox
-              checked={this.headlessFacet.isValueSelected(value)}
-              color="secondary"
-              onChange={(event) => this.toggleSelect(value)}
-            />
-          }
-        />
-      </Box>
-    ));
-  }
-
-  getFacetSearch() {
-    return (
-      <Autocomplete
-        inputValue={this.state.inputValue}
-        onInputChange={(_, newInputValue) => {
-          this.setState({ inputValue: newInputValue });
-          this.headlessFacet.facetSearch.updateText(newInputValue);
-          this.headlessFacet.facetSearch.search();
-        }}
-        onChange={(_, chosenValue: any) => {
-          if (chosenValue != null) {
-            this.headlessFacet.facetSearch.select(chosenValue);
-          }
-          this.setState({ inputValue: "" });
-        }}
-        options={this.state.facetSearch.values}
-        getOptionLabel={(option: any) => option.displayValue}
-        blurOnSelect
-        clearOnBlur
-        style={{ width: "auto" }}
-        renderInput={(params) => (
-          <TextField
-            {...params}
-            placeholder="Search"
-            variant="outlined"
-            size="small"
+  const getFacetValues = () => {
+    return state.values.map((value: FacetValue) => (
+        <Box mb={1} key={value.value}>
+          <FormControlLabel
+              label={`${value.value} (${value.numberOfResults})`}
+              control={
+                <Checkbox
+                    checked={facetsBuilder.isValueSelected(value) || false}
+                    color="secondary"
+                    onChange={(event) => toggleSelect(value)}
+                />
+              }
           />
-        )}
-      />
-    );
-  }
+        </Box>
+    ));
+  };
 
-  getShowMore() {
+  const getFacetSearch = () => {
     return (
-      <Button
-        onClick={() => {
-          this.showMore();
-        }}
-      >
-        Show More
-      </Button>
+        <Autocomplete
+            inputValue={state.inputValue}
+            onInputChange={(_, newInputValue) => {
+              setState((prevState) => ({ ...prevState, inputValue: newInputValue }));
+                facetsBuilder.facetSearch.updateText(newInputValue);
+                facetsBuilder.facetSearch.search();
+            }}
+            onChange={(_, chosenValue: any) => {
+              if (chosenValue != null) {
+                  facetsBuilder.facetSearch.select(chosenValue);
+              }
+              setState((prevState) => ({ ...prevState, inputValue: '' }));
+            }}
+            options={state.facetSearch.values}
+            getOptionLabel={(option: any) => option.displayValue}
+            blurOnSelect
+            clearOnBlur
+            style={{ width: 'auto' }}
+            renderInput={(params) => (
+                <TextField
+                    {...params}
+                    placeholder="Search"
+                    variant="outlined"
+                    size="small"
+                />
+            )}
+        />
     );
-  }
+  };
 
-  getShowLess() {
-    return (
-      <Button
-        onClick={() => {
-          this.showLess();
-        }}
-      >
-        Show Less
-      </Button>
+    const getShowMore = () => (
+        <Button onClick={showMore}>
+            Show More
+        </Button>
     );
-  }
 
-  render() {
+    const getShowLess = () => (
+        <Button onClick={showLess}>
+            Show Less
+        </Button>
+    );
+
     return (
       <Box mt={5} mr={3} p={1}>
         <FormControl component="fieldset">
           <Box mb={1}>
             <FormLabel component="legend" color="primary">
-              {this.props.title}
+                {title}
             </FormLabel>
           </Box>
-          <FormGroup>{this.getFacetValues()}</FormGroup>
+          <FormGroup>{getFacetValues()}</FormGroup>
         </FormControl>
-        {this.state.canShowMoreValues && this.getFacetSearch()}
-        {this.state.canShowMoreValues && this.getShowMore()}
-        {this.state.canShowLessValues && this.getShowLess()}
+        {state.canShowMoreValues && getFacetSearch()}
+        {state.canShowMoreValues && getShowMore()}
+        {state.canShowLessValues && getShowLess()}
       </Box>
     );
-  }
 }
+
+interface FacetsConfigurationProps {
+    facet: {
+        facetConfiguration: {
+            fields: string[];
+        }
+    }
+}
+
+const FacetsConfiguration: FC<FacetsConfigurationProps> = ({facet}) => {
+    const {fields} = facet.facetConfiguration;
+
+    return (
+        <Grid item xs={4}>
+            {fields.map((field)=><Facet key={field} title={capitalizeFirstLetter(field)} field={field} />)}
+        </Grid>
+    );
+}
+
+export default FacetsConfiguration;
+

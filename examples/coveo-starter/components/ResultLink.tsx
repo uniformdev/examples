@@ -11,27 +11,21 @@ interface ResultLinkProps {
   result: Result;
 }
 
-export default class ResultLink extends React.Component<ResultLinkProps, {}> {
-  private interactiveResult: InteractiveResult;
-  private result: Result;
+const ResultLink: React.FC<ResultLinkProps> = (props) => {
+  const { result } = props;
+  const interactiveResult = buildInteractiveResult(headlessEngine, {
+    options: { result },
+  });
 
-  constructor(props: ResultLinkProps) {
-    super(props);
-    this.result = props.result;
-    this.interactiveResult = buildInteractiveResult(headlessEngine, {
-      options: { result: props.result },
-    });
-  }
+  const handleClick = () => {
+    interactiveResult.select();
+  };
 
-  render() {
-    return (
-      <Link
-        href={this.result.clickUri}
-        target="_blank"
-        onClick={() => this.interactiveResult.select()}
-      >
-        {this.result.title}
+  return (
+      <Link href={result.clickUri} target="_blank" onClick={handleClick}>
+        {result.title}
       </Link>
-    );
-  }
-}
+  );
+};
+
+export default ResultLink;

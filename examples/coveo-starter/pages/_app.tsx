@@ -6,11 +6,7 @@ import "../styles/styles.css";
 
 
 function App({ Component, pageProps }: AppProps) {
-  return <CssBaseline>
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  </CssBaseline>;
+  return <Component {...pageProps} />;
 }
 
 export default App;

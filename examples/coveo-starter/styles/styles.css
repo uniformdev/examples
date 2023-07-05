@@ -19,49 +19,6 @@ body {
   padding-right: 1rem;
 }
 
-.title {
-  color: #438fd5;
-  margin: 0;
-  line-height: 1.15;
-  font-size: 2rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.searchBox {
-  margin-top: 20px;
-}
-
-.index {
-  margin-top: 20px;
-}
-
-.refinementList {
-  margin-top: 20px;
-}
-
-.hits {
-  margin-top: 30px;
-}
-
-.pagination {
-  margin-top: 20px;
-}
-
-.callout {
-  background-color: rgb(254, 242, 242);
-  padding: 1rem 2.5rem;
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-  color: rgb(153, 27, 27);
-  font-size: .875rem;
-}
-
-.callout-title {
-  font-weight: 700;
+.thumbnail-image {
+  object-fit: contain;
 }

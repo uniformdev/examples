@@ -1,10 +1,7 @@
-import React from "react";
+import React, {FC, useEffect, useMemo, useState} from "react";
 import ResultLink from "./ResultLink";
 import {
   buildResultList,
-  ResultList as ResultListType,
-  Result,
-  ResultListState,
 } from "@coveo/headless";
 import headlessEngine from "../context/Engine";
 import {
@@ -15,77 +12,46 @@ import {
   Rating,
   Typography,
 } from "@mui/material";
+import NoImg from '../public/no-img.svg';
 
-export default class ResultList extends React.Component {
-  private headlessResultList: ResultListType;
-  state: ResultListState;
+const ResultList: FC = () => {
+  const headlessResultList = useMemo(()=>      buildResultList(headlessEngine, {
+    options: {
+      fieldsToInclude: ['ec_image', 'ec_price', 'ec_rating', 'ytthumbnailurl'],
+    },
+  }), []);
 
-  constructor(props: any) {
-    super(props);
+  const [state, setState] = useState(headlessResultList.state);
 
-    this.headlessResultList = buildResultList(headlessEngine, {
-      options: {
-        fieldsToInclude: ["ec_image", "ec_price", "ec_rating"],
-      },
-    });
+  useEffect(() => {
+    const updateState = () => {
+      setState(headlessResultList.state);
+    };
+    headlessResultList.subscribe(updateState);
 
-    this.state = this.headlessResultList.state;
-  }
+  }, [headlessResultList]);
 
-  componentDidMount() {
-    this.headlessResultList.subscribe(() => this.updateState());
-  }
-
-  updateState() {
-    this.setState(this.headlessResultList.state);
-  }
-
-  componentWillUnmount() {
-    this.headlessResultList.subscribe(() => {});
-  }
-
-  render() {
-    const formatter = new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
-    });
-    return (
+  return (
       <Grid container spacing={2}>
-        {this.state.results.map((result: Result) => {
-          return (
-            <Grid
-              item
-              xs={4}
-              display="grid"
-              alignItems="stretch"
-              key={result.uniqueId}
-            >
+        {state.results.map((result) => (
+            <Grid item xs={4} display="grid" alignItems="stretch" key={result.uniqueId}>
               <Card>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={`${result.raw.ec_image!}`}
-                />
+                {result.raw.ytthumbnailurl ? <CardMedia component="img" height="140"  image={`${result.raw.ytthumbnailurl}`}/> : <CardMedia component="img" height="140" className="thumbnail-image"  image={NoImg.src}/>}
+
                 <CardContent>
                   <Typography variant="h5">
-                    {<ResultLink result={result} />}
+                    <ResultLink result={result} />
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {result.excerpt}
                   </Typography>
-                  <Typography variant="h6" color="text.primary">
-                    {formatter.format(result.raw.ec_price as number)}
-                  </Typography>
-                  <Rating
-                    value={Math.round(result.raw.ec_rating as number)}
-                    readOnly
-                  />
+                  <Rating value={Math.round(result.raw.ec_rating as number)} readOnly />
                 </CardContent>
               </Card>
             </Grid>
-          );
-        })}
+        ))}
       </Grid>
-    );
-  }
-}
+  );
+};
+
+export default ResultList;

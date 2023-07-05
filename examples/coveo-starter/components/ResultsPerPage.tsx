@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect, useMemo, useState} from "react";
 import {
   buildResultsPerPage,
   ResultsPerPage as ResultsPerPageType,
@@ -13,45 +13,34 @@ import {
   Typography,
 } from "@mui/material";
 
-export default class ResultsPerPage extends React.Component {
-  private headlessResultsPerPage: ResultsPerPageType;
-  state: ResultsPerPageState;
 
-  constructor(props: any) {
-    super(props);
+const ResultsPerPage = ({resultsPerPage}:{resultsPerPage: string}) => {
+  const arrayResults = resultsPerPage.split(',');
+  const headlessResultsPerPage = useMemo(()=>buildResultsPerPage(headlessEngine, { initialState: { numberOfResults: Number(arrayResults[0]) } }), []);
+  const [state, setState] = useState(headlessResultsPerPage.state);
 
-    this.headlessResultsPerPage = buildResultsPerPage(headlessEngine, {
-      initialState: { numberOfResults: 9 },
-    });
+  useEffect(() => {
+    const updateState = () => {
+      setState(headlessResultsPerPage.state);
+    };
+    headlessResultsPerPage.subscribe(updateState);
+  }, []);
 
-    this.state = this.headlessResultsPerPage.state;
-  }
-
-  componentDidMount() {
-    this.headlessResultsPerPage.subscribe(() => this.updateState());
-  }
-
-  updateState() {
-    this.setState(this.headlessResultsPerPage.state);
-  }
-
-  render() {
-    return (
+  return (
       <FormControl component="fieldset">
         <Typography>Results per page</Typography>
         <RadioGroup
-          row
-          name="test"
-          defaultValue="9"
-          onChange={(event) => {
-            this.headlessResultsPerPage.set(parseInt(event.target.value, 10));
-          }}
+            row
+            name="test"
+            defaultValue={state.numberOfResults.toString()}
+            onChange={(event) => {
+              headlessResultsPerPage.set(parseInt(event.target.value, 10));
+            }}
         >
-          <FormControlLabel value="9" control={<Radio />} label="9" />
-          <FormControlLabel value="27" control={<Radio />} label="27" />
-          <FormControlLabel value="60" control={<Radio />} label="60" />
+            {resultsPerPage.split(',').map((value, index) => <FormControlLabel key={index} value={value} control={<Radio />} label={value} />)}
         </RadioGroup>
       </FormControl>
-    );
-  }
-}
+  );
+};
+
+export default ResultsPerPage;
