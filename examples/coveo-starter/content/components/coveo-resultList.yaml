@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-resultList
+name: Result List
+icon: screen
+parameters:
+  - id: resultList
+    name: Result List
+    type: headless-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Result List
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-04T14:39:32.229523+00:00'
+updated: '2023-07-04T14:39:32.229523+00:00'

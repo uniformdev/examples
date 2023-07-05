@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-facet
+name: Facets
+icon: screen
+parameters:
+  - id: facet
+    name: Facet
+    type: headless-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Facet
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-04T14:37:12.691267+00:00'
+updated: '2023-07-05T11:31:28.659489+00:00'

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-initial
+name: Coveo Initial
+icon: screen
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: widgets
+    name: widgets
+    allowedComponents:
+      - coveo-facetBreadcrumbs
+      - coveo-container
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2023-07-05T11:23:07.912843+00:00'
+updated: '2023-07-05T11:31:07.815154+00:00'

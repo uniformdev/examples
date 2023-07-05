@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useMemo, useState} from "react";
-import { buildPager, Pager as PagerType, PagerState } from "@coveo/headless";
+import {buildPager, FacetState, Pager as PagerType, PagerState} from "@coveo/headless";
 import headlessEngine from "../context/Engine";
 import {Box, Grid, Pagination, Typography} from "@mui/material";
 import ResultsPerPage from "@/components/ResultsPerPage";
@@ -13,16 +13,23 @@ export interface PagerProps {
 }
 
 const Pager: FC<PagerProps> = ({pager}) => {
+
   const {resultsPerPage = '9' } = pager?.pager || {};
 
   const headlessPager = useMemo(() => buildPager(headlessEngine, { options: { numberOfPages: 3 } }), []);
+  const [state, setState] = useState<PagerState>(headlessPager.state);
+
+
+    useEffect(() => {
+        const updateState = () => {
+            setState(headlessPager.state);
+        };
+        headlessPager.subscribe(updateState);
+    }, []);
 
   const setPage = (pageNumber: number) => {
     headlessPager.selectPage(pageNumber);
   };
-
-  const page = headlessPager.state.currentPage;
-  const count = headlessPager.state.maxPage;
 
   return (
       <Box my={4}>
@@ -31,8 +38,8 @@ const Pager: FC<PagerProps> = ({pager}) => {
                   <Box>
                       <Typography gutterBottom>Current page</Typography>
                       <Pagination
-                          page={page}
-                          count={count}
+                          page={state.currentPage || 1}
+                          count={state.maxPage}
                           onChange={(e, page) => setPage(page)}
                           variant="outlined"
                           color="primary"

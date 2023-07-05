@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-sort
+name: Sort
+icon: screen
+parameters:
+  - id: sort
+    name: Sort
+    type: headless-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Sort
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-04T14:40:35.002232+00:00'
+updated: '2023-07-04T14:40:35.002232+00:00'

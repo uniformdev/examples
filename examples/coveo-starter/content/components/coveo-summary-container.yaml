@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-summary-container
+name: Coveo Summary Container
+icon: screen
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: widgets
+    name: widgets
+    allowedComponents:
+      - coveo-querySummary
+      - coveo-sort
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2023-07-05T11:35:27.02943+00:00'
+updated: '2023-07-05T11:35:27.02943+00:00'
