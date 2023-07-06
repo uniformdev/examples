@@ -1,15 +1,11 @@
-import React, {FC, useEffect, useMemo, useState} from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import { buildBreadcrumbManager } from "@coveo/headless";
+import { Breadcrumbs, Button, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
-import {
-  Breadcrumbs,
-  Button,
-  Typography,
-} from "@mui/material";
-import {capitalizeFirstLetter} from "../utils";
+import { capitalizeFirstLetter } from "../utils";
 
 const FacetBreadcrumbsConfiguration: FC = () => {
-  const headlessBreadcrumbManager = useMemo(() => buildBreadcrumbManager(headlessEngine), []);
+  const headlessBreadcrumbManager = buildBreadcrumbManager(headlessEngine);
 
   const [state, setState] = useState(headlessBreadcrumbManager.state);
 
@@ -20,40 +16,38 @@ const FacetBreadcrumbsConfiguration: FC = () => {
     headlessBreadcrumbManager.subscribe(updateState);
   }, []);
 
+  const deselectAll = () => headlessBreadcrumbManager.deselectAll();
+
   return (
-      <>
-        {state.facetBreadcrumbs.map((breadcrumb, index) => (
-            <div key={index}>
-              <Typography>{capitalizeFirstLetter(breadcrumb.facetId)}</Typography>
-              <Breadcrumbs>
-                {breadcrumb.values.map((breadcrumbValue) => (
-                    <Button onClick={() => breadcrumbValue.deselect()}>
-                      <Typography color="text.primary">{`${breadcrumbValue.value.value}`}</Typography>
-                    </Button>
-                ))}
-              </Breadcrumbs>
-            </div>
-        ))}
-        {state.hasBreadcrumbs && (
-            <Button onClick={() => headlessBreadcrumbManager.deselectAll()}>
-              Clear all
-            </Button>
-        )}
-      </>
+    <>
+      {state.facetBreadcrumbs.map((breadcrumb, index) => (
+        <div key={index}>
+          <Typography>{capitalizeFirstLetter(breadcrumb.facetId)}</Typography>
+          <Breadcrumbs>
+            {breadcrumb.values.map((breadcrumbValue, index) => (
+              <Button key={index} onClick={() => breadcrumbValue.deselect()}>
+                <Typography color="text.primary">{`${breadcrumbValue.value.value}`}</Typography>
+              </Button>
+            ))}
+          </Breadcrumbs>
+        </div>
+      ))}
+      {state.hasBreadcrumbs && <Button onClick={deselectAll}>Clear all</Button>}
+    </>
   );
 };
 
 export interface FacetBreadcrumbsProps {
   facetBreadcrumbs: {
     facetBreadcrumbs: boolean;
-  }
+  };
 }
 
-const FacetBreadcrumbs: FC<FacetBreadcrumbsProps> = ({facetBreadcrumbs}) => {
-  if(!facetBreadcrumbs.facetBreadcrumbs) {
+const FacetBreadcrumbs: FC<FacetBreadcrumbsProps> = ({ facetBreadcrumbs }) => {
+  if (!facetBreadcrumbs.facetBreadcrumbs) {
     return <></>;
   }
-  return <FacetBreadcrumbsConfiguration/>;
-}
+  return <FacetBreadcrumbsConfiguration />;
+};
 
 export default FacetBreadcrumbs;

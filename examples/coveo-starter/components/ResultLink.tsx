@@ -1,18 +1,13 @@
-import {
-  buildInteractiveResult,
-  InteractiveResult,
-  Result,
-} from "@coveo/headless";
+import { FC } from "react";
+import { buildInteractiveResult, Result } from "@coveo/headless";
 import { Link } from "@mui/material";
-import React from "react";
 import headlessEngine from "../context/Engine";
 
 interface ResultLinkProps {
   result: Result;
 }
 
-const ResultLink: React.FC<ResultLinkProps> = (props) => {
-  const { result } = props;
+const ResultLink: FC<ResultLinkProps> = ({ result }) => {
   const interactiveResult = buildInteractiveResult(headlessEngine, {
     options: { result },
   });
@@ -22,9 +17,9 @@ const ResultLink: React.FC<ResultLinkProps> = (props) => {
   };
 
   return (
-      <Link href={result.clickUri} target="_blank" onClick={handleClick}>
-        {result.title}
-      </Link>
+    <Link href={result.clickUri} target="_blank" onClick={handleClick}>
+      {result.title}
+    </Link>
   );
 };
 

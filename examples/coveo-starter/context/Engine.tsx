@@ -1,10 +1,4 @@
-import {
-  buildSearchEngine,
-  buildContext,
-  getOrganizationEndpoints,
-  loadSearchAnalyticsActions,
-  loadSearchActions
-} from "@coveo/headless";
+import { buildSearchEngine, getOrganizationEndpoints } from "@coveo/headless";
 import getConfig from "next/config";
 
 const {
@@ -15,7 +9,7 @@ const headlessEngine = buildSearchEngine({
   configuration: {
     organizationId: applicationId,
     accessToken: coveoApiKey,
-    organizationEndpoints: getOrganizationEndpoints(applicationId)
+    organizationEndpoints: getOrganizationEndpoints(applicationId),
   },
 });
 

@@ -1,7 +1,7 @@
-import React from 'react';
-import Logo from './Logo';
+import { FC } from "react";
+import Logo from "./Logo";
 
-const Footer = () => (
+const Footer: FC = () => (
   <footer className="footer">
     <span>Powered by</span>
     <a href="https://uniform.dev" target="_blank" rel="noopener noreferrer">

@@ -1,17 +1,14 @@
-import React, {ChangeEvent, FC, useEffect, useMemo, useState} from "react";
+import { FC, useEffect, useMemo, useState } from "react";
 import {
-  Sort as SortType,
-  SortState,
   buildSort,
   buildRelevanceSortCriterion,
   buildDateSortCriterion,
   SortOrder,
-  SortByRelevancy,
-  SortByDate,
 } from "@coveo/headless";
 import headlessEngine from "../context/Engine";
 import {
-  FormControl, Grid,
+  FormControl,
+  Grid,
   InputLabel,
   MenuItem,
   Select,
@@ -19,25 +16,37 @@ import {
 } from "@mui/material";
 
 const Sort: FC = () => {
+  const headlessSort = useMemo(() => buildSort(headlessEngine), []);
+
+  const [state, setState] = useState(headlessSort.state);
+
+  useEffect(() => {
+    const updateState = () => {
+      setState(headlessSort.state);
+    };
+    headlessSort.subscribe(updateState);
+  }, []);
+
+  const dateDescendingSortCriterion = buildDateSortCriterion(
+    SortOrder.Descending
+  );
+  const dateAscendingSortCriterion = buildDateSortCriterion(
+    SortOrder.Ascending
+  );
+
   const relevanceSortCriterion = buildRelevanceSortCriterion();
-  const headlessSort = useMemo(()=>      buildSort(headlessEngine, {
-    initialState: {
-      criterion: relevanceSortCriterion,
-    },
-  }),[]);
 
-  const dateDescendingSortCriterion = buildDateSortCriterion(SortOrder.Descending);
-  const dateAscendingSortCriterion = buildDateSortCriterion(SortOrder.Ascending);
-
-  const handleChange = (event: SelectChangeEvent<"relevance" | "datedescending" | "dateascending">) => {
+  const handleChange = (
+    event: SelectChangeEvent<"relevancy" | "date descending" | "date ascending">
+  ) => {
     switch (event.target.value) {
-      case 'relevance':
+      case "relevancy":
         headlessSort.sortBy(relevanceSortCriterion);
         break;
-      case 'datedescending':
+      case "date descending":
         headlessSort.sortBy(dateDescendingSortCriterion);
         break;
-      case 'dateascending':
+      case "date ascending":
         headlessSort.sortBy(dateAscendingSortCriterion);
         break;
       default:
@@ -45,35 +54,30 @@ const Sort: FC = () => {
     }
   };
 
-  const getSelectValue = () => {
-    if (headlessSort.isSortedBy(relevanceSortCriterion)) {
-      return 'relevance';
-    }
-    if (headlessSort.isSortedBy(dateDescendingSortCriterion)) {
-      return 'datedescending';
-    }
-    if (headlessSort.isSortedBy(dateAscendingSortCriterion)) {
-      return 'dateascending';
-    }
-  };
-
   return (
-      <Grid item xs={4}>
-        <FormControl fullWidth>
-          <InputLabel id="sortby">Sort by</InputLabel>
-          <Select
-              labelId="sortby"
-              id="sortby"
-              value={getSelectValue()}
-              label="Sort"
-              onChange={handleChange}
-          >
-            <MenuItem value="relevance">Relevance</MenuItem>
-            <MenuItem value="datedescending">Date Descending</MenuItem>
-            <MenuItem value="dateascending">Date Ascending</MenuItem>
-          </Select>
-        </FormControl>
-      </Grid>
+    <Grid item xs={4}>
+      <FormControl fullWidth>
+        <InputLabel id="sortby">Sort by</InputLabel>
+        <Select
+          labelId="sortby"
+          id="sortby"
+          value={
+            state.sortCriteria as
+              | ""
+              | "relevancy"
+              | "date descending"
+              | "date ascending"
+              | undefined
+          }
+          label="Sort"
+          onChange={handleChange}
+        >
+          <MenuItem value="relevancy">Relevance</MenuItem>
+          <MenuItem value="date descending">Date Descending</MenuItem>
+          <MenuItem value="date ascending">Date Ascending</MenuItem>
+        </Select>
+      </FormControl>
+    </Grid>
   );
 };
 
