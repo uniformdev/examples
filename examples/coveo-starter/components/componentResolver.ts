@@ -17,6 +17,7 @@ import CoveoContainer from "@/components/Containers/CoveoContainer";
 import ResultsContainer from "@/components/Containers/ResultsContainer";
 import SummaryContainer from "@/components/Containers/SummaryContainer";
 import { capitalizeFirstLetter } from "../utils";
+import FacetsContainer from "@/components/Containers/FacetsContainer";
 
 const componentMappings: Record<string, ComponentType<ComponentProps<any>>> = {
   "coveo-sort": Sort,
@@ -31,6 +32,7 @@ const componentMappings: Record<string, ComponentType<ComponentProps<any>>> = {
   "coveo-container": CoveoContainer,
   "coveo-results-container": ResultsContainer,
   "coveo-summary-container": SummaryContainer,
+  "coveo-facet-container": FacetsContainer,
 };
 
 export function componentResolver(

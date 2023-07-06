@@ -8,13 +8,12 @@ interface ResultsPerPageProps {
 }
 
 const ResultsPerPage: FC<ResultsPerPageProps> = ({ resultsPerPage }) => {
-  const arrayResults = resultsPerPage.split(",");
 
   useEffect(() => {
     buildResultsPerPage(headlessEngine, {
-      initialState: { numberOfResults: Number(arrayResults[0]) },
+      initialState: { numberOfResults: Number(resultsPerPage) },
     });
-  }, [arrayResults]);
+  }, [resultsPerPage]);
 
   return (
     <FormControl component="fieldset">

@@ -1,11 +1,11 @@
-import { FC, useEffect, useMemo, useState } from "react";
+import {FC, useEffect, useMemo, useState} from "react";
 import { buildBreadcrumbManager } from "@coveo/headless";
 import { Breadcrumbs, Button, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
 import { capitalizeFirstLetter } from "../utils";
 
 const FacetBreadcrumbsConfiguration: FC = () => {
-  const headlessBreadcrumbManager = buildBreadcrumbManager(headlessEngine);
+  const headlessBreadcrumbManager = useMemo(()=>buildBreadcrumbManager(headlessEngine),[headlessEngine]);
 
   const [state, setState] = useState(headlessBreadcrumbManager.state);
 
@@ -38,13 +38,13 @@ const FacetBreadcrumbsConfiguration: FC = () => {
 };
 
 export interface FacetBreadcrumbsProps {
-  facetBreadcrumbs: {
-    facetBreadcrumbs: boolean;
+  facetBreadcrumbs?: {
+    facetBreadcrumbsConfiguration?: boolean;
   };
 }
 
 const FacetBreadcrumbs: FC<FacetBreadcrumbsProps> = ({ facetBreadcrumbs }) => {
-  if (!facetBreadcrumbs.facetBreadcrumbs) {
+  if (!facetBreadcrumbs?.facetBreadcrumbsConfiguration) {
     return <></>;
   }
   return <FacetBreadcrumbsConfiguration />;

@@ -17,36 +17,44 @@ import { Search } from "@mui/icons-material";
 import headlessEngine from "../context/Engine";
 
 interface SearchBoxProps {
-  searchBox: {
-    searchBox: {
-      placeholder: string;
+  searchBox?: {
+    searchBoxConfiguration?: {
+      placeholder?: string;
+      enableQuerySyntax?: boolean;
     };
   };
 }
 
 const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
-  const { placeholder } = searchBox?.searchBox || {};
+  const { placeholder = "", enableQuerySyntax = false } =
+    searchBox?.searchBoxConfiguration || {};
 
-  const headlessSearchBox = buildSearchBox(headlessEngine, {
-    options: {
-      highlightOptions: {
-        notMatchDelimiters: {
-          open: "<strong>",
-          close: "</strong>",
+  const headlessSearchBox = useMemo(
+    () =>
+      buildSearchBox(headlessEngine, {
+        options: {
+          highlightOptions: {
+            notMatchDelimiters: {
+              open: "<strong>",
+              close: "</strong>",
+            },
+            correctionDelimiters: {
+              open: "<i>",
+              close: "</i>",
+            },
+          },
+          clearFilters: true,
+          enableQuerySyntax,
         },
-        correctionDelimiters: {
-          open: "<i>",
-          close: "</i>",
-        },
-      },
-    },
-  });
+      }),
+    [headlessEngine]
+  );
 
   const [state, setState] = useState(headlessSearchBox.state);
 
-  const handleSubmit = useCallback(() => {
+  const handleSubmit = () => {
     headlessSearchBox.submit();
-  }, [headlessSearchBox]);
+  };
 
   useEffect(() => {
     const updateState = () => {
@@ -63,7 +71,7 @@ const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
   const renderInput = (params: AutocompleteRenderInputParams) => (
     <TextField
       {...params}
-      label={placeholder}
+      label={placeholder || "Search"}
       InputProps={{
         ...params.InputProps,
         type: "search",

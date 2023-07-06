@@ -1,31 +1,29 @@
 import { FC, useEffect, useMemo, useState } from "react";
 import { buildResultList } from "@coveo/headless";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-  Rating,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
 import ResultLink from "./ResultLink";
 import NoImg from "../public/no-img.svg";
 
-const ResultList: FC = () => {
+export interface ResultListProps {
+  resultList?: {
+    resultListConfiguration?: {
+      imageField?: string;
+    };
+  };
+}
+
+const ResultList: FC<ResultListProps> = ({ resultList }) => {
+  const { imageField = "" } = resultList?.resultListConfiguration || {};
+
   const headlessResultList = useMemo(
     () =>
       buildResultList(headlessEngine, {
         options: {
-          fieldsToInclude: [
-            "ec_image",
-            "ec_price",
-            "ec_rating",
-            "ytthumbnailurl",
-          ],
+          fieldsToInclude: imageField ? [imageField, "ec_image"] : ["ec_image"],
         },
       }),
-    []
+    [imageField]
   );
 
   const [state, setState] = useState(headlessResultList.state);
@@ -48,21 +46,12 @@ const ResultList: FC = () => {
           key={result.uniqueId}
         >
           <Card>
-            {result.raw.ytthumbnailurl ? (
-              <CardMedia
-                component="img"
-                height="140"
-                image={`${result.raw.ytthumbnailurl}`}
-              />
-            ) : (
-              <CardMedia
-                component="img"
-                height="140"
-                className="thumbnail-image"
-                image={NoImg.src}
-              />
-            )}
-
+            <CardMedia
+              component="img"
+              height="140"
+              className="thumbnail-image"
+              image={`${result.raw[imageField] || NoImg.src}`}
+            />
             <CardContent>
               <Typography variant="h5">
                 <ResultLink result={result} />

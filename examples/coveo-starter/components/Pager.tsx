@@ -6,18 +6,17 @@ import ResultsPerPage from "@/components/ResultsPerPage";
 
 export interface PagerProps {
   pager?: {
-    pager?: {
+    pagerConfiguration?: {
       resultsPerPage?: string;
+      title?: string;
     };
   };
 }
 
 const Pager: FC<PagerProps> = ({ pager }) => {
-  const { resultsPerPage = "9" } = pager?.pager || {};
+  const { resultsPerPage = '', title = '' } = pager?.pagerConfiguration || {};
 
-  const headlessPager = buildPager(headlessEngine, {
-    options: { numberOfPages: 3 },
-  });
+  const headlessPager = useMemo(() => buildPager(headlessEngine), [headlessEngine]);
 
   const [state, setState] = useState<PagerState>(headlessPager.state);
 
@@ -37,7 +36,7 @@ const Pager: FC<PagerProps> = ({ pager }) => {
       <Grid container alignItems="center">
         <Grid item xs={6}>
           <Box>
-            <Typography gutterBottom>Current page</Typography>
+            <Typography gutterBottom>{title || "Current page"}</Typography>
             <Pagination
               page={state.currentPage || 1}
               count={state.maxPage}
@@ -48,7 +47,7 @@ const Pager: FC<PagerProps> = ({ pager }) => {
           </Box>
         </Grid>
         <Grid item xs={6}>
-          <ResultsPerPage resultsPerPage={resultsPerPage} />
+          <ResultsPerPage resultsPerPage={resultsPerPage || "9"} />
         </Grid>
       </Grid>
     </Box>

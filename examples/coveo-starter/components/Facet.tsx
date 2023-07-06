@@ -1,6 +1,9 @@
-import {FC, SyntheticEvent, useEffect, useMemo, useState} from "react";
+import { FC, SyntheticEvent, useEffect, useMemo, useState } from "react";
 import { FacetState, buildFacet, FacetValue } from "@coveo/headless";
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Autocomplete,
   Box,
   Button,
@@ -8,28 +11,17 @@ import {
   FormControl,
   FormControlLabel,
   FormGroup,
-  FormLabel,
-  Grid,
   TextField,
+  Typography,
 } from "@mui/material";
 import headlessEngine from "../context/Engine";
 import { capitalizeFirstLetter } from "../utils";
 
-
-interface FacetsConfigurationProps {
-  facet: {
-    facetConfiguration: {
-      fields: string[];
-    };
-  };
-}
-
 interface FacetProps {
-  title: string;
   field: string;
 }
 
-const Facet: FC<FacetProps> = ({ field, title }) => {
+const Facet: FC<FacetProps> = ({ field }) => {
   const facetsBuilder = useMemo(
     () =>
       buildFacet(headlessEngine, {
@@ -39,7 +31,7 @@ const Facet: FC<FacetProps> = ({ field, title }) => {
           field,
         },
       }),
-    [field]
+    [field, headlessEngine]
   );
 
   const [state, setState] = useState<FacetState & { inputValue?: string }>({
@@ -125,39 +117,52 @@ const Facet: FC<FacetProps> = ({ field, title }) => {
   const getShowLess = () => <Button onClick={showLess}>Show Less</Button>;
 
   return (
-    <Box mt={5} mr={3} p={1}>
+    <>
       <FormControl component="fieldset">
-        <Box mb={1}>
-          <FormLabel component="legend" color="primary">
-            {title}
-          </FormLabel>
-        </Box>
         <FormGroup>{getFacetValues()}</FormGroup>
       </FormControl>
       {state.canShowMoreValues && getFacetSearch()}
       {state.canShowMoreValues && getShowMore()}
       {state.canShowLessValues && getShowLess()}
-    </Box>
+    </>
   );
 };
 
 interface FacetsConfigurationProps {
-  facet: {
-    facetConfiguration: {
-      fields: string[];
+  facet?: {
+    facetConfiguration?: {
+      field?: string;
+      isExpanded?: boolean;
     };
   };
 }
 
 const FacetsConfiguration: FC<FacetsConfigurationProps> = ({ facet }) => {
-  const { fields } = facet.facetConfiguration;
+  const { field = "", isExpanded = false } = facet?.facetConfiguration || {};
+
+  const [expand, setExpand] = useState<boolean>(isExpanded);
+
+  useEffect(() => setExpand(isExpanded), [isExpanded]);
+
+  const changeExpanded = () => {
+    setExpand((prevState) => !prevState);
+  };
+
+  if (!field) {
+    return <></>;
+  }
 
   return (
-    <Grid item xs={4}>
-      {fields.map((field) => (
-        <Facet key={field} title={capitalizeFirstLetter(field)} field={field} />
-      ))}
-    </Grid>
+    <Box mt={1} mr={3} p={1}>
+      <Accordion expanded={expand} onChange={changeExpanded}>
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <Typography>{capitalizeFirstLetter(field)}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Facet key={field} field={field} />
+        </AccordionDetails>
+      </Accordion>
+    </Box>
   );
 };
 

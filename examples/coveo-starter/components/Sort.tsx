@@ -15,7 +15,7 @@ import {
   SelectChangeEvent,
 } from "@mui/material";
 
-const Sort: FC = () => {
+const SortConfiguration: FC = () => {
   const headlessSort = useMemo(() => buildSort(headlessEngine), []);
 
   const [state, setState] = useState(headlessSort.state);
@@ -79,6 +79,19 @@ const Sort: FC = () => {
       </FormControl>
     </Grid>
   );
+};
+
+export interface SortProps {
+  sort?: {
+    sortConfiguration?: boolean;
+  };
+}
+
+const Sort: FC<SortProps> = ({ sort }) => {
+  if (!sort?.sortConfiguration) {
+    return <></>;
+  }
+  return <SortConfiguration />;
 };
 
 export default Sort;

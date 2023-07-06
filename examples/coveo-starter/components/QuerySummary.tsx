@@ -1,10 +1,10 @@
-import { FC, useEffect, useMemo, useState } from "react";
+import {FC, useEffect, useMemo, useState} from "react";
 import { buildQuerySummary } from "@coveo/headless";
 import headlessEngine from "../context/Engine";
 import { Box, Grid } from "@mui/material";
 
 const QuerySummaryConfiguration: FC = () => {
-  const headlessQuerySummary = buildQuerySummary(headlessEngine);
+  const headlessQuerySummary = useMemo(() => buildQuerySummary(headlessEngine),[headlessEngine]);
 
   const [state, setState] = useState(headlessQuerySummary.state);
 
@@ -44,13 +44,13 @@ const QuerySummaryConfiguration: FC = () => {
 };
 
 export interface QuerySummaryProps {
-  querySummary: {
-    querySummary: boolean;
+  querySummary?: {
+    querySummaryConfiguration?: boolean;
   };
 }
 
 const QuerySummary: FC<QuerySummaryProps> = ({ querySummary }) => {
-  if (!querySummary.querySummary) {
+  if (!querySummary?.querySummaryConfiguration) {
     return <></>;
   }
   return <QuerySummaryConfiguration />;

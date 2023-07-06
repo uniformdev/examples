@@ -20,5 +20,20 @@ body {
 }
 
 .thumbnail-image {
+  height: 140px;
+  width: 100%;
+  display: block;
+  position: relative;
   object-fit: contain;
+}
+
+.thumbnail-image::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white url('../public/no-img.svg') no-repeat;
+  background-size: cover;
 }
