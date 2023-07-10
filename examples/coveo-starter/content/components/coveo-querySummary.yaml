@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-querySummary
+name: Query Summary
+icon: screen
+parameters:
+  - id: querySummary
+    name: Query Summary
+    type: headless-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Query Summary
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-04T14:39:09.943155+00:00'
+updated: '2023-07-04T14:39:09.943155+00:00'

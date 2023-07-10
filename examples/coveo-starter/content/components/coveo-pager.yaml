@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-pager
+name: Pager
+icon: screen
+parameters:
+  - id: pager
+    name: Pager
+    type: headless-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Pager
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-04T14:38:20.69298+00:00'
+updated: '2023-07-04T14:38:20.69298+00:00'
