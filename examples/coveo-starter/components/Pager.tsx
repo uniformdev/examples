@@ -1,22 +1,29 @@
 import { ChangeEvent, FC, useEffect, useMemo, useState } from "react";
+import {
+  ComponentProps,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
 import { buildPager, PagerState } from "@coveo/headless";
-import headlessEngine from "../context/Engine";
 import { Box, Grid, Pagination, Typography } from "@mui/material";
+import headlessEngine from "../context/Engine";
 import ResultsPerPage from "@/components/ResultsPerPage";
 
-export interface PagerProps {
+type PagerProps = ComponentProps<{
   pager?: {
     pagerConfiguration?: {
       resultsPerPage?: string;
       title?: string;
     };
   };
-}
+}>;
 
 const Pager: FC<PagerProps> = ({ pager }) => {
-  const { resultsPerPage = '', title = '' } = pager?.pagerConfiguration || {};
+  const { resultsPerPage = "", title = "" } = pager?.pagerConfiguration || {};
 
-  const headlessPager = useMemo(() => buildPager(headlessEngine), [headlessEngine]);
+  const headlessPager = useMemo(
+    () => buildPager(headlessEngine),
+    [headlessEngine]
+  );
 
   const [state, setState] = useState<PagerState>(headlessPager.state);
 
@@ -53,5 +60,10 @@ const Pager: FC<PagerProps> = ({ pager }) => {
     </Box>
   );
 };
+
+registerUniformComponent({
+  type: "coveo-pager",
+  component: Pager,
+});
 
 export default Pager;

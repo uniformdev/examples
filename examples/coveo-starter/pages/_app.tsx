@@ -1,8 +1,9 @@
 import React from "react";
-import type { AppProps } from "next/app";
+import { UniformAppProps } from "@uniformdev/context-next";
 import "../styles/styles.css";
+import "../components/canvasComponents";
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: UniformAppProps) {
   return <Component {...pageProps} />;
 }
 

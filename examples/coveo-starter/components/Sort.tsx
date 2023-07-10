@@ -1,11 +1,14 @@
 import { FC, useEffect, useMemo, useState } from "react";
 import {
+  ComponentProps,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
+import {
   buildSort,
   buildRelevanceSortCriterion,
   buildDateSortCriterion,
   SortOrder,
 } from "@coveo/headless";
-import headlessEngine from "../context/Engine";
 import {
   FormControl,
   Grid,
@@ -14,6 +17,7 @@ import {
   Select,
   SelectChangeEvent,
 } from "@mui/material";
+import headlessEngine from "../context/Engine";
 
 const SortConfiguration: FC = () => {
   const headlessSort = useMemo(() => buildSort(headlessEngine), []);
@@ -81,17 +85,22 @@ const SortConfiguration: FC = () => {
   );
 };
 
-export interface SortProps {
+type SortProps = ComponentProps<{
   sort?: {
     sortConfiguration?: boolean;
   };
-}
+}>;
 
 const Sort: FC<SortProps> = ({ sort }) => {
   if (!sort?.sortConfiguration) {
-    return <></>;
+    return null;
   }
   return <SortConfiguration />;
 };
+
+registerUniformComponent({
+  type: "coveo-sort",
+  component: Sort,
+});
 
 export default Sort;

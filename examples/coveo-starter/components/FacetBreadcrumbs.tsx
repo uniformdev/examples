@@ -1,11 +1,18 @@
-import {FC, useEffect, useMemo, useState} from "react";
+import { FC, useEffect, useMemo, useState } from "react";
+import {
+  ComponentProps,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
 import { buildBreadcrumbManager } from "@coveo/headless";
 import { Breadcrumbs, Button, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
 import { capitalizeFirstLetter } from "../utils";
 
 const FacetBreadcrumbsConfiguration: FC = () => {
-  const headlessBreadcrumbManager = useMemo(()=>buildBreadcrumbManager(headlessEngine),[headlessEngine]);
+  const headlessBreadcrumbManager = useMemo(
+    () => buildBreadcrumbManager(headlessEngine),
+    [headlessEngine]
+  );
 
   const [state, setState] = useState(headlessBreadcrumbManager.state);
 
@@ -37,17 +44,22 @@ const FacetBreadcrumbsConfiguration: FC = () => {
   );
 };
 
-export interface FacetBreadcrumbsProps {
+type FacetBreadcrumbsProps = ComponentProps<{
   facetBreadcrumbs?: {
     facetBreadcrumbsConfiguration?: boolean;
   };
-}
+}>;
 
 const FacetBreadcrumbs: FC<FacetBreadcrumbsProps> = ({ facetBreadcrumbs }) => {
   if (!facetBreadcrumbs?.facetBreadcrumbsConfiguration) {
-    return <></>;
+    return null;
   }
   return <FacetBreadcrumbsConfiguration />;
 };
+
+registerUniformComponent({
+  type: "coveo-facetBreadcrumbs",
+  component: FacetBreadcrumbs,
+});
 
 export default FacetBreadcrumbs;

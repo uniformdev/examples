@@ -1,11 +1,8 @@
+import { FC, SyntheticEvent, useEffect, useMemo, useState } from "react";
 import {
-  FC,
-  SyntheticEvent,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+  registerUniformComponent,
+  ComponentProps,
+} from "@uniformdev/canvas-react";
 import { buildSearchBox } from "@coveo/headless";
 import {
   Autocomplete,
@@ -16,14 +13,14 @@ import {
 import { Search } from "@mui/icons-material";
 import headlessEngine from "../context/Engine";
 
-interface SearchBoxProps {
+type SearchBoxProps = ComponentProps<{
   searchBox?: {
     searchBoxConfiguration?: {
       placeholder?: string;
       enableQuerySyntax?: boolean;
     };
   };
-}
+}>;
 
 const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
   const { placeholder = "", enableQuerySyntax = false } =
@@ -101,4 +98,10 @@ const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
     />
   );
 };
+
+registerUniformComponent({
+  type: "coveo-searchBox",
+  component: SearchBox,
+});
+
 export default SearchBox;

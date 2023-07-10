@@ -1,6 +1,10 @@
 import { FC, SyntheticEvent, useEffect, useMemo, useState } from "react";
 import { FacetState, buildFacet, FacetValue } from "@coveo/headless";
 import {
+  ComponentProps,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
+import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
@@ -128,16 +132,16 @@ const Facet: FC<FacetProps> = ({ field }) => {
   );
 };
 
-interface FacetsConfigurationProps {
+type FacetConfigurationProps = ComponentProps<{
   facet?: {
     facetConfiguration?: {
       field?: string;
       isExpanded?: boolean;
     };
   };
-}
+}>;
 
-const FacetsConfiguration: FC<FacetsConfigurationProps> = ({ facet }) => {
+const FacetConfiguration: FC<FacetConfigurationProps> = ({ facet }) => {
   const { field = "", isExpanded = false } = facet?.facetConfiguration || {};
 
   const [expand, setExpand] = useState<boolean>(isExpanded);
@@ -149,7 +153,7 @@ const FacetsConfiguration: FC<FacetsConfigurationProps> = ({ facet }) => {
   };
 
   if (!field) {
-    return <></>;
+    return null;
   }
 
   return (
@@ -166,4 +170,9 @@ const FacetsConfiguration: FC<FacetsConfigurationProps> = ({ facet }) => {
   );
 };
 
-export default FacetsConfiguration;
+registerUniformComponent({
+  type: "coveo-facet",
+  component: FacetConfiguration,
+});
+
+export default FacetConfiguration;

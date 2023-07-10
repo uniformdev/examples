@@ -1,12 +1,19 @@
 import { FC } from "react";
-import componentResolver from "@/components/componentResolver";
-import { UniformSlot } from "@uniformdev/canvas-react";
+import {
+  registerUniformComponent,
+  UniformSlot,
+} from "@uniformdev/canvas-react";
 import { Grid } from "@mui/material";
 
 const CoveoContainer: FC = () => (
   <Grid container>
-    <UniformSlot name="widgets" resolveRenderer={componentResolver} />
+    <UniformSlot name="widgets" />
   </Grid>
 );
+
+registerUniformComponent({
+  type: "coveo-container",
+  component: CoveoContainer,
+});
 
 export default CoveoContainer;

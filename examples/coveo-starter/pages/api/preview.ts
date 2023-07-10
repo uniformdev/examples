@@ -7,7 +7,7 @@ import { createPreviewHandler } from "@uniformdev/canvas-next";
 // };
 
 const handler = createPreviewHandler({
-  secret: () => process.env.UNIFORM_PREVIEW_SECRET || '',
+  secret: () => process.env.UNIFORM_PREVIEW_SECRET || "",
   // TODO: re-enable if you end up using enhancers
   // enhance: (composition) => runEnhancers(composition, context),
 });

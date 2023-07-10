@@ -1,10 +1,17 @@
-import {FC, useEffect, useMemo, useState} from "react";
+import { FC, useEffect, useMemo, useState } from "react";
+import {
+  ComponentProps,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
 import { buildQuerySummary } from "@coveo/headless";
-import headlessEngine from "../context/Engine";
 import { Box, Grid } from "@mui/material";
+import headlessEngine from "../context/Engine";
 
 const QuerySummaryConfiguration: FC = () => {
-  const headlessQuerySummary = useMemo(() => buildQuerySummary(headlessEngine),[headlessEngine]);
+  const headlessQuerySummary = useMemo(
+    () => buildQuerySummary(headlessEngine),
+    [headlessEngine]
+  );
 
   const [state, setState] = useState(headlessQuerySummary.state);
 
@@ -43,17 +50,22 @@ const QuerySummaryConfiguration: FC = () => {
   );
 };
 
-export interface QuerySummaryProps {
+type QuerySummaryProps = ComponentProps<{
   querySummary?: {
     querySummaryConfiguration?: boolean;
   };
-}
+}>;
 
 const QuerySummary: FC<QuerySummaryProps> = ({ querySummary }) => {
   if (!querySummary?.querySummaryConfiguration) {
-    return <></>;
+    return null;
   }
   return <QuerySummaryConfiguration />;
 };
+
+registerUniformComponent({
+  type: "coveo-querySummary",
+  component: QuerySummary,
+});
 
 export default QuerySummary;

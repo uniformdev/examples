@@ -1,17 +1,21 @@
 import { FC, useEffect, useMemo, useState } from "react";
+import {
+  ComponentProps,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
 import { buildResultList } from "@coveo/headless";
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
 import ResultLink from "./ResultLink";
 import NoImg from "../public/no-img.svg";
 
-export interface ResultListProps {
+type ResultListProps = ComponentProps<{
   resultList?: {
     resultListConfiguration?: {
       imageField?: string;
     };
   };
-}
+}>;
 
 const ResultList: FC<ResultListProps> = ({ resultList }) => {
   const { imageField = "" } = resultList?.resultListConfiguration || {};
@@ -66,5 +70,10 @@ const ResultList: FC<ResultListProps> = ({ resultList }) => {
     </Grid>
   );
 };
+
+registerUniformComponent({
+  type: "coveo-resultList",
+  component: ResultList,
+});
 
 export default ResultList;
