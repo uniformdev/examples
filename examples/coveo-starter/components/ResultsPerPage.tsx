@@ -7,6 +7,8 @@ interface ResultsPerPageProps {
   resultsPerPage: string;
 }
 
+//Coveo Result Per Page docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/results-per-page/
+
 const ResultsPerPage: FC<ResultsPerPageProps> = ({ resultsPerPage }) => {
   useEffect(() => {
     buildResultsPerPage(headlessEngine, {

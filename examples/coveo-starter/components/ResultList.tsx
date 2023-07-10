@@ -17,6 +17,8 @@ type ResultListProps = ComponentProps<{
   };
 }>;
 
+//Coveo Result List docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/result-list/
+
 const ResultList: FC<ResultListProps> = ({ resultList }) => {
   const { imageField = "" } = resultList?.resultListConfiguration || {};
 

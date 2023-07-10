@@ -17,6 +17,8 @@ type PagerProps = ComponentProps<{
   };
 }>;
 
+//Coveo Pager docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/pager/
+
 const Pager: FC<PagerProps> = ({ pager }) => {
   const { resultsPerPage = "", title = "" } = pager?.pagerConfiguration || {};
 

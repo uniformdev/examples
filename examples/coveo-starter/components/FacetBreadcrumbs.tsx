@@ -8,6 +8,8 @@ import { Breadcrumbs, Button, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
 import { capitalizeFirstLetter } from "../utils";
 
+//Coveo Facet Breadcrumbs docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/breadcrumb-manager/
+
 const FacetBreadcrumbsConfiguration: FC = () => {
   const headlessBreadcrumbManager = useMemo(
     () => buildBreadcrumbManager(headlessEngine),

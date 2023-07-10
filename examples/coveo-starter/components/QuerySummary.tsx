@@ -7,6 +7,8 @@ import { buildQuerySummary } from "@coveo/headless";
 import { Box, Grid } from "@mui/material";
 import headlessEngine from "../context/Engine";
 
+//Coveo Query Summary docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/query-summary/
+
 const QuerySummaryConfiguration: FC = () => {
   const headlessQuerySummary = useMemo(
     () => buildQuerySummary(headlessEngine),

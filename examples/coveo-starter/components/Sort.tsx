@@ -19,6 +19,8 @@ import {
 } from "@mui/material";
 import headlessEngine from "../context/Engine";
 
+//Coveo Sort docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/sort/
+
 const SortConfiguration: FC = () => {
   const headlessSort = useMemo(() => buildSort(headlessEngine), []);
 

@@ -22,6 +22,8 @@ type SearchBoxProps = ComponentProps<{
   };
 }>;
 
+//Coveo Search Box docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/search-box/
+
 const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
   const { placeholder = "", enableQuerySyntax = false } =
     searchBox?.searchBoxConfiguration || {};

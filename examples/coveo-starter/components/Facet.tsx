@@ -25,6 +25,8 @@ interface FacetProps {
   field: string;
 }
 
+//Coveo Facet docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/facet/
+
 const Facet: FC<FacetProps> = ({ field }) => {
   const facetsBuilder = useMemo(
     () =>
