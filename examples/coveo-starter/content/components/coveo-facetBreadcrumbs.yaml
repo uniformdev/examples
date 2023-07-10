@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-facetBreadcrumbs
+name: Facet Breadcrumbs
+icon: screen
+parameters:
+  - id: facetBreadcrumbs
+    name: Facet Breadcrumbs
+    type: headless-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Facet Breadcrumbs
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-04T14:38:48.576595+00:00'
+updated: '2023-07-04T14:38:48.576595+00:00'

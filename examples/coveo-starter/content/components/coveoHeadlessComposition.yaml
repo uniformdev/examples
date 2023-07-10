@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveoHeadlessComposition
+name: Coveo Headless Composition
+icon: screen
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: search-content
+    name: search content
+    allowedComponents:
+      - coveo-initial
+      - coveo-searchBox
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: true
+created: '2023-07-04T14:34:29.381461+00:00'
+updated: '2023-07-05T11:27:37.974894+00:00'

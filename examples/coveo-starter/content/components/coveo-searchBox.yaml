@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-searchBox
+name: Search Box
+icon: screen
+parameters:
+  - id: searchBox
+    name: Search Box
+    type: headless-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Search Box
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-04T14:40:14.559722+00:00'
+updated: '2023-07-04T14:40:14.559722+00:00'
