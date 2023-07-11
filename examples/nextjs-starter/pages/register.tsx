@@ -1,9 +1,11 @@
 import { FC } from "react";
+import Script from "next/script";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
 import { withUniformGetStaticProps } from "@uniformdev/canvas-next/route";
 import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from "@uniformdev/canvas";
 import { UniformContext } from "@uniformdev/context-react";
+
 import { createUniformContext } from "../lib/uniform/uniformContext";
 
 // IMPORTANT: importing all components registered in Canvas
@@ -17,18 +19,30 @@ const clientContext = createUniformContext();
 
 const RegistrationPage: FC<RegistrationPage> = ({ data: composition }) => {
   return (
-    <UniformContext
-      context={clientContext}
-      outputType={"edge"}
-      // enable for edge-side rendering
-      //outputType={"edge"}
-    >
-      <main className="main">
-        <UniformComposition data={composition}>
-          <UniformSlot name="content" />
-        </UniformComposition>
-      </main>
-    </UniformContext>
+    <>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-281JZDZS6M" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-281JZDZS6M');
+        `}
+      </Script>
+      <UniformContext
+        context={clientContext}
+        outputType={"edge"}
+        // enable for edge-side rendering
+        //outputType={"edge"}
+      >
+        <main className="main">
+          <UniformComposition data={composition}>
+            <UniformSlot name="content" />
+          </UniformComposition>
+        </main>
+      </UniformContext>
+    </>
   );
 };
 
