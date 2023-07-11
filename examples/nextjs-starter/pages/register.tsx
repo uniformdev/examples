@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Script from "next/script";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
 import { withUniformGetStaticProps } from "@uniformdev/canvas-next/route";
@@ -20,16 +19,6 @@ const clientContext = createUniformContext();
 const RegistrationPage: FC<RegistrationPage> = ({ data: composition }) => {
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-281JZDZS6M" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-281JZDZS6M');
-        `}
-      </Script>
       <UniformContext
         context={clientContext}
         outputType={"edge"}
