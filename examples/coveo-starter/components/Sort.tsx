@@ -21,7 +21,7 @@ import headlessEngine from "../context/Engine";
 
 //Coveo Sort docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/sort/
 
-const SortConfiguration: FC = () => {
+const Sort: FC = () => {
   const headlessSort = useMemo(() => buildSort(headlessEngine), []);
 
   const [state, setState] = useState(headlessSort.state);
@@ -85,19 +85,6 @@ const SortConfiguration: FC = () => {
       </FormControl>
     </Grid>
   );
-};
-
-type SortProps = ComponentProps<{
-  sort?: {
-    sortConfiguration?: boolean;
-  };
-}>;
-
-const Sort: FC<SortProps> = ({ sort }) => {
-  if (!sort?.sortConfiguration) {
-    return null;
-  }
-  return <SortConfiguration />;
 };
 
 registerUniformComponent({

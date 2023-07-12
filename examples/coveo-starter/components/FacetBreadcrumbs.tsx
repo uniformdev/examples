@@ -10,7 +10,7 @@ import { capitalizeFirstLetter } from "../utils";
 
 //Coveo Facet Breadcrumbs docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/breadcrumb-manager/
 
-const FacetBreadcrumbsConfiguration: FC = () => {
+const FacetBreadcrumbs: FC = () => {
   const headlessBreadcrumbManager = useMemo(
     () => buildBreadcrumbManager(headlessEngine),
     [headlessEngine]
@@ -44,19 +44,6 @@ const FacetBreadcrumbsConfiguration: FC = () => {
       {state.hasBreadcrumbs && <Button onClick={deselectAll}>Clear all</Button>}
     </>
   );
-};
-
-type FacetBreadcrumbsProps = ComponentProps<{
-  facetBreadcrumbs?: {
-    facetBreadcrumbsConfiguration?: boolean;
-  };
-}>;
-
-const FacetBreadcrumbs: FC<FacetBreadcrumbsProps> = ({ facetBreadcrumbs }) => {
-  if (!facetBreadcrumbs?.facetBreadcrumbsConfiguration) {
-    return null;
-  }
-  return <FacetBreadcrumbsConfiguration />;
 };
 
 registerUniformComponent({
