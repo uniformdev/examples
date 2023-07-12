@@ -17,10 +17,11 @@ const QuerySummaryConfiguration: FC = () => {
 
   const [state, setState] = useState(headlessQuerySummary.state);
 
+  const updateState = () => {
+    setState(headlessQuerySummary.state);
+  };
+
   useEffect(() => {
-    const updateState = () => {
-      setState(headlessQuerySummary.state);
-    };
     headlessQuerySummary.subscribe(updateState);
   }, []);
 

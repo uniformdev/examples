@@ -1,4 +1,8 @@
-import { buildSearchEngine, getOrganizationEndpoints } from "@coveo/headless";
+import {
+  buildContext,
+  buildSearchEngine,
+  getOrganizationEndpoints,
+} from "@coveo/headless";
 import getConfig from "next/config";
 
 const {
@@ -12,5 +16,7 @@ const headlessEngine = buildSearchEngine({
     organizationEndpoints: getOrganizationEndpoints(applicationId),
   },
 });
+
+buildContext(headlessEngine).add("website", "engineering");
 
 export default headlessEngine;

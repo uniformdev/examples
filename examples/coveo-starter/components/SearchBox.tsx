@@ -60,8 +60,11 @@ const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
     const updateState = () => {
       setState(headlessSearchBox.state);
     };
-    headlessSearchBox.subscribe(updateState);
-    handleSubmit();
+
+    if(!headlessSearchBox.state.isLoading) {
+      headlessSearchBox.subscribe(updateState);
+      handleSubmit();
+    }
   }, []);
 
   const handleInputChange = (event: SyntheticEvent, newInputValue: string) => {
