@@ -12,85 +12,56 @@ composition:
             type: headless-components
             value:
               searchBoxConfiguration:
-                placeholder:
-      - _id: 179098db-bb96-400a-bcb0-b22ab3323345
-        type: coveo-initial
+                placeholder: Coveo Search Box
+                clearFilters: false
+                enableQuerySyntax: true
+      - _id: 3eb2df20-61a3-46d9-9e44-76b5339f14c1
+        type: coveo-facetBreadcrumbs
+      - _id: a43e8c68-4de4-4c59-9e68-97c672d3a781
+        type: sectionTwoColumns
         slots:
-          widgets:
-            - _id: ae2e432c-ce8c-4c70-9b05-2c1dd60d9214
-              type: coveo-facetBreadcrumbs
+          leftContent:
+            - _id: d2ce83c1-13f3-4c67-af67-4c62c54d3963
+              type: coveo-facet
               parameters:
-                facetBreadcrumbs:
+                facet:
                   type: headless-components
                   value:
-                    facetBreadcrumbsConfiguration: true
-            - _id: 1fe49c15-73de-42a6-a492-a87c42e20ae3
-              type: coveo-container
+                    facetConfiguration:
+                      field: ''
+                      isExpanded: true
+          rightContent:
+            - _id: 1c959ac4-0f21-40ee-889e-9695f76ec755
+              type: sectionTwoColumns
               slots:
-                widgets:
-                  - _id: d548ea10-7ac8-4801-8a8b-fe900a793209
-                    type: coveo-facet-container
-                    slots:
-                      widgets:
-                        - _id: d4cc2f1d-b8e7-49ba-b153-0a484982e73a
-                          type: coveo-facet
-                          parameters:
-                            facet:
-                              type: headless-components
-                              value:
-                                facetConfiguration:
-                                  field:
-                                  isExpanded: true
-                        - _id: 19ad1a92-2451-40ee-b87b-675ed6b68446
-                          type: coveo-facet
-                          parameters:
-                            facet:
-                              type: headless-components
-                              value:
-                                facetConfiguration:
-                                  field:
-                                  isExpanded: false
-                  - _id: 33e2877b-233c-4129-842c-3819e99184b4
-                    type: coveo-results-container
-                    slots:
-                      widgets:
-                        - _id: c2c45bd0-23aa-4fe2-b35e-26f043062e02
-                          type: coveo-summary-container
-                          slots:
-                            widgets:
-                              - _id: 82560031-9ab0-4658-9e34-2740a8b99654
-                                type: coveo-querySummary
-                                parameters:
-                                  querySummary:
-                                    type: headless-components
-                                    value:
-                                      querySummaryConfiguration: true
-                              - _id: adf66689-c309-4500-8af2-aaff09a15d93
-                                type: coveo-sort
-                                parameters:
-                                  sort:
-                                    type: headless-components
-                                    value:
-                                      sortConfiguration: true
-                        - _id: 4cd0c99c-8d24-4970-9993-403d3f80e950
-                          type: coveo-resultList
-                          parameters:
-                            resultList:
-                              type: headless-components
-                              value:
-                                resultListConfiguration:
-                                  imageField:
-                                  titleField: title
-                                  descriptionField: description
-                        - _id: a0cdf838-d3a7-49fd-bc23-f0d817145189
-                          type: coveo-pager
-                          parameters:
-                            pager:
-                              type: headless-components
-                              value:
-                                pagerConfiguration:
-                                  title: Pager Title
-                                  resultsPerPage: '8'
-created: '2023-07-04T14:34:43.81942+00:00'
-modified: '2023-07-06T14:07:13.037167+00:00'
+                leftContent:
+                  - _id: 7ba5edcd-2f4e-40ef-91e2-8fa32b571619
+                    type: coveo-querySummary
+                rightContent:
+                  - _id: 5020d2a6-7f0c-48b6-811b-f833cede18ce
+                    type: coveo-sort
+              parameters:
+                leftContentWidth:
+                  type: number
+                  value: 8
+                rightContentWidth:
+                  type: number
+                  value: 4
+            - _id: 5f28e2cb-5a01-4942-bc0b-8e11b97fb1ba
+              type: coveo-resultList
+              slots:
+                resultItemComponent:
+                  - _id: 2184c5a3-b709-4dba-a3bb-97918aabd8e1
+                    type: coveo-result-list-item
+            - _id: 533a36e0-490e-4e21-ab9c-8bc042173a08
+              type: coveo-pager
+        parameters:
+          leftContentWidth:
+            type: number
+            value: 4
+          rightContentWidth:
+            type: number
+            value: 8
+created: '2023-07-10T15:18:50.284957+00:00'
+modified: '2023-07-13T13:38:29.6371+00:00'
 pattern: false

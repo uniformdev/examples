@@ -60,7 +60,7 @@ const Facet: FC<FacetProps> = ({ field }) => {
     };
     facetsBuilder.subscribe(updateState);
 
-    if(!headlessSearchBox.state.isLoading) {
+    if (!headlessSearchBox.state.isLoading) {
       headlessSearchBox.submit();
     }
   }, [field]);
@@ -78,7 +78,7 @@ const Facet: FC<FacetProps> = ({ field }) => {
   };
 
   const getFacetValues = () => {
-    if(!state.values.length && !headlessSearchBox.state.isLoading) {
+    if (!state.values.length && !headlessSearchBox.state.isLoading) {
       return <Typography>Values not found</Typography>;
     }
     return state.values.map((value: FacetValue) => (

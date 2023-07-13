@@ -3,7 +3,7 @@ import {
   ComponentProps,
   registerUniformComponent,
 } from "@uniformdev/canvas-react";
-import {buildPager, buildResultsPerPage, PagerState} from "@coveo/headless";
+import { buildPager, buildResultsPerPage, PagerState } from "@coveo/headless";
 import { Box, Grid, Pagination, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
 
@@ -21,7 +21,7 @@ type PagerProps = ComponentProps<{
 //Coveo Result Per Page docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/results-per-page/
 
 const Pager: FC<PagerProps> = ({ pager }) => {
-  const { resultsPerPage = "", title = "" } = pager?.pagerConfiguration || {};
+  const { resultsPerPage = "9", title = "" } = pager?.pagerConfiguration || {};
 
   const headlessPager = useMemo(
     () => buildPager(headlessEngine),
@@ -37,10 +37,13 @@ const Pager: FC<PagerProps> = ({ pager }) => {
     headlessPager.subscribe(updateState);
   }, []);
 
-  const headlessResultsPerPage = useMemo(() => buildResultsPerPage(headlessEngine), [headlessEngine])
+  const headlessResultsPerPage = useMemo(
+    () => buildResultsPerPage(headlessEngine),
+    [headlessEngine]
+  );
 
   useEffect(() => {
-    headlessResultsPerPage.set(parseInt(resultsPerPage, 10))
+    headlessResultsPerPage.set(parseInt(resultsPerPage, 10) || 9);
   }, [resultsPerPage]);
 
   const setPage = (e: ChangeEvent<unknown>, page: number) => {
