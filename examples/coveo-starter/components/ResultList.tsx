@@ -51,8 +51,8 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
   const renderResultItem = (component: ComponentInstance, item: Result) => {
     const itemType = component?.slots?.resultItemComponent?.[0]?.type;
 
-    return itemType !== ItemTypes.Item ? (
-      <ResultItem item={item} imageField={imageField} />
+    return itemType === ItemTypes.Item ? (
+      <ResultItem item={item} imageField={imageField} key={item.uniqueId} />
     ) : (
       <Grid item xs={4} display="grid" alignItems="stretch" key={item.uniqueId}>
         <Typography gutterBottom>Add your custom Result Item</Typography>

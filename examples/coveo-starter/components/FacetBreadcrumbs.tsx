@@ -1,10 +1,7 @@
 import { FC, useEffect, useMemo, useState } from "react";
-import {
-  ComponentProps,
-  registerUniformComponent,
-} from "@uniformdev/canvas-react";
+import { registerUniformComponent } from "@uniformdev/canvas-react";
 import { buildBreadcrumbManager } from "@coveo/headless";
-import { Breadcrumbs, Button, Typography } from "@mui/material";
+import { Box, Breadcrumbs, Button, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
 import { capitalizeFirstLetter } from "../utils";
 

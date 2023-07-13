@@ -40,16 +40,14 @@ const QuerySummary: FC = () => {
   }
 
   return (
-    <Grid item xs={8}>
-      <Box>
-        Results{renderBold(` ${state.firstResult}-${state.lastResult}`)}
-        <Box component="span"> of {renderBold(state.total.toString())}</Box>
-        {Boolean(state.query) && (
-          <Box component="span"> for {renderBold(state.query)}</Box>
-        )}
-        <Box component="span">{` in ${state.durationInSeconds} seconds`}</Box>
-      </Box>
-    </Grid>
+    <Box>
+      Results{renderBold(` ${state.firstResult}-${state.lastResult}`)}
+      <Box component="span"> of {renderBold(state.total.toString())}</Box>
+      {Boolean(state.query) && (
+        <Box component="span"> for {renderBold(state.query)}</Box>
+      )}
+      <Box component="span">{` in ${state.durationInSeconds} seconds`}</Box>
+    </Box>
   );
 };
 

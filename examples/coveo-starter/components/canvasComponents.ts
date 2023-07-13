@@ -5,4 +5,4 @@ import './SearchBox';
 import './ResultList';
 import './QuerySummary';
 import './FacetBreadcrumbs';
-import './Containers';
+import './SectionTwoColumns';

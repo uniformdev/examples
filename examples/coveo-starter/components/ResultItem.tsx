@@ -11,7 +11,7 @@ interface ResultItemProps {
 
 const ResultItem: FC<ResultItemProps> = ({ item, imageField }) => {
   return (
-    <Grid item xs={4} display="grid" alignItems="stretch" key={item.uniqueId}>
+    <Grid item xs={4} display="grid" alignItems="stretch">
       <Card>
         <CardMedia
           component="img"

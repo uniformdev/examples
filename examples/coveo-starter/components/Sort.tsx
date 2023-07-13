@@ -61,29 +61,27 @@ const Sort: FC = () => {
   };
 
   return (
-    <Grid item xs={4}>
-      <FormControl fullWidth>
-        <InputLabel id="sortby">Sort by</InputLabel>
-        <Select
-          labelId="sortby"
-          id="sortby"
-          value={
-            state.sortCriteria as
-              | ""
-              | "relevancy"
-              | "date descending"
-              | "date ascending"
-              | undefined
-          }
-          label="Sort"
-          onChange={handleChange}
-        >
-          <MenuItem value="relevancy">Relevance</MenuItem>
-          <MenuItem value="date descending">Date Descending</MenuItem>
-          <MenuItem value="date ascending">Date Ascending</MenuItem>
-        </Select>
-      </FormControl>
-    </Grid>
+    <FormControl fullWidth>
+      <InputLabel id="sortby">Sort by</InputLabel>
+      <Select
+        labelId="sortby"
+        id="sortby"
+        value={
+          state.sortCriteria as
+            | ""
+            | "relevancy"
+            | "date descending"
+            | "date ascending"
+            | undefined
+        }
+        label="Sort"
+        onChange={handleChange}
+      >
+        <MenuItem value="relevancy">Relevance</MenuItem>
+        <MenuItem value="date descending">Date Descending</MenuItem>
+        <MenuItem value="date ascending">Date Ascending</MenuItem>
+      </Select>
+    </FormControl>
   );
 };
 
