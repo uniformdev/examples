@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-result-list-item
+name: Result List Item
+icon: calendar-two
+parameters: []
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-07-13T11:42:34.90724+00:00'
+updated: '2023-07-13T13:28:56.531296+00:00'

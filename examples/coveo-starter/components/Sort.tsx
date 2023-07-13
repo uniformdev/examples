@@ -21,7 +21,7 @@ import headlessEngine from "../context/Engine";
 
 //Coveo Sort docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/sort/
 
-const SortConfiguration: FC = () => {
+const Sort: FC = () => {
   const headlessSort = useMemo(() => buildSort(headlessEngine), []);
 
   const [state, setState] = useState(headlessSort.state);
@@ -61,43 +61,28 @@ const SortConfiguration: FC = () => {
   };
 
   return (
-    <Grid item xs={4}>
-      <FormControl fullWidth>
-        <InputLabel id="sortby">Sort by</InputLabel>
-        <Select
-          labelId="sortby"
-          id="sortby"
-          value={
-            state.sortCriteria as
-              | ""
-              | "relevancy"
-              | "date descending"
-              | "date ascending"
-              | undefined
-          }
-          label="Sort"
-          onChange={handleChange}
-        >
-          <MenuItem value="relevancy">Relevance</MenuItem>
-          <MenuItem value="date descending">Date Descending</MenuItem>
-          <MenuItem value="date ascending">Date Ascending</MenuItem>
-        </Select>
-      </FormControl>
-    </Grid>
+    <FormControl fullWidth>
+      <InputLabel id="sortby">Sort by</InputLabel>
+      <Select
+        labelId="sortby"
+        id="sortby"
+        value={
+          state.sortCriteria as
+            | ""
+            | "relevancy"
+            | "date descending"
+            | "date ascending"
+            | undefined
+        }
+        label="Sort"
+        onChange={handleChange}
+      >
+        <MenuItem value="relevancy">Relevance</MenuItem>
+        <MenuItem value="date descending">Date Descending</MenuItem>
+        <MenuItem value="date ascending">Date Ascending</MenuItem>
+      </Select>
+    </FormControl>
   );
-};
-
-type SortProps = ComponentProps<{
-  sort?: {
-    sortConfiguration?: boolean;
-  };
-}>;
-
-const Sort: FC<SortProps> = ({ sort }) => {
-  if (!sort?.sortConfiguration) {
-    return null;
-  }
-  return <SortConfiguration />;
 };
 
 registerUniformComponent({

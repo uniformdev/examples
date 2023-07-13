@@ -9,11 +9,13 @@ slots:
   - id: search-content
     name: search content
     allowedComponents:
-      - coveo-initial
       - coveo-searchBox
+      - sectionTwoColumns
+      - coveo-facetBreadcrumbs
+      - coveo-pager
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 canBeComposition: true
-created: '2023-07-04T14:34:29.381461+00:00'
-updated: '2023-07-05T11:27:37.974894+00:00'
+created: '2023-07-10T15:18:47.839923+00:00'
+updated: '2023-07-13T13:35:18.173247+00:00'

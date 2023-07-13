@@ -7,6 +7,7 @@ import { buildSearchBox } from "@coveo/headless";
 import {
   Autocomplete,
   AutocompleteRenderInputParams,
+  Box,
   IconButton,
   TextField,
 } from "@mui/material";
@@ -26,8 +27,11 @@ type SearchBoxProps = ComponentProps<{
 //Coveo Search Box docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/search-box/
 
 const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
-  const { placeholder = "", enableQuerySyntax = false, clearFilters = false } =
-    searchBox?.searchBoxConfiguration || {};
+  const {
+    placeholder = "",
+    enableQuerySyntax = false,
+    clearFilters = false,
+  } = searchBox?.searchBoxConfiguration || {};
 
   const headlessSearchBox = useMemo(
     () =>
@@ -60,8 +64,11 @@ const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
     const updateState = () => {
       setState(headlessSearchBox.state);
     };
-    headlessSearchBox.subscribe(updateState);
-    handleSubmit();
+
+    if (!headlessSearchBox.state.isLoading) {
+      headlessSearchBox.subscribe(updateState);
+      handleSubmit();
+    }
   }, []);
 
   const handleInputChange = (event: SyntheticEvent, newInputValue: string) => {
@@ -90,15 +97,17 @@ const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
   );
 
   return (
-    <Autocomplete
-      freeSolo
-      disableClearable
-      inputValue={state.value}
-      onInputChange={handleInputChange}
-      onChange={handleSubmit}
-      options={state.suggestions.map((s) => s.rawValue)}
-      renderInput={renderInput}
-    />
+    <Box my={1}>
+      <Autocomplete
+        freeSolo
+        disableClearable
+        inputValue={state.value}
+        onInputChange={handleInputChange}
+        onChange={handleSubmit}
+        options={state.suggestions.map((s) => s.rawValue)}
+        renderInput={renderInput}
+      />
+    </Box>
   );
 };
 
