@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: sectionTwoColumns
+name: Section Two Columns
+icon: view-split
+parameters:
+  - id: leftContentWidth
+    name: Left Content Width
+    type: number
+    helpText: Value out of 12
+    typeConfig:
+      max: '12'
+  - id: rightContentWidth
+    name: Right Content Width
+    type: number
+    helpText: Value out of 12
+    typeConfig:
+      max: '12'
+useTeamPermissions: true
+slots:
+  - id: leftContent
+    name: Left Content
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: rightContent
+    name: Right Content
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2023-07-13T12:39:58.069907+00:00'
+updated: '2023-07-13T13:29:17.828591+00:00'

@@ -9,7 +9,7 @@ import headlessEngine from "../context/Engine";
 
 //Coveo Query Summary docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/query-summary/
 
-const QuerySummaryConfiguration: FC = () => {
+const QuerySummary: FC = () => {
   const headlessQuerySummary = useMemo(
     () => buildQuerySummary(headlessEngine),
     [headlessEngine]
@@ -17,10 +17,11 @@ const QuerySummaryConfiguration: FC = () => {
 
   const [state, setState] = useState(headlessQuerySummary.state);
 
+  const updateState = () => {
+    setState(headlessQuerySummary.state);
+  };
+
   useEffect(() => {
-    const updateState = () => {
-      setState(headlessQuerySummary.state);
-    };
     headlessQuerySummary.subscribe(updateState);
   }, []);
 
@@ -39,30 +40,15 @@ const QuerySummaryConfiguration: FC = () => {
   }
 
   return (
-    <Grid item xs={8}>
-      <Box>
-        Results{renderBold(` ${state.firstResult}-${state.lastResult}`)}
-        <Box component="span"> of {renderBold(state.total.toString())}</Box>
-        {Boolean(state.query) && (
-          <Box component="span"> for {renderBold(state.query)}</Box>
-        )}
-        <Box component="span">{` in ${state.durationInSeconds} seconds`}</Box>
-      </Box>
-    </Grid>
+    <Box>
+      Results{renderBold(` ${state.firstResult}-${state.lastResult}`)}
+      <Box component="span"> of {renderBold(state.total.toString())}</Box>
+      {Boolean(state.query) && (
+        <Box component="span"> for {renderBold(state.query)}</Box>
+      )}
+      <Box component="span">{` in ${state.durationInSeconds} seconds`}</Box>
+    </Box>
   );
-};
-
-type QuerySummaryProps = ComponentProps<{
-  querySummary?: {
-    querySummaryConfiguration?: boolean;
-  };
-}>;
-
-const QuerySummary: FC<QuerySummaryProps> = ({ querySummary }) => {
-  if (!querySummary?.querySummaryConfiguration) {
-    return null;
-  }
-  return <QuerySummaryConfiguration />;
 };
 
 registerUniformComponent({

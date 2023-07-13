@@ -1,5 +1,10 @@
 import { FC, SyntheticEvent, useEffect, useMemo, useState } from "react";
-import { FacetState, buildFacet, FacetValue } from "@coveo/headless";
+import {
+  FacetState,
+  buildFacet,
+  FacetValue,
+  buildSearchBox,
+} from "@coveo/headless";
 import {
   ComponentProps,
   registerUniformComponent,
@@ -33,7 +38,6 @@ const Facet: FC<FacetProps> = ({ field }) => {
       buildFacet(headlessEngine, {
         options: {
           numberOfValues: 5,
-          hasBreadcrumbs: true,
           field,
         },
       }),
@@ -45,12 +49,21 @@ const Facet: FC<FacetProps> = ({ field }) => {
     inputValue: "",
   });
 
+  const headlessSearchBox = useMemo(
+    () => buildSearchBox(headlessEngine),
+    [headlessEngine]
+  );
+
   useEffect(() => {
     const updateState = () => {
       setState(facetsBuilder.state);
     };
     facetsBuilder.subscribe(updateState);
-  }, []);
+
+    if (!headlessSearchBox.state.isLoading) {
+      headlessSearchBox.submit();
+    }
+  }, [field]);
 
   const toggleSelect = (value: FacetValue) => {
     facetsBuilder.toggleSelect(value);
@@ -65,6 +78,9 @@ const Facet: FC<FacetProps> = ({ field }) => {
   };
 
   const getFacetValues = () => {
+    if (!state.values.length && !headlessSearchBox.state.isLoading) {
+      return <Typography>Values not found</Typography>;
+    }
     return state.values.map((value: FacetValue) => (
       <Box mb={1} key={value.value}>
         <FormControlLabel
@@ -139,12 +155,17 @@ type FacetConfigurationProps = ComponentProps<{
     facetConfiguration?: {
       field?: string;
       isExpanded?: boolean;
+      facetTitle?: string;
     };
   };
 }>;
 
 const FacetConfiguration: FC<FacetConfigurationProps> = ({ facet }) => {
-  const { field = "", isExpanded = false } = facet?.facetConfiguration || {};
+  const {
+    field = "",
+    isExpanded = false,
+    facetTitle = "",
+  } = facet?.facetConfiguration || {};
 
   const [expand, setExpand] = useState<boolean>(isExpanded);
 
@@ -155,14 +176,14 @@ const FacetConfiguration: FC<FacetConfigurationProps> = ({ facet }) => {
   };
 
   if (!field) {
-    return null;
+    return <Typography>Facet field must be provided</Typography>;
   }
 
   return (
     <Box mt={1} mr={3} p={1}>
       <Accordion expanded={expand} onChange={changeExpanded}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>{capitalizeFirstLetter(field)}</Typography>
+          <Typography>{facetTitle || capitalizeFirstLetter(field)}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Facet key={field} field={field} />

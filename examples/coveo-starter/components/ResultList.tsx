@@ -2,12 +2,17 @@ import { FC, useEffect, useMemo, useState } from "react";
 import {
   ComponentProps,
   registerUniformComponent,
+  UniformSlot,
 } from "@uniformdev/canvas-react";
-import { buildResultList } from "@coveo/headless";
-import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { buildResultList, Result } from "@coveo/headless";
+import { Grid, Typography } from "@mui/material";
 import headlessEngine from "../context/Engine";
-import ResultLink from "./ResultLink";
-import NoImg from "../public/no-img.svg";
+import { ComponentInstance } from "@uniformdev/canvas";
+import ResultItem from "@/components/ResultItem";
+
+enum ItemTypes {
+  Item = "coveo-result-list-item",
+}
 
 type ResultListProps = ComponentProps<{
   resultList?: {
@@ -19,7 +24,9 @@ type ResultListProps = ComponentProps<{
 
 //Coveo Result List docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/result-list/
 
-const ResultList: FC<ResultListProps> = ({ resultList }) => {
+const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
+  const { resultList, component } = componentProps || {};
+
   const { imageField = "" } = resultList?.resultListConfiguration || {};
 
   const headlessResultList = useMemo(
@@ -41,34 +48,21 @@ const ResultList: FC<ResultListProps> = ({ resultList }) => {
     headlessResultList.subscribe(updateState);
   }, []);
 
+  const renderResultItem = (component: ComponentInstance, item: Result) => {
+    const itemType = component?.slots?.resultItemComponent?.[0]?.type;
+
+    return itemType === ItemTypes.Item ? (
+      <ResultItem item={item} imageField={imageField} key={item.uniqueId} />
+    ) : (
+      <Grid item xs={4} display="grid" alignItems="stretch" key={item.uniqueId}>
+        <Typography gutterBottom>Add your custom Result Item</Typography>
+      </Grid>
+    );
+  };
+
   return (
     <Grid container spacing={2}>
-      {state.results.map((result) => (
-        <Grid
-          item
-          xs={4}
-          display="grid"
-          alignItems="stretch"
-          key={result.uniqueId}
-        >
-          <Card>
-            <CardMedia
-              component="img"
-              height="140"
-              className="thumbnail-image"
-              image={`${result.raw[imageField] || NoImg.src}`}
-            />
-            <CardContent>
-              <Typography variant="h5">
-                <ResultLink result={result} />
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {result.excerpt}
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      ))}
+      {state.results.map((result) => renderResultItem(component, result))}
     </Grid>
   );
 };

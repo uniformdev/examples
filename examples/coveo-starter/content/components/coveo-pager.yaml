@@ -2,7 +2,7 @@
 $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: coveo-pager
 name: Pager
-icon: screen
+icon: more
 parameters:
   - id: pager
     name: Pager
@@ -13,5 +13,5 @@ parameters:
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-07-04T14:38:20.69298+00:00'
-updated: '2023-07-04T14:38:20.69298+00:00'
+created: '2023-07-10T15:18:46.981965+00:00'
+updated: '2023-07-13T13:25:21.782282+00:00'

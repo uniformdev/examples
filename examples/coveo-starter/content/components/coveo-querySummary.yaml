@@ -2,7 +2,7 @@
 $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: coveo-querySummary
 name: Query Summary
-icon: screen
+icon: details-less
 parameters:
   - id: querySummary
     name: Query Summary
@@ -13,5 +13,5 @@ parameters:
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-07-04T14:39:09.943155+00:00'
-updated: '2023-07-04T14:39:09.943155+00:00'
+created: '2023-07-10T15:18:47.528478+00:00'
+updated: '2023-07-13T13:25:36.074192+00:00'
