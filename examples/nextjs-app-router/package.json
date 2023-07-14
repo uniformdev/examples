@@ -16,9 +16,9 @@
     "uniform:push:signals": "uniform context signal push ./content/package.json",
     "uniform:push:components": "uniform canvas component push ./content/package.json",
     "uniform:push:compositions": "uniform canvas composition push ./content/package.json",
-    "uniform:push:project-map-definitions": "uniform project-map definition push ./content/map/package.json",
-    "uniform:push:project-map-nodes": "uniform project-map node push ./content/map/package.json",
-    "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
+    "uniform:push:project-map-definitions": "uniform project-map definition push ./content/package.json",
+    "uniform:push:project-map-nodes": "uniform project-map node push ./content/package.json",
+    "uniform:publish": "uniform canvas composition push ./content/package.json --state published",
     "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes"
   },
   "dependencies": {
