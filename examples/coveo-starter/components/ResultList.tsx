@@ -46,7 +46,7 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
           ),
         },
       }),
-    [imageField]
+    [imageField, titleField, descriptionField]
   );
 
   const [state, setState] = useState(headlessResultList.state);
@@ -56,7 +56,7 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
       setState(headlessResultList.state);
     };
     headlessResultList.subscribe(updateState);
-  }, []);
+  }, [imageField, titleField, descriptionField]);
 
   const renderResultItem = (component: ComponentInstance, item: Result) => {
     const itemType = component?.slots?.resultItemComponent?.[0]?.type;

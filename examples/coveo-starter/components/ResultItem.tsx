@@ -34,30 +34,33 @@ const ResultItem: FC<ResultItemProps> = ({
     [headlessEngine, item]
   );
 
-  console.log(item, titleField, descriptionField)
-
   const handleClick = () => {
     interactiveResult.select();
   };
 
+  const { image, description, title } = useMemo(
+    () => ({
+      image: `${item.raw[imageField] || NoImg.src}`,
+      title: `${item.raw[titleField] || ""}`,
+      description: `${item.raw[descriptionField] || ""}`,
+    }),
+    [titleField, imageField, descriptionField]
+  );
+
   return (
     <Grid item xs={4} display="grid" alignItems="stretch">
       <Card>
-        <Link href={item.clickUri} target="_blank" onClick={handleClick}>
+        <Link href={item.clickUri} target="_blank" onClick={handleClick} underline="none">
           <CardMedia
             component="img"
             height="140"
             className="thumbnail-image"
-            image={`${item.raw[imageField] || NoImg.src}`}
+            image={image}
           />
           <CardContent>
-            <Typography variant="h5">
-              {`${item.raw[titleField] || ""}`}
-            </Typography>
+            <Typography variant="h5">{title}</Typography>
             <Typography variant="body2" color="text.secondary">
-              {useExcerptAsDescription
-                ? item.excerpt
-                : `${item.raw[descriptionField] || ""}`}
+              {useExcerptAsDescription ? item.excerpt : description}
             </Typography>
           </CardContent>
         </Link>
