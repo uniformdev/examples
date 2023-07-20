@@ -18,22 +18,32 @@ type ResultListProps = ComponentProps<{
   resultList?: {
     resultListConfiguration?: {
       imageField?: string;
+      titleField?: string;
+      descriptionField?: string;
     };
   };
+  useExcerptAsDescription?: boolean;
 }>;
 
 //Coveo Result List docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/result-list/
 
 const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
-  const { resultList, component } = componentProps || {};
+  const { resultList, component, useExcerptAsDescription } =
+    componentProps || {};
 
-  const { imageField = "" } = resultList?.resultListConfiguration || {};
+  const {
+    imageField = "",
+    descriptionField = "",
+    titleField = "",
+  } = resultList?.resultListConfiguration || {};
 
   const headlessResultList = useMemo(
     () =>
       buildResultList(headlessEngine, {
         options: {
-          fieldsToInclude: imageField ? [imageField, "ec_image"] : ["ec_image"],
+          fieldsToInclude: [imageField, titleField, descriptionField].filter(
+            (item) => item
+          ),
         },
       }),
     [imageField]
@@ -52,7 +62,14 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
     const itemType = component?.slots?.resultItemComponent?.[0]?.type;
 
     return itemType === ItemTypes.Item ? (
-      <ResultItem item={item} imageField={imageField} key={item.uniqueId} />
+      <ResultItem
+        item={item}
+        imageField={imageField}
+        descriptionField={descriptionField}
+        useExcerptAsDescription={useExcerptAsDescription}
+        titleField={titleField}
+        key={item.uniqueId}
+      />
     ) : (
       <Grid item xs={4} display="grid" alignItems="stretch" key={item.uniqueId}>
         <Typography gutterBottom>Add your custom Result Item</Typography>

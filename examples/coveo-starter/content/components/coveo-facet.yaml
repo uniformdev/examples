@@ -2,7 +2,7 @@
 $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: coveo-facet
 name: Facet
-icon: rectangle-rounded
+icon: check-r
 parameters:
   - id: facet
     name: Facet
@@ -10,8 +10,19 @@ parameters:
     helpText: ''
     typeConfig:
       selectedComponent: Facet
+  - id: facetTitle
+    name: Facet Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: isExpanded
+    name: Expanded by default
+    type: checkbox
+    helpText: ''
+    typeConfig: null
 useTeamPermissions: true
 slots: []
+titleParameter: facetTitle
 canBeComposition: false
-created: '2023-07-10T15:18:47.419701+00:00'
-updated: '2023-07-13T13:24:23.23631+00:00'
+created: '2023-07-13T14:42:44.422745+00:00'
+updated: '2023-07-20T13:42:15.565821+00:00'

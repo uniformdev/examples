@@ -154,18 +154,18 @@ type FacetConfigurationProps = ComponentProps<{
   facet?: {
     facetConfiguration?: {
       field?: string;
-      isExpanded?: boolean;
-      facetTitle?: string;
     };
   };
+  isExpanded?: boolean;
+  facetTitle?: string;
 }>;
 
-const FacetConfiguration: FC<FacetConfigurationProps> = ({ facet }) => {
-  const {
-    field = "",
-    isExpanded = false,
-    facetTitle = "",
-  } = facet?.facetConfiguration || {};
+const FacetConfiguration: FC<FacetConfigurationProps> = ({
+  facet,
+  isExpanded = false,
+  facetTitle = "",
+}) => {
+  const { field = "" } = facet?.facetConfiguration || {};
 
   const [expand, setExpand] = useState<boolean>(isExpanded);
 

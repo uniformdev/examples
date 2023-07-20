@@ -3,15 +3,9 @@ $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: coveo-facetBreadcrumbs
 name: Facet Breadcrumbs
 icon: details-more
-parameters:
-  - id: facetBreadcrumbs
-    name: Facet Breadcrumbs
-    type: headless-components
-    helpText: ''
-    typeConfig:
-      selectedComponent: Facet Breadcrumbs
+parameters: []
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-07-10T15:18:46.027266+00:00'
-updated: '2023-07-13T13:24:48.819059+00:00'
+created: '2023-07-13T14:42:45.582303+00:00'
+updated: '2023-07-20T07:12:40.791576+00:00'
