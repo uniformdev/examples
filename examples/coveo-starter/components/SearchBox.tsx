@@ -15,24 +15,18 @@ import { Search } from "@mui/icons-material";
 import headlessEngine from "../context/Engine";
 
 type SearchBoxProps = ComponentProps<{
-  searchBox?: {
-    searchBoxConfiguration?: {
-      placeholder?: string;
-      enableQuerySyntax?: boolean;
-      clearFilters?: boolean;
-    };
-  };
+  placeholder?: string;
+  enableQuerySyntax?: boolean;
+  clearFilters?: boolean;
 }>;
 
 //Coveo Search Box docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/search-box/
 
-const SearchBox: FC<SearchBoxProps> = ({ searchBox }) => {
-  const {
-    placeholder = "",
-    enableQuerySyntax = false,
-    clearFilters = false,
-  } = searchBox?.searchBoxConfiguration || {};
-
+const SearchBox: FC<SearchBoxProps> = ({
+  placeholder = "",
+  enableQuerySyntax = false,
+  clearFilters = false,
+}) => {
   const headlessSearchBox = useMemo(
     () =>
       buildSearchBox(headlessEngine, {

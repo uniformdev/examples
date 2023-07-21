@@ -3,15 +3,9 @@ $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: coveo-sort
 name: Sort
 icon: sort-za
-parameters:
-  - id: sort
-    name: Sort
-    type: headless-components
-    helpText: ''
-    typeConfig:
-      selectedComponent: Sort
+parameters: []
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-07-10T15:18:46.391217+00:00'
-updated: '2023-07-13T13:29:43.437623+00:00'
+created: '2023-07-13T14:42:45.692851+00:00'
+updated: '2023-07-20T07:15:46.16407+00:00'

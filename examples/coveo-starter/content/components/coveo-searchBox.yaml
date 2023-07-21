@@ -4,14 +4,23 @@ id: coveo-searchBox
 name: Search Box
 icon: search
 parameters:
-  - id: searchBox
-    name: Search Box
-    type: headless-components
+  - id: placeholder
+    name: Placeholder
+    type: text
     helpText: ''
-    typeConfig:
-      selectedComponent: Search Box
+    typeConfig: null
+  - id: enableQuerySyntax
+    name: Enable Query Syntax
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+  - id: clearFilters
+    name: Clear Filters
+    type: checkbox
+    helpText: ''
+    typeConfig: null
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-07-10T15:18:46.380744+00:00'
-updated: '2023-07-13T13:29:09.669077+00:00'
+created: '2023-07-13T14:42:45.715573+00:00'
+updated: '2023-07-20T07:18:45.613179+00:00'

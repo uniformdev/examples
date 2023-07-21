@@ -4,14 +4,24 @@ id: coveo-querySummary
 name: Query Summary
 icon: details-less
 parameters:
-  - id: querySummary
-    name: Query Summary
-    type: headless-components
+  - id: listName
+    name: Name of items list in summary
+    type: text
+    helpText: 'example: "Results"'
+    typeConfig:
+      regex: ''
+  - id: durationSettings
+    name: Duration settings
+    type: select
     helpText: ''
     typeConfig:
-      selectedComponent: Query Summary
+      options:
+        - text: In seconds
+          value: seconds
+        - text: In milliseconds
+          value: milliseconds
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-07-10T15:18:47.528478+00:00'
-updated: '2023-07-13T13:25:36.074192+00:00'
+created: '2023-07-13T14:42:45.779224+00:00'
+updated: '2023-07-20T12:41:07.601148+00:00'
