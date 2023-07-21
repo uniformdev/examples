@@ -4,14 +4,20 @@ id: coveo-pager
 name: Pager
 icon: more
 parameters:
-  - id: pager
-    name: Pager
-    type: headless-components
+  - id: title
+    name: Pager Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: resultsPerPage
+    name: Results Per Page
+    type: number
     helpText: ''
     typeConfig:
-      selectedComponent: Pager
+      max: '100'
+      min: '1'
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-07-10T15:18:46.981965+00:00'
-updated: '2023-07-13T13:25:21.782282+00:00'
+created: '2023-07-13T14:42:45.658288+00:00'
+updated: '2023-07-20T07:26:00.343273+00:00'

@@ -7,9 +7,22 @@ import { buildQuerySummary } from "@coveo/headless";
 import { Box, Grid } from "@mui/material";
 import headlessEngine from "../context/Engine";
 
+type QuerySummaryProps = ComponentProps<{
+  listName?: string;
+  durationSettings?: DurationSetting;
+}>;
+
+enum DurationSetting {
+  milliseconds = "milliseconds",
+  seconds = "seconds",
+}
+
 //Coveo Query Summary docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/query-summary/
 
-const QuerySummary: FC = () => {
+const QuerySummary: FC<QuerySummaryProps> = ({
+  durationSettings = "",
+  listName = "",
+}) => {
   const headlessQuerySummary = useMemo(
     () => buildQuerySummary(headlessEngine),
     [headlessEngine]
@@ -34,19 +47,26 @@ const QuerySummary: FC = () => {
   if (!state.hasResults) {
     return (
       <Grid item xs={8}>
-        <Box mt={5}>No results</Box>
+        <Box mt={5}>{`No ${listName?.toLowerCase() || "results"}`}</Box>
       </Grid>
     );
   }
 
   return (
     <Box>
-      Results{renderBold(` ${state.firstResult}-${state.lastResult}`)}
+      {`${listName} `}
+      {renderBold(`${state.firstResult}-${state.lastResult}`)}
       <Box component="span"> of {renderBold(state.total.toString())}</Box>
       {Boolean(state.query) && (
         <Box component="span"> for {renderBold(state.query)}</Box>
       )}
-      <Box component="span">{` in ${state.durationInSeconds} seconds`}</Box>
+      {Boolean(durationSettings) && (
+        <Box component="span">
+          {durationSettings === DurationSetting.seconds
+            ? ` in ${state.durationInSeconds} seconds`
+            : ` in ${state.durationInMilliseconds} milliseconds`}
+        </Box>
+      )}
     </Box>
   );
 };

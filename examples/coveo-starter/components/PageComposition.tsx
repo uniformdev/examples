@@ -14,17 +14,6 @@ const PageComposition: FC<PageCompositionProps> = ({ data: composition }) => (
   <CssBaseline>
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl">
-        <Box my={3}>
-          <Typography
-            align="center"
-            color="text.primary"
-            variant="h2"
-            component="h2"
-            gutterBottom
-          >
-            Coveo Headless Starter
-          </Typography>
-        </Box>
         <UniformComposition data={composition}>
           <UniformSlot name="search-content" />
         </UniformComposition>
