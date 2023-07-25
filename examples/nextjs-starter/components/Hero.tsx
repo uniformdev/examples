@@ -12,8 +12,8 @@ type HeroProps = ComponentProps<{
 
 const Hero: React.FC<HeroProps> = () => (
   <div>
-    <UniformText className="title" parameterId="title" as="h1" />
-    <UniformRichText parameterId="description" className="description" />
+    <UniformText className="title" parameterId="title" as="h1" data-test-id="hero-title"/>
+    <UniformRichText parameterId="description" className="description" data-test-id="hero-description"/>
   </div>
 );
 
