@@ -3,3 +3,7 @@
   
 [[plugins]]
   package = "@netlify/plugin-gatsby"
+
+[[edge_functions]]
+  path = "/*"
+  function = "context-middleware"

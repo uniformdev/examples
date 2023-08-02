@@ -33,7 +33,9 @@
     "uniform:push:project-map-definitions": "uniform project-map definition push ./content/maps",
     "uniform:push:project-map-nodes": "uniform project-map node push ./content/nodes",
     "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
-    "uniform:push": "run-s uniform:push:signals uniform:push:tests uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes uniform:context:publish"
+    "uniform:push": "run-s uniform:push:signals uniform:push:tests uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes uniform:context:publish",
+    "copy:deno": "shx cp node_modules/@uniformdev/context-edge-netlify/dist/index.deno.js lib/uniform",
+    "postinstall": "run-s copy:deno"
   },
   "dependencies": {
     "@kentico/kontent-delivery": "^11.13.0",
@@ -43,6 +45,7 @@
     "@uniformdev/cli": "^19.37.1",
     "@uniformdev/context": "^19.37.1",
     "@uniformdev/context-react": "^19.37.1",
+    "@uniformdev/context-edge-netlify": "^19.37.1",
     "@uniformdev/project-map": "^19.37.1",
     "dotenv": "^16.0.3",
     "gatsby": "^5.10.0",
@@ -66,6 +69,7 @@
     "gatsby-plugin-postcss": "^6.2.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.23",
+    "shx": "^0.3.4",
     "tailwindcss": "^3.3.2",
     "typescript": "^4.9.3",
     "vite": "^4.3.7"
