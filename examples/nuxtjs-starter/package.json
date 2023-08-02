@@ -8,7 +8,7 @@
     "build": "run-s download:manifest nuxt:build",
     "nuxt:build": "nuxt build",
     "generate": "nuxt generate",
-    "download:manifest": "uniform context manifest download --output ./contextManifest.json",
+    "download:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
     "uniform:pull:signals": "uniform context signal pull ./content/signals",
     "uniform:pull:components": "uniform canvas component pull ./content/components",
     "uniform:pull:compositions": "uniform canvas composition pull ./content/compositions",
@@ -33,6 +33,7 @@
     "@uniformdev/canvas-vue": "^19.24.0",
     "@uniformdev/context": "^19.24.0",
     "@uniformdev/context-vue": "^19.24.0",
+    "@uniformdev/project-map": "^19.24.0",
     "@uniformdev/uniform-nuxt": "^19.24.0"
   },
   "stackblitz": {

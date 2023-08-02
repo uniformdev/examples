@@ -1,4 +1,4 @@
-import manifest from "./contextManifest.json";
+import manifest from "./lib/uniform/contextManifest.json";
 import { ManifestV2 } from "@uniformdev/context";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
