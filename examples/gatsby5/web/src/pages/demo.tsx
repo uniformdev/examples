@@ -3,11 +3,14 @@ import { Test } from "@uniformdev/context-react";
 import { UniformContext } from "@uniformdev/context-react";
 import { createUniformContext } from "../lib/uniformContext";
 import { Hero } from "../components/Hero";
+import { TestVariant } from "@uniformdev/context/*";
 
 const clientContext = createUniformContext();
 
-const variants: Array<any> = [
+type CustomVariant = TestVariant & { content: any };
+const variants: Array<CustomVariant> = [
   {
+    id: "variant-a",
     content: {
       system: {
         id: "7398aaf1-113a-408f-b97d-73dac8bc920a",
@@ -70,6 +73,7 @@ const variants: Array<any> = [
     },
   },
   {
+    id: "variant-b",
     content: {
       system: {
         id: "3d314409-4725-486f-a515-c1b6eda9c54e",
