@@ -22,23 +22,23 @@ export default function PageComposition(props: any) {
 
   const { composition: originalComposition } = pageContext || {};
   return (
-    <UniformContext
-      context={clientContext}
-      outputType={
-        process.env.NODE_ENV === "development"
-          ? "standard"
-          : process.env.UNIFORM_OUTPUT_MODE
-      }
-      includeTransferState="always"
-    >
-      <Container>
-        <UniformComposition
-          data={originalComposition}
-          contextualEditingEnhancer={enhance}
-        >
-          <UniformSlot name="content" />
-        </UniformComposition>
-      </Container>
-    </UniformContext>
+    // <UniformContext
+    //   context={clientContext}
+    //   outputType={
+    //     process.env.NODE_ENV === "development"
+    //       ? "standard"
+    //       : process.env.UNIFORM_OUTPUT_MODE
+    //   }
+    //   includeTransferState="never"
+    // >
+    <Container>
+      <UniformComposition
+        data={originalComposition}
+        contextualEditingEnhancer={enhance}
+      >
+        <UniformSlot name="content" />
+      </UniformComposition>
+    </Container>
+    // </UniformContext>
   );
 }
