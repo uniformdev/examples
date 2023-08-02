@@ -142,7 +142,6 @@ export default function Home() {
           ? "standard"
           : process.env.UNIFORM_OUTPUT_MODE
       }
-      includeTransferState="always"
     >
       <Test name="homepageCards" variations={variants} component={Hero} />
     </UniformContext>
