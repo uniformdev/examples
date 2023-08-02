@@ -106,5 +106,5 @@
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*"
-  ]
+, "src/pages/demo.tsx"  ]
 }
