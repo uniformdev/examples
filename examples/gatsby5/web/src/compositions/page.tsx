@@ -1,44 +1,44 @@
-import React from "react";
-import {
-  UniformComposition,
-  UniformSlot,
-  createUniformApiEnhancer,
-} from "@uniformdev/canvas-react";
-import { UniformContext } from "@uniformdev/context-react";
-import { createUniformContext } from "../lib/uniformContext";
-import Container from "../components/Container";
+// import React from "react";
+// import {
+//   UniformComposition,
+//   UniformSlot,
+//   createUniformApiEnhancer,
+// } from "@uniformdev/canvas-react";
+// import { UniformContext } from "@uniformdev/context-react";
+// import { createUniformContext } from "../lib/uniformContext";
+// import Container from "../components/Container";
 
-// IMPORTANT: importing all canvas registered components here
-import "../components/canvasComponents";
+// // IMPORTANT: importing all canvas registered components here
+// import "../components/canvasComponents";
 
-const clientContext = createUniformContext();
+// const clientContext = createUniformContext();
 
-const enhance = createUniformApiEnhancer({
-  apiUrl: "/api/enhance",
-});
+// const enhance = createUniformApiEnhancer({
+//   apiUrl: "/api/enhance",
+// });
 
-export default function PageComposition(props: any) {
-  const { pageContext } = props;
+// export default function PageComposition(props: any) {
+//   const { pageContext } = props;
 
-  const { composition: originalComposition } = pageContext || {};
-  return (
-    // <UniformContext
-    //   context={clientContext}
-    //   outputType={
-    //     process.env.NODE_ENV === "development"
-    //       ? "standard"
-    //       : process.env.UNIFORM_OUTPUT_MODE
-    //   }
-    //   includeTransferState="never"
-    // >
-    <Container>
-      <UniformComposition
-        data={originalComposition}
-        contextualEditingEnhancer={enhance}
-      >
-        <UniformSlot name="content" />
-      </UniformComposition>
-    </Container>
-    // </UniformContext>
-  );
-}
+//   const { composition: originalComposition } = pageContext || {};
+//   return (
+//     <UniformContext
+//       context={clientContext}
+//       outputType={
+//         process.env.NODE_ENV === "development"
+//           ? "standard"
+//           : process.env.UNIFORM_OUTPUT_MODE
+//       }
+//       includeTransferState="always"
+//     >
+//       <Container>
+//         <UniformComposition
+//           data={originalComposition}
+//           contextualEditingEnhancer={enhance}
+//         >
+//           <UniformSlot name="content" />
+//         </UniformComposition>
+//       </Container>
+//     </UniformContext>
+//   );
+// }
