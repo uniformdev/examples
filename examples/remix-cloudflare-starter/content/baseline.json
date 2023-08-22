@@ -1,0 +1,202 @@
+{
+  "components": [
+    {
+      "id": "contentBlock",
+      "name": "Content Block",
+      "icon": "format-text",
+      "parameters": [
+        {
+          "id": "text",
+          "name": "Text",
+          "type": "text",
+          "helpText": "",
+          "typeConfig": {
+            "required": true
+          }
+        }
+      ],
+      "description": "",
+      "previewImageUrl": "",
+      "useTeamPermissions": true,
+      "slots": [],
+      "titleParameter": "text",
+      "canBeComposition": false,
+      "created": "2023-08-18T20:08:02.648646+00:00",
+      "updated": "2023-08-22T01:56:49.272534+00:00"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "icon": "image-text",
+      "parameters": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "text",
+          "helpText": "",
+          "typeConfig": {
+            "required": true
+          }
+        }
+      ],
+      "description": "",
+      "previewImageUrl": "",
+      "useTeamPermissions": true,
+      "slots": [
+        {
+          "id": "items",
+          "name": "Items",
+          "allowedComponents": [
+            "contentBlock"
+          ],
+          "allowAllComponents": false,
+          "inheritAllowedComponents": false,
+          "patternsInAllowedComponents": false
+        }
+      ],
+      "titleParameter": "title",
+      "canBeComposition": false,
+      "created": "2023-08-18T18:17:05.5127+00:00",
+      "updated": "2023-08-22T01:56:32.508613+00:00"
+    },
+    {
+      "id": "page",
+      "name": "Page",
+      "icon": "file-document",
+      "parameters": [],
+      "description": "",
+      "previewImageUrl": "",
+      "useTeamPermissions": true,
+      "slots": [
+        {
+          "id": "content",
+          "name": "Content",
+          "allowedComponents": [
+            "hero",
+            "$personalization",
+            "$test"
+          ],
+          "allowAllComponents": false,
+          "inheritAllowedComponents": false,
+          "patternsInAllowedComponents": false
+        }
+      ],
+      "canBeComposition": true,
+      "created": "2023-08-18T18:16:39.201264+00:00",
+      "updated": "2023-08-22T01:56:40.362843+00:00"
+    }
+  ],
+  "compositions": [
+    {
+      "composition": {
+        "_name": "Home",
+        "_id": "a74ebd38-47b8-4555-9172-878ff81f307b",
+        "_slug": "/",
+        "type": "page",
+        "slots": {
+          "content": [
+            {
+              "_id": "23845020-1b8e-44ad-a491-09eab6c4642c",
+              "type": "hero",
+              "slots": {
+                "items": [
+                  {
+                    "_id": "96355d30-3b37-4098-bf0e-ae297c59b323",
+                    "type": "contentBlock",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "This content is to demonstrate nested slots!"
+                      }
+                    }
+                  },
+                  {
+                    "_id": "71e5a658-f9bd-4663-9af7-1ae1b9ef15cd",
+                    "type": "contentBlock",
+                    "parameters": {
+                      "text": {
+                        "type": "text",
+                        "value": "👋"
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "title": {
+                  "type": "text",
+                  "value": "Hello From Remix!"
+                }
+              }
+            },
+            {
+              "_id": "9ef1f327-2b2a-45d2-a671-4e15e00c6647",
+              "type": "$personalization",
+              "slots": {
+                "pz": [
+                  {
+                    "_id": "be68c29f-1542-48ac-a5fb-ff79fb392b92",
+                    "type": "hero",
+                    "parameters": {
+                      "title": {
+                        "type": "text",
+                        "value": "Welcome, this has been personalized for you!"
+                      },
+                      "$pzCrit": {
+                        "type": "$pzCrit",
+                        "value": {
+                          "crit": [
+                            {
+                              "l": "welcomed",
+                              "r": 0,
+                              "op": ">"
+                            }
+                          ],
+                          "name": "Hero: Welcome, this has been personalized for you!"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "count": {
+                  "type": "number",
+                  "value": "1"
+                },
+                "trackingEventName": {
+                  "type": "text",
+                  "value": "welcome banner"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "created": "2023-08-18T18:21:06.313517+00:00",
+      "modified": "2023-08-22T01:56:04.898075+00:00",
+      "pattern": false
+    }
+  ],
+  "projectMaps": [
+    {
+      "id": "35dfc726-8762-4eca-b7fa-3f2147fa5f4b",
+      "name": "Sitemap",
+      "baseUrl": "http://localhost:8788",
+      "default": true
+    }
+  ],
+  "projectMapNodes": [
+    {
+      "id": "c8135321-d02c-4f2f-84d4-3fd4a1b4ef4c",
+      "name": "Home",
+      "type": "composition",
+      "data": {},
+      "order": 500,
+      "path": "/",
+      "compositionId": "a74ebd38-47b8-4555-9172-878ff81f307b",
+      "pathSegment": "",
+      "projectMapId": "35dfc726-8762-4eca-b7fa-3f2147fa5f4b"
+    }
+  ]
+}

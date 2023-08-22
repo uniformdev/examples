@@ -1,0 +1,9 @@
+node_modules
+
+/build
+/.cache
+/functions
+/public/build
+/public/_headers
+.env
+.dev.vars
