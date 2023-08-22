@@ -12,8 +12,11 @@ const props = defineProps<Props>();
 
 <template>
   <div class="navigation">
-    <span v-for="({ url, title }, i) in navLinks">
+    <span v-for="{ url, title } in navLinks">
       <NuxtLink :key="url" :href="url">{{ title }}</NuxtLink>
+      <span v-if="navLinks.length <= 1" className="note">
+        (add another node in project map to see new link here)
+      </span>
     </span>
   </div>
 </template>
