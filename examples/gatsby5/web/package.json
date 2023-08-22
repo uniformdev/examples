@@ -36,12 +36,12 @@
     "uniform:push": "run-s uniform:push:signals uniform:push:tests uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes uniform:context:publish"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^19.24.0",
-    "@uniformdev/canvas-react": "^19.24.0",
-    "@uniformdev/cli": "^19.24.0",
-    "@uniformdev/context": "^19.24.0",
-    "@uniformdev/context-react": "^19.24.0",
-    "@uniformdev/project-map": "^19.24.0",
+    "@uniformdev/canvas": "^19.46.0",
+    "@uniformdev/canvas-react": "^19.46.0",
+    "@uniformdev/cli": "^19.46.0",
+    "@uniformdev/context": "^19.46.0",
+    "@uniformdev/context-react": "^19.46.0",
+    "@uniformdev/project-map": "^19.46.0",
     "dotenv": "^16.0.3",
     "gatsby": "^5.10.0",
     "gatsby-plugin-gatsby-cloud": "^5.10.0",
