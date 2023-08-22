@@ -2,15 +2,16 @@
 
 This repo contains various examples to facilitate your getting-started experience with Uniform capabilities, such as Uniform Context, Uniform Canvas, and Uniform Mesh.
 
-## Uniform starters
+## Baseline starters
 
-- [Next.js hello world starter](./examples/nextjs-starter) - essential since page, single component starter, recommended baseline for new projects using Next.js v13. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
-- [Nuxt hello world starter](./examples/nuxtjs-starter) - essential since page, single component starter, recommended baseline for new projects using Nuxt 3. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
+- [Next.js hello world starter](./examples/nextjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Next.js v13. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
+- [Nuxt hello world starter](./examples/nuxtjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Nuxt 3. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
 - [Gatsby 5 starter](./examples/gatsby5) - a simple marketing site showing the essentials of Uniform + Gatsby.js integration, including personalization and A/B testing!
+- [Remix starter](./examples/remix-cloudflare-starter/) - essential 1 page, 1 component starter for Remix configured with Cloudlare, recommended as reference for new projects using Uniform Remix SDK.
 
 ## Starters pre-wired with integrations
 
-- [Next.js starter for Sitecore](./examples/nextjs-starter) - essential since page, single component starter pre-wired with the Sitecore XM/XP integration. Recommended baseline for new projects using Next.js v13.
+- [Next.js starter for Sitecore](./examples/nextjs-starter) - essential 1 page, 1 component starter pre-wired with the Sitecore XM/XP integration. Recommended baseline for new projects using Next.js v13.
 
 - [Next.js starter for Algolia](./examples/algolia-starter) - Next.js 13 starter that contains Algolia React components pre-wired to be managed in Uniform Canvas, see more docs [here](https://docs.uniform.app/docs/integrations/search/algolia/algolia-components).
 
