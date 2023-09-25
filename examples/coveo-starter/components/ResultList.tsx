@@ -5,7 +5,7 @@ import {
   UniformSlot,
 } from "@uniformdev/canvas-react";
 import { buildResultList, Result } from "@coveo/headless";
-import { Grid, Typography } from "@mui/material";
+import {Button, Grid, Typography} from "@mui/material";
 import headlessEngine from "../context/Engine";
 import { ComponentInstance } from "@uniformdev/canvas";
 import ResultItem from "@/components/ResultItem";
@@ -41,15 +41,43 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
     () =>
       buildResultList(headlessEngine, {
         options: {
-          fieldsToInclude: [imageField, titleField, descriptionField].filter(
+          fieldsToInclude: ["ec_name", "ec_category", "price", ...[imageField, titleField, descriptionField].filter(
             (item) => item
-          ),
+          )],
         },
       }),
     [imageField, titleField, descriptionField]
   );
 
+  console.log(headlessResultList);
+
   const [state, setState] = useState(headlessResultList.state);
+
+  useEffect(() => {
+    // Define the script content
+    const scriptContent = `
+      (function(c,o,v,e,O,u,a){
+        a='coveoua';c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        c[a].t=Date.now();u=o.createElement(v);u.async=1;u.src=e;
+        O=o.getElementsByTagName(v)[0];O.parentNode.insertBefore(u,O)
+      })(window,document,'script','https://static.cloud.coveo.com/coveo.analytics.js/2/coveoua.js');
+      coveoua('set', 'currencyCode', 'USD');
+      coveoua('init','xxf6307da1-65ef-4598-8f2d-f097bad37731', 'https://analytics.cloud.coveo.com/rest/ua');
+    `;
+
+    // Create a script element
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.innerHTML = scriptContent;
+
+    // Append the script to the document's body
+    document.body.appendChild(script);
+
+    // Clean up the script element when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   useEffect(() => {
     const updateState = () => {
@@ -80,6 +108,7 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
   return (
     <Grid container spacing={2}>
       {state.results.map((result) => renderResultItem(component, result))}
+      <Button onClick={() => headlessResultList.fetchMoreResults()}>Load more</Button>
     </Grid>
   );
 };
