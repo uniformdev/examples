@@ -6,3 +6,4 @@ import "./ResultList";
 import "./QuerySummary";
 import "./FacetBreadcrumbs";
 import "./SectionTwoColumns";
+import "./ProductRecommendations";

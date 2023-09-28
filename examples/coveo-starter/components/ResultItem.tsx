@@ -1,4 +1,4 @@
-import {FC, useContext, useMemo} from "react";
+import { FC, useContext, useMemo } from "react";
 import {
   Card,
   CardContent,
@@ -7,15 +7,12 @@ import {
   Link,
   Typography,
 } from "@mui/material";
-import { buildInteractiveResult, Result } from "@coveo/headless";
+import { buildInteractiveResult } from "@coveo/headless";
 import NoImg from "@/public/no-img.svg";
 import headlessEngine from "../context/Engine";
-import {
-  buildFrequentlyViewedTogetherList,
-  loadClickAnalyticsActions,
-  ProductRecommendation
-} from "@coveo/headless/product-recommendation";
-import {ProductRecommendationEngineContext} from "../context/PREngine";
+import { buildFrequentlyViewedTogetherList } from "@coveo/headless/product-recommendation";
+import { ProductRecommendationEngineContext } from "../context/PREngine";
+import { MAX_RECOMMENDATIONS } from "@/components/ProductRecommendations";
 
 interface ResultItemProps {
   item: any;
@@ -33,15 +30,16 @@ const ResultItem: FC<ResultItemProps> = ({
   useExcerptAsDescription,
 }) => {
   const productRecommendationsEngine = useContext(
-      ProductRecommendationEngineContext
+    ProductRecommendationEngineContext
   );
 
   const frequentlyViewedTogether = useMemo(
-      () =>
-          buildFrequentlyViewedTogetherList(productRecommendationsEngine, {options: {maxNumberOfRecommendations: 50}}),
-      [productRecommendationsEngine]
+    () =>
+      buildFrequentlyViewedTogetherList(productRecommendationsEngine, {
+        options: { maxNumberOfRecommendations: MAX_RECOMMENDATIONS },
+      }),
+    [productRecommendationsEngine]
   );
-
 
   const interactiveResult = useMemo(
     () =>
@@ -54,8 +52,6 @@ const ResultItem: FC<ResultItemProps> = ({
   const handleClick = () => {
     interactiveResult.select();
     frequentlyViewedTogether.setSkus([item.uniqueId]);
-
-    console.log(item);
 
     const scriptContent = `
       coveoua('init','xxf6307da1-65ef-4598-8f2d-f097bad37731', 'https://analytics.cloud.coveo.com/rest/ua')

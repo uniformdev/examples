@@ -1,10 +1,12 @@
-import { FC, SyntheticEvent, useEffect, useMemo, useState } from "react";
 import {
-  FacetState,
-  buildFacet,
-  FacetValue,
-  buildSearchBox,
-} from "@coveo/headless";
+  FC,
+  SyntheticEvent,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+import { FacetState, buildFacet, FacetValue } from "@coveo/headless";
 import {
   ComponentProps,
   registerUniformComponent,
@@ -23,8 +25,8 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import headlessEngine from "../context/Engine";
 import { capitalizeFirstLetter } from "../utils";
+import { HeadlessEngineContext } from "../context/Engine";
 
 interface FacetProps {
   field: string;
@@ -33,6 +35,7 @@ interface FacetProps {
 //Coveo Facet docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/facet/
 
 const Facet: FC<FacetProps> = ({ field }) => {
+  const headlessEngine = useContext(HeadlessEngineContext);
   const facetsBuilder = useMemo(
     () =>
       buildFacet(headlessEngine, {
@@ -49,21 +52,10 @@ const Facet: FC<FacetProps> = ({ field }) => {
     inputValue: "",
   });
 
-  const headlessSearchBox = useMemo(
-    () => buildSearchBox(headlessEngine),
-    [headlessEngine]
+  useEffect(
+    () => facetsBuilder.subscribe(() => setState(facetsBuilder.state)),
+    [facetsBuilder]
   );
-
-  useEffect(() => {
-    const updateState = () => {
-      setState(facetsBuilder.state);
-    };
-    facetsBuilder.subscribe(updateState);
-
-    if (!headlessSearchBox.state.isLoading) {
-      headlessSearchBox.submit();
-    }
-  }, [field]);
 
   const toggleSelect = (value: FacetValue) => {
     facetsBuilder.toggleSelect(value);
@@ -78,7 +70,7 @@ const Facet: FC<FacetProps> = ({ field }) => {
   };
 
   const getFacetValues = () => {
-    if (!state.values.length && !headlessSearchBox.state.isLoading) {
+    if (!state.values.length) {
       return <Typography>Values not found</Typography>;
     }
     return state.values.map((value: FacetValue) => (
