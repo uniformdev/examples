@@ -58,32 +58,6 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
   const [state, setState] = useState(headlessResultList.state);
 
   useEffect(() => {
-    // Define the script content
-    const scriptContent = `
-      (function(c,o,v,e,O,u,a){
-        a='coveoua';c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        c[a].t=Date.now();u=o.createElement(v);u.async=1;u.src=e;
-        O=o.getElementsByTagName(v)[0];O.parentNode.insertBefore(u,O)
-      })(window,document,'script','https://static.cloud.coveo.com/coveo.analytics.js/2/coveoua.js');
-      coveoua('set', 'currencyCode', 'USD');
-      coveoua('init','xxf6307da1-65ef-4598-8f2d-f097bad37731', 'https://analytics.cloud.coveo.com/rest/ua');
-    `;
-
-    // Create a script element
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.innerHTML = scriptContent;
-
-    // Append the script to the document's body
-    document.body.appendChild(script);
-
-    // Clean up the script element when the component unmounts
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
-  useEffect(() => {
     const updateState = () => {
       setState(headlessResultList.state);
     };

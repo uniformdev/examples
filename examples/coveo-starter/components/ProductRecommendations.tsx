@@ -5,21 +5,34 @@ import {
 } from "@coveo/headless/product-recommendation";
 import { FC, useContext, useEffect, useMemo, useState } from "react";
 import { ProductRecommendationEngineContext } from "../context/PREngine";
-import { registerUniformComponent } from "@uniformdev/canvas-react";
+import {
+  ComponentProps,
+  registerUniformComponent,
+} from "@uniformdev/canvas-react";
 
 export const MAX_RECOMMENDATIONS = 50;
 
-export const Recommendations: FC = () => {
+type RecommendationsProps = ComponentProps<{
+  maxNumberOfRecommendations?: string;
+  title?: string;
+}>;
+
+export const Recommendations: FC<RecommendationsProps> = ({
+  maxNumberOfRecommendations,
+  title,
+}) => {
   const productRecommendationsEngine = useContext(
     ProductRecommendationEngineContext
   );
 
+  console.log(maxNumberOfRecommendations);
+
   const frequentlyViewedTogetherBuild = useMemo(
     () =>
       buildFrequentlyViewedTogetherList(productRecommendationsEngine, {
-        options: { maxNumberOfRecommendations: MAX_RECOMMENDATIONS },
+        options: { maxNumberOfRecommendations: Number(maxNumberOfRecommendations) || MAX_RECOMMENDATIONS },
       }),
-    [productRecommendationsEngine]
+    [productRecommendationsEngine, maxNumberOfRecommendations]
   );
 
   const [state, setState] = useState(frequentlyViewedTogetherBuild.state);
@@ -49,7 +62,7 @@ export const Recommendations: FC = () => {
 
   return (
     <div className="recs-list">
-      <h2>People also viewed</h2>
+      <h2>{title || "People also viewed"}</h2>
       <ul>
         {state.recommendations.map((recommendation) => {
           return (

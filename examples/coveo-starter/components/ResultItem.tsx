@@ -7,15 +7,20 @@ import {
   Link,
   Typography,
 } from "@mui/material";
-import { buildInteractiveResult } from "@coveo/headless";
+import getConfig from "next/config";
+import { buildInteractiveResult, Result } from "@coveo/headless";
 import NoImg from "@/public/no-img.svg";
 import headlessEngine from "../context/Engine";
 import { buildFrequentlyViewedTogetherList } from "@coveo/headless/product-recommendation";
 import { ProductRecommendationEngineContext } from "../context/PREngine";
 import { MAX_RECOMMENDATIONS } from "@/components/ProductRecommendations";
 
+const {
+  publicRuntimeConfig: { coveoAnalyticsApiKey },
+} = getConfig();
+
 interface ResultItemProps {
-  item: any;
+  item: Result;
   imageField: string;
   titleField?: string;
   descriptionField?: string;
@@ -54,12 +59,12 @@ const ResultItem: FC<ResultItemProps> = ({
     frequentlyViewedTogether.setSkus([item.uniqueId]);
 
     const scriptContent = `
-      coveoua('init','xxf6307da1-65ef-4598-8f2d-f097bad37731', 'https://analytics.cloud.coveo.com/rest/ua')
+      coveoua('init', '${coveoAnalyticsApiKey}', 'https://analytics.cloud.coveo.com/rest/ua')
       coveoua('send', 'pageview');
       coveoua('ec:addProduct', {
       'id': '${item.raw.permanentid}', 
       'name': '${item.raw.ec_name}',
-      'category': '${item.raw.ec_category?.[0]}',
+      'category': '${(item.raw.ec_category as string[])?.[0]}',
       'price': '${item.raw.price}',
       });
 
@@ -81,8 +86,8 @@ const ResultItem: FC<ResultItemProps> = ({
 
   const { image, description, title } = useMemo(
     () => ({
-      image: `${item.raw[imageField] || NoImg.src}`,
-      title: `${item.raw[titleField] || ""}`,
+      image: item.raw[imageField] || NoImg.src,
+      title: `${item.raw[titleField] || item.title}`,
       description: `${item.raw[descriptionField] || ""}`,
     }),
     [titleField, imageField, descriptionField]
@@ -91,7 +96,7 @@ const ResultItem: FC<ResultItemProps> = ({
   return (
     <Grid item xs={4} display="grid" alignItems="stretch">
       <Card>
-        <Link onClick={handleClick} underline="none">
+        <Link href={item.clickUri} target="_blank" onClick={handleClick} underline="none">
           <CardMedia
             component="img"
             height="140"
