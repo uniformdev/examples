@@ -25,8 +25,6 @@ export const Recommendations: FC<RecommendationsProps> = ({
     ProductRecommendationEngineContext
   );
 
-  console.log(maxNumberOfRecommendations);
-
   const frequentlyViewedTogetherBuild = useMemo(
     () =>
       buildFrequentlyViewedTogetherList(productRecommendationsEngine, {
