@@ -27,12 +27,13 @@ const Sort: FC = () => {
 
   const [state, setState] = useState(headlessSort.state);
 
-  useEffect(() => {
-    const updateState = () => {
-      setState(headlessSort.state);
-    };
-    headlessSort.subscribe(updateState);
-  }, []);
+  useEffect(
+    () =>
+      headlessSort.subscribe(() => {
+        setState(headlessSort.state);
+      }),
+    [headlessSort]
+  );
 
   const dateDescendingSortCriterion = buildDateSortCriterion(
     SortOrder.Descending

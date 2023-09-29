@@ -5,98 +5,102 @@ composition:
   type: coveoHeadlessComposition
   slots:
     search-content:
-      - _id: 2b853791-abde-4315-8490-0deab600d9fd
-        type: coveo-searchBox
-        parameters:
-          placeholder:
-            type: text
-            value: Coveo
-          clearFilters:
-            type: checkbox
-            value: true
-          enableQuerySyntax:
-            type: checkbox
-            value: true
-      - _id: 3eb2df20-61a3-46d9-9e44-76b5339f14c1
-        type: coveo-facetBreadcrumbs
-      - _id: a43e8c68-4de4-4c59-9e68-97c672d3a781
-        type: sectionTwoColumns
+      - _id: 9ea5f348-a77b-4b70-90bd-6841e477c876
+        type: searchProvider
         slots:
-          leftContent:
-            - _id: 29819b6b-2e6f-470e-8e88-45bbf101536b
-              type: coveo-facet
+          searchContent:
+            - _id: 2b853791-abde-4315-8490-0deab600d9fd
+              type: coveo-searchBox
               parameters:
-                facet:
-                  type: headless-components
-                  value:
-                    facetConfiguration:
-                      field: filetype
-                facetTitle:
+                placeholder:
                   type: text
-                  value: File type
-                isExpanded:
+                  value: Coveo
+                clearFilters:
                   type: checkbox
                   value: true
-            - _id: bcd6474c-4b00-4b72-9535-db41281eaae7
-              type: coveo-productRecommendations
-              parameters:
-                maxNumberOfRecommendations:
-                  type: number
-                  value:
-          rightContent:
-            - _id: 1c959ac4-0f21-40ee-889e-9695f76ec755
+                enableQuerySyntax:
+                  type: checkbox
+                  value: true
+            - _id: 3eb2df20-61a3-46d9-9e44-76b5339f14c1
+              type: coveo-facetBreadcrumbs
+            - _id: a43e8c68-4de4-4c59-9e68-97c672d3a781
               type: sectionTwoColumns
               slots:
                 leftContent:
-                  - _id: 7ba5edcd-2f4e-40ef-91e2-8fa32b571619
-                    type: coveo-querySummary
+                  - _id: 29819b6b-2e6f-470e-8e88-45bbf101536b
+                    type: coveo-facet
                     parameters:
-                      durationSettings:
-                        type: select
-                        value: ''
+                      facet:
+                        type: headless-components
+                        value:
+                          facetConfiguration:
+                            field: filetype
+                      facetTitle:
+                        type: text
+                        value: File type
+                      isExpanded:
+                        type: checkbox
+                        value: true
+                  - _id: bcd6474c-4b00-4b72-9535-db41281eaae7
+                    type: coveo-productRecommendations
+                    parameters:
+                      maxNumberOfRecommendations:
+                        type: number
+                        value: null
                 rightContent:
-                  - _id: 5020d2a6-7f0c-48b6-811b-f833cede18ce
-                    type: coveo-sort
+                  - _id: 1c959ac4-0f21-40ee-889e-9695f76ec755
+                    type: sectionTwoColumns
+                    slots:
+                      leftContent:
+                        - _id: 7ba5edcd-2f4e-40ef-91e2-8fa32b571619
+                          type: coveo-querySummary
+                          parameters:
+                            durationSettings:
+                              type: select
+                              value: ''
+                      rightContent:
+                        - _id: 5020d2a6-7f0c-48b6-811b-f833cede18ce
+                          type: coveo-sort
+                    parameters:
+                      leftContentWidth:
+                        type: number
+                        value: 8
+                      rightContentWidth:
+                        type: number
+                        value: 4
+                  - _id: 5f28e2cb-5a01-4942-bc0b-8e11b97fb1ba
+                    type: coveo-resultList
+                    slots:
+                      resultItemComponent:
+                        - _id: 2184c5a3-b709-4dba-a3bb-97918aabd8e1
+                          type: coveo-result-list-item
+                    parameters:
+                      resultList:
+                        type: headless-components
+                        value:
+                          resultListConfiguration:
+                            imageField:
+                            titleField:
+                            descriptionField:
+                      useExcerptAsDescription:
+                        type: checkbox
+                        value: true
+                  - _id: 533a36e0-490e-4e21-ab9c-8bc042173a08
+                    type: coveo-pager
+                    parameters:
+                      title:
+                        type: text
+                        value: Pager Title
+                      resultsPerPage:
+                        type: number
+                        value: '5'
               parameters:
                 leftContentWidth:
                   type: number
-                  value: 8
+                  value: 4
                 rightContentWidth:
                   type: number
-                  value: 4
-            - _id: 5f28e2cb-5a01-4942-bc0b-8e11b97fb1ba
-              type: coveo-resultList
-              slots:
-                resultItemComponent:
-                  - _id: 2184c5a3-b709-4dba-a3bb-97918aabd8e1
-                    type: coveo-result-list-item
-              parameters:
-                resultList:
-                  type: headless-components
-                  value:
-                    resultListConfiguration:
-                      imageField:
-                      titleField:
-                      descriptionField:
-                useExcerptAsDescription:
-                  type: checkbox
-                  value: true
-            - _id: 533a36e0-490e-4e21-ab9c-8bc042173a08
-              type: coveo-pager
-              parameters:
-                title:
-                  type: text
-                  value: Pager Title
-                resultsPerPage:
-                  type: number
-                  value: '5'
-        parameters:
-          leftContentWidth:
-            type: number
-            value: 4
-          rightContentWidth:
-            type: number
-            value: 8
-created: '2023-09-29T07:29:47.662008+00:00'
-modified: '2023-09-29T09:21:45.994277+00:00'
+                  value: 8
+created: '2023-09-29T09:27:32.888739+00:00'
+modified: '2023-09-29T13:57:16.918882+00:00'
 pattern: false

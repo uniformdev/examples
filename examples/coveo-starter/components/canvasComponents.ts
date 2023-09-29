@@ -7,3 +7,4 @@ import "./QuerySummary";
 import "./FacetBreadcrumbs";
 import "./SectionTwoColumns";
 import "./ProductRecommendations";
+import "./SearchProvider";

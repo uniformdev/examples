@@ -10,14 +10,13 @@ const {
   publicRuntimeConfig: { applicationId, coveoApiKey },
 } = getConfig();
 
-const headlessEngine = buildSearchEngine({
-  configuration: {
-    organizationId: applicationId,
-    accessToken: coveoApiKey,
-    organizationEndpoints: getOrganizationEndpoints(applicationId),
-  },
-});
+export const getHeadlessEngine = () =>
+    buildSearchEngine({
+      configuration: {
+        organizationId: applicationId,
+        accessToken: coveoApiKey,
+        organizationEndpoints: getOrganizationEndpoints(applicationId),
+      },
+    });
 
-export const HeadlessEngineContext = createContext<SearchEngine>(headlessEngine);
-
-export default headlessEngine;
+export const HeadlessEngineContext = createContext<SearchEngine>(getHeadlessEngine());

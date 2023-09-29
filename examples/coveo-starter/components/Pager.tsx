@@ -33,12 +33,13 @@ const Pager: FC<PagerProps> = ({ resultsPerPage = "9", title = "" }) => {
 
   const [state, setState] = useState<PagerState>(headlessPager.state);
 
-  useEffect(() => {
-    const updateState = () => {
-      setState(headlessPager.state);
-    };
-    headlessPager.subscribe(updateState);
-  }, []);
+  useEffect(
+    () =>
+      headlessPager.subscribe(() => {
+        setState(headlessPager.state);
+      }),
+    [headlessPager]
+  );
 
   const headlessResultsPerPage = useMemo(
     () => buildResultsPerPage(headlessEngine),

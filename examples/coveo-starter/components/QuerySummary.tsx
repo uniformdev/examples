@@ -1,4 +1,4 @@
-import {FC, useContext, useEffect, useMemo, useState} from "react";
+import { FC, useContext, useEffect, useMemo, useState } from "react";
 import {
   ComponentProps,
   registerUniformComponent,
@@ -32,13 +32,9 @@ const QuerySummary: FC<QuerySummaryProps> = ({
 
   const [state, setState] = useState(headlessQuerySummary.state);
 
-  const updateState = () => {
+  useEffect(() => headlessQuerySummary.subscribe(() => {
     setState(headlessQuerySummary.state);
-  };
-
-  useEffect(() => {
-    headlessQuerySummary.subscribe(updateState);
-  }, []);
+  }), [headlessQuerySummary]);
 
   const renderBold = (input: string) => (
     <Box component="span">

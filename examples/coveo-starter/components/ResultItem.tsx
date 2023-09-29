@@ -10,10 +10,10 @@ import {
 import getConfig from "next/config";
 import { buildInteractiveResult, Result } from "@coveo/headless";
 import NoImg from "@/public/no-img.svg";
-import headlessEngine from "../context/Engine";
 import { buildFrequentlyViewedTogetherList } from "@coveo/headless/product-recommendation";
 import { ProductRecommendationEngineContext } from "../context/PREngine";
 import { MAX_RECOMMENDATIONS } from "@/components/ProductRecommendations";
+import { HeadlessEngineContext } from "../context/Engine";
 
 const {
   publicRuntimeConfig: { coveoAnalyticsApiKey },
@@ -37,6 +37,7 @@ const ResultItem: FC<ResultItemProps> = ({
   const productRecommendationsEngine = useContext(
     ProductRecommendationEngineContext
   );
+  const headlessEngine = useContext(HeadlessEngineContext);
 
   const frequentlyViewedTogether = useMemo(
     () =>
@@ -96,7 +97,12 @@ const ResultItem: FC<ResultItemProps> = ({
   return (
     <Grid item xs={4} display="grid" alignItems="stretch">
       <Card>
-        <Link href={item.clickUri} target="_blank" onClick={handleClick} underline="none">
+        <Link
+          href={item.clickUri}
+          target="_blank"
+          onClick={handleClick}
+          underline="none"
+        >
           <CardMedia
             component="img"
             height="140"

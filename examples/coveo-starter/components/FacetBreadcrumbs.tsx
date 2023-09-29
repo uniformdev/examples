@@ -17,12 +17,13 @@ const FacetBreadcrumbs: FC = () => {
 
   const [state, setState] = useState(headlessBreadcrumbManager.state);
 
-  useEffect(() => {
-    const updateState = () => {
-      setState(headlessBreadcrumbManager.state);
-    };
-    headlessBreadcrumbManager.subscribe(updateState);
-  }, []);
+  useEffect(
+    () =>
+      headlessBreadcrumbManager.subscribe(() => {
+        setState(headlessBreadcrumbManager.state);
+      }),
+    [headlessBreadcrumbManager]
+  );
 
   const deselectAll = () => headlessBreadcrumbManager.deselectAll();
 
