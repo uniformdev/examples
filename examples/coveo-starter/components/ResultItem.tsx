@@ -57,13 +57,9 @@ const ResultItem: FC<ResultItemProps> = ({
     [headlessEngine, item]
   );
 
-  const handleClick = () => {
-    interactiveResult.select();
-    frequentlyViewedTogether.setSkus([item.uniqueId]);
-
-    if (coveoAnalyticsApiKey) {
-      // Define the script content
-      const analyticsScriptContent = `
+  const analyticsCollect = () => {
+    // Define the script content
+    const analyticsScriptContent = `
       coveoua('init', '${coveoAnalyticsApiKey}', 'https://analytics.cloud.coveo.com/rest/ua')
       coveoua('send', 'pageview');
       coveoua('ec:addProduct', {
@@ -76,16 +72,24 @@ const ResultItem: FC<ResultItemProps> = ({
       coveoua('ec:setAction', 'detail'); 
       coveoua('send', 'event');
     `;
-      // Create a script element
-      const analyticsScript = document.createElement("script");
-      analyticsScript.type = "text/javascript";
-      analyticsScript.innerHTML = analyticsScriptContent;
+    // Create a script element
+    const analyticsScript = document.createElement("script");
+    analyticsScript.type = "text/javascript";
+    analyticsScript.innerHTML = analyticsScriptContent;
 
-      // Append the script to the document's body
-      document.body.appendChild(analyticsScript);
-      return () => {
-        document.body.removeChild(analyticsScript);
-      };
+    // Append the script to the document's body
+    document.body.appendChild(analyticsScript);
+    return () => {
+      document.body.removeChild(analyticsScript);
+    };
+  }
+
+  const handleClick = () => {
+    interactiveResult.select();
+    frequentlyViewedTogether.setSkus([item.uniqueId]);
+
+    if (coveoAnalyticsApiKey) {
+      analyticsCollect();
     }
   };
 

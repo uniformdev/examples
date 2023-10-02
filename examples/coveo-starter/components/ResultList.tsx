@@ -59,10 +59,8 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
 
   useEffect(
     () =>
-      headlessResultList.subscribe(() => {
-        setState(headlessResultList.state);
-      }),
-    [imageField, titleField, descriptionField, headlessResultList]
+      headlessResultList.subscribe(() => setState(headlessResultList.state)),
+    [headlessResultList]
   );
 
   const renderResultItem = (component: ComponentInstance, item: Result) => {

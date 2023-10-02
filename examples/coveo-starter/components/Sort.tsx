@@ -29,9 +29,7 @@ const Sort: FC = () => {
 
   useEffect(
     () =>
-      headlessSort.subscribe(() => {
-        setState(headlessSort.state);
-      }),
+      headlessSort.subscribe(() => setState(headlessSort.state)),
     [headlessSort]
   );
 

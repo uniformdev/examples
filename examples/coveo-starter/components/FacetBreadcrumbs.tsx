@@ -19,9 +19,7 @@ const FacetBreadcrumbs: FC = () => {
 
   useEffect(
     () =>
-      headlessBreadcrumbManager.subscribe(() => {
-        setState(headlessBreadcrumbManager.state);
-      }),
+      headlessBreadcrumbManager.subscribe(() => setState(headlessBreadcrumbManager.state)),
     [headlessBreadcrumbManager]
   );
 

@@ -30,7 +30,6 @@
     "@uniformdev/cli": "^19.30.0",
     "@uniformdev/context-next": "^19.30.0",
     "@uniformdev/project-map": "^19.30.0",
-    "coveo.analytics": "^2.28.17",
     "next": "^13.4.5",
     "prettier": "2.8.8",
     "react": "^18.2.0",

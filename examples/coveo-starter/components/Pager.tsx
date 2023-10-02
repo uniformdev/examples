@@ -35,9 +35,7 @@ const Pager: FC<PagerProps> = ({ resultsPerPage = "9", title = "" }) => {
 
   useEffect(
     () =>
-      headlessPager.subscribe(() => {
-        setState(headlessPager.state);
-      }),
+      headlessPager.subscribe(() => setState(headlessPager.state)),
     [headlessPager]
   );
 

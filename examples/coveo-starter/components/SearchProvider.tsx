@@ -4,13 +4,12 @@ import {
   registerUniformComponent,
 } from "@uniformdev/canvas-react";
 import { buildSearchBox } from "@coveo/headless";
-import { HeadlessEngineContext, getHeadlessEngine } from "../context/Engine";
-import { Container } from "@mui/system";
+import { Container } from "@mui/material";
+import { HeadlessEngineContext, headlessEngine } from "../context/Engine";
+
 
 //Coveo Facet docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/facet/
 const SearchProvider: FC = () => {
-  const headlessEngine = useMemo(() => getHeadlessEngine(), []);
-
   const headlessSearchBox = useMemo(
     () => buildSearchBox(headlessEngine),
     [headlessEngine]

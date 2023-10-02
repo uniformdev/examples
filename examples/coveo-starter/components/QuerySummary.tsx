@@ -32,9 +32,7 @@ const QuerySummary: FC<QuerySummaryProps> = ({
 
   const [state, setState] = useState(headlessQuerySummary.state);
 
-  useEffect(() => headlessQuerySummary.subscribe(() => {
-    setState(headlessQuerySummary.state);
-  }), [headlessQuerySummary]);
+  useEffect(() => headlessQuerySummary.subscribe(() => setState(headlessQuerySummary.state)), [headlessQuerySummary]);
 
   const renderBold = (input: string) => (
     <Box component="span">
