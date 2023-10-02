@@ -1,0 +1,2 @@
+
+export const DEFAULT_NUMBER_OF_RECOMMENDATIONS = 5;

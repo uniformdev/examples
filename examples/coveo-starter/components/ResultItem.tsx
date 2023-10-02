@@ -12,8 +12,8 @@ import { buildInteractiveResult, Result } from "@coveo/headless";
 import NoImg from "@/public/no-img.svg";
 import { buildFrequentlyViewedTogetherList } from "@coveo/headless/product-recommendation";
 import { ProductRecommendationEngineContext } from "../context/PREngine";
-import { MAX_RECOMMENDATIONS } from "@/components/ProductRecommendations";
 import { HeadlessEngineContext } from "../context/Engine";
+import { DEFAULT_NUMBER_OF_RECOMMENDATIONS } from "../constants";
 
 const {
   publicRuntimeConfig: { coveoAnalyticsApiKey },
@@ -42,7 +42,9 @@ const ResultItem: FC<ResultItemProps> = ({
   const frequentlyViewedTogether = useMemo(
     () =>
       buildFrequentlyViewedTogetherList(productRecommendationsEngine, {
-        options: { maxNumberOfRecommendations: MAX_RECOMMENDATIONS },
+        options: {
+          maxNumberOfRecommendations: DEFAULT_NUMBER_OF_RECOMMENDATIONS,
+        },
       }),
     [productRecommendationsEngine]
   );
@@ -59,7 +61,9 @@ const ResultItem: FC<ResultItemProps> = ({
     interactiveResult.select();
     frequentlyViewedTogether.setSkus([item.uniqueId]);
 
-    const scriptContent = `
+    if (coveoAnalyticsApiKey) {
+      // Define the script content
+      const analyticsScriptContent = `
       coveoua('init', '${coveoAnalyticsApiKey}', 'https://analytics.cloud.coveo.com/rest/ua')
       coveoua('send', 'pageview');
       coveoua('ec:addProduct', {
@@ -72,17 +76,17 @@ const ResultItem: FC<ResultItemProps> = ({
       coveoua('ec:setAction', 'detail'); 
       coveoua('send', 'event');
     `;
+      // Create a script element
+      const analyticsScript = document.createElement("script");
+      analyticsScript.type = "text/javascript";
+      analyticsScript.innerHTML = analyticsScriptContent;
 
-    // Create a script element
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.innerHTML = scriptContent;
-
-    // Append the script to the document's body
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
+      // Append the script to the document's body
+      document.body.appendChild(analyticsScript);
+      return () => {
+        document.body.removeChild(analyticsScript);
+      };
+    }
   };
 
   const { image, description, title } = useMemo(

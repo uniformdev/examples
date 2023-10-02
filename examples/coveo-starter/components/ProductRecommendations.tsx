@@ -9,8 +9,7 @@ import {
   ComponentProps,
   registerUniformComponent,
 } from "@uniformdev/canvas-react";
-
-export const MAX_RECOMMENDATIONS = 50;
+import { DEFAULT_NUMBER_OF_RECOMMENDATIONS } from "../constants";
 
 type RecommendationsProps = ComponentProps<{
   maxNumberOfRecommendations?: string;
@@ -28,7 +27,11 @@ export const Recommendations: FC<RecommendationsProps> = ({
   const frequentlyViewedTogetherBuild = useMemo(
     () =>
       buildFrequentlyViewedTogetherList(productRecommendationsEngine, {
-        options: { maxNumberOfRecommendations: Number(maxNumberOfRecommendations) || MAX_RECOMMENDATIONS },
+        options: {
+          maxNumberOfRecommendations:
+            Number(maxNumberOfRecommendations) ||
+            DEFAULT_NUMBER_OF_RECOMMENDATIONS,
+        },
       }),
     [productRecommendationsEngine, maxNumberOfRecommendations]
   );

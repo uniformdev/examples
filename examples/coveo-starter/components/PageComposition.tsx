@@ -13,7 +13,7 @@ export interface PageCompositionProps {
 const PageComposition: FC<PageCompositionProps> = ({ data: composition }) => {
   useEffect(() => {
     // Define the script content
-    const scriptContent = `
+    const analyticsScriptContent = `
       (function(c,o,v,e,O,u,a){
         a='coveoua';c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         c[a].t=Date.now();u=o.createElement(v);u.async=1;u.src=e;
@@ -23,16 +23,16 @@ const PageComposition: FC<PageCompositionProps> = ({ data: composition }) => {
     `;
 
     // Create a script element
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.innerHTML = scriptContent;
+    const analyticsScript = document.createElement("script");
+    analyticsScript.type = "text/javascript";
+    analyticsScript.innerHTML = analyticsScriptContent;
 
     // Append the script to the document's body
-    document.body.appendChild(script);
+    document.body.appendChild(analyticsScript);
 
     // Clean up the script element when the component unmounts
     return () => {
-      document.body.removeChild(script);
+      document.body.removeChild(analyticsScript);
     };
   }, []);
 
