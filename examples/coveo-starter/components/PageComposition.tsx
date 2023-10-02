@@ -1,8 +1,7 @@
 import { FC, useEffect } from "react";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { Container } from "@mui/system";
+import { CssBaseline, ThemeProvider, Container } from "@mui/material";
 import Footer from "@/components/Footer";
 import { theme } from "../context/theme";
 
