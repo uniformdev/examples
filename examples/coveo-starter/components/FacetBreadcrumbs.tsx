@@ -1,13 +1,15 @@
-import { FC, useEffect, useMemo, useState } from "react";
+import { FC, useContext, useEffect, useMemo, useState } from "react";
 import { registerUniformComponent } from "@uniformdev/canvas-react";
 import { buildBreadcrumbManager } from "@coveo/headless";
-import { Box, Breadcrumbs, Button, Typography } from "@mui/material";
-import headlessEngine from "../context/Engine";
+import { Breadcrumbs, Button, Typography } from "@mui/material";
+import { HeadlessEngineContext } from "../context/Engine";
 import { capitalizeFirstLetter } from "../utils";
 
 //Coveo Facet Breadcrumbs docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/breadcrumb-manager/
 
 const FacetBreadcrumbs: FC = () => {
+  const headlessEngine = useContext(HeadlessEngineContext);
+
   const headlessBreadcrumbManager = useMemo(
     () => buildBreadcrumbManager(headlessEngine),
     [headlessEngine]
@@ -15,12 +17,11 @@ const FacetBreadcrumbs: FC = () => {
 
   const [state, setState] = useState(headlessBreadcrumbManager.state);
 
-  useEffect(() => {
-    const updateState = () => {
-      setState(headlessBreadcrumbManager.state);
-    };
-    headlessBreadcrumbManager.subscribe(updateState);
-  }, []);
+  useEffect(
+    () =>
+      headlessBreadcrumbManager.subscribe(() => setState(headlessBreadcrumbManager.state)),
+    [headlessBreadcrumbManager]
+  );
 
   const deselectAll = () => headlessBreadcrumbManager.deselectAll();
 

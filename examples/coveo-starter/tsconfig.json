@@ -18,8 +18,9 @@
     "paths": {
       "@/components/*": ["./components/*"],
       "@/styles/*": ["./styles/*"],
-      "@/public/*": ["./public/*"]
-    },
+      "@/public/*": ["./public/*"],
+      "coveo.analytics": ["./coveo.analytics/src/coveoua/simpleanalytics"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", ".next", "out", "worker"]

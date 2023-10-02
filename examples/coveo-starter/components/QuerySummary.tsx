@@ -1,11 +1,11 @@
-import { FC, useEffect, useMemo, useState } from "react";
+import { FC, useContext, useEffect, useMemo, useState } from "react";
 import {
   ComponentProps,
   registerUniformComponent,
 } from "@uniformdev/canvas-react";
 import { buildQuerySummary } from "@coveo/headless";
 import { Box, Grid } from "@mui/material";
-import headlessEngine from "../context/Engine";
+import { HeadlessEngineContext } from "../context/Engine";
 
 type QuerySummaryProps = ComponentProps<{
   listName?: string;
@@ -23,6 +23,8 @@ const QuerySummary: FC<QuerySummaryProps> = ({
   durationSettings = "",
   listName = "",
 }) => {
+  const headlessEngine = useContext(HeadlessEngineContext);
+
   const headlessQuerySummary = useMemo(
     () => buildQuerySummary(headlessEngine),
     [headlessEngine]
@@ -30,13 +32,7 @@ const QuerySummary: FC<QuerySummaryProps> = ({
 
   const [state, setState] = useState(headlessQuerySummary.state);
 
-  const updateState = () => {
-    setState(headlessQuerySummary.state);
-  };
-
-  useEffect(() => {
-    headlessQuerySummary.subscribe(updateState);
-  }, []);
+  useEffect(() => headlessQuerySummary.subscribe(() => setState(headlessQuerySummary.state)), [headlessQuerySummary]);
 
   const renderBold = (input: string) => (
     <Box component="span">

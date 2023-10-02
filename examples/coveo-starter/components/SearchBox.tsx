@@ -1,4 +1,12 @@
-import { FC, SyntheticEvent, useEffect, useMemo, useState } from "react";
+import {
+  FC,
+  SyntheticEvent,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import {
   registerUniformComponent,
   ComponentProps,
@@ -12,7 +20,7 @@ import {
   TextField,
 } from "@mui/material";
 import { Search } from "@mui/icons-material";
-import headlessEngine from "../context/Engine";
+import { HeadlessEngineContext } from "../context/Engine";
 
 type SearchBoxProps = ComponentProps<{
   placeholder?: string;
@@ -27,6 +35,8 @@ const SearchBox: FC<SearchBoxProps> = ({
   enableQuerySyntax = false,
   clearFilters = false,
 }) => {
+  const headlessEngine = useContext(HeadlessEngineContext);
+
   const headlessSearchBox = useMemo(
     () =>
       buildSearchBox(headlessEngine, {
@@ -50,23 +60,18 @@ const SearchBox: FC<SearchBoxProps> = ({
 
   const [state, setState] = useState(headlessSearchBox.state);
 
-  const handleSubmit = () => {
+  useEffect(
+    () => headlessSearchBox.subscribe(() => setState(headlessSearchBox.state)),
+    [headlessSearchBox]
+  );
+
+  const handleSubmit = useCallback(() => {
     headlessSearchBox.submit();
-  };
-
-  useEffect(() => {
-    const updateState = () => {
-      setState(headlessSearchBox.state);
-    };
-
-    if (!headlessSearchBox.state.isLoading) {
-      headlessSearchBox.subscribe(updateState);
-      handleSubmit();
-    }
-  }, []);
+  }, [headlessSearchBox]);
 
   const handleInputChange = (event: SyntheticEvent, newInputValue: string) => {
     headlessSearchBox.updateText(newInputValue);
+    headlessSearchBox.submit();
   };
 
   const renderInput = (params: AutocompleteRenderInputParams) => (

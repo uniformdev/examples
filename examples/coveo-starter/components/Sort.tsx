@@ -1,8 +1,5 @@
-import { FC, useEffect, useMemo, useState } from "react";
-import {
-  ComponentProps,
-  registerUniformComponent,
-} from "@uniformdev/canvas-react";
+import { FC, useContext, useEffect, useMemo, useState } from "react";
+import { registerUniformComponent } from "@uniformdev/canvas-react";
 import {
   buildSort,
   buildRelevanceSortCriterion,
@@ -11,27 +8,30 @@ import {
 } from "@coveo/headless";
 import {
   FormControl,
-  Grid,
   InputLabel,
   MenuItem,
   Select,
   SelectChangeEvent,
 } from "@mui/material";
-import headlessEngine from "../context/Engine";
+import { HeadlessEngineContext } from "../context/Engine";
 
 //Coveo Sort docs https://docs.coveo.com/en/headless/latest/reference/search/controllers/sort/
 
 const Sort: FC = () => {
-  const headlessSort = useMemo(() => buildSort(headlessEngine), []);
+  const headlessEngine = useContext(HeadlessEngineContext);
+
+  const headlessSort = useMemo(
+    () => buildSort(headlessEngine),
+    [headlessEngine]
+  );
 
   const [state, setState] = useState(headlessSort.state);
 
-  useEffect(() => {
-    const updateState = () => {
-      setState(headlessSort.state);
-    };
-    headlessSort.subscribe(updateState);
-  }, []);
+  useEffect(
+    () =>
+      headlessSort.subscribe(() => setState(headlessSort.state)),
+    [headlessSort]
+  );
 
   const dateDescendingSortCriterion = buildDateSortCriterion(
     SortOrder.Descending
