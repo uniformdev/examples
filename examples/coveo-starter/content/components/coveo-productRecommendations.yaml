@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coveo-productRecommendations
+name: Product Recommendations
+icon: layout-list
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: maxNumberOfRecommendations
+    name: Max Number Of Recommendations
+    type: number
+    helpText: ''
+    typeConfig:
+      max: '50'
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-09-29T09:15:01.342207+00:00'
+updated: '2023-09-29T09:22:34.51494+00:00'

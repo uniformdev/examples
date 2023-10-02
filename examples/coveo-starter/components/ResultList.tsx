@@ -1,13 +1,12 @@
-import { FC, useEffect, useMemo, useState } from "react";
+import { FC, useContext, useEffect, useMemo, useState } from "react";
+import { ComponentInstance } from "@uniformdev/canvas";
 import {
   ComponentProps,
   registerUniformComponent,
-  UniformSlot,
 } from "@uniformdev/canvas-react";
 import { buildResultList, Result } from "@coveo/headless";
-import { Grid, Typography } from "@mui/material";
-import headlessEngine from "../context/Engine";
-import { ComponentInstance } from "@uniformdev/canvas";
+import { Button, Grid, Typography } from "@mui/material";
+import { HeadlessEngineContext } from "../context/Engine";
 import ResultItem from "@/components/ResultItem";
 
 enum ItemTypes {
@@ -37,26 +36,32 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
     titleField = "",
   } = resultList?.resultListConfiguration || {};
 
+  const headlessEngine = useContext(HeadlessEngineContext);
+
   const headlessResultList = useMemo(
     () =>
       buildResultList(headlessEngine, {
         options: {
-          fieldsToInclude: [imageField, titleField, descriptionField].filter(
-            (item) => item
-          ),
+          fieldsToInclude: [
+            "ec_name",
+            "ec_category",
+            "price",
+            ...[imageField, titleField, descriptionField].filter(
+              (item) => item
+            ),
+          ],
         },
       }),
-    [imageField, titleField, descriptionField]
+    [imageField, titleField, descriptionField, headlessEngine]
   );
 
   const [state, setState] = useState(headlessResultList.state);
 
-  useEffect(() => {
-    const updateState = () => {
-      setState(headlessResultList.state);
-    };
-    headlessResultList.subscribe(updateState);
-  }, [imageField, titleField, descriptionField]);
+  useEffect(
+    () =>
+      headlessResultList.subscribe(() => setState(headlessResultList.state)),
+    [headlessResultList]
+  );
 
   const renderResultItem = (component: ComponentInstance, item: Result) => {
     const itemType = component?.slots?.resultItemComponent?.[0]?.type;
@@ -80,6 +85,9 @@ const ResultList: FC<ResultListProps> = (componentProps: ResultListProps) => {
   return (
     <Grid container spacing={2}>
       {state.results.map((result) => renderResultItem(component, result))}
+      <Button onClick={() => headlessResultList.fetchMoreResults()}>
+        Load more
+      </Button>
     </Grid>
   );
 };

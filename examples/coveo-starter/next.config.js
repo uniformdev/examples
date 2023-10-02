@@ -5,6 +5,7 @@ const nextConfig = {
     projectId: process.env.UNIFORM_PROJECT_ID,
     applicationId: process.env.COVEO_ORGANIZATION_ID,
     coveoApiKey: process.env.COVEO_API_KEY,
+    coveoAnalyticsApiKey: process.env.COVEO_ANALYTICS_API_KEY,
   },
   serverRuntimeConfig: {
     projectId: process.env.UNIFORM_PROJECT_ID,

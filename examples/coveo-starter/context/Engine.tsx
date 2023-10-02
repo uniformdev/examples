@@ -1,15 +1,17 @@
 import {
-  buildContext,
   buildSearchEngine,
   getOrganizationEndpoints,
+  SearchEngine,
+  buildContext,
 } from "@coveo/headless";
 import getConfig from "next/config";
+import { createContext } from "react";
 
 const {
   publicRuntimeConfig: { applicationId, coveoApiKey },
 } = getConfig();
 
-const headlessEngine = buildSearchEngine({
+export const headlessEngine = buildSearchEngine({
   configuration: {
     organizationId: applicationId,
     accessToken: coveoApiKey,
@@ -17,6 +19,7 @@ const headlessEngine = buildSearchEngine({
   },
 });
 
-buildContext(headlessEngine).add("website", "engineering");
+buildContext(headlessEngine).add("products", "catalog");
 
-export default headlessEngine;
+export const HeadlessEngineContext =
+  createContext<SearchEngine>(headlessEngine);
