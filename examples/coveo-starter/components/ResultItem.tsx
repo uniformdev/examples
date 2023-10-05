@@ -64,9 +64,9 @@ const ResultItem: FC<ResultItemProps> = ({
       coveoua('send', 'pageview');
       coveoua('ec:addProduct', {
       'id': '${item.raw.permanentid}', 
-      'name': '${item.raw.ec_name}',
-      'category': '${(item.raw.ec_category as string[])?.[0]}',
-      'price': '${item.raw.price}',
+      'name': '${item.raw.ec_name || item.title}',
+      'category': '${(item.raw.ec_category as string[])?.[0] || item.raw.collection}',
+      'price': '${item.raw.price || 0}',
       });
 
       coveoua('ec:setAction', 'detail'); 
