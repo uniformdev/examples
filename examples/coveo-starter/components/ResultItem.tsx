@@ -61,7 +61,6 @@ const ResultItem: FC<ResultItemProps> = ({
     // Define the script content
     const analyticsScriptContent = `
       coveoua('init', '${coveoAnalyticsApiKey}', 'https://analytics.cloud.coveo.com/rest/ua')
-      coveoua('send', 'pageview');
       coveoua('ec:addProduct', {
       'id': '${item.raw.permanentid}', 
       'name': '${item.raw.ec_name || item.title}',
@@ -71,6 +70,7 @@ const ResultItem: FC<ResultItemProps> = ({
 
       coveoua('ec:setAction', 'detail'); 
       coveoua('send', 'event');
+      coveoua('send', 'pageview');
     `;
     // Create a script element
     const analyticsScript = document.createElement("script");
