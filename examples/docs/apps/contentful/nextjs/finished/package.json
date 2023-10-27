@@ -27,7 +27,7 @@
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "@uniformdev/context": "^16.2.4",
     "@uniformdev/context-react": "^16.2.4",
-    "contentful": "^9.1.32",
+    "contentful": "^10.4.0",
     "cookie": "^0.4.2",
     "next": "^12.1.6",
     "nookies": "^2.5.2",
