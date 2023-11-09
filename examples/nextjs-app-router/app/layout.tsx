@@ -1,7 +1,7 @@
-import "./globals.css";
+import { UniformContext } from "@uniformdev/canvas-next-rsc";
 import { Inter } from "next/font/google";
 
-import "../canvas";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="main">{children}</main>
+        <main className="main">
+          <UniformContext>{children}</UniformContext>
+        </main>
       </body>
     </html>
   );
