@@ -22,7 +22,7 @@
     "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc": "^19.75.0",
+    "@uniformdev/canvas-next-rsc": "19.75.2-alpha.2",
     "next": "^14.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"

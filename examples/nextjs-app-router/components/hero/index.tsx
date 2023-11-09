@@ -16,12 +16,14 @@ export const HeroComponent = ({
         parameterId="title"
         as="h1"
         className="title"
+        placeholder="Enter hero title"
       />
       <UniformText
         component={component}
         context={context}
         parameterId="description"
         className="description"
+        placeholder="Enter hero description"
       />
     </>
   );
