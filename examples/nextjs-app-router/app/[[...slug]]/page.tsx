@@ -1,9 +1,21 @@
-import { UniformComposition, GoogleTagManagerAnalytics, UniformCompositionProps } from '@uniformdev/canvas-next-rsc';
+import {
+  UniformComposition,
+  PageParameters,
+  retrieveRoute,
+} from "@uniformdev/canvas-next-rsc";
+import { resolveComponent } from "@/uniform/resolve";
 
-export default function SlugPage(props: Pick<UniformCompositionProps, 'params' | 'searchParams'>) {
+// Uncomment this to enable static site generation mode
+// export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
+
+export default async function HomePage(props: PageParameters) {
+  const route = await retrieveRoute(props);
   return (
-    <UniformComposition {...props}>
-      <GoogleTagManagerAnalytics />
-    </UniformComposition>
-  )
+    <UniformComposition
+      {...props}
+      route={route}
+      resolveComponent={resolveComponent}
+      mode="server"
+    />
+  );
 }
