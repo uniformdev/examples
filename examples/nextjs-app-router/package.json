@@ -7,23 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "uniform:pull:signals": "uniform context signal pull ./content/package.json",
-    "uniform:pull:components": "uniform canvas component pull ./content/package.json",
-    "uniform:pull:compositions": "uniform canvas composition pull ./content/package.json",
-    "uniform:pull:project-map-definitions": "uniform project-map definition pull ./content/package.json",
-    "uniform:pull:project-map-nodes": "uniform project-map node pull ./content/package.json",
-    "uniform:pull": "run-s uniform:pull:signals uniform:pull:components uniform:pull:compositions uniform:pull:project-map-definitions uniform:pull:project-map-nodes",
-    "uniform:push:signals": "uniform context signal push ./content/package.json",
-    "uniform:push:components": "uniform canvas component push ./content/package.json",
-    "uniform:push:compositions": "uniform canvas composition push ./content/package.json",
-    "uniform:push:project-map-definitions": "uniform project-map definition push ./content/package.json",
-    "uniform:push:project-map-nodes": "uniform project-map node push ./content/package.json",
-    "uniform:publish": "uniform canvas composition push ./content/package.json --state published",
-    "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes"
+    "pull": "uniform sync pull",
+    "push": "uniform sync push",
+    "publish": "uniform canvas composition push ./uniform-data/composition --state published"
   },
   "dependencies": {
     "@uniformdev/canvas-next-rsc": "19.75.2-alpha.2",
-    "next": "^14.0.1",
+    "next": "^14.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
