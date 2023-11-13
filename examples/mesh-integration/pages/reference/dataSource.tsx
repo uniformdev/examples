@@ -44,10 +44,15 @@ const DataSource: NextPage = () => {
   // we can use an effect to ensure that those attributes are always set up correctly
   useEffect(() => {
     setValue((currentValue) => ({
-      newValue: { ...currentValue, baseUrl: 'https://pokeapi.co/api/v2' },
+      newValue: {
+        ...currentValue,
+        baseUrl: 'https://pokeapi.co/api/v2',
+        custom: {
+          proposedName: 'PokéAPI',
+        },
+      },
     }));
   }, [setValue]);
-
   // to perform custom validation, one can intercept setValue calls
   const setValidatedValue = createLocationValidator(setValue, (newValue, currentResult) => {
     if (newValue.baseUrl.startsWith('ftp://')) {
@@ -57,7 +62,9 @@ const DataSource: NextPage = () => {
           'createLocationValidator example: ftp protocol is not allowed. It is not 1996 any more.',
       };
     }
-
+    setValue((currentValue) => ({
+      newValue: { ...currentValue, baseUrl: newValue.baseUrl },
+    }));
     return currentResult ?? { isValid: true };
   });
 
