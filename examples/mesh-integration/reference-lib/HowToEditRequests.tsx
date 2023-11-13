@@ -30,7 +30,9 @@ export function HowToEditRequests() {
       <Heading level={4}>Request Editing Examples</Heading>
 
       {/* Note: only data types have a request method (since data sources are setting up a base URL, not a full HTTP request) */}
-      {location.type === 'dataType' ? <RequestMethodSelect label="Request Method" /> : null}
+      {location.type === 'dataType' ? (
+        <RequestMethodSelect label="Request Method" data-testid="method-select" />
+      ) : null}
 
       <p>Request URL</p>
       <RequestUrlInput />
