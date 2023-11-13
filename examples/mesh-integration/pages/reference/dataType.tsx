@@ -7,6 +7,7 @@ import {
   useVariables,
 } from '@uniformdev/mesh-sdk-react';
 import type { NextPage } from 'next';
+import { useEffect } from 'react';
 
 import { HowToEditRequests } from '../../reference-lib/HowToEditRequests';
 import { HowToFetchData } from '../../reference-lib/HowToFetchData';
@@ -24,19 +25,6 @@ import { HowToUseDialogs } from '../../reference-lib/HowToUseDialogs';
 // Values stored in data types are viewable by any user of your Uniform project with Canvas permissions.
 // To store secret values, plase use Data Sources which are secured.
 
-/*
- * Data Type name proposal: if you would like to propose a default name for new data types,
- * setting the special `custom.proposedName` property will signal to the UI that you are providing a custom
- * default name. Note that this only applies when creating new data types; as soon as it has been saved once, the proposed name
- * is ignored, and the existing name is always used.
-
-  useEffect(() => {
-    setValue((prev) => ({
-      newValue: { ...prev, custom: { ...prev.custom, proposedName: 'My Custom Proposed Name' } },
-    }));
-  }, [setValue]);
- */
-
 const DataType: NextPage = () => {
   const { setValue, metadata } = useMeshLocation('dataType');
 
@@ -52,6 +40,18 @@ const DataType: NextPage = () => {
 
     return currentResult ?? { isValid: true };
   });
+
+  /*
+   * Data Type name proposal: if you would like to propose a default name for new data types,
+   * setting the special `custom.proposedName` property will signal to the UI that you are providing a custom
+   * default name. Note that this only applies when creating new data types; as soon as it has been saved once, the proposed name
+   * is ignored, and the existing name is always used.
+   */
+  useEffect(() => {
+    setValue((prev) => ({
+      newValue: { ...prev, custom: { ...prev.custom, proposedName: 'My Custom Proposed Name' } },
+    }));
+  }, [setValue]);
 
   return (
     <DataTypeEditor onChange={setValidatedValue}>

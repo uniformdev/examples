@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   createLocationValidator,
+  DataResourceDynamicInputProvider,
   DataResourceVariablesList,
   useMeshLocation,
 } from '@uniformdev/mesh-sdk-react';
@@ -35,12 +36,12 @@ const DataResourceHelloWorld: NextPage = () => {
   const { setValue } = useMeshLocation('dataResource');
 
   return (
-    <div>
+    <DataResourceDynamicInputProvider>
       <DataResourceVariablesList setVariables={setValue} />
       <HowToUseDialogs namedDialogName="deDialog" />
       <HowToUseValidation />
       <HowToFetchData />
-    </div>
+    </DataResourceDynamicInputProvider>
   );
 };
 

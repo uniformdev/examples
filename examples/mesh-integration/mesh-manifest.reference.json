@@ -1,8 +1,8 @@
 {
   "type": "integration-reference",
   "displayName": "Integration Reference",
-  "logoIconUrl": "https://uniform.app/loading.gif",
-  "badgeIconUrl": "https://uniform.app/loading.gif",
+  "logoIconUrl": "https://uniform.app/uniform-logo.png",
+  "badgeIconUrl": "https://uniform.app/uniform.png",
   "category": "analytics",
   "baseLocationUrl": "http://localhost:9000",
   "locations": {
@@ -18,7 +18,7 @@
     "dataConnectors": [
       {
         "type": "reference",
-        "badgeIconUrl": "https://uniform.app/loading.gif",
+        "badgeIconUrl": "https://uniform.app/uniform.png",
         "displayName": "Integration Reference",
         "dataArchetypes": {
           "default": {
@@ -51,10 +51,13 @@
         {
           "type": "reference",
           "editorUrl": "/reference/paramType",
-          "displayName": "Reference Parameter",
+          "displayName": "Reference Parameter (Basic)",
           "editorLocations": {
             "ptEdit": {
               "url": "../namedDialog"
+            },
+            "ptNested": {
+              "url": "../nestedNamedDialog"
             }
           },
           "configureUrl": "/reference/paramTypeConfig",
@@ -63,6 +66,18 @@
               "url": "../namedDialog"
             }
           },
+          "renderableInPropertyPanel": true
+        },
+        {
+          "type": "reference-tokens",
+          "editorUrl": "/reference/paramTypeSupportingDynamicTokens",
+          "displayName": "Reference Parameter (Dynamic Tokens)",
+          "renderableInPropertyPanel": true
+        },
+        {
+          "type": "reference-tokens-drawer",
+          "editorUrl": "/reference/paramTypeObjectValueEditDrawer",
+          "displayName": "Reference Parameter (Edit Drawer)",
           "renderableInPropertyPanel": true
         }
       ]
@@ -75,6 +90,10 @@
           "url": "../namedDialog"
         }
       }
+    },
+
+    "unstable_assetLibrary": {
+      "url": "/reference/assetLibrary"
     }
   }
 }
