@@ -1,21 +1,25 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@tanstack/react-query':
     specifier: 4.35.3
     version: 4.35.3(react-dom@18.2.0)(react@18.2.0)
   '@uniformdev/assets':
-    specifier: ^19.75.1
-    version: 19.75.1
+    specifier: ^19.80.0
+    version: 19.80.0
   '@uniformdev/canvas':
-    specifier: ^19.75.1
-    version: 19.75.1
+    specifier: ^19.80.0
+    version: 19.80.0
   '@uniformdev/design-system':
-    specifier: ^19.75.1
-    version: 19.75.1(@lexical/clipboard@0.12.2)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)(zod@3.22.4)
+    specifier: ^19.80.0
+    version: 19.80.0(@lexical/clipboard@0.12.2)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)(zod@3.22.4)
   '@uniformdev/mesh-sdk-react':
-    specifier: ^19.75.1
-    version: 19.75.1(@emotion/react@11.11.1)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)
+    specifier: ^19.80.0
+    version: 19.80.0(@emotion/react@11.11.1)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)
   next:
     specifier: 13.4.12
     version: 13.4.12(react-dom@18.2.0)(react@18.2.0)
@@ -690,7 +694,7 @@ packages:
   /@tanstack/react-query@4.35.3(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-UgTPioip/rGG3EQilXfA2j4BJkhEQsR+KAbF+KIuvQ7j4MkgnTCJF01SfRpIRNtQTlEfz/+IL7+jP8WA8bFbsw==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || 17 || 18
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-native: '*'
     peerDependenciesMeta:
@@ -824,22 +828,22 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@uniformdev/assets@19.75.1:
-    resolution: {integrity: sha512-iFZox9hO0bEYg0egAtFDWBV8qbyKQS0MRiiQafFYjhXWMXcbEuu6B3gmkP5ny5FWDU5vMGxmHhdTxKXZb53FFQ==}
+  /@uniformdev/assets@19.80.0:
+    resolution: {integrity: sha512-cSAaNxvGFppbaQ7RBF6OY5vl8aTVcydu70QhyssW66irkwt5CP9+WpWAStq2AkEn8pljcC2/2ue9jIwec/yk1w==}
     dependencies:
-      '@uniformdev/context': 19.75.1
+      '@uniformdev/context': 19.80.0
     dev: false
 
-  /@uniformdev/canvas@19.75.1:
-    resolution: {integrity: sha512-N+OYP/XO8uLRXmnJSwx76JHhp4/83oi+R3WuXdAC2ZUiNoHbDMAcxLMKlBqCGywAoN2k8DI0GblfzAQsdIBIqA==}
+  /@uniformdev/canvas@19.80.0:
+    resolution: {integrity: sha512-PVTraBjrLppGfYi1sgkAw83BtDcR++YGIm5AomONG3UWy1zaCCh2EbVXPADFckCxcNMts38y4CCmjo+V90HipA==}
     dependencies:
-      '@uniformdev/assets': 19.75.1
-      '@uniformdev/context': 19.75.1
+      '@uniformdev/assets': 19.80.0
+      '@uniformdev/context': 19.80.0
       immer: 9.0.21
     dev: false
 
-  /@uniformdev/context@19.75.1:
-    resolution: {integrity: sha512-KiWG05G4P04EUmko0SzGQlhf5asS6UPovQcv+QcyVMzg1j73d/CrZNGC3ZsVdM/q7piRpdOrrpkp1JHfaVd6ng==}
+  /@uniformdev/context@19.80.0:
+    resolution: {integrity: sha512-lC/Omj/h0ewtvbxhl5WFBxEFqYzs1dWQACMkSpmCGey8GGfkIPTC7Pk5fvNZWzLCK15OHiWwXvQspZg0OkeC0g==}
     dependencies:
       dequal: 2.0.3
       js-cookie: 3.0.5
@@ -848,8 +852,8 @@ packages:
       rfdc: 1.3.0
     dev: false
 
-  /@uniformdev/design-system@19.75.1(@lexical/clipboard@0.12.2)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)(zod@3.22.4):
-    resolution: {integrity: sha512-2FeZSYBKQo9U/evJVjZecksH6XXFRel43dYfEIjNDbnHqcycpUjwWpaQUgZ4afBP/oWA+Hk9yues/fH451T2VA==}
+  /@uniformdev/design-system@19.80.0(@lexical/clipboard@0.12.2)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)(zod@3.22.4):
+    resolution: {integrity: sha512-jyCDrsEPw28GmV3btQTUksVrOd0C9kYcXSj9zM/GgpXyi6v48uWcYHgsjrZpLgcVSmWaTOdKsMpLp77Bp2AsVA==}
     peerDependencies:
       react: '>=17 || 17 || 18'
       react-dom: '>=17'
@@ -886,8 +890,8 @@ packages:
       - zod
     dev: false
 
-  /@uniformdev/mesh-sdk-react@19.75.1(@emotion/react@11.11.1)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8):
-    resolution: {integrity: sha512-HTzOtFaTy3wA0fhsDaJVTLYNZaj6XRsDPurTLy3DFMMerh+MaPjq2JIrWHhFrDcqKP4AW8OZUB22qoX77MNa3g==}
+  /@uniformdev/mesh-sdk-react@19.80.0(@emotion/react@11.11.1)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8):
+    resolution: {integrity: sha512-R5Smbjw8Mjh/IwBr2zTg/fNcTMFj0zzFn06aWxlhWEgGN/dD4eEeNEIagadSjP1h01VWVhSF83tdJZBLNrTZJw==}
     peerDependencies:
       '@emotion/react': '>=11.8.0'
       react: '>=16.8 || 17 || 18'
@@ -900,9 +904,9 @@ packages:
       '@lexical/selection': 0.12.2(lexical@0.12.2)
       '@lexical/utils': 0.12.2(lexical@0.12.2)
       '@react-icons/all-files': '@github.com/react-icons/react-icons/releases/download/v4.10.1/react-icons-all-files-4.10.1.tgz(react@18.2.0)'
-      '@uniformdev/canvas': 19.75.1
-      '@uniformdev/design-system': 19.75.1(@lexical/clipboard@0.12.2)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)(zod@3.22.4)
-      '@uniformdev/mesh-sdk': 19.75.1
+      '@uniformdev/canvas': 19.80.0
+      '@uniformdev/design-system': 19.80.0(@lexical/clipboard@0.12.2)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.8)(zod@3.22.4)
+      '@uniformdev/mesh-sdk': 19.80.0
       dequal: 2.0.3
       lexical: 0.12.2
       mitt: 3.0.1
@@ -920,21 +924,21 @@ packages:
       - yjs
     dev: false
 
-  /@uniformdev/mesh-sdk@19.75.1:
-    resolution: {integrity: sha512-7TaKnfF9UMjshktaNuBxcMlVwcRthskr2kz+RWIKnu+t5v0mw5UIemvVqdxRkHkI4xko8KwEuBC6ZaRLEwq8tw==}
+  /@uniformdev/mesh-sdk@19.80.0:
+    resolution: {integrity: sha512-9GId92NjRluHAA3FE5llcPworkKLGYAdnSHKGivyQNH0TCJvf8m53oF/zI5UHlmRFvt7vDGAzhPCRcik+k9w1A==}
     dependencies:
-      '@uniformdev/canvas': 19.75.1
-      '@uniformdev/context': 19.75.1
-      '@uniformdev/project-map': 19.75.1
+      '@uniformdev/canvas': 19.80.0
+      '@uniformdev/context': 19.80.0
+      '@uniformdev/project-map': 19.80.0
       imagesloaded: 5.0.0
       mitt: 3.0.1
     dev: false
 
-  /@uniformdev/project-map@19.75.1:
-    resolution: {integrity: sha512-pNkQoWswil0G9Q6bLVZCnHVqxIWXXMdT3GNqjdz2a1dzMoRr10wVVEJr3q09merHjDG3bSqACvFP0lPtxYVE8w==}
+  /@uniformdev/project-map@19.80.0:
+    resolution: {integrity: sha512-oJCQSxtGtsdRPTMm0qIBhKViTAG7iZHJAINOWhTayfZxIG/sm3jobbPM0cV3BkCyljx7PSl+I/q1CKVt5p2//g==}
     dependencies:
-      '@uniformdev/canvas': 19.75.1
-      '@uniformdev/context': 19.75.1
+      '@uniformdev/canvas': 19.80.0
+      '@uniformdev/context': 19.80.0
     dev: false
 
   /@xobotyi/scrollbar-width@1.9.5:

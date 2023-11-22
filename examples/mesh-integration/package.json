@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "4.35.3",
-    "@uniformdev/assets": "^19.75.1",
-    "@uniformdev/canvas": "^19.75.1",
-    "@uniformdev/design-system": "^19.75.1",
-    "@uniformdev/mesh-sdk-react": "^19.75.1",
+    "@uniformdev/assets": "^19.80.0",
+    "@uniformdev/canvas": "^19.80.0",
+    "@uniformdev/design-system": "^19.80.0",
+    "@uniformdev/mesh-sdk-react": "^19.80.0",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
