@@ -3,7 +3,7 @@
   "displayName": "Integration Reference",
   "logoIconUrl": "https://uniform.app/uniform-logo.png",
   "badgeIconUrl": "https://uniform.app/uniform.png",
-  "category": "analytics",
+  "category": "ai",
   "baseLocationUrl": "http://localhost:9000",
   "locations": {
     "install": {
@@ -94,6 +94,30 @@
 
     "unstable_assetLibrary": {
       "url": "/reference/assetLibrary"
+    },
+
+    "ai": {
+      "generateUrl": "/reference/AIPrompts",
+      "prompts": [
+        {
+          "id": "6604b6e0-a171-4968-bb79-eb8eaca26e93",
+          "name": "Generate a prompt",
+          "text": "Generate a prompt based on the topic below. Here's the topic: ${topic}",
+          "data": {
+            "arguments": {
+              "topic": {
+                "type": "text",
+                "displayName": "Topic",
+                "helpText": "Explain a topic",
+                "default": ""
+              }
+            }
+          },
+          "parameterTypes": [
+            "text"
+          ]
+        }
+      ]
     }
   }
 }
