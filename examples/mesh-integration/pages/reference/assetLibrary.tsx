@@ -1,106 +1,42 @@
-import {
-  QueryClient,
-  QueryClientProvider,
-  useQuery,
-} from "@tanstack/react-query";
-
-import {
-  AssetParamValueItem,
-  LoadingIndicator,
-  ScrollableList,
-  ScrollableListItem,
-  useMeshLocation,
-} from "@uniformdev/mesh-sdk-react";
-import type { NextPage } from "next";
+import { useMeshLocation } from "@uniformdev/mesh-sdk-react";
 import React from "react";
 
-const AssetLibraryInner = () => {
-  const { metadata, setValue, value } = useMeshLocation("assetLibrary");
+import { PokemonSpritesLibrary } from '../../reference-lib/assetLibrary/PokemonSpritesLibrary';
 
-  const [selectedAsset, setSelectedAsset] = React.useState<{
-    name: string;
-    url: string;
-  } | null>(null);
-  const { data: pockemonAssets, isLoading } = usePockemonAssets();
+/**
+ * This is an example of how to use external asset library location.
+ *
+ * It is meant to be used on Assets experience page.
+ * You can find more information about Asset Parameter here: https://docs.uniform.app/docs/guides/composition/manage-assets
+ *
+ * This location receives following props from Mesh SDK:
+ *  - metadata - any additional metadata for this integration and current parameter in Canvas.
+ *    Usually it keeps global integration settings with credentials or global configurations like Root Folder you'd want your DAM to open
+ *
+ *  Main task of this component would be to render your external asset library to manage your asset via Uniform Platform
+ */
+const AssetLibrary = () => {
+  const { metadata } = useMeshLocation("assetLibrary");
 
-  if (isLoading) {
-    return <LoadingIndicator />;
-  }
+  // metadata.settings contains global integration settings
+  // it can be undefined because it is lazy loaded
+  const pockemonIntegrationSettings = metadata.settings as { apiSecret: string; containerId: string; assetsPerPage: number } | undefined;
+
+  const pockemonAssetsMetadata = {
+    limit: pockemonIntegrationSettings?.assetsPerPage ?? 20,
+    apiSecret: pockemonIntegrationSettings?.apiSecret,
+    containerId: pockemonIntegrationSettings?.containerId,
+    ...metadata,
+  };
 
   return (
     <div>
-      <p>come one show me some content</p>
-      <pre>{JSON.stringify(metadata)}</pre>
-      <ScrollableList>
-        {pockemonAssets?.map((asset) => (
-          <ScrollableListItem
-            active={selectedAsset?.url === asset.url}
-            key={asset.name}
-            icon={<img src={asset.url} alt={asset.name} />}
-            buttonText={asset.name}
-            onClick={() => {
-              setSelectedAsset(asset);
-              if (!value.find(({ url }) => url === asset.url)) {
-                setValue((prev) => {
-                  const newAsset: AssetParamValueItem = {
-                    id: asset.url,
-                    source: metadata.sourceId,
-                    url: asset.url,
-                    title: asset.name,
-                    width: 96,
-                    height: 96,
-                  };
-                  return {
-                    newValue: [...prev, newAsset],
-                  };
-                });
-              }
-            }}
-          />
-        ))}
-      </ScrollableList>
+      <h2>Current metadata</h2>
+      <pre>{JSON.stringify(pockemonAssetsMetadata)}</pre>
+      <PokemonSpritesLibrary
+        metadata={pockemonAssetsMetadata}
+      />
     </div>
-  );
-};
-
-const usePockemonAssets = () => {
-  return useQuery({
-    queryKey: ["pockemon-assets"],
-    queryFn: async () => {
-      const pokemonListResponse = await fetch(
-        "https://pokeapi.co/api/v2/pokemon?limit=10"
-      );
-      const pokemonList = await pokemonListResponse.json();
-
-      const pokemonAssets: { name: string; url: string }[] = await Promise.all(
-        pokemonList.results.map(
-          async (pokemon: { name: string; url: string }) => {
-            const pokemonResponse = await fetch(pokemon.url);
-            const pokemonData = (await pokemonResponse.json()) as {
-              name: string;
-              sprites: { front_default: string };
-            };
-            return {
-              name: pokemon.name,
-              url: pokemonData.sprites.front_default,
-            };
-          }
-        )
-      );
-
-      return pokemonAssets;
-    },
-  });
-};
-
-const AssetLibrary: NextPage = () => {
-  const queryClient = new QueryClient();
-
-  // Provide the client to your App
-  return (
-    <QueryClientProvider client={queryClient}>
-      <AssetLibraryInner />
-    </QueryClientProvider>
   );
 };
 export default AssetLibrary;
