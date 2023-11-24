@@ -92,8 +92,9 @@
       }
     },
 
-    "unstable_assetLibrary": {
-      "url": "/reference/assetLibrary"
+    "assetLibrary": {
+      "assetLibraryUrl": "/reference/assetLibrary",
+      "assetParameterUrl": "/reference/assetParameter"
     },
 
     "ai": {

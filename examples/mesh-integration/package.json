@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tanstack/react-query": "4.35.3",
+    "uuid": "9.0.1",
     "@uniformdev/assets": "^19.80.0",
     "@uniformdev/canvas": "^19.80.0",
     "@uniformdev/design-system": "^19.80.0",
