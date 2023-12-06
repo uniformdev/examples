@@ -1,0 +1,70 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 9c3a3ced-4086-4fb0-92e1-bc5065233b42
+        type: $personalization
+        slots:
+          pz:
+            - _id: 1244d7a2-cd3f-411f-a1e7-c40aa1e5d931
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Be a world-class barista
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: interestedInCoffeeMakers
+                        r: 0
+                        op: '>'
+                    name: 'Hero: We are launched!'
+                description:
+                  type: text
+                  value: in comfort of your own home.
+            - _id: f7e5acb0-f8ef-4d38-b443-3bdbf093e2b0
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: We are launched!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: launchCampaign
+                        r: 0
+                        op: '>'
+                    name: 'Hero: We are launched!'
+                description:
+                  type: text
+                  value: You are seeing a personalized message.
+            - _id: 3f20cbcc-b3d9-4213-9729-bfa79b201080
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Welcome!
+                description:
+                  type: text
+                  value: >-
+                    Trigger campaign-based personalization by adding
+                    ?utm_campaign=launch to the URL.
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Home Hero
+created: '2023-12-06T01:15:05.66499+00:00'
+modified: '2023-12-06T02:00:11.408763+00:00'
+pattern: false
