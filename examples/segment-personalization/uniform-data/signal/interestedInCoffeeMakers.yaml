@@ -1,0 +1,16 @@
+id: interestedInCoffeeMakers
+name: Interested in Coffee Makers
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: interest
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: Coffee Makers
+dur: p
+description: ''
+str: 50

@@ -1,0 +1,43 @@
+import {
+  UniformComposition,
+  PageParameters,
+  retrieveRoute,
+  ContextUpdateTransfer,
+  createServerUniformContext,
+} from "@uniformdev/canvas-next-rsc";
+import { resolveComponent } from "@/uniform/resolve";
+import { cookies } from "next/headers";
+import { fetchTraits } from "../lib/segment";
+
+// Uncomment this to enable static site generation mode
+// export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
+
+export const runtime = "edge";
+
+export default async function HomePage(props: PageParameters) {
+  const route = await retrieveRoute(props);
+  const serverContext = await createServerUniformContext({
+    searchParams: props.searchParams,
+  });
+  const cookieStore = cookies();
+  const anonymous_id = cookieStore.get("ajs_anonymous_id")?.value;
+  const traits = await fetchTraits(anonymous_id!);
+  return (
+    <>
+      <ContextUpdateTransfer
+        serverContext={serverContext}
+        update={{
+          quirks: {
+            ...traits,
+          },
+        }}
+      />
+      <UniformComposition
+        {...props}
+        route={route}
+        resolveComponent={resolveComponent}
+        mode="server"
+      />
+    </>
+  );
+}

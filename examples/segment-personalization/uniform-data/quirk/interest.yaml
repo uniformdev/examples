@@ -1,0 +1,8 @@
+id: interest
+name: interest
+description: ''
+options:
+  - name: Coffee Makers
+    value: Coffee Makers
+  - name: Coffee Beans
+    value: Coffee Beans
