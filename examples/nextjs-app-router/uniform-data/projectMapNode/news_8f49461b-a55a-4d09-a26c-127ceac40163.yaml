@@ -1,0 +1,9 @@
+id: 8f49461b-a55a-4d09-a26c-127ceac40163
+name: News
+type: composition
+data: {}
+order: 400
+path: /news
+compositionId: 2f5fcd85-8696-4313-829d-fb43c4c906fc
+pathSegment: news
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

@@ -18,6 +18,23 @@ composition:
               parameters:
                 title:
                   type: text
+                  value: personalized
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: shopper
+                        r: 0
+                        op: '>'
+                    name: 'Hero: personalized'
+                description:
+                  type: text
+                  value: You are seeing a personalized message.
+            - _id: 43122c45-43af-4caa-bf99-4ad65bc37e87
+              type: hero
+              parameters:
+                title:
+                  type: text
                   value: We are launched!
                 $pzCrit:
                   type: $pzCrit
@@ -48,6 +65,6 @@ composition:
           trackingEventName:
             type: text
             value: Home Hero
-created: '2023-06-29T04:47:27.348771+00:00'
-modified: '2023-11-09T02:01:34.802199+00:00'
+created: '2023-12-15T20:38:19.026295+00:00'
+modified: '2023-12-15T20:40:56.118106+00:00'
 pattern: false

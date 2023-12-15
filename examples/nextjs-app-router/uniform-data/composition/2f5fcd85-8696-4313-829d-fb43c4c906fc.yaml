@@ -1,0 +1,8 @@
+composition:
+  _name: News
+  _id: 2f5fcd85-8696-4313-829d-fb43c4c906fc
+  _slug: news
+  type: page
+created: '2023-12-15T20:38:19.524245+00:00'
+modified: '2023-12-15T20:38:19.524245+00:00'
+pattern: false
