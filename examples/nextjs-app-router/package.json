@@ -12,7 +12,7 @@
     "publish": "uniform canvas composition push ./uniform-data/composition --state published"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc": "19.76.0",
+    "@uniformdev/canvas-next-rsc": "19.90.0",
     "next": "14.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
