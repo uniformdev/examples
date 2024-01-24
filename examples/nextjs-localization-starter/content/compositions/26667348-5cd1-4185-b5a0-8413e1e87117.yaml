@@ -1,0 +1,150 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 9c3a3ced-4086-4fb0-92e1-bc5065233b42
+        type: $personalization
+        slots:
+          pz:
+            - _id: 7be09ea0-f7f2-40e9-868e-36865cc57b97
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: We are launched!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: launchCampaign
+                        r: 0
+                        op: '>'
+                    name: 'Hero: We are launched!'
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: Launch Campaign
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: ' signal is active!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: linebreak
+                              version: 1
+                            - mode: normal
+                              text: 'Therefore, showing personalized content. '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: linebreak
+                              version: 1
+                            - mode: normal
+                              text: Check dev tools for more logging info.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 2
+                              version: 1
+                          direction: ltr
+                      direction: ltr
+            - _id: 3f20cbcc-b3d9-4213-9729-bfa79b201080
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Welcome!
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: This is default content shown to every visitor.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: linebreak
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                Trigger campaign-based personalization by
+                                clicking 
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=launch
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: here
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: .
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                      direction: ltr
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Home Hero
+created: '2023-06-17T00:53:03.896727+00:00'
+modified: '2023-06-17T01:03:40.491077+00:00'
+pattern: false
