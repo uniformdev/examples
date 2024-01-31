@@ -1,0 +1,25 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: b2dfd631-e8d6-4400-9225-2c8d3283d66e
+        type: hero
+        parameters:
+          title:
+            type: text
+            locales:
+              de-DE: Hallo Welt
+              en-US: Hello World
+  _locales:
+    - en-US
+    - de-DE
+created: '2024-01-24T09:43:22.604475+00:00'
+modified: '2024-01-24T09:55:12.768276+00:00'
+pattern: false
