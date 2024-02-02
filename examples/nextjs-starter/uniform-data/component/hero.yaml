@@ -10,6 +10,7 @@ parameters:
     helpText: ''
     typeConfig:
       required: true
+    localizable: true
   - id: description
     name: Description
     type: richText
@@ -17,6 +18,7 @@ parameters:
     typeConfig:
       elements:
         builtIn:
+          - h1
           - h2
           - h3
           - h4
@@ -27,7 +29,7 @@ parameters:
           - link
           - quote
           - code
-          - h1
+          - variable
       required: false
       formatting:
         builtIn:
@@ -38,9 +40,10 @@ parameters:
           - code
           - superscript
           - subscript
+    localizable: true
 useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2023-06-17T00:53:01.912219+00:00'
-updated: '2023-06-17T01:00:42.915419+00:00'
+created: '2023-02-16T15:35:55.091438+00:00'
+updated: '2024-02-02T20:07:35.357979+00:00'
