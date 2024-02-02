@@ -1,3 +1,4 @@
+import { RichTextParamValue } from "@uniformdev/canvas";
 import { UniformRichText } from "@uniformdev/canvas-next";
 import {
   registerUniformComponent,
@@ -7,7 +8,7 @@ import {
 
 type HeroProps = ComponentProps<{
   title: string;
-  description?: string;
+  description?: RichTextParamValue;
 }>;
 
 const Hero: React.FC<HeroProps> = () => (

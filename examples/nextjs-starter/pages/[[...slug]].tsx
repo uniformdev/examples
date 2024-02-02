@@ -12,9 +12,9 @@ export const getServerSideProps = withUniformGetServerSideProps({
         ? CANVAS_DRAFT_STATE
         : CANVAS_PUBLISHED_STATE,
   },
-  handleComposition: async (routeResponse, _context, _defaultHandler) => {
-    const { composition } = routeResponse.compositionApiResponse || {};
-    const navLinks = await getCompositionsForNavigation(_context.preview);
+  handleComposition: async ({ compositionApiResponse }, { preview }, _defaultHandler) => {
+    const { composition } = compositionApiResponse || {};
+    const navLinks = await getCompositionsForNavigation(preview);
     return {
       props: {
         data: composition,
