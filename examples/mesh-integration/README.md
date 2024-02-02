@@ -4,7 +4,7 @@ This is an example of a Uniform Mesh Integration application that extends the Un
 
 ## Basic Usage
 
-> Using `npx uniform new-integration` will perform all of these steps for you!
+> Using `npx @uniformdev/cli@latest new-integration` will perform all of these steps for you!
 > If you'd like to set it up manually using CLI commands, or via the Uniform dashboard, keep reading.
 
 ### Manual installation via CLI
