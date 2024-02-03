@@ -15,4 +15,7 @@ Recommended as a good starting point for green field projects or for learning.
 
 1. Setup your own project id and API key values in `.env` with the API key that has Developer role.
 2. `npm run uniform:push` to push content.
-3. `npm run dev` and open localhost:3000 
+3. `npm run dev` and open localhost:3000
+
+## Rendering modes
+Both SSR (default) and SSG are supported, see `/pages/[[...slug]].tsx.ssg` and `/pages/[[...slug]].tsx.ssr` and enable the right mode for your use case.
