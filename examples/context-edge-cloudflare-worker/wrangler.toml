@@ -1,12 +1,9 @@
-name = "your-worker-name"
+name = "your-p13n-worker"
 main = "src/index.ts"
 account_id = "f39f700e75c45960a1b4e1ad200acd82"
 route = ""
 workers_dev = true
-compatibility_date = "2023-04-11"
-
-[build]
-command = "npm install && npm run download:manifest && npm run build"
+compatibility_date = "2023-10-23"
 
 [vars]
-ORIGIN_URL = "yoursite.z5.web.core.windows.net"
+ORIGIN_URL = "https://yoursloworigin.com"
