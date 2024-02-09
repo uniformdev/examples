@@ -19,6 +19,7 @@
     "@uniformdev/canvas-react": "^19.106.1",
     "@uniformdev/context": "^19.106.1",
     "@uniformdev/context-devtools": "^19.106.1",
+    "@uniformdev/context-gtag": "^19.108.0",
     "@uniformdev/context-next": "^19.106.1",
     "@uniformdev/context-react": "^19.106.1",
     "@uniformdev/project-map": "^19.106.1",
