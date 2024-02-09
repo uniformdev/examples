@@ -1,0 +1,70 @@
+composition:
+  _name: About
+  _id: d89f577e-c687-40fa-96af-78ac62fd7ffb
+  _slug: about
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: About Us
+  slots:
+    content:
+      - _id: eb9c5223-2549-4f80-b3a7-8111a6215822
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: About Us
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Some compelling content about us.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'And some '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: rich text
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 3
+                        version: 1
+                      - mode: normal
+                        text: .
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                direction: ltr
+created: '2023-11-27T17:29:35.884617+00:00'
+modified: '2024-02-02T20:10:52.785743+00:00'
+pattern: false
