@@ -1,3 +1,4 @@
+import { NextPageContext } from "next";
 import {
   Context,
   ManifestV2,
@@ -6,8 +7,8 @@ import {
   enableContextDevTools,
 } from "@uniformdev/context";
 import { NextCookieTransitionDataStore } from "@uniformdev/context-next";
-import { NextPageContext } from "next";
 import manifest from "./contextManifest.json";
+import enableGtmAnalytics from "./gtmAnalyticsPlugin";
 
 export default function createUniformContext(
   serverContext?: NextPageContext
@@ -19,6 +20,7 @@ export default function createUniformContext(
   const plugins: ContextPlugin[] = [
     enableContextDevTools(),
     enableDebugConsoleLogDrain("debug"),
+    enableGtmAnalytics(),
   ];
   const context = new Context({
     defaultConsent: true,
