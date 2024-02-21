@@ -1,29 +1,48 @@
 {
   "name": "mesh-playground",
-  "version": "19.0.0",
+  "version": "19.114.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 9000",
     "build": "next build",
     "start": "next start -p 9000",
-    "lint": "next lint"
+    "lint": "next lint",
+    "register-to-team": "uniform integration definition register ./mesh-manifest.json",
+    "unregister-from-team": "uniform integration definition remove integration-hello-world",
+    "install-to-project": "uniform integration install integration-hello-world",
+    "uninstall-from-project": "uniform integration uninstall integration-hello-world",
+    "edgehancer:build": "tsup --config edgehancer/tsup.config.ts",
+    "edgehancer:test": "vitest --config edgehancer/vitest.config.ts",
+    "deploy-edgehancer": "npm-run-all -s edgehancer:build -p deploy-edgehancer:preRequest deploy-edgehancer:request",
+    "remove-edgehancer": "run-p remove-edgehancer:preRequest remove-edgehancer:request",
+    "deploy-edgehancer:preRequest": "uniform integration definition edgehancer deploy --connectorType playground --archetype default --hook preRequest ./edgehancer/dist/preRequest.mjs",
+    "remove-edgehancer:preRequest": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook preRequest",
+    "deploy-edgehancer:request": "uniform integration definition edgehancer deploy --connectorType playground --archetype default --hook request ./edgehancer/dist/request.mjs",
+    "remove-edgehancer:request": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook request"
   },
   "dependencies": {
-    "uuid": "9.0.1",
-    "@uniformdev/assets": "^19.80.0",
-    "@uniformdev/canvas": "^19.80.0",
-    "@uniformdev/design-system": "^19.80.0",
-    "@uniformdev/mesh-sdk-react": "^19.80.0",
+    "@uniformdev/assets": "19.114.0",
+    "@uniformdev/canvas": "19.114.0",
+    "@uniformdev/cli": "19.114.0",
+    "@uniformdev/design-system": "19.114.0",
+    "@uniformdev/mesh-edgehancer-sdk": "19.114.0",
+    "@uniformdev/mesh-sdk-react": "19.114.0",
     "next": "13.4.12",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tsup": "8.0.1",
+    "uuid": "9.0.1"
   },
   "devDependencies": {
-    "@types/node": "18.17.18",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.5.6",
-    "typescript": "5.2.2"
+    "@types/node": "20.10.6",
+    "@types/react": "18.2.40",
+    "@types/react-dom": "18.2.17",
+    "@types/uuid": "9.0.4",
+    "eslint": "8.54.0",
+    "eslint-config-next": "14.0.4",
+    "npm-run-all": "4.1.5",
+    "typescript": "5.3.3",
+    "vitest": "^1.2.0",
+    "vitest-environment-miniflare": "^2.14.1"
   }
 }

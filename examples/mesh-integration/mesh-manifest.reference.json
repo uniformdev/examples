@@ -17,7 +17,7 @@
 
     "dataConnectors": [
       {
-        "type": "reference",
+        "type": "<your-universally-unique-id>",
         "badgeIconUrl": "https://uniform.app/uniform.png",
         "displayName": "Integration Reference",
         "dataArchetypes": {
