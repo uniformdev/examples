@@ -10,4 +10,18 @@ export default new Router()
     caching: {
       cache_key: { include_cookies: ["ufvd"], include_all_query_params: true },
     },
-  });
+  }) // Disable caching for preview mode
+  .match(
+    {
+      cookies: {
+        __prerender_bypass: /.*/g,
+        __next_preview_data: /.*/g,
+      },
+    },
+    {
+      caching: {
+        bypass_cache: true,
+        bypass_client_cache: true,
+      },
+    }
+  );
