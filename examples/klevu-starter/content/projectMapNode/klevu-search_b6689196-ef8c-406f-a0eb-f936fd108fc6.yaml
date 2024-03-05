@@ -1,0 +1,13 @@
+id: b6689196-ef8c-406f-a0eb-f936fd108fc6
+name: Klevu Search
+type: composition
+data:
+  queryStrings:
+    - name: term
+      value: ''
+      helpText: ''
+order: 400
+path: /klevu-search
+compositionId: b7f2a6e1-34c7-4991-ba73-352a2aad522d
+pathSegment: klevu-search
+projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6

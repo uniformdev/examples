@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: screen
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: content
+    name: content
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: true
+created: '2024-03-05T17:24:36.376465+00:00'
+updated: '2024-03-05T17:58:57.745885+00:00'

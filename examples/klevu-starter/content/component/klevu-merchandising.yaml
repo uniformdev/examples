@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: klevu-merchandising
+name: Klevu Merchandising
+icon: website
+parameters:
+  - id: category
+    name: Category
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: categoryTitle
+    name: Category Title
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: true
+  - id: group_paging
+    name: Paging
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - usePagination
+        - limit
+        - useInfiniteScroll
+        - tLoadMore
+  - id: usePagination
+    name: Use Pagination
+    type: checkbox
+    helpText: Use pagination instead of loading more
+    typeConfig: null
+    localizable: false
+  - id: limit
+    name: Limit
+    type: number
+    helpText: Count of products per page
+    typeConfig:
+      min: '1'
+    localizable: false
+  - id: useInfiniteScroll
+    name: Use Infinite Scroll
+    type: checkbox
+    helpText: Should use infinite scroll component to trigger load next
+    typeConfig: null
+    localizable: false
+  - id: tLoadMore
+    name: Load More Title
+    type: text
+    helpText: Text of load more button
+    typeConfig: null
+    localizable: true
+  - id: filterCount
+    name: Filter Count
+    type: number
+    helpText: How many filters per facet to show
+    typeConfig:
+      min: '1'
+    localizable: false
+  - id: useLoadingIndicator
+    name: Use Loading Indicator
+    type: checkbox
+    helpText: Used to enable loading indicator
+    typeConfig: null
+    localizable: false
+  - id: usePersonalisation
+    name: Use Personalisation
+    type: checkbox
+    helpText: Enable personalization
+    typeConfig: null
+    localizable: false
+  - id: useABTest
+    name: Use A/B Test
+    type: checkbox
+    helpText: Overrides KMC setting to use A/B test for results
+    typeConfig: null
+    localizable: false
+categoryId: a0275360-6774-48ef-9d3f-34186c91c9ff
+useTeamPermissions: true
+slots:
+  - id: facets
+    name: facets
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: content
+    name: content
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: category
+canBeComposition: false
+created: '2024-03-05T17:22:30.863642+00:00'
+updated: '2024-03-05T18:02:53.210401+00:00'

@@ -1,0 +1,56 @@
+composition:
+  _name: Klevu Search Allowed Facets
+  _id: dbc20dc6-5f04-4a16-a753-21ff666fb319
+  _slug: klevu-search-allowed-facets
+  type: page
+  slots:
+    content:
+      - _id: 1d32ba3b-2af1-4121-953e-9b603b149ca6
+        type: klevu-init
+        slots:
+          content:
+            - _id: a81a3cc0-0349-4cb0-8e3b-7656f23b9453
+              type: klevu-search-landing-page
+              slots:
+                facets:
+                  - _id: 43ab1340-f859-42a7-b1b2-0bf4c05c6315
+                    type: klevu-allowed-facet
+                    parameters:
+                      facet:
+                        type: klevu-facet
+                        value:
+                          facetKey: rating
+                      labelOverride:
+                        type: text
+                        locales:
+                          en: Rating
+                  - _id: f8667439-f8b9-472e-ad25-72daa2fd86e4
+                    type: klevu-allowed-facet
+                    parameters:
+                      facet:
+                        type: klevu-facet
+                        value:
+                          facetKey: GLOB__COLOUR_GROUP
+                content:
+                  - _id: dc42d867-818d-4b12-9c04-b2eb19102952
+                    type: klevu-product-grid
+                    slots:
+                      productComponent:
+                        - _id: de1031ba-94c3-4605-9ccd-cc9d795c193a
+                          type: klevu-product
+                    parameters:
+                      itemsPerRow:
+                        type: number
+                        value: '3'
+              parameters:
+                showSearch:
+                  type: checkbox
+                  value: true
+                defaultSearchTerm:
+                  type: text
+                  value: ${term}
+  _locales:
+    - en
+created: '2024-03-06T10:38:18.227248+00:00'
+modified: '2024-03-06T11:03:48.657285+00:00'
+pattern: false

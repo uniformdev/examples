@@ -1,0 +1,135 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: klevu-product
+name: Klevu Product
+icon: card
+parameters:
+  - id: variant
+    name: Variant
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: default
+          value: default
+        - text: line
+          value: line
+        - text: small
+          value: small
+  - id: fixedWidth
+    name: Fixed Width
+    type: checkbox
+    helpText: Force certain width for product. Do not use max-width
+    typeConfig: null
+    localizable: false
+  - id: group_hideContent
+    name: Hide Content
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - hideName
+        - hideDescription
+        - hideBrand
+        - hideImage
+        - hideHoverImage
+        - hidePrice
+        - hideSwatches
+  - id: hideName
+    name: Hide Name
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: hideDescription
+    name: Hide Description
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: hideBrand
+    name: Hide Brand
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: hideImage
+    name: Hide Image
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: hideHoverImage
+    name: Hide Hover Image
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: hidePrice
+    name: Hide Price
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: hideSwatches
+    name: Hide Swatches
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: showProductCode
+    name: Show Product Code
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: showRatings
+    name: Show Ratings
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: showRatingsCount
+    name: Show Ratings Count
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: showVariantsCount
+    name: Show Variants Count
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: showAddToCart
+    name: Show Add To Cart
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: tAddToCart
+    name: Add To Cart Text
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: true
+  - id: vatCaption
+    name: VAT Caption
+    type: text
+    helpText: >-
+      Text to be added after the price. Usually used to indicate that does the
+      price include VAT or not.
+    typeConfig: null
+    localizable: true
+  - id: outOfStockCaption
+    name: Out of Stock Caption
+    type: text
+    helpText: Caption to show if product is out of stock
+    typeConfig: null
+    localizable: true
+categoryId: a0275360-6774-48ef-9d3f-34186c91c9ff
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-03-05T17:22:33.034274+00:00'
+updated: '2024-03-05T18:02:50.648878+00:00'

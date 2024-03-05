@@ -1,0 +1,70 @@
+composition:
+  _name: Root
+  _id: 06ec21cc-80f4-4a1e-a59f-26b44330b13a
+  _slug: /
+  type: page
+  slots:
+    content:
+      - _id: 2f39752e-4689-406b-8e2c-48fcff962cfd
+        type: pageLink
+        parameters:
+          link:
+            type: link
+            value:
+              path: /klevu-merchandising?category=acoustic%20guitars
+              type: projectMapNode
+              nodeId: cedd7a62-8cbd-45fc-b885-99df939425f2
+              projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
+              dynamicInputValues:
+                category: acoustic guitars
+      - _id: ac3cccbf-a256-43b1-ad6e-4b3613eb7a6d
+        type: pageLink
+        parameters:
+          link:
+            type: link
+            value:
+              path: /klevu-merchandising?category=offers
+              type: projectMapNode
+              nodeId: cedd7a62-8cbd-45fc-b885-99df939425f2
+              projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
+              dynamicInputValues:
+                category: offers
+      - _id: cda94150-bce8-404a-8407-8e18cad8bd48
+        type: pageLink
+        parameters:
+          link:
+            type: link
+            value:
+              path: /klevu-search
+              type: projectMapNode
+              nodeId: b6689196-ef8c-406f-a0eb-f936fd108fc6
+              projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
+      - _id: 079bd08f-114a-4a06-8499-3e8535f33943
+        type: pageLink
+        parameters:
+          link:
+            type: link
+            value:
+              path: /klevu-search?term=acoustic%20guitars
+              type: projectMapNode
+              nodeId: b6689196-ef8c-406f-a0eb-f936fd108fc6
+              projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
+              dynamicInputValues:
+                term: acoustic guitars
+      - _id: ef175587-55b4-44d7-a176-9ffb2b27f20a
+        type: pageLink
+        parameters:
+          link:
+            type: link
+            value:
+              path: /klevu-search-allowed-facets?term=guitars
+              type: projectMapNode
+              nodeId: 89b6b779-b998-46c9-827b-4a86de4e765b
+              projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
+              dynamicInputValues:
+                term: guitars
+  _locales:
+    - en
+created: '2024-03-06T09:50:08.259243+00:00'
+modified: '2024-03-06T11:23:16.00032+00:00'
+pattern: false
