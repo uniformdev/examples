@@ -1,0 +1,7 @@
+[build]
+  base = "examples/nextjs-starter-edgio"
+  publish = ".next"
+  command = "pnpm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

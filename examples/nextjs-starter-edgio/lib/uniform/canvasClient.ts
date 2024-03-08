@@ -16,6 +16,7 @@ export async function getCompositionsForNavigation(preview: boolean) {
   const projectMapClient = new ProjectMapClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,
+    apiHost: process.env.UNIFORM_CLI_BASE_URL,
   });
 
   const response = await projectMapClient.getNodes({
