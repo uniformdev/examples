@@ -4,7 +4,6 @@ import './CanvasKlevuProductGrid';
 import './CanvasKlevuProduct';
 import './CanvasKlevuMerchandising';
 import './CanvasKlevuFacetList';
-import './CanvasKlevuAllowedFacet';
 
 import './CanvasPageLink';
 
@@ -25,9 +24,6 @@ export type { CanvasKlevuMerchandisingProps } from './CanvasKlevuMerchandising';
 
 export { default as CanvasKlevuFacetList } from './CanvasKlevuFacetList';
 export type { CanvasKlevuFacetListProps } from './CanvasKlevuFacetList';
-
-export { default as CanvasKlevuAllowedFacet } from './CanvasKlevuAllowedFacet';
-export type { CanvasKlevuAllowedFacetProps } from './CanvasKlevuAllowedFacet';
 
 export { default as CanvasPageLink } from './CanvasPageLink';
 export type { CanvasPageLinkProps } from './CanvasPageLink';

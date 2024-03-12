@@ -51,18 +51,6 @@ composition:
               projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
               dynamicInputValues:
                 term: acoustic guitars
-      - _id: ef175587-55b4-44d7-a176-9ffb2b27f20a
-        type: pageLink
-        parameters:
-          link:
-            type: link
-            value:
-              path: /klevu-search-allowed-facets?term=guitars
-              type: projectMapNode
-              nodeId: 89b6b779-b998-46c9-827b-4a86de4e765b
-              projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
-              dynamicInputValues:
-                term: guitars
   _locales:
     - en
 created: '2024-03-06T09:50:08.259243+00:00'
