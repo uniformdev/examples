@@ -2,7 +2,7 @@ composition:
   _name: Root
   _id: 06ec21cc-80f4-4a1e-a59f-26b44330b13a
   _slug: /
-  type: page
+  type: klevu-example-page
   slots:
     content:
       - _id: 2f39752e-4689-406b-8e2c-48fcff962cfd

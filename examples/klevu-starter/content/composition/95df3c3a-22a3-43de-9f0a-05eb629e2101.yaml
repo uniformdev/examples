@@ -2,7 +2,7 @@ composition:
   _name: Klevu Merchandising
   _id: 95df3c3a-22a3-43de-9f0a-05eb629e2101
   _slug: klevu-merchandising
-  type: page
+  type: klevu-example-page
   slots:
     content:
       - _id: 57edb44c-8f86-4839-a486-bdf52d9a8699

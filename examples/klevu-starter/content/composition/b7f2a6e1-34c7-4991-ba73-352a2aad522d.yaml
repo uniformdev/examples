@@ -2,7 +2,7 @@ composition:
   _name: Klevu Search
   _id: b7f2a6e1-34c7-4991-ba73-352a2aad522d
   _slug: klevu-search
-  type: page
+  type: klevu-example-page
   slots:
     content:
       - _id: 543482a8-cfe3-4251-89db-94ff21423e6d
