@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 
-import { KlevuSearchLandingPage } from "@klevu/ui-react";
+import { KlevuBanner, KlevuRecommendations, KlevuSearchLandingPage } from "@klevu/ui-react";
 import { FilterManager, KlevuRecord, KlevuResponseQueryObject } from "@klevu/core";
 
 import { ComponentProps, UniformSlot, registerUniformComponent } from "@uniformdev/canvas-react";
@@ -8,6 +8,7 @@ import { ComponentProps, UniformSlot, registerUniformComponent } from "@uniformd
 import { UniformKlevuDataProvider } from "@/components/UniformKlevuDataProvider";
 import { KlevuSearchLandingPageCustomEvent } from "@klevu/ui/dist/types/components";
 import { useFallbackTranslation } from "@/components/UniformKlevuTranslationProvider";
+import { useKlevuBanners } from "@/hooks/useKlevuBanners";
 
 export type CanvasKlevuSearchLandingPageProps = ComponentProps<{
     tSearchTitle?: string;
@@ -31,6 +32,8 @@ const CanvasKlevuSearchLandingPage = (componentProps: CanvasKlevuSearchLandingPa
     const [records, setRecords] = useState<KlevuRecord[]>([]);
     const [filterManager, setFilterManager] = useState<FilterManager | undefined>(undefined);
     const [resultObject, setResultObject] = useState<KlevuResponseQueryObject | undefined>(undefined);
+
+    const { topBanners, bottomBanners } = useKlevuBanners(resultObject, 'quicksearch');
 
     const currentTerm = resultObject ? resultObject.func.params?.term : undefined;
 
@@ -81,7 +84,29 @@ const CanvasKlevuSearchLandingPage = (componentProps: CanvasKlevuSearchLandingPa
                 </div>
                 <div slot="content">
                     <div {...{ part: "search-landing-page-content" }}>
+                        <slot name="topbanners">
+                            {topBanners.map((b, index) => (
+                                <KlevuBanner
+                                    key={`top-banner-${index}`}
+                                    imageUrl={b.bannerImg}
+                                    linkUrl={b.redirectUrl}
+                                    altText={b.bannerAltTag}
+                                />
+                            ))}
+                        </slot>
+
                         <UniformSlot name="content" />
+
+                        <slot name="bottombanners">
+                            {bottomBanners.map((b, index) => (
+                                <KlevuBanner
+                                    key={`bottom-banner-${index}`}
+                                    imageUrl={b.bannerImg}
+                                    linkUrl={b.redirectUrl}
+                                    altText={b.bannerAltTag}
+                                />
+                            ))}
+                        </slot>
                     </div>
                 </div>
             </UniformKlevuDataProvider>
