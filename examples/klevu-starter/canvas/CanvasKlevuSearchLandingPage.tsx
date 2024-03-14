@@ -18,7 +18,6 @@ export type CanvasKlevuSearchLandingPageProps = ComponentProps<{
     useInfiniteScroll?: boolean;
     tLoadMore?: string;
     filterCount?: string;
-    useLoadingIndicator?: boolean;
     usePersonalisation?: boolean;
     priceInterval?: string;
     showPriceAsSlider?: boolean;

@@ -64,12 +64,6 @@ parameters:
     typeConfig:
       min: '1'
     localizable: false
-  - id: useLoadingIndicator
-    name: Use Loading Indicator
-    type: checkbox
-    helpText: Used to enable loading indicator
-    typeConfig: null
-    localizable: false
   - id: usePersonalisation
     name: Use Personalisation
     type: checkbox

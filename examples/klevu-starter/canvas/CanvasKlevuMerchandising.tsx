@@ -17,7 +17,6 @@ export type CanvasKlevuMerchandisingProps = ComponentProps<{
     useInfiniteScroll?: boolean;
     tLoadMore?: string;
     filterCount?: string;
-    useLoadingIndicator?: boolean;
     usePersonalisation?: boolean;
     useABTest?: boolean;
 }>;
