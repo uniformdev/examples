@@ -7,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true
 };
 
-const _preEdgioExport = nextConfig;;
+const _preEdgioExport = nextConfig;
 
 module.exports = (phase, config) =>
   withEdgio({
