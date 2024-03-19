@@ -16,7 +16,6 @@ export type CanvasPageLinkProps = ComponentProps<{
 
 const CanvasPageLink = (componentProps: CanvasPageLinkProps) => {
     const { link } = componentProps;
-    console.log({link})
 
     const href = link?.path || '#';
 

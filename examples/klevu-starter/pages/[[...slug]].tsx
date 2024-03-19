@@ -14,8 +14,7 @@ export const getServerSideProps = withUniformGetServerSideProps({
   },
   handleComposition: async (routeResponse, _context, _defaultHandler) => {
     const { composition } = routeResponse.compositionApiResponse || {};
-    // console.log('composition', JSON.stringify(composition, null, 2));
-    // console.log('routeResponse', routeResponse);
+
     return {
       props: {
         data: composition,

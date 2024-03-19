@@ -72,7 +72,7 @@ const CanvasKlevuSearchLandingPage = (componentProps: CanvasKlevuSearchLandingPa
 
             setResultObject(e.detail.resultObject)
         }
-    }, [setRecords])
+    }, [])
 
     return (
         <KlevuSearchLandingPage {...finalProps} onKlevuData={handleKlevuData}>
