@@ -5,8 +5,8 @@
 1. Define environment variables:
     - `UNIFORM_PROJECT_ID`
     - `UNIFORM_API_KEY`
-    - `KLEVU_SEARCH_URL_HOST`
-    - `KLEVU_SEARCH_API_KEY`
+    - `KLEVU_SEARCH_URL_HOST` - Search URL Host can be found in your Klevu dashboard, click 'Store Settings' then find 'APIv2 Cloud Search URL'
+    - `KLEVU_SEARCH_API_KEY` - API Key can be found in your Klevu dashboard, click 'Store Settings' then find 'API Key'
 
 1. Run `npm install`
 

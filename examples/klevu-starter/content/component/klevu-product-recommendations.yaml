@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: klevu-product-recommendations
+name: Klevu Product Recommendations
+icon: album
+parameters:
+  - id: recommendationId
+    name: Recommendation Id
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+    localizable: false
+  - id: recommendationTitle
+    name: Recommendation Title
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: true
+  - id: currentProductId
+    name: Current Product Id
+    type: text
+    helpText: >-
+      For similiar products recommendation you need to provide productId and
+      itemGroupId
+    typeConfig:
+      required: true
+    localizable: false
+  - id: itemGroupId
+    name: Item Group Id
+    type: text
+    helpText: >-
+      For similiar products recommendation you need to provide productId and
+      itemGroupId
+    typeConfig: null
+    localizable: false
+categoryId: a0275360-6774-48ef-9d3f-34186c91c9ff
+useTeamPermissions: true
+slots: []
+titleParameter: recommendationTitle
+canBeComposition: false
+created: '2024-03-14T16:27:19.986709+00:00'
+updated: '2024-03-15T10:41:04.558558+00:00'
