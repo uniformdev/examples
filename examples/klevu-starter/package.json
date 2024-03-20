@@ -1,0 +1,33 @@
+{
+  "name": "klevu-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "uniform:sync:pull": "uniform sync pull --config ./uniform.sync.config.ts",
+    "uniform:sync:push": "uniform sync push --config ./uniform.sync.config.ts"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "^19.116.0",
+    "@uniformdev/canvas-next": "^19.116.0",
+    "@uniformdev/project-map": "^19.116.0",
+    "@uniformdev/canvas-react": "^19.116.0",
+    "@uniformdev/context": "^19.116.0",
+    "@uniformdev/context-react": "^19.116.0",
+    "@uniformdev/cli": "^19.116.0",
+    "@klevu/core": "5.0.0",
+    "@klevu/ui": "2.0.0",
+    "@klevu/ui-react": "2.0.0",
+    "next": "^13.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.55",
+    "@types/react-dom": "18.2.19",
+    "npm-run-all": "4.1.5",
+    "typescript": "^5.4.2"
+  }
+}

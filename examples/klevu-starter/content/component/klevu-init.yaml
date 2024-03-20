@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: klevu-init
+name: Klevu Init
+icon: cloud
+parameters:
+  - id: fallbackTranslationLanguage
+    name: Fallback Translation Language
+    type: text
+    helpText: ''
+    typeConfig: null
+    localizable: true
+categoryId: a0275360-6774-48ef-9d3f-34186c91c9ff
+useTeamPermissions: true
+slots:
+  - id: content
+    name: content
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2024-03-05T17:22:30.699986+00:00'
+updated: '2024-03-05T18:02:53.061416+00:00'

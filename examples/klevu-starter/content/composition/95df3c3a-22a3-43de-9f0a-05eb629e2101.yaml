@@ -1,0 +1,45 @@
+composition:
+  _name: Klevu Merchandising
+  _id: 95df3c3a-22a3-43de-9f0a-05eb629e2101
+  _slug: klevu-merchandising
+  type: klevu-example-page
+  slots:
+    content:
+      - _id: 57edb44c-8f86-4839-a486-bdf52d9a8699
+        type: klevu-init
+        slots:
+          content:
+            - _id: 4af0ed48-07dc-425e-8a60-1a558e1ce63c
+              type: klevu-merchandising
+              slots:
+                facets:
+                  - _id: 93a206ad-b48b-425c-a551-de06cf760a62
+                    type: klevu-facet-list
+                    parameters:
+                      accordion:
+                        type: checkbox
+                        value: true
+                content:
+                  - _id: 7dc13dee-ee47-44b8-80e0-474ec6460fe6
+                    type: klevu-product-grid
+                    slots:
+                      productComponent:
+                        - _id: 407d6be8-096f-4cf6-85db-52f450a1bce0
+                          type: klevu-product
+                          parameters:
+                            fixedWidth:
+                              type: checkbox
+                              value: true
+                    parameters:
+                      itemsPerRow:
+                        type: number
+                        value: '4'
+              parameters:
+                category:
+                  type: text
+                  value: ${category}
+  _locales:
+    - en
+created: '2024-03-06T09:06:03.893528+00:00'
+modified: '2024-03-06T11:16:46.621332+00:00'
+pattern: false

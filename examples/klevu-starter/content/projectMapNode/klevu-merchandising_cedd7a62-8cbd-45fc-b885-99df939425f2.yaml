@@ -1,0 +1,13 @@
+id: cedd7a62-8cbd-45fc-b885-99df939425f2
+name: Klevu Merchandising
+type: composition
+data:
+  queryStrings:
+    - name: category
+      value: acoustic guitars
+      helpText: ''
+order: 300
+path: /klevu-merchandising
+compositionId: 95df3c3a-22a3-43de-9f0a-05eb629e2101
+pathSegment: klevu-merchandising
+projectMapId: dac58490-8b0d-4120-91f2-a56b98eacca6
