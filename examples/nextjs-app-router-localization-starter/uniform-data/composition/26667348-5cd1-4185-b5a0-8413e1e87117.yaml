@@ -1,0 +1,90 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      locales:
+        de: Home
+        en: Home
+        ja: 家
+  slots:
+    content:
+      - _id: 5dbe8e72-d309-48d0-abd0-fb2f0ec6c296
+        type: $localization
+        slots:
+          localized:
+            - _id: 075aec50-37ed-47ae-99bf-b894d8877935
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    en: This component is only shown in English
+                locale:
+                  type: localeSelect
+                  value: en
+      - _id: 9c3a3ced-4086-4fb0-92e1-bc5065233b42
+        type: $personalization
+        slots:
+          pz:
+            - _id: 7be09ea0-f7f2-40e9-868e-36865cc57b97
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    de: Wir sind gestartet!
+                    en: We are launched!
+                    ja: 出発です！
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: launchCampaign
+                        r: 0
+                        op: '>'
+                    name: 'Hero: We are launched!'
+                description:
+                  type: text
+                  locales:
+                    de: Sie sehen eine personalisierte Nachricht.
+                    en: You are seeing a personalized message.
+                    ja: パーソナライズされたメッセージが表示されています。
+            - _id: 3f20cbcc-b3d9-4213-9729-bfa79b201080
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    de: Willkommen!
+                    en: Welcome!
+                    ja: いらっしゃいませ！
+                description:
+                  type: text
+                  locales:
+                    de: >-
+                      Lösen Sie eine kampagnenbasierte Personalisierung aus,
+                      indem Sie ?utm_campaign=launch zur URL hinzufügen.
+                    en: >-
+                      Trigger campaign-based personalization by adding
+                      ?utm_campaign=launch to the URL.
+                    ja: >-
+                      ?utm_campaign=launch を URL
+                      に追加して、キャンペーンベースのパーソナライゼーションをトリガーします。
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Home Hero
+  _locales:
+    - en
+    - de
+    - ja
+created: '2024-03-27T19:25:13.5185+00:00'
+modified: '2024-03-27T19:44:23.452998+00:00'
+pattern: false

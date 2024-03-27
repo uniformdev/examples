@@ -1,6 +1,6 @@
 {
-  "name": "@uniformdev/nextjs-app-router-starter",
-  "version": "0.1.0",
+  "name": "next-ngm-dynamic-playground",
+  "version": "19.131.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,17 +12,20 @@
     "publish": "uniform canvas composition push ./uniform-data/composition --state published"
   },
   "dependencies": {
+    "@types/node": "20.10.6",
+    "@types/react": "18.2.40",
+    "@types/react-dom": "18.2.17",
     "@uniformdev/canvas-next-rsc": "19.130.0",
-    "next": "14.0.1",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.54.0",
+    "eslint-config-next": "14.0.4",
+    "next": "^14.1.4",
+    "next-intl": "^3.10.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "@types/react": "18.2.33",
-    "@types/react-dom": "18.2.14",
-    "@uniformdev/cli": "19.130.0",
-    "npm-run-all": "^4.1.5",
-    "typescript": "5.2.2"
+    "@uniformdev/cli": "19.130.0"
   }
 }

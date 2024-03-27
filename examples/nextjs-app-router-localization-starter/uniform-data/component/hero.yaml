@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: image-text
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '4'
+    localizable: true
+categoryId: d1bd1d29-c158-4958-b861-369cdc844654
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2024-03-27T19:25:11.101034+00:00'
+updated: '2024-03-27T19:50:58.910031+00:00'
