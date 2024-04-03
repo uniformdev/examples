@@ -57,6 +57,12 @@ parameters:
     helpText: Text of load more button
     typeConfig: null
     localizable: true
+  - id: useMultiSelectFilters
+    name: Use Multi Select Filters
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
   - id: filterCount
     name: Filter Count
     type: number
@@ -86,19 +92,14 @@ parameters:
 categoryId: a0275360-6774-48ef-9d3f-34186c91c9ff
 useTeamPermissions: true
 slots:
-  - id: facets
-    name: facets
-    allowedComponents: []
-    allowAllComponents: true
-    inheritAllowedComponents: false
-    patternsInAllowedComponents: false
   - id: content
     name: content
-    allowedComponents: []
-    allowAllComponents: true
+    allowedComponents:
+      - klevu-product-grid
+    allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: tSearchTitle
 canBeComposition: false
-created: '2024-03-05T17:22:30.50517+00:00'
-updated: '2024-03-05T18:02:53.14193+00:00'
+created: '2024-03-29T11:57:43.908804+00:00'
+updated: '2024-04-03T11:48:40.767295+00:00'

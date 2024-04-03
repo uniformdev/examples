@@ -12,13 +12,6 @@ composition:
             - _id: 4af0ed48-07dc-425e-8a60-1a558e1ce63c
               type: klevu-merchandising
               slots:
-                facets:
-                  - _id: 93a206ad-b48b-425c-a551-de06cf760a62
-                    type: klevu-facet-list
-                    parameters:
-                      accordion:
-                        type: checkbox
-                        value: true
                 content:
                   - _id: 7dc13dee-ee47-44b8-80e0-474ec6460fe6
                     type: klevu-product-grid
@@ -40,6 +33,6 @@ composition:
                   value: ${category}
   _locales:
     - en
-created: '2024-03-06T09:06:03.893528+00:00'
-modified: '2024-03-06T11:16:46.621332+00:00'
+created: '2024-03-12T11:02:27.997923+00:00'
+modified: '2024-04-03T12:28:38.458218+00:00'
 pattern: false

@@ -73,19 +73,14 @@ parameters:
 categoryId: a0275360-6774-48ef-9d3f-34186c91c9ff
 useTeamPermissions: true
 slots:
-  - id: facets
-    name: facets
-    allowedComponents: []
-    allowAllComponents: true
-    inheritAllowedComponents: false
-    patternsInAllowedComponents: false
   - id: content
     name: content
-    allowedComponents: []
-    allowAllComponents: true
+    allowedComponents:
+      - klevu-product-grid
+    allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: category
 canBeComposition: false
-created: '2024-03-05T17:22:30.863642+00:00'
-updated: '2024-03-05T18:02:53.210401+00:00'
+created: '2024-03-29T11:57:43.653024+00:00'
+updated: '2024-04-03T11:40:05.30672+00:00'

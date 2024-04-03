@@ -12,9 +12,6 @@ composition:
             - _id: 33e62c2a-97f7-4f33-a5df-7f1436d570c4
               type: klevu-search-landing-page
               slots:
-                facets:
-                  - _id: d394bcea-2a6d-4694-aab3-4529c5bc9157
-                    type: klevu-facet-list
                 content:
                   - _id: e0be684d-e598-4228-8123-2c9c64624552
                     type: klevu-product-grid
@@ -39,6 +36,9 @@ composition:
                 usePagination:
                   type: checkbox
                   value: true
-created: '2024-03-07T12:07:57.833358+00:00'
-modified: '2024-03-07T12:07:57.833358+00:00'
+                useMultiSelectFilters:
+                  type: checkbox
+                  value: true
+created: '2024-03-07T20:42:03.30858+00:00'
+modified: '2024-04-03T12:42:44.854513+00:00'
 pattern: false

@@ -63,11 +63,6 @@ const CanvasKlevuMerchandising = (componentProps: CanvasKlevuMerchandisingProps)
     return (
         <KlevuMerchandising {...finalProps} onKlevuData={handleKlevuData}>
             <UniformKlevuDataProvider records={records} filterManager={filterManager} resultObject={resultObject}>
-                <div slot="facets">
-                    <div {...{ part: "merchandising-sidebar" }}>
-                        <UniformSlot name="facets" />
-                    </div>
-                </div>
                 <div slot="content">
                     <div {...{ part: "merchandising-content" }}>
                         <slot name="topbanners">
