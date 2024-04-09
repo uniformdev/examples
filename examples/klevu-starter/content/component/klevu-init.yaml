@@ -15,10 +15,15 @@ useTeamPermissions: true
 slots:
   - id: content
     name: content
-    allowedComponents: []
-    allowAllComponents: true
+    allowedComponents:
+      - klevu-search-landing-page
+      - klevu-merchandising
+      - klevu-recommendations
+      - klevu-product-recommendations
+      - klevu-category-recommendations
+    allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 canBeComposition: false
-created: '2024-03-05T17:22:30.699986+00:00'
-updated: '2024-03-05T18:02:53.061416+00:00'
+created: '2024-03-29T11:57:43.670036+00:00'
+updated: '2024-03-29T16:21:34.238308+00:00'

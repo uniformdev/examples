@@ -18,6 +18,7 @@ export type CanvasKlevuSearchLandingPageProps = ComponentProps<{
     limit?: string;
     useInfiniteScroll?: boolean;
     tLoadMore?: string;
+    useMultiSelectFilters?: boolean;
     filterCount?: string;
     usePersonalisation?: boolean;
     priceInterval?: string;
@@ -43,6 +44,7 @@ const CanvasKlevuSearchLandingPage = (componentProps: CanvasKlevuSearchLandingPa
         // fallback to `*`, with empty term `KlevuFetch` fails with an error (`Search term is required for search query banners`)
         term:  currentTerm ?? defaultSearchTerm ?? "*",
         limit: rawProps.limit ? Number(rawProps.limit) : undefined,
+        useMultiSelectFilters: !!rawProps.useMultiSelectFilters,
         filterCount: rawProps.filterCount ? Number(rawProps.filterCount) : undefined,
         priceInterval: rawProps.priceInterval ? Number(rawProps.priceInterval) : undefined,
         usePersonalisation: !!rawProps.usePersonalisation,
@@ -77,11 +79,6 @@ const CanvasKlevuSearchLandingPage = (componentProps: CanvasKlevuSearchLandingPa
     return (
         <KlevuSearchLandingPage {...finalProps} onKlevuData={handleKlevuData}>
             <UniformKlevuDataProvider records={records} filterManager={filterManager} resultObject={resultObject}>
-                <div slot="facets">
-                    <div {...{ part: "search-landing-page-sidebar" }}>
-                        <UniformSlot name="facets" />
-                    </div>
-                </div>
                 <div slot="content">
                     <div {...{ part: "search-landing-page-content" }}>
                         <slot name="topbanners">

@@ -12,9 +12,6 @@ composition:
             - _id: 33e62c2a-97f7-4f33-a5df-7f1436d570c4
               type: klevu-search-landing-page
               slots:
-                facets:
-                  - _id: d394bcea-2a6d-4694-aab3-4529c5bc9157
-                    type: klevu-facet-list
                 content:
                   - _id: e0be684d-e598-4228-8123-2c9c64624552
                     type: klevu-product-grid
@@ -43,8 +40,11 @@ composition:
                 defaultSearchTerm:
                   type: text
                   value: ${term}
+                useMultiSelectFilters:
+                  type: checkbox
+                  value: true
   _locales:
     - en
-created: '2024-03-05T18:31:17.441254+00:00'
-modified: '2024-03-06T10:56:44.494011+00:00'
+created: '2024-03-12T11:02:27.976549+00:00'
+modified: '2024-04-03T12:28:56.589522+00:00'
 pattern: false

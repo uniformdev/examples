@@ -3,7 +3,6 @@ import './CanvasKlevuSearchLandingPage';
 import './CanvasKlevuProductGrid';
 import './CanvasKlevuProduct';
 import './CanvasKlevuMerchandising';
-import './CanvasKlevuFacetList';
 import './CanvasKlevuRecommendations';
 
 import './CanvasPageLink';
@@ -22,9 +21,6 @@ export type { CanvasKlevuProductProps } from './CanvasKlevuProduct';
 
 export { default as CanvasKlevuMerchandising } from './CanvasKlevuMerchandising';
 export type { CanvasKlevuMerchandisingProps } from './CanvasKlevuMerchandising';
-
-export { default as CanvasKlevuFacetList } from './CanvasKlevuFacetList';
-export type { CanvasKlevuFacetListProps } from './CanvasKlevuFacetList';
 
 export { 
     CanvasKlevuRecommendations,

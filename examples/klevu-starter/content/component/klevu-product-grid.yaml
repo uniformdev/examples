@@ -18,11 +18,11 @@ slots:
   - id: productComponent
     name: Product Component
     maxComponents: 1
-    minComponents: 0
-    allowedComponents: []
-    allowAllComponents: true
+    allowedComponents:
+      - klevu-product
+    allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 canBeComposition: false
-created: '2024-03-05T17:22:33.287762+00:00'
-updated: '2024-03-05T18:02:53.09794+00:00'
+created: '2024-03-29T11:57:43.921166+00:00'
+updated: '2024-03-29T14:27:20.445227+00:00'
