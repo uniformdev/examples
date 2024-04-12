@@ -1,7 +1,5 @@
 import React from "react";
 import Logo from "./Logo";
-import dynamic from "next/dynamic";
-const DevTools = dynamic(() => import("./DevTools"), { ssr: false });
 
 export default function Footer() {
   return (
@@ -10,7 +8,6 @@ export default function Footer() {
       <a href="https://uniform.dev" target="_blank" rel="noopener noreferrer">
         <Logo width={220} />
       </a>
-      <DevTools />
     </footer>
   );
 }

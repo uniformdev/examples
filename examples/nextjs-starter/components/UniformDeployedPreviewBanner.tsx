@@ -26,7 +26,7 @@ export const UniformDeployedPreviewBanner = () => {
         <Link
           data-is-rendered-by-uniform
           target="_blank"
-          href="https://docs.uniform.app/getting-started/starters"
+          href="https://docs.uniform.app/docs/get-started/starters/hello-world"
         >
           here
         </Link>
