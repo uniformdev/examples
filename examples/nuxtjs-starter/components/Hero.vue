@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ComponentInstance } from "@uniformdev/canvas";
+import type { ComponentInstance } from "@uniformdev/canvas";
 
 interface Props {
   title: string;
