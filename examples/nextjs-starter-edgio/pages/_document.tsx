@@ -16,8 +16,24 @@ class MyDocument extends Document<CustomDocumentProps> {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
+    const ip = (ctx.req.headers["x-forwarded-for"] as string)?.split(",")[0];
+    const geoResponse = await fetch(
+      `https://ipinfo.io/${ip}?token=insert-your-token-here`
+    );
+    const geoData = await geoResponse.json();
+    const { country, region, city, postal } = geoData || {};
+    const quirks = {
+      "country-code": country,
+      "region-code": region,
+      "postal-code": postal,
+      city: city,
+    };
     const serverTracker = createUniformContext(ctx);
+    await serverTracker.update({
+      quirks,
+    });
     enableNextSsr(ctx, serverTracker);
+    serverTracker.quirks.set;
     return await Document.getInitialProps(ctx);
   }
 
