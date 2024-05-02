@@ -18,8 +18,6 @@ function MyApp({
     <UniformContext
       context={serverUniformContext ?? clientContext}
       outputType={"standard"}
-      // enable for edge-side rendering (will need a special context-edge npm package)
-      //outputType={"edge"}
     >
       <Component {...pageProps} />
     </UniformContext>
