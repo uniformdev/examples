@@ -17,6 +17,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@uniformdev/context": "^19.142.1",
     "@uniformdev/canvas-next": "^19.142.1",
     "@uniformdev/context-next": "^19.142.1",
     "@uniformdev/project-map": "^19.142.1",

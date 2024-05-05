@@ -10,7 +10,19 @@ export default new Router()
     caching: {
       cache_key: { include_cookies: ["ufvd"], include_all_query_params: true },
     },
-  }) // Disable caching for preview mode
+  })
+  .match("/(.*)", {
+    headers: {
+      set_request_headers: {
+        "x-0-geo-country-code": "%{geo_country}",
+        "x-0-geo-city": "%{geo_city}",
+        "x-0-geo-latitude": "%{geo_latitude}",
+        "x-0-geo-longitude": "%{geo_longitude}",
+        "x-0-geo-postal-code": "%{geo_postal_code}",
+      },
+    },
+  })
+  // Disable caching for preview mode
   .match(
     {
       cookies: {

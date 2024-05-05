@@ -16,11 +16,20 @@ class MyDocument extends Document<CustomDocumentProps> {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
-    const ip = (ctx.req.headers["x-forwarded-for"] as string)?.split(",")[0];
-    const geoResponse = await fetch(
-      `https://ipinfo.io/${ip}?token=insert-your-token-here`
-    );
-    const geoData = await geoResponse.json();
+    //const ip = (ctx.req.headers["x-forwarded-for"] as string)?.split(",")[0];
+    console.log("headers: ", JSON.stringify(ctx.req.headers, null, 2));
+
+    // TODO: replace
+    const geoData = {
+      country: "US",
+      region: "CA",
+      city: "San Francisco",
+      postal: "94105",
+    };
+    // const geoResponse = await fetch(
+    //   `https://ipinfo.io/${ip}?token=insert-your-token-here`
+    // );
+    // const geoData = await geoResponse.json();
     const { country, region, city, postal } = geoData || {};
     const quirks = {
       "country-code": country,
