@@ -1,18 +1,19 @@
 {
-	"name": "@uniformdev/pampers-edgeworker",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
+  "name": "@uniformdev/cloudflare-edgeworker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
     "start": "wrangler start",
-		"uniform:manifest": "uniform context manifest download --output ./src/uniform/context-manifest.json"
-	},
-	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20230419.0",
-		"@uniformdev/cli": "^19.106.1",
-		"@uniformdev/context-edge-cloudflare": "^19.106.1",
-		"typescript": "^5.0.4",
-		"wrangler": "^3.0.0"
-	}
+    "uniform:manifest": "uniform context manifest download --output ./src/uniform/context-manifest.json"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "@types/cookie": "^0.6.0",
+    "@uniformdev/cli": "^19.145.0",
+    "@uniformdev/context-edge": "^19.145.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.53.1"
+  }
 }
