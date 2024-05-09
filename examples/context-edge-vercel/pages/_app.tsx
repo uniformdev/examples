@@ -16,9 +16,11 @@ function MyApp({ Component, pageProps }: UniformAppProps) {
       // enabling edge mode only in production
       outputType={process.env.NODE_ENV === "development" ? "standard" : "edge"}
     >
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="leading-normal tracking-normal text-white gradient">
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </UniformContext>
   );
 }
