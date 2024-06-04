@@ -1,0 +1,26 @@
+composition:
+  _name: Toys
+  _id: 4789198f-0fc8-4799-bffb-9c1c273c400c
+  _slug: toys
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Toys
+  slots:
+    content:
+      - _id: f590b20d-6719-4e28-914a-53e8747d3441
+        type: hero
+        parameters:
+          $enr:
+            type: $enr
+            value:
+              - cat: cat
+                key: toys
+                str: 20
+          title:
+            type: text
+            value: Toys
+created: '2024-06-02T16:51:31.202334+00:00'
+modified: '2024-06-02T16:57:25.038819+00:00'
+pattern: false

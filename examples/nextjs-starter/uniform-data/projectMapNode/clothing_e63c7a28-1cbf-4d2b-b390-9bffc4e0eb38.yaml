@@ -1,0 +1,9 @@
+id: e63c7a28-1cbf-4d2b-b390-9bffc4e0eb38
+name: Clothing
+order: 300
+path: /clothing
+type: composition
+pathSegment: clothing
+data: {}
+compositionId: d04788d4-d99e-4477-aa4e-9247ac4d8ac4
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

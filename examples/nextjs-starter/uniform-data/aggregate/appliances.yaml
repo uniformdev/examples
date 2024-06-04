@@ -1,0 +1,7 @@
+id: appliances
+name: Appliances
+description: ''
+type: 0
+inputs:
+  - dim: cat_app
+    sign: +

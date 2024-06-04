@@ -1,0 +1,7 @@
+id: garden
+name: Garden
+description: ''
+type: 0
+inputs:
+  - dim: cat_garden
+    sign: +

@@ -1,0 +1,7 @@
+id: sport
+name: Sport
+description: ''
+type: 0
+inputs:
+  - dim: cat_sport
+    sign: +

@@ -1,0 +1,7 @@
+id: home
+name: Home
+description: ''
+type: 0
+inputs:
+  - dim: cat_home
+    sign: +

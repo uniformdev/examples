@@ -1,0 +1,26 @@
+composition:
+  _name: Tech
+  _id: 1591dd75-b861-4399-9839-94e9179056c3
+  _slug: tech
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Tech
+  slots:
+    content:
+      - _id: 634295d7-3cf4-4b51-be8a-22617e82c631
+        type: hero
+        parameters:
+          $enr:
+            type: $enr
+            value:
+              - cat: cat
+                key: tech
+                str: 20
+          title:
+            type: text
+            value: Tech
+created: '2024-06-04T01:01:30.617602+00:00'
+modified: '2024-06-04T01:02:25.693064+00:00'
+pattern: false

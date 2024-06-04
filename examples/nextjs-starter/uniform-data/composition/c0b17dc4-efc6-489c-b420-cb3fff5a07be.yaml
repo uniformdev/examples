@@ -1,7 +1,7 @@
 composition:
-  _name: Home
-  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
-  _slug: /
+  _name: Home (copy)
+  _id: c0b17dc4-efc6-489c-b420-cb3fff5a07be
+  _slug: /-copy/
   type: page
   parameters:
     metaTitle:
@@ -13,20 +13,6 @@ composition:
         type: $personalization
         slots:
           pz:
-            - _id: 7f0e439e-bb3c-417e-b0c9-ace59281c9c3
-              type: hero
-              parameters:
-                title:
-                  type: text
-                  value: Tech Matched
-                $pzCrit:
-                  type: $pzCrit
-                  value:
-                    crit:
-                      - l: tech
-                        r: '20'
-                        op: '>='
-                    name: ''
             - _id: 467376bd-dbec-45dc-89bd-faaced35d9e2
               type: hero
               parameters:
@@ -40,6 +26,9 @@ composition:
                       - l: clothing
                         r: '20'
                         op: '>='
+                      - l: clothing
+                        op: '>='
+                        rDim: toys
                     name: clothing
             - _id: 82917fd5-78f8-42b7-9bc8-93c6dbabde40
               type: hero
@@ -54,6 +43,9 @@ composition:
                       - l: toys
                         r: '20'
                         op: '>='
+                      - l: toys
+                        op: '>='
+                        rDim: clothing
                     name: toys
                 description:
                   type: richText
@@ -100,6 +92,6 @@ composition:
           trackingEventName:
             type: text
             value: Home Hero
-created: '2024-06-02T16:28:36.836865+00:00'
-modified: '2024-06-04T01:01:07.377174+00:00'
+created: '2024-06-03T23:51:05.784536+00:00'
+modified: '2024-06-03T23:51:05.784536+00:00'
 pattern: false

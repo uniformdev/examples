@@ -1,0 +1,26 @@
+composition:
+  _name: Clothing
+  _id: d04788d4-d99e-4477-aa4e-9247ac4d8ac4
+  _slug: clothing
+  type: page
+  parameters:
+    $enr:
+      type: $enr
+      value:
+        - cat: cat
+          key: clothing
+          str: 20
+    metaTitle:
+      type: text
+      value: Clothing
+  slots:
+    content:
+      - _id: 35290501-2dfc-4014-9cdf-3a810422ec0e
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Clothing
+created: '2024-06-02T16:52:05.09312+00:00'
+modified: '2024-06-02T16:57:40.693155+00:00'
+pattern: false

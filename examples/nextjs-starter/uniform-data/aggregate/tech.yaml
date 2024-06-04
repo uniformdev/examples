@@ -1,0 +1,7 @@
+id: tech
+name: Tech
+description: ''
+type: 0
+inputs:
+  - dim: cat_tech
+    sign: +

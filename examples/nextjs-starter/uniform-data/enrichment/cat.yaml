@@ -1,0 +1,18 @@
+id: cat
+name: Category
+cap: 100
+values:
+  - id: app
+    value: Appliances
+  - id: clothing
+    value: Clothing
+  - id: garden
+    value: Garden
+  - id: home
+    value: Home
+  - id: sport
+    value: Sport
+  - id: tech
+    value: Tech
+  - id: toys
+    value: Toys
