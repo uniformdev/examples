@@ -77,7 +77,16 @@ module.exports = {
   //     ]
   //   }
   // ],
-
+  origins: [
+    {
+      name: 'insights',
+      hosts: [
+        {
+          location: 'api.us-east.aws.tinybird.co',
+        },
+      ],
+    },
+  ],
   // Options for hosting serverless functions on Edgio
   // serverless: {
   //   // Set to true to include all packages listed in the dependencies property of package.json when deploying to Edgio.

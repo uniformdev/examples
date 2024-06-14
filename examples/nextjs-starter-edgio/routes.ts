@@ -25,6 +25,16 @@ export default new Router()
       },
     }
   )
-  .match("/v0/events", {
-    edge_function: "./edge-functions/insightsRewriter.js",
+  .post("/v0/events", {
+    origin: {
+      set_origin: "insights",
+    },
+    headers: {
+      set_request_headers: {
+        Authorization: `Bearer ${process.env.UNIFORM_INSIGHTS_KEY}`,
+      },
+    },
   });
+// .match("/v0/events", {
+//   edge_function: "./edge-functions/insightsRewriter.js",
+// });
