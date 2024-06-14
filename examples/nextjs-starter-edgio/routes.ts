@@ -24,4 +24,7 @@ export default new Router()
         bypass_client_cache: true,
       },
     }
-  );
+  )
+  .match("/v0/events", {
+    edge_function: "./edge-functions/insightsRewriter.js",
+  });
