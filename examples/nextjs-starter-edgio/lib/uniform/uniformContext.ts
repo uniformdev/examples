@@ -4,6 +4,7 @@ import {
   ContextPlugin,
   enableDebugConsoleLogDrain,
   enableContextDevTools,
+  enableUniformInsights,
 } from "@uniformdev/context";
 import { NextCookieTransitionDataStore } from "@uniformdev/context-next";
 import { NextPageContext } from "next";
@@ -20,6 +21,19 @@ export default function createUniformContext(
     enableContextDevTools(),
     enableDebugConsoleLogDrain("debug"),
   ];
+
+  if (typeof window !== "undefined" && window.document) {
+    plugins.push(
+      enableUniformInsights({
+        endpoint: {
+          apiKey: "",
+          type: "api",
+          host: window.location.protocol + "//" + window.location.host,
+        },
+      })
+    );
+  }
+
   const context = new Context({
     defaultConsent: true,
     manifest: manifest as ManifestV2,
