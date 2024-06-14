@@ -1,4 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
+import QurksSetter from "./uniform/QuirksSetter";
+import QuirksGetter from "./uniform/QuirksGetter";
 
 export default function Layout() {
   return (
@@ -17,6 +19,8 @@ export default function Layout() {
       </nav>
       <hr />
       <Outlet />
+      <QurksSetter />
+      <QuirksGetter />
     </div>
   );
 }
