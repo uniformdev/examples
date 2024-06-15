@@ -18,7 +18,7 @@ composition:
               parameters:
                 title:
                   type: text
-                  value: We are launched!
+                  value: Personalized hero
                 $pzCrit:
                   type: $pzCrit
                   value:
@@ -43,13 +43,135 @@ composition:
                           children:
                             - mode: normal
                               text: >-
-                                This content is personalized for your because
-                                you have a score for the Launch signal.
+                                This content is personalized for your session
+                                since you have triggered a signal called "
                               type: text
                               style: ''
                               detail: 0
                               format: 0
                               version: 1
+                            - mode: normal
+                              text: Launch
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: '"  (via query string). '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                This is a very simple example, you can
+                                personalize based on more complex criteria and
+                                external data.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'Check out our '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: https://docs.uniform.app/docs
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: docs
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 1
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: ' and '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: >-
+                                  https://docs.uniform.app/docs/recipes/marketers/getting-started-with-simple-personalization
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: recipes
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 1
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: ' for more use cases.'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                To inspect the current visitor profile and
+                                simulate different state, download and install 
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: >-
+                                  https://chromewebstore.google.com/detail/uniform-context/dcmlokofjljnfjcknpmhjocogllfbhkg
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: this browser extension.
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 1
+                                  version: 1
+                              direction: ltr
                           direction: ltr
                       direction: ltr
             - _id: 94b108a0-8e52-4a12-8e21-980c98d4da3d
@@ -57,7 +179,7 @@ composition:
               parameters:
                 title:
                   type: text
-                  value: Hello world.
+                  value: Hello world!
                 description:
                   type: richText
                   value:
@@ -73,20 +195,9 @@ composition:
                           version: 1
                           children:
                             - mode: normal
-                              text: This is default content shown to every visitor.
-                              type: text
-                              style: ''
-                              detail: 0
-                              format: 0
-                              version: 1
-                          direction: ltr
-                        - type: paragraph
-                          format: ''
-                          indent: 0
-                          version: 1
-                          children:
-                            - mode: normal
-                              text: 'Trigger campaign-based personalization '
+                              text: >-
+                                This is default content. To trigger a simple
+                                personalization 
                               type: text
                               style: ''
                               detail: 0
@@ -101,7 +212,7 @@ composition:
                               version: 1
                               children:
                                 - mode: normal
-                                  text: now
+                                  text: click here
                                   type: text
                                   style: ''
                                   detail: 0
@@ -125,5 +236,5 @@ composition:
             type: text
             value: Home Hero
 created: '2023-02-16T15:35:55.638176+00:00'
-modified: '2024-02-02T20:09:24.913697+00:00'
+modified: '2024-04-12T00:50:36.82462+00:00'
 pattern: false
