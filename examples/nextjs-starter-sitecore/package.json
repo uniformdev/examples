@@ -1,41 +1,29 @@
 {
-  "name": "@uniformdev/nextjs-starter",
+  "name": "@uniformdev/nextjs-starter-sitecore",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "run-s download:manifest next:dev",
+    "dev": "run-s uniform:manifest next:dev",
     "next:dev": "next dev",
-    "build": "run-s download:manifest next:build",
+    "build": "run-s uniform:manifest next:build",
     "next:build": "next build",
-    "download:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
-    "uniform:pull:signals": "uniform context signal pull ./content/signals",
-    "uniform:pull:components": "uniform canvas component pull ./content/components",
-    "uniform:pull:compositions": "uniform canvas composition pull ./content/compositions",
-    "uniform:pull:project-map-definitions": "uniform project-map definition pull ./content/map/definitions",
-    "uniform:pull:project-map-nodes": "uniform project-map node pull ./content/map/nodes",
-    "uniform:pull": "run-s uniform:pull:signals uniform:pull:components uniform:pull:compositions uniform:pull:project-map-definitions uniform:pull:project-map-nodes",
-    "uniform:push:signals": "uniform context signal push ./content/signals",
-    "uniform:push:components": "uniform canvas component push ./content/components",
-    "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
-    "uniform:push:project-map-definitions": "uniform project-map definition push ./content/map/definitions",
-    "uniform:push:project-map-nodes": "uniform project-map node push ./content/map/nodes",
-    "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
-    "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions uniform:push:project-map-definitions uniform:push:project-map-nodes",
-    "start": "next start",
-    "start:stackblitz": "npm install && next dev"
+    "uniform:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push",
+    "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^19.48.0",
-    "@uniformdev/canvas-next": "^19.48.0",
-    "@uniformdev/canvas-react": "^19.48.0",
+    "@uniformdev/canvas": "^19.161.0",
+    "@uniformdev/canvas-next": "^19.161.0",
+    "@uniformdev/canvas-react": "^19.161.0",
     "@uniformdev/canvas-sitecore": "19.3.0",
-    "@uniformdev/cli": "^19.48.0",
-    "@uniformdev/context": "^19.48.0",
-    "@uniformdev/context-devtools": "^19.48.0",
-    "@uniformdev/context-next": "^19.48.0",
-    "@uniformdev/context-react": "^19.48.0",
-    "@uniformdev/project-map": "^19.48.0",
-    "next": "^13.4.5",
+    "@uniformdev/cli": "^19.161.0",
+    "@uniformdev/context": "^19.161.0",
+    "@uniformdev/context-devtools": "^19.161.0",
+    "@uniformdev/context-next": "^19.161.0",
+    "@uniformdev/context-react": "^19.161.0",
+    "@uniformdev/project-map": "^19.161.0",
+    "next": "^14.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -44,9 +32,5 @@
     "@types/react": "^18.0.15",
     "npm-run-all": "^4.1.5",
     "typescript": "^5.1.3"
-  },
-  "stackblitz": {
-    "startCommand": "npm run start:stackblitz",
-    "compileTrigger": "save"
   }
 }
