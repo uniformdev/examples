@@ -14,8 +14,8 @@ export default new Router()
   .match(
     {
       cookies: {
-        __prerender_bypass: /.*/g,
-        __next_preview_data: /.*/g,
+        __prerender_bypass: /.+/g,
+        __next_preview_data: /.+/g,
       },
     },
     {
