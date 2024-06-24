@@ -1,18 +1,36 @@
 import { useUniformContext } from "@uniformdev/context-react";
+import React from "react";
 
 export default function QurksSetter() {
   const { context } = useUniformContext();
-  const onClick = async (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
-    e.preventDefault();
-    await context.update({
+
+  const fetchNearestArea = async (uniformContext: any) => {
+    await uniformContext.update({
       quirks: {
-        city: "Montreal",
-        loyaltyLevel: "Gold",
+        latitude: "123",
+        longitude: "456",
       },
     });
-    window.location.reload();
   };
-  return <button onClick={onClick}>Set Quirks</button>;
+
+  React.useEffect(() => {
+    fetchNearestArea(context);
+  }, [context]);
+
+  return (
+    <>
+      <pre>
+        {JSON.stringify(
+          { quirks: context.quirks, scores: context.scores },
+          null,
+          2
+        )}
+      </pre>
+      {/* <button
+        onClick={async () => {
+          await fetchNearestArea();
+        }}
+      >Load</button> */}
+    </>
+  );
 }
