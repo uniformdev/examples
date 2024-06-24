@@ -20,7 +20,7 @@ export default function Layout() {
       <hr />
       <Outlet />
       <QurksSetter />
-      <QuirksGetter />
+      {/* <QuirksGetter /> */}
     </div>
   );
 }
