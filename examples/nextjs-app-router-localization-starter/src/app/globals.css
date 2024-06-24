@@ -35,10 +35,16 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
-.navigation span {
-  padding-left: 2rem;
+.navigation a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.navigation a.active {
+  color: #438fd5;
 }
 
 .main {
