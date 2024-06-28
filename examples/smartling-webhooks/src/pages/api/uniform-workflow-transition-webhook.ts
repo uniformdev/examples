@@ -110,7 +110,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           console.log(`translation for ${uniformLanguage} is ready`);
           translationPayloads.push({
             payload: translationPayload,
-            fileUri: `${entity._name}__${uniformLanguage}__${v4()}.json`,
+            fileUri: `${getJobNamePrefix({
+              entityId: payloadObject.entity.id,
+              entityType: payloadObject.entity.type,
+              slug: payloadObject.entity.name,
+              projectId: payloadObject.project.id,
+            })}__${uniformLanguage}__${new Date().toISOString()}.json`,
             targetLocale: uniformMappedLocales[uniformLanguage],
           });
         } else {
@@ -123,7 +128,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const jobClient = apiBuilder.build(SmartlingJobsApi);
 
     const params = new CreateJobParameters({
-      jobName: `${payloadObject.entity.name}__${payloadObject.entity.type}__${v4()}`,
+      jobName: `${getJobNamePrefix({
+        entityId: payloadObject.entity.id,
+        entityType: payloadObject.entity.type,
+        slug: payloadObject.entity.name,
+        projectId: payloadObject.project.id,
+      })}__${new Date().toISOString()}`,
       targetLocaleIds: Object.values(uniformMappedLocales),
       callbackUrl: uniformSmartlingWebhookCallbackUrl,
       callbackMethod: 'GET',
@@ -256,6 +266,21 @@ const resolveUniformEntityFromWebhook = async (
 
     return { translationEntityType: 'entry' };
   }
+};
+
+// If you want to see status of jobs in Smartling Integration UI, you have to keep this job name prefix format
+export const getJobNamePrefix = ({
+  entityId,
+  entityType,
+  slug,
+  projectId,
+}: {
+  entityId: string;
+  entityType: string;
+  slug: string;
+  projectId: string;
+}) => {
+  return `${slug}-${entityType}-${entityId}-${projectId}`;
 };
 
 const smartlingJsonPayloadSettings = {
