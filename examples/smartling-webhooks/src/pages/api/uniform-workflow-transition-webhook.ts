@@ -5,6 +5,7 @@ import {
   getCompositionForTranslation,
   getEntryForTranslation,
 } from '@uniformdev/tms-sdk';
+import { Webhook } from "svix";
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { v4 } from 'uuid';
 import fs from 'fs';
@@ -38,6 +39,7 @@ const uniformSmartlingWebhookCallbackUrl =
   process.env.SMARTLING_WEBHOOK_URL ?? throwError('no SMARTLING_WEBHOOK_URL');
 const uniformToSmartlingLanguageMap =
   process.env.UNIFORM_TO_SMARTLING_LOCALE_MAPPING ?? throwError('no UNIFORM_TO_SMARTLING_LOCALE_MAPPING');
+const uniformSvixSecret = process.env.SVIX_SECRET ?? throwError('no SVIX_SECRET');
 
 const smartlingUserId = process.env.SMARTLING_USER_ID ?? throwError('no SMARTLING_USER_ID');
 const smartlingUserSecret = process.env.SMARTLING_USER_SECRET ?? throwError('no SMARTLING_USER_SECRET');
@@ -48,6 +50,21 @@ const uniformWorkflowStageIdReadyForTranslations =
   throwError('no WORKFLOW_LOCKED_FOR_TRANSLATION_STAGE_ID');
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  const headers = req.headers as Record<string, string>;
+  const wh = new Webhook(uniformSvixSecret);
+  try {
+    wh.verify(JSON.stringify(req.body), headers);
+    console.log('payload verified')
+  } catch (err) {
+    console.error(err);
+    res
+      .status(400)
+      .send(
+        JSON.stringify({ reason: "webhook payload was not verified", err })
+      );
+    return;
+  }
+
   const apiBuilder = new SmartlingApiClientBuilder()
     .setBaseSmartlingApiUrl('https://api.smartling.com')
     .authWithUserIdAndUserSecret(smartlingUserId, smartlingUserSecret);
