@@ -16,6 +16,7 @@
     "@uniformdev/tms-sdk": "19.164.0",
     "@uniformdev/webhooks": "19.164.0",
     "smartling-api-sdk-nodejs": "2.11.0",
+    "svix": "^1.24.0",
     "uuid": "9.0.1"
   },
   "devDependencies": {
