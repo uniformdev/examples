@@ -21,7 +21,7 @@ const userSecret = process.env.SMARTLING_USER_SECRET || throwError('no SMARTLING
 const userId = process.env.SMARTLING_USER_ID || throwError('no SMARTLING_USER_ID');
 
 const uniformAPIKey = process.env.UNIFORM_API_KEY || throwError('no UNIFORM_API_KEY');
-const uniformCLIBaseUrl = process.env.UNIFORM_CLI_BASE_URL || throwError('no UNIFORM_CLI_BASE_URL');
+const uniformCLIBaseUrl = process.env.UNIFORM_CLI_BASE_URL;
 
 // There two env variables are required if you are implementing automated translation via Uniform Workflow
 const workflowId = process.env.WORKFLOW_ID ? process.env.WORKFLOW_ID : undefined;
