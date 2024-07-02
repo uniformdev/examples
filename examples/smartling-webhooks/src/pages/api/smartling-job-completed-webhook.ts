@@ -125,10 +125,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           console.log(`skip: can not find ${entityType} (${entityId})`);
         },
         onNotTranslatedResult: ({ updated, errorKind, errorText }) => {
-          if (!updated) {
-            console.log('Translation has no updates');
-          } else if (errorKind !== undefined) {
+          if (errorKind !== undefined) {
             console.warn(errorText || 'Unknown error');
+          } else if (!updated) {
+            console.log('Translation has no updates');
           }
         },
       });

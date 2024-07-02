@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3003",
+    "dev": "npm run validate:env && next dev -p 3003",
     "ngrok": "ngrok http http://localhost:3003",
     "build": "next build",
-    "start": "next start"
+    "start": "npm run validate:env && next start",
+    "validate:env": "node ./scripts/validateEnvironmentVariables.js"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@types/react": "18.2.55",
     "@types/react-dom": "18.2.19",
-    "@types/uuid": "9.0.4"
+    "@types/uuid": "9.0.4",
+    "dotenv": "16.3.1"
   }
 }
