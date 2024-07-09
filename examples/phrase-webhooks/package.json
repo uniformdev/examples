@@ -1,0 +1,30 @@
+{
+  "name": "phrase-webhooks",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run validate:env && next dev -p 3002",
+    "build": "next build",
+    "start": "npm run validate:env && next start",
+    "lint": "next lint",
+    "validate:env": "node ./scripts/validateEnv.js"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "19.166.1",
+    "@uniformdev/tms-sdk": "19.166.1",
+    "@uniformdev/tms-phrase": "19.166.1",
+    "@uniformdev/webhooks": "19.166.1",
+    "micro": "^10.0.1",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "svix": "^1.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5",
+    "dotenv": "16.3.1"
+  }
+}
