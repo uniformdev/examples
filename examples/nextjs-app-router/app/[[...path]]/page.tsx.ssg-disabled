@@ -5,10 +5,7 @@ import {
 } from "@uniformdev/canvas-next-rsc";
 import { resolveComponent } from "@/uniform/resolve";
 
-// TODO: Uncomment this to enable static site generation mode
-// export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
-
-export const runtime = "edge";
+export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 export default async function HomePage(props: PageParameters) {
   const route = await retrieveRoute(props);
@@ -17,12 +14,9 @@ export default async function HomePage(props: PageParameters) {
       {...props}
       route={route}
       resolveComponent={resolveComponent}
-      // TODO: change mode to "static" to enable static site generation
-      // mode="static"
-      mode="server"
+      mode="static"
     />
   );
 }
 
-// TODO: Uncomment this when static site generation is enabled
-// export const dynamic = 'force-static';
+export const dynamic = 'force-static';

@@ -18,7 +18,7 @@ composition:
               parameters:
                 title:
                   type: text
-                  value: We are launched!
+                  value: Personalized content
                 $pzCrit:
                   type: $pzCrit
                   value:
@@ -29,13 +29,26 @@ composition:
                     name: 'Hero: We are launched!'
                 description:
                   type: text
-                  value: You are seeing a personalized message.
+                  value: >-
+                    This content is personalized for your session since you have
+                    triggered a signal called "Launch"  (via query string). 
+
+
+                    This is a very simple example, you can personalize based on
+                    more complex criteria and external data.
+
+                    Check out our docs and recipes for more use cases.
+
+
+                    To inspect the current visitor profile and simulate
+                    different state, download and install this browser
+                    extension.
             - _id: 3f20cbcc-b3d9-4213-9729-bfa79b201080
               type: hero
               parameters:
                 title:
                   type: text
-                  value: Welcome!
+                  value: Default content
                 description:
                   type: text
                   value: >-
@@ -49,5 +62,5 @@ composition:
             type: text
             value: Home Hero
 created: '2023-06-29T04:47:27.348771+00:00'
-modified: '2023-11-09T02:01:34.802199+00:00'
+modified: '2024-06-19T02:57:05.767232+00:00'
 pattern: false
