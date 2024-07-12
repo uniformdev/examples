@@ -33,7 +33,7 @@ function throwError(msg: string): string {
 }
 
 const uniformApiKey = process.env.UNIFORM_API_KEY ?? throwError('no UNIFORM_API_KEY');
-const uniformApiHost = process.env.UNIFORM_CLI_BASE_URL ?? throwError('no UNIFORM_CLI_BASE_URL');
+const uniformApiHost = process.env.UNIFORM_CLI_BASE_URL;
 const uniformSourceLocale = process.env.UNIFORM_SOURCE_LOCALE ?? throwError('no UNIFORM_SOURCE_LOCALE');
 const uniformSmartlingWebhookCallbackUrl =
   process.env.SMARTLING_WEBHOOK_URL ?? throwError('no SMARTLING_WEBHOOK_URL');
