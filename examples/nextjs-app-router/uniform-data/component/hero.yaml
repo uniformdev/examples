@@ -10,16 +10,40 @@ parameters:
     helpText: ''
     typeConfig:
       required: true
+    localizable: true
   - id: description
     name: Description
-    type: text
+    type: richText
     helpText: ''
     typeConfig:
-      multiline: true
-      linesCount: '4'
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+    localizable: true
 useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2023-06-29T04:47:25.223883+00:00'
-updated: '2023-09-11T15:04:10.49943+00:00'
+created: '2023-02-16T15:35:55.091438+00:00'
+updated: '2024-02-02T20:07:35.357979+00:00'
