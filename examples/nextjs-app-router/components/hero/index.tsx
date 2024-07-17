@@ -1,5 +1,6 @@
 import {
   ComponentProps,
+  UniformRichText,
   UniformText,
 } from "@uniformdev/canvas-next-rsc/component";
 import { Parameters, Slots } from "./props";
@@ -18,9 +19,8 @@ export const HeroComponent = ({
         className="title"
         placeholder="Enter hero title"
       />
-      <UniformText
+      <UniformRichText
         component={component}
-        context={context}
         parameterId="description"
         className="description"
         placeholder="Enter hero description"

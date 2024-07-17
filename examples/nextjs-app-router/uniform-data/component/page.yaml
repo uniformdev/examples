@@ -10,14 +10,7 @@ parameters:
     helpText: ''
     typeConfig:
       required: false
-  - id: metaDescription
-    name: Meta Description
-    type: text
-    helpText: ''
-    typeConfig:
-      required: false
-      multiline: true
-      linesCount: '4'
+    localizable: true
 useTeamPermissions: true
 slots:
   - id: content
@@ -33,7 +26,6 @@ slugSettings:
   required: 'yes'
   regularExpression: ''
   regularExpressionMessage: ''
-titleParameter: metaTitle
 canBeComposition: true
-created: '2023-06-29T04:47:25.676613+00:00'
-updated: '2023-09-11T15:04:10.49943+00:00'
+created: '2023-02-16T15:35:54.842144+00:00'
+updated: '2024-02-02T20:07:45.857304+00:00'
