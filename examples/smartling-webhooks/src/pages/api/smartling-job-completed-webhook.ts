@@ -50,6 +50,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     new ListBatchesParameters({ translationJobUid, limit: 1, status: 'COMPLETED' })
   );
 
+  if (lastBatch.items.length === 0) {
+    console.log(`No completed batches found in project "${projectId}". Please verify Smartling credentials and project ID.`);
+    res.status(400).json('No completed batches found');
+    return;
+  }
+
   const batchInfo = lastBatch.items[0];
   const batchDetails = await jobBatchesClient.getBatchStatus(projectId, batchInfo.batchUid);
 
@@ -134,7 +140,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
       translationsStatus[fileInfo.fileUri] = translationMerged;
     } catch (e) {
-      console.error('Error processing file', { exception: e, fileContent: file });
+      console.error('Error processing file', { exception: e, fileUri: fileInfo.fileUri });
       translationsStatus[fileInfo.fileUri] = false;
     }
   }
