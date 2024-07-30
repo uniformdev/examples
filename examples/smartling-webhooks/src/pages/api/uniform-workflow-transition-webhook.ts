@@ -112,7 +112,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             payload: translationPayload,
             fileUri: `${getJobNamePrefix({
               entityId: payloadObject.entity.id,
-              entityType: payloadObject.entity.type,
+              entityType: payloadObject.entity.type === 'component' ? 'composition' : 'entry',
               slug: payloadObject.entity.name,
               projectId: payloadObject.project.id,
             })}__${uniformLanguage}__${new Date().toISOString()}.json`,
