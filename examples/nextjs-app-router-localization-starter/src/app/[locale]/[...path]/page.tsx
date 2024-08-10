@@ -5,9 +5,7 @@ import Composition from "@/components/composition";
 import { getStaticParams } from "@/lib/uniform/utils";
 
 export async function generateStaticParams() {
-  const params = await getStaticParams();
-  console.log(JSON.stringify({ params }));
-  return params;
+  return await getStaticParams();
 }
 
 type Props = {

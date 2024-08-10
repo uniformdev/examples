@@ -1,34 +1,30 @@
 import { ProjectMapClient } from "@uniformdev/project-map";
 
-export async function getStaticParams() {
+export async function getStaticParams(defaultLocale: string = "en") {
     const client = getProjectMapClient();
     const { nodes } = await client.getNodes({});
-    console.log({ nodes });
-    const resolvedPaths: string[] = [];
+    const resolvedPaths: { path: string[], locale: string }[] = [];
 
     if (nodes) {
         for (let i = 0; i < nodes.length; i++) {
             const node = nodes[i];
-            resolvedPaths.push(node.path.replace("/:locale", "/"));
+            const path = node.path.replace("/:locale", "/");
+            if (path !== "/") {
+                resolvedPaths.push({ path: path.split('/').filter(Boolean), locale: defaultLocale });
+
+                // adding localized paths
+                const locales = node.locales;
+                if (locales) {
+                    Object.keys(locales).forEach((locale) => {
+                        resolvedPaths.push({ path: locales[locale].pathSegment.split('/').filter(Boolean), locale: locale });
+                    })
+                }
+            }
         }
     }
 
-    const paths: any = [];
-
-    resolvedPaths?.forEach((path) => {
-        paths.push({
-            path: path.split('/').filter(Boolean),
-            locale: "en"
-        });
-        paths.push({
-            path: path.split('/').filter(Boolean),
-            locale: "de"
-        });
-    });
-
-    return paths;
+    return resolvedPaths;
 };
-
 
 export const getProjectMapClient = () => {
     const manifestClient = new ProjectMapClient({

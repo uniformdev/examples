@@ -10,7 +10,6 @@ export default async function Composition({
   path: string;
 }) {
   const routePath = path !== '/' ? `${locale}/${path}` : locale;
-  console.log({routePath});
   const params = {params: {path: routePath}};
   const route = await retrieveRoute(params);
 
