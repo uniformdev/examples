@@ -1,0 +1,13 @@
+id: 5a22e3e0-7215-4960-b663-f7d951aa2419
+name: Hello
+order: 500
+path: /:locale/hello
+type: composition
+pathSegment: hello
+data: {}
+compositionId: ec19250c-04ca-4774-ba6a-c5e675ea4249
+locales:
+  de:
+    name: Hallo
+    pathSegment: hallo
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

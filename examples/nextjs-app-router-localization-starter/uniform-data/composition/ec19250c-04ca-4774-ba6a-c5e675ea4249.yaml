@@ -1,0 +1,21 @@
+composition:
+  _name: Hello
+  _id: ec19250c-04ca-4774-ba6a-c5e675ea4249
+  _slug: hello
+  type: page
+  slots:
+    content:
+      - _id: cbd2cf27-0506-42af-bc2d-6a3304cd704b
+        type: hero
+        parameters:
+          title:
+            type: text
+            locales:
+              de: Hallo Welt
+              en: Hello World
+  _locales:
+    - en
+    - de
+created: '2024-08-10T00:40:03.737544+00:00'
+modified: '2024-08-10T00:40:46.437254+00:00'
+pattern: false
