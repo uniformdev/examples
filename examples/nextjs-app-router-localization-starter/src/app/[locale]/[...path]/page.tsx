@@ -14,7 +14,7 @@ type Props = {
 
 export default function Home({ params: { locale, path } }: Props) {
   unstable_setRequestLocale(locale);
-  return <Composition locale={locale} path={path.join("")} />;
+  return <Composition locale={locale} path={path.join("/")} />;
 }
 
 export const dynamic = "force-static";
