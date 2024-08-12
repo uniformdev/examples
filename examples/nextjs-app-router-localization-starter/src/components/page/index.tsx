@@ -10,6 +10,6 @@ export const PageComponent = ({
   slots,
 }: ComponentProps<Parameters, Slots>) => {
   return (
-    <UniformSlot context={context} data={component} slot={slots.content} />
+    <UniformSlot context={context} data={component} slot={slots.pageContent} />
   );
 };
