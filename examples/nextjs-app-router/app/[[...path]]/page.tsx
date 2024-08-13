@@ -1,28 +1,36 @@
+// IMPORTANT This is SSR-enabled page handler. If you are looking for the SSG-enabled page handler, please use `./page.tsx.ssg-disabled` instead.
 import {
   UniformComposition,
   PageParameters,
   retrieveRoute,
+  ContextUpdateTransfer,
+  createServerUniformContext,
 } from "@uniformdev/canvas-next-rsc";
 import { resolveComponent } from "@/uniform/resolve";
-
-// TODO: Uncomment this to enable static site generation mode
-// export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
-
-export const runtime = "edge";
+import { QuirksSetter } from "@/components/QuirksSetter";
 
 export default async function HomePage(props: PageParameters) {
   const route = await retrieveRoute(props);
+  const serverContext = await createServerUniformContext({
+    searchParams: props.searchParams,
+  });
   return (
-    <UniformComposition
-      {...props}
-      route={route}
-      resolveComponent={resolveComponent}
-      // TODO: change mode to "static" to enable static site generation
-      // mode="static"
-      mode="server"
-    />
+    <>
+      <ContextUpdateTransfer
+        serverContext={serverContext}
+        update={{
+          quirks: {
+            province: "quebec",
+          },
+        }}
+      />
+      <UniformComposition
+        {...props}
+        route={route}
+        resolveComponent={resolveComponent}
+        mode="server"
+      />
+      <QuirksSetter />
+    </>
   );
 }
-
-// TODO: Uncomment this when static site generation is enabled
-// export const dynamic = 'force-static';
