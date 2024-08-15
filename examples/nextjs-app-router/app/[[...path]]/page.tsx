@@ -28,6 +28,7 @@ export default async function HomePage(props: PageParameters) {
         {...props}
         route={route}
         resolveComponent={resolveComponent}
+        serverContext={serverContext}
         mode="server"
       />
       <QuirksSetter />
