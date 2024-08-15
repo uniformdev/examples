@@ -1,5 +1,29 @@
-import { LocaleClient, LocalesGetResponse } from "@uniformdev/canvas";
+import { flattenValues, LocaleClient, LocalesGetResponse, ResolvedRouteGetResponse, RootComponentInstance, RouteGetResponseEdgehancedComposition } from "@uniformdev/canvas";
 import { ProjectMapClient } from "@uniformdev/project-map";
+
+export const isRouteWithoutErrors = (
+    route: ResolvedRouteGetResponse
+): route is RouteGetResponseEdgehancedComposition =>
+    "compositionApiResponse" in route &&
+    route.compositionApiResponse !== undefined &&
+    "composition" in route.compositionApiResponse;
+
+export const getPageMetaData = (compositionResponse: RouteGetResponseEdgehancedComposition) => {
+    const { composition } = compositionResponse.compositionApiResponse || {};
+    const compositionParameters = flattenValues(composition);
+    const {
+        metaTitle,
+        metaDescription,
+        pageKeywords,
+    } = compositionParameters || {};
+
+    return {
+        metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
+        title: metaTitle as string ?? 'Home',
+        description: metaDescription as string,
+        keywords: pageKeywords as string,
+    };
+};
 
 export async function getLocales(): Promise<string[]> {
     const client = new LocaleClient({
