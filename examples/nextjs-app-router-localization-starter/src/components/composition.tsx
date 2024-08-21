@@ -1,6 +1,6 @@
 import { UniformComposition } from "@uniformdev/canvas-next-rsc";
 import { notFound } from "next/navigation";
-import { resolveComponent } from "../lib/uniform/componentResolver";
+import { resolveComponent } from "@/lib/uniform/componentResolver";
 import { getRouteData } from "@/lib/uniform/utils";
 
 export default async function Composition(params: {
