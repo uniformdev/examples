@@ -1,5 +1,15 @@
 import { flattenValues, LocaleClient, LocalesGetResponse, ResolvedRouteGetResponse, RootComponentInstance, RouteGetResponseEdgehancedComposition } from "@uniformdev/canvas";
 import { ProjectMapClient } from "@uniformdev/project-map";
+import { retrieveRoute } from "@uniformdev/canvas-next-rsc";
+import { RouteParams } from "@/app/[locale]/[...path]/page";
+
+export async function getRouteData(params: RouteParams): Promise<ResolvedRouteGetResponse> {
+    const { path, locale } = params;
+    const routePath = Array.isArray(path) ? `${locale}/${path.join("/")}` : locale;
+    const data = { params: { path: routePath } };
+    const routeData = await retrieveRoute(data);
+    return routeData;
+}
 
 export const isRouteWithoutErrors = (
     route: ResolvedRouteGetResponse
