@@ -1,30 +1,80 @@
+import { flattenValues, LocaleClient, LocalesGetResponse, ResolvedRouteGetResponse, RootComponentInstance, RouteGetResponseEdgehancedComposition } from "@uniformdev/canvas";
 import { ProjectMapClient } from "@uniformdev/project-map";
+import { retrieveRoute } from "@uniformdev/canvas-next-rsc";
+import { RouteParams } from "@/app/[locale]/[...path]/page";
 
-export async function getStaticParams(defaultLocale: string = "en") {
+export async function getRouteData(params: RouteParams): Promise<ResolvedRouteGetResponse> {
+    const { path, locale } = params;
+    const routePath = Array.isArray(path) ? `${locale}/${path.join("/")}` : locale;
+    const data = { params: { path: routePath } };
+    const routeData = await retrieveRoute(data);
+    return routeData;
+}
+
+export const isRouteWithoutErrors = (
+    route: ResolvedRouteGetResponse
+): route is RouteGetResponseEdgehancedComposition =>
+    "compositionApiResponse" in route &&
+    route.compositionApiResponse !== undefined &&
+    "composition" in route.compositionApiResponse;
+
+export const getPageMetaData = (compositionResponse: RouteGetResponseEdgehancedComposition) => {
+    const { composition } = compositionResponse.compositionApiResponse || {};
+    const compositionParameters = flattenValues(composition);
+    const {
+        metaTitle,
+        metaDescription,
+        pageKeywords,
+    } = compositionParameters || {};
+
+    return {
+        metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
+        title: metaTitle as string ?? 'Home',
+        description: metaDescription as string,
+        keywords: pageKeywords as string,
+    };
+};
+
+export async function getLocales(): Promise<string[]> {
+    const client = new LocaleClient({
+        apiKey: process.env.UNIFORM_API_KEY,
+        projectId: process.env.UNIFORM_PROJECT_ID,
+    });
+
+    const localeResponse: LocalesGetResponse = await client.get();
+
+    const { results: localeDefinitions } = localeResponse;
+    return localeDefinitions.map((locale) => locale.locale);
+}
+
+export async function getStaticParams() {
     const client = getProjectMapClient();
     const { nodes } = await client.getNodes({});
     const resolvedPaths: { path: string[], locale: string }[] = [];
-
+    const locales = await getLocales();
     if (nodes) {
         for (let i = 0; i < nodes.length; i++) {
             const node = nodes[i];
             const path = node.path.replace("/:locale", "/");
             if (path !== "/") {
-                resolvedPaths.push({ path: path.split('/').filter(Boolean), locale: defaultLocale });
-
-                // adding localized paths
-                const locales = node.locales;
-                if (locales) {
-                    Object.keys(locales).forEach((locale) => {
-                        resolvedPaths.push({ path: locales[locale].pathSegment.split('/').filter(Boolean), locale: locale });
-                    })
+                const nodeLocales = node.locales;
+                locales.forEach((locale: string) => {
+                    // if there are any locales defined for the node
+                    if (nodeLocales && Object.keys(nodeLocales).indexOf(locale) !== -1) {
+                        const nodePath = nodeLocales[locale].pathSegment.split('/').filter(Boolean);
+                        resolvedPaths.push({ path: nodePath, locale: locale });
+                    } else {
+                        resolvedPaths.push({ path: path.split('/').filter(Boolean), locale: locale });
+                    }
                 }
+                );
             }
         }
-    }
+    };
 
     return resolvedPaths;
-};
+}
+
 
 export const getProjectMapClient = () => {
     const manifestClient = new ProjectMapClient({

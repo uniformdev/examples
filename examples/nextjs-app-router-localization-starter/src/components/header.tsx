@@ -4,11 +4,13 @@ import Link from "next/link";
 
 export const Header = () => {
   const locale = useLocale();
+  // @ts-expect-error
   const t = useTranslations("Global");
 
   return (
     <>
       <Link href={`/${locale}`} className="self-start flex-1 text-blue-700">
+        {/* @ts-expect-error */}
         {t("homeLink")}
       </Link>
       <header className="navigation">
