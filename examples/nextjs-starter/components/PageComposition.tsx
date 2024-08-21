@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { RootComponentInstance } from "@uniformdev/canvas";
-import { UniformComposition, UniformSlot } from "@uniformdev/canvas-react";
+import { UniformComposition } from "@uniformdev/canvas-react";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
 import { UniformDeployedPreviewBanner } from "@/components/UniformDeployedPreviewBanner";
@@ -24,9 +24,7 @@ export default function PageComposition({
       <UniformDeployedPreviewBanner />
       <main className="main">
         <Navigation navLinks={navLinks} />
-        <UniformComposition data={composition}>
-          <UniformSlot name="content" />
-        </UniformComposition>
+        <UniformComposition data={composition} />
         <Footer />
       </main>
     </>
