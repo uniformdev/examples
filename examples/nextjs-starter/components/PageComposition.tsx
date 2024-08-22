@@ -5,6 +5,7 @@ import { UniformComposition } from "@uniformdev/canvas-react";
 import Navigation, { NavLink } from "./Navigation";
 import Footer from "./Footer";
 import { UniformDeployedPreviewBanner } from "@/components/UniformDeployedPreviewBanner";
+import { useSetViewportQuirk } from "@/hooks/useSetViewportQuirk";
 
 export interface PageCompositionProps {
   data: RootComponentInstance;
@@ -16,6 +17,8 @@ export default function PageComposition({
   navLinks,
 }: PageCompositionProps) {
   const { metaTitle } = composition?.parameters || {};
+  // set initial viewport quirk
+  useSetViewportQuirk();
   return (
     <>
       <Head>
