@@ -23,6 +23,7 @@ const Hero: React.FC<HeroProps> = () => (
     <UniformRichText
       parameterId="description"
       className="description"
+      placeholder="Hero description goes here"
       data-test-id="hero-description"
     />
   </div>
