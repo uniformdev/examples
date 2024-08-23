@@ -8,15 +8,15 @@ const getState = (preview: boolean | undefined) =>
 
 export async function getCompositionsForNavigation(preview: boolean) {
   if (!process.env.UNIFORM_API_KEY) {
-    throw "Uniform API key is not provided. Check your environment variables."
+    throw "Uniform API key is not provided. Check your environment variables.";
   }
   if (!process.env.UNIFORM_PROJECT_ID) {
-    throw "Uniform Project ID is not provided. Check your environment variables."
+    throw "Uniform Project ID is not provided. Check your environment variables.";
   }
   const projectMapClient = new ProjectMapClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,
-    apiHost: process.env.UNIFORM_CLI_BASE_URL,
+    apiHost: process.env.UNIFORM_API_HOST ?? process.env.UNIFORM_CLI_BASE_URL,
   });
 
   const response = await projectMapClient.getNodes({
