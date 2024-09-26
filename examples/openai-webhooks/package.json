@@ -1,0 +1,26 @@
+{
+  "name": "openai-webhooks",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run validate:env && next dev -p 3004",
+    "build": "next build",
+    "start": "npm run validate:env && next start",
+    "lint": "next lint",
+    "validate:env": "node ./scripts/validateEnv.js"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "19.186.1",
+    "@uniformdev/tms-sdk": "19.186.1",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5",
+    "dotenv": "16.3.1"
+  }
+}
