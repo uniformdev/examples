@@ -1,6 +1,6 @@
 {
-  "name": "smartling-webhooks",
-  "version": "0.0.0",
+  "name": "@uniformdev/tms-webhook-smartling",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "dev": "npm run validate:env && next dev -p 3003",

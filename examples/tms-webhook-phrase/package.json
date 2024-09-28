@@ -1,5 +1,5 @@
 {
-  "name": "phrase-webhooks",
+  "name": "@uniformdev/tms-webhook-phrase",
   "version": "0.0.0",
   "private": true,
   "scripts": {
