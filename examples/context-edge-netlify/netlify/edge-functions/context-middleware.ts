@@ -27,11 +27,14 @@ export default async (request: Request, netlifyContext: Context) => {
 
   const handler = createUniformEdgeHandler();
 
+  const { latitude, longitude, timezone } = netlifyContext.geo || {};
   const { processed, response } = await handler({
     context,
     request,
     response: originResponse,
-    quirks: buildNetlifyQuirks(netlifyContext),
+    quirks: {
+      ...buildNetlifyQuirks(netlifyContext), latitude, longitude, timezone
+    },
   });
 
   // logging, feel free to remove it
