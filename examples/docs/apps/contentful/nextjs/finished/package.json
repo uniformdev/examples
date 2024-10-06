@@ -28,7 +28,7 @@
     "@uniformdev/context": "^16.2.4",
     "@uniformdev/context-react": "^16.2.4",
     "contentful": "^9.1.32",
-    "cookie": "^0.4.2",
+    "cookie": "^0.7.0",
     "next": "^12.1.6",
     "nookies": "^2.5.2",
     "react": "^18.1.0",
