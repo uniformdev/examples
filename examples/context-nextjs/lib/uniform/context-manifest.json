@@ -1,0 +1,120 @@
+{
+  "project": {
+    "pz": {
+      "agg": {
+        "techies": {
+          "inputs": [
+            {
+              "dim": "1_dev"
+            }
+          ]
+        },
+        "nonTechies": {
+          "inputs": [
+            {
+              "dim": "1_mkt"
+            }
+          ]
+        },
+        "submitCallForPapers": {
+          "inputs": [
+            {
+              "dim": "callForPapers"
+            }
+          ]
+        }
+      },
+      "enr": {
+        "1": {
+          "cap": 100
+        },
+        "int": {
+          "cap": 100
+        }
+      },
+      "sig": {
+        "callForPapers": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "unfrmconf"
+                },
+                "queryName": "utm_campaign"
+              }
+            ]
+          }
+        },
+        "registrationComplete": {
+          "str": 100,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "CK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "true"
+                },
+                "cookieName": "unfrmconf_registered"
+              }
+            ]
+          }
+        },
+        "visitedDevelopers": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "path": {
+                  "cs": false,
+                  "op": "~",
+                  "rhs": "developers"
+                },
+                "type": "PV"
+              }
+            ]
+          }
+        },
+        "visitedSupport": {
+          "str": 10,
+          "cap": 100,
+          "dur": "s",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "path": {
+                  "cs": false,
+                  "op": "~",
+                  "rhs": "support"
+                },
+                "type": "PV"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {
+      "whyAttendTest": {}
+    }
+  }
+}
