@@ -8,6 +8,8 @@ This example is a good starting point to see how to add lower-level Uniform Cont
 
 1. `npm install` or `yarn`
 
+1. `npm run context:manifest` to update the manifest.
+
 1. Run the development server:
 
     ```bash

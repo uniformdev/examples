@@ -3,10 +3,8 @@
   "private": true,
   "scripts": {
     "start": "next start",
-    "dev": "run-s dev:next",
-    "dev:next": "next dev",
-    "build": "run-s build:next",
-    "build:next": "next build",
+    "dev": "next dev",
+    "build": "next build",
     "context:manifest": "uniform context manifest download --output ./lib/uniform/context-manifest.json",
     "export": "next export",
     "ci:build": "next build && next export",

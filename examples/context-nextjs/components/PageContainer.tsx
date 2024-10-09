@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { useUniformContext } from "@uniformdev/context-react";
 import { testVariations } from "@uniformdev/context";
 import { Inter, Roboto, Roboto_Mono } from "next/font/google";
@@ -10,7 +11,6 @@ const roboto = Roboto({
 });
 
 const defaultFont = Inter({ subsets: ["latin"] });
-
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 const fontVariants = [
@@ -18,22 +18,20 @@ const fontVariants = [
   { id: "roboto-mono", font: robotoMono },
 ];
 
-import { ReactNode } from "react";
-
 interface PageContainerProps {
   children: ReactNode;
 }
 
 export const PageContainer: React.FC<PageContainerProps> = ({ children }) => {
   const { context } = useUniformContext();
-  const variant = testVariations({
+  const winningVariant = testVariations({
     name: "fontTest",
     context,
     variations: fontVariants,
   });
-  console.log({ selectedFont: variant?.result ?? "default (Inter)" });
+  console.log({ selectedFont: winningVariant?.result ?? "default (Inter)" });
   return (
-    <main className={variant?.result?.font.className ?? defaultFont.className}>
+    <main className={winningVariant?.result?.font.className ?? defaultFont.className}>
       <div className="leading-normal tracking-normal text-white gradient">
         <Navbar />
         {children}

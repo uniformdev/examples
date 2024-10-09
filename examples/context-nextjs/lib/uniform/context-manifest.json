@@ -114,6 +114,7 @@
       }
     },
     "test": {
+      "whyAttendTest": {},
       "fontTest": {}
     }
   }
