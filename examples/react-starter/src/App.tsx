@@ -5,8 +5,10 @@ import { UniformContext, useUniformContext } from "@uniformdev/context-react";
 import { createUniformContext } from "./uniform/uniformContext";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./components/Home";
-import Support from "./components/Support";
+
+import HomePage from "./components/HomePage";
+import DevelopersPage from "./components/DevelopersPage";
+import MarketersPage from "./components/MarketersPage";
 
 const clientContext = createUniformContext();
 
@@ -39,8 +41,9 @@ function Container() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="support" element={<Support />} />
+        <Route index element={<HomePage />} />
+        <Route path="developers" element={<DevelopersPage />} />
+        <Route path="marketers" element={<MarketersPage />} />
         <Route path="*" element={<NoMatch />} />
       </Route>
     </Routes>

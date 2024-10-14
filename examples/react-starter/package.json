@@ -10,8 +10,8 @@
     "@types/node": "^16.18.98",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@uniformdev/context": "^19.145.0",
-    "@uniformdev/context-react": "^19.145.0",
+    "@uniformdev/context": "^19.191.0",
+    "@uniformdev/context-react": "^19.191.0",
     "cookie": "^0.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/cookie": "^0.6.0",
-    "@uniformdev/cli": "^19.145.0"
+    "@uniformdev/cli": "^19.191.0"
   },
   "scripts": {
     "start": "react-scripts start",
