@@ -1,0 +1,15 @@
+{
+  "project": {
+    "pz": {
+      "enr": {
+        "funnel": {
+          "cap": 100
+        },
+        "audience": {
+          "cap": 100
+        }
+      }
+    },
+    "test": {}
+  }
+}
