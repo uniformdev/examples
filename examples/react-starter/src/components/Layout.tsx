@@ -1,6 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import QurksSetter from "./uniform/QuirksSetter";
-import QuirksGetter from "./uniform/QuirksGetter";
+import ContextTools from "./uniform/ContextTools";
 
 export default function Layout() {
   return (
@@ -13,14 +12,17 @@ export default function Layout() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/support">Support</Link>
+            <Link to="/developers">For Developers</Link>
+          </li>
+          <li>
+            <Link to="/marketers">For Marketers</Link>
           </li>
         </ul>
       </nav>
       <hr />
       <Outlet />
-      <QurksSetter />
-      {/* <QuirksGetter /> */}
+      <hr />
+      <ContextTools />
     </div>
   );
 }
