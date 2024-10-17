@@ -1,18 +1,16 @@
 import {
   Context,
   ManifestV2,
-  enableContextDevTools,
   ContextPlugin,
-  enableDebugConsoleLogDrain,
 } from "@uniformdev/context";
 import { NextCookieTransitionDataStore } from "@uniformdev/context-next";
 import { NextPageContext } from "next";
 import manifest from "./context-manifest.json";
+import { customLogger } from "./plugins/customLogger/customLogger";
 
 export function createUniformContext(serverContext?: NextPageContext) {
   const plugins: ContextPlugin[] = [
-    enableContextDevTools(),
-    enableDebugConsoleLogDrain("debug"),
+    customLogger()
   ];
 
   const context = new Context({
