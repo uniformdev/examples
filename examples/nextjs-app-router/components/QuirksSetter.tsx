@@ -21,7 +21,7 @@ export const QuirksSetter = () => {
   return (
     <div>
       <strong>Current quirks:</strong>
-      <pre>{JSON.stringify(quirks)}</pre>
+      <pre>{JSON.stringify(quirks, null, 2)}</pre>
     </div>
   );
 };

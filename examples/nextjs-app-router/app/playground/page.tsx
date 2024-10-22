@@ -1,11 +1,6 @@
-import {
-  UniformPlayground,
-  UniformPlaygroundProps,
-} from "@uniformdev/canvas-next-rsc";
+import { UniformPlayground } from "@uniformdev/canvas-next-rsc";
 import { resolveComponent } from "@/uniform/resolve";
 
-export default function PlaygroundPage(props: {
-  searchParams: UniformPlaygroundProps["searchParams"];
-}) {
+export default function PlaygroundPage(props: any) {
   return <UniformPlayground {...props} resolveComponent={resolveComponent} />;
 }

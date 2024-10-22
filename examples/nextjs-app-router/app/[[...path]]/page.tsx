@@ -1,15 +1,13 @@
-// IMPORTANT This is SSR-enabled page handler. If you are looking for the SSG-enabled page handler, please use `./page.tsx.ssg-disabled` instead.
 import {
-  UniformComposition,
-  PageParameters,
-  retrieveRoute,
   ContextUpdateTransfer,
+  UniformComposition,
   createServerUniformContext,
+  retrieveRoute,
 } from "@uniformdev/canvas-next-rsc";
 import { resolveComponent } from "@/uniform/resolve";
 import { QuirksSetter } from "@/components/QuirksSetter";
 
-export default async function HomePage(props: PageParameters) {
+export default async function HomePage(props: any) {
   const route = await retrieveRoute(props);
   const serverContext = await createServerUniformContext({
     searchParams: props.searchParams,
@@ -28,7 +26,6 @@ export default async function HomePage(props: PageParameters) {
         {...props}
         route={route}
         resolveComponent={resolveComponent}
-        serverContext={serverContext}
         mode="server"
       />
       <QuirksSetter />
