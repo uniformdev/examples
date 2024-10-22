@@ -16,6 +16,7 @@ test('passes through data resource definition', async () => {
         dataResource: setupTestPreRequestDataResourceContext().dataResource,
         errors: [],
         warnings: [],
+        infos: [],
       },
     ],
   });
