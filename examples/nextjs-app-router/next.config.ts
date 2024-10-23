@@ -2,7 +2,9 @@ import { withUniformConfig } from '@uniformdev/canvas-next-rsc/config';
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-    /* config options here */
+    experimental: {
+        ppr: true,
+    }
 };
 
 export default withUniformConfig(nextConfig);
