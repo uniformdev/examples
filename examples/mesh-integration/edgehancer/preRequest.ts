@@ -37,7 +37,7 @@ import {
  * - adding `warnings` to a data resource. Warnings will be displayed in the UI; the data resource will still be requested.
  * - adding a `badge` to a data resource. The badge text will be displayed alongside the data resource when it is shown in the UI.
  */
-const preRequest: PreRequestHookFn = async ({ dataResources, fetchContext }) => {
+const preRequest: PreRequestHookFn = async ({ dataResources, fetchContext, dataSourceVariant }) => {
   return {
     dataResources: dataResources.map(({ dataResource }) => {
       // EXAMPLE: ignore a data resource if its archetype is ignore
@@ -49,6 +49,7 @@ const preRequest: PreRequestHookFn = async ({ dataResources, fetchContext }) => 
         dataResource,
         errors: [],
         warnings: [],
+        infos: [],
       };
 
       // EXAMPLE: swap API base URL if we are fetching for the editor UI, and the base URL is the httpbin reflection endpoint
@@ -84,6 +85,19 @@ const preRequest: PreRequestHookFn = async ({ dataResources, fetchContext }) => 
       // EXAMPLE: add a UI badge to the data resource if its archetype is badge (note: badges must be <= 12 characters)
       if (dataResource.archetype === 'badge') {
         result.dataResource.uiBadgeText = 'pre-enhanced';
+      }
+
+      // EXAMPLE: is case of draft mode, switch to preview API base url and change the authorization header to draft token
+      if (dataSourceVariant === 'unpublished' && result.dataResource.custom?.draftToken) {
+        result.dataResource.headers ??= [];
+        result.dataResource.headers.push({
+          key: 'authorization',
+          value: result.dataResource.custom?.draftToken as string,
+        });
+        result.dataResource.url = result.dataResource.url.replace(
+          'https://api.example.com',
+          'https://draft-api.example.com'
+        );
       }
 
       return result;
