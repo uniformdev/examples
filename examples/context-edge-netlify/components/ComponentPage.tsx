@@ -1,6 +1,7 @@
 import { createElement } from "react";
 import { Page } from "../lib/models";
 import componentMapping from "./componentMapping";
+import { CookieSetter } from "./CookieSetter";
 
 export type PageProps = { page: Page };
 
@@ -13,5 +14,6 @@ export const ComponentPage = ({ page }: PageProps) => (
           ...component,
         })
       )}
+    <CookieSetter />
   </>
 );
