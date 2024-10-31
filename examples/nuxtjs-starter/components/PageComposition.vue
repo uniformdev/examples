@@ -1,20 +1,7 @@
 <script lang="ts" setup>
-import type {
-  ComponentInstance,
-  RootComponentInstance,
-} from "@uniformdev/canvas";
-import { DefaultNotImplementedComponent } from "@uniformdev/canvas-vue";
-import Hero from "./Hero.vue";
-
+import type { RootComponentInstance } from "@uniformdev/canvas";
+import { resolveRenderer } from "./canvasComponents";
 import type { Props as NavigationProps } from "./Navigation.vue";
-
-// register your new components here
-const componentResolver = (component: ComponentInstance) => {
-  if (component.type == "hero") {
-    return Hero;
-  }
-  return DefaultNotImplementedComponent;
-};
 
 interface Props {
   composition: RootComponentInstance;
@@ -36,18 +23,19 @@ const title = metaTitle?.value as string;
     <Navigation :navLinks="navLinks" />
     <UniformComposition
       :data="composition"
-      :resolveRenderer="componentResolver"
-    >
-      <UniformSlot name="content" />
-    </UniformComposition>
+      :resolveRenderer="resolveRenderer"
+    />
     <Footer />
   </div>
 </template>
 
 <style scoped>
 .page {
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 </style>

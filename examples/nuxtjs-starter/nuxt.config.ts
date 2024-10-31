@@ -1,5 +1,5 @@
 import manifest from "./lib/uniform/contextManifest.json";
-import { ManifestV2 } from "@uniformdev/context";
+import type { ManifestV2 } from "@uniformdev/context";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -13,5 +13,6 @@ export default defineNuxtConfig({
     manifest: manifest as ManifestV2,
     defaultConsent: true,
     outputType: "standard",
+    playgroundPath: "/playground",
   },
 });

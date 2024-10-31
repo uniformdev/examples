@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import type { ComponentInstance } from "@uniformdev/canvas";
+import type { UniformRichTextNodeProps } from "@uniformdev/canvas-vue";
 
 interface Props {
   title: string;
-  description?: string;
+  description?: UniformRichTextNodeProps["node"];
   component: ComponentInstance;
 }
 
@@ -11,10 +12,8 @@ defineProps<Props>();
 </script>
 <template>
   <div>
-    <h1 class="title">{{ title }}</h1>
-    <div class="description">
-      <UniformRichText parameter-id="description" />
-    </div>
+    <UniformText parameterId="title" as="h1" class="title" />
+    <UniformRichText parameter-id="description" as="div" class="description" />
   </div>
 </template>
 

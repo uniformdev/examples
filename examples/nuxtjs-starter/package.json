@@ -23,18 +23,18 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@uniformdev/cli": "^19.48.0",
+    "@uniformdev/cli": "19.199.0",
     "npm-run-all": "4.1.5",
-    "nuxt": "^3.5.3",
-    "vue": "^3.3.4"
+    "nuxt": "3.5.3",
+    "vue": "3.3.4"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^19.48.0",
-    "@uniformdev/canvas-vue": "^19.48.0",
-    "@uniformdev/context": "^19.48.0",
-    "@uniformdev/context-vue": "^19.48.0",
-    "@uniformdev/project-map": "^19.48.0",
-    "@uniformdev/uniform-nuxt": "^19.48.0"
+    "@uniformdev/canvas": "19.199.0",
+    "@uniformdev/canvas-vue": "19.199.0",
+    "@uniformdev/context": "19.199.0",
+    "@uniformdev/context-vue": "19.199.0",
+    "@uniformdev/project-map": "19.199.0",
+    "@uniformdev/uniform-nuxt": "19.199.0"
   },
   "stackblitz": {
     "startCommand": "npm run start:stackblitz",
