@@ -12,8 +12,18 @@ defineProps<Props>();
 </script>
 <template>
   <div>
-    <UniformText parameterId="title" as="h1" class="title" />
-    <UniformRichText parameter-id="description" as="div" class="description" />
+    <UniformText
+      parameterId="title"
+      as="h1"
+      class="title"
+      placeholder="Insert a title"
+    />
+    <UniformRichText
+      parameter-id="description"
+      as="div"
+      class="description"
+      placeholder="Insert a description"
+    />
   </div>
 </template>
 

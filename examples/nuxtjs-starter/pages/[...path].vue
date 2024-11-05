@@ -4,7 +4,7 @@ const path = Array.isArray(route.params.path)
   ? `/${route.params.path.join("/")}`
   : `/${route.params.path}`;
 
-const { composition, error } = await useUniformEnhancedComposition({
+const { composition, error } = await useUniformComposition({
   projectMapNodePath: path,
 });
 const { data: navLinks } = useUniformProjectMapNodes();
