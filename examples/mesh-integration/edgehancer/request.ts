@@ -39,7 +39,7 @@ import {
  * - returning `surrogateKeys`. Surrogate keys can be used as an alternate cache key for the data resource, which can be purged together.
  *    For example you might return an external entity ID as a surrogate key, and then send a purge request for that key when the entity is updated externally.
  */
-const request: RequestHookFn = async ({ dataResources, fetchContext }) => {
+const request: RequestHookFn = async ({ dataResources, fetchContext, dataSourceVariant }) => {
   // NOTE: this example is demonstrating how to iteratively process a batch of data resources with the map() function.
   // It is also possible to implement batch requests to improve HTTP performance; see requestBatched.ts for an example of that.
   const results = dataResources.map<Promise<RequestEdgehancerDataResourceResolutionResult>>(
@@ -54,6 +54,7 @@ const request: RequestHookFn = async ({ dataResources, fetchContext }) => {
       const result: Required<RequestEdgehancerDataResourceResolutionResult> = {
         errors: [],
         warnings: [],
+        infos: [],
         result: {},
         surrogateKeys: [],
       };
@@ -106,6 +107,37 @@ const request: RequestHookFn = async ({ dataResources, fetchContext }) => {
       // EXAMPLE: result transformation, if the fetch result is an object inject a `custom-edgehancer-fetch-context` property
       if (typeof result.result === 'object' && !Array.isArray(result.result)) {
         result.result['custom-edgehancer-fetch-context'] = fetchContext;
+      }
+
+      // EXAMPLE: add custom markers to the results if we are in draft mode
+      if (dataSourceVariant === 'unpublished' && result.result) {
+        if (typeof result.result === 'object' && !Array.isArray(result.result)) {
+          result.result['isDraft'] = true;
+          result.infos.push('Draft mode enabled for single result');
+        } else if (
+          Array.isArray(result.result) &&
+          result.result.length > 0 &&
+          typeof result.result[0] === 'object'
+        ) {
+          result.infos.push('Draft mode enabled for multiple results');
+          result.result = result.result.map((item) => {
+            return { ...(item as Record<string, any>), isDraft: true };
+          });
+        }
+
+        // Uniform Platform doesn't know your data schema and how indicate that returned json contains unpublished data
+        // So you need to explicitly send special warnings along with the data
+        result.warnings.push({
+          // message can be a string or an object with a message
+          // that allows you to assigned additiona functionality to messages coming out of your custom edgehancers
+          message: 'This is unpublished data',
+          subType: 'unpublishedData',
+          // issueReference is an optional string that should contain ID of the record in your external system
+          issueReference: 'pikachu',
+          // deepLink is an optional string that allows us to render quick access link to the unpublished data
+          // in uniform UI
+          deepLink: 'https://admin/pokeapi.co/edit/pikachu',
+        });
       }
 
       return result;

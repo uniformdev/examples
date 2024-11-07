@@ -19,6 +19,7 @@ test('fetches data resource definition', async () => {
       {
         errors: [],
         warnings: [],
+        infos: [],
         surrogateKeys: [],
         result: expectedResponse,
       },
@@ -42,6 +43,7 @@ test('modifies response to inject the fetch context if an object is returned fro
       {
         errors: [],
         warnings: [],
+        infos: [],
         surrogateKeys: [],
         result: {
           ...expectedResponse,

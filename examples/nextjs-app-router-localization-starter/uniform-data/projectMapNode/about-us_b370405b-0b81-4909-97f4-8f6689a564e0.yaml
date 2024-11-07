@@ -1,0 +1,13 @@
+id: b370405b-0b81-4909-97f4-8f6689a564e0
+name: About Us
+order: 400
+path: /:locale/about-us
+type: composition
+pathSegment: about-us
+data: {}
+compositionId: bc905e8f-4ec8-4c60-a494-f0c4c0bc7fa5
+locales:
+  de:
+    name: ' Über uns'
+    pathSegment: uber-uns
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

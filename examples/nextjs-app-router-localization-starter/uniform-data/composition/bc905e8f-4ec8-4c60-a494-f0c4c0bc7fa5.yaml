@@ -1,0 +1,21 @@
+composition:
+  _name: About Us
+  _id: bc905e8f-4ec8-4c60-a494-f0c4c0bc7fa5
+  _slug: about-us
+  type: page
+  slots:
+    content:
+      - _id: 0419b145-c0bd-46f1-8ef9-21b8c7f7663f
+        type: hero
+        parameters:
+          title:
+            type: text
+            locales:
+              de: Über uns
+              en: About Us
+  _locales:
+    - de
+    - en
+created: '2024-08-10T00:53:38.8652+00:00'
+modified: '2024-08-10T00:54:10.09997+00:00'
+pattern: false
