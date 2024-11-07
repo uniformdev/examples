@@ -3,6 +3,7 @@ import type { ManifestV2 } from "@uniformdev/context";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: "2024-11-05",
   css: ["~/styles/global.css"],
   modules: ["@uniformdev/uniform-nuxt"],
   uniform: {
