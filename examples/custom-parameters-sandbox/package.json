@@ -1,0 +1,31 @@
+{
+  "name": "@uniformdev/nextjs-app-router-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push",
+    "uniform:publish": "uniform context manifest publish"
+  },
+  "dependencies": {
+    "@uniformdev/canvas-next-rsc": "^19.204.0",
+    "next": "14.2.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14",
+    "@uniformdev/cli": "^19.204.0",
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "5.2.2"
+  }
+}

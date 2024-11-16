@@ -1,0 +1,22 @@
+composition:
+  _name: Home
+  _id: fd91f1e5-5de7-45ca-bbde-1279a7ca1dcf
+  _slug: /
+  type: page
+  parameters:
+    title:
+      type: text
+      value: Home Page
+  slots:
+    content:
+      - _id: f097e6d0-30df-4841-8628-ee558c7a341b
+        type: text
+        parameters:
+          text:
+            type: text
+            value: Some text goes here
+      - _id: c3f44520-f3bc-4437-bd2d-3794995d7be5
+        type: container
+created: '2024-11-16T22:34:07.469748+00:00'
+modified: '2024-11-16T22:57:07.022431+00:00'
+pattern: false
