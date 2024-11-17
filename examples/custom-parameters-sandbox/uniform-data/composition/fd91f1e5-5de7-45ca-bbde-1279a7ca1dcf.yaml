@@ -9,14 +9,531 @@ composition:
       value: Home Page
   slots:
     content:
-      - _id: f097e6d0-30df-4841-8628-ee558c7a341b
-        type: text
+      - _id: e5cb94bc-84df-4918-9588-6fed813ba26c
+        type: flex
+        slots:
+          flexItem:
+            - _id: 94690910-a1a5-4573-bc00-fffde778df88
+              type: text
+              parameters:
+                tag:
+                  type: tp-segmented-control-parameter
+                  value: h2
+                size:
+                  type: tp-segmented-control-parameter
+                  value:
+                    mobile: 3xl
+                    tablet: 3xl
+                    desktop: 3xl
+                text:
+                  type: text
+                  value: Simple Flex Container
+                weight:
+                  type: tp-segmented-control-parameter
+                  value: normal
+                transform:
+                  type: tp-segmented-control-parameter
+                  value: capitalize
         parameters:
-          text:
+          gap:
+            type: tp-slider-parameter
+            value: {}
+          spacing:
+            type: tp-space-control-parameter
+            value:
+              marginTop: '0'
+              marginRight: '0'
+          direction:
+            type: tp-segmented-control-parameter
+            value:
+              mobile: col
+              tablet: col
+              desktop: col
+          alignItems:
+            type: tp-segmented-control-parameter
+            value: center
+          displayName:
             type: text
-            value: Some text goes here
+            value: Simple Flex Container
+          justifyContent:
+            type: tp-segmented-control-parameter
+            value:
+              desktop: center
+      - _id: 2d224f91-9e66-4857-b70f-79a9a49d10c4
+        type: flex
+        slots:
+          flexItem:
+            - _id: 6d22b265-7acd-4d40-ac11-491b0ee1742d
+              type: flexItem
+              slots:
+                inner:
+                  - _id: b4e7f6f8-a383-490a-9831-8c5a43f430f5
+                    type: image
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: a3c41226-077f-4d49-bbc5-74e4d35af4b0
+                            type: image
+                            fields:
+                              url:
+                                type: text
+                                value: >-
+                                  https://www.bell.ca/Styles/images/img-whyBellTile_Fibe_Duo_en.png
+                            _source: custom-url
+                      width:
+                        type: number
+                        value: '400'
+                      height:
+                        type: number
+                        value: '300'
+                      objectFit:
+                        type: tp-segmented-control-parameter
+                        value: cover
+                  - _id: 336ae048-d6e3-4676-9d7a-5f1b9e1e308e
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: span
+                      text:
+                        type: text
+                        value: 2nd flex item
+              parameters:
+                shrink:
+                  type: tp-segmented-control-parameter
+                  value: '0'
+                alignSelf:
+                  type: tp-segmented-control-parameter
+                  value: {}
+                displayName:
+                  type: text
+                  value: Flex item
+            - _id: 019e0c72-c9a9-452a-8d7a-e8e35de301b5
+              type: flexItem
+              slots:
+                inner:
+                  - _id: 6e01b021-0b47-4e4d-9502-fce1c7b1443c
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: span
+                      text:
+                        type: text
+                        value: 2nd flex item
+              parameters:
+                shrink:
+                  type: tp-segmented-control-parameter
+                  value: '0'
+                alignSelf:
+                  type: tp-segmented-control-parameter
+                  value: {}
+                displayName:
+                  type: text
+                  value: Flex item
+        parameters:
+          gap:
+            type: tp-slider-parameter
+            value:
+              mobile: '2'
+              tablet: '8'
+              desktop: '8'
+          spacing:
+            type: tp-space-control-parameter
+            value: {}
+          direction:
+            type: tp-segmented-control-parameter
+            value:
+              mobile: row
+              tablet: row
+              desktop: row
+          alignItems:
+            type: tp-segmented-control-parameter
+            value: {}
+          displayName:
+            type: text
+            value: 2nd Flex example
+          fluidContent:
+            type: checkbox
+            value: true
+          justifyContent:
+            type: tp-segmented-control-parameter
+            value: {}
+      - _id: f119b472-0270-49a6-916e-3329bba9cc62
+        type: grid
+        slots:
+          gridInner:
+            - _id: dadcd62e-9ada-44ec-b5f6-68b3d2a33722
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 50060ba5-84d9-4f2b-85e6-d96e1530da24
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: h3
+                      text:
+                        type: text
+                        value: Grid item inner
+              parameters:
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: {}
+                rowStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                columnSpan:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: span-6
+                    tablet: span-6
+                    desktop: span-6
+                columnStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                displayName:
+                  type: text
+                  value: 1st column
+            - _id: aabcf590-c094-423a-8ba7-8dfb18e38dba
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 4e979285-41d8-48b7-b980-cebd0899ed2a
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: h3
+                      text:
+                        type: text
+                        value: Grid item inner
+              parameters:
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: {}
+                rowStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                columnSpan:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: span-6
+                    tablet: span-6
+                    desktop: span-6
+                columnStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                displayName:
+                  type: text
+                  value: 2nd column
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: {}
+          gapY:
+            type: tp-slider-parameter
+            value: {}
+          displayName:
+            type: text
+            value: 50-50 grid
+          columnsCount:
+            type: tp-slider-parameter
+            value:
+              mobile: '12'
+              tablet: '12'
+              desktop: '12'
+      - _id: af7afb4d-4dd5-4ab2-99f3-d83b9bd8c8db
+        type: grid
+        slots:
+          gridInner:
+            - _id: 41d1e21d-3af6-4936-b8e1-5bd786b21c1f
+              type: gridItem
+              slots:
+                inner:
+                  - _id: f097e6d0-30df-4841-8628-ee558c7a341b
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: h2
+                      size:
+                        type: tp-segmented-control-parameter
+                        value:
+                          mobile: 4xl
+                          tablet: 3xl
+                          desktop: 3xl
+                      text:
+                        type: text
+                        value: inner grid first
+                      weight:
+                        type: tp-segmented-control-parameter
+                        value: medium
+                      alignment:
+                        type: tp-segmented-control-parameter
+                        value: center
+                      transform:
+                        type: tp-segmented-control-parameter
+                        value: uppercase
+                      decoration:
+                        type: tp-segmented-control-parameter
+                        value: ''
+                      letterSpacing:
+                        type: tp-segmented-control-parameter
+                        value: tight
+              parameters:
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: {}
+                rowStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                columnSpan:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: span-6
+                    tablet: span-4
+                    desktop: span-4
+                columnStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                displayName:
+                  type: text
+                  value: Left Column
+            - _id: 76e03888-6f76-4153-8f7c-360ef48637d8
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 63b7c255-8438-4cb8-8de4-f379e13a49df
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: h2
+                      size:
+                        type: tp-segmented-control-parameter
+                        value:
+                          mobile: 4xl
+                          tablet: 3xl
+                          desktop: 3xl
+                      text:
+                        type: text
+                        value: inner grid second
+                      weight:
+                        type: tp-segmented-control-parameter
+                        value: medium
+                      alignment:
+                        type: tp-segmented-control-parameter
+                        value: center
+                      transform:
+                        type: tp-segmented-control-parameter
+                        value: uppercase
+                      decoration:
+                        type: tp-segmented-control-parameter
+                        value: ''
+                      letterSpacing:
+                        type: tp-segmented-control-parameter
+                        value: tight
+              parameters:
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: {}
+                rowStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                columnSpan:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: span-6
+                    tablet: span-8
+                    desktop: span-8
+                columnStart:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '1'
+                displayName:
+                  type: text
+                  value: Right Column
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value:
+              desktop: '2'
+          gapY:
+            type: tp-slider-parameter
+            value:
+              desktop: '2'
+          spacing:
+            type: tp-space-control-parameter
+            value:
+              marginTop: '0'
+              marginRight: '0'
+          displayName:
+            type: text
+            value: 1/2 - 2/3 Grid
+          columnsCount:
+            type: tp-slider-parameter
+            value:
+              mobile: '12'
+              tablet: '12'
+              desktop: '12'
       - _id: c3f44520-f3bc-4437-bd2d-3794995d7be5
         type: container
+        slots:
+          containerContent:
+            - _id: e5645a2e-be6c-4fa4-a991-6e378339ac43
+              type: text
+              parameters:
+                tag:
+                  type: tp-segmented-control-parameter
+                  value: h1
+                size:
+                  type: tp-segmented-control-parameter
+                  value:
+                    mobile: 4xl
+                    tablet: 3xl
+                    desktop: 3xl
+                text:
+                  type: text
+                  value: Section title
+                weight:
+                  type: tp-segmented-control-parameter
+                  value: medium
+                alignment:
+                  type: tp-segmented-control-parameter
+                  value: center
+                transform:
+                  type: tp-segmented-control-parameter
+                  value: uppercase
+                decoration:
+                  type: tp-segmented-control-parameter
+                  value: ''
+                letterSpacing:
+                  type: tp-segmented-control-parameter
+                  value: tight
+            - _id: 8e1300a5-c106-4c57-b0ce-4b2dde0f7a68
+              type: richText
+              parameters:
+                text:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'Some very '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - mode: normal
+                              text: rich
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: ' '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - mode: normal
+                              text: text
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 8
+                              version: 1
+                            - mode: normal
+                              text: ' goes here...'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: and here
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: and also here
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+        parameters:
+          spacing:
+            type: tp-space-control-parameter
+            value:
+              marginTop: 48px
+              marginLeft: 48px
+              paddingTop: 120px
+              marginRight: 48px
+              marginBottom: 48px
+              paddingBottom: 120px
+          displayName:
+            type: text
+            value: Demo container
 created: '2024-11-16T22:34:07.469748+00:00'
-modified: '2024-11-16T22:57:07.022431+00:00'
+modified: '2024-11-17T00:25:09.792213+00:00'
 pattern: false

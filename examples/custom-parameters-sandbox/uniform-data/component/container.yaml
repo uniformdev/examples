@@ -2,10 +2,51 @@
 $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: container
 name: Container
-icon: screen
-parameters: []
+icon: rectangle-rounded
+parameters:
+  - id: displayName
+    name: Display Name
+    type: text
+    typeConfig: null
+  - id: spacing
+    name: Spacing
+    type: tp-space-control-parameter
+    typeConfig:
+      type: dimensions
+      options:
+        - key: small
+          value: 24px
+        - key: medium
+          value: 48px
+        - key: large
+          value: 96px
+        - key: xlarge
+          value: 120px
+      defaultValue:
+        marginTop: 48px
+        marginLeft: 48px
+        marginRight: 48px
+        marginBottom: 48px
+      selectedGroup: container
+  - id: fluidContent
+    name: Fluid Content
+    type: checkbox
+    typeConfig: null
+  - id: fullHeight
+    name: Full Height
+    type: checkbox
+    typeConfig: null
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/baseline/preview-images/container-default.jpg
 useTeamPermissions: true
-slots: []
+slots:
+  - id: containerContent
+    name: Container Content
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: displayName
 canBeComposition: false
 created: '2024-11-16T22:33:22.129888+00:00'
-updated: '2024-11-16T22:33:22.129888+00:00'
+updated: '2024-11-16T23:40:01.706981+00:00'

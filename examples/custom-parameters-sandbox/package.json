@@ -13,11 +13,14 @@
   },
   "dependencies": {
     "@uniformdev/canvas-next-rsc": "^19.204.0",
+    "classnames": "^2.5.1",
     "next": "14.2.16",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^18.0.0",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
