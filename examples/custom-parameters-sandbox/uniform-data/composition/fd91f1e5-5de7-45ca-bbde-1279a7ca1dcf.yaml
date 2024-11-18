@@ -1146,6 +1146,9 @@ composition:
                           mobile: '2'
                           tablet: '2'
                           desktop: '2'
+                      displayName:
+                        type: text
+                        value: '4 Column Section '
               parameters:
                 gapX:
                   type: tp-slider-parameter
@@ -1378,5 +1381,5 @@ composition:
             value:
               desktop: center
 created: '2024-11-17T00:41:56.344579+00:00'
-modified: '2024-11-18T13:45:05.771623+00:00'
+modified: '2024-11-18T14:41:24.622299+00:00'
 pattern: false
