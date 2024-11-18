@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: richText
+name: Rich Text
+icon: format-text
+parameters:
+  - id: text
+    name: Text
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - variable
+          - asset
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/baseline/preview-images/rich-text.jpg
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-11-16T23:08:31.782404+00:00'
+updated: '2024-11-16T23:49:01.682651+00:00'

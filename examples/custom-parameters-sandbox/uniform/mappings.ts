@@ -1,0 +1,10 @@
+// components will be registered here
+export { pageMapping } from "../components/canvas/Page";
+export { textMapping } from "../components/canvas/Text";
+export { containerMapping } from "../components/canvas/Container";
+export { gridMapping } from "../components/canvas/Grid";
+export { richTextMapping } from "../components/canvas/RichText";
+export { gridItemMapping } from "../components/canvas/GridItem";
+export { flexMapping } from "../components/canvas/Flex";
+export { flexItemMapping } from "../components/canvas/FlexItem";
+export { imageMapping } from "../components/canvas/Image";

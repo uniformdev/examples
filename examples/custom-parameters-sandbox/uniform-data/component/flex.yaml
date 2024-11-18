@@ -1,0 +1,137 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: flex
+name: Flex
+icon: display-flex
+parameters:
+  - id: displayName
+    name: Display Name
+    type: text
+    typeConfig: null
+  - id: direction
+    name: Direction
+    type: tp-segmented-control-parameter
+    typeConfig:
+      options:
+        - key: Row
+          value: row
+        - key: Row reverse
+          value: row-reverse
+        - key: Column
+          value: col
+        - key: Column reverse
+          value: col-reverse
+      defaultValue:
+        mobile: row
+        tablet: row
+        desktop: row
+      withViewPort: true
+  - id: justifyContent
+    name: Justify Content
+    type: tp-segmented-control-parameter
+    typeConfig:
+      options:
+        - key: Start
+          value: start
+        - key: Center
+          value: center
+        - key: End
+          value: end
+        - key: Between
+          value: between
+      defaultValue: {}
+      withViewPort: true
+  - id: gap
+    name: Gap
+    type: tp-slider-parameter
+    typeConfig:
+      step: 1
+      type: custom
+      units: px
+      options:
+        - key: XSmall
+          value: '2'
+        - key: Small
+          value: '4'
+        - key: Medium
+          value: '8'
+        - key: Large
+          value: '16'
+        - key: XLarge
+          value: '32'
+      maxValue: 10
+      minValue: 0
+      defaultValue: {}
+      withViewPort: true
+  - id: alignItems
+    name: Align Items
+    type: tp-segmented-control-parameter
+    typeConfig:
+      options:
+        - key: Start
+          value: start
+        - key: Center
+          value: center
+        - key: End
+          value: end
+        - key: Stretch
+          value: stretch
+      defaultValue: {}
+      withViewPort: false
+  - id: 9f4a3823-8aad-4b30-a7bf-e5134643b0b3
+    name: More Presentation Settings
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - backgroundColor
+        - spacing
+        - border
+        - fluidContent
+        - fullHeight
+  - id: spacing
+    name: Spacing
+    type: tp-space-control-parameter
+    typeConfig:
+      type: dimensions
+      options:
+        - key: small
+          value: 24px
+        - key: medium
+          value: 48px
+        - key: large
+          value: 96px
+        - key: xlarge
+          value: 120px
+      defaultValue:
+        marginTop: 48px
+        marginBottom: 48px
+      selectedGroup: container
+  - id: fluidContent
+    name: Fluid Content
+    type: checkbox
+    typeConfig: null
+  - id: fullHeight
+    name: Full Height
+    type: checkbox
+    typeConfig: null
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/baseline/preview-images/flex.jpg
+useTeamPermissions: true
+slots:
+  - id: flexItem
+    name: Flex Item
+    allowedComponents:
+      - container
+      - flexItem
+      - richText
+      - text
+      - image
+      - grid
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: displayName
+canBeComposition: false
+created: '2024-11-17T00:41:50.67339+00:00'
+updated: '2024-11-18T13:38:17.178229+00:00'

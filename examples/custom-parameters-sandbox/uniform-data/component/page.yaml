@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: card
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - container
+      - flex
+      - grid
+      - $personalization
+      - $localization
+      - $test
+      - richText
+      - text
+      - image
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: true
+created: '2024-11-17T00:41:53.531482+00:00'
+updated: '2024-11-18T13:04:08.948163+00:00'

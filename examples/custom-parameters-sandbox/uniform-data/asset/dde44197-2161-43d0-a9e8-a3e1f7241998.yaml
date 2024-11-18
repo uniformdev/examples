@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: dde44197-2161-43d0-a9e8-a3e1f7241998
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: demo-qr-code.svg
+    file:
+      type: file
+      value: b3d00c3c-5e61-4696-b7fa-044e72496cf2
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/SO7pY8z_SlCx9YI2DEaE7w-demo-qr-code.svg
+      type: text
+    size:
+      value: 40957
+      type: number
+    width:
+      value: 2000
+      type: number
+    height:
+      value: 2000
+      type: number
+    custom: {}
+created: '2024-11-18T20:11:24.833368+00:00'
+modified: '2024-11-18T20:11:24.833368+00:00'
