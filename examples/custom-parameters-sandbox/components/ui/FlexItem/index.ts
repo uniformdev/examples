@@ -1,5 +1,5 @@
 import { HTMLAttributes } from 'react';
-import { ViewPort } from '@/types';
+import { ViewPort } from '@/utils/types';
 
 type AvailableAlignSelf = 'auto' | 'start' | 'end' | 'center' | 'stretch';
 type AvailableShrink = '0' | '1';

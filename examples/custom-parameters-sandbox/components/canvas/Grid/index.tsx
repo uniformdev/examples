@@ -3,7 +3,7 @@ import {
   ComponentProps,
   UniformSlot,
 } from "@uniformdev/canvas-next-rsc/component";
-import { ContainerParameters } from "@/components/Container";
+import { ContainerParameters } from "@/components/canvas/Container";
 import BaseGrid from "@/components/ui/Grid";
 import { ViewPort } from "@/utils/types";
 import { ResolveComponentResultWithType } from "@/uniform/models";
@@ -24,8 +24,8 @@ type AvailableGridColumnsCount =
 type AvailableGridGap = "2" | "8" | "16";
 export type GridParameters = ContainerParameters & {
   columnsCount?:
-    | AvailableGridColumnsCount
-    | ViewPort<AvailableGridColumnsCount>;
+  | AvailableGridColumnsCount
+  | ViewPort<AvailableGridColumnsCount>;
   gapY?: AvailableGridGap | ViewPort<AvailableGridGap>;
   gapX?: AvailableGridGap | ViewPort<AvailableGridGap>;
 };

@@ -1,6 +1,6 @@
 import { HTMLAttributes } from 'react';
 import { ImageProps as NextImageProps } from 'next/image';
-import { ViewPort } from '@/types';
+import { ViewPort } from '@/utils/types';
 
 export type ImageProps = NextImageProps & {
   containerStyle?: NonNullable<HTMLAttributes<HTMLDivElement>['style']>;
