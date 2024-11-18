@@ -2,3 +2,4 @@
 
 import "./Page";
 import "./Hero";
+import "./Corey";
