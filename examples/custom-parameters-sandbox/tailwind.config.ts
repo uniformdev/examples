@@ -8,6 +8,12 @@ const safelist = [
   { pattern: /(underline|overline|line-through)/, variants: ['lg', 'md'] },
   { pattern: /tracking-(tighter|tight|normal|wide|wider|widest)/, variants: ['lg', 'md'] },
   { pattern: /text-(left|center|right)/ },
+  // Flex parameters
+  { pattern: /flex-(col|row|col-reverse|row-reverse)/, variants: ['lg', 'md'] },
+  { pattern: /justify-(normal|start|end|center|between|around|evenly|stretch)/, variants: ['lg', 'md'] },
+  { pattern: /gap(?:-(x|y))?-(0(\.5)?|1(\.5)?|2(\.5)?|3(\.5)?|[1-9]?[0-9]|px)/, variants: ['lg', 'md'] },
+  { pattern: /items-(start|end|center|baseline|stretch)/, variants: ['lg', 'md'] },
+
 ]
 
 const config: Config = {
