@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 722d1041-717a-46b4-bb60-b2df28f5bcb4
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: img_GWS_OneScore_Badge_trio_2024_ALT_en.png
+    file:
+      type: file
+      value: 65e73461-e3eb-4cdc-9e50-08752cce8936
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/hbPoINY2SCCiC2TplMMDrw-img_GWS_OneScore_Badge_trio_2024_ALT_en.png
+      type: text
+    size:
+      value: 18088
+      type: number
+    width:
+      value: 560
+      type: number
+    height:
+      value: 240
+      type: number
+    custom: {}
+created: '2024-11-18T12:55:31.075106+00:00'
+modified: '2024-11-18T12:55:31.075106+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 58172ee4-78c8-4b5b-b0fc-5a460c0ce02a
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: logo_Plus_Crave.webp
+    file:
+      type: file
+      value: f89326a3-09b0-49e8-963f-fa154236aadf
+    mediaType:
+      value: image/webp
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/x1iYsE0TRP6dLFP-FhELIQ-logo_Plus_Crave.webp
+      type: text
+    size:
+      value: 1530
+      type: number
+    width:
+      value: 88
+      type: number
+    height:
+      value: 13
+      type: number
+    custom: {}
+created: '2024-11-18T12:29:24.120499+00:00'
+modified: '2024-11-18T12:29:24.120499+00:00'

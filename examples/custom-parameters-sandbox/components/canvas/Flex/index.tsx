@@ -3,7 +3,7 @@ import {
   ComponentProps,
   UniformSlot,
 } from "@uniformdev/canvas-next-rsc/component";
-import { ContainerParameters } from "@/components/Container";
+import { ContainerParameters } from "@/components/canvas/Container";
 import BaseFlex from "@/components/ui/Flex";
 import { ViewPort } from "@/utils/types";
 import { ResolveComponentResultWithType } from "@/uniform/models";

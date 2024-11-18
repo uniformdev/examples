@@ -9,433 +9,1167 @@ composition:
       value: Home Page
   slots:
     content:
-      - _id: e5cb94bc-84df-4918-9588-6fed813ba26c
-        type: flex
+      - _id: 000f1afe-d71a-4a69-967e-9057898dbceb
+        type: container
         slots:
-          flexItem:
-            - _id: 94690910-a1a5-4573-bc00-fffde778df88
-              type: text
-              parameters:
-                tag:
-                  type: tp-segmented-control-parameter
-                  value: h2
-                size:
-                  type: tp-segmented-control-parameter
-                  value:
-                    mobile: 3xl
-                    tablet: 3xl
-                    desktop: lg
-                text:
-                  type: text
-                  value: Simple Flex Container
-                weight:
-                  type: tp-segmented-control-parameter
-                  value: medium
-                transform:
-                  type: tp-segmented-control-parameter
-                  value: capitalize
-        parameters:
-          gap:
-            type: tp-slider-parameter
-            value: {}
-          spacing:
-            type: tp-space-control-parameter
-            value:
-              marginTop: '0'
-              marginRight: '0'
-          direction:
-            type: tp-segmented-control-parameter
-            value:
-              mobile: col
-              tablet: col
-              desktop: col
-          alignItems:
-            type: tp-segmented-control-parameter
-            value: center
-          displayName:
-            type: text
-            value: Simple Flex Container
-          justifyContent:
-            type: tp-segmented-control-parameter
-            value:
-              desktop: center
-      - _id: 2d224f91-9e66-4857-b70f-79a9a49d10c4
-        type: flex
-        slots:
-          flexItem:
-            - _id: 6d22b265-7acd-4d40-ac11-491b0ee1742d
-              type: flexItem
+          containerContent:
+            - _id: fb57fcac-e875-4ad7-a38d-8c1263b3d2fa
+              type: grid
               slots:
-                inner:
-                  - _id: b4e7f6f8-a383-490a-9831-8c5a43f430f5
+                gridInner:
+                  - _id: fa9e98c9-3b51-419e-8f17-a0356734250f
                     type: image
                     parameters:
                       image:
                         type: asset
                         value:
-                          - _id: a3c41226-077f-4d49-bbc5-74e4d35af4b0
+                          - _id: 5480f54a-76de-49d8-871d-3f8e59a3f27b
                             type: image
                             fields:
-                              url:
+                              id:
                                 type: text
+                                value: 67bc5b1f-80bc-4ff1-9250-9866cbe61d98
+                              url:
                                 value: >-
-                                  https://www.bell.ca/Styles/images/img-whyBellTile_Fibe_Duo_en.png
-                            _source: custom-url
-                      width:
-                        type: number
-                        value: '400'
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/VhzCGyEvROOMeXpykbDcfQ-img-banner_multicultural_family_airport.jpg
+                                type: text
+                              file:
+                                type: file
+                                value: f563380f-b8b7-4194-a3d6-4d89a2d75386
+                              size:
+                                value: 19311
+                                type: number
+                              title:
+                                type: text
+                                value: img-banner_multicultural_family_airport.jpg
+                              width:
+                                value: 600
+                                type: number
+                              height:
+                                value: 460
+                                type: number
+                              mediaType:
+                                value: image/jpeg
+                                type: text
+                            _source: uniform-assets
                       height:
                         type: number
-                        value: '300'
+                        value: '460'
                       objectFit:
                         type: tp-segmented-control-parameter
                         value: cover
-                  - _id: 336ae048-d6e3-4676-9d7a-5f1b9e1e308e
-                    type: text
+                  - _id: 18fde0ce-be4e-47d6-9fce-502c0ca9c280
+                    type: flex
+                    slots:
+                      flexItem:
+                        - _id: b929156c-d4bb-4a97-919c-c4318dab177e
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp-segmented-control-parameter
+                              value: h2
+                            size:
+                              type: tp-segmented-control-parameter
+                              value:
+                                mobile: 4xl
+                                tablet: 4xl
+                                desktop: 4xl
+                            text:
+                              type: text
+                              value: >-
+                                Welcome. Get connected on Canada’s best 5G
+                                network
+                            weight:
+                              type: tp-segmented-control-parameter
+                              value: medium
+                            alignment:
+                              type: tp-segmented-control-parameter
+                              value: ''
                     parameters:
-                      tag:
+                      gap:
+                        type: tp-slider-parameter
+                        value:
+                          desktop: '4'
+                      spacing:
+                        type: tp-space-control-parameter
+                        value:
+                          marginTop: 96px
+                      direction:
                         type: tp-segmented-control-parameter
-                        value: span
-                      text:
+                        value:
+                          mobile: row
+                          tablet: row
+                          desktop: col
+                      alignItems:
+                        type: tp-segmented-control-parameter
+                        value: center
+                      displayName:
                         type: text
-                        value: 2nd flex item
+                        value: Content Section
+                      justifyContent:
+                        type: tp-segmented-control-parameter
+                        value:
+                          desktop: center
               parameters:
-                shrink:
-                  type: tp-segmented-control-parameter
-                  value: '0'
-                alignSelf:
-                  type: tp-segmented-control-parameter
-                  value: {}
+                gapX:
+                  type: tp-slider-parameter
+                  value:
+                    tablet: '4'
+                    desktop: '4'
+                gapY:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '2'
+                    desktop: ''
                 displayName:
                   type: text
-                  value: Flex item
-            - _id: 019e0c72-c9a9-452a-8d7a-e8e35de301b5
-              type: flexItem
-              slots:
-                inner:
-                  - _id: 6e01b021-0b47-4e4d-9502-fce1c7b1443c
-                    type: text
-                    parameters:
-                      tag:
-                        type: tp-segmented-control-parameter
-                        value: span
-                      text:
-                        type: text
-                        value: 2nd flex item
-              parameters:
-                shrink:
-                  type: tp-segmented-control-parameter
-                  value: '0'
-                alignSelf:
-                  type: tp-segmented-control-parameter
-                  value: {}
-                displayName:
-                  type: text
-                  value: Flex item
+                  value: Two Columns Section
+                columnsCount:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '2'
         parameters:
-          gap:
-            type: tp-slider-parameter
-            value:
-              mobile: '2'
-              tablet: '8'
-              desktop: '8'
           spacing:
             type: tp-space-control-parameter
-            value: {}
-          direction:
-            type: tp-segmented-control-parameter
             value:
-              mobile: row
-              tablet: row
-              desktop: row
-          alignItems:
-            type: tp-segmented-control-parameter
-            value: {}
+              marginTop: 48px
+              marginBottom: 48px
           displayName:
             type: text
-            value: 2nd Flex example
+            value: Hero Container 1
           fluidContent:
             type: checkbox
             value: true
-          justifyContent:
-            type: tp-segmented-control-parameter
-            value: {}
-      - _id: f119b472-0270-49a6-916e-3329bba9cc62
+      - _id: 2cff07dc-4727-4050-abd9-afaad4d054cc
+        type: container
+        slots:
+          containerContent:
+            - _id: 68bf4096-8545-489a-9f1f-6c9e971e9296
+              type: grid
+              slots:
+                gridInner:
+                  - _id: 559d2e02-f616-4f06-b713-4ce3464279e1
+                    type: image
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: c7e17fc2-f0b8-442c-b8c3-a91254531088
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 7392f17f-c594-4a3e-b2d3-b4adf951f284
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/onvXUUMMSpOPrrD3lsba0w-img-banner_5G_Plus_RatePlan_fall.png
+                                type: text
+                              file:
+                                type: file
+                                value: 84db9872-c285-452b-bfd4-2148a18c4b7f
+                              size:
+                                value: 19760
+                                type: number
+                              title:
+                                type: text
+                                value: img-banner_5G_Plus_RatePlan_fall.png
+                              width:
+                                value: 600
+                                type: number
+                              height:
+                                value: 460
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      height:
+                        type: number
+                        value: '460'
+                      objectFit:
+                        type: tp-segmented-control-parameter
+                        value: cover
+                  - _id: 21a6b084-36b3-4c06-98ae-8d667b827e31
+                    type: flex
+                    slots:
+                      flexItem:
+                        - _id: c1ac7d54-b9fe-42db-9694-907ca134d4d6
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp-segmented-control-parameter
+                              value: h2
+                            size:
+                              type: tp-segmented-control-parameter
+                              value:
+                                mobile: 4xl
+                                tablet: 4xl
+                                desktop: 4xl
+                            text:
+                              type: text
+                              value: Switch to Canada’s fastest and most reliable
+                            weight:
+                              type: tp-segmented-control-parameter
+                              value: medium
+                            alignment:
+                              type: tp-segmented-control-parameter
+                              value: ''
+                        - _id: 4026d53c-7f70-468a-b900-57782b8c2b5c
+                          type: richText
+                          parameters:
+                            text:
+                              type: richText
+                              value:
+                                root:
+                                  type: root
+                                  format: ''
+                                  indent: 0
+                                  version: 1
+                                  children:
+                                    - tag: h2
+                                      type: heading
+                                      format: ''
+                                      indent: 0
+                                      version: 1
+                                      children:
+                                        - mode: normal
+                                          text: '100 GB | '
+                                          type: text
+                                          style: ''
+                                          detail: 0
+                                          format: 1
+                                          version: 1
+                                        - mode: normal
+                                          text: $
+                                          type: text
+                                          style: ''
+                                          detail: 0
+                                          format: 65
+                                          version: 1
+                                        - mode: normal
+                                          text: '50'
+                                          type: text
+                                          style: ''
+                                          detail: 0
+                                          format: 1
+                                          version: 1
+                                        - mode: normal
+                                          text: 00/mo.
+                                          type: text
+                                          style: ''
+                                          detail: 0
+                                          format: 65
+                                          version: 1
+                                      direction: ltr
+                                    - type: asset
+                                      __asset:
+                                        _id: 558c3bd2-0d70-4beb-9a34-f1e60f36d6cf
+                                        type: image
+                                        fields:
+                                          id:
+                                            type: text
+                                            value: 58172ee4-78c8-4b5b-b0fc-5a460c0ce02a
+                                          url:
+                                            value: >-
+                                              https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/x1iYsE0TRP6dLFP-FhELIQ-logo_Plus_Crave.webp
+                                            type: text
+                                          file:
+                                            type: file
+                                            value: f89326a3-09b0-49e8-963f-fa154236aadf
+                                          size:
+                                            value: 1530
+                                            type: number
+                                          title:
+                                            type: text
+                                            value: logo_Plus_Crave.webp
+                                          width:
+                                            value: 88
+                                            type: number
+                                          height:
+                                            value: 13
+                                            type: number
+                                          mediaType:
+                                            value: image/webp
+                                            type: text
+                                        _source: uniform-assets
+                                      version: 1
+                                    - type: paragraph
+                                      format: ''
+                                      indent: 0
+                                      version: 1
+                                      children:
+                                        - type: linebreak
+                                          version: 1
+                                        - mode: normal
+                                          text: >-
+                                            When you bring your own phone and bundle
+                                            with Internet. Includes Autopay credit.
+                                          type: text
+                                          style: ''
+                                          detail: 0
+                                          format: 0
+                                          version: 1
+                                      direction: ltr
+                                      textStyle: ''
+                                      textFormat: 0
+                                  direction: ltr
+                    parameters:
+                      gap:
+                        type: tp-slider-parameter
+                        value:
+                          mobile: '4'
+                          desktop: '4'
+                      spacing:
+                        type: tp-space-control-parameter
+                        value:
+                          marginTop: 96px
+                      direction:
+                        type: tp-segmented-control-parameter
+                        value:
+                          mobile: col
+                          tablet: row
+                          desktop: col
+                      alignItems:
+                        type: tp-segmented-control-parameter
+                        value: start
+                      displayName:
+                        type: text
+                        value: Content Section
+                      justifyContent:
+                        type: tp-segmented-control-parameter
+                        value:
+                          desktop: center
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value:
+                    tablet: '4'
+                    desktop: '4'
+                gapY:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '2'
+                    desktop: ''
+                displayName:
+                  type: text
+                  value: Two Columns Section
+                columnsCount:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '2'
+        parameters:
+          spacing:
+            type: tp-space-control-parameter
+            value:
+              marginTop: 48px
+              marginBottom: 48px
+          displayName:
+            type: text
+            value: Hero Container 2
+          fluidContent:
+            type: checkbox
+            value: true
+      - _id: a5a07f94-ce80-4a70-ad96-26212cee3f57
         type: grid
         slots:
           gridInner:
-            - _id: dadcd62e-9ada-44ec-b5f6-68b3d2a33722
-              type: gridItem
+            - _id: b115f928-3b87-46c9-8824-6ca2f5bdb460
+              type: grid
               slots:
-                inner:
-                  - _id: 50060ba5-84d9-4f2b-85e6-d96e1530da24
-                    type: text
+                gridInner:
+                  - _id: 8b936946-e6e7-444a-8c1c-e68edc53e31d
+                    type: richText
                     parameters:
-                      tag:
-                        type: tp-segmented-control-parameter
-                        value: h3
                       text:
-                        type: text
-                        value: Grid item inner
+                        type: richText
+                        value:
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: LIMITED-TIME OFFER
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: "Save over\_$900\_on Google Pixel 9."
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 1
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 1
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - link:
+                                      path: >-
+                                        https://www.bell.ca/Mobility/Products/Google-Pixel-9#INT=MOB_hmpg_BAN_GooglePixel9_111424_GC
+                                      type: url
+                                    type: link
+                                    format: ''
+                                    indent: 0
+                                    version: 1
+                                    children:
+                                      - mode: normal
+                                        text: "View phone\_"
+                                        type: text
+                                        style: ''
+                                        detail: 0
+                                        format: 0
+                                        version: 1
+                                    direction: ltr
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: "Over 24 months with SmartPay on an eligible 2-year plan. Compared to our device full\_price."
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                            direction: ltr
+                  - _id: 3e519f64-418f-4bda-8469-d58b7bfb2335
+                    type: image
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 12f4713b-5a23-4e84-9aa9-c9675856265e
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 8a630b58-4b04-4212-9c50-bde980807908
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/1glblskcR7eP2Fqt_7jpDw-img_tile_Google_Pixel_9_Offer.jpg
+                                type: text
+                              file:
+                                type: file
+                                value: eae36973-cb3c-4e04-8bf6-9ec6bce6970b
+                              size:
+                                value: 2815
+                                type: number
+                              title:
+                                type: text
+                                value: img_tile_Google_Pixel_9_Offer.jpg
+                              width:
+                                value: 250
+                                type: number
+                              height:
+                                value: 250
+                                type: number
+                              mediaType:
+                                value: image/jpeg
+                                type: text
+                            _source: uniform-assets
+                      height:
+                        type: number
+                        value: '240'
+                      objectFit:
+                        type: tp-segmented-control-parameter
+                        value: contain
               parameters:
-                rowSpan:
-                  type: tp-slider-parameter
-                  value: {}
-                rowStart:
+                gapX:
                   type: tp-slider-parameter
                   value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
-                columnSpan:
+                    desktop: '4'
+                gapY:
                   type: tp-slider-parameter
                   value:
-                    mobile: span-6
-                    tablet: span-6
-                    desktop: span-6
-                columnStart:
-                  type: tp-slider-parameter
+                    mobile: '4'
+                spacing:
+                  type: tp-space-control-parameter
                   value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
+                    marginTop: 48px
+                    marginBottom: 48px
                 displayName:
                   type: text
-                  value: 1st column
-            - _id: aabcf590-c094-423a-8ba7-8dfb18e38dba
-              type: gridItem
+                  value: Product Card
+                columnsCount:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '2'
+            - _id: 707331ab-4331-42d2-9eb6-e279e2e3b225
+              type: grid
               slots:
-                inner:
-                  - _id: 4e979285-41d8-48b7-b980-cebd0899ed2a
-                    type: text
+                gridInner:
+                  - _id: cef6af7e-c335-4586-8305-11761d6e1ba0
+                    type: richText
                     parameters:
-                      tag:
-                        type: tp-segmented-control-parameter
-                        value: h3
                       text:
-                        type: text
-                        value: Grid item inner
+                        type: richText
+                        value:
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: >-
+                                      Switch to pure fibre Internet and Fibe TV
+                                      from
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 1
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 1
+                              - tag: h2
+                                type: heading
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: $
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 64
+                                    version: 1
+                                  - mode: normal
+                                    text: '100'
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                  - mode: normal
+                                    text: .00/mo.
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 64
+                                    version: 1
+                                direction: ltr
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - link:
+                                      path: >-
+                                        https://www.bell.ca/Bell-bundles#INT=BUN_hmpg_TIL_duo_Acq_091024_nts
+                                      type: url
+                                    type: link
+                                    format: ''
+                                    indent: 0
+                                    version: 1
+                                    children:
+                                      - mode: normal
+                                        text: "Learn more\_"
+                                        type: text
+                                        style: ''
+                                        detail: 0
+                                        format: 0
+                                        version: 1
+                                    direction: ltr
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                            direction: ltr
+                  - _id: 4b474f15-5552-43aa-aa35-c0fb97aeb648
+                    type: image
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 65bcbb15-a859-4657-81e8-5449d5920109
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: f3a5b1b1-7126-4ff5-ba6c-cd3766c307ac
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/fdaMs2T3QRauNfdsE5MXEQ-img-whyBellTile_Fibe_Duo_en.png
+                                type: text
+                              file:
+                                type: file
+                                value: ce018d59-aab2-4f18-af18-1641d3cf1d6a
+                              size:
+                                value: 1997
+                                type: number
+                              title:
+                                type: text
+                                value: img-whyBellTile_Fibe_Duo_en.png
+                              width:
+                                value: 250
+                                type: number
+                              height:
+                                value: 180
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      height:
+                        type: number
+                        value: '240'
+                      objectFit:
+                        type: tp-segmented-control-parameter
+                        value: contain
               parameters:
-                rowSpan:
-                  type: tp-slider-parameter
-                  value: {}
-                rowStart:
+                gapX:
                   type: tp-slider-parameter
                   value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
-                columnSpan:
+                    desktop: '4'
+                gapY:
                   type: tp-slider-parameter
                   value:
-                    mobile: span-6
-                    tablet: span-6
-                    desktop: span-6
-                columnStart:
-                  type: tp-slider-parameter
+                    mobile: '4'
+                spacing:
+                  type: tp-space-control-parameter
                   value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
+                    marginTop: 48px
+                    marginBottom: 48px
                 displayName:
                   type: text
-                  value: 2nd column
+                  value: Product Card
+                columnsCount:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '1'
+                    desktop: '2'
         parameters:
           gapX:
             type: tp-slider-parameter
-            value: {}
+            value:
+              desktop: '4'
           gapY:
             type: tp-slider-parameter
-            value: {}
+            value:
+              mobile: '4'
+              tablet: '4'
+          spacing:
+            type: tp-space-control-parameter
+            value:
+              marginTop: 48px
+              marginBottom: 48px
           displayName:
             type: text
             value: 50-50 grid
           columnsCount:
             type: tp-slider-parameter
             value:
-              mobile: '12'
-              tablet: '12'
-              desktop: '12'
-      - _id: af7afb4d-4dd5-4ab2-99f3-d83b9bd8c8db
+              mobile: '1'
+              tablet: '1'
+              desktop: '2'
+      - _id: 790f6ec4-ff54-4828-8ad8-817a14fa6db9
         type: grid
         slots:
           gridInner:
-            - _id: 41d1e21d-3af6-4936-b8e1-5bd786b21c1f
-              type: gridItem
+            - _id: 63d02246-8fe0-440f-9019-ea62a9e4ad87
+              type: flex
               slots:
-                inner:
-                  - _id: f097e6d0-30df-4841-8628-ee558c7a341b
-                    type: text
+                flexItem:
+                  - _id: 10302048-1af9-4722-beb4-7946d9121ac7
+                    type: image
                     parameters:
-                      tag:
-                        type: tp-segmented-control-parameter
-                        value: h2
-                      size:
-                        type: tp-segmented-control-parameter
+                      image:
+                        type: asset
                         value:
-                          mobile: 4xl
-                          tablet: 3xl
-                          desktop: 3xl
+                          - _id: 602f2133-13e9-4cfb-ac3a-5162dc49d4b4
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: fd06e3b5-77e9-415d-b6de-533bbee79dac
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/b7srKCxlSnyUasAR_ceE4A-img_tile_hmpg_Best_ISP_Alt_June2024_EN.png
+                                type: text
+                              file:
+                                type: file
+                                value: c91a8e4f-1394-4fd2-b99c-b5afcdef8209
+                              size:
+                                value: 10203
+                                type: number
+                              title:
+                                type: text
+                                value: img_tile_hmpg_Best_ISP_Alt_June2024_EN.png
+                              width:
+                                value: 460
+                                type: number
+                              height:
+                                value: 302
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      height:
+                        type: number
+                        value: '302'
+                      objectFit:
+                        type: tp-segmented-control-parameter
+                        value: contain
+                  - _id: 0e5aa3df-90af-4f70-8a09-980e5d1d6b04
+                    type: richText
+                    parameters:
                       text:
-                        type: text
-                        value: inner grid first
-                      weight:
-                        type: tp-segmented-control-parameter
-                        value: medium
-                      alignment:
-                        type: tp-segmented-control-parameter
-                        value: center
-                      transform:
-                        type: tp-segmented-control-parameter
-                        value: uppercase
-                      decoration:
-                        type: tp-segmented-control-parameter
-                        value: ''
-                      letterSpacing:
-                        type: tp-segmented-control-parameter
-                        value: tight
+                        type: richText
+                        value:
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - tag: h2
+                                type: heading
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: Most awarded Internet service provider.
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                            direction: ltr
+                  - _id: abb0c1f1-134a-4d75-a99a-54f8a9e1cefa
+                    type: richText
+                    parameters:
+                      text:
+                        type: richText
+                        value:
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - link:
+                                      path: >-
+                                        https://www.bell.ca/Bell_Internet?INT=ISP_hmpg_til_Mostawardedisp_acq_101523_mcc#INT_hmpg-gaming
+                                      type: url
+                                    type: link
+                                    format: ''
+                                    indent: 0
+                                    version: 1
+                                    children:
+                                      - mode: normal
+                                        text: Learn more
+                                        type: text
+                                        style: ''
+                                        detail: 0
+                                        format: 0
+                                        version: 1
+                                    direction: ltr
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                            direction: ltr
               parameters:
-                rowSpan:
-                  type: tp-slider-parameter
-                  value: {}
-                rowStart:
+                gap:
                   type: tp-slider-parameter
                   value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
-                columnSpan:
-                  type: tp-slider-parameter
+                    mobile: '4'
+                    tablet: '4'
+                    desktop: '4'
+                direction:
+                  type: tp-segmented-control-parameter
                   value:
-                    mobile: span-6
-                    tablet: span-4
-                    desktop: span-4
-                columnStart:
-                  type: tp-slider-parameter
-                  value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
+                    mobile: col
+                    tablet: col
+                    desktop: col
+                alignItems:
+                  type: tp-segmented-control-parameter
+                  value: center
                 displayName:
                   type: text
-                  value: Left Column
-            - _id: 76e03888-6f76-4153-8f7c-360ef48637d8
-              type: gridItem
+                  value: Award Card
+                justifyContent:
+                  type: tp-segmented-control-parameter
+                  value:
+                    mobile: center
+                    tablet: center
+                    desktop: center
+            - _id: 3e013fc5-3539-4086-a4f8-93d29d7c6f27
+              type: flex
               slots:
-                inner:
-                  - _id: 63b7c255-8438-4cb8-8de4-f379e13a49df
-                    type: text
+                flexItem:
+                  - _id: 5023b877-9c08-4259-ac1f-878cd4bb2c6c
+                    type: image
                     parameters:
-                      tag:
-                        type: tp-segmented-control-parameter
-                        value: h2
-                      size:
-                        type: tp-segmented-control-parameter
+                      image:
+                        type: asset
                         value:
-                          mobile: 4xl
-                          tablet: 3xl
-                          desktop: 3xl
+                          - _id: 175bd4d3-155a-4e83-9648-2591a9cd8c17
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 722d1041-717a-46b4-bb60-b2df28f5bcb4
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/hbPoINY2SCCiC2TplMMDrw-img_GWS_OneScore_Badge_trio_2024_ALT_en.png
+                                type: text
+                              file:
+                                type: file
+                                value: 65e73461-e3eb-4cdc-9e50-08752cce8936
+                              size:
+                                value: 18088
+                                type: number
+                              title:
+                                type: text
+                                value: img_GWS_OneScore_Badge_trio_2024_ALT_en.png
+                              width:
+                                value: 560
+                                type: number
+                              height:
+                                value: 240
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      height:
+                        type: number
+                        value: '302'
+                      objectFit:
+                        type: tp-segmented-control-parameter
+                        value: contain
+                  - _id: c1f8ade9-a4fd-4170-845c-5711aa5ca958
+                    type: richText
+                    parameters:
                       text:
-                        type: text
-                        value: inner grid second
-                      weight:
-                        type: tp-segmented-control-parameter
-                        value: medium
-                      alignment:
-                        type: tp-segmented-control-parameter
-                        value: center
-                      transform:
-                        type: tp-segmented-control-parameter
-                        value: uppercase
-                      decoration:
-                        type: tp-segmented-control-parameter
-                        value: ''
-                      letterSpacing:
-                        type: tp-segmented-control-parameter
-                        value: tight
+                        type: richText
+                        value:
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - tag: h2
+                                type: heading
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: Most awarded Internet service provider.
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                            direction: ltr
+                  - _id: f92e2537-b966-458e-8399-6d3cac7c83e2
+                    type: richText
+                    parameters:
+                      text:
+                        type: richText
+                        value:
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - link:
+                                      path: >-
+                                        https://www.bell.ca/Bell_Internet?INT=ISP_hmpg_til_Mostawardedisp_acq_101523_mcc#INT_hmpg-gaming
+                                      type: url
+                                    type: link
+                                    format: ''
+                                    indent: 0
+                                    version: 1
+                                    children:
+                                      - mode: normal
+                                        text: Learn more
+                                        type: text
+                                        style: ''
+                                        detail: 0
+                                        format: 0
+                                        version: 1
+                                    direction: ltr
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                            direction: ltr
               parameters:
-                rowSpan:
-                  type: tp-slider-parameter
-                  value: {}
-                rowStart:
+                gap:
                   type: tp-slider-parameter
                   value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
-                columnSpan:
-                  type: tp-slider-parameter
+                    mobile: '4'
+                    tablet: '4'
+                    desktop: '4'
+                direction:
+                  type: tp-segmented-control-parameter
                   value:
-                    mobile: span-6
-                    tablet: span-8
-                    desktop: span-8
-                columnStart:
-                  type: tp-slider-parameter
-                  value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '1'
+                    mobile: col
+                    tablet: col
+                    desktop: col
+                alignItems:
+                  type: tp-segmented-control-parameter
+                  value: center
                 displayName:
                   type: text
-                  value: Right Column
+                  value: Award Card
+                justifyContent:
+                  type: tp-segmented-control-parameter
+                  value:
+                    mobile: center
+                    tablet: center
+                    desktop: center
         parameters:
           gapX:
             type: tp-slider-parameter
             value:
-              desktop: '2'
+              desktop: '4'
           gapY:
             type: tp-slider-parameter
             value:
-              desktop: '2'
+              mobile: '4'
+              tablet: '4'
           spacing:
             type: tp-space-control-parameter
             value:
-              marginTop: '0'
-              marginRight: '0'
+              marginTop: 48px
+              marginBottom: 48px
           displayName:
             type: text
-            value: 1/3 - 2/3 Grid
+            value: 50-50 grid
           columnsCount:
             type: tp-slider-parameter
             value:
-              mobile: '12'
-              tablet: '12'
-              desktop: '12'
-      - _id: c3f44520-f3bc-4437-bd2d-3794995d7be5
+              mobile: '1'
+              tablet: '1'
+              desktop: '2'
+      - _id: bacc9125-593d-4af6-8abe-10e09eb167f7
         type: container
         slots:
           containerContent:
-            - _id: e5645a2e-be6c-4fa4-a991-6e378339ac43
-              type: text
+            - _id: b7ad84b9-d9a0-49db-92b8-ce8051114dab
+              type: image
               parameters:
-                tag:
-                  type: tp-segmented-control-parameter
-                  value: h1
-                size:
-                  type: tp-segmented-control-parameter
+                image:
+                  type: asset
                   value:
-                    mobile: 4xl
-                    tablet: 3xl
-                    desktop: 3xl
-                text:
+                    - _id: 7261ea91-f8c8-4db8-bab6-08a237531cc2
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 704038b5-9210-4da5-a96a-e7649f230c28
+                        url:
+                          value: >-
+                            https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/Olpo24SRTKuIoWEuGf8xoQ-Bell4Better_Building_energy-efficient-fibre_networks.jpg
+                          type: text
+                        file:
+                          type: file
+                          value: 2645ac3b-c9b8-4a3d-8be1-2f5de590c930
+                        size:
+                          value: 124344
+                          type: number
+                        title:
+                          type: text
+                          value: >-
+                            Bell4Better_Building_energy-efficient-fibre_networks.jpg
+                        width:
+                          value: 1440
+                          type: number
+                        height:
+                          value: 661
+                          type: number
+                        mediaType:
+                          value: image/jpeg
+                          type: text
+                      _source: uniform-assets
+                height:
+                  type: number
+                  value: '598'
+                objectFit:
+                  type: tp-segmented-control-parameter
+                  value: cover
+        parameters:
+          spacing:
+            type: tp-space-control-parameter
+            value:
+              marginTop: 48px
+              marginBottom: 48px
+          displayName:
+            type: text
+            value: Image Container
+      - _id: 3741be19-5cae-4a0c-9ef5-090960d4d469
+        type: grid
+        slots:
+          gridInner:
+            - _id: c8e8d617-5b6e-4f1c-8c97-06d766da5873
+              type: grid
+              slots:
+                gridInner:
+                  - _id: fd1dde15-d6f4-40d0-b248-e152d0c418a6
+                    type: image
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: b07172e5-29b1-410e-b7e2-0ebd42ff4b38
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 01f2b70e-2ec4-4cbd-9481-5ef03088f09c
+                              url:
+                                value: >-
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/1RD9Va_4QAuzk8z-6iMMfQ-78709_img_email_capture.png
+                                type: text
+                              file:
+                                type: file
+                                value: 33bc1a64-8af2-44ca-8dbe-6c40cd9758c1
+                              size:
+                                value: 947
+                                type: number
+                              title:
+                                type: text
+                                value: 78709_img_email_capture.png
+                              width:
+                                value: 60
+                                type: number
+                              height:
+                                value: 60
+                                type: number
+                              mediaType:
+                                value: image/png
+                                type: text
+                            _source: uniform-assets
+                      width:
+                        type: number
+                        value: '60'
+                      height:
+                        type: number
+                        value: '60'
+                      objectFit:
+                        type: tp-segmented-control-parameter
+                        value: cover
+                  - _id: b07b1932-bc13-473b-aac1-d1fff7740a25
+                    type: gridItem
+                    slots:
+                      inner:
+                        - _id: 562cc8ff-3063-48c3-ad60-1ad006473bff
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp-segmented-control-parameter
+                              value: span
+                            text:
+                              type: text
+                              value: >-
+                                Sign up to hear about incredible offers you
+                                won’t want to miss – plus our latest products,
+                                services and more.
+                    parameters:
+                      rowSpan:
+                        type: tp-slider-parameter
+                        value: {}
+                      rowStart:
+                        type: tp-slider-parameter
+                        value:
+                          mobile: '2'
+                          tablet: '1'
+                          desktop: '1'
+                      columnSpan:
+                        type: tp-slider-parameter
+                        value:
+                          mobile: span-4
+                          tablet: span-4
+                          desktop: span-4
+                      columnStart:
+                        type: tp-slider-parameter
+                        value:
+                          mobile: '2'
+                          tablet: '2'
+                          desktop: '2'
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value:
+                    desktop: ''
+                gapY:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '4'
+                spacing:
+                  type: tp-space-control-parameter
+                  value:
+                    marginTop: 48px
+                    marginBottom: 48px
+                displayName:
                   type: text
-                  value: Section title
-                weight:
-                  type: tp-segmented-control-parameter
-                  value: bold
-                alignment:
-                  type: tp-segmented-control-parameter
-                  value: center
-                transform:
-                  type: tp-segmented-control-parameter
-                  value: uppercase
-                decoration:
-                  type: tp-segmented-control-parameter
-                  value: underline
-                letterSpacing:
-                  type: tp-segmented-control-parameter
-                  value: wide
-            - _id: 8e1300a5-c106-4c57-b0ce-4b2dde0f7a68
+                  value: Left Section
+                columnsCount:
+                  type: tp-slider-parameter
+                  value:
+                    mobile: '1'
+                    tablet: '4'
+                    desktop: '4'
+            - _id: f894c128-cf5c-4de6-817e-014c25b17a90
               type: richText
               parameters:
                 text:
@@ -453,65 +1187,30 @@ composition:
                           version: 1
                           children:
                             - mode: normal
-                              text: 'Some very '
+                              text: "By submitting, you agree to receive Bell emails, including information we think may be of interest to you about Bell’s products and services (and those of our marketing partners). You can unsubscribe and manage your marketing preferences at any time at\_"
                               type: text
                               style: ''
                               detail: 0
                               format: 0
                               version: 1
-                            - mode: normal
-                              text: rich
-                              type: text
-                              style: ''
-                              detail: 0
-                              format: 1
+                            - link:
+                                path: https://www.bell.ca/email-updates
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
                               version: 1
+                              children:
+                                - mode: normal
+                                  text: email preferences
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
                             - mode: normal
-                              text: ' '
-                              type: text
-                              style: ''
-                              detail: 0
-                              format: 0
-                              version: 1
-                            - mode: normal
-                              text: text
-                              type: text
-                              style: ''
-                              detail: 0
-                              format: 8
-                              version: 1
-                            - mode: normal
-                              text: ' goes here...'
-                              type: text
-                              style: ''
-                              detail: 0
-                              format: 0
-                              version: 1
-                          direction: ltr
-                          textStyle: ''
-                          textFormat: 0
-                        - type: paragraph
-                          format: ''
-                          indent: 0
-                          version: 1
-                          children:
-                            - mode: normal
-                              text: and here
-                              type: text
-                              style: ''
-                              detail: 0
-                              format: 0
-                              version: 1
-                          direction: ltr
-                          textStyle: ''
-                          textFormat: 0
-                        - type: paragraph
-                          format: ''
-                          indent: 0
-                          version: 1
-                          children:
-                            - mode: normal
-                              text: and also here
+                              text: .
                               type: text
                               style: ''
                               detail: 0
@@ -522,18 +1221,162 @@ composition:
                           textFormat: 0
                       direction: ltr
         parameters:
+          gapX:
+            type: tp-slider-parameter
+            value:
+              desktop: '4'
+          gapY:
+            type: tp-slider-parameter
+            value:
+              mobile: '4'
+              tablet: '4'
           spacing:
             type: tp-space-control-parameter
             value:
               marginTop: 48px
-              marginLeft: 48px
-              paddingTop: 120px
-              marginRight: 48px
               marginBottom: 48px
-              paddingBottom: 120px
           displayName:
             type: text
-            value: Demo container
+            value: Sign up Container
+          columnsCount:
+            type: tp-slider-parameter
+            value:
+              mobile: '1'
+              tablet: '1'
+              desktop: '2'
+      - _id: 44d5e6aa-2aa7-44b2-824c-cb5e61e22bd8
+        type: flex
+        slots:
+          flexItem:
+            - _id: 80b5ddc7-802b-42fe-b77c-323bd6498ec4
+              type: image
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: c8e0ab8a-2a3c-432e-aea9-e3277b11e4f6
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 73835a00-5b06-4bda-996f-6a706adfd8bf
+                        url:
+                          value: >-
+                            https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/qLdM7XusSaq9w-WDt-ZTfw-img_QR_Code_Get_the_MyBell_App.png
+                          type: text
+                        file:
+                          type: file
+                          value: 562265a1-06ac-453f-9fd1-c4648849ba2d
+                        size:
+                          value: 3591
+                          type: number
+                        title:
+                          type: text
+                          value: img_QR_Code_Get_the_MyBell_App.png
+                        width:
+                          value: 115
+                          type: number
+                        height:
+                          value: 115
+                          type: number
+                        mediaType:
+                          value: image/png
+                          type: text
+                      _source: uniform-assets
+                width:
+                  type: number
+                  value: '115'
+                height:
+                  type: number
+                  value: '115'
+                objectFit:
+                  type: tp-segmented-control-parameter
+                  value: cover
+            - _id: 72774a1c-7e1f-4b8a-ad01-98dc58c74fab
+              type: richText
+              parameters:
+                text:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: Manage your services with the MyBell app.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 1
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                View and pay bills, check usage, update your
+                                services and add-ons, and more – anytime,
+                                anywhere.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: linebreak
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                Scan the QR code with your smartphone camera to
+                                go to your app store.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+        parameters:
+          gap:
+            type: tp-slider-parameter
+            value:
+              mobile: '4'
+              tablet: '4'
+              desktop: '4'
+          spacing:
+            type: tp-space-control-parameter
+            value:
+              marginTop: 48px
+              marginBottom: 48px
+          direction:
+            type: tp-segmented-control-parameter
+            value:
+              mobile: col
+              tablet: col
+              desktop: row
+          alignItems:
+            type: tp-segmented-control-parameter
+            value: center
+          displayName:
+            type: text
+            value: QR Section
+          justifyContent:
+            type: tp-segmented-control-parameter
+            value:
+              desktop: center
 created: '2024-11-17T00:41:56.344579+00:00'
-modified: '2024-11-17T00:41:56.344579+00:00'
+modified: '2024-11-18T13:45:05.771623+00:00'
 pattern: false
