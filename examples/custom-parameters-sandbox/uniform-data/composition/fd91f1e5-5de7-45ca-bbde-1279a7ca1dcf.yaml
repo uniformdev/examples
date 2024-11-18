@@ -24,13 +24,13 @@ composition:
                   value:
                     mobile: 3xl
                     tablet: 3xl
-                    desktop: 3xl
+                    desktop: lg
                 text:
                   type: text
                   value: Simple Flex Container
                 weight:
                   type: tp-segmented-control-parameter
-                  value: normal
+                  value: medium
                 transform:
                   type: tp-segmented-control-parameter
                   value: capitalize
@@ -394,7 +394,7 @@ composition:
               marginRight: '0'
           displayName:
             type: text
-            value: 1/2 - 2/3 Grid
+            value: 1/3 - 2/3 Grid
           columnsCount:
             type: tp-slider-parameter
             value:
@@ -422,7 +422,7 @@ composition:
                   value: Section title
                 weight:
                   type: tp-segmented-control-parameter
-                  value: medium
+                  value: bold
                 alignment:
                   type: tp-segmented-control-parameter
                   value: center
@@ -431,10 +431,10 @@ composition:
                   value: uppercase
                 decoration:
                   type: tp-segmented-control-parameter
-                  value: ''
+                  value: underline
                 letterSpacing:
                   type: tp-segmented-control-parameter
-                  value: tight
+                  value: wide
             - _id: 8e1300a5-c106-4c57-b0ce-4b2dde0f7a68
               type: richText
               parameters:
@@ -534,6 +534,6 @@ composition:
           displayName:
             type: text
             value: Demo container
-created: '2024-11-16T22:34:07.469748+00:00'
-modified: '2024-11-17T00:25:09.792213+00:00'
+created: '2024-11-17T00:41:56.344579+00:00'
+modified: '2024-11-17T00:41:56.344579+00:00'
 pattern: false
