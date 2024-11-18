@@ -24,8 +24,6 @@ parameters:
           value: 120px
       defaultValue:
         marginTop: 48px
-        marginLeft: 48px
-        marginRight: 48px
         marginBottom: 48px
       selectedGroup: container
   - id: fluidContent

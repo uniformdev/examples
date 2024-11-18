@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7392f17f-c594-4a3e-b2d3-b4adf951f284
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: img-banner_5G_Plus_RatePlan_fall.png
+    file:
+      type: file
+      value: 84db9872-c285-452b-bfd4-2148a18c4b7f
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/onvXUUMMSpOPrrD3lsba0w-img-banner_5G_Plus_RatePlan_fall.png
+      type: text
+    size:
+      value: 19760
+      type: number
+    width:
+      value: 600
+      type: number
+    height:
+      value: 460
+      type: number
+    custom: {}
+created: '2024-11-18T12:10:01.040179+00:00'
+modified: '2024-11-18T12:10:01.040179+00:00'

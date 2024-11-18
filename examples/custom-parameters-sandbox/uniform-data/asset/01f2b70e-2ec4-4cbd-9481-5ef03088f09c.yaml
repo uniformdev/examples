@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 01f2b70e-2ec4-4cbd-9481-5ef03088f09c
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: 78709_img_email_capture.png
+    file:
+      type: file
+      value: 33bc1a64-8af2-44ca-8dbe-6c40cd9758c1
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/1RD9Va_4QAuzk8z-6iMMfQ-78709_img_email_capture.png
+      type: text
+    size:
+      value: 947
+      type: number
+    width:
+      value: 60
+      type: number
+    height:
+      value: 60
+      type: number
+    custom: {}
+created: '2024-11-18T13:24:52.993525+00:00'
+modified: '2024-11-18T13:24:52.993525+00:00'

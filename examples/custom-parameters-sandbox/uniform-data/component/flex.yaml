@@ -1,5 +1,5 @@
-# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
-$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
 id: flex
 name: Flex
 icon: display-flex
@@ -94,7 +94,18 @@ parameters:
     type: tp-space-control-parameter
     typeConfig:
       type: dimensions
-      defaultValue: {}
+      options:
+        - key: small
+          value: 24px
+        - key: medium
+          value: 48px
+        - key: large
+          value: 96px
+        - key: xlarge
+          value: 120px
+      defaultValue:
+        marginTop: 48px
+        marginBottom: 48px
       selectedGroup: container
   - id: fluidContent
     name: Fluid Content
@@ -115,10 +126,12 @@ slots:
       - flexItem
       - richText
       - text
+      - image
+      - grid
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: displayName
 canBeComposition: false
-created: '2024-11-16T23:08:30.227216+00:00'
-updated: '2024-11-17T00:03:01.31677+00:00'
+created: '2024-11-17T00:41:50.67339+00:00'
+updated: '2024-11-18T13:38:17.178229+00:00'

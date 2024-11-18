@@ -1,5 +1,5 @@
 import { HTMLAttributes } from 'react';
-import { ViewPort } from '@/types';
+import { ViewPort } from '@/utils/types';
 
 export type SpaceType = Pick<
   NonNullable<HTMLAttributes<HTMLDivElement>['style']>,

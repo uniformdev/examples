@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
 import { DefaultTheme } from 'tailwindcss/types/generated/default-theme';
-import { ViewPort } from '@/lib/types';
+import { ViewPort } from '@/utils/types';
 
 type TextSize = keyof DefaultTheme['fontSize'];
 

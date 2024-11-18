@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 8a630b58-4b04-4212-9c50-bde980807908
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: img_tile_Google_Pixel_9_Offer.jpg
+    file:
+      type: file
+      value: eae36973-cb3c-4e04-8bf6-9ec6bce6970b
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/1glblskcR7eP2Fqt_7jpDw-img_tile_Google_Pixel_9_Offer.jpg
+      type: text
+    size:
+      value: 2815
+      type: number
+    width:
+      value: 250
+      type: number
+    height:
+      value: 250
+      type: number
+    custom: {}
+created: '2024-11-18T12:38:18.518546+00:00'
+modified: '2024-11-18T12:38:18.518546+00:00'

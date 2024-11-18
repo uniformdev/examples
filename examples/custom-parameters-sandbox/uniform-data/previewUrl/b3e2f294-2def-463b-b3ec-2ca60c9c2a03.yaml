@@ -1,4 +1,4 @@
-id: 9d38578f-5018-48ff-a2bf-cac075e4231e
-name: Default
+id: b3e2f294-2def-463b-b3ec-2ca60c9c2a03
+name: Local
 url: http://localhost:3000/api/preview?secret=hello-world
 order: 0
