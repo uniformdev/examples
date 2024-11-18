@@ -23,35 +23,14 @@ composition:
                       image:
                         type: asset
                         value:
-                          - _id: 5480f54a-76de-49d8-871d-3f8e59a3f27b
+                          - _id: aa3177df-580f-4516-916c-88d566638a91
                             type: image
                             fields:
-                              id:
-                                type: text
-                                value: 67bc5b1f-80bc-4ff1-9250-9866cbe61d98
                               url:
+                                type: text
                                 value: >-
-                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/VhzCGyEvROOMeXpykbDcfQ-img-banner_multicultural_family_airport.jpg
-                                type: text
-                              file:
-                                type: file
-                                value: f563380f-b8b7-4194-a3d6-4d89a2d75386
-                              size:
-                                value: 19311
-                                type: number
-                              title:
-                                type: text
-                                value: img-banner_multicultural_family_airport.jpg
-                              width:
-                                value: 600
-                                type: number
-                              height:
-                                value: 460
-                                type: number
-                              mediaType:
-                                value: image/jpeg
-                                type: text
-                            _source: uniform-assets
+                                  https://plus.unsplash.com/premium_photo-1673483585905-439b19e0d30a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                            _source: custom-url
                       height:
                         type: number
                         value: '460'
@@ -77,8 +56,8 @@ composition:
                             text:
                               type: text
                               value: >-
-                                Welcome. Get connected on Canada’s best 5G
-                                network
+                                Welcome to San Francisco. The smallest big city
+                                of America.
                             weight:
                               type: tp-segmented-control-parameter
                               value: medium
@@ -138,241 +117,149 @@ composition:
               marginBottom: 48px
           displayName:
             type: text
-            value: Hero Container 1
+            value: Hero Container
           fluidContent:
             type: checkbox
             value: true
-      - _id: 2cff07dc-4727-4050-abd9-afaad4d054cc
-        type: container
+      - _id: 68bf4096-8545-489a-9f1f-6c9e971e9296
+        type: grid
         slots:
-          containerContent:
-            - _id: 68bf4096-8545-489a-9f1f-6c9e971e9296
-              type: grid
+          gridInner:
+            - _id: 21a6b084-36b3-4c06-98ae-8d667b827e31
+              type: flex
               slots:
-                gridInner:
-                  - _id: 559d2e02-f616-4f06-b713-4ce3464279e1
-                    type: image
+                flexItem:
+                  - _id: c1ac7d54-b9fe-42db-9694-907ca134d4d6
+                    type: text
                     parameters:
-                      image:
-                        type: asset
-                        value:
-                          - _id: c7e17fc2-f0b8-442c-b8c3-a91254531088
-                            type: image
-                            fields:
-                              id:
-                                type: text
-                                value: 7392f17f-c594-4a3e-b2d3-b4adf951f284
-                              url:
-                                value: >-
-                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/onvXUUMMSpOPrrD3lsba0w-img-banner_5G_Plus_RatePlan_fall.png
-                                type: text
-                              file:
-                                type: file
-                                value: 84db9872-c285-452b-bfd4-2148a18c4b7f
-                              size:
-                                value: 19760
-                                type: number
-                              title:
-                                type: text
-                                value: img-banner_5G_Plus_RatePlan_fall.png
-                              width:
-                                value: 600
-                                type: number
-                              height:
-                                value: 460
-                                type: number
-                              mediaType:
-                                value: image/png
-                                type: text
-                            _source: uniform-assets
-                      height:
-                        type: number
-                        value: '460'
-                      objectFit:
+                      tag:
                         type: tp-segmented-control-parameter
-                        value: cover
-                  - _id: 21a6b084-36b3-4c06-98ae-8d667b827e31
-                    type: flex
-                    slots:
-                      flexItem:
-                        - _id: c1ac7d54-b9fe-42db-9694-907ca134d4d6
-                          type: text
-                          parameters:
-                            tag:
-                              type: tp-segmented-control-parameter
-                              value: h2
-                            size:
-                              type: tp-segmented-control-parameter
-                              value:
-                                mobile: 4xl
-                                tablet: 4xl
-                                desktop: 4xl
-                            text:
-                              type: text
-                              value: Switch to Canada’s fastest and most reliable
-                            weight:
-                              type: tp-segmented-control-parameter
-                              value: medium
-                            alignment:
-                              type: tp-segmented-control-parameter
-                              value: ''
-                        - _id: 4026d53c-7f70-468a-b900-57782b8c2b5c
-                          type: richText
-                          parameters:
-                            text:
-                              type: richText
-                              value:
-                                root:
-                                  type: root
-                                  format: ''
-                                  indent: 0
-                                  version: 1
-                                  children:
-                                    - tag: h2
-                                      type: heading
-                                      format: ''
-                                      indent: 0
-                                      version: 1
-                                      children:
-                                        - mode: normal
-                                          text: '100 GB | '
-                                          type: text
-                                          style: ''
-                                          detail: 0
-                                          format: 1
-                                          version: 1
-                                        - mode: normal
-                                          text: $
-                                          type: text
-                                          style: ''
-                                          detail: 0
-                                          format: 65
-                                          version: 1
-                                        - mode: normal
-                                          text: '50'
-                                          type: text
-                                          style: ''
-                                          detail: 0
-                                          format: 1
-                                          version: 1
-                                        - mode: normal
-                                          text: 00/mo.
-                                          type: text
-                                          style: ''
-                                          detail: 0
-                                          format: 65
-                                          version: 1
-                                      direction: ltr
-                                    - type: asset
-                                      __asset:
-                                        _id: 558c3bd2-0d70-4beb-9a34-f1e60f36d6cf
-                                        type: image
-                                        fields:
-                                          id:
-                                            type: text
-                                            value: 58172ee4-78c8-4b5b-b0fc-5a460c0ce02a
-                                          url:
-                                            value: >-
-                                              https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/x1iYsE0TRP6dLFP-FhELIQ-logo_Plus_Crave.webp
-                                            type: text
-                                          file:
-                                            type: file
-                                            value: f89326a3-09b0-49e8-963f-fa154236aadf
-                                          size:
-                                            value: 1530
-                                            type: number
-                                          title:
-                                            type: text
-                                            value: logo_Plus_Crave.webp
-                                          width:
-                                            value: 88
-                                            type: number
-                                          height:
-                                            value: 13
-                                            type: number
-                                          mediaType:
-                                            value: image/webp
-                                            type: text
-                                        _source: uniform-assets
-                                      version: 1
-                                    - type: paragraph
-                                      format: ''
-                                      indent: 0
-                                      version: 1
-                                      children:
-                                        - type: linebreak
-                                          version: 1
-                                        - mode: normal
-                                          text: >-
-                                            When you bring your own phone and bundle
-                                            with Internet. Includes Autopay credit.
-                                          type: text
-                                          style: ''
-                                          detail: 0
-                                          format: 0
-                                          version: 1
-                                      direction: ltr
-                                      textStyle: ''
-                                      textFormat: 0
-                                  direction: ltr
-                    parameters:
-                      gap:
-                        type: tp-slider-parameter
-                        value:
-                          mobile: '4'
-                          desktop: '4'
-                      spacing:
-                        type: tp-space-control-parameter
-                        value:
-                          marginTop: 96px
-                      direction:
+                        value: h2
+                      size:
                         type: tp-segmented-control-parameter
                         value:
-                          mobile: col
-                          tablet: row
-                          desktop: col
-                      alignItems:
-                        type: tp-segmented-control-parameter
-                        value: start
-                      displayName:
+                          mobile: 4xl
+                          tablet: 4xl
+                          desktop: 4xl
+                      text:
                         type: text
-                        value: Content Section
-                      justifyContent:
+                        value: Sunrise walking tour
+                      weight:
                         type: tp-segmented-control-parameter
+                        value: medium
+                      alignment:
+                        type: tp-segmented-control-parameter
+                        value: ''
+                  - _id: 4026d53c-7f70-468a-b900-57782b8c2b5c
+                    type: richText
+                    parameters:
+                      text:
+                        type: richText
                         value:
-                          desktop: center
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - tag: h2
+                                type: heading
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: $100 per person
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 1
+                                    version: 1
+                                direction: ltr
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - type: linebreak
+                                    version: 1
+                                  - mode: normal
+                                    text: Pay with Venmo onsite.
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                            direction: ltr
               parameters:
-                gapX:
+                gap:
                   type: tp-slider-parameter
                   value:
-                    tablet: '4'
+                    mobile: '4'
                     desktop: '4'
-                gapY:
-                  type: tp-slider-parameter
+                spacing:
+                  type: tp-space-control-parameter
                   value:
-                    mobile: '2'
-                    desktop: ''
+                    marginTop: 96px
+                direction:
+                  type: tp-segmented-control-parameter
+                  value:
+                    mobile: col
+                    tablet: row
+                    desktop: col
+                alignItems:
+                  type: tp-segmented-control-parameter
+                  value: start
                 displayName:
                   type: text
-                  value: Two Columns Section
-                columnsCount:
-                  type: tp-slider-parameter
+                  value: Content Section
+                justifyContent:
+                  type: tp-segmented-control-parameter
                   value:
-                    mobile: '1'
-                    tablet: '1'
-                    desktop: '2'
+                    desktop: center
+            - _id: 559d2e02-f616-4f06-b713-4ce3464279e1
+              type: image
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: 3b5cfa89-f879-4fbe-babf-348c40a11460
+                      type: image
+                      fields:
+                        url:
+                          type: text
+                          value: >-
+                            https://plus.unsplash.com/premium_photo-1675826460442-4ee183d228fc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                      _source: custom-url
+                height:
+                  type: number
+                  value: '460'
+                objectFit:
+                  type: tp-segmented-control-parameter
+                  value: cover
         parameters:
-          spacing:
-            type: tp-space-control-parameter
+          gapX:
+            type: tp-slider-parameter
             value:
-              marginTop: 48px
-              marginBottom: 48px
+              tablet: '4'
+              desktop: '4'
+          gapY:
+            type: tp-slider-parameter
+            value:
+              mobile: '2'
+              desktop: ''
           displayName:
             type: text
-            value: Hero Container 2
-          fluidContent:
-            type: checkbox
-            value: true
+            value: Two Columns Section
+          columnsCount:
+            type: tp-slider-parameter
+            value:
+              mobile: '1'
+              tablet: '1'
+              desktop: '2'
       - _id: a5a07f94-ce80-4a70-ad96-26212cee3f57
         type: grid
         slots:
@@ -399,7 +286,7 @@ composition:
                                 version: 1
                                 children:
                                   - mode: normal
-                                    text: LIMITED-TIME OFFER
+                                    text: HERITAGE WALKING TOUR
                                     type: text
                                     style: ''
                                     detail: 0
@@ -414,7 +301,7 @@ composition:
                                 version: 1
                                 children:
                                   - mode: normal
-                                    text: "Save over\_$900\_on Google Pixel 9."
+                                    text: Book for $49 per person.
                                     type: text
                                     style: ''
                                     detail: 0
@@ -429,8 +316,7 @@ composition:
                                 version: 1
                                 children:
                                   - link:
-                                      path: >-
-                                        https://www.bell.ca/Mobility/Products/Google-Pixel-9#INT=MOB_hmpg_BAN_GooglePixel9_111424_GC
+                                      path: /
                                       type: url
                                     type: link
                                     format: ''
@@ -438,7 +324,7 @@ composition:
                                     version: 1
                                     children:
                                       - mode: normal
-                                        text: "View phone\_"
+                                        text: Book now
                                         type: text
                                         style: ''
                                         detail: 0
@@ -454,7 +340,9 @@ composition:
                                 version: 1
                                 children:
                                   - mode: normal
-                                    text: "Over 24 months with SmartPay on an eligible 2-year plan. Compared to our device full\_price."
+                                    text: >-
+                                      Over 2 hours of walking around
+                                      multi-cultural neighborhoods of SF!
                                     type: text
                                     style: ''
                                     detail: 0
@@ -470,35 +358,14 @@ composition:
                       image:
                         type: asset
                         value:
-                          - _id: 12f4713b-5a23-4e84-9aa9-c9675856265e
+                          - _id: a0eab87c-204f-4ea2-be86-375a37a747d6
                             type: image
                             fields:
-                              id:
-                                type: text
-                                value: 8a630b58-4b04-4212-9c50-bde980807908
                               url:
+                                type: text
                                 value: >-
-                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/1glblskcR7eP2Fqt_7jpDw-img_tile_Google_Pixel_9_Offer.jpg
-                                type: text
-                              file:
-                                type: file
-                                value: eae36973-cb3c-4e04-8bf6-9ec6bce6970b
-                              size:
-                                value: 2815
-                                type: number
-                              title:
-                                type: text
-                                value: img_tile_Google_Pixel_9_Offer.jpg
-                              width:
-                                value: 250
-                                type: number
-                              height:
-                                value: 250
-                                type: number
-                              mediaType:
-                                value: image/jpeg
-                                type: text
-                            _source: uniform-assets
+                                  https://images.unsplash.com/photo-1519627745017-8f1c7ec8d37d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                            _source: custom-url
                       height:
                         type: number
                         value: '240'
@@ -550,9 +417,53 @@ composition:
                                 version: 1
                                 children:
                                   - mode: normal
-                                    text: >-
-                                      Switch to pure fibre Internet and Fibe TV
-                                      from
+                                    text: SAN FRANCISCO HILL CLIMB TOUR
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - link:
+                                      path: /
+                                      type: url
+                                    type: link
+                                    format: ''
+                                    indent: 0
+                                    version: 1
+                                    children:
+                                      - mode: normal
+                                        text: Book now
+                                        type: text
+                                        style: ''
+                                        detail: 0
+                                        format: 0
+                                        version: 1
+                                    direction: ltr
+                                  - mode: normal
+                                    text: ' for $59.99 per person.'
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: Walk 7 hills and 3 miles in under 3 hours.
                                     type: text
                                     style: ''
                                     detail: 0
@@ -561,59 +472,6 @@ composition:
                                 direction: ltr
                                 textStyle: ''
                                 textFormat: 1
-                              - tag: h2
-                                type: heading
-                                format: ''
-                                indent: 0
-                                version: 1
-                                children:
-                                  - mode: normal
-                                    text: $
-                                    type: text
-                                    style: ''
-                                    detail: 0
-                                    format: 64
-                                    version: 1
-                                  - mode: normal
-                                    text: '100'
-                                    type: text
-                                    style: ''
-                                    detail: 0
-                                    format: 0
-                                    version: 1
-                                  - mode: normal
-                                    text: .00/mo.
-                                    type: text
-                                    style: ''
-                                    detail: 0
-                                    format: 64
-                                    version: 1
-                                direction: ltr
-                              - type: paragraph
-                                format: ''
-                                indent: 0
-                                version: 1
-                                children:
-                                  - link:
-                                      path: >-
-                                        https://www.bell.ca/Bell-bundles#INT=BUN_hmpg_TIL_duo_Acq_091024_nts
-                                      type: url
-                                    type: link
-                                    format: ''
-                                    indent: 0
-                                    version: 1
-                                    children:
-                                      - mode: normal
-                                        text: "Learn more\_"
-                                        type: text
-                                        style: ''
-                                        detail: 0
-                                        format: 0
-                                        version: 1
-                                    direction: ltr
-                                direction: ltr
-                                textStyle: ''
-                                textFormat: 0
                             direction: ltr
                   - _id: 4b474f15-5552-43aa-aa35-c0fb97aeb648
                     type: image
@@ -621,35 +479,14 @@ composition:
                       image:
                         type: asset
                         value:
-                          - _id: 65bcbb15-a859-4657-81e8-5449d5920109
+                          - _id: f872e0c8-aed3-46ab-867e-b2abf585767e
                             type: image
                             fields:
-                              id:
-                                type: text
-                                value: f3a5b1b1-7126-4ff5-ba6c-cd3766c307ac
                               url:
+                                type: text
                                 value: >-
-                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/fdaMs2T3QRauNfdsE5MXEQ-img-whyBellTile_Fibe_Duo_en.png
-                                type: text
-                              file:
-                                type: file
-                                value: ce018d59-aab2-4f18-af18-1641d3cf1d6a
-                              size:
-                                value: 1997
-                                type: number
-                              title:
-                                type: text
-                                value: img-whyBellTile_Fibe_Duo_en.png
-                              width:
-                                value: 250
-                                type: number
-                              height:
-                                value: 180
-                                type: number
-                              mediaType:
-                                value: image/png
-                                type: text
-                            _source: uniform-assets
+                                  https://images.unsplash.com/photo-1517685025977-5839072a34ab?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                            _source: custom-url
                       height:
                         type: number
                         value: '240'
@@ -717,30 +554,30 @@ composition:
                       image:
                         type: asset
                         value:
-                          - _id: 602f2133-13e9-4cfb-ac3a-5162dc49d4b4
+                          - _id: 751cbdcc-5724-437c-9e33-73e788e36f63
                             type: image
                             fields:
                               id:
                                 type: text
-                                value: fd06e3b5-77e9-415d-b6de-533bbee79dac
+                                value: e7b13ecc-6363-40fc-9eca-34ae000ab4ca
                               url:
                                 value: >-
-                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/b7srKCxlSnyUasAR_ceE4A-img_tile_hmpg_Best_ISP_Alt_June2024_EN.png
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/YUECy1LGRKSxycN7IGGEqA-image.png
                                 type: text
                               file:
                                 type: file
-                                value: c91a8e4f-1394-4fd2-b99c-b5afcdef8209
+                                value: d49ed2f5-90ca-426a-a5a2-c3e7db52cba7
                               size:
-                                value: 10203
+                                value: 83155
                                 type: number
                               title:
                                 type: text
-                                value: img_tile_hmpg_Best_ISP_Alt_June2024_EN.png
+                                value: image.png
                               width:
-                                value: 460
+                                value: 300
                                 type: number
                               height:
-                                value: 302
+                                value: 300
                                 type: number
                               mediaType:
                                 value: image/png
@@ -771,7 +608,7 @@ composition:
                                 version: 1
                                 children:
                                   - mode: normal
-                                    text: Most awarded Internet service provider.
+                                    text: Highest rated Yelp business in category
                                     type: text
                                     style: ''
                                     detail: 0
@@ -797,8 +634,7 @@ composition:
                                 version: 1
                                 children:
                                   - link:
-                                      path: >-
-                                        https://www.bell.ca/Bell_Internet?INT=ISP_hmpg_til_Mostawardedisp_acq_101523_mcc#INT_hmpg-gaming
+                                      path: https://yelp.com
                                       type: url
                                     type: link
                                     format: ''
@@ -852,30 +688,30 @@ composition:
                       image:
                         type: asset
                         value:
-                          - _id: 175bd4d3-155a-4e83-9648-2591a9cd8c17
+                          - _id: aaf280ba-aa55-4cf7-80ab-a5ac00a69e6e
                             type: image
                             fields:
                               id:
                                 type: text
-                                value: 722d1041-717a-46b4-bb60-b2df28f5bcb4
+                                value: 7ce7e118-1b26-4fdc-915b-51ea7db6696f
                               url:
                                 value: >-
-                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/hbPoINY2SCCiC2TplMMDrw-img_GWS_OneScore_Badge_trio_2024_ALT_en.png
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/zsf2Toj0TyOYRaQFgl8c3g-image.png
                                 type: text
                               file:
                                 type: file
-                                value: 65e73461-e3eb-4cdc-9e50-08752cce8936
+                                value: 1d6e0bc2-9882-43c1-a679-c59bd1756884
                               size:
-                                value: 18088
+                                value: 120143
                                 type: number
                               title:
                                 type: text
-                                value: img_GWS_OneScore_Badge_trio_2024_ALT_en.png
+                                value: image.png
                               width:
-                                value: 560
+                                value: 360
                                 type: number
                               height:
-                                value: 240
+                                value: 360
                                 type: number
                               mediaType:
                                 value: image/png
@@ -906,7 +742,7 @@ composition:
                                 version: 1
                                 children:
                                   - mode: normal
-                                    text: Most awarded Internet service provider.
+                                    text: Most awarded tour guide.
                                     type: text
                                     style: ''
                                     detail: 0
@@ -932,8 +768,7 @@ composition:
                                 version: 1
                                 children:
                                   - link:
-                                      path: >-
-                                        https://www.bell.ca/Bell_Internet?INT=ISP_hmpg_til_Mostawardedisp_acq_101523_mcc#INT_hmpg-gaming
+                                      path: /awards
                                       type: url
                                     type: link
                                     format: ''
@@ -1011,36 +846,14 @@ composition:
                 image:
                   type: asset
                   value:
-                    - _id: 7261ea91-f8c8-4db8-bab6-08a237531cc2
+                    - _id: d71ad06f-1961-428a-8a98-27b1fbdd5e8a
                       type: image
                       fields:
-                        id:
-                          type: text
-                          value: 704038b5-9210-4da5-a96a-e7649f230c28
                         url:
-                          value: >-
-                            https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/Olpo24SRTKuIoWEuGf8xoQ-Bell4Better_Building_energy-efficient-fibre_networks.jpg
-                          type: text
-                        file:
-                          type: file
-                          value: 2645ac3b-c9b8-4a3d-8be1-2f5de590c930
-                        size:
-                          value: 124344
-                          type: number
-                        title:
                           type: text
                           value: >-
-                            Bell4Better_Building_energy-efficient-fibre_networks.jpg
-                        width:
-                          value: 1440
-                          type: number
-                        height:
-                          value: 661
-                          type: number
-                        mediaType:
-                          value: image/jpeg
-                          type: text
-                      _source: uniform-assets
+                            https://plus.unsplash.com/premium_photo-1670992114662-1f102c1cec79?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                      _source: custom-url
                 height:
                   type: number
                   value: '598'
@@ -1070,33 +883,33 @@ composition:
                       image:
                         type: asset
                         value:
-                          - _id: b07172e5-29b1-410e-b7e2-0ebd42ff4b38
+                          - _id: 8dfbd364-e81c-49d0-9d7f-493e0b861922
                             type: image
                             fields:
                               id:
                                 type: text
-                                value: 01f2b70e-2ec4-4cbd-9481-5ef03088f09c
+                                value: f591386c-7a10-48c2-9da8-43ebbe6e5fb7
                               url:
                                 value: >-
-                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/1RD9Va_4QAuzk8z-6iMMfQ-78709_img_email_capture.png
+                                  https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/tnBT0Cc7Qu2s51GdJ3fx6w-Email-Icon-SVG.svg
                                 type: text
                               file:
                                 type: file
-                                value: 33bc1a64-8af2-44ca-8dbe-6c40cd9758c1
+                                value: 23b955a1-bc84-49f7-8d25-9b53669b6917
                               size:
-                                value: 947
+                                value: 658
                                 type: number
                               title:
                                 type: text
-                                value: 78709_img_email_capture.png
+                                value: Email-Icon-SVG.svg
                               width:
-                                value: 60
+                                value: 150
                                 type: number
                               height:
-                                value: 60
+                                value: 150
                                 type: number
                               mediaType:
-                                value: image/png
+                                value: image/svg+xml
                                 type: text
                             _source: uniform-assets
                       width:
@@ -1121,9 +934,8 @@ composition:
                             text:
                               type: text
                               value: >-
-                                Sign up to hear about incredible offers you
-                                won’t want to miss – plus our latest products,
-                                services and more.
+                                Sign up to hear about incredible tours you won’t
+                                want to miss out on and more! and more.
                     parameters:
                       rowSpan:
                         type: tp-slider-parameter
@@ -1190,14 +1002,14 @@ composition:
                           version: 1
                           children:
                             - mode: normal
-                              text: "By submitting, you agree to receive Bell emails, including information we think may be of interest to you about Bell’s products and services (and those of our marketing partners). You can unsubscribe and manage your marketing preferences at any time at\_"
+                              text: "By submitting, you agree to receive emails, including information we think may be of interest to you about services (and those of our marketing partners). You can unsubscribe and manage your marketing preferences at any time at\_"
                               type: text
                               style: ''
                               detail: 0
                               format: 0
                               version: 1
                             - link:
-                                path: https://www.bell.ca/email-updates
+                                path: /unsubscribe
                                 type: url
                               type: link
                               format: ''
@@ -1257,33 +1069,33 @@ composition:
                 image:
                   type: asset
                   value:
-                    - _id: c8e0ab8a-2a3c-432e-aea9-e3277b11e4f6
+                    - _id: 9e1fe4e7-ff33-43a5-97b5-ccbaf8d2d97c
                       type: image
                       fields:
                         id:
                           type: text
-                          value: 73835a00-5b06-4bda-996f-6a706adfd8bf
+                          value: dde44197-2161-43d0-a9e8-a3e1f7241998
                         url:
                           value: >-
-                            https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/qLdM7XusSaq9w-WDt-ZTfw-img_QR_Code_Get_the_MyBell_App.png
+                            https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/SO7pY8z_SlCx9YI2DEaE7w-demo-qr-code.svg
                           type: text
                         file:
                           type: file
-                          value: 562265a1-06ac-453f-9fd1-c4648849ba2d
+                          value: b3d00c3c-5e61-4696-b7fa-044e72496cf2
                         size:
-                          value: 3591
+                          value: 40957
                           type: number
                         title:
                           type: text
-                          value: img_QR_Code_Get_the_MyBell_App.png
+                          value: demo-qr-code.svg
                         width:
-                          value: 115
+                          value: 2000
                           type: number
                         height:
-                          value: 115
+                          value: 2000
                           type: number
                         mediaType:
-                          value: image/png
+                          value: image/svg+xml
                           type: text
                       _source: uniform-assets
                 width:
@@ -1313,7 +1125,7 @@ composition:
                           version: 1
                           children:
                             - mode: normal
-                              text: Manage your services with the MyBell app.
+                              text: Manage your services with the SF Buddy app.
                               type: text
                               style: ''
                               detail: 0
@@ -1329,13 +1141,14 @@ composition:
                           children:
                             - mode: normal
                               text: >-
-                                View and pay bills, check usage, update your
-                                services and add-ons, and more – anytime,
-                                anywhere.
+                                Book latest tours, connect with your guide and
+                                explore the city together.
                               type: text
                               style: ''
                               detail: 0
                               format: 0
+                              version: 1
+                            - type: linebreak
                               version: 1
                             - type: linebreak
                               version: 1
@@ -1381,5 +1194,5 @@ composition:
             value:
               desktop: center
 created: '2024-11-17T00:41:56.344579+00:00'
-modified: '2024-11-18T14:41:24.622299+00:00'
+modified: '2024-11-18T20:19:15.62426+00:00'
 pattern: false
