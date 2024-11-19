@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: screen
+parameters: []
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-11-18T22:53:05.15462+00:00'
+updated: '2024-11-18T22:53:05.15462+00:00'
