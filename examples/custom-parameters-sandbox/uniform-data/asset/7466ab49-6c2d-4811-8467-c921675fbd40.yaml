@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7466ab49-6c2d-4811-8467-c921675fbd40
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: golden_gate_bridge_at_sunset.jpg
+    file:
+      type: file
+      value: b2923d49-03fc-4e3f-b3fb-dfd17acb6ab8
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/lgMuxchSR1OIaqw9N5_iKw-golden_gate_bridge_at_sunset.jpg
+      type: text
+    size:
+      value: 55898
+      type: number
+    width:
+      value: 640
+      type: number
+    height:
+      value: 428
+      type: number
+    custom: {}
+created: '2024-11-19T09:00:17.733723+00:00'
+modified: '2024-11-19T09:00:17.733723+00:00'
