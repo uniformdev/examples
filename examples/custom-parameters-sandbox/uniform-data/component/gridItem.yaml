@@ -128,10 +128,11 @@ slots:
       - container
       - richText
       - text
+      - grid
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: displayName
 canBeComposition: false
-created: '2024-11-16T23:08:31.817215+00:00'
-updated: '2024-11-16T23:57:58.981976+00:00'
+created: '2024-11-17T00:41:52.805545+00:00'
+updated: '2024-11-19T08:11:21.940997+00:00'

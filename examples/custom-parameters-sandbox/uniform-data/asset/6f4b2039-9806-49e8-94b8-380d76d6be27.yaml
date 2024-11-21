@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 6f4b2039-9806-49e8-94b8-380d76d6be27
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: lombard_street.jpg
+    file:
+      type: file
+      value: b9a431a4-0a0b-44d8-83e2-367e012d5457
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/dFzpUcANR0WFdTgpA8Hb0Q-lombard_street.jpg
+      type: text
+    size:
+      value: 286741
+      type: number
+    width:
+      value: 1920
+      type: number
+    height:
+      value: 1080
+      type: number
+    custom: {}
+created: '2024-11-19T09:01:08.609332+00:00'
+modified: '2024-11-19T09:01:08.609332+00:00'

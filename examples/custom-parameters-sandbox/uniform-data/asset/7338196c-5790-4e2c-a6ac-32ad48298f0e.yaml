@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7338196c-5790-4e2c-a6ac-32ad48298f0e
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: cable_car_on_a_steep_hill.jpg
+    file:
+      type: file
+      value: 74bf5ff2-2e13-4254-b60f-075efa4bc444
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/4-6dq1UaT-qWpfJi0zlGjQ-cable_car_on_a_steep_hill.jpg
+      type: text
+    size:
+      value: 938724
+      type: number
+    width:
+      value: 1920
+      type: number
+    height:
+      value: 2401
+      type: number
+    custom: {}
+created: '2024-11-19T09:00:35.827006+00:00'
+modified: '2024-11-19T09:00:35.827006+00:00'

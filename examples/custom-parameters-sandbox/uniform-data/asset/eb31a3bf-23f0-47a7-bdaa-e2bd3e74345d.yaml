@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: eb31a3bf-23f0-47a7-bdaa-e2bd3e74345d
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: fisherman_wharf.jpg
+    file:
+      type: file
+      value: f347b18c-3411-4a48-b9a0-cbffa15a2cbf
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://canary-img.uniform.global/p/HaqJ8RuwQ3OVhHwiZqep3A/QrrIlm38Sly5XT7ypiiE0g-fisherman_wharf.jpg
+      type: text
+    size:
+      value: 1004473
+      type: number
+    width:
+      value: 1920
+      type: number
+    height:
+      value: 2401
+      type: number
+    custom: {}
+created: '2024-11-19T09:00:53.151633+00:00'
+modified: '2024-11-19T09:00:53.151633+00:00'
