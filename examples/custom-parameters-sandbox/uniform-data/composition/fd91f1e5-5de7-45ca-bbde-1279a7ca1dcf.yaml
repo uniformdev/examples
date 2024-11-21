@@ -52,12 +52,31 @@ composition:
                               value:
                                 mobile: 4xl
                                 tablet: 4xl
+                                desktop: 5xl
+                            text:
+                              type: text
+                              value: Welcome to San Francisco.
+                            weight:
+                              type: tp-segmented-control-parameter
+                              value: extrabold
+                            alignment:
+                              type: tp-segmented-control-parameter
+                              value: ''
+                        - _id: baa9e67f-28a4-4c55-80be-7330da7de1d9
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp-segmented-control-parameter
+                              value: h3
+                            size:
+                              type: tp-segmented-control-parameter
+                              value:
+                                mobile: 4xl
+                                tablet: 4xl
                                 desktop: 4xl
                             text:
                               type: text
-                              value: >-
-                                Welcome to San Francisco. The smallest big city
-                                of America.
+                              value: The smallest big city in America.
                             weight:
                               type: tp-segmented-control-parameter
                               value: medium
@@ -146,7 +165,7 @@ composition:
                         value: Sunrise walking tour
                       weight:
                         type: tp-segmented-control-parameter
-                        value: medium
+                        value: bold
                       alignment:
                         type: tp-segmented-control-parameter
                         value: ''
@@ -1610,10 +1629,10 @@ composition:
                                 type: text
                                 value: Email-Icon-SVG.svg
                               width:
-                                value: 150
+                                value: 171
                                 type: number
                               height:
-                                value: 150
+                                value: 171
                                 type: number
                               mediaType:
                                 value: image/svg+xml
@@ -1900,6 +1919,6 @@ composition:
             type: tp-segmented-control-parameter
             value:
               desktop: center
-created: '2024-11-17T00:41:56.344579+00:00'
-modified: '2024-11-19T09:01:45.341283+00:00'
+created: '2024-11-19T18:41:47.083503+00:00'
+modified: '2024-11-21T02:42:14.354838+00:00'
 pattern: false

@@ -8,7 +8,7 @@ asset:
       value: Email-Icon-SVG.svg
     file:
       type: file
-      value: 23b955a1-bc84-49f7-8d25-9b53669b6917
+      value: ae73b11f-de08-4b7d-840a-57a343debb8f
     mediaType:
       value: image/svg+xml
       type: text
@@ -20,11 +20,11 @@ asset:
       value: 658
       type: number
     width:
-      value: 150
+      value: 171
       type: number
     height:
-      value: 150
+      value: 171
       type: number
     custom: {}
-created: '2024-11-18T20:14:19.502421+00:00'
-modified: '2024-11-18T20:14:19.502421+00:00'
+created: '2024-11-19T18:41:18.964985+00:00'
+modified: '2024-11-21T02:41:02.300843+00:00'
