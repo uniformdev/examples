@@ -19,8 +19,8 @@
     "@uniformdev/context": "^19.186.1",
     "@uniformdev/context-edge-netlify": "^19.186.1",
     "@uniformdev/context-next": "^19.186.1",
-    "@uniformdev/context-react": "^19.186.1",
-    "cookie": "^0.5.0",
+    "@uniformdev/context-react": "^19.191.0",
+    "cookie": "^0.7.0",
     "next": "^14.2.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
