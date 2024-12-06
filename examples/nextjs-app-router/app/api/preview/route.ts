@@ -1,11 +1,12 @@
 import {
   createPreviewGETRouteHandler,
-  createPreviewOPTIONSRouteHandler,
   createPreviewPOSTRouteHandler,
-} from "@uniformdev/canvas-next-rsc/handler";
+  createPreviewOPTIONSRouteHandler,
+} from '@uniformdev/canvas-next-rsc/handler';
 
 export const GET = createPreviewGETRouteHandler({
-  playgroundPath: "/playground",
+  playgroundPath: '/playground',
+  resolveFullPath: ({ path }) => (path ? path : '/playground'),
 });
 export const POST = createPreviewPOSTRouteHandler();
 export const OPTIONS = createPreviewOPTIONSRouteHandler();
