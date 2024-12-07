@@ -11,11 +11,8 @@ import retrieveRoute from "@/uniform/l18n/localeHelper";
 // example component that displays current quirks from Uniform Context tracker
 // import { QuirksSetter } from "@/components/quirks-setter";
 
-// This is static as an example
-const defaultLocale = "en";
-
 export default async function HomePage(props: PageParameters) {
-  const route = await retrieveRoute(props, defaultLocale);
+  const route = await retrieveRoute(props);
   const serverContext = await createServerUniformContext({
     searchParams: props.searchParams,
   });

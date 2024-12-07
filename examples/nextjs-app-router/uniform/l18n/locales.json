@@ -1,9 +1,8 @@
 {
- "locales": [
-  "en"
- ],
- "localeNames": {
-  "en": "English"
- },
- "defaultLocale": "en"
+  "locales": ["en", "fr"],
+  "localeNames": {
+    "en": "English",
+    "fr": "Français"
+  },
+  "defaultLocale": "en"
 }
