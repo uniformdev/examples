@@ -1,0 +1,10 @@
+id: 8852f1dd-50e8-4e44-9ead-33f044271a8e
+name: Home
+order: 500
+path: /:locale
+type: composition
+pathSegment: ':locale'
+data:
+  previewValue: ''
+compositionId: 26667348-5cd1-4185-b5a0-8413e1e87117
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

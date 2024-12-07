@@ -7,14 +7,12 @@ parameters:
   - id: title
     name: Title
     type: text
-    helpText: ''
     typeConfig:
       required: true
     localizable: true
   - id: description
     name: Description
     type: richText
-    helpText: ''
     typeConfig:
       elements:
         builtIn:
@@ -45,5 +43,5 @@ useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2023-02-16T15:35:55.091438+00:00'
-updated: '2024-02-02T20:07:35.357979+00:00'
+created: '2023-06-29T04:47:25.223883+00:00'
+updated: '2024-07-17T16:23:52.473876+00:00'

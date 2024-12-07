@@ -7,12 +7,19 @@ parameters:
   - id: metaTitle
     name: Meta Title
     type: text
-    helpText: ''
     typeConfig:
       required: false
     localizable: true
 useTeamPermissions: true
 slots:
+  - id: header
+    name: Header
+    maxComponents: 1
+    allowedComponents:
+      - header
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
   - id: content
     name: Content
     allowedComponents:
@@ -21,11 +28,19 @@ slots:
       - $test
       - $localization
     inheritAllowedComponents: false
+  - id: footer
+    name: Footer
+    maxComponents: 1
+    allowedComponents:
+      - footer
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
 slugSettings:
   unique: global
   required: 'yes'
   regularExpression: ''
   regularExpressionMessage: ''
 canBeComposition: true
-created: '2023-02-16T15:35:54.842144+00:00'
-updated: '2024-02-02T20:07:45.857304+00:00'
+created: '2023-06-29T04:47:25.676613+00:00'
+updated: '2024-12-07T00:27:25.002787+00:00'

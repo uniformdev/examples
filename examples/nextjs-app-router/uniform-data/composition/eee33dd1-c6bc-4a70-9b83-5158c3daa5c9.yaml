@@ -1,0 +1,25 @@
+composition:
+  _name: '404'
+  _id: eee33dd1-c6bc-4a70-9b83-5158c3daa5c9
+  _slug: '404'
+  type: page
+  slots:
+    footer:
+      - _id: fa1aefd9-7396-4593-92b8-4b71eb7252b9
+        type: footer
+    header:
+      - _id: bbb98e73-eb8f-4148-bc52-3dc6ca77d375
+        type: header
+    content:
+      - _id: 2731004a-0c6d-4b3f-ae38-9242152090f1
+        type: hero
+        parameters:
+          title:
+            type: text
+            locales:
+              en: 404 page
+  _locales:
+    - en
+created: '2024-12-07T00:25:52.926774+00:00'
+modified: '2024-12-07T00:27:40.354869+00:00'
+pattern: false

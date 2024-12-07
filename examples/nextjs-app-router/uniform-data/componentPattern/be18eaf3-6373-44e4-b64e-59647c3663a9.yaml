@@ -5,7 +5,7 @@ composition:
   parameters:
     title:
       type: text
-      value: Super Hero
+      value: I am a Super Hero!
     description:
       type: richText
       value:
@@ -30,9 +30,10 @@ composition:
                   format: 0
                   version: 1
               direction: ltr
+              textStyle: ''
           direction: ltr
   _overridability:
     hideLockedParameters: true
-created: '2024-06-15T22:56:18.368799+00:00'
-modified: '2024-06-15T23:09:01.213362+00:00'
+created: '2024-07-17T16:23:53.997281+00:00'
+modified: '2024-11-07T21:37:38.03832+00:00'
 pattern: true

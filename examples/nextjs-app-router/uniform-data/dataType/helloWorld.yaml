@@ -1,0 +1,17 @@
+id: helloWorld
+displayName: hello world
+ttl: 30
+path: /staticdata
+custom:
+  json:
+    hello: world
+  proposedName: JSON Data
+method: GET
+purgeKey: e22e08b8-5ad2-4890-97d4-e24f5af0c2cc
+archetype: staticData
+variables:
+  json:
+    type: text
+    default: ''
+dataSourceId: content
+allowedOnComponents: []
