@@ -21,12 +21,12 @@
     "remove-edgehancer:request": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook request"
   },
   "dependencies": {
-    "@uniformdev/assets": "19.196.0",
-    "@uniformdev/canvas": "19.196.0",
-    "@uniformdev/cli": "19.196.0",
-    "@uniformdev/design-system": "19.196.0",
-    "@uniformdev/mesh-edgehancer-sdk": "19.196.0",
-    "@uniformdev/mesh-sdk-react": "19.196.0",
+    "@uniformdev/assets": "19.209.1",
+    "@uniformdev/canvas": "19.209.1",
+    "@uniformdev/cli": "19.209.1",
+    "@uniformdev/design-system": "19.209.1",
+    "@uniformdev/mesh-edgehancer-sdk": "19.209.1",
+    "@uniformdev/mesh-sdk-react": "19.209.1",
     "next": "14.2.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
