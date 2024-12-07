@@ -7,7 +7,7 @@ import {
   createServerUniformContext,
 } from "@uniformdev/canvas-next-rsc";
 import { resolveComponent } from "@/uniform/resolve";
-import { QuirksSetter } from "@/components/QuirksSetter";
+// import { QuirksSetter } from "@/components/quirks-setter";
 
 export default async function HomePage(props: PageParameters) {
   const route = await retrieveRoute(props);
@@ -31,7 +31,7 @@ export default async function HomePage(props: PageParameters) {
         serverContext={serverContext}
         mode="server"
       />
-      <QuirksSetter />
+      {/* <QuirksSetter /> */}
     </>
   );
 }

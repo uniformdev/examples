@@ -3,12 +3,12 @@ import {
   UniformRichText,
   UniformText,
 } from "@uniformdev/canvas-next-rsc/component";
-import { Parameters, Slots } from "./props";
+import { ResolveComponentResultWithType } from "@/uniform/models";
 
 export const HeroComponent = ({
   component,
   context,
-}: ComponentProps<Parameters, Slots>) => {
+}: ComponentProps<HeroProps>) => {
   return (
     <>
       <UniformText
@@ -27,4 +27,14 @@ export const HeroComponent = ({
       />
     </>
   );
+};
+
+export type HeroProps = {
+  title: string;
+  description: string;
+};
+
+export const heroMapping: ResolveComponentResultWithType = {
+  type: "hero",
+  component: HeroComponent,
 };
