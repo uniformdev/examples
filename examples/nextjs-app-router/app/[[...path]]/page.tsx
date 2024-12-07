@@ -2,11 +2,13 @@
 import {
   UniformComposition,
   PageParameters,
-  retrieveRoute,
   ContextUpdateTransfer,
   createServerUniformContext,
 } from "@uniformdev/canvas-next-rsc";
 import { resolveComponent } from "@/uniform/resolve";
+import retrieveRoute from "@/uniform/l18n/localeHelper";
+
+// example component that displays current quirks from Uniform Context tracker
 // import { QuirksSetter } from "@/components/quirks-setter";
 
 export default async function HomePage(props: PageParameters) {
@@ -16,6 +18,7 @@ export default async function HomePage(props: PageParameters) {
   });
   return (
     <>
+      {/* example component that sets quirk 'province' server-side with a value */}
       <ContextUpdateTransfer
         serverContext={serverContext}
         update={{
@@ -31,6 +34,7 @@ export default async function HomePage(props: PageParameters) {
         serverContext={serverContext}
         mode="server"
       />
+      {/* 
       {/* <QuirksSetter /> */}
     </>
   );

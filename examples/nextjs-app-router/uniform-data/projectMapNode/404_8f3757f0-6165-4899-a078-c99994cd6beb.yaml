@@ -1,0 +1,9 @@
+id: 8f3757f0-6165-4899-a078-c99994cd6beb
+name: '404'
+order: 500
+path: /:locale/404
+type: composition
+pathSegment: '404'
+data: {}
+compositionId: eee33dd1-c6bc-4a70-9b83-5158c3daa5c9
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

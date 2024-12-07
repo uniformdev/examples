@@ -1,0 +1,8 @@
+{
+  "locales": ["en", "fr"],
+  "localeNames": {
+    "en": "English",
+    "fr": "Français"
+  },
+  "defaultLocale": "en"
+}
