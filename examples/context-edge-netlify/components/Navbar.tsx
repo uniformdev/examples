@@ -82,17 +82,42 @@ const Nav = () => {
           }  ${isScrolled ? "bg-white" : "bg-gray-100"}`}
         >
           <NavMenu />
-          <ActionLink
-            isScrolled={isScrolled}
-            onClick={async () => {
-              setSubmenuVisible(false);
-              await context.forget(true);
-              document.cookie =
-                "unfrmconf_registered=; Path=/; samesite=lax; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
-            }}
-            label="Forget me"
-            icon={<LockIcon />}
-          />
+          {context.storage.data.consent ? (
+            <ActionLink
+              isScrolled={isScrolled}
+              icon={<LockIcon />}
+              onClick={async (e) => {
+                setSubmenuVisible(false);
+                e.preventDefault();
+                context.storage.updateData([
+                  {
+                    type: "consent",
+                    data: false,
+                  },
+                ]);
+                window.location.reload();
+              }}
+              label="Revoke consent"
+            />
+          ) : null}
+          {!context.storage.data.consent ? (
+            <ActionLink
+              icon={<LockIcon />}
+              isScrolled={isScrolled}
+              onClick={async (e) => {
+                setSubmenuVisible(false);
+                e.preventDefault();
+                context.storage.updateData([
+                  {
+                    type: "consent",
+                    data: true,
+                  },
+                ]);
+                window.location.reload();
+              }}
+              label="Provide consent"
+            />
+          ) : null}
         </div>
       </div>
       <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />

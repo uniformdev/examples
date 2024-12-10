@@ -74,7 +74,8 @@ export function createUniformContext(serverContext?: NextPageContext): Context {
   );
 
   return new Context({
-    defaultConsent: true,
+    defaultConsent: false,
+    requireConsentForPersonalization: true,
     manifest: manifest as ManifestV2,
     transitionStore: new NextCookieTransitionDataStore({
       serverContext
