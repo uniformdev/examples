@@ -79,6 +79,13 @@
           "editorUrl": "/reference/paramTypeObjectValueEditDrawer",
           "displayName": "Reference Parameter (Edit Drawer)",
           "renderableInPropertyPanel": true
+        },
+        {
+          "type": "reference-placement",
+          "editorUrl": "/reference/paramTypePlacement",
+          "displayName": "Reference Parameter (Allowed Placement)",
+          "renderableInPropertyPanel": true,
+          "allowedPlacement": ["parameter", "field"]
         }
       ]
     },
