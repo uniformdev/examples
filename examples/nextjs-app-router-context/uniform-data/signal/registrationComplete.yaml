@@ -1,0 +1,16 @@
+id: registrationComplete
+name: Registration complete
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - type: CK
+      match:
+        cs: false
+        op: '='
+        rhs: 'true'
+      cookieName: unfrmconf_registered
+dur: t
+description: ''
+str: 100

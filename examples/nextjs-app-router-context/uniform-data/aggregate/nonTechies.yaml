@@ -1,0 +1,7 @@
+id: nonTechies
+name: Non-techies
+description: ''
+type: 0
+inputs:
+  - dim: 1_mkt
+    sign: +

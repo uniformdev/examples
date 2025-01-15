@@ -1,0 +1,7 @@
+id: submitCallForPapers
+name: Submit call for papers
+description: ''
+type: 1
+inputs:
+  - dim: callForPapers
+    sign: +

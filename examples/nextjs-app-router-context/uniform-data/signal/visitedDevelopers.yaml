@@ -1,0 +1,15 @@
+id: visitedDevelopers
+name: Visited Developers
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - path:
+        cs: false
+        op: '~'
+        rhs: developers
+      type: PV
+dur: p
+description: ''
+str: 50

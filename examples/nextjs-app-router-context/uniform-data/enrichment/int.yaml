@@ -1,0 +1,8 @@
+id: int
+name: Interest
+cap: 100
+values:
+  - id: svc
+    value: Services
+  - id: sup
+    value: Support
