@@ -12,17 +12,17 @@
     "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc": "^19.209.1",
-    "next": "14.2.20",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@uniformdev/canvas-next-rsc": "19.211.1-alpha.4",
+    "@uniformdev/canvas-next-rsc-shared": "19.211.1-alpha.4",
+    "@uniformdev/canvas-next-rsc-client": "19.211.1-alpha.4",
+    "next": "15.1.4"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "@types/react": "18.2.33",
-    "@types/react-dom": "18.2.14",
-    "@uniformdev/cli": "^19.209.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@uniformdev/cli": "19.211.1-alpha.4",
     "npm-run-all": "^4.1.5",
-    "typescript": "5.2.2"
+    "typescript": "^5"
   }
 }

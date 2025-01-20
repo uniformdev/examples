@@ -27,19 +27,19 @@ function formatPath(path?: string | string[], locale?: string | null): string | 
   return Array.isArray(path) ? [locale, ...path] : `${locale}/${path}`;
 }
 
-async function retrieveRoute(
-  props: Parameters<typeof uniformRetrieveRoute>[0],
-  locale: string | null = i18n.defaultLocale
-) {
-  const { params = {} } = props;
-  const updatedParams = {
-    ...params,
-    path: formatPath(params.path, locale),
-  };
-
+const retrieveRoute = async (props: Parameters<typeof uniformRetrieveRoute>[0], locale?: string | null) => {
+  const params = await props.params;
+  const updatedParams = getUpdatedParams(params, locale);
   return uniformRetrieveRoute({
     ...props,
     params: updatedParams,
+  });
+};
+
+async function getUpdatedParams(params: { path?: string | string[] } | undefined, locale: string | null | undefined) {
+  return Promise.resolve({
+    ...params,
+    path: formatPath(params?.path, locale),
   });
 }
 

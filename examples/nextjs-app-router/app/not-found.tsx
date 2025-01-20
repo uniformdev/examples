@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default async function NotFound() {
-  const notFoundProps = { params: { path: "en/404" } };
+  const notFoundProps = { params: Promise.resolve({ path: "en/404" }) };
   const route = await retrieveRoute(notFoundProps);
   return (
     <UniformComposition
