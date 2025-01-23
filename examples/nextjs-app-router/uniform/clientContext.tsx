@@ -32,6 +32,7 @@ export const UniformClientContext: ClientContextComponent = ({ manifest }) => {
       plugins.push(
         // running against a local endpoint, will use edge middleware to rewrite to the actual endpoint
         enableUniformInsights({
+          projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID!,
           endpoint: {
             type: "proxy",
             path: "/api/analytics",
