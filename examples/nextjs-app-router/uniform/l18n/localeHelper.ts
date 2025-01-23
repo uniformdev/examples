@@ -12,11 +12,12 @@ function isLocaleInPath(path: string | string[]): boolean {
 }
 
 function formatPath(path?: string | string[], locale?: string | null): string | string[] | undefined {
-  // If no locale is provided, just return the original path.
-  if (!locale) return path;
+  let localeForPath = locale;
+  // If no locale is provided, set it to the default locale.
+  if (!localeForPath) localeForPath = i18n.defaultLocale
 
   // If path is not defined, use the locale directly.
-  if (!path) return locale;
+  if (!path) return localeForPath;
 
   // If path already includes a recognized locale, return it as is.
   if (isLocaleInPath(path)) return path;
@@ -24,22 +25,22 @@ function formatPath(path?: string | string[], locale?: string | null): string | 
   // If path doesn't include a locale:
   // - For arrays, prepend the locale.
   // - For strings, concatenate the locale with '/'.
-  return Array.isArray(path) ? [locale, ...path] : `${locale}/${path}`;
+  return Array.isArray(path) ? [localeForPath, ...path] : `${localeForPath}/${path}`;
 }
 
-async function retrieveRoute(
-  props: Parameters<typeof uniformRetrieveRoute>[0],
-  locale: string | null = i18n.defaultLocale
-) {
-  const { params = {} } = props;
-  const updatedParams = {
-    ...params,
-    path: formatPath(params.path, locale),
-  };
-
+const retrieveRoute = async (props: Parameters<typeof uniformRetrieveRoute>[0], locale?: string | null) => {
+  const params = await props.params;
+  const updatedParams = getUpdatedParams(params, locale);
   return uniformRetrieveRoute({
     ...props,
     params: updatedParams,
+  });
+};
+
+async function getUpdatedParams(params: { path?: string | string[] } | undefined, locale: string | null | undefined) {
+  return Promise.resolve({
+    ...params,
+    path: formatPath(params?.path, locale),
   });
 }
 
