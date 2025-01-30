@@ -6,23 +6,25 @@ composition:
   parameters:
     metaTitle:
       type: text
-      locales:
-        en: Home
-        fr: Page d'accueil
+      value: Home
   slots:
+    footer:
+      - _id: 57cfb8af-5ef3-4068-a58f-2a7f8a716f04
+        type: footer
+    header:
+      - _id: 20fe84e7-d005-48e7-915b-8291cb1bf546
+        type: header
     content:
-      - _id: 21cd3e8b-4772-4429-b4cc-0cb177777f6f
+      - _id: 4a3a2d59-3aca-4a11-b4f3-01064a4b344b
         type: $personalization
         slots:
           pz:
-            - _id: 6ec1c856-5d02-4a98-aa7f-6c34bed4e026
+            - _id: fcd3be6f-661f-4e6c-b73b-4a8edef87956
               type: hero
               parameters:
                 title:
                   type: text
-                  locales:
-                    en: Personalized hero
-                    fr: Héros personnalisé
+                  value: We are launched!
                 $pzCrit:
                   type: $pzCrit
                   value:
@@ -30,230 +32,125 @@ composition:
                       - l: launchCampaign
                         r: 0
                         op: '>'
-                    name: 'Hero: We are launched!'
+                    name: personalized
                 description:
                   type: richText
-                  locales:
-                    en:
-                      root:
-                        type: root
-                        format: ''
-                        indent: 0
-                        version: 1
-                        children:
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  This content is personalized for your session
-                                  since you have triggered a signal called "
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                              - mode: normal
-                                text: Launch
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 1
-                                version: 1
-                              - mode: normal
-                                text: '"  (via query string). '
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  This is a very simple example, you can
-                                  personalize based on more complex criteria and
-                                  external data.
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 0
-                        direction: ltr
-                    fr:
-                      root:
-                        type: root
-                        format: ''
-                        indent: 0
-                        version: 1
-                        children:
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  Ce contenu est personnalisé pour votre session
-                                  puisque vous avez déclenché un signal appelé «
-                                  Lancement » (via chaîne de requête). 
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 0
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  Il s'agit d'un exemple très simple, que vous
-                                  pouvez personnaliser en fonction de critères
-                                  plus complexes et de données externes.
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 0
-                        direction: ltr
-            - _id: 94b108a0-8e52-4a12-8e21-980c98d4da3d
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                Showing personalized content since "Launch
+                                Campaign" signal has a score.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: Check dev tools for more logging info.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                      direction: ltr
+            - _id: c3f6028f-1edf-43a1-ae84-95e064302463
               type: hero
               parameters:
                 title:
                   type: text
-                  locales:
-                    en: Hello World
-                    fr: Bonjour le monde!
+                  value: Welcome.
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: default
                 description:
                   type: richText
-                  locales:
-                    en:
-                      root:
-                        type: root
-                        format: ''
-                        indent: 0
-                        version: 1
-                        children:
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: "This is default content. To trigger a simple personalization\_"
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                              - link:
-                                  path: >-
-                                    https://hello-world-nextjs-appro-git-eacfb6-uniform-engineering-sandbox.vercel.app/?utm_campaign=launch
-                                  type: url
-                                type: link
-                                format: ''
-                                indent: 0
-                                version: 1
-                                children:
-                                  - mode: normal
-                                    text: click here
-                                    type: text
-                                    style: ''
-                                    detail: 0
-                                    format: 1
-                                    version: 1
-                                direction: ltr
-                              - mode: normal
-                                text: '!'
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 0
-                        direction: ltr
-                    fr:
-                      root:
-                        type: root
-                        format: ''
-                        indent: 0
-                        version: 1
-                        children:
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  Il s'agit du contenu par défaut. Pour
-                                  déclencher une simple personnalisation 
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                              - link:
-                                  path: /?utm_campaign=launch
-                                  type: url
-                                type: link
-                                format: ''
-                                indent: 0
-                                version: 1
-                                children:
-                                  - mode: normal
-                                    text: cliquez ici
-                                    type: text
-                                    style: ''
-                                    detail: 0
-                                    format: 1
-                                    version: 1
-                                direction: ltr
-                              - mode: normal
-                                text: '!'
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 1
-                        direction: ltr
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'This is default content shown to every visitor. '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'Trigger campaign-based personalization '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=launch
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: now
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: '!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                      direction: ltr
         parameters:
-          count:
-            type: number
-            value: '1'
           trackingEventName:
             type: text
-            value: Home Hero
-  _dataResources:
-    hw:
-      type: helloWorld
-      variables: {}
+            value: Homepage-Hero
   _locales:
     - en
-    - fr
-created: '2023-06-29T04:47:27.348771+00:00'
-modified: '2024-12-07T20:26:58.105456+00:00'
+created: '2025-01-30T22:17:27.532728+00:00'
+modified: '2025-01-30T22:54:38.557085+00:00'
 pattern: false
