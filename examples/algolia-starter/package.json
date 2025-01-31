@@ -24,7 +24,7 @@
     "@uniformdev/project-map": "^19.24.0",
     "@uniformdev/canvas-algolia": "17.8.0",
     "@uniformdev/canvas-react": "^19.24.0",
-    "@uniformdev/cli": "^19.24.0",
+    "@uniformdev/cli": "^19.214.0",
     "algoliasearch": "^4.14.2",
     "instantsearch.css": "^7.4.5",
     "next": "^13.4.5",
