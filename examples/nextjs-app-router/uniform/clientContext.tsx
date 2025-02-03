@@ -27,13 +27,16 @@ export const UniformClientContext: ClientContextComponent = ({ manifest }) => {
       })
     );
 
-    if (process.env.NEXT_PUBLIC_UNIFORM_INSIGHTS_ENABLED === "true") {
+    if (
+      process.env.NEXT_PUBLIC_UNIFORM_INSIGHTS_ENABLED === "true" &&
+      process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID
+    ) {
       console.log("Uniform Insights enabled");
       plugins.push(
         // running against a local endpoint, will use edge middleware to rewrite to the actual endpoint
         enableUniformInsights({
-          projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID!,
           endpoint: {
+            projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID,
             type: "proxy",
             path: "/api/analytics",
           },
