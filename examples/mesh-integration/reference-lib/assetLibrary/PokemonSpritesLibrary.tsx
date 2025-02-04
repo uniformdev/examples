@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
-import { MediaCard } from '@uniformdev/design-system';
+import {
+  ObjectGridItem,
+  ObjectGridItemCoverButton,
+  ObjectGridItemHeading,
+} from "@uniformdev/design-system";
 
 export type PokemonImage = {
   name: string;
@@ -10,24 +14,49 @@ export type PokemonImage = {
 
 export type PockemonLibraryMetadata = {
   limit: number;
-}
+};
 
-export const PokemonSpritesLibrary = ({ onAssetSelect, metadata }: { metadata: PockemonLibraryMetadata; onAssetSelect?: (asset: PokemonImage) => void }) => {
+export const PokemonSpritesLibrary = ({
+  onAssetSelect,
+  metadata,
+}: {
+  metadata: PockemonLibraryMetadata;
+  onAssetSelect?: (asset: PokemonImage) => void;
+}) => {
   const assets = usePockemonAssets(metadata);
 
   return (
-    <div style={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(4, 1fr)',
-      gap: 'var(--spacing-base)',
-      padding: 'var(--spacing-base)',
-    }}>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(4, 1fr)",
+        gap: "var(--spacing-base)",
+        padding: "var(--spacing-base)",
+      }}
+    >
       {assets.map((asset) => (
-        <MediaCard key={asset.name} title={asset.name} cover={<img src={asset.url} alt={asset.name} />} onClick={() => onAssetSelect?.(asset)} />
+        <ObjectGridItem
+          key={asset.name}
+          header={
+            <ObjectGridItemHeading
+              data-testid="card-title"
+              heading={asset.name}
+              tooltip={asset.name}
+            />
+          }
+          cover={
+            <ObjectGridItemCoverButton
+              id={asset.url}
+              imageUrl={asset.url}
+              onSelection={() => onAssetSelect?.(asset)}
+            />
+          }
+          onClick={() => onAssetSelect?.(asset)}
+        />
       ))}
     </div>
   );
-}
+};
 
 const usePockemonAssets = (metadata: PockemonLibraryMetadata) => {
   const [assets, setAssets] = React.useState<PokemonImage[]>([]);
