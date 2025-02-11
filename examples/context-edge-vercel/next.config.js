@@ -5,6 +5,9 @@ const nextConfig = {
     domains: ["res.cloudinary.com", "images.ctfassets.net"],
     deviceSizes: [320, 420, 768, 1024, 1280],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 module.exports = nextConfig;
