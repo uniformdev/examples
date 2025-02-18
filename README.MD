@@ -12,7 +12,7 @@ These starters don't have a lot of functionality, they are single page, single c
 
 - [Hello world starter for Next.js Page Router](./examples/nextjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Next.js page router.
 
-- [Search starter](./examples/nextjs-search) - essential saerch API example starter based on Next.js 15 app router.
+- [Search starter](./examples/nextjs-search) - essential search API example starter based on Next.js 15 app router.
 
 - [Nuxt hello world starter](./examples/nuxtjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Nuxt 3. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
 
