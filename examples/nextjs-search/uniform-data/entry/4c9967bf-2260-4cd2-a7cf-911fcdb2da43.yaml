@@ -1,0 +1,55 @@
+created: '2025-02-15T16:46:35.00795+00:00'
+modified: '2025-02-17T22:18:06.286892+00:00'
+pattern: false
+entry:
+  _id: 4c9967bf-2260-4cd2-a7cf-911fcdb2da43
+  _name: 'Building APIs with Node.js: A Practical Tutorial'
+  _slug: article-5
+  type: article
+  fields:
+    tags:
+      type: contentReference
+      value: ${#jptr:/ref-4c9967bf-2260-4cd2-a7cf-911fcdb2da43-tags/entries}
+    title:
+      type: text
+      value: 'Building APIs with Node.js: A Practical Tutorial'
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-4c9967bf-2260-4cd2-a7cf-911fcdb2da43-category/entries/0}
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Step-by-step instructions for creating robust APIs using
+                    Node.js and Express, complete with authentication and
+                    database integration.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: ltr
+  _dataResources:
+    ref-4c9967bf-2260-4cd2-a7cf-911fcdb2da43-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 0b962670-894b-4b1a-bbab-a05fa67d0b08
+    ref-4c9967bf-2260-4cd2-a7cf-911fcdb2da43-category:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 777ee9c1-30be-4ccf-8807-66232df45d5d

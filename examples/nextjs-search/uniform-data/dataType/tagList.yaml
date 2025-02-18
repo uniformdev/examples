@@ -1,0 +1,27 @@
+id: tagList
+displayName: Tag List
+path: /query
+custom:
+  allowedContentTypes:
+    - tag
+method: GET
+purgeKey: 53413a8d-3219-4860-8906-55cb35274b14
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

@@ -1,0 +1,52 @@
+created: '2025-02-15T16:45:05.336491+00:00'
+modified: '2025-02-17T22:17:17.00796+00:00'
+pattern: false
+entry:
+  _id: 0e814f95-1907-440e-ba58-ef66e9499a60
+  _name: Understanding Async/Await in JavaScript
+  _slug: article-1
+  type: article
+  fields:
+    tags:
+      type: contentReference
+      value: ${#jptr:/ref-0e814f95-1907-440e-ba58-ef66e9499a60-tags/entries}
+    title:
+      type: text
+      value: Understanding Async/Await in JavaScript
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-0e814f95-1907-440e-ba58-ef66e9499a60-category/entries/0}
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: ' Discover the power of asynchronous programming with async/await, including practical examples and best practices for enhancing your JavaScript code.'
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: ltr
+  _dataResources:
+    ref-0e814f95-1907-440e-ba58-ef66e9499a60-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 0b962670-894b-4b1a-bbab-a05fa67d0b08
+    ref-0e814f95-1907-440e-ba58-ef66e9499a60-category:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 777ee9c1-30be-4ccf-8807-66232df45d5d

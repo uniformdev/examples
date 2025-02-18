@@ -1,0 +1,12 @@
+created: '2025-02-17T22:13:40.400647+00:00'
+modified: '2025-02-17T22:13:45.146199+00:00'
+pattern: false
+entry:
+  _id: 75b64d69-67dc-4256-8b2e-185ce3149d6d
+  _name: SEO
+  _slug: seo
+  type: category
+  fields:
+    name:
+      type: text
+      value: SEO

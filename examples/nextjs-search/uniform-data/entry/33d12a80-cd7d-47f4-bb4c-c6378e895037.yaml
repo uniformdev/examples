@@ -1,0 +1,12 @@
+created: '2025-02-17T22:14:11.050958+00:00'
+modified: '2025-02-17T22:14:19.315155+00:00'
+pattern: false
+entry:
+  _id: 33d12a80-cd7d-47f4-bb4c-c6378e895037
+  _name: Social Media
+  _slug: social-media
+  type: category
+  fields:
+    name:
+      type: text
+      value: Social Media

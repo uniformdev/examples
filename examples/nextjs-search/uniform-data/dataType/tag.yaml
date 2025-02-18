@@ -1,0 +1,15 @@
+id: tag
+displayName: Tag
+path: /single
+custom:
+  allowedContentTypes:
+    - tag
+method: GET
+purgeKey: c7c6c3c5-7734-4676-aeb1-dfe20924ca42
+archetype: singleEntry
+variables:
+  entryId:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

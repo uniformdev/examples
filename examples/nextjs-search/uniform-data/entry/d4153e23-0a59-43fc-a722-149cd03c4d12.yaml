@@ -1,0 +1,52 @@
+created: '2025-02-17T11:08:52.344607+00:00'
+modified: '2025-02-17T22:08:44.535743+00:00'
+pattern: false
+entry:
+  _id: d4153e23-0a59-43fc-a722-149cd03c4d12
+  _name: 'Crafting Compelling Content: A Marketer''s Guide'
+  _slug: article-6
+  type: article
+  fields:
+    tags:
+      type: contentReference
+      value: ${#jptr:/ref-d4153e23-0a59-43fc-a722-149cd03c4d12-tags/entries}
+    title:
+      type: text
+      value: 'Crafting Compelling Content: A Marketer''s Guide'
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Learn how to create engaging content that resonates with
+                    your audience and drives conversions with this comprehensive
+                    guide.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: ltr
+  _dataResources:
+    ref-0aa6eb61-4647-4140-8e86-69e0a8cbd7cd-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 0b962670-894b-4b1a-bbab-a05fa67d0b08
+    ref-d4153e23-0a59-43fc-a722-149cd03c4d12-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 670c1471-f4b8-46b4-bd57-34d8f519d06d

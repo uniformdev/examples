@@ -1,0 +1,15 @@
+id: category
+displayName: Category
+path: /single
+custom:
+  allowedContentTypes:
+    - category
+method: GET
+purgeKey: c0486773-c876-4f2b-815b-64bb881261ab
+archetype: singleEntry
+variables:
+  entryId:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

@@ -1,0 +1,48 @@
+created: '2025-02-15T16:46:10.945593+00:00'
+modified: '2025-02-17T22:07:58.19968+00:00'
+pattern: false
+entry:
+  _id: 695f915b-3da6-457f-b745-d00aa62773c1
+  _name: 'Mastering Git: Tips and Tricks for Developers'
+  _slug: article-4
+  type: article
+  fields:
+    tags:
+      type: contentReference
+      value: ${#jptr:/ref-695f915b-3da6-457f-b745-d00aa62773c1-tags/entries}
+    title:
+      type: text
+      value: 'Mastering Git: Tips and Tricks for Developers'
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Enhance your version control workflow with advanced Git
+                    techniques, including branching strategies and conflict
+                    resolution.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: ltr
+  _dataResources:
+    ref-695f915b-3da6-457f-b745-d00aa62773c1-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 0b962670-894b-4b1a-bbab-a05fa67d0b08

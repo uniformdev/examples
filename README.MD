@@ -2,12 +2,17 @@
 
 This repo contains various examples to facilitate your getting-started experience with Uniform capabilities, such as Uniform Context, Uniform Canvas, and Uniform Mesh.
 
-## Baseline starters
+> ‼️ For a more complete starter kit, consider looking at the [Component Starter Kit](https://github.com/uniformdev/component-starter-kit-next-approuter) instead.
+
+## Basic starters
+
 These starters don't have a lot of functionality, they are single page, single component sort of "hello world" starters typically used to learn the essentials of Uniform SDK and be used as a starting point for the greenfield projects. Preview, personalization and A/B testing is enabled on all of these starters.
 
-- 🆕 [Next.js hello world starter for App Router](./examples/nextjs-app-router) - essential 1 page, 1 component starter, recommended baseline for new projects using Next.js 14 app router.
+- [Hello world starter for Next.js 15 App Router](./examples/nextjs-app-router) - essential 1 page, 1 component starter, recommended baseline for new projects using Next.js 15 app router.
 
-- [Next.js hello world starter for Page Router](./examples/nextjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Next.js page router. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
+- [Hello world starter for Next.js Page Router](./examples/nextjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Next.js page router.
+
+- [Search starter](./examples/nextjs-search) - essential saerch API example starter based on Next.js 15 app router.
 
 - [Nuxt hello world starter](./examples/nuxtjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Nuxt 3. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
 
@@ -17,9 +22,9 @@ These starters don't have a lot of functionality, they are single page, single c
 
 ## Localization starters
 
-- 🆕 [Next.js starter for Page Router](./examples/nextjs-page-router-localization-starter) - essential localization enabled starter for Next.js.
-
 - 🆕 [Next.js starter for App Router](./examples/nextjs-app-router-localization-starter) - essential localization enabled starter for Next.js with app router and React Server Components.
+
+- 🆕 [Next.js starter for Page Router](./examples/nextjs-page-router-localization-starter) - essential localization enabled starter for Next.js.
 
 ## Starters pre-wired with integrations
 
@@ -37,22 +42,21 @@ These starters don't have a lot of functionality, they are single page, single c
 
 These starters are enabled with edge-side personalization SDK without visual workspace / Canvas:
 
-1. [Edge-side personalization with Akamai Edge Worker](./examples/context-edge-akamai/)
-1. [Edge-side personalization with Cloudflare Edge Worker](./examples/context-edge-cloudflare-worker/)
-1. [Edge-side personalization with Netlify Edge Functions](./examples/context-edge-netlify/)
-1. [Edge-side personalization with Vercel Edge Middleware](./examples/context-edge-vercel/)
+1. [Next.js app router](./examples/nextjs-app-router-context/)
+1. [For Akamai using Edge Workers](./examples/context-edge-akamai/)
+1. [For Cloudflare using Workers](./examples/context-edge-cloudflare-worker/)
+1. [For Netlify using Edge Functions](./examples/context-edge-netlify/)
+1. [For Vercel using Edge Middleware](./examples/context-edge-vercel/)
 
 ## Uniform Mesh starter
 
 [This Next.js starter](./examples/mesh-integration/) is provided to streamline your first mesh integration development experience. See [the docs here](https://docs.uniform.app/docs/integrations/mesh-integrations/custom-integrations) for info on how to extend Uniform Mesh.
 
-## Other starters in other repos
+## Other starters and examples
 
 There are more useful starters and examples in other repos:
 
-- [Component Starter Kit](https://github.com/uniformdev/uniform-component-starter-kit) - essential set of components you need to start building personalizable web experiences with Uniform. Built with TailwindCSS, DaisyUI, React, and Next.js
-- [Commerce Starter](https://github.com/uniformdev/commerce-starter) - starter kit for composable commerce digital experiences, powered by Next.js and Uniform.
+- [Component Starter Kit](https://github.com/uniformdev/component-starter-kit-next-approuter) - essential set of components you need to start building personalizable web experiences with Uniform. Built with TailwindCSS, DaisyUI, React, and Next.js
 - [Salesforce Composable Storefront](https://github.com/uniformdev/salesforce-composable-storefront-starter) - Uniform Composable Storefront Starter for Salesforce B2C Commerce.
-- [CANCU🌴 stack](https://github.com/uniformdev/cancu-stack) - Contentful, Algolia, Next.js, Commerce Layer and Uniform in a powerful combo.
 - [Next.js Marketing Starter](https://github.com/uniformdev/uniformconf) - imaginary conference site in Next.js leveraging all the Uniform goodness: Canvas and Context.
 - [Nuxt Marketing Starter](https://github.com/uniformdev/uniformconf-nuxt) - imaginary conference site in Nuxt 3 leveraging all the Uniform goodness: Canvas and Context.

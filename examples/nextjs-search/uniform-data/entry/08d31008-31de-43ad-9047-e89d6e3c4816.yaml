@@ -1,0 +1,51 @@
+created: '2025-02-17T22:09:56.74561+00:00'
+modified: '2025-02-17T22:10:33.699843+00:00'
+pattern: false
+entry:
+  _id: 08d31008-31de-43ad-9047-e89d6e3c4816
+  _name: 'Data-Driven Marketing: Making Smarter Decisions'
+  _slug: email-marketing-trends-and-best-practices
+  type: article
+  fields:
+    tags:
+      type: contentReference
+      value: ${#jptr:/ref-74d6ded1-a6fd-49a4-b220-a42b63ea92b4-tags/entries}
+    title:
+      type: text
+      value: 'Data-Driven Marketing: Making Smarter Decisions'
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Harness the power of data analytics to refine your marketing
+                    strategies and improve campaign performance.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: ltr
+  _dataResources:
+    ref-0e814f95-1907-440e-ba58-ef66e9499a60-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 0b962670-894b-4b1a-bbab-a05fa67d0b08
+    ref-74d6ded1-a6fd-49a4-b220-a42b63ea92b4-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 670c1471-f4b8-46b4-bd57-34d8f519d06d

@@ -1,0 +1,12 @@
+created: '2025-02-17T22:16:35.023597+00:00'
+modified: '2025-02-17T22:16:44.113503+00:00'
+pattern: false
+entry:
+  _id: 777ee9c1-30be-4ccf-8807-66232df45d5d
+  _name: Code
+  _slug: code
+  type: category
+  fields:
+    name:
+      type: text
+      value: Code
