@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: file-document
+parameters:
+  - id: metaTitle
+    name: Meta Title
+    type: text
+    typeConfig:
+      required: false
+    localizable: true
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - hero
+      - $personalization
+      - $test
+      - $localization
+      - $p:41a4aa09-a6b5-4348-aa1d-f2509c813996
+      - $p:7495fda9-2219-4f2b-957b-605897c1dcfd
+      - searchPage
+      - searchComponent
+      - searchContainer
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+slugSettings:
+  unique: global
+  required: 'yes'
+  regularExpression: ''
+  regularExpressionMessage: ''
+canBeComposition: true
+created: '2024-07-02T07:35:10.856524+00:00'
+updated: '2025-02-17T00:57:02.181393+00:00'

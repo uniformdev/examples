@@ -1,0 +1,33 @@
+{
+  "name": "@uniformdev/search-api-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node test.js",
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push",
+    "uniform:publish": "uniform context manifest publish"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.6",
+    "@uniformdev/canvas-next-rsc": "^20.5.0",
+    "@uniformdev/richtext": "^20.5.0",
+    "next": "^15.1.7",
+    "postcss": "^8.5.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwindcss": "^4.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@uniformdev/cli": "^20.5.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5"
+  }
+}

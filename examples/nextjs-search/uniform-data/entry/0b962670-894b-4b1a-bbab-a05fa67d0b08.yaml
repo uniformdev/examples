@@ -1,0 +1,12 @@
+created: '2025-02-17T00:07:39.019515+00:00'
+modified: '2025-02-17T00:07:45.144339+00:00'
+pattern: false
+entry:
+  _id: 0b962670-894b-4b1a-bbab-a05fa67d0b08
+  _name: Dev
+  _slug: dev
+  type: tag
+  fields:
+    name:
+      type: text
+      value: Dev

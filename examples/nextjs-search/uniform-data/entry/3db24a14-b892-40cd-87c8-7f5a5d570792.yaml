@@ -1,0 +1,12 @@
+created: '2025-02-17T22:13:52.30684+00:00'
+modified: '2025-02-17T22:13:57.071488+00:00'
+pattern: false
+entry:
+  _id: 3db24a14-b892-40cd-87c8-7f5a5d570792
+  _name: Email
+  _slug: email
+  type: category
+  fields:
+    name:
+      type: text
+      value: Email

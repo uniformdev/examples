@@ -1,0 +1,12 @@
+created: '2025-02-17T00:07:58.672593+00:00'
+modified: '2025-02-17T00:08:13.189274+00:00'
+pattern: false
+entry:
+  _id: 670c1471-f4b8-46b4-bd57-34d8f519d06d
+  _name: Marketer
+  _slug: marketer
+  type: tag
+  fields:
+    name:
+      type: text
+      value: Marketer

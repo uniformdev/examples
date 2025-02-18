@@ -1,0 +1,47 @@
+created: '2025-02-15T16:45:31.557664+00:00'
+modified: '2025-02-17T22:06:40.299494+00:00'
+pattern: false
+entry:
+  _id: b386f926-04f8-43ec-9d31-510837e5129b
+  _name: A Guide to Responsive Design in Web Development
+  _slug: article-2
+  type: article
+  fields:
+    tags:
+      type: contentReference
+      value: ${#jptr:/ref-b386f926-04f8-43ec-9d31-510837e5129b-tags/entries}
+    title:
+      type: text
+      value: A Guide to Responsive Design in Web Development
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    Learn techniques for building responsive web applications
+                    that adapt seamlessly to different devices and screen sizes.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: ltr
+  _dataResources:
+    ref-b386f926-04f8-43ec-9d31-510837e5129b-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 0b962670-894b-4b1a-bbab-a05fa67d0b08

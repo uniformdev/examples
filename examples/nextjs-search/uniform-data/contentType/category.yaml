@@ -1,0 +1,17 @@
+id: category
+name: Category
+created: '2025-02-18T21:35:53.502831+00:00'
+updated: '2025-02-18T21:39:00.225714+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: name
+    name: Name
+    type: text
+    typeConfig:
+      required: true
+entryName: name
+icon: file-document
+type: contentType
+permissions: []

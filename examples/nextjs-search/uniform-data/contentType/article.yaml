@@ -1,0 +1,64 @@
+id: article
+name: Article
+created: '2025-02-18T21:35:51.786593+00:00'
+updated: '2025-02-18T21:39:00.289743+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: description
+    name: Description
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: true
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+  - id: tags
+    name: Tags
+    type: contentReference
+    typeConfig:
+      isMulti: true
+      allowedContentTypes:
+        - tag
+  - id: category
+    name: Category
+    type: contentReference
+    typeConfig:
+      allowedContentTypes:
+        - category
+entryName: title
+icon: file-document
+type: contentType
+permissions: []

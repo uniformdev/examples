@@ -1,0 +1,16 @@
+id: test
+name: test
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - type: QS
+      match:
+        cs: false
+        op: '='
+        rhs: '1'
+      queryName: test
+dur: p
+description: ''
+str: 50

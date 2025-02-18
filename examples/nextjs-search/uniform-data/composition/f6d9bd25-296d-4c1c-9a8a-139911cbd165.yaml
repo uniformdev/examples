@@ -1,0 +1,32 @@
+composition:
+  _name: search
+  _id: f6d9bd25-296d-4c1c-9a8a-139911cbd165
+  _slug: search
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Search
+  slots:
+    content:
+      - _id: 062d2016-5470-47e8-b5cf-c629d3f197c9
+        type: searchContainer
+        parameters:
+          title:
+            type: text
+            value: Search
+          selectedFacets:
+            type: multi-select
+            value:
+              - tags.name
+              - category.name
+  _dataResources:
+    Query Article Content:
+      type: queryArticle
+      variables:
+        search: ''
+        filters: '{"type[eq]":"article"}'
+        contentTypes: article
+created: '2025-02-18T21:35:46.10603+00:00'
+modified: '2025-02-18T22:10:43.006727+00:00'
+pattern: false

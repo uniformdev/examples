@@ -1,0 +1,55 @@
+created: '2025-02-15T16:45:53.993082+00:00'
+modified: '2025-02-17T22:16:11.835695+00:00'
+pattern: false
+entry:
+  _id: 0aa6eb61-4647-4140-8e86-69e0a8cbd7cd
+  _name: Introduction to Machine Learning with Python
+  _slug: article-3
+  type: article
+  fields:
+    tags:
+      type: contentReference
+      value: ${#jptr:/ref-0aa6eb61-4647-4140-8e86-69e0a8cbd7cd-tags/entries}
+    title:
+      type: text
+      value: Introduction to Machine Learning with Python
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-0aa6eb61-4647-4140-8e86-69e0a8cbd7cd-category/entries/0}
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    An introductory guide to using Python for machine learning,
+                    covering essential libraries like TensorFlow and
+                    Scikit-learn.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+              textStyle: ''
+              textFormat: 0
+          direction: ltr
+  _dataResources:
+    ref-0aa6eb61-4647-4140-8e86-69e0a8cbd7cd-tags:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 0b962670-894b-4b1a-bbab-a05fa67d0b08
+    ref-0aa6eb61-4647-4140-8e86-69e0a8cbd7cd-category:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: f43f8153-ddc5-4112-a145-c0e3c9415610
