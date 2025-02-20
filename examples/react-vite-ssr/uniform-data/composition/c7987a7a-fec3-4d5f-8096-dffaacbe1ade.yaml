@@ -1,0 +1,60 @@
+composition:
+  _name: Product Launch Q2 25
+  _id: c7987a7a-fec3-4d5f-8096-dffaacbe1ade
+  _slug: product-launch-q2-25
+  type: page
+  slots:
+    content:
+      - _id: c93f8d6e-1865-4aba-8f2b-f0302d6e7da9
+        type: featuredProduct
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 17dcce7e-fe4e-4296-b198-9726bc65a9a4
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: https://react.email/static/braun-collection.jpg
+                _source: custom-url
+          price:
+            type: text
+            value: $210.00
+          title:
+            type: text
+            value: Elegant Comfort
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Dieter Rams’ work has an outstanding quality which
+                          distinguishes it from the vast majority of industrial
+                          design of the entire 20th Century.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                direction: ltr
+          eyebrowText:
+            type: text
+            value: Classic Watches
+created: '2025-02-20T03:38:54.008162+00:00'
+modified: '2025-02-20T03:39:03.97813+00:00'
+pattern: false

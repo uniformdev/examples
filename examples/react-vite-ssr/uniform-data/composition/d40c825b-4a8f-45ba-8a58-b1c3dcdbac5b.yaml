@@ -1,0 +1,149 @@
+composition:
+  _name: Thanks for signing up!
+  _id: d40c825b-4a8f-45ba-8a58-b1c3dcdbac5b
+  _slug: thanks-for-signing-up
+  type: page
+  slots:
+    content:
+      - _id: e9c0e997-9209-4fba-b966-01c1b4b7c44f
+        type: sectionContainer
+        parameters:
+          text:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Hello! '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - type: variable
+                        version: 1
+                        reference: firstName
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Thanks for signing up to uniform.app!
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Here are some key resources:'
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                  - tag: ol
+                    type: list
+                    start: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - type: listitem
+                        value: 1
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - link:
+                              path: https://docs.uniform.app/
+                              type: url
+                            type: link
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - mode: normal
+                                text: Uniform documentation
+                                type: text
+                                style: ''
+                                detail: 0
+                                format: 0
+                                version: 1
+                            direction: ltr
+                        direction: ltr
+                      - type: listitem
+                        value: 2
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - link:
+                              path: https://github.com/uniformdev
+                              type: url
+                            type: link
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - mode: normal
+                                text: GitHub examples
+                                type: text
+                                style: ''
+                                detail: 0
+                                format: 0
+                                version: 1
+                            direction: ltr
+                        direction: ltr
+                      - type: listitem
+                        value: 3
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - link:
+                              path: https://www.youtube.com/@UniformVisualWorkspace
+                              type: url
+                            type: link
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - mode: normal
+                                text: YouTube channel
+                                type: text
+                                style: ''
+                                detail: 0
+                                format: 0
+                                version: 1
+                            direction: ltr
+                        direction: ltr
+                    listType: number
+                    direction: ltr
+                direction: ltr
+created: '2025-02-20T03:39:42.722278+00:00'
+modified: '2025-02-20T03:59:47.336922+00:00'
+pattern: false

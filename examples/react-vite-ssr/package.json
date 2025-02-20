@@ -15,6 +15,7 @@
     "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
+    "@react-email/components": "^0.0.33",
     "@uniformdev/canvas": "^20.5.0",
     "@uniformdev/canvas-react": "^20.5.0",
     "compression": "^1.7.4",

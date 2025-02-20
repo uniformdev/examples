@@ -2,16 +2,21 @@ import { RouteClient } from "@uniformdev/canvas";
 
 export async function getComposition(path) {
   const client = new RouteClient({
-    projectId: "99495eba-c588-4672-89d9-715cca3539f3",
+    projectId: "1d90b3f7-0fe8-4157-88dd-6d9cbe737c46",
     apiKey:
-      "uf18jlavcqyh9y0s7x2zz4q6cg7xvvx8e5n40zyfl6vw76ldqkgywszwnjpze7yzw4upvnknep6fse6nx03l2kr6a72tnr4wy",
+      "uf1tdutuuytt5cfln3uhgglguq5zj43ha95wa4fu58a8scd65pp2v544u7gxecrmlmru5ezta5x9mfplnl8hqfvc5rd04mcc0",
   });
 
   const response = await client.getRoute({
-    path: path ?? "/",
+    path: path,
   });
 
   if (response.type === "composition") {
+    console.log({
+      text: JSON.stringify(
+        response.compositionApiResponse.composition.slots.content[0].parameters.text.value
+      ),
+    });
     return response.compositionApiResponse.composition;
   }
 

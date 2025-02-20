@@ -1,0 +1,8 @@
+id: 1ce21a20-72bd-4cdc-be2c-69aac243d894
+name: Campaign Emails
+order: 500
+path: /campaign-emails
+type: placeholder
+pathSegment: campaign-emails
+data: {}
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

@@ -1,0 +1,13 @@
+id: 8c69fd17-9ff4-4472-baa1-3e7708a0e68c
+name: Thanks for signing up!
+order: 500
+path: /transactional-emails/thanks-for-signing-up
+type: composition
+pathSegment: thanks-for-signing-up
+data:
+  queryStrings:
+    - name: firstName
+      value: ''
+      helpText: ''
+compositionId: d40c825b-4a8f-45ba-8a58-b1c3dcdbac5b
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

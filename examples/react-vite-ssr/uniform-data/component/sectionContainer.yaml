@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: sectionContainer
+name: Section Container
+icon: format-text
+parameters:
+  - id: displayTitle
+    name: Display Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: text
+    name: Text
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+useTeamPermissions: true
+slots: []
+titleParameter: displayTitle
+canBeComposition: false
+created: '2025-02-20T03:54:45.826328+00:00'
+updated: '2025-02-20T03:54:45.826328+00:00'

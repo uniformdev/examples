@@ -1,0 +1,8 @@
+id: 793d02b3-caed-4fe9-b646-0450c536db4c
+name: Transactional Emails
+order: 500
+path: /transactional-emails
+type: placeholder
+pathSegment: transactional-emails
+data: {}
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: productGallery
+name: Product Gallery
+icon: bulb
+parameters:
+  - id: eyebrowText
+    name: Eyebrow Text
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: gallery
+    name: Gallery
+    type: asset
+    typeConfig:
+      max: 6
+      min: 3
+      allowedTypes:
+        - image
+    localizable: true
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2025-02-20T03:23:59.917727+00:00'
+updated: '2025-02-20T03:23:59.917727+00:00'

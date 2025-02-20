@@ -1,0 +1,109 @@
+composition:
+  _name: Product Launch Q1 25
+  _id: 268f150e-3b5c-4f9f-a60e-3886fa8693ab
+  _slug: product-launch-q1-25
+  type: page
+  slots:
+    content:
+      - _id: 2b2142c4-371e-4137-812d-4decceac5c73
+        type: productGallery
+        parameters:
+          title:
+            type: text
+            value: Bundle & Save
+          gallery:
+            type: asset
+            value:
+              - _id: 645539b7-04ee-4315-b299-d92cf177fc17
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: https://react.email/static/grinder-collection.jpg
+                _source: custom-url
+              - _id: c432c611-53b3-40f1-aa96-1a32cb52e20a
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: https://react.email/static/bundle-collection.jpg
+                _source: custom-url
+              - _id: f1b15213-b393-469d-b564-8e532f8d543d
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: https://react.email/static/clara-french-press.jpg
+                _source: custom-url
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: table
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children: []
+                    direction: null
+                direction: null
+          eyebrowText:
+            type: text
+            value: Collections
+      - _id: 312af361-ea7e-4751-92e8-3ea5357f32d7
+        type: featuredProduct
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 17dcce7e-fe4e-4296-b198-9726bc65a9a4
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: https://react.email/static/braun-collection.jpg
+                _source: custom-url
+          price:
+            type: text
+            value: $210.00
+          title:
+            type: text
+            value: Elegant Comfort
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Dieter Rams’ work has an outstanding quality which
+                          distinguishes it from the vast majority of industrial
+                          design of the entire 20th Century.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                direction: ltr
+          eyebrowText:
+            type: text
+            value: Classic Watches
+created: '2025-02-20T03:20:12.062001+00:00'
+modified: '2025-02-20T03:38:38.982255+00:00'
+pattern: false
