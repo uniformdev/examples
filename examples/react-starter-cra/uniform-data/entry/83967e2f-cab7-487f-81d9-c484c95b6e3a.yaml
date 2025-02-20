@@ -1,0 +1,37 @@
+created: '2024-10-12T17:14:09.347157+00:00'
+modified: '2024-10-15T13:35:01.692484+00:00'
+pattern: false
+entry:
+  _id: 83967e2f-cab7-487f-81d9-c484c95b6e3a
+  _name: Cool mechanical keyboard - dev+bot
+  _slug: cool-mechanical-keyboard
+  _thumbnail: >-
+    https://images.unsplash.com/photo-1618586810102-aaa7049200c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  type: productRecommendation
+  fields:
+    link:
+      type: link
+      value:
+        path: >-
+          https://nuphy.com/products/air75-v2?variant=40635217903725&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&cmp_id=20374253646&adg_id=&kwd=&device=c&gad_source=1&gclid=CjwKCAjwvKi4BhABEiwAH2gcw47XZTErrJ7JZkNyRkYUvhe_g7ra3H_Zub_w65yodIBPDT0-km-p9xoCY08QAvD_BwE
+        type: url
+    image:
+      type: asset
+      value:
+        - _id: 76938f90-1f45-424d-b7c6-a4dc909f19bf
+          type: image
+          fields:
+            url:
+              type: text
+              value: >-
+                https://images.unsplash.com/photo-1618586810102-aaa7049200c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+          _source: custom-url
+    title:
+      type: text
+      value: Cool mechanical keyboard - dev+bot
+    funnel:
+      type: select
+      value: bot
+    audience:
+      type: select
+      value: dev

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: b75f59fd-cc8a-4991-99b0-19132a67f3ff
+  _name: Rectangle-63.jpg
+  fields:
+    title:
+      type: text
+      value: hero-bg
+    file:
+      type: file
+      value: 110d4f16-f076-41ff-98be-f6f3f7cdc627
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/DvRLYU0TT3il3I3-KsbmeQ-Rectangle-63.jpg
+      type: text
+    size:
+      value: 1133504
+      type: number
+    width:
+      value: 3200
+      type: number
+    height:
+      value: 960
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:03.249863+00:00'
+modified: '2024-10-12T15:11:03.249863+00:00'

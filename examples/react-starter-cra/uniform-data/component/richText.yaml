@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: richText
+name: Rich Text
+icon: format-text
+parameters:
+  - id: text
+    name: Text
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+  - id: 4fa3aa01-1d60-4c4d-ace3-c68c833126b3
+    name: Presentation Settings
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - color
+        - font
+  - id: color
+    name: Color
+    type: tp2-color-palette-parameter
+    typeConfig:
+      allowColors: []
+      selectedGroup: text
+      allowThemeColors: []
+  - id: font
+    name: Font
+    type: tp2-token-selector-parameter
+    typeConfig:
+      selectedTokenType: font
+categoryId: 70d03350-bbf9-457d-abc0-cf7d7aa2a3a4
+previewImageUrl: https://dev-csk-marketing-site.vercel.app/preview-images/richText.png
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-10-12T15:11:27.913036+00:00'
+updated: '2024-10-12T15:11:27.913036+00:00'

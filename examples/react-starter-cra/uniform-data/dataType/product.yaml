@@ -1,0 +1,44 @@
+id: product
+displayName: Product
+ttl: 30
+path: /content_types/${content_type_uid}/entries/${entry_uid}?${include}
+custom:
+  include: 2
+  imagePath: image.url
+  searchFieldIds:
+    - title
+  allowContentTypeUids:
+    - product
+  enableFilterByLocale: false
+method: GET
+purgeKey: 8c716515-5a13-4763-a884-604ccea37357
+archetype: singleEntry
+variables:
+  query:
+    type: text
+    default: '{ "uid": { "$in": [ "" ] } }'
+    displayName: Query
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  include:
+    type: text
+    default: ''
+    displayName: Include
+  entry_uid:
+    type: text
+    default: ''
+    displayName: Entry Uid
+  content_type_uid:
+    type: text
+    default: product
+    displayName: Entry Type
+parameters:
+  - key: query
+    value: ${query}
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+dataSourceId: contentstack
+allowedOnComponents: []

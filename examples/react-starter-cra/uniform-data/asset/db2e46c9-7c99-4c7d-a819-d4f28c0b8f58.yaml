@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: db2e46c9-7c99-4c7d-a819-d4f28c0b8f58
+  _name: Group-673-(1).png
+  fields:
+    title:
+      type: text
+      value: marketers
+    file:
+      type: file
+      value: 82cb2dcb-f24c-40fa-9c4b-0a327f22de7d
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/r-_H7WCNQ1u7uq_maROnGA-Group-673-(1).png
+      type: text
+    size:
+      value: 158075
+      type: number
+    width:
+      value: 1092
+      type: number
+    height:
+      value: 1040
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:02.631042+00:00'
+modified: '2024-10-12T15:11:02.631042+00:00'

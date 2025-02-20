@@ -1,0 +1,465 @@
+composition:
+  _name: Header
+  _id: 497b9b28-1a79-47b8-a4e0-3d6af913dc2c
+  type: header
+  parameters:
+    color:
+      type: tp2-color-palette-parameter
+      value: general-color-1
+    spacing:
+      type: tp2-space-control-parameter
+      value:
+        paddingTop: container-small
+        paddingBottom: container-small
+    displayName:
+      type: text
+      value: Header
+    backgroundColor:
+      type: tp2-color-palette-parameter
+      value: general-color-2
+  slots:
+    headerLeftContent:
+      - _id: 0e763156-16d9-49ae-839e-774b51fc2df6
+        type: image
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 40e6896e-569a-466c-86c0-8082b5d4ff5d
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: f2157619-c179-4015-8ba9-9ca7a77136d1
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/LvSEkA2JTlyVHL6Jhk1Wow-header-logo.png
+                    type: text
+                  file:
+                    type: file
+                    value: 951c4ca3-e69c-4bb6-97c3-a5831f621f13
+                  size:
+                    value: 31692
+                    type: number
+                  title:
+                    type: text
+                    value: header-logo.png
+                  width:
+                    value: 876
+                    type: number
+                  height:
+                    value: 158
+                    type: number
+                  mediaType:
+                    value: image/png
+                    type: text
+                _source: uniform-assets
+          height:
+            type: number
+            value: '40'
+          objectFit:
+            type: tp2-segmented-control-parameter
+            value: contain
+    headerRightContent:
+      - _id: d928186a-75bd-4378-b0bb-cea10a500f5b
+        type: themeSwitcher
+        parameters:
+          iconColor:
+            type: tp2-color-palette-parameter
+            value: general-color-1
+    headerCenterContent:
+      - _id: 5832d439-1459-4a01-b422-fd1e66a71cbb
+        type: navigationLink
+        parameters:
+          text:
+            type: text
+            value: All components
+          color:
+            type: tp2-color-palette-parameter
+            value: text-secondary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+      - _id: ad90b5aa-59dd-4395-afde-007c8faf8528
+        type: navigationGroup
+        slots:
+          links:
+            - _id: 4770ac55-86eb-4fde-8af9-e63132acb650
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Heroes
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: bee89fca-0a34-46c3-8bc4-b486243625d8
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Calls To Action
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: d66a0163-051c-40ab-a9c9-447da9a999d6
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Card Blocks
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 82556d7b-d59d-481d-934f-3d31ddf0d6bf
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Featured Callouts
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: normal
+            - _id: 093a3005-2371-498b-bba5-4cd40d2d9611
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Carousels
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: normal
+            - _id: 948663c2-cd02-46c0-9387-3a8c297a4eb6
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Accordions
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: normal
+            - _id: 1e362088-6561-4171-abaf-522b7d620fc5
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Testimonials
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: normal
+        parameters:
+          text:
+            type: text
+            value: Marketting
+          color:
+            type: tp2-color-palette-parameter
+            value: text-secondary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+          backgroundColor:
+            type: tp2-color-palette-parameter
+            value: general-color-3
+      - _id: 52ee64f3-0611-4bd8-9319-5ace1448253f
+        type: navigationGroup
+        slots:
+          links:
+            - _id: d37383ce-78f9-459d-af70-c5795f3633d9
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Product Detail Page
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: cbedc90b-d5ed-40c6-b924-eefb3b5880c0
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Reviews
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 27fe3dda-c851-4fac-9447-45df9a1f4c48
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Image Gallery
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 1c02d632-20b3-4737-882d-ac103fe4cf7f
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Product Info
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: normal
+        parameters:
+          text:
+            type: text
+            value: Commerce
+          color:
+            type: tp2-color-palette-parameter
+            value: text-secondary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+          backgroundColor:
+            type: tp2-color-palette-parameter
+            value: general-color-3
+      - _id: 7622be9a-2449-408d-ae8d-058afc5d242c
+        type: navigationGroup
+        slots:
+          links:
+            - _id: a5d4949e-c2f7-47fe-859e-84d316db31cd
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Header & Top Nav
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 735bb84c-9e8b-438a-94bb-c31c2c630e01
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Breadcrumbs
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 48554ae1-9e05-422b-8c45-9a218416809c
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Cookie Banners
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+        parameters:
+          text:
+            type: text
+            value: Global
+          color:
+            type: tp2-color-palette-parameter
+            value: text-secondary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+          backgroundColor:
+            type: tp2-color-palette-parameter
+            value: general-color-3
+      - _id: d528c281-65aa-4d74-9800-0c75bc8f6095
+        type: navigationGroup
+        slots:
+          links:
+            - _id: b3a89891-0107-4d49-8b72-a7f3e2204bd2
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Atomic Components
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 2a41e0c9-99fa-47c5-9885-e784f718ca6b
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Layouts & Containers
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 36aead8a-6238-43ac-ace4-3274a549488f
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Content Blocks
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 387f8fc9-8f0e-46f4-a90d-f7a41860afcd
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Rich Texts
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 9e695fdf-716d-420e-8eaa-cf654c6d83f5
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Spacers & Dividers
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 3d6915ca-214f-416e-908f-60756bcdfdcb
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Images
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 5904bf6e-b230-4f13-b74f-24530de7864b
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Hotspots
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 0a2078e9-8804-4c3f-a297-f77f67373c99
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Videos
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 8dbdad75-c299-4cb9-bf02-7262495f702f
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Modals
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: 18b21e77-9e2f-4860-86de-3c216bae83c8
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Tabs
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: cd07641d-09c0-43c1-a794-1a24902250da
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Tables
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+            - _id: b2c07a1a-6f6a-4b1d-99e4-6910b8f24500
+              type: navigationLink
+              parameters:
+                text:
+                  type: text
+                  value: Countdowns
+                color:
+                  type: tp2-color-palette-parameter
+                  value: text-light
+                weight:
+                  type: tp2-segmented-control-parameter
+                  value: medium
+        parameters:
+          text:
+            type: text
+            value: Atoms
+          color:
+            type: tp2-color-palette-parameter
+            value: text-secondary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+          backgroundColor:
+            type: tp2-color-palette-parameter
+            value: general-color-3
+created: '2024-10-12T15:20:45.697785+00:00'
+modified: '2024-10-12T15:20:45.697785+00:00'
+pattern: true

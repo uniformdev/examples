@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: spacer
+name: Spacer
+icon: arrows-expand-right-alt
+parameters:
+  - id: thickness
+    name: Thickness
+    type: tp2-slider-control-parameter
+    typeConfig:
+      step: 10
+      type: steps
+      units: px
+      maxValue: 100
+      minValue: 10
+categoryId: 70d03350-bbf9-457d-abc0-cf7d7aa2a3a4
+previewImageUrl: https://dev-csk-marketing-site.vercel.app/preview-images/spacer.png
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-10-12T15:11:27.947906+00:00'
+updated: '2024-10-12T15:11:27.947906+00:00'
+variants:
+  - id: horizontal
+    name: Horizontal

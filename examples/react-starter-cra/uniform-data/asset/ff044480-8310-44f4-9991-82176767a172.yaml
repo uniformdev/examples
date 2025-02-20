@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ff044480-8310-44f4-9991-82176767a172
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: featured-bg.png
+    file:
+      type: file
+      value: 0c00239f-9f3e-4fbb-b516-f6cf2fbb97fe
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/tyFCx83WQLe-UFNwVim_BA-featured-bg.png
+      type: text
+    size:
+      value: 63589
+      type: number
+    width:
+      value: 806
+      type: number
+    height:
+      value: 432
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:02.812224+00:00'
+modified: '2024-10-12T15:11:02.812224+00:00'

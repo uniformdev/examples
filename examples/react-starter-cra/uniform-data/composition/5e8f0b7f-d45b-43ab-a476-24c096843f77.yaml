@@ -1,0 +1,163 @@
+composition:
+  _name: Home
+  _id: 5e8f0b7f-d45b-43ab-a476-24c096843f77
+  _slug: /
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Home Page
+  slots:
+    pageContent:
+      - _id: b9303608-42b9-4ab6-8873-0d8eae1813b8
+        type: header
+        _pattern: 497b9b28-1a79-47b8-a4e0-3d6af913dc2c
+      - _id: 4cea725b-5ed0-4273-a403-c03548fead99
+        type: section
+        _pattern: eea0b9bb-82f4-4de6-9aa5-af290540615d
+      - _id: 3738a008-ec03-4fee-8bba-455496858ef4
+        type: recommendations
+        parameters:
+          maxCount:
+            type: number
+            value: '3'
+          enrichmentCategories:
+            type: multi-select
+            value:
+              - funnel
+              - audience
+      - _id: f33bc4b6-f8d7-4406-b457-a5ed0e8e0144
+        type: footer
+        _pattern: 0c536116-6ee0-405c-b73a-ee99c5a96d3d
+  _overrides:
+    071c92b8-55b1-4b94-ad88-933766435b96:
+      parameters:
+        link:
+          type: link
+          value:
+            path: /for-marketers
+            type: projectMapNode
+            nodeId: 66c6a84a-55b1-4300-aa20-7c36e90bc727
+            projectMapId: 537d11ff-9ebe-4420-9682-36694477e2f9
+        text:
+          type: text
+          value: I am a Marketer
+        textColor:
+          type: tp2-color-palette-parameter
+          value: text-secondary
+        buttonColor:
+          type: tp2-color-palette-parameter
+          value: button-secondary
+    4cea725b-5ed0-4273-a403-c03548fead99:
+      parameters:
+        $viz:
+          type: $viz
+          value: null
+        spacing:
+          type: tp2-space-control-parameter
+          value:
+            paddingTop: container-xlarge
+            paddingLeft: container-small
+            paddingRight: container-small
+            paddingBottom: container-xlarge
+    ed4fb290-9ec6-43ce-aa79-66d76a05521a:
+      parameters:
+        link:
+          type: link
+          value:
+            path: /for-developers
+            type: projectMapNode
+            nodeId: 82bf2519-dd01-4271-84fc-666939a41b46
+            projectMapId: 537d11ff-9ebe-4420-9682-36694477e2f9
+        text:
+          type: text
+          value: I am a dev
+    4cea725b-5ed0-4273-a403-c03548fead99|412246da-ecc8-4363-b9cf-ae51830dd358:
+      parameters:
+        image:
+          type: asset
+          value:
+            - _id: d3471ea5-824e-44c3-9058-0c82b7efcd63
+              type: image
+              fields:
+                id:
+                  type: text
+                  value: b75f59fd-cc8a-4991-99b0-19132a67f3ff
+                url:
+                  type: text
+                  value: >-
+                    https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/DvRLYU0TT3il3I3-KsbmeQ-Rectangle-63.jpg
+                file:
+                  type: file
+                  value: 58c84d17-aaa0-4709-946e-a9004f7d33fb
+                size:
+                  type: number
+                  value: 1133504
+                title:
+                  type: text
+                  value: Rectangle-63.jpg
+                width:
+                  type: number
+                  value: 3200
+                height:
+                  type: number
+                  value: 960
+                mediaType:
+                  type: text
+                  value: image/jpeg
+              _source: uniform-assets
+        overlayOpacity:
+          type: tp2-slider-control-parameter
+          value: '0'
+    4cea725b-5ed0-4273-a403-c03548fead99|59786267-3106-4c8c-8670-9c56f9b07199:
+      parameters:
+        text:
+          type: text
+          value: >-
+            An essential set of components you need to start building
+            personalized web experiences with Uniform.
+    4cea725b-5ed0-4273-a403-c03548fead99|804f6eac-3561-4f4d-87fc-80ce979d7c2b:
+      slots:
+        $slotSectionItems:
+          - _id: ed4fb290-9ec6-43ce-aa79-66d76a05521a
+            type: button
+            _pattern: 53b59aed-e378-4fcb-9135-20247d92074e
+            _overridability:
+              variants: true
+              parameters:
+                link: 'yes'
+                text: 'yes'
+                textColor: 'yes'
+                buttonColor: 'yes'
+              hideLockedParameters: true
+          - _id: 071c92b8-55b1-4b94-ad88-933766435b96
+            type: button
+            _pattern: 53b59aed-e378-4fcb-9135-20247d92074e
+            _overridability:
+              variants: true
+              parameters:
+                link: 'yes'
+                text: 'yes'
+                textColor: 'yes'
+                buttonColor: 'yes'
+              hideLockedParameters: true
+    4cea725b-5ed0-4273-a403-c03548fead99|90aa2fcd-bc65-4d44-828b-7e888218a025:
+      parameters:
+        tag:
+          type: tp2-segmented-control-parameter
+          value: h1
+        text:
+          type: text
+          value: |
+            Component Starter Kit
+    4cea725b-5ed0-4273-a403-c03548fead99|96c5e248-ac86-47b5-a00e-8679f1842f26:
+      parameters:
+        tag:
+          type: tp2-segmented-control-parameter
+          value: span
+        text:
+          type: text
+          value: Uniform
+created: '2024-10-12T15:11:34.28752+00:00'
+modified: '2024-10-13T17:24:48.429982+00:00'
+pattern: false

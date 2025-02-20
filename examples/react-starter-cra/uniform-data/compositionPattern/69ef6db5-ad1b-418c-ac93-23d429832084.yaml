@@ -1,0 +1,83 @@
+composition:
+  _name: Page w\ Nav
+  _id: 69ef6db5-ad1b-418c-ac93-23d429832084
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Page Title
+  slots:
+    pageContent:
+      - _id: 355223fd-08da-41e4-9324-5f4cd4f2dc65
+        type: header
+        _pattern: 497b9b28-1a79-47b8-a4e0-3d6af913dc2c
+      - _id: 08bca273-e123-4a5d-9d97-cb45a91c4b41
+        type: $slotSection
+        parameters:
+          name:
+            type: text
+            value: Content
+        _overridability:
+          hideLockedParameters: true
+      - _id: 96fa492a-4704-4169-9aaf-dbebc33e4bd4
+        type: recommendations
+        variant: hero
+        parameters:
+          maxCount:
+            type: number
+            value: '1'
+          contentType:
+            type: select
+            value: productRecommendation
+          displayTitle:
+            type: text
+            value: Hero - single product
+          enrichmentCategories:
+            type: multi-select
+            value:
+              - funnel
+        _overridability:
+          parameters:
+            $viz: 'yes'
+            maxCount: 'yes'
+            contentType: 'yes'
+            displayTitle: 'yes'
+            enrichmentCategories: 'yes'
+          hideLockedParameters: true
+      - _id: a78a5860-84bf-4efc-b86d-cda7d63ae131
+        type: recommendations
+        variant: list
+        parameters:
+          maxCount:
+            type: number
+            value: '3'
+          contentType:
+            type: select
+            value: productRecommendation
+          displayTitle:
+            type: text
+            value: Product List
+          enrichmentCategories:
+            type: multi-select
+            value:
+              - audience
+              - funnel
+        _overridability:
+          parameters:
+            $viz: 'yes'
+            maxCount: 'yes'
+            contentType: 'yes'
+            displayTitle: 'yes'
+            enrichmentCategories: 'yes'
+          hideLockedParameters: true
+      - _id: d1a59911-64b1-4ba7-b602-57458d719c48
+        type: footer
+        _pattern: 0c536116-6ee0-405c-b73a-ee99c5a96d3d
+  _overridability:
+    parameters:
+      $viz: 'yes'
+      pageTitle: 'yes'
+    hideLockedParameters: true
+created: '2024-10-12T15:19:11.478636+00:00'
+modified: '2024-10-14T00:43:35.631532+00:00'
+pattern: true

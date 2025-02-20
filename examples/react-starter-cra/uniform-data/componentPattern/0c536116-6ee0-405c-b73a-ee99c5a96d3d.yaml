@@ -1,0 +1,519 @@
+composition:
+  _name: Footer
+  _id: 0c536116-6ee0-405c-b73a-ee99c5a96d3d
+  type: footer
+  parameters:
+    spacing:
+      type: tp2-space-control-parameter
+      value:
+        marginTop: ''
+        marginLeft: ''
+        paddingTop: container-medium
+        marginRight: ''
+        paddingLeft: ''
+        marginBottom: ''
+        paddingRight: ''
+        paddingBottom: container-medium
+    displayName:
+      type: text
+      value: Footer
+  slots:
+    footerLogo:
+      - _id: cf36ced3-02e4-4c0d-a07b-350e72851772
+        type: image
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 5083e3e9-f378-4326-a433-e04d8038fab6
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: eb58a5e2-5b3c-42f8-a13e-d5798f6be321
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/MEle9auNQdyvbL2Lkl88Og-footer-logo.png
+                    type: text
+                  file:
+                    type: file
+                    value: 35cd612b-8fad-4e8a-97a6-9bf90e213ada
+                  size:
+                    value: 2896
+                    type: number
+                  title:
+                    type: text
+                    value: footer-logo.png
+                  width:
+                    value: 346
+                    type: number
+                  height:
+                    value: 93
+                    type: number
+                  mediaType:
+                    value: image/png
+                    type: text
+                _source: uniform-assets
+          width:
+            type: number
+            value: '180'
+          height:
+            type: number
+            value: '47'
+          objectFit:
+            type: tp2-segmented-control-parameter
+            value: contain
+    footerContent:
+      - _id: 757f8498-9331-4b59-9723-95cdd187b2f1
+        type: flex
+        slots:
+          flexItem:
+            - _id: e033c4fe-3be7-4ec0-b434-d352e5d7cc0f
+              type: flexItem
+              slots:
+                inner:
+                  - _id: 1f790254-5284-4802-be05-4d206cb719ce
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp2-segmented-control-parameter
+                        value: h1
+                      size:
+                        type: tp2-segmented-control-parameter
+                        value:
+                          desktop: base
+                      text:
+                        type: text
+                        value: Key resources
+                      color:
+                        type: tp2-color-palette-parameter
+                        value: text-tertiary
+                      weight:
+                        type: tp2-segmented-control-parameter
+                        value: bold
+                      transform:
+                        type: tp2-segmented-control-parameter
+                        value: uppercase
+                  - _id: 1f09d082-3757-4cd9-a9ec-74b681a7cd99
+                    type: spacer
+                    parameters:
+                      thickness:
+                        type: tp2-slider-control-parameter
+                        value: 10px
+                  - _id: 5ea543ff-a1fa-478a-86d7-fe31e2153ccb
+                    type: flex
+                    slots:
+                      flexItem:
+                        - _id: 39fce731-d7fd-44a6-ba72-7d001be07de7
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp2-segmented-control-parameter
+                              value: p
+                            size:
+                              type: tp2-segmented-control-parameter
+                              value:
+                                mobile: base
+                                tablet: base
+                                desktop: base
+                            text:
+                              type: text
+                              value: Documentation
+                            color:
+                              type: tp2-color-palette-parameter
+                              value: text-primary
+                            weight:
+                              type: tp2-segmented-control-parameter
+                              value: bold
+                        - _id: 6c21604e-129a-45ac-bc6a-27a0ef4b112c
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp2-segmented-control-parameter
+                              value: p
+                            size:
+                              type: tp2-segmented-control-parameter
+                              value:
+                                mobile: base
+                                tablet: base
+                                desktop: base
+                            text:
+                              type: text
+                              value: Storybook
+                            color:
+                              type: tp2-color-palette-parameter
+                              value: text-primary
+                            weight:
+                              type: tp2-segmented-control-parameter
+                              value: bold
+                        - _id: 983492f1-199e-4b25-828a-ce92efa4f69a
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp2-segmented-control-parameter
+                              value: p
+                            size:
+                              type: tp2-segmented-control-parameter
+                              value:
+                                mobile: base
+                                tablet: base
+                                desktop: base
+                            text:
+                              type: text
+                              value: Demo
+                            color:
+                              type: tp2-color-palette-parameter
+                              value: text-primary
+                            weight:
+                              type: tp2-segmented-control-parameter
+                              value: bold
+                    parameters:
+                      gap:
+                        type: tp2-slider-control-parameter
+                        value:
+                          mobile: '2'
+                          tablet: '2'
+                          desktop: '2'
+                      spacing:
+                        type: tp2-space-control-parameter
+                        value: {}
+                      direction:
+                        type: tp2-segmented-control-parameter
+                        value:
+                          mobile: col
+                          tablet: col
+                          desktop: col
+                      alignItems:
+                        type: tp2-segmented-control-parameter
+                        value: {}
+                      displayName:
+                        type: text
+                        value: Links
+                      fluidContent:
+                        type: checkbox
+                        value: true
+                      justifyContent:
+                        type: tp2-segmented-control-parameter
+                        value: {}
+              parameters:
+                shrink:
+                  type: tp2-segmented-control-parameter
+                  value: '0'
+                alignSelf:
+                  type: tp2-segmented-control-parameter
+                  value: {}
+                displayName:
+                  type: text
+                  value: Resources
+            - _id: 04a71df4-1cc7-4597-9a7e-fcf8ec1cd326
+              type: flex
+              slots:
+                flexItem:
+                  - _id: 87ed9168-80db-408d-b271-4cbff4d1f913
+                    type: image
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 5e6a0737-768a-47ae-b3b6-2f1beaad53df
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 804fa820-df03-40ec-8efa-ddf36b976c70
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/UumoSh0mQ1WM3TMUodyvrQ-storybook-icon.svg
+                                type: text
+                              file:
+                                type: file
+                                value: e2b11dba-8b68-492d-9f8f-14116702bd2b
+                              size:
+                                value: 5499
+                                type: number
+                              title:
+                                type: text
+                                value: storybook-icon.svg
+                              width:
+                                value: 29
+                                type: number
+                              height:
+                                value: 29
+                                type: number
+                              mediaType:
+                                value: image/svg+xml
+                                type: text
+                            _source: uniform-assets
+                      width:
+                        type: number
+                        value: '30'
+                      height:
+                        type: number
+                        value: '30'
+                      objectFit:
+                        type: tp2-segmented-control-parameter
+                        value: ''
+                  - _id: 6636b1df-de2f-465b-b8e2-71968fc5c063
+                    type: image
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 7d24906a-ce04-44c0-b880-8ee33e190fc5
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 5f6c13a0-62b9-4b36-bce4-5b2b8ca4ac04
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/KsKjksjyQ5u4lOzyrm4sSA-git-icon.svg
+                                type: text
+                              file:
+                                type: file
+                                value: aa728246-ef67-43fd-a0a1-f1eabdee92be
+                              size:
+                                value: 1326
+                                type: number
+                              title:
+                                type: text
+                                value: git-icon.svg
+                              width:
+                                value: 27
+                                type: number
+                              height:
+                                value: 26
+                                type: number
+                              mediaType:
+                                value: image/svg+xml
+                                type: text
+                            _source: uniform-assets
+                      width:
+                        type: number
+                        value: '30'
+                      height:
+                        type: number
+                        value: '30'
+                      objectFit:
+                        type: tp2-segmented-control-parameter
+                        value: ''
+              parameters:
+                gap:
+                  type: tp2-slider-control-parameter
+                  value:
+                    mobile: '4'
+                    tablet: '4'
+                    desktop: '8'
+                spacing:
+                  type: tp2-space-control-parameter
+                  value: {}
+                direction:
+                  type: tp2-segmented-control-parameter
+                  value:
+                    mobile: row
+                    tablet: row
+                    desktop: row
+                alignItems:
+                  type: tp2-segmented-control-parameter
+                  value: {}
+                displayName:
+                  type: text
+                  value: Icons
+                fluidContent:
+                  type: checkbox
+                  value: true
+                justifyContent:
+                  type: tp2-segmented-control-parameter
+                  value:
+                    mobile: end
+        parameters:
+          gap:
+            type: tp2-slider-control-parameter
+            value:
+              mobile: '16'
+              tablet: '16'
+              desktop: '32'
+          spacing:
+            type: tp2-space-control-parameter
+            value: {}
+          direction:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: row
+              tablet: row
+              desktop: row
+          alignItems:
+            type: tp2-segmented-control-parameter
+            value: {}
+          displayName:
+            type: text
+            value: Content
+          fluidContent:
+            type: checkbox
+            value: true
+          justifyContent:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: between
+    footerCopyright:
+      - _id: 6377c95c-1a69-4347-9296-f7a726f27baa
+        type: richText
+        parameters:
+          font:
+            type: tp2-token-selector-parameter
+            value: ''
+          text:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: "Built time:\_5/12/2024, 3:30:42 PM\_v.5.2.1"
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: '2024 Uniform Systems, Inc. All rights reserved. '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: "Built with 💙 by folks at\_"
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: Uniform
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 8
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          , standing on the shoulders of these awesome open
+                          source projects:
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: TailwindCSS
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 8
+                        version: 1
+                      - mode: normal
+                        text: ",\_"
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: DaisyUI
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 8
+                        version: 1
+                      - mode: normal
+                        text: ",\_"
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: React
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 8
+                        version: 1
+                      - mode: normal
+                        text: ", and\_"
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: Next.js
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 8
+                        version: 1
+                      - mode: normal
+                        text: ". Deployed to\_"
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - mode: normal
+                        text: Vercel
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 8
+                        version: 1
+                      - mode: normal
+                        text: .
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children: []
+                    direction: ltr
+                    textStyle: ''
+                    textFormat: 0
+                direction: ltr
+          color:
+            type: tp2-color-palette-parameter
+            value: text-primary
+created: '2024-10-12T15:20:52.566168+00:00'
+modified: '2024-10-12T15:20:52.566168+00:00'
+pattern: true

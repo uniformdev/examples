@@ -1,0 +1,42 @@
+created: '2024-10-12T17:22:16.214841+00:00'
+modified: '2024-10-18T13:09:28.538991+00:00'
+pattern: false
+entry:
+  _id: 6175eb9f-2953-4ae6-99e8-b7f0c2e453c4
+  _name: USB Thumb Drive - mar+bot
+  _slug: usb-thumb-drive
+  _thumbnail: >-
+    https://images.contentstack.io/v3/assets/bltb4748c44af3532df/blt5734007ad621be2a/67125c3a1c3e184e51603c5d/kYKIJMOrRtmYfDaYNVswhA-Ziba-Client-Gift.jpeg
+  type: productRecommendation
+  fields:
+    link:
+      type: link
+      value:
+        path: https://site.com${#jptr:/Product/entry/url}
+        type: url
+    image:
+      type: asset
+      value:
+        - _id: efafc274-26f7-4230-8712-8f355c81349f
+          type: image
+          fields:
+            url:
+              type: text
+              value: ${#jptr:/Product/entry/image/url}
+          _source: custom-url
+    title:
+      type: text
+      value: ${#jptr:/Product/entry/title}
+    funnel:
+      type: select
+      value: bot
+    audience:
+      type: select
+      value: mktg
+  _dataResources:
+    Product:
+      type: product
+      variables:
+        query: ''
+        entry_uid: blte35a79e06e2d75d3
+        content_type_uid: product

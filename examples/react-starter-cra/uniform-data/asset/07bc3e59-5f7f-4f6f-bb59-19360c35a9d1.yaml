@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 07bc3e59-5f7f-4f6f-bb59-19360c35a9d1
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Ziba-Client-Gift.jpeg
+    file:
+      type: file
+      value: f22b4781-dd1d-4c45-ab0c-de0ea6fbf304
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/kYKIJMOrRtmYfDaYNVswhA-Ziba-Client-Gift.jpeg
+      type: text
+    size:
+      value: 35180
+      type: number
+    width:
+      value: 595
+      type: number
+    height:
+      value: 648
+      type: number
+    custom: {}
+created: '2024-10-12T17:22:41.129395+00:00'
+modified: '2024-10-12T17:22:41.129395+00:00'

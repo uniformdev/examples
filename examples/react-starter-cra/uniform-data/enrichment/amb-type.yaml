@@ -1,0 +1,10 @@
+id: amb-type
+name: Ambassador Type
+cap: 100
+values:
+  - id: global
+    value: Global
+  - id: icon
+    value: Icon
+  - id: local
+    value: Local

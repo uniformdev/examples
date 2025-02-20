@@ -1,0 +1,8 @@
+id: loc
+name: Location
+cap: 100
+values:
+  - id: fr
+    value: France
+  - id: us
+    value: USA

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: themeSwitcher
+name: Theme Switcher
+icon: swiss
+parameters:
+  - id: iconColor
+    name: Icon Color
+    type: tp2-color-palette-parameter
+    typeConfig: null
+categoryId: b1163ce2-5ac7-4347-bc38-a42198180718
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-10-12T15:11:27.51944+00:00'
+updated: '2024-10-12T15:11:27.51944+00:00'

@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: flexItem
+name: Flex Item
+icon: shape-square
+parameters:
+  - id: displayName
+    name: Display Name
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: shrink
+    name: Shrink
+    type: tp2-segmented-control-parameter
+    typeConfig:
+      options:
+        - key: Auto
+          value: '1'
+        - key: None
+          value: '0'
+  - id: alignSelf
+    name: Align Self
+    type: tp2-segmented-control-parameter
+    typeConfig:
+      options:
+        - key: Auto
+          value: auto
+        - key: Start
+          value: start
+        - key: Center
+          value: center
+        - key: End
+          value: end
+        - key: Stretch
+          value: stretch
+      defaultValue: {}
+      withViewPort: true
+categoryId: 70d03350-bbf9-457d-abc0-cf7d7aa2a3a4
+useTeamPermissions: true
+slots:
+  - id: inner
+    name: Inner
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: displayName
+canBeComposition: false
+created: '2024-10-12T15:11:25.366072+00:00'
+updated: '2024-10-12T15:11:25.366072+00:00'

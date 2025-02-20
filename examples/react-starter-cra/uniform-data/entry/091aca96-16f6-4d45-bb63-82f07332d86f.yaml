@@ -1,0 +1,52 @@
+created: '2024-10-12T17:23:21.084114+00:00'
+modified: '2024-10-15T13:34:45.773878+00:00'
+pattern: false
+entry:
+  _id: 091aca96-16f6-4d45-bb63-82f07332d86f
+  _name: Cool napkin box - mar+mid
+  _slug: cool-napkin-box
+  _thumbnail: >-
+    https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/kOHl9RcbTlGPNOdbxZV-sw-image.png
+  type: productRecommendation
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 35f15124-0835-4c7d-9095-39fcc91e036b
+          type: image
+          fields:
+            id:
+              type: text
+              value: c15310e6-2269-4ce7-8129-3c5edc21276b
+            url:
+              value: >-
+                https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/kOHl9RcbTlGPNOdbxZV-sw-image.png
+              type: text
+            file:
+              type: file
+              value: 66f741d3-93f9-466d-ab94-9eeb88bc003a
+            size:
+              value: 280331
+              type: number
+            title:
+              type: text
+              value: image.png
+            width:
+              value: 563
+              type: number
+            height:
+              value: 865
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Cool napkin box - mar+mid
+    funnel:
+      type: select
+      value: mid
+    audience:
+      type: select
+      value: mktg

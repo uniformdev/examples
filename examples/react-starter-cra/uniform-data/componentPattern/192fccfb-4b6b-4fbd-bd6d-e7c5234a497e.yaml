@@ -1,0 +1,187 @@
+composition:
+  _name: Featured card
+  _id: 192fccfb-4b6b-4fbd-bd6d-e7c5234a497e
+  type: card
+  variant: backgroundImage
+  parameters:
+    border:
+      type: tp2-token-selector-parameter
+      value: border-primary
+    spacing:
+      type: tp2-space-control-parameter
+      value:
+        marginTop: ''
+        marginLeft: ''
+        paddingTop: container-small
+        marginRight: ''
+        paddingLeft: container-small
+        marginBottom: ''
+        paddingRight: container-small
+        paddingBottom: container-small
+    displayName:
+      type: text
+      value: Featured card
+    fluidContent:
+      type: checkbox
+      value: true
+  slots:
+    cardMedia:
+      - _id: 688fb6a0-a384-4b57-a1c1-33ada8f49db3
+        type: image
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: db360a7b-b715-4417-94ba-33f3fe8d8ee4
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: ff044480-8310-44f4-9991-82176767a172
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/tyFCx83WQLe-UFNwVim_BA-featured-bg.png
+                    type: text
+                  file:
+                    type: file
+                    value: 88f7eb94-540c-4d1d-af78-04f216513db1
+                  size:
+                    value: 63589
+                    type: number
+                  title:
+                    type: text
+                    value: featured-bg.png
+                  width:
+                    value: 806
+                    type: number
+                  height:
+                    value: 432
+                    type: number
+                  mediaType:
+                    value: image/png
+                    type: text
+                _source: uniform-assets
+          objectFit:
+            type: tp2-segmented-control-parameter
+            value: cover
+          borderRadius:
+            type: tp2-slider-control-parameter
+            value: 15px
+          overlayOpacity:
+            type: tp2-slider-control-parameter
+            value: ''
+        _overridability:
+          parameters:
+            image: 'yes'
+    cardContent:
+      - _id: d2458e59-81ce-4924-be03-71fc6562d67a
+        type: badge
+        parameters:
+          pill:
+            type: checkbox
+            value: true
+          size:
+            type: tp2-token-selector-parameter
+            value: badge-large
+          text:
+            type: text
+            value: New
+          textColor:
+            type: tp2-color-palette-parameter
+            value: text-light
+          backgroundColor:
+            type: tp2-color-palette-parameter
+            value: general-color-4
+        _overridability:
+          parameters:
+            text: 'yes'
+      - _id: b5946345-35c3-4c0d-a096-5504e4bde08b
+        type: spacer
+        parameters:
+          thickness:
+            type: tp2-slider-control-parameter
+            value: 10px
+      - _id: 7523fe18-c451-49dc-b82b-f8673945d26e
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: h2
+          size:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: 2xl
+              tablet: 2xl
+              desktop: 2xl
+          text:
+            type: text
+            value: Title
+          color:
+            type: tp2-color-palette-parameter
+            value: text-light
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+        _overridability:
+          parameters:
+            tag: 'yes'
+            text: 'yes'
+      - _id: 16bad4f4-7132-4333-b6c3-5a86450c7b8e
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: span
+          size:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: xl
+              tablet: xl
+              desktop: xl
+          text:
+            type: text
+            value: Subtitle
+          color:
+            type: tp2-color-palette-parameter
+            value: text-light
+          weight:
+            type: tp2-segmented-control-parameter
+            value: normal
+          decoration:
+            type: tp2-segmented-control-parameter
+            value: ''
+        _overridability:
+          parameters:
+            tag: 'yes'
+            text: 'yes'
+      - _id: 2065e596-96d5-45c6-800c-935d074ed341
+        type: spacer
+        parameters:
+          thickness:
+            type: tp2-slider-control-parameter
+            value: 20px
+      - _id: 6d5300cd-a1c2-4734-89f1-b5a4038d68c9
+        type: button
+        parameters:
+          size:
+            type: tp2-token-selector-parameter
+            value: button-small
+          text:
+            type: text
+            value: Link
+          textColor:
+            type: tp2-color-palette-parameter
+            value: text-light
+          buttonColor:
+            type: tp2-color-palette-parameter
+            value: button-primary
+        _overridability:
+          parameters:
+            link: 'yes'
+            text: 'yes'
+  _overridability:
+    parameters:
+      displayName: 'yes'
+created: '2024-10-12T15:11:29.379472+00:00'
+modified: '2024-10-12T15:11:29.379472+00:00'
+pattern: true

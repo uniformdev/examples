@@ -1,0 +1,22 @@
+composition:
+  _name: Single Hero
+  _id: 3fd0b053-aeff-4e3d-a97f-4ac598004b1f
+  _slug: single-hero
+  type: recommendations
+  parameters:
+    maxCount:
+      type: number
+      value: '1'
+    contentType:
+      type: select
+      value: productRecommendation
+    displayTitle:
+      type: text
+      value: Single Hero
+    enrichmentCategories:
+      type: multi-select
+      value:
+        - audience
+created: '2024-10-18T13:58:49.999337+00:00'
+modified: '2024-10-18T13:59:22.053165+00:00'
+pattern: false

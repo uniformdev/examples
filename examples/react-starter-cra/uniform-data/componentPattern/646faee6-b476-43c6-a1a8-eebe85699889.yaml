@@ -1,0 +1,27 @@
+composition:
+  _name: Secondary Button
+  _id: 646faee6-b476-43c6-a1a8-eebe85699889
+  type: button
+  variant: ''
+  parameters:
+    text:
+      type: text
+      value: Learn more
+    textColor:
+      type: tp2-color-palette-parameter
+      value: text-tertiary
+    iconPosition:
+      type: tp2-segmented-control-parameter
+      value: right
+  _overridability:
+    variants: true
+    parameters:
+      icon: 'yes'
+      link: 'yes'
+      text: 'yes'
+      textColor: 'no'
+    hideLockedParameters: true
+created: '2024-10-12T15:11:29.082739+00:00'
+modified: '2024-10-12T15:11:29.082739+00:00'
+pattern: true
+previewImageUrl: https://dev-csk-marketing-site.vercel.app/preview-images/secondaryButton.png

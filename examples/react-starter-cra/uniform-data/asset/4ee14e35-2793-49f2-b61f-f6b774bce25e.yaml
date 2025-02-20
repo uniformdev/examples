@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 4ee14e35-2793-49f2-b61f-f6b774bce25e
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: uniform.png
+    file:
+      type: file
+      value: b7ef9578-2049-44a9-87c1-76b2d485fdfb
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/2Bawh0_eR2yHNxS35ifabg-uniform.png
+      type: text
+    size:
+      value: 212950
+      type: number
+    width:
+      value: 806
+      type: number
+    height:
+      value: 562
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:03.448491+00:00'
+modified: '2024-10-12T15:11:03.448491+00:00'

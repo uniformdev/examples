@@ -1,0 +1,118 @@
+composition:
+  _name: Examples card
+  _id: aae3fcf0-6a47-4e0e-89f5-ab8a111ddb0f
+  type: card
+  parameters:
+    spacing:
+      type: tp2-space-control-parameter
+      value:
+        marginTop: ''
+        marginLeft: ''
+        paddingTop: ''
+        marginRight: ''
+        paddingLeft: ''
+        marginBottom: ''
+        paddingRight: ''
+        paddingBottom: ''
+    displayName:
+      type: text
+      value: Examples card
+    fluidContent:
+      type: checkbox
+      value: true
+  slots:
+    cardMedia:
+      - _id: fbb7fcd0-5300-4ab2-90e4-492181d65867
+        type: image
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 91af3550-af33-4c81-9265-51c7b24f5fbc
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: fcc5cedf-a9f8-49f6-adb4-314f655d20c1
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/x9NkNh1IREyBKKRwaagPnw-javadrip.png
+                    type: text
+                  file:
+                    type: file
+                    value: 5d4beed6-d4c3-43d8-852c-d5444f09bda8
+                  size:
+                    value: 819001
+                    type: number
+                  title:
+                    type: text
+                    value: javadrip.png
+                  width:
+                    value: 806
+                    type: number
+                  height:
+                    value: 432
+                    type: number
+                  mediaType:
+                    value: image/png
+                    type: text
+                _source: uniform-assets
+          height:
+            type: number
+            value: '220'
+          objectFit:
+            type: tp2-segmented-control-parameter
+            value: cover
+          borderRadius:
+            type: tp2-slider-control-parameter
+            value: 15px
+          overlayColor:
+            type: tp2-color-palette-parameter
+            value: general-color-5
+          overlayOpacity:
+            type: tp2-slider-control-parameter
+            value: '0.6'
+        _overridability:
+          parameters:
+            image: 'yes'
+    cardContent:
+      - _id: 06f3f1a7-27c7-4928-beee-233d720b84c0
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: h2
+          size:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: 2xl
+              tablet: 2xl
+              desktop: 2xl
+          text:
+            type: text
+            value: Title
+          color:
+            type: tp2-color-palette-parameter
+            value: text-primary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+        _overridability:
+          parameters:
+            tag: 'yes'
+            text: 'yes'
+      - _id: e0b7bb8e-b912-4c20-97eb-7831d87eb739
+        type: button
+        _pattern: 31191bc7-7e6e-4748-89c2-8e73db05237d
+  _overrides:
+    e0b7bb8e-b912-4c20-97eb-7831d87eb739:
+      parameters:
+        text:
+          type: text
+          value: Link
+  _overridability:
+    parameters:
+      displayName: 'yes'
+created: '2024-10-12T15:11:29.579399+00:00'
+modified: '2024-10-12T15:11:29.579399+00:00'
+pattern: true

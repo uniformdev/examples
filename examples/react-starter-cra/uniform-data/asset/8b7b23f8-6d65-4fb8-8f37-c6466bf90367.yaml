@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 8b7b23f8-6d65-4fb8-8f37-c6466bf90367
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: radiant.png
+    file:
+      type: file
+      value: 311d6082-d3a7-4b32-887b-022c3c64f8f3
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/1y6cDYCvQ-CxbyS3aaZhgQ-radiant.png
+      type: text
+    size:
+      value: 99961
+      type: number
+    width:
+      value: 806
+      type: number
+    height:
+      value: 432
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:03.781682+00:00'
+modified: '2024-10-12T15:11:03.781682+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5e3e07a4-f7f3-4235-b8bc-d05a31155199
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: uti.png
+    file:
+      type: file
+      value: e1124aeb-786b-4ced-8d5f-ca0e2eccafdc
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/hP0VWjqwTy6p5zvQrckhtg-uti.png
+      type: text
+    size:
+      value: 296965
+      type: number
+    width:
+      value: 806
+      type: number
+    height:
+      value: 562
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:02.783667+00:00'
+modified: '2024-10-12T15:11:02.783667+00:00'

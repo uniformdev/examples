@@ -1,0 +1,62 @@
+id: productRecommendation
+name: Product Recommendation
+created: '2024-10-12T17:13:59.786248+00:00'
+updated: '2024-10-18T13:06:14.639116+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    typeConfig:
+      required: false
+      linkTypes:
+        tel: false
+        email: false
+  - id: image
+    name: Image
+    type: asset
+    typeConfig:
+      max: 1
+  - id: ac3d5d41-9d75-47c0-acd9-5a6815403336
+    name: Targeting
+    type: group
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - audience
+        - funnel
+  - id: audience
+    name: Audience
+    type: select
+    typeConfig:
+      options:
+        - text: Marketers
+          value: mktg
+        - text: Developer
+          value: dev
+      required: false
+  - id: funnel
+    name: Funnel
+    type: select
+    typeConfig:
+      options:
+        - text: Top
+          value: top
+        - text: Middle
+          value: mid
+        - text: Bottom
+          value: bot
+      required: false
+entryName: title
+thumbnailField: image
+icon: file-document
+type: contentType
+permissions: []

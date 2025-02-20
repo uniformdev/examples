@@ -1,0 +1,235 @@
+composition:
+  _name: Recommendations
+  _id: b367f2ee-2430-4c44-b9f8-7027bed18946
+  type: container
+  parameters:
+    border:
+      type: tp2-token-selector-parameter
+      value: border-footer
+    spacing:
+      type: tp2-space-control-parameter
+      value:
+        marginTop: container-medium
+        marginLeft: container-medium
+        paddingTop: container-medium
+        marginRight: container-medium
+        marginBottom: container-medium
+        paddingBottom: container-medium
+    displayName:
+      type: text
+      value: See some examples of what you can build!
+  slots:
+    containerContent:
+      - _id: c14c784b-2391-466c-96f5-1b4b0f5022b6
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: h2
+          size:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: 4xl
+              tablet: 4xl
+              desktop: 4xl
+          text:
+            type: text
+            value: Just for you
+          color:
+            type: tp2-color-palette-parameter
+            value: text-primary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: bold
+        _overridability:
+          parameters:
+            text: 'yes'
+          hideLockedParameters: true
+      - _id: a572f542-475d-4288-8ec2-13e572e816ff
+        type: spacer
+        parameters:
+          thickness:
+            type: tp2-slider-control-parameter
+            value: 10px
+        _overridability:
+          hideLockedParameters: true
+      - _id: 6e3603aa-bfb4-41b4-a878-d682ec87af3e
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: span
+          size:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: xl
+              tablet: xl
+              desktop: xl
+          text:
+            type: text
+            value: Recommended products based on your interest
+          color:
+            type: tp2-color-palette-parameter
+            value: text-primary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: normal
+        _overridability:
+          parameters:
+            text: 'yes'
+          hideLockedParameters: true
+      - _id: c5460120-7f1e-4bca-8832-78337423a024
+        type: grid
+        slots:
+          gridInner:
+            - _id: b3e7e03d-a93e-41e6-80c7-a2f3ed92396a
+              type: $loop
+              slots:
+                body:
+                  - _id: aa55537d-558d-46e7-a7e7-bcdb577b17bd
+                    type: card
+                    slots:
+                      cardMedia:
+                        - _id: >-
+                            aa55537d-558d-46e7-a7e7-bcdb577b17bd|fbb7fcd0-5300-4ab2-90e4-492181d65867
+                          type: image
+                          parameters:
+                            image:
+                              type: asset
+                              value: >-
+                                ${#jptr:/Recommendations entries Loop
+                                Item/entry/fields/image/value}
+                            height:
+                              type: number
+                              value: '220'
+                            objectFit:
+                              type: tp2-segmented-control-parameter
+                              value: cover
+                            borderRadius:
+                              type: tp2-slider-control-parameter
+                              value: 15px
+                            overlayColor:
+                              type: tp2-color-palette-parameter
+                              value: general-color-5
+                            overlayOpacity:
+                              type: tp2-slider-control-parameter
+                              value: '0'
+                          _overridability:
+                            parameters:
+                              image: 'yes'
+                      cardContent:
+                        - _id: >-
+                            aa55537d-558d-46e7-a7e7-bcdb577b17bd|06f3f1a7-27c7-4928-beee-233d720b84c0
+                          type: text
+                          parameters:
+                            tag:
+                              type: tp2-segmented-control-parameter
+                              value: h2
+                            size:
+                              type: tp2-segmented-control-parameter
+                              value:
+                                mobile: 2xl
+                                tablet: 2xl
+                                desktop: 2xl
+                            text:
+                              type: text
+                              value: >-
+                                ${#jptr:/Recommendations entries Loop
+                                Item/entry/fields/title/value}
+                            color:
+                              type: tp2-color-palette-parameter
+                              value: text-primary
+                            weight:
+                              type: tp2-segmented-control-parameter
+                              value: medium
+                          _overridability:
+                            parameters:
+                              tag: 'yes'
+                              text: 'yes'
+                        - _id: >-
+                            aa55537d-558d-46e7-a7e7-bcdb577b17bd|e0b7bb8e-b912-4c20-97eb-7831d87eb739
+                          type: button
+                          _pattern: 31191bc7-7e6e-4748-89c2-8e73db05237d
+                    parameters:
+                      spacing:
+                        type: tp2-space-control-parameter
+                        value:
+                          marginTop: ''
+                          marginLeft: ''
+                          paddingTop: ''
+                          marginRight: ''
+                          paddingLeft: ''
+                          marginBottom: ''
+                          paddingRight: ''
+                          paddingBottom: ''
+                      displayName:
+                        type: text
+                        value: >-
+                          ${#jptr:/Recommendations entries Loop
+                          Item/entry/_name}
+                      fluidContent:
+                        type: checkbox
+                        value: true
+                    _overridability:
+                      parameters:
+                        displayName: 'yes'
+              _dataResources:
+                Recommendations entries Loop Item:
+                  type: sys-reserved-loop
+                  variables:
+                    connectedData: '#jptr:/Recommendations/entries:fa=c'
+              _overridability:
+                hideLockedParameters: true
+        parameters:
+          gapX:
+            type: tp2-slider-control-parameter
+            value:
+              mobile: '2'
+              tablet: '4'
+              desktop: '4'
+          gapY:
+            type: tp2-slider-control-parameter
+            value:
+              mobile: '2'
+              tablet: '4'
+              desktop: '4'
+          spacing:
+            type: tp2-space-control-parameter
+            value:
+              marginTop: container-small
+          displayName:
+            type: text
+            value: Cards
+          columnsCount:
+            type: tp2-slider-control-parameter
+            value:
+              mobile: '1'
+              tablet: '1'
+              desktop: '3'
+          fluidContent:
+            type: checkbox
+            value: true
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    Recommendations:
+      type: productRecommendationList
+      variables:
+        search: ''
+        contentTypes: productRecommendation
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overrides:
+    aa55537d-558d-46e7-a7e7-bcdb577b17bd|e0b7bb8e-b912-4c20-97eb-7831d87eb739:
+      parameters:
+        link:
+          type: link
+          value: ${#jptr:/Recommendations entries Loop Item/entry/fields/link/value}
+        text:
+          type: text
+          value: Learn more
+  _overridability:
+    hideLockedParameters: true
+created: '2024-10-12T17:24:16.167661+00:00'
+modified: '2024-10-12T17:27:50.442961+00:00'
+pattern: true

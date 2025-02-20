@@ -1,0 +1,115 @@
+composition:
+  _name: Site card
+  _id: 0008d65a-d299-42c8-9d21-4ec8fd10cdbb
+  type: card
+  parameters:
+    spacing:
+      type: tp2-space-control-parameter
+      value:
+        marginTop: ''
+        marginLeft: ''
+        paddingTop: ''
+        marginRight: ''
+        paddingLeft: ''
+        marginBottom: ''
+        paddingRight: ''
+        paddingBottom: ''
+    displayName:
+      type: text
+      value: Site card
+    fluidContent:
+      type: checkbox
+      value: true
+  slots:
+    cardMedia:
+      - _id: 1bb43fab-1d6a-41f6-aa76-661e43fae279
+        type: image
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: a8a8c1e3-1202-4638-9f4e-57ea87e04eda
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 4ee14e35-2793-49f2-b61f-f6b774bce25e
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/2Bawh0_eR2yHNxS35ifabg-uniform.png
+                    type: text
+                  file:
+                    type: file
+                    value: 5a8c3514-e619-408c-9af0-9307c438ff83
+                  size:
+                    value: 212950
+                    type: number
+                  title:
+                    type: text
+                    value: uniform.png
+                  width:
+                    value: 806
+                    type: number
+                  height:
+                    value: 562
+                    type: number
+                  mediaType:
+                    value: image/png
+                    type: text
+                _source: uniform-assets
+          height:
+            type: number
+            value: '290'
+          objectFit:
+            type: tp2-segmented-control-parameter
+            value: cover
+          borderRadius:
+            type: tp2-slider-control-parameter
+            value: 15px
+          overlayOpacity:
+            type: tp2-slider-control-parameter
+            value: ''
+        _overridability:
+          parameters:
+            image: 'yes'
+    cardContent:
+      - _id: fa82ae15-045a-4dee-ad21-839fcc7c6af8
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: h2
+          size:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: 2xl
+              tablet: 2xl
+              desktop: 2xl
+          text:
+            type: text
+            value: Title
+          color:
+            type: tp2-color-palette-parameter
+            value: text-primary
+          weight:
+            type: tp2-segmented-control-parameter
+            value: medium
+        _overridability:
+          parameters:
+            tag: 'yes'
+            text: 'yes'
+      - _id: a8527bed-7329-42fe-b5b4-296d2a5ef8bf
+        type: button
+        _pattern: 31191bc7-7e6e-4748-89c2-8e73db05237d
+  _overrides:
+    a8527bed-7329-42fe-b5b4-296d2a5ef8bf:
+      parameters:
+        text:
+          type: text
+          value: Link
+  _overridability:
+    parameters:
+      displayName: 'yes'
+created: '2024-10-12T15:11:31.20154+00:00'
+modified: '2024-10-12T15:11:31.20154+00:00'
+pattern: true

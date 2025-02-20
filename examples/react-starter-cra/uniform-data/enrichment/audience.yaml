@@ -1,0 +1,8 @@
+id: audience
+name: Audience
+cap: 100
+values:
+  - id: dev
+    value: Developers
+  - id: mktg
+    value: Marketers

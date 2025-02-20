@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: badge
+name: Badge
+icon: loadbar
+parameters:
+  - id: text
+    name: Text
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: size
+    name: Size
+    type: tp2-token-selector-parameter
+    typeConfig:
+      selectedGroup: badge
+      allowDimensions: []
+      selectedTokenType: dimension
+  - id: pill
+    name: Pill
+    type: checkbox
+    helpText: >-
+      When checked, the badge will have fully rounded corners, giving it a
+      pill-like appearance
+    typeConfig: null
+  - id: 0063f736-ade1-4cc8-95e6-8616cafca3df
+    name: Colors
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - backgroundColor
+        - textColor
+        - borderColor
+        - dotColor
+  - id: backgroundColor
+    name: Background Color
+    type: tp2-color-palette-parameter
+    typeConfig:
+      allowColors: []
+  - id: textColor
+    name: Text Color
+    type: tp2-color-palette-parameter
+    typeConfig:
+      allowColors: []
+      selectedGroup: text
+  - id: borderColor
+    name: Border Color
+    type: tp2-color-palette-parameter
+    typeConfig: null
+  - id: dotColor
+    name: Dot Color
+    type: tp2-color-palette-parameter
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2024-10-12T15:11:26.195534+00:00'
+updated: '2024-10-12T15:11:26.195534+00:00'

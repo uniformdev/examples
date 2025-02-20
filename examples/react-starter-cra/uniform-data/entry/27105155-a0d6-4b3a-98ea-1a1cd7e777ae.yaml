@@ -1,0 +1,29 @@
+created: '2024-10-12T17:16:38.263747+00:00'
+modified: '2024-10-15T13:35:36.219731+00:00'
+pattern: false
+entry:
+  _id: 27105155-a0d6-4b3a-98ea-1a1cd7e777ae
+  _name: Desktop Glass Whiteboard with Wireless Charger Station -
+  _slug: desktop-glass-whiteboard-with-wireless-charger-station
+  _thumbnail: https://m.media-amazon.com/images/I/71pT9PC79jL._AC_SL1500_.jpg
+  type: productRecommendation
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 573f2f17-affb-4464-9e0e-6897de322712
+          type: image
+          fields:
+            url:
+              type: text
+              value: https://m.media-amazon.com/images/I/71pT9PC79jL._AC_SL1500_.jpg
+          _source: custom-url
+    title:
+      type: text
+      value: Desktop Glass Whiteboard with Wireless Charger Station - mar+top
+    funnel:
+      type: select
+      value: top
+    audience:
+      type: select
+      value: mktg

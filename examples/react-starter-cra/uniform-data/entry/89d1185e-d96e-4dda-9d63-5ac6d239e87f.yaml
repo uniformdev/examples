@@ -1,0 +1,42 @@
+created: '2024-10-12T17:18:44.959842+00:00'
+modified: '2024-10-18T13:08:31.516331+00:00'
+pattern: false
+entry:
+  _id: 89d1185e-d96e-4dda-9d63-5ac6d239e87f
+  _name: Monoblocc Monitor Rig - dev+bot
+  _slug: monoblocc-monitor-rig
+  _thumbnail: >-
+    https://images.contentstack.io/v3/assets/bltb4748c44af3532df/blt64ca6ef7466f3624/67125bfc0a67747de02ffb9b/Monoblocc-Monitor-Rig-Accessory-Mounting-Solution-001.jpg
+  type: productRecommendation
+  fields:
+    link:
+      type: link
+      value:
+        path: https://site.com/monoblocc-monitor-rig
+        type: url
+    image:
+      type: asset
+      value:
+        - _id: 6254d966-be38-4292-83a4-c55e9841bf0a
+          type: image
+          fields:
+            url:
+              type: text
+              value: ${#jptr:/Product/entry/image/url}
+          _source: custom-url
+    title:
+      type: text
+      value: ${#jptr:/Product/entry/title}
+    funnel:
+      type: select
+      value: bot
+    audience:
+      type: select
+      value: dev
+  _dataResources:
+    Product:
+      type: product
+      variables:
+        query: ''
+        entry_uid: blt2c946e9cc8b9533c
+        content_type_uid: product
