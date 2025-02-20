@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: f9da45f7-168b-4d00-b43b-f2cc28365985
+  _name: Uniform-Icon-Library_Composability-1.png
+  fields:
+    title:
+      type: text
+      value: composability
+    file:
+      type: file
+      value: 1dd49100-e925-4572-a9ff-937dc29ce4a1
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/ZuX1F9otQ1yyKcQV3wJCIQ-Uniform-Icon-Library_Composability-1.png
+      type: text
+    size:
+      value: 6420
+      type: number
+    width:
+      value: 114
+      type: number
+    height:
+      value: 114
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:03.900296+00:00'
+modified: '2024-10-12T15:11:03.900296+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: f2157619-c179-4015-8ba9-9ca7a77136d1
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: header-logo.png
+    file:
+      type: file
+      value: 027b3476-be35-43c0-8fad-b612747377dd
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/LvSEkA2JTlyVHL6Jhk1Wow-header-logo.png
+      type: text
+    size:
+      value: 31692
+      type: number
+    width:
+      value: 876
+      type: number
+    height:
+      value: 158
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:03.107701+00:00'
+modified: '2024-10-12T15:11:03.107701+00:00'

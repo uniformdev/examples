@@ -1,0 +1,217 @@
+composition:
+  _name: Main Hero
+  _id: eea0b9bb-82f4-4de6-9aa5-af290540615d
+  type: section
+  parameters:
+    spacing:
+      type: tp2-space-control-parameter
+      value:
+        paddingTop: container-large
+        paddingLeft: container-small
+        paddingRight: container-small
+        paddingBottom: container-large
+    displayName:
+      type: text
+      value: Welcome Hero
+    fluidContent:
+      type: checkbox
+      value: true
+    contentAlignment:
+      type: tp2-segmented-control-parameter
+      value: center
+  slots:
+    sectionCTA:
+      - _id: 804f6eac-3561-4f4d-87fc-80ce979d7c2b
+        type: $slotSection
+        parameters:
+          max:
+            type: text
+            value: 2
+          name:
+            type: text
+            value: CTAs
+          specific:
+            type: array
+            value:
+              - button
+              - $p:646faee6-b476-43c6-a1a8-eebe85699889
+              - $p:53b59aed-e378-4fcb-9135-20247d92074e
+          groupType:
+            type: text
+            value: specific
+        _overridability:
+          hideLockedParameters: true
+    sectionMedia:
+      - _id: 412246da-ecc8-4363-b9cf-ae51830dd358
+        type: image
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: b4e44549-3686-45b6-a5c2-4a042c87996d
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 494c2895-1aa0-47a1-972b-e473a2ba32d5
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/ZFj2FtRMSMyNfU8S7Pkv-w-rectangle.avif
+                    type: text
+                  file:
+                    type: file
+                    value: c8694855-296a-4743-bd52-426d178297fd
+                  size:
+                    value: 23282
+                    type: number
+                  title:
+                    type: text
+                    value: rectangle.avif
+                  width:
+                    value: 1600
+                    type: number
+                  height:
+                    value: 689
+                    type: number
+                  mediaType:
+                    value: image/avif
+                    type: text
+                _source: uniform-assets
+          objectFit:
+            type: tp2-segmented-control-parameter
+            value: cover
+          borderRadius:
+            type: tp2-slider-control-parameter
+            value: 0px
+          overlayColor:
+            type: tp2-color-palette-parameter
+            value: general-color-1
+          overlayOpacity:
+            type: tp2-slider-control-parameter
+            value: '0.1'
+        _overridability:
+          parameters:
+            image: 'yes'
+            width: 'yes'
+            height: 'yes'
+            objectFit: 'yes'
+            overlayColor: 'yes'
+            overlayOpacity: 'yes'
+          hideLockedParameters: true
+    sectionContent:
+      - _id: 96c5e248-ac86-47b5-a00e-8679f1842f26
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: p
+          font:
+            type: tp2-token-selector-parameter
+            value: dm-sans
+          size:
+            type: tp2-segmented-control-parameter
+            value: xl
+          text:
+            type: text
+            value: text
+          color:
+            type: tp2-color-palette-parameter
+            value: text-light
+          weight:
+            type: tp2-segmented-control-parameter
+            value: bold
+          alignment:
+            type: tp2-segmented-control-parameter
+            value: center
+          transform:
+            type: tp2-segmented-control-parameter
+            value: uppercase
+        _overridability:
+          parameters:
+            tag: 'yes'
+            size: 'no'
+            text: 'yes'
+            color: 'no'
+          hideLockedParameters: true
+      - _id: 90aa2fcd-bc65-4d44-828b-7e888218a025
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: h2
+          font:
+            type: tp2-token-selector-parameter
+            value: dm-sans
+          size:
+            type: tp2-segmented-control-parameter
+            value:
+              mobile: 5xl
+              tablet: 5xl
+              desktop: 7xl
+          text:
+            type: text
+            value: Title
+          color:
+            type: tp2-color-palette-parameter
+            value: text-light
+          weight:
+            type: tp2-segmented-control-parameter
+            value: bold
+          alignment:
+            type: tp2-segmented-control-parameter
+            value: center
+        _overridability:
+          parameters:
+            tag: 'yes'
+            $viz: 'yes'
+            font: 'no'
+            size: 'no'
+            text: 'yes'
+            color: 'no'
+          hideLockedParameters: true
+      - _id: 59786267-3106-4c8c-8670-9c56f9b07199
+        type: text
+        parameters:
+          tag:
+            type: tp2-segmented-control-parameter
+            value: p
+          font:
+            type: tp2-token-selector-parameter
+            value: dm-sans
+          size:
+            type: tp2-segmented-control-parameter
+            value: xl
+          text:
+            type: text
+            value: Second subtitle
+          color:
+            type: tp2-color-palette-parameter
+            value: text-light
+          weight:
+            type: tp2-segmented-control-parameter
+            value: normal
+          alignment:
+            type: tp2-segmented-control-parameter
+            value: center
+        _overridability:
+          parameters:
+            tag: 'yes'
+            $viz: 'no'
+            font: 'no'
+            size: 'no'
+            text: 'yes'
+            color: 'no'
+          hideLockedParameters: true
+  _overridability:
+    parameters:
+      $viz: 'yes'
+      title: 'yes'
+      spacing: 'yes'
+      fullHeight: 'yes'
+      fluidContent: 'yes'
+      backgroundColor: 'yes'
+    hideLockedParameters: true
+created: '2024-10-12T15:11:29.595749+00:00'
+modified: '2024-10-12T15:11:29.595749+00:00'
+pattern: true
+categoryId: 096fd5ed-5e2a-4bfa-834b-fb805d1d1ce9

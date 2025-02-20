@@ -1,0 +1,42 @@
+created: '2024-10-18T13:04:52.829488+00:00'
+modified: '2024-10-18T13:13:09.668857+00:00'
+pattern: true
+entry:
+  _id: 8d22ac83-1ce5-4b09-9ba5-06f8d0b07578
+  _name: CS Product
+  _slug: product-recommendation-pattern
+  _thumbnail: >-
+    https://images.contentstack.io/v3/assets/bltb4748c44af3532df/blt5734007ad621be2a/67125c3a1c3e184e51603c5d/kYKIJMOrRtmYfDaYNVswhA-Ziba-Client-Gift.jpeg
+  type: productRecommendation
+  fields:
+    link:
+      type: link
+      value:
+        path: https://site.com/usb-thumb-drive
+        type: url
+    image:
+      type: asset
+      value:
+        - _id: 4d1a07be-170f-4840-8908-82c3295a7a80
+          type: image
+          fields:
+            url:
+              type: text
+              value: ${#jptr:/Product/entry/image/url}
+          _source: custom-url
+    title:
+      type: text
+      value: ${#jptr:/Product/entry/title}
+  _dataResources:
+    Product:
+      type: product
+      variables:
+        query: ''
+        entry_uid: blte35a79e06e2d75d3
+        content_type_uid: product
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      funnel: 'yes'
+      audience: 'yes'

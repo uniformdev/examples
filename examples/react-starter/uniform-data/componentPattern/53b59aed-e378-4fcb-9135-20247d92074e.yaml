@@ -1,0 +1,38 @@
+composition:
+  _name: Primary Button
+  _id: 53b59aed-e378-4fcb-9135-20247d92074e
+  type: button
+  parameters:
+    size:
+      type: tp2-token-selector-parameter
+      value: button-medium
+    text:
+      type: text
+      value: Docs
+    textColor:
+      type: tp2-color-palette-parameter
+      value: text-light
+    textWeight:
+      type: tp2-segmented-control-parameter
+      value: normal
+    buttonColor:
+      type: tp2-color-palette-parameter
+      value: button-primary
+    iconPosition:
+      type: tp2-segmented-control-parameter
+      value: left
+    textTransform:
+      type: tp2-segmented-control-parameter
+      value: uppercase
+  _overridability:
+    variants: true
+    parameters:
+      link: 'yes'
+      text: 'yes'
+      textColor: 'yes'
+      buttonColor: 'yes'
+    hideLockedParameters: true
+created: '2024-10-12T15:11:29.302222+00:00'
+modified: '2024-10-12T16:12:46.763168+00:00'
+pattern: true
+previewImageUrl: https://dev-csk-marketing-site.vercel.app/preview-images/primaryButton.png

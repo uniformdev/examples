@@ -1,0 +1,28 @@
+created: '2024-10-18T14:38:46.849073+00:00'
+modified: '2024-10-18T14:39:17.404406+00:00'
+pattern: false
+entry:
+  _id: a7596eec-69e4-4ca1-af97-48d55161354a
+  _name: TS (TYPESCRIPT) Debugging Duck-dev-bot
+  _slug: ts-typescript-debugging-duck-dev-bot
+  _thumbnail: >-
+    https://images.contentstack.io/v3/assets/bltb4748c44af3532df/bltedcf84a964c45c43/67125e82a240010759f4e181/il_1140xN.4963614930_1ug0.jpg
+  type: productRecommendation
+  fields: {}
+  _dataResources:
+    Product:
+      type: product
+      variables:
+        query: ''
+        entry_uid: blt43036e0790eec513
+        content_type_uid: product
+  _overrides:
+    a7596eec-69e4-4ca1-af97-48d55161354a:
+      parameters:
+        funnel:
+          type: select
+          value: mid
+        audience:
+          type: select
+          value: dev
+  _pattern: 8d22ac83-1ce5-4b09-9ba5-06f8d0b07578

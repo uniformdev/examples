@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: eb58a5e2-5b3c-42f8-a13e-d5798f6be321
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: footer-logo.png
+    file:
+      type: file
+      value: d522f2f1-a82e-44df-a6c4-63066ea7aa53
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/MEle9auNQdyvbL2Lkl88Og-footer-logo.png
+      type: text
+    size:
+      value: 2896
+      type: number
+    width:
+      value: 346
+      type: number
+    height:
+      value: 93
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:02.185733+00:00'
+modified: '2024-10-12T15:11:02.185733+00:00'

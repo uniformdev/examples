@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: file-document
+parameters:
+  - id: pageTitle
+    name: Page Title
+    type: text
+    typeConfig:
+      required: true
+categoryId: c7a1d1d9-cc3f-431c-b55e-6c4af1285108
+previewImageUrl: https://dev-csk-marketing-site.vercel.app/preview-images/page.png
+useTeamPermissions: true
+slots:
+  - id: pageContent
+    name: Page Content
+    allowedComponents:
+      - accordion
+      - callToAction
+      - carousel
+      - container
+      - divider
+      - grid
+      - section
+      - image
+      - spacer
+      - video
+      - $test
+      - $localization
+      - $loop
+      - $personalization
+      - flex
+      - tabs
+      - table
+      - banner
+      - imageGallery
+      - testimonial
+      - review
+      - header
+      - countdown
+      - footer
+      - recommendations
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: pageTitle
+canBeComposition: true
+created: '2024-10-12T15:11:26.35963+00:00'
+updated: '2024-10-12T19:02:36.457052+00:00'

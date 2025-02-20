@@ -1,0 +1,10 @@
+id: funnel
+name: Funnel
+cap: 100
+values:
+  - id: bot
+    value: Bottom
+  - id: mid
+    value: Middle
+  - id: top
+    value: Top

@@ -1,0 +1,21 @@
+id: getProductsByAudience
+displayName: Get Products By Audience
+ttl: 30
+path: ''
+custom:
+  proposedName: ''
+method: GET
+purgeKey: ce14494e-2674-473d-b3ca-3c39c0adde3e
+archetype: default
+variables:
+  audience:
+    type: text
+    default: dev
+parameters:
+  - key: sort_by
+    value: >-
+      _eval([+(userdef$entry$productRecommendation$audience$__localeless__:${audience}):3]):desc
+  - key: filter_by
+    value: entityType:=entry && state:=64
+dataSourceId: uniformSearch
+allowedOnComponents: []

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5f6c13a0-62b9-4b36-bce4-5b2b8ca4ac04
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: git-icon.svg
+    file:
+      type: file
+      value: 32defca2-ae7d-490d-856a-99a158c616ca
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/KsKjksjyQ5u4lOzyrm4sSA-git-icon.svg
+      type: text
+    size:
+      value: 1326
+      type: number
+    width:
+      value: 27
+      type: number
+    height:
+      value: 26
+      type: number
+    custom: {}
+created: '2024-10-12T15:10:56.594732+00:00'
+modified: '2024-10-12T15:10:56.594732+00:00'

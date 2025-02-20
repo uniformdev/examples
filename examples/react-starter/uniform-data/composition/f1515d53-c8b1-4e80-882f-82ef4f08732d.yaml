@@ -1,0 +1,93 @@
+composition:
+  _name: For Developers
+  _id: f1515d53-c8b1-4e80-882f-82ef4f08732d
+  _slug: for-developers
+  type: page
+  _overrides:
+    b92b4156-42b6-4dfa-b5df-d7a0b98c44a0:
+      parameters:
+        link:
+          type: link
+          value:
+            path: /
+            type: projectMapNode
+            nodeId: b90aa0bf-891d-4e40-9899-0d79eb1b26af
+            projectMapId: 537d11ff-9ebe-4420-9682-36694477e2f9
+        text:
+          type: text
+          value: Go Home
+    f1515d53-c8b1-4e80-882f-82ef4f08732d:
+      parameters:
+        $enr:
+          type: $enr
+          value:
+            - cat: audience
+              key: dev
+              str: 10
+    b1221bce-bd62-40ad-8b56-bc422e00dd3f|412246da-ecc8-4363-b9cf-ae51830dd358:
+      parameters:
+        image:
+          type: asset
+          value:
+            - _id: cca8265d-7f05-4901-b382-e836f62cd74b
+              type: image
+              fields:
+                url:
+                  type: text
+                  value: >-
+                    https://images.unsplash.com/photo-1604145559206-e3bce0040e2d?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+              _source: custom-url
+        overlayColor:
+          type: tp2-color-palette-parameter
+          value: general-color-2
+        overlayOpacity:
+          type: tp2-slider-control-parameter
+          value: '0.5'
+    b1221bce-bd62-40ad-8b56-bc422e00dd3f|59786267-3106-4c8c-8670-9c56f9b07199:
+      parameters:
+        text:
+          type: text
+          value: build stuff fast
+    b1221bce-bd62-40ad-8b56-bc422e00dd3f|804f6eac-3561-4f4d-87fc-80ce979d7c2b:
+      slots:
+        $slotSectionItems:
+          - _id: b92b4156-42b6-4dfa-b5df-d7a0b98c44a0
+            type: button
+            _pattern: 53b59aed-e378-4fcb-9135-20247d92074e
+            _overridability:
+              variants: true
+              parameters:
+                link: 'yes'
+                text: 'yes'
+                textColor: 'yes'
+                buttonColor: 'yes'
+              hideLockedParameters: true
+    b1221bce-bd62-40ad-8b56-bc422e00dd3f|90aa2fcd-bc65-4d44-828b-7e888218a025:
+      parameters:
+        text:
+          type: text
+          value: For Developers
+    b1221bce-bd62-40ad-8b56-bc422e00dd3f|96c5e248-ac86-47b5-a00e-8679f1842f26:
+      parameters:
+        text:
+          type: text
+          value: CSK is awesome
+    f1515d53-c8b1-4e80-882f-82ef4f08732d|08bca273-e123-4a5d-9d97-cb45a91c4b41:
+      slots:
+        $slotSectionItems:
+          - _id: b1221bce-bd62-40ad-8b56-bc422e00dd3f
+            type: section
+            _pattern: eea0b9bb-82f4-4de6-9aa5-af290540615d
+            _overridability:
+              parameters:
+                $viz: 'yes'
+                title: 'yes'
+                spacing: 'yes'
+                fullHeight: 'yes'
+                fluidContent: 'yes'
+                backgroundColor: 'yes'
+              hideLockedParameters: true
+  _pattern: 69ef6db5-ad1b-418c-ac93-23d429832084
+created: '2024-10-12T15:23:57.310257+00:00'
+modified: '2024-10-13T18:17:40.197601+00:00'
+pattern: false

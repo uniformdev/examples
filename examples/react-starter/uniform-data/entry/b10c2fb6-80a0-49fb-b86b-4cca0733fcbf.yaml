@@ -1,0 +1,31 @@
+created: '2024-10-12T17:19:50.72027+00:00'
+modified: '2024-10-15T13:36:14.216065+00:00'
+pattern: false
+entry:
+  _id: b10c2fb6-80a0-49fb-b86b-4cca0733fcbf
+  _name: Razer Iskur V2 gaming chair - dev+mid
+  _slug: razer-iskur-v2-gaming-chair
+  _thumbnail: >-
+    https://thegadgetflow.com/wp-content/uploads/2024/05/Razer-Iskur-V2-Lumbar-Supporting-Gaming-Chair-01-1024x577.jpg
+  type: productRecommendation
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: d4105f2c-163a-4fee-bdb2-e00065e01d1e
+          type: image
+          fields:
+            url:
+              type: text
+              value: >-
+                https://thegadgetflow.com/wp-content/uploads/2024/05/Razer-Iskur-V2-Lumbar-Supporting-Gaming-Chair-01-1024x577.jpg
+          _source: custom-url
+    title:
+      type: text
+      value: Razer Iskur V2 gaming chair - dev+mid
+    funnel:
+      type: select
+      value: mid
+    audience:
+      type: select
+      value: dev

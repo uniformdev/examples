@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 40fd0a96-f1cd-42e1-ac5a-d9b31e619316
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: pampers-site.png
+    file:
+      type: file
+      value: 318dd265-ee56-45d8-a3f2-ea7dbf65b92b
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/Folg8cYBRxGPH4CykSVLxA-pampers-site.png
+      type: text
+    size:
+      value: 414198
+      type: number
+    width:
+      value: 806
+      type: number
+    height:
+      value: 562
+      type: number
+    custom: {}
+created: '2024-10-12T15:11:02.939122+00:00'
+modified: '2024-10-12T15:11:02.939122+00:00'

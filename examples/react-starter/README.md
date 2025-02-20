@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Uniform React Starter for Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Getting started
+
+1. `npm install`
+1. `npm run start` and open http://localhost:3000
+
+## Deploying to your own project
+
+1. Setup your own project ID and API key values in `.env` with the API key that has Developer role.
+2. `npm run uniform:push` to push content.
+3. `npm run start` and open localhost:3000
 
 ## Available Scripts
 

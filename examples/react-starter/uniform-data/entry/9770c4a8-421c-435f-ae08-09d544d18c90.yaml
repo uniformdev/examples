@@ -1,0 +1,31 @@
+created: '2024-10-12T17:20:20.337257+00:00'
+modified: '2024-10-15T13:36:01.629915+00:00'
+pattern: false
+entry:
+  _id: 9770c4a8-421c-435f-ae08-09d544d18c90
+  _name: Sharge Capsule Gravity versatile digital clock - dev+top
+  _slug: sharge-capsule-gravity-versatile-digital-clock
+  _thumbnail: >-
+    https://thegadgetflow.com/wp-content/uploads/2024/05/Sharge-Capsule-Gravity-01.jpg
+  type: productRecommendation
+  fields:
+    image:
+      type: asset
+      value:
+        - _id: 68d8d89f-7878-41fa-8dbe-bfb2d0c3b293
+          type: image
+          fields:
+            url:
+              type: text
+              value: >-
+                https://thegadgetflow.com/wp-content/uploads/2024/05/Sharge-Capsule-Gravity-01.jpg
+          _source: custom-url
+    title:
+      type: text
+      value: Sharge Capsule Gravity versatile digital clock - dev+top
+    funnel:
+      type: select
+      value: top
+    audience:
+      type: select
+      value: dev

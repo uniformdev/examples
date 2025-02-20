@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: recommendations
+name: Recommendations
+icon: awards
+parameters:
+  - id: displayTitle
+    name: Display Title
+    type: text
+    helpText: for authors, not functional
+    typeConfig: null
+    localizable: true
+  - id: contentType
+    name: Content Type
+    type: select
+    typeConfig:
+      options:
+        - text: Product
+          value: productRecommendation
+      required: true
+  - id: enrichmentCategories
+    name: Enrichment Categories
+    type: multi-select
+    helpText: specifies which enrichments to use for personalization
+    typeConfig:
+      options:
+        - text: Audience
+          value: audience
+        - text: Funnel
+          value: funnel
+  - id: maxCount
+    name: Max Recommendations
+    type: number
+    typeConfig:
+      max: '5'
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: displayTitle
+canBeComposition: true
+created: '2024-10-12T19:02:09.668805+00:00'
+updated: '2024-10-15T12:23:51.334026+00:00'
+variants:
+  - id: list
+    name: List
+  - id: hero
+    name: Hero

@@ -1,5 +1,5 @@
 {
-  "name": "@uniformdev/react-starter",
+  "name": "@uniformdev/react-starter-cra",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,8 +10,8 @@
     "@types/node": "^16.18.98",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@uniformdev/context": "^19.191.0",
-    "@uniformdev/context-react": "^19.191.0",
+    "@uniformdev/context": "^20.5.0",
+    "@uniformdev/context-react": "^20.5.0",
     "cookie": "^0.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,14 +23,17 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/cookie": "^0.6.0",
-    "@uniformdev/cli": "^19.191.0"
+    "@uniformdev/cli": "^20.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "uniform:manifest": "uniform context manifest download --output ./src/uniform/context-manifest.json"
+    "uniform:manifest": "uniform context manifest download --output ./src/uniform/context-manifest.json",
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push",
+    "uniform:publish": "uniform context manifest publish"
   },
   "eslintConfig": {
     "extends": [

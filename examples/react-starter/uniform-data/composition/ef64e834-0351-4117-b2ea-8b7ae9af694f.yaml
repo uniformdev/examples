@@ -1,0 +1,153 @@
+composition:
+  _name: New Home
+  _id: ef64e834-0351-4117-b2ea-8b7ae9af694f
+  _slug: new-home
+  type: page
+  _overrides:
+    15cf302c-3f10-435d-a224-d761509da62b:
+      parameters:
+        link:
+          type: link
+          value:
+            path: /for-developers
+            type: projectMapNode
+            nodeId: 82bf2519-dd01-4271-84fc-666939a41b46
+            projectMapId: 537d11ff-9ebe-4420-9682-36694477e2f9
+        text:
+          type: text
+          value: I am a dev
+    59a8fa7e-38a8-460c-8e9b-c3191cb1fe1b:
+      parameters:
+        link:
+          type: link
+          value:
+            path: /for-marketers
+            type: projectMapNode
+            nodeId: 66c6a84a-55b1-4300-aa20-7c36e90bc727
+            projectMapId: 537d11ff-9ebe-4420-9682-36694477e2f9
+        text:
+          type: text
+          value: I am a Marketer
+        textColor:
+          type: tp2-color-palette-parameter
+          value: text-secondary
+        buttonColor:
+          type: tp2-color-palette-parameter
+          value: button-secondary
+    bb1fa673-5386-41f0-9eea-03339c7ed70e:
+      parameters:
+        $viz:
+          type: $viz
+          value: null
+        spacing:
+          type: tp2-space-control-parameter
+          value:
+            paddingTop: container-xlarge
+            paddingLeft: container-small
+            paddingRight: container-small
+            paddingBottom: container-xlarge
+    bb1fa673-5386-41f0-9eea-03339c7ed70e|412246da-ecc8-4363-b9cf-ae51830dd358:
+      parameters:
+        image:
+          type: asset
+          value:
+            - _id: d3471ea5-824e-44c3-9058-0c82b7efcd63
+              type: image
+              fields:
+                id:
+                  type: text
+                  value: b75f59fd-cc8a-4991-99b0-19132a67f3ff
+                url:
+                  type: text
+                  value: >-
+                    https://img.uniform.global/p/DJdn3O22SsmajaAxZxtCsg/DvRLYU0TT3il3I3-KsbmeQ-Rectangle-63.jpg
+                file:
+                  type: file
+                  value: 58c84d17-aaa0-4709-946e-a9004f7d33fb
+                size:
+                  type: number
+                  value: 1133504
+                title:
+                  type: text
+                  value: Rectangle-63.jpg
+                width:
+                  type: number
+                  value: 3200
+                height:
+                  type: number
+                  value: 960
+                mediaType:
+                  type: text
+                  value: image/jpeg
+              _source: uniform-assets
+        overlayOpacity:
+          type: tp2-slider-control-parameter
+          value: '0'
+    bb1fa673-5386-41f0-9eea-03339c7ed70e|59786267-3106-4c8c-8670-9c56f9b07199:
+      parameters:
+        text:
+          type: text
+          value: >-
+            An essential set of components you need to start building
+            personalized web experiences with Uniform.
+    bb1fa673-5386-41f0-9eea-03339c7ed70e|804f6eac-3561-4f4d-87fc-80ce979d7c2b:
+      slots:
+        $slotSectionItems:
+          - _id: 15cf302c-3f10-435d-a224-d761509da62b
+            type: button
+            _pattern: 53b59aed-e378-4fcb-9135-20247d92074e
+            _overridability:
+              variants: true
+              parameters:
+                link: 'yes'
+                text: 'yes'
+                textColor: 'yes'
+                buttonColor: 'yes'
+              hideLockedParameters: true
+          - _id: 59a8fa7e-38a8-460c-8e9b-c3191cb1fe1b
+            type: button
+            _pattern: 53b59aed-e378-4fcb-9135-20247d92074e
+            _overridability:
+              variants: true
+              parameters:
+                link: 'yes'
+                text: 'yes'
+                textColor: 'yes'
+                buttonColor: 'yes'
+              hideLockedParameters: true
+    bb1fa673-5386-41f0-9eea-03339c7ed70e|90aa2fcd-bc65-4d44-828b-7e888218a025:
+      parameters:
+        tag:
+          type: tp2-segmented-control-parameter
+          value: h1
+        text:
+          type: text
+          value: |
+            Component Starter Kit
+    bb1fa673-5386-41f0-9eea-03339c7ed70e|96c5e248-ac86-47b5-a00e-8679f1842f26:
+      parameters:
+        tag:
+          type: tp2-segmented-control-parameter
+          value: span
+        text:
+          type: text
+          value: Uniform
+    ef64e834-0351-4117-b2ea-8b7ae9af694f|08bca273-e123-4a5d-9d97-cb45a91c4b41:
+      slots:
+        $slotSectionItems:
+          - _id: bb1fa673-5386-41f0-9eea-03339c7ed70e
+            type: section
+            _pattern: eea0b9bb-82f4-4de6-9aa5-af290540615d
+            _overridability:
+              parameters:
+                $viz: 'yes'
+                title: 'yes'
+                spacing: 'yes'
+                fullHeight: 'yes'
+                fluidContent: 'yes'
+                backgroundColor: 'yes'
+              hideLockedParameters: true
+  _pattern: 69ef6db5-ad1b-418c-ac93-23d429832084
+created: '2024-10-13T18:15:04.908582+00:00'
+modified: '2024-10-15T13:43:34.69675+00:00'
+pattern: false
