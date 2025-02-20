@@ -53,7 +53,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ gallery }) => {
       <Section style={{ marginTop: 16 }}>
         <Row style={{ marginTop: 16 }}>
           <Column style={{ width: "50%", paddingRight: 8 }}>
-            {images[0] ? (
+            {images?.[0] ? (
               <Row style={{ paddingBottom: 8 }}>
                 <td>
                   <Link href="#">
@@ -71,7 +71,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ gallery }) => {
                 </td>
               </Row>
             ) : null}
-            {images[1] ? (
+            {images?.[1] ? (
               <Row style={{ paddingTop: 8 }}>
                 <td>
                   <Link href="#">
@@ -90,7 +90,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ gallery }) => {
               </Row>
             ) : null}
           </Column>
-          {images[2] ? (
+          {images?.[2] ? (
             <Column
               style={{
                 width: "50%",

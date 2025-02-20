@@ -9,7 +9,7 @@ type FeaturedProductProps = ComponentProps<{
 }>;
 
 const FeaturedProduct: React.FC<FeaturedProductProps> = ({ image }) => {
-  const { url, title, height } = flattenValues(image, { toSingle: true }) as any;
+  const { url, title, height } = (flattenValues(image, { toSingle: true }) as any) || {};
   return (
     <Section style={{ marginTop: 16, marginBottom: 16 }}>
       <Img
