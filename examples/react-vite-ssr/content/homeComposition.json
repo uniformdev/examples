@@ -1,0 +1,22 @@
+{
+  "_name": "Home",
+  "_slug": "/",
+  "type": "page",
+  "slots": {
+    "content": [
+      {
+        "type": "hero",
+        "parameters": {
+          "title": {
+            "type": "text",
+            "value": "Welcome!"
+          },
+          "description": {
+            "type": "text",
+            "value": "Hello World."
+          }
+        }
+      }
+    ]
+  }
+}

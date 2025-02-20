@@ -12,6 +12,10 @@ These starters don't have a lot of functionality, they are single page, single c
 
 - [Hello world starter for Next.js Page Router](./examples/nextjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Next.js page router.
 
+- [Create React App Starter (CSR)](./examples/react-starter-cra) - basic Create React App starter with Uniform SDK pre-configured using client-side rendering.
+
+- [React Vite SSR starter](./examples/react-vite-ssr) - basic React Vite starter with Uniform SDK pre-configured using server-side rendering.
+
 - [Search starter](./examples/nextjs-search) - essential search API example starter based on Next.js 15 app router.
 
 - [Nuxt hello world starter](./examples/nuxtjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Nuxt 3. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
