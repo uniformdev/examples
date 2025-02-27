@@ -1,0 +1,29 @@
+import PageComposition from "@/components/PageComposition";
+import { withUniformGetStaticProps, withUniformGetStaticPaths } from "@uniformdev/canvas-next/route";
+import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE, RouteClient } from "@uniformdev/canvas";
+import { getCompositionsForNavigation } from "@/lib/uniform/canvasClient";
+
+export const getStaticProps = withUniformGetStaticProps({
+  // fetching draft composition in dev mode for convenience
+  requestOptions: {
+    state:
+      process.env.NODE_ENV === "development"
+        ? CANVAS_DRAFT_STATE
+        : CANVAS_PUBLISHED_STATE,
+  },
+  param: 'slug',
+  handleComposition: async ({ compositionApiResponse }, { preview }, _defaultHandler) => {
+    const { composition } = compositionApiResponse || {};
+    const navLinks = await getCompositionsForNavigation(preview);
+    return {
+      props: {
+        data: composition,
+        navLinks,
+      },
+    };
+  },
+});
+
+export const getStaticPaths = withUniformGetStaticPaths();
+
+export default PageComposition;
