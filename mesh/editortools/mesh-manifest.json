@@ -1,0 +1,21 @@
+{
+  "type": "editor-tools-example",
+  "displayName": "Editor Tools Example",
+  "baseLocationUrl": "http://localhost:9000",
+  "logoIconUrl": "http://localhost:9000/icons/copy.svg",
+  "badgeIconUrl": "http://localhost:9000/icons/copy.svg",
+  "category": "content",
+  "locations": {
+    "settings": {
+      "url": "/settings"
+    },
+    "canvas": {
+      "parameterTypes": [],
+      "editorTools": {
+        "composition": {
+          "url": "/editorTools"
+        }
+      }
+    }
+  }
+}

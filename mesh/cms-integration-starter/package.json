@@ -1,0 +1,42 @@
+{
+  "name": "@uniformdev/cms-mesh-integration-starter",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next dev --port 4063",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start --port 4063",
+    "lint": "next lint",
+    "predeploy": "echo 'next export is part of the build script'",
+    "test": "jest --passWithNoTests",
+    "deploy": "echo 'empty deploy script'",
+    "clean": "rimraf .next && rimraf out && rimraf .swc",
+    "edgehancer:build": "tsup --config edgehancer/tsup.config.ts"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "20.6.1",
+    "@uniformdev/design-system": "20.6.1",
+    "@uniformdev/mesh-sdk-react": "20.6.1",
+    "@uniformdev/mesh-edgehancer-sdk": "20.6.1",
+    "lodash": "^4.17.21",
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-use": "17.5.0",
+    "tsup": "^8.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "4.1.5",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "engines": {
+    "node": "20.9.0"
+  }
+}

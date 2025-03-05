@@ -1,0 +1,34 @@
+{
+  "type": "cms-mesh-integration",
+  "displayName": "CMS Mesh Integration",
+  "logoIconUrl": "https://res.cloudinary.com/uniformdev/image/upload/v1736884961/Mock%20Integration/212ec0c3-315f-44ab-904f-11bfd418fdd4_f73wiy.webp",
+  "badgeIconUrl": "https://res.cloudinary.com/uniformdev/image/upload/v1736884962/Mock%20Integration/e74956cf-5b31-4a90-8d8e-413fbbacbcf2_xiurmm.webp",
+  "category": "content",
+  "baseLocationUrl": "https://mocked-cms-integration-for-uniform.vercel.app",
+  "locations": {
+    "install": {
+      "description": [
+        "This integrations can be used as a template for implementing your own CMS integration."
+      ],
+      "informationUrl": "https://docs.uniform.app/"
+    },
+    "settings": {
+      "url": "/settings"
+    },
+    "dataConnectors": [
+      {
+        "type": "cms-mesh-integration-data-connection",
+        "displayName": "CMS Mesh Integration",
+        "dataSourceEditorUrl": "/data-connection-editor",
+        "supportsUnpublishedData": true,
+        "dataArchetypes": {
+          "singleEntry": {
+            "displayName": "Single Entry",
+            "typeEditorUrl": "/data-types/single-entry-type-editor",
+            "dataEditorUrl": "/data-types/single-entry-data-editor"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@uniformdev/editor-tools-mesh-example",
+  "version": "19.196.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9000",
+    "build": "next build",
+    "start": "next start -p 9000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "20.6.1",
+    "@uniformdev/design-system": "20.6.1",
+    "@uniformdev/mesh-sdk-react": "20.6.1",
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tsup": "8.3.5",
+    "react-use": "17.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.6",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "typescript": "5.7.3"
+  },
+  "overrides": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  }
+}
