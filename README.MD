@@ -27,10 +27,10 @@ These starters don't have a lot of functionality, they are single page, single c
 
 These starters are created to accelerate your learning and development of a new extension to Uniform: 
 
-- [Generic new integration starter](./examples/mesh/mesh-integration/) is provided to streamline your first mesh integration development experience. See [the docs here](https://docs.uniform.app/docs/integrations/mesh-integrations/custom-integrations) for info on how to extend Uniform Mesh.
-- 🆕 [New CMS integration starter](./examples/mesh/cms-integration-starter/) implements an essential external CMS integration using a mocked CMS API. If you are building a content integration (for CMS or any content repository), this is a great starting point.
-- [Custom parameters/fields example](./examples/mesh/custom-parameters/) shows how to extend the standard set of parameter or field types. This may not be a full-fledge integration but if you need a custom UX on top of a parameter or a field, it's a great starting point with plenty of examples.
-- 🆕  [Editor tools example](./examples/mesh/editortools) shows how to extend Canvas editor's siderail with custom functionality using an example of a composition copy functionality.
+- [Generic new integration starter](./mesh/mesh-integration/) is provided to streamline your first mesh integration development experience. See [the docs here](https://docs.uniform.app/docs/integrations/mesh-integrations/custom-integrations) for info on how to extend Uniform Mesh.
+- 🆕 [New CMS integration starter](./mesh/cms-integration-starter/) implements an essential external CMS integration using a mocked CMS API. If you are building a content integration (for CMS or any content repository), this is a great starting point.
+- [Custom parameters/fields example](./mesh/custom-parameters/) shows how to extend the standard set of parameter or field types. This may not be a full-fledge integration but if you need a custom UX on top of a parameter or a field, it's a great starting point with plenty of examples.
+- 🆕  [Editor tools example](./mesh/editortools) shows how to extend Canvas editor's siderail with custom functionality using an example of a composition copy functionality.
 
 ## Feature starters
 
