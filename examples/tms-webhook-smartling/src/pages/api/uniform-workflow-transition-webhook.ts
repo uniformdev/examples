@@ -72,6 +72,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   // You can find full payload structure under Uniform Project -> Settings -> Webhooks => Event Catalog
   const payloadObject: WorkflowTransitionPayload = req.body;
 
+  if (!payloadObject.newStage) {
+    throw new Error("No newStage data in payloadObject: " + JSON.stringify(payloadObject));
+  }
+
   if (payloadObject.newStage.stageId === uniformWorkflowStageIdReadyForTranslations) {
     const { entity, translationEntityType } = await resolveUniformEntityFromWebhook(payloadObject);
 
