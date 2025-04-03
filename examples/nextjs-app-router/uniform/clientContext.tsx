@@ -14,7 +14,11 @@ import {
 // import { enableGoogleGtagAnalytics } from "@uniformdev/context-gtag";
 import { useRouter } from "next/navigation";
 
-export const UniformClientContext: ClientContextComponent = ({ manifest }) => {
+export const UniformClientContext: ClientContextComponent = ({
+  manifest,
+  experimentalQuirkSerialization,
+  defaultConsent,
+}) => {
   const router = useRouter();
   useInitUniformContext(() => {
     const plugins: ContextPlugin[] = [];
@@ -50,7 +54,8 @@ export const UniformClientContext: ClientContextComponent = ({ manifest }) => {
     return createClientUniformContext({
       manifest,
       plugins,
-      defaultConsent: true,
+      defaultConsent,
+      experimental_quirksEnabled: experimentalQuirkSerialization,
     });
   });
 
