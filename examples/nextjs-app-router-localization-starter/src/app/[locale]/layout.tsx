@@ -1,12 +1,12 @@
 import React from "react";
 import { UniformContext } from "@uniformdev/canvas-next-rsc";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, unstable_setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import Header from "@/components/header";
 
 import "../globals.css";
 
-const locales = ["en", "de"];
+const locales = ["en", "de", "ja"];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -14,12 +14,13 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
-}) {
-  unstable_setRequestLocale(locale);
+  params: Promise<{locale: string}>;
+}) {  
+  const { locale } = await params;
+  setRequestLocale(locale);
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();

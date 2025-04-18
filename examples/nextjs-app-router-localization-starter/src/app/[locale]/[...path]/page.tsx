@@ -1,5 +1,5 @@
 import React from "react";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
 import Composition from "@/components/composition";
 import { getStaticParams } from "@/lib/uniform/utils";
@@ -13,7 +13,7 @@ type Props = {
 };
 
 export default function Home({ params: { locale, path } }: Props) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   return <Composition locale={locale} path={path.join("/")} />;
 }
 
