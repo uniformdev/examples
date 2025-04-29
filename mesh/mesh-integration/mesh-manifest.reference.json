@@ -5,6 +5,7 @@
   "badgeIconUrl": "https://uniform.app/uniform.png",
   "category": "ai",
   "baseLocationUrl": "http://localhost:9000",
+  "scopes": ["user:read"],
   "locations": {
     "install": {
       "description": [
@@ -119,6 +120,15 @@
           ]
         }
       ]
-    }
+    },
+
+    "tools": [
+      {
+        "id": "example-tool",
+        "name": "Example Tool",
+        "url": "/reference/tool",
+        "iconUrl": "https://uniform.app/uniform.png"
+      }
+    ]
   }
 }
