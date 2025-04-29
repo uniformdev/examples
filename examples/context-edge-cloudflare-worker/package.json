@@ -11,7 +11,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230419.0",
     "@types/cookie": "^0.6.0",
-    "@uniformdev/cli": "^19.145.0",
+    "@uniformdev/cli": "^20.14.1",
     "@uniformdev/context-edge": "^19.145.0",
     "typescript": "^5.4.5",
     "wrangler": "^3.53.1"
