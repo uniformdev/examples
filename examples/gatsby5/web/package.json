@@ -38,7 +38,7 @@
   "dependencies": {
     "@uniformdev/canvas": "^19.48.0",
     "@uniformdev/canvas-react": "^19.48.0",
-    "@uniformdev/cli": "^19.48.0",
+    "@uniformdev/cli": "^19.73.0",
     "@uniformdev/context": "^19.48.0",
     "@uniformdev/context-react": "^19.48.0",
     "@uniformdev/project-map": "^19.48.0",
