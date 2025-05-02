@@ -26,7 +26,7 @@
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "@uniformdev/context": "^16.2.4",
-    "@uniformdev/context-react": "^16.2.4",
+    "@uniformdev/context-react": "^19.191.0",
     "contentful": "^9.1.32",
     "cookie": "^0.4.2",
     "next": "^12.1.6",
