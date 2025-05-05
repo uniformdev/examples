@@ -15,18 +15,18 @@
     "@types/node": "20.10.6",
     "@types/react": "18.2.40",
     "@types/react-dom": "18.2.17",
-    "@uniformdev/canvas-next-rsc": "^19.178.0",
-    "@uniformdev/project-map": "^19.178.0",
+    "@uniformdev/canvas-next-rsc": "^20.11.0",
+    "@uniformdev/project-map": "^20.11.0",
     "autoprefixer": "10.4.16",
     "eslint": "8.54.0",
     "eslint-config-next": "14.0.4",
-    "next": "^14.2.5",
-    "next-intl": "^3.17.2",
+    "next": "^15.2.5",
+    "next-intl": "^4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@uniformdev/cli": "^19.178.0"
+    "@uniformdev/cli": "^20.11.0"
   }
 }
