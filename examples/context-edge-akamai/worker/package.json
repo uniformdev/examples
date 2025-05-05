@@ -4,10 +4,12 @@
   "private": true,
   "description": "Example of bundling EdgeWorker with TypeScript modules",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "rollup -c -w",
     "download:manifest": "uniform context manifest download --output ./src/manifest/current.json",
-    "build": "rimraf dist & rollup -c",
+    "build": "tsup && npm run bundle",
+    "bundle": "cd dist && tar -czvf bundle.tgz main.js bundle.json && cd ..",
     "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
     "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
     "upload:bundle": "node ./scripts/upload-bundle.js",
@@ -18,25 +20,16 @@
     "worker:status": "node ./scripts/check-status.js"
   },
   "dependencies": {
-    "@uniformdev/context": "^19.145.0",
-    "@uniformdev/context-edge": "^19.145.0",
-    "@uniformdev/context-edge-akamai": "^19.145.0"
+    "@uniformdev/context": "19.173.0",
+    "@uniformdev/context-edge-akamai": "19.173.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "22.0.0",
-    "@rollup/plugin-json": "4.1.0",
-    "@rollup/plugin-node-resolve": "13.3.0",
-    "@rollup/plugin-typescript": "8.3.2",
     "@types/akamai-edgeworkers": "1.0.10",
     "@types/node": "^17.0.44",
-    "@uniformdev/cli": "^19.145.0",
+    "@uniformdev/cli": "19.173.0",
     "dotenv": "^16.0.1",
-    "rimraf": "^3.0.2",
-    "rollup": "2.74.1",
-    "rollup-plugin-copy-assets": "2.0.3",
-    "rollup-plugin-terser": "7.0.2",
     "semver": "7.3.7",
-    "tslib": "2.4.0",
-    "typescript": "^4.7.2"
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.4"
   }
 }
