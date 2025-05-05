@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@uniformdev/canvas": "^19.48.0",
-    "@uniformdev/canvas-react": "^19.48.0",
+    "@uniformdev/canvas-react": "^19.191.0",
     "@uniformdev/context": "^19.48.0",
     "@uniformdev/project-map": "^19.48.0",
     "node-fetch": "^2.6.1"
