@@ -3,10 +3,10 @@ import { CSSHeight, useMeshLocation, useUniformMeshSdk } from '@uniformdev/mesh-
 import type { NextPage } from 'next';
 import { useMemo, useState } from 'react';
 
-/** A 'hello, world' location that lets you see location details */
+/** An example for both "projectTool" and "editorTool" locations */
 const Tool: NextPage = () => {
   const sdk = useUniformMeshSdk();
-  const { type, metadata, value, router } = useMeshLocation<'tool'>();
+  const { type, metadata, value, router } = useMeshLocation<'projectTool'>();
 
   const [anotherProjectId, setAnotherProjectId] = useState('');
 

@@ -1,6 +1,6 @@
 {
   "name": "mesh-playground",
-  "version": "20.14.0",
+  "version": "20.15.1-alpha.4",
   "private": true,
   "scripts": {
     "dev": "next dev -p 9000",
@@ -21,12 +21,12 @@
     "remove-edgehancer:request": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook request"
   },
   "dependencies": {
-    "@uniformdev/assets": "20.14.0",
-    "@uniformdev/canvas": "20.14.0",
-    "@uniformdev/cli": "20.14.0",
-    "@uniformdev/design-system": "20.14.0",
-    "@uniformdev/mesh-edgehancer-sdk": "20.14.0",
-    "@uniformdev/mesh-sdk-react": "20.14.0",
+    "@uniformdev/assets": "20.15.1-alpha.4",
+    "@uniformdev/canvas": "20.15.1-alpha.4",
+    "@uniformdev/cli": "20.15.1-alpha.4",
+    "@uniformdev/design-system": "20.15.1-alpha.4",
+    "@uniformdev/mesh-edgehancer-sdk": "20.15.1-alpha.4",
+    "@uniformdev/mesh-sdk-react": "20.15.1-alpha.4",
     "next": "15.1.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
@@ -48,5 +48,6 @@
   "overrides": {
     "react": "19.0.0",
     "react-dom": "19.0.0"
-  }
+  },
+  "packageManager": "pnpm@8.15.4+sha512.0bd3a9be9eb0e9a692676deec00a303ba218ba279d99241475616b398dbaeedd11146f92c2843458f557b1d127e09d4c171e105bdcd6b61002b39685a8016b9e"
 }
