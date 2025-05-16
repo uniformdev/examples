@@ -5,6 +5,7 @@
   "badgeIconUrl": "https://uniform.app/uniform.png",
   "category": "ai",
   "baseLocationUrl": "http://localhost:9000",
+  "scopes": ["user:read"],
   "locations": {
     "install": {
       "description": [
@@ -80,7 +81,30 @@
           "displayName": "Reference Parameter (Edit Drawer)",
           "renderableInPropertyPanel": true
         }
-      ]
+      ],
+      "personalization": {
+        "selectionAlgorithms": {
+          "reference-pz": {
+            "displayName": "Reference Integration Personalization",
+            "description": "Example integration-provided personalization algorithm UI for personalizing based on the day of the week",
+            "criteriaEditorUrl": "/reference/personalizationSelectionAlgorithm"
+          }
+        }
+      },
+      "editorTools": {
+        "composition": {
+          "url": "/reference/tool"
+        },
+        "componentPattern": {
+          "url": "/reference/tool"
+        },
+        "entry": {
+          "url": "/reference/tool"
+        },
+        "entryPattern": {
+          "url": "/reference/tool"
+        }
+      }
     },
 
     "settings": {
@@ -119,6 +143,15 @@
           ]
         }
       ]
-    }
+    },
+
+    "projectTools": [
+      {
+        "id": "example-tool",
+        "name": "Example Project Tool",
+        "url": "/reference/tool",
+        "iconUrl": "/uniform.png"
+      }
+    ]
   }
 }
