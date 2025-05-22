@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import type { ComponentInstance } from "@uniformdev/canvas";
 import type { UniformRichTextNodeProps } from "@uniformdev/canvas-vue";
+import { useUniformContextualEditingState } from "@uniformdev/canvas-vue";
+const { previewMode, isContextualEditing } = useUniformContextualEditingState();
 
 interface Props {
   title: string;
@@ -24,6 +26,9 @@ defineProps<Props>();
       class="description"
       placeholder="Insert a description"
     />
+    <hr />
+    <pre>Is editing: {{ isContextualEditing }}</pre>
+    <pre>Mode: {{ previewMode }}</pre>
   </div>
 </template>
 
