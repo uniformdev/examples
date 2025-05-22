@@ -16,9 +16,4 @@ export default defineNuxtConfig({
     outputType: "standard",
     playgroundPath: "/playground",
   },
-  vite: {
-    optimizeDeps: {
-      include: ['p-limit']
-    }
-  }
 });
