@@ -3,19 +3,20 @@
   "version": "19.196.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 9000",
+    "dev": "next dev --turbopack -p 9000",
     "build": "next build",
     "start": "next start -p 9000",
     "lint": "next lint"
   },
   "dependencies": {
-    "@uniformdev/canvas": "20.6.1",
-    "@uniformdev/design-system": "20.6.1",
-    "@uniformdev/mesh-sdk-react": "20.6.1",
+    "@uniformdev/canvas": "20.17.1",
+    "@uniformdev/design-system": "20.17.1",
+    "@uniformdev/mesh-edgehancer-sdk": "20.17.1",
+    "@uniformdev/mesh-sdk": "20.17.1",
+    "@uniformdev/mesh-sdk-react": "20.17.1",
     "next": "15.1.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "tsup": "8.3.5",
     "react-use": "17.5.0"
   },
   "devDependencies": {
