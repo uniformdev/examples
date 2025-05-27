@@ -8,7 +8,7 @@ import {
 export async function getCompositionWorkflow(
   payload: CompositionWorkflowRequestPayload
 ): Promise<CompositionWorkflowRequestResult | null> {
-  const response = await fetch("/api/compostion-workflow", {
+  const response = await fetch("/api/composition-workflow", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
