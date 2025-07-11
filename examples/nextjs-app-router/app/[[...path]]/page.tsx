@@ -24,6 +24,7 @@ export default async function HomePage(props: PageParameters) {
         update={{
           quirks: {
             province: "quebec",
+            scrollPosition: '0p',
           },
         }}
       />

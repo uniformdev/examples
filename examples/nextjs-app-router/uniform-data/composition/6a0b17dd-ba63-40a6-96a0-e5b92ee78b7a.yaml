@@ -1,0 +1,559 @@
+composition:
+  _name: Long page
+  _id: 6a0b17dd-ba63-40a6-96a0-e5b92ee78b7a
+  _slug: about
+  type: page
+  slots:
+    header:
+      - _id: c398894f-b7d6-4e67-83c5-e977de171b37
+        type: $personalization
+        slots:
+          pz:
+            - _id: a2c92546-5084-4438-a0d3-214770e2e4ec
+              type: header
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    en: You've scrolled enough
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: quarterOfThePageVisited
+                    crit:
+                      - l: scrollPosition
+                        r: 25p
+                        t: q
+                        op: '='
+            - _id: 8ac229f4-f1f5-43e5-98b9-1a337d7882e3
+              type: header
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    en: I don't recommend going more
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: halfAPageVisited
+                    crit:
+                      - l: scrollPosition
+                        r: 50p
+                        t: q
+                        op: '='
+            - _id: f2d3ab03-a26c-4036-ba1b-f2bb4f878258
+              type: header
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    en: I warned you...
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: 75PercentVisit
+                    crit:
+                      - l: scrollPosition
+                        r: 70p
+                        t: q
+                        op: '='
+            - _id: 7d07beae-37d4-403c-bcdd-7a9420c4de9d
+              type: header
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    en: Ok, you've gone too far
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    dim: fullPageVisit
+                    crit:
+                      - l: scrollPosition
+                        r: 100p
+                        t: q
+                        op: '='
+            - _id: d299d449-0cde-4ec8-b6ac-7b870c354049
+              type: header
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    en: Just default text
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: header-20fe
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home-Header
+    content:
+      - _id: 9167fc84-93ad-4f23-ae12-50ed490ea3b2
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Welcome.
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'This is default content shown to every visitor. '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Trigger campaign-based personalization '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - link:
+                          path: /?utm_campaign=launch
+                          type: url
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: now
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: ltr
+                      - mode: normal
+                        text: '!'
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                direction: ltr
+      - _id: 8c15b929-0473-4287-8b2f-c8f975f99ba4
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Welcome.
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'This is default content shown to every visitor. '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Trigger campaign-based personalization '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - link:
+                          path: /?utm_campaign=launch
+                          type: url
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: now
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: ltr
+                      - mode: normal
+                        text: '!'
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                direction: ltr
+      - _id: f7af5018-7c92-4f2b-be6f-19bd277d40d8
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Welcome.
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'This is default content shown to every visitor. '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Trigger campaign-based personalization '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - link:
+                          path: /?utm_campaign=launch
+                          type: url
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: now
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: ltr
+                      - mode: normal
+                        text: '!'
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                direction: ltr
+      - _id: 0a68b9b6-3ebb-44ea-9d0f-d83b047cce50
+        type: $personalization
+        slots:
+          pz:
+            - _id: 47f33f6c-20d5-481c-8716-782954fc4eee
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  locales:
+                    en: You've scrolled past 75% of the page
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    op: '|'
+                    crit:
+                      - l: scrollPosition
+                        r: 70p
+                        t: q
+                        op: '='
+                      - l: scrollPosition
+                        r: 100p
+                        t: q
+                        op: '='
+                    name: hero-47f3
+                description:
+                  type: richText
+                  locales:
+                    en:
+                      root:
+                        type: root
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - type: paragraph
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - mode: normal
+                                text: Congratulations
+                                type: text
+                                style: ''
+                                detail: 0
+                                format: 0
+                                version: 1
+                            direction: ltr
+                            textStyle: ''
+                            textFormat: 0
+                        direction: ltr
+            - _id: 233e062e-871a-453f-8e61-0479ae19c118
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Welcome.
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: hero-233e
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'This is default content shown to every visitor. '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'Trigger campaign-based personalization '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=launch
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: now
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: '!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                      direction: ltr
+        parameters:
+          trackingEventName:
+            type: text
+            value: About-Hero
+      - _id: ed31e9de-66cb-4a4b-9c64-f80bc3bf37eb
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Welcome.
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'This is default content shown to every visitor. '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Trigger campaign-based personalization '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - link:
+                          path: /?utm_campaign=launch
+                          type: url
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: now
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: ltr
+                      - mode: normal
+                        text: '!'
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                direction: ltr
+      - _id: 093d900e-59f9-4f1e-8558-b6ea14beda01
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Welcome.
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'This is default content shown to every visitor. '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 'Trigger campaign-based personalization '
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                      - link:
+                          path: /?utm_campaign=launch
+                          type: url
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: now
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: ltr
+                      - mode: normal
+                        text: '!'
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                    textStyle: ''
+                direction: ltr
+  _locales:
+    - en
+created: '2025-06-20T19:45:16.673851+00:00'
+modified: '2025-07-10T18:19:31.129767+00:00'
+pattern: false

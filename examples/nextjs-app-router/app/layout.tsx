@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { UniformClientContext } from "@/uniform/clientContext";
+import ScrollTracker from '@/components/scroll-tracker';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <main className="main">
           <UniformContext clientContextComponent={UniformClientContext}>
             {children}
+            <ScrollTracker />
           </UniformContext>
         </main>
       </body>

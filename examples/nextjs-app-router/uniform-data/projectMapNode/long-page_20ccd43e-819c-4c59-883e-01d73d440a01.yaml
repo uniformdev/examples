@@ -1,0 +1,9 @@
+id: 20ccd43e-819c-4c59-883e-01d73d440a01
+name: Long page
+order: 500
+path: /:locale/long-page
+type: composition
+pathSegment: long-page
+data: {}
+compositionId: 6a0b17dd-ba63-40a6-96a0-e5b92ee78b7a
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

@@ -1,0 +1,12 @@
+id: scrollPosition
+name: Scroll position
+description: How much a visitor has scrolled into the page
+options:
+  - name: 25%
+    value: 25p
+  - name: 50%
+    value: 50p
+  - name: 75%
+    value: 70p
+  - name: 100%
+    value: 100p
