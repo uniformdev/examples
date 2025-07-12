@@ -578,12 +578,6 @@ npm run remove-edgehancer
 ```bash
 # Start development server
 npm run dev
-
-# Register integration to team
-npm run register-to-team
-
-# Install to project
-npm run install-to-project
 ```
 
 ### Production Deployment
@@ -594,10 +588,7 @@ npm run install-to-project
 ### Manifest Registration via CLI
 ```bash
 # Using Uniform CLI
-uniform integration register --manifest mesh-manifest.json
-
-# Or via npm scripts
-npm run register-to-team
+npx @uniformdev/cli integration install unique-id-of-your-integration --apiKey your-api-key-with-team-admin --project your-project-id
 ```
 
 ## Security Considerations
