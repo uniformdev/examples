@@ -21,6 +21,7 @@ Uniform Mesh is a framework that enables extending the Uniform user interface wi
 - **Framework**: Next.js with page router (recommended)
 - **SDK**: `@uniformdev/mesh-sdk-react` (required for React-based integrations)
 - **Design System**: `@uniformdev/design-system` (required for consistent UI)
+- **Uniform CLI**: `@uniformdev/cli` (required CLI package to work with integrations - register it within a team and install it within a given project)
 - **Language**: TypeScript (strongly recommended)
 
 ## Manifest Configuration
@@ -424,13 +425,16 @@ Add custom tools to project navigation.
 
 > **⚠️ IMPORTANT**: After creating your integration, you MUST register it with Uniform before you can use it. See the "Installation and Deployment" section for detailed steps.
 
+### Required package
+Make sure to always install **Uniform CLI**: `@uniformdev/cli` as a developer dependency as it is required CLI package to work with integrations - register it within a team and install it within a given project.
+
 ### Environment Setup
 ```bash
 # Create new integration
 npx @uniformdev/cli@latest new-integration
 
 # Install dependencies
-npm install @uniformdev/mesh-sdk-react @uniformdev/design-system
+npm install @uniformdev/mesh-sdk-react @uniformdev/design-system @uniformdev/cli
 
 # Set required environment variables for registration
 UNIFORM_API_KEY=your_api_key
