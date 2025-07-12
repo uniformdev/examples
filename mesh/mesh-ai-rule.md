@@ -1,3 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
 # Uniform Mesh Integrations - AI Development Rules
 
 ## Overview
@@ -416,6 +422,8 @@ Add custom tools to project navigation.
 
 ## Development Patterns and Best Practices
 
+> **⚠️ IMPORTANT**: After creating your integration, you MUST register it with Uniform before you can use it. See the "Installation and Deployment" section for detailed steps.
+
 ### Environment Setup
 ```bash
 # Create new integration
@@ -424,10 +432,14 @@ npx @uniformdev/cli@latest new-integration
 # Install dependencies
 npm install @uniformdev/mesh-sdk-react @uniformdev/design-system
 
-# Environment variables
+# Set required environment variables for registration
 UNIFORM_API_KEY=your_api_key
 UNIFORM_TEAM_ID=your_team_id
 UNIFORM_PROJECT_ID=your_project_id
+
+# After development, register integration (see Installation and Deployment section)
+npm run register-to-team
+npm run install-to-project
 ```
 
 ### Validation Pattern
@@ -574,22 +586,83 @@ npm run remove-edgehancer
 
 ## Installation and Deployment
 
-### Development Setup
+> **⚠️ CRITICAL NEXT STEP**: After bootstrapping your integration, you MUST complete the registration and installation process below before you can use your integration in Uniform.
+
+### Required Environment Variables
+
+Before using CLI registration commands, you must set these environment variables:
+
 ```bash
-# Start development server
-npm run dev
+# Required for CLI registration and installation
+UNIFORM_API_KEY=your_api_key_here
+UNIFORM_TEAM_ID=your_team_id_here  
+UNIFORM_PROJECT_ID=your_project_id_here
 ```
+
+### Development Setup and Registration
+
+1. **Start Development Server**
+   ```bash
+   npm run dev
+   ```
+
+2. **Register Integration to Team** (Required First Step)
+   ```bash
+   # Register the integration definition to your Uniform team
+   npm run register-to-team
+   ```
+
+3. **Install Integration to Project** (Required Second Step)
+   ```bash
+   # Install the integration to your specific project
+   npm run install-to-project
+   ```
+
+### Available npm Scripts
+
+Your integration project includes these essential scripts:
+
+```json
+{
+  "register-to-team": "uniform integration definition register ./mesh-manifest.json",
+  "unregister-from-team": "uniform integration definition remove your-integration-type",
+  "install-to-project": "uniform integration install your-integration-type",
+  "uninstall-from-project": "uniform integration uninstall your-integration-type"
+}
+```
+
+### Alternative: Manual Registration via Uniform UI
+
+If you prefer not to use CLI or don't have the environment variables set up:
+
+1. **Add Custom Integration**
+   - Go to your Uniform team settings
+   - Navigate to "Integrations" section
+   - Click "Add Custom Integration"
+   - Upload your `mesh-manifest.json` file
+
+2. **Install to Project**
+   - Go to your project settings
+   - Navigate to "Integrations" section
+   - Find your custom integration
+   - Click "Install" and configure as needed
 
 ### Production Deployment
-1. Deploy to hosting provider (Vercel, Netlify, etc.)
-2. Update manifest `baseLocationUrl` with production URL
-3. Register updated manifest to team
 
-### Manifest Registration via CLI
-```bash
-# Using Uniform CLI
-npx @uniformdev/cli integration install unique-id-of-your-integration --apiKey your-api-key-with-team-admin --project your-project-id
-```
+1. **Deploy to Hosting Provider**
+   - Deploy to Vercel, Netlify, or your preferred hosting
+   - Ensure your integration is accessible via HTTPS
+
+2. **Update Manifest for Production**
+   - Update `baseLocationUrl` in manifest to production URL
+   - Re-register the updated manifest:
+     ```bash
+     npm run register-to-team
+     ```
+
+3. **Test Integration**
+   - Verify all locations work in production
+   - Test integration functionality in Uniform dashboard
 
 ## Security Considerations
 
