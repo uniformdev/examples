@@ -1,0 +1,59 @@
+{
+  "name": "jira-thing",
+  "version": "19.196.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9000",
+    "build": "next build",
+    "start": "next start -p 9000",
+    "lint": "next lint",
+    "register-to-team": "uniform integration definition register ./mesh-manifest.json",
+    "unregister-from-team": "uniform integration definition remove integration-hello-world",
+    "install-to-project": "uniform integration install integration-hello-world",
+    "uninstall-from-project": "uniform integration uninstall integration-hello-world",
+    "edgehancer:build": "tsup --config edgehancer/tsup.config.ts",
+    "edgehancer:test": "vitest --config edgehancer/vitest.config.ts",
+    "deploy-edgehancer": "npm-run-all -s edgehancer:build -p deploy-edgehancer:preRequest deploy-edgehancer:request",
+    "remove-edgehancer": "run-p remove-edgehancer:preRequest remove-edgehancer:request",
+    "deploy-edgehancer:preRequest": "uniform integration definition edgehancer deploy --connectorType playground --archetype default --hook preRequest ./edgehancer/dist/preRequest.mjs",
+    "remove-edgehancer:preRequest": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook preRequest",
+    "deploy-edgehancer:request": "uniform integration definition edgehancer deploy --connectorType playground --archetype default --hook request ./edgehancer/dist/request.mjs",
+    "remove-edgehancer:request": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook request"
+  },
+  "dependencies": {
+    "@uniformdev/assets": "20.2.0",
+    "@uniformdev/canvas": "20.2.0",
+    "@uniformdev/cli": "20.2.0",
+    "@uniformdev/design-system": "20.2.0",
+    "@uniformdev/mesh-edgehancer-sdk": "20.2.0",
+    "@uniformdev/mesh-sdk-react": "20.2.0",
+    "@uniformdev/webhooks": "20.2.0",
+    "autoprefixer": "^10.4.21",
+    "date-fns": "^4.1.0",
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-use": "^17.6.0",
+    "tsup": "8.3.5",
+    "uuid": "9.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.6",
+    "@types/node": "20.10.6",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "@types/uuid": "9.0.4",
+    "eslint": "9.19.0",
+    "eslint-config-next": "15.1.6",
+    "npm-run-all": "4.1.5",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6",
+    "typescript": "5.7.3",
+    "vitest": "^1.2.0",
+    "vitest-environment-miniflare": "^2.14.1"
+  },
+  "overrides": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  }
+}

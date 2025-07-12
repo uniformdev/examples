@@ -1,0 +1,17 @@
+{
+  "type": "jira",
+  "displayName": "Jira",
+  "baseLocationUrl": "http://localhost:9000",
+  "locations": {
+    "settings": {
+      "url": "/"
+    },
+    "canvas": {
+      "editorTools": {
+        "composition": {
+          "url": "/canvas-editor-tools"
+        }
+      }
+    }
+  }
+}
