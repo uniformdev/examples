@@ -12,14 +12,14 @@
     "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc": "^20.10.0",
-    "next": "^15.2.4"
+    "@uniformdev/canvas-next-rsc": "^20.25.0",
+    "next": "^15.4.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@uniformdev/cli": "^20.10.0",
+    "@uniformdev/cli": "^20.25.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^5"
   }
