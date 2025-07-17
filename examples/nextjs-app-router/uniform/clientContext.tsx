@@ -31,22 +31,16 @@ export const UniformClientContext: ClientContextComponent = ({
       })
     );
 
-    if (
-      process.env.NEXT_PUBLIC_UNIFORM_INSIGHTS_ENABLED === "true" &&
-      process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID
-    ) {
-      console.log("Uniform Insights enabled");
-      plugins.push(
-        // running against a local endpoint, will use edge middleware to rewrite to the actual endpoint
-        enableUniformInsights({
-          endpoint: {
-            projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID,
-            type: "proxy",
-            path: "/api/analytics",
-          },
-        })
-      );
-    }
+    // TODO: Uncomment this to enable Uniform Insights plugin
+    // plugins.push(
+    //   // running against a local endpoint, will use edge middleware to rewrite to the actual endpoint
+    //   enableUniformInsights({
+    //     endpoint: {
+    //       type: "proxy",
+    //       path: "/api/analytics",
+    //     },
+    //   })
+    // );
 
     // TODO: Uncomment this to enable Google Analytics 4 plugin (after installing npm install @uniformdev/context-gtag)
     // plugins.push(enableGoogleGtagAnalytics());
