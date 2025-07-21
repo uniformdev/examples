@@ -1,9 +1,9 @@
 {
   "type": "integration-reference",
   "displayName": "Integration Reference",
-  "logoIconUrl": "https://uniform.app/uniform-logo.png",
+  "logoIconUrl": "https://uniform.app/uniform-logo-dev.png",
   "badgeIconUrl": "https://uniform.app/uniform.png",
-  "category": "ai",
+  "category": "analytics",
   "baseLocationUrl": "http://localhost:9000",
   "scopes": ["user:read"],
   "locations": {
@@ -21,6 +21,7 @@
         "type": "<your-universally-unique-id>",
         "badgeIconUrl": "https://uniform.app/uniform.png",
         "displayName": "Integration Reference",
+        "supportsUnpublishedData": true,
         "dataArchetypes": {
           "default": {
             "displayName": "Reference Archetype",
@@ -36,6 +37,16 @@
                 "url": "../namedDialog"
               }
             }
+          },
+          "assetLibrary": {
+            "displayName": "Assets Library",
+            "typeEditorUrl": "/reference/assets/type-editor",
+            "dataEditorUrl": "/reference/assets/data-editor"
+          },
+          "assetLibrarySingleAsset": {
+            "displayName": "Single Library Asset",
+            "typeEditorUrl": "/reference/assets/type-editor",
+            "dataEditorUrl": "/reference/assets/data-editor"
           }
         },
         "dataSourceEditorUrl": "/reference/dataSource",
@@ -80,6 +91,13 @@
           "editorUrl": "/reference/paramTypeObjectValueEditDrawer",
           "displayName": "Reference Parameter (Edit Drawer)",
           "renderableInPropertyPanel": true
+        },
+        {
+          "type": "reference-placement",
+          "editorUrl": "/reference/paramTypePlacement",
+          "displayName": "Reference Parameter (Allowed Placement)",
+          "renderableInPropertyPanel": true,
+          "allowedPlacement": ["parameter", "field"]
         }
       ],
       "personalization": {
@@ -93,16 +111,16 @@
       },
       "editorTools": {
         "composition": {
-          "url": "/reference/tool"
+          "url": "/reference/canvas-editor-tools"
         },
         "componentPattern": {
-          "url": "/reference/tool"
+          "url": "/reference/canvas-editor-tools"
         },
         "entry": {
-          "url": "/reference/tool"
+          "url": "/reference/canvas-editor-tools"
         },
         "entryPattern": {
-          "url": "/reference/tool"
+          "url": "/reference/canvas-editor-tools"
         }
       }
     },
@@ -117,39 +135,38 @@
     },
 
     "assetLibrary": {
-      "assetLibraryUrl": "/reference/assetLibrary",
-      "assetParameterUrl": "/reference/assetParameter"
-    },
-
-    "ai": {
-      "generateUrl": "/reference/AIPrompts",
-      "prompts": [
-        {
-          "id": "6604b6e0-a171-4968-bb79-eb8eaca26e93",
-          "name": "Generate a prompt",
-          "text": "Generate a prompt based on the topic below. Here's the topic: ${topic}",
-          "data": {
-            "arguments": {
-              "topic": {
-                "type": "text",
-                "displayName": "Topic",
-                "helpText": "Explain a topic",
-                "default": ""
-              }
-            }
-          },
-          "parameterTypes": [
-            "text"
-          ]
+      "assetLibraryUrl": "/reference/assets/assetLibrary",
+      "assetParameterUrl": "/reference/assets/assetParameter",
+      "assetLibraryLocations": {
+        "dialog": {
+          "url": "../assetLibraryDialog"
         }
-      ]
+      }
     },
-
+    "dashboardTools": [
+      {
+        "id": "dashboard-tool-1",
+        "name": "Dashboard Tool 1",
+        "url": "/reference/dashboardTool"
+      },
+      {
+        "id": "dashboard-tool-2",
+        "name": "Dashboard Tool 2",
+        "url": "/reference/dashboardTool",
+        "iconUrl": "/cat.svg"
+      }
+    ],
     "projectTools": [
       {
-        "id": "example-tool",
-        "name": "Example Project Tool",
-        "url": "/reference/tool",
+        "id": "project-tool-1",
+        "name": "Project Tool 1",
+        "url": "/reference/projectTool",
+        "iconUrl": "https://uniform.app/uniform.png"
+      },
+      {
+        "id": "project-tool-2",
+        "name": "Project Tool 2",
+        "url": "/reference/projectTool",
         "iconUrl": "/uniform.png"
       }
     ]
