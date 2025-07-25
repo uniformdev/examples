@@ -109,20 +109,14 @@
           }
         }
       },
-      "editorTools": {
-        "composition": {
-          "url": "/reference/canvas-editor-tools"
-        },
-        "componentPattern": {
-          "url": "/reference/canvas-editor-tools"
-        },
-        "entry": {
-          "url": "/reference/canvas-editor-tools"
-        },
-        "entryPattern": {
-          "url": "/reference/canvas-editor-tools"
+      "editorTools": [
+        {
+          "id": "composition-editor-tool",
+          "name": "Composition Editor Tool",
+          "url": "/reference/canvas-editor-tools",
+          "iconUrl": "/uniform.png"
         }
-      }
+      ]
     },
 
     "settings": {
