@@ -1,10 +1,9 @@
 import { HorizontalRhythm } from '@uniformdev/design-system';
 import { CSSHeight, useMeshLocation, useUniformMeshSdk } from '@uniformdev/mesh-sdk-react';
-import type { NextPage } from 'next';
 import { useMemo, useState } from 'react';
 
-/** An example for both "projectTool" and "editorTool" locations */
-const Tool: NextPage = () => {
+/** A 'hello, world' location that lets you see location details */
+const Tool = () => {
   const sdk = useUniformMeshSdk();
   const { type, metadata, value, router } = useMeshLocation<'projectTool'>();
 
