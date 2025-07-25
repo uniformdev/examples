@@ -182,7 +182,16 @@ export default async function handler(
             path: `/offers/${offerId}?${new URLSearchParams(otherParams).toString()}`,
         })
 
-        res.status(200).json(routeData.compositionApiResponse.composition);
+        if (routeData.type === 'notFound') {
+            res.status(404).json({ error: 'Composition not found' });
+        }
+        else if (routeData.type === 'redirect') {
+            res.status(302).redirect(routeData.redirect.targetUrl);
+        } else if (routeData.type === 'composition') {
+            res.status(200).json(routeData.compositionApiResponse?.composition);
+        } else {
+            res.status(500).json({ error: 'Unknown error' });
+        }
     } else {
         res.setHeader('Allow', ['GET']);
         res.status(405).json({ error: 'Method not allowed' });
