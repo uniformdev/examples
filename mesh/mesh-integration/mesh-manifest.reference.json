@@ -37,16 +37,6 @@
                 "url": "../namedDialog"
               }
             }
-          },
-          "assetLibrary": {
-            "displayName": "Assets Library",
-            "typeEditorUrl": "/reference/assets/type-editor",
-            "dataEditorUrl": "/reference/assets/data-editor"
-          },
-          "assetLibrarySingleAsset": {
-            "displayName": "Single Library Asset",
-            "typeEditorUrl": "/reference/assets/type-editor",
-            "dataEditorUrl": "/reference/assets/data-editor"
           }
         },
         "dataSourceEditorUrl": "/reference/dataSource",
