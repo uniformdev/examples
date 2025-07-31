@@ -2,7 +2,15 @@
   "name": "next-app-directory-middleware",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "yarn": "please-use-pnpm",
+    "pnpm": "9.15.0",
+    "node": ">=20",
+    "npm": "please-use-pnpm"
+  },
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
