@@ -13,27 +13,67 @@ const SingleProductDataEditorPage: React.FC = () => {
   const { value, metadata, setValue, getDataResource } =
     useMeshLocation<"dataResource">();
 
-  const custom = metadata.dataType as unknown as IntegrationTypeConfig;
-  const searchCriteria = custom?.custom?.searchCriteria || "identifier";
-  const enableLocaleFilter = custom?.custom?.enableLocaleFilter || false;
-  const defaultLocale = custom?.custom?.defaultLocale || "en_US";
-  const attributes = custom?.custom?.attributes || [];
-  const thumbnailImageAttribute = custom?.custom?.thumbnailImageAttribute || "image_1";
+  // Memoize configuration values to prevent unnecessary re-renders
+  const config = React.useMemo(() => {
+    const custom = metadata.dataType as unknown as IntegrationTypeConfig;
+    return {
+      searchCriteria: custom?.custom?.searchCriteria || "identifier",
+      enableLocaleFilter: custom?.custom?.enableLocaleFilter || false,
+      defaultLocale: custom?.custom?.defaultLocale || "en_US",
+      attributes: custom?.custom?.attributes || [],
+      thumbnailImageAttribute: custom?.custom?.thumbnailImageAttribute || "image_1",
+    };
+  }, [metadata.dataType]);
+
+  const { searchCriteria, enableLocaleFilter, defaultLocale, attributes, thumbnailImageAttribute } = config;
 
   const identifier = value?.identifier;
   const selectedLocale = value?.locale || defaultLocale;
 
+  // State for products and category filtering
+  const [loadedProducts, setLoadedProducts] = React.useState<any[]>([]);
+  const [selectedCategories, setSelectedCategories] = React.useState<string[]>([]);
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  // Fetch categories separately
   const {
-    value: productList = [],
-    loading: loadingProducts,
-    error: productError,
+    value: categories = [],
+    loading: loadingCategories,
   } = useAsync(async () => {
     try {
-      // Fetch the product list for selection UI
-      // The actual data consumption uses the configured path with variables
+      const response = await getDataResource({
+        method: "GET",
+        path: "/categories",
+        parameters: [
+          { key: "limit", value: "100" },
+        ],
+      });
+
+      if ((response as any)?._embedded?.items) {
+        return (response as any)._embedded.items.map((cat: any) => cat.code);
+      }
+      
+      return [];
+    } catch (error) {
+      console.error("Error fetching categories:", error);
+      return [];
+    }
+  }, [metadata]);
+
+  // Memoize the base URL to prevent metadata from causing re-renders
+  const baseUrl = React.useMemo(() => {
+    return (metadata?.dataSource?.baseUrl || metadata?.dataSource?.customPublic?.apiUrl) as string | undefined;
+  }, [metadata?.dataSource?.baseUrl, metadata?.dataSource?.customPublic?.apiUrl]);
+
+  // Manual fetch function that manages state directly
+  const fetchProducts = React.useCallback(async () => {
+    try {
+      setIsLoading(true);
+      
+      // Build search parameters
       const params = [
-        { key: "limit", value: "20" },
-        { key: "page", value: "1" },
+        { key: "limit", value: "100" }, // Fetch more products for better client-side filtering
+        { key: "page", value: "1" }, // Always fetch first page for simplicity
       ];
 
       // Add specific attributes if configured
@@ -41,12 +81,21 @@ const SingleProductDataEditorPage: React.FC = () => {
         params.push({ key: "attributes", value: attributes.join(",") });
       }
 
+      // Only add server-side category filtering if categories are selected
+      if (selectedCategories.length > 0) {
+        const searchCriteria = {
+          categories: [{ operator: "IN", value: selectedCategories }]
+        };
+        params.push({ 
+          key: "search", 
+          value: JSON.stringify(searchCriteria)
+        });
+      }
+
       // Add locale parameter if locale filtering is enabled
       if (enableLocaleFilter && selectedLocale) {
         params.push({ key: "locales", value: selectedLocale });
       }
-
-      console.log({ params, attributes });
 
       const response = await getDataResource<AkeneoProductsResponse>({
         method: "GET",
@@ -55,29 +104,33 @@ const SingleProductDataEditorPage: React.FC = () => {
       });
 
       if (response?._embedded?.items) {
-        // Get base URL from metadata for constructing image URLs
-        const baseUrl = (metadata?.dataSource?.baseUrl || metadata?.dataSource?.customPublic?.apiUrl) as string | undefined;
-        
-        return response._embedded.items.map(product => 
+        const products = response._embedded.items.map(product => 
           transformAkeneoProduct(product, enableLocaleFilter ? selectedLocale : null, baseUrl, thumbnailImageAttribute)
         );
+
+        setLoadedProducts(products);
+      } else {
+        setLoadedProducts([]);
       }
-      
-      return [];
     } catch (error) {
       console.error("Error fetching products:", error);
-      throw error;
+      setLoadedProducts([]);
+    } finally {
+      setIsLoading(false);
     }
-  }, [metadata, enableLocaleFilter, selectedLocale, attributes]);
+  }, [getDataResource, enableLocaleFilter, selectedLocale, attributes, selectedCategories, baseUrl, thumbnailImageAttribute]);
+
+  // Trigger fetch when dependencies change
+  React.useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
+
+  const productList = loadedProducts;
 
   const selectedIds = identifier ? [identifier] : [];
 
-  if (loadingProducts) {
+  if (isLoading && loadedProducts.length === 0) {
     return <LoadingOverlay isActive />;
-  }
-
-  if (productError) {
-    return <ErrorCallout error={productError.message} />;
   }
 
   // Find the selected product from the list
@@ -161,6 +214,11 @@ const SingleProductDataEditorPage: React.FC = () => {
         }));
       } : undefined}
       thumbnailImageAttribute={thumbnailImageAttribute}
+      // Enhanced functionality
+      allCategories={categories}
+      onCategoryChange={(categories) => {
+        setSelectedCategories(categories);
+      }}
     />
   );
 };

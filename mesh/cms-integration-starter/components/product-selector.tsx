@@ -15,13 +15,20 @@ interface ProductSelectorProps {
   multiSelect?: boolean; // Whether to allow multiple selections
   searchCriteria?: string; // What field to search on
   onSearch?: (query: string) => void; // Callback for search query changes
-  onPageChange?: (page: number) => void; // Callback for page changes
-  currentPage?: number; // Current page number
+  onPageChange?: (page: number) => void; // Callback for page changes (deprecated)
+  currentPage?: number; // Current page number (deprecated)
   enableLocaleFilter?: boolean; // Whether to show locale filter
   selectedLocale?: string; // Currently selected locale
   onLocaleChange?: (locale: string) => void; // Callback for locale changes
   availableLocales?: string[]; // List of available locales
   thumbnailImageAttribute?: string; // Which image attribute to use for thumbnails
+  // New props for enhanced functionality
+  allCategories?: string[]; // All available categories from Akeneo
+  onLoadMore?: () => void; // Callback for load more button
+  hasMoreProducts?: boolean; // Whether there are more products to load
+  isLoadingMore?: boolean; // Whether currently loading more products
+  searchQuery?: string; // Current search query value
+  onCategoryChange?: (categories: string[]) => void; // Callback for category filter changes
 }
 
 // ProductSelector component is used to select Products from a list of Products from Akeneo PIM.
@@ -44,14 +51,24 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
   onLocaleChange,
   availableLocales = ["en_US", "fr_FR", "de_DE", "es_ES", "it_IT"],
   thumbnailImageAttribute = "image_1",
+  // New enhanced props
+  allCategories = [],
+  onLoadMore,
+  hasMoreProducts = false,
+  isLoadingMore = false,
+  searchQuery = "",
+  onCategoryChange,
 }) => {
   const [filteredProductList, setFilteredProductList] = useState<Product[]>([]);
-  const [searchQuery, setSearchQuery] = useState("");
   const [localSelectedIds, setLocalSelectedIds] = useState<string[]>(selectedIds);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
 
-  // Extract unique categories from all products
+  // Use all categories from Akeneo API or extract from current products as fallback
   const availableCategories = useMemo(() => {
+    if (allCategories.length > 0) {
+      return allCategories.sort();
+    }
+    // Fallback: extract from current product list
     const categorySet = new Set<string>();
     productList.forEach(product => {
       product.categories.forEach(category => {
@@ -61,22 +78,15 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
       });
     });
     return Array.from(categorySet).sort();
-  }, [productList]);
+  }, [allCategories, productList]);
 
-  // Create filter options for categories with counts
+  // Create filter options for categories without counts
   const categoryFilterOptions = useMemo(() => {
-    const categoryCounts = availableCategories.reduce((acc, category) => {
-      acc[category] = productList.filter(product =>
-        product.categories.includes(category)
-      ).length;
-      return acc;
-    }, {} as Record<string, number>);
-
     return availableCategories.map(category => ({
       value: category,
-      label: `${category} (${categoryCounts[category]})`
+      label: category
     }));
-  }, [availableCategories, productList]);
+  }, [availableCategories]);
 
   // Convert selected category values to option objects for the InputComboBox
   const selectedCategoryOptions = useMemo(() => {
@@ -140,8 +150,12 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
   };
 
   const handleSearchTextChanged = (query: string) => {
-    setSearchQuery(query);
-    applyFilters(query, selectedCategories);
+    if (onSearch) {
+      onSearch(query); // Use server-side search
+    } else {
+      // Fallback to client-side filtering if no onSearch provided
+      applyFilters(query, selectedCategories);
+    }
   };
 
   const handleCategoryChange = (newValue: readonly { value: string; label: string }[] | null, actionMeta?: any) => {
@@ -149,7 +163,14 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
     // Extract category values from the selected options
     const categories = selectedOptions.map(option => option.value);
     setSelectedCategories(categories);
-    applyFilters(searchQuery, categories);
+    
+    // Notify parent component if callback is provided (for server-side filtering)
+    if (onCategoryChange) {
+      onCategoryChange(categories);
+    } else {
+      // Fallback to local filtering if no callback provided
+      applyFilters(searchQuery, categories);
+    }
   };
 
   const handleObjectSelect = (id: string) => {
@@ -169,13 +190,14 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
       onSelect(selectedProducts);
     } else {
       onSelect(product);
-      setSearchQuery(product.title);
     }
   };
 
   const clearSelection = () => {
     setLocalSelectedIds([]);
-    setSearchQuery("");
+    if (onSearch) {
+      onSearch(""); // Clear server-side search
+    }
     onSelect(multiSelect ? [] : {} as Product);
   };
 
@@ -244,6 +266,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
             <InputKeywordSearch
               onSearchTextChanged={handleSearchTextChanged}
               placeholder={`Search by ${searchCriteria}...`}
+              value={searchQuery}
             />
           }
           resultList={
@@ -287,8 +310,21 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
           }
         />
 
-        {/* Pagination */}
-        {onPageChange && (
+        {/* Load More */}
+        {onLoadMore && hasMoreProducts && (
+          <div className="flex items-center justify-center mt-4 p-3">
+            <Button
+              onClick={onLoadMore}
+              disabled={isLoadingMore}
+              variant="soft"
+            >
+              {isLoadingMore ? "Loading..." : "Load More Products"}
+            </Button>
+          </div>
+        )}
+
+        {/* Legacy Pagination (for backward compatibility) */}
+        {onPageChange && !onLoadMore && (
           <div className="flex items-center justify-between mt-4 p-3 bg-gray-50 rounded-md">
             <Button
               onClick={() => onPageChange(currentPage - 1)}
@@ -302,13 +338,13 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
                 Page {currentPage}
               </span>
               <span className="text-xs text-gray-500">
-                Showing 20 products per page
+                Showing 10 products per page
               </span>
             </div>
             <Button
               onClick={() => onPageChange(currentPage + 1)}
               variant="soft"
-              disabled={filteredProductList.length < 20}
+              disabled={filteredProductList.length < 10}
             >
               Next →
             </Button>

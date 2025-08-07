@@ -14,29 +14,71 @@ const MultiProductDataEditorPage: React.FC = () => {
   const { value, metadata, setValue, getDataResource } =
     useMeshLocation<"dataResource">();
 
-  const custom = metadata.dataType as unknown as MultiProductTypeConfig;
-  const searchCriteria = custom?.custom?.searchCriteria || "identifier";
-  const enabledOnly = custom?.custom?.enabledOnly ?? true;
-  const defaultLimit = custom?.custom?.limit || 100;
-  const enableLocaleFilter = custom?.custom?.enableLocaleFilter || false;
-  const defaultLocale = custom?.custom?.defaultLocale || "en_US";
-  const attributes = custom?.custom?.attributes || [];
-  const thumbnailImageAttribute = custom?.custom?.thumbnailImageAttribute || "image_1";
+  // Memoize configuration values to prevent unnecessary re-renders
+  const config = React.useMemo(() => {
+    const custom = metadata.dataType as unknown as MultiProductTypeConfig;
+    return {
+      searchCriteria: custom?.custom?.searchCriteria || "identifier",
+      enabledOnly: custom?.custom?.enabledOnly ?? true,
+      defaultLimit: custom?.custom?.limit || 100,
+      enableLocaleFilter: custom?.custom?.enableLocaleFilter || false,
+      defaultLocale: custom?.custom?.defaultLocale || "en_US",
+      attributes: custom?.custom?.attributes || [],
+      thumbnailImageAttribute: custom?.custom?.thumbnailImageAttribute || "image_1",
+    };
+  }, [metadata.dataType]);
 
+  const { searchCriteria, enabledOnly, defaultLimit, enableLocaleFilter, defaultLocale, attributes, thumbnailImageAttribute } = config;
+
+  const [loadedProducts, setLoadedProducts] = useState<any[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [hasMoreProducts, setHasMoreProducts] = useState(true);
+
+  // Memoize the setHasMoreProducts function to prevent recreating it
+  const updateHasMoreProducts = React.useCallback((hasMore: boolean) => {
+    setHasMoreProducts(hasMore);
+  }, []);
 
   const identifiers = Array.isArray(value?.identifiers) ? value.identifiers : [];
   const selectedLocale = value?.locale || defaultLocale;
 
+  // Fetch categories separately
   const {
-    value: productList = [],
-    loading: loadingProducts,
-    error: productError,
+    value: categories = [],
+    loading: loadingCategories,
   } = useAsync(async () => {
     try {
+      const response = await getDataResource({
+        method: "GET",
+        path: "/categories",
+        parameters: [
+          { key: "limit", value: "100" },
+        ],
+      });
+
+      if ((response as any)?._embedded?.items) {
+        return (response as any)._embedded.items.map((cat: any) => cat.code);
+      }
+      
+      return [];
+    } catch (error) {
+      console.error("Error fetching categories:", error);
+      return [];
+    }
+  }, [metadata]);
+
+  // Memoize the base URL to prevent metadata from causing re-renders
+  const baseUrl = React.useMemo(() => {
+    return (metadata?.dataSource?.baseUrl || metadata?.dataSource?.customPublic?.apiUrl) as string | undefined;
+  }, [metadata?.dataSource?.baseUrl, metadata?.dataSource?.customPublic?.apiUrl]);
+
+  // Memoize the async function to prevent unnecessary re-creation
+  const fetchProducts = React.useCallback(async () => {
+    try {
       const params = [
-        { key: "limit", value: "20" },
+        { key: "limit", value: "10" },
         { key: "page", value: currentPage.toString() },
       ];
 
@@ -45,9 +87,23 @@ const MultiProductDataEditorPage: React.FC = () => {
         params.push({ key: "attributes", value: attributes.join(",") });
       }
 
-      // Add search parameters if search query is provided
+      // Build search criteria combining text search and category filters
+      const searchCriteria: any = {};
+      
       if (searchQuery.trim()) {
-        params.push({ key: "search", value: searchQuery });
+        searchCriteria.identifier = [{ operator: "CONTAINS", value: searchQuery.trim() }];
+      }
+      
+      if (selectedCategories.length > 0) {
+        searchCriteria.categories = [{ operator: "IN", value: selectedCategories }];
+      }
+      
+      // Add combined search parameter if any criteria exist
+      if (Object.keys(searchCriteria).length > 0) {
+        params.push({ 
+          key: "search", 
+          value: JSON.stringify(searchCriteria)
+        });
       }
 
       // Add locale parameter if locale filtering is enabled
@@ -69,12 +125,14 @@ const MultiProductDataEditorPage: React.FC = () => {
           products = products.filter(product => product.enabled);
         }
         
-        // Get base URL from metadata for constructing image URLs
-        const baseUrl = (metadata?.dataSource?.baseUrl || metadata?.dataSource?.customPublic?.apiUrl) as string | undefined;
-        
-        return products.map(product => 
+        const transformedProducts = products.map(product => 
           transformAkeneoProduct(product, enableLocaleFilter ? selectedLocale : null, baseUrl, thumbnailImageAttribute)
         );
+
+        // Check if there are more products
+        updateHasMoreProducts(transformedProducts.length === 10);
+        
+        return transformedProducts;
       }
       
       return [];
@@ -82,7 +140,28 @@ const MultiProductDataEditorPage: React.FC = () => {
       console.error("Error fetching products:", error);
       throw error;
     }
-  }, [currentPage, searchQuery, enabledOnly, defaultLimit, metadata, searchCriteria, enableLocaleFilter, selectedLocale, attributes]);
+  }, [getDataResource, currentPage, searchQuery, selectedCategories, enabledOnly, enableLocaleFilter, selectedLocale, attributes, baseUrl, thumbnailImageAttribute, updateHasMoreProducts]);
+
+  const {
+    value: productBatch = [],
+    loading: loadingProducts,
+    error: productError,
+  } = useAsync(fetchProducts, [fetchProducts]);
+
+  // Manage loaded products list
+  React.useEffect(() => {
+    if (productBatch && productBatch.length >= 0) {
+      if (currentPage === 1 || searchQuery !== "") {
+        // Reset for new search or first page
+        setLoadedProducts(productBatch);
+      } else {
+        // Append for load more
+        setLoadedProducts(prev => [...prev, ...productBatch]);
+      }
+    }
+  }, [productBatch, currentPage, searchQuery]);
+
+  const productList = loadedProducts;
 
   if (loadingProducts) {
     return <LoadingOverlay isActive />;
@@ -192,9 +271,6 @@ const MultiProductDataEditorPage: React.FC = () => {
       }}
       multiSelect={true}
       searchCriteria={searchCriteria}
-      onSearch={setSearchQuery}
-      onPageChange={setCurrentPage}
-      currentPage={currentPage}
       enableLocaleFilter={enableLocaleFilter}
       selectedLocale={selectedLocale}
       onLocaleChange={enableLocaleFilter ? (locale) => {
@@ -207,6 +283,24 @@ const MultiProductDataEditorPage: React.FC = () => {
         }));
       } : undefined}
       thumbnailImageAttribute={thumbnailImageAttribute}
+      // New props for enhanced functionality
+      allCategories={categories}
+      onSearch={(query) => {
+        setSearchQuery(query);
+        setCurrentPage(1); // Reset to first page on search
+      }}
+      onCategoryChange={(categories) => {
+        setSelectedCategories(categories);
+        setCurrentPage(1); // Reset to first page on category change
+      }}
+      onLoadMore={() => {
+        if (hasMoreProducts && !loadingProducts) {
+          setCurrentPage(prev => prev + 1);
+        }
+      }}
+      hasMoreProducts={hasMoreProducts}
+      isLoadingMore={loadingProducts}
+      searchQuery={searchQuery}
     />
   );
 };
