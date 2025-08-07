@@ -1,5 +1,5 @@
 {
-  "name": "@uniformdev/cms-mesh-integration-starter",
+  "name": "@uniformdev/akeneo-pim-mesh-integration",
   "version": "0.0.1",
   "scripts": {
     "dev": "next dev --port 4063",
@@ -16,10 +16,10 @@
   "dependencies": {
     "@uniformdev/canvas": "20.6.1",
     "@uniformdev/design-system": "20.6.1",
-    "@uniformdev/mesh-sdk-react": "20.6.1",
     "@uniformdev/mesh-edgehancer-sdk": "20.6.1",
+    "@uniformdev/mesh-sdk-react": "20.6.1",
     "lodash": "^4.17.21",
-    "next": "15.1.6",
+    "next": "^15.4.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-use": "17.5.0",

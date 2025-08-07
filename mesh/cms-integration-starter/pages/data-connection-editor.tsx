@@ -7,17 +7,32 @@ import {
 } from "@uniformdev/mesh-sdk-react";
 import { VerticalRhythm } from "@uniformdev/design-system";
 import {
-  API_BASE_URL,
-  DEFAULT_API_KEY,
+  API_BASE_PATH,
   HEADER_API_KEY,
 } from "../lib/constants";
 
 export type DataSourceConfig = {
   apiUrl: string;
-  apiKey: string;
+  bearerToken: string;
 };
 
-const TRUE_VALIDATION_RESULT: ValidationResult = { isValid: true };
+const getValidationResult = (apiUrl: string, bearerToken: string): ValidationResult => {
+  if (!apiUrl || !apiUrl.trim()) {
+    return { isValid: false, validationMessage: 'Akeneo PIM Base URL is required' };
+  }
+  
+  if (!bearerToken || !bearerToken.trim()) {
+    return { isValid: false, validationMessage: 'Bearer Token is required' };
+  }
+  
+  try {
+    new URL(apiUrl.trim());
+  } catch {
+    return { isValid: false, validationMessage: 'Please enter a valid URL format' };
+  }
+  
+  return { isValid: true };
+};
 
 // This component is used to configure the data source connection for the integration.
 // It is shown when the user navigates to the Data Types page in the Uniform UI,
@@ -26,11 +41,11 @@ const TRUE_VALIDATION_RESULT: ValidationResult = { isValid: true };
 const DataConnectionEditor: FC = () => {
   const { value, setValue } = useMeshLocation<"dataSource">();
 
-  const { apiUrl, apiKey } = useMemo(() => {
+  const { apiUrl, bearerToken } = useMemo(() => {
     const config = value.custom as DataSourceConfig;
     return {
-      apiUrl: config?.apiUrl?.length > 0 ? config.apiUrl : API_BASE_URL,
-      apiKey: config?.apiKey?.length > 0 ? config.apiKey : DEFAULT_API_KEY,
+      apiUrl: config?.apiUrl || "",
+      bearerToken: config?.bearerToken || "",
     };
   }, [value.custom]);
 
@@ -41,64 +56,66 @@ const DataConnectionEditor: FC = () => {
         const newConfig = { ...currentConfig, ...updates };
 
         // Update the data source location value with the new configuration
-        // The configuration examples includes the:
+        // The configuration includes:
         // - API URL as the base URL for all data types of the data source
-        // - API Key as the authentication header for all data types of the data source, stored securely
-        // - Custom configuration object for additional settings, such as the API URL
-        // - Custom public configuration object example for settings that should be exposed to the user
-        // - Variants configuration object for additional data source configurations
-        //  (e.g., for preview or unpublished data)
-        const newValue: DataSourceLocationValue = {
-          ...current,
-          baseUrl: newConfig.apiUrl || API_BASE_URL,
-          headers: [{ key: HEADER_API_KEY, value: newConfig.apiKey }],
-          custom: newConfig,
-          customPublic: { apiUrl: newConfig.apiUrl }, // don't expose the API key
-          variants: {
-            unpublished: {
-              baseUrl: newConfig.apiUrl || API_BASE_URL,
-              headers: [{ key: HEADER_API_KEY, value: newConfig.apiKey }],
-              parameters: [
-                {
-                  key: "state",
-                  value: "preview",
-                },
-              ],
-            },
-          },
+        // - Bearer Token as the authorization header for all data types of the data source, stored securely
+        // - Custom configuration object for additional settings
+        // - Custom public configuration object for settings that should be exposed to the user
+        // Ensure the Bearer token is properly formatted
+        const formatBearerToken = (token: string) => {
+          if (!token) return '';
+          const cleanToken = token.trim();
+          return cleanToken.startsWith('Bearer ') ? cleanToken : `Bearer ${cleanToken}`;
         };
 
-        return { newValue, options: TRUE_VALIDATION_RESULT };
+        // Ensure the API URL has the correct path appended
+        const formatApiUrl = (url: string) => {
+          if (!url) return '';
+          const cleanUrl = url.trim().replace(/\/$/, ''); // Remove trailing slash
+          return `${cleanUrl}${API_BASE_PATH}`;
+        };
+
+        const newValue: DataSourceLocationValue = {
+          ...current,
+          baseUrl: formatApiUrl(newConfig.apiUrl || ''),
+          headers: [{ key: HEADER_API_KEY, value: formatBearerToken(newConfig.bearerToken || '') }],
+          custom: newConfig,
+          customPublic: { apiUrl: newConfig.apiUrl }, // don't expose the bearer token
+        };
+
+        return { 
+          newValue, 
+          options: getValidationResult(newConfig.apiUrl || '', newConfig.bearerToken || '') 
+        };
       });
     },
     [setValue]
   );
 
-  useEffect(() => {
-    if (!value.custom || !(value.custom as DataSourceConfig).apiUrl) {
-      handleUpdate({ apiUrl: API_BASE_URL, apiKey: DEFAULT_API_KEY });
-    }
-  }, [handleUpdate, value.custom]);
+  // No default values - users must configure their own credentials
 
   return (
     <VerticalRhythm>
       <Input
         id="apiUrl"
         name="apiUrl"
-        label="API URL"
-        placeholder={API_BASE_URL}
+        label="Akeneo PIM Base URL"
+        placeholder="https://your-akeneo-url.cloud.akeneo.com"
         value={apiUrl}
         onChange={(e) => handleUpdate({ apiUrl: e.currentTarget.value })}
-        caption={`The base URL of the API (default: ${API_BASE_URL}).`}
+        caption="The base URL of your Akeneo PIM instance (without /api/rest/v1 - this will be added automatically)."
+        required
       />
       <Input
-        id="apiKey"
-        name="apiKey"
-        label="API Key"
-        placeholder={DEFAULT_API_KEY}
-        value={apiKey}
-        onChange={(e) => handleUpdate({ apiKey: e.currentTarget.value })}
-        caption="The API key to use for authentication."
+        id="bearerToken"
+        name="bearerToken"
+        label="Bearer Token"
+        placeholder="Enter your bearer token"
+        value={bearerToken}
+        onChange={(e) => handleUpdate({ bearerToken: e.currentTarget.value })}
+        caption="The Bearer token to use for authentication with Akeneo PIM API. The 'Bearer ' prefix will be added automatically if not provided."
+        type="password"
+        required
       />
     </VerticalRhythm>
   );

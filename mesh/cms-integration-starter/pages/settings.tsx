@@ -1,6 +1,6 @@
 import React from "react";
 import { Callout } from "@uniformdev/mesh-sdk-react";
-import { API_BASE_URL, YOUR_CMS } from "../lib/constants";
+import { YOUR_CMS } from "../lib/constants";
 
 // This settings page is rendered when the user navigates to the Settings page in the Uniform UI. 
 // It is also shown upon installation of the integration.
@@ -32,7 +32,7 @@ export default function Settings() {
             corner of the page.
           </li>
           <li className="leading-relaxed">
-            Select <strong>CMS Mesh Integration</strong> as the data source
+            Select <strong>Akeneo PIM</strong> as the data source
             type.
           </li>
           <li className="leading-relaxed">
@@ -40,7 +40,25 @@ export default function Settings() {
             information:
             <ul className="list-disc list-inside pl-6 space-y-2 text-gray-700">
               <li>
-                {YOUR_CMS} API Base URL (e.g., {API_BASE_URL})
+                {YOUR_CMS} Base URL (e.g., https://your-instance.cloud.akeneo.com)
+              </li>
+              <li>
+                Bearer Token for API authentication
+              </li>
+            </ul>
+            <p className="text-sm text-gray-600 mt-2">
+              Note: The API path (/api/rest/v1) will be automatically appended to your base URL.
+            </p>
+          </li>
+          <li className="leading-relaxed">
+            Choose between <strong>Single Product</strong> or <strong>Multiple Products</strong> 
+            archetype based on your needs:
+            <ul className="list-disc list-inside pl-6 space-y-2 text-gray-700">
+              <li>
+                <strong>Single Product:</strong> Select one product at a time
+              </li>
+              <li>
+                <strong>Multiple Products:</strong> Select multiple products with filters and search
               </li>
             </ul>
           </li>

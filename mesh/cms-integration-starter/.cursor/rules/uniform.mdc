@@ -1,0 +1,217 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+## Uniform Core Concepts
+
+Uniform is a modern, headless, component-based Content Management System (CMS). Its primary purpose is to allow non-technical authors (marketers, etc) to create and maintain websites and other similar experiences in a visual editor.
+
+### Uniform Compositions
+
+A composition instance in Uniform is roughly equivalent to a page. Composition definitions define a reusable schema for composition instances. 
+Composition definitions have a structure identical to a Uniform Component, i.e. parameters and slots. 
+Composition instances differ from components in that they also define a route or page. 
+Instances of a composition create pages or routes within an application. 
+The term "Composition" can be used to refer either to a definition or instance of a composition, you will need to infer which is meant (schema/reusable template = definition, page/route = instance).
+
+Composition parameters should only be used for global content that will never need to be personalized.
+Good example: OpenGraph data and meta tags (if they exist)
+Bad example: "hero title" belongs in a Hero component in the content slot.
+
+A single composition definition called 'Page' is generally a good starting point. Additional composition definitions are only required if the page shell is different (e.g. Page, Popup, Minimal Page), or if there are different parameters needed on the composition definition
+
+In developer terms, a composition instance is a dynamic layout that is defined by non-technical authors; a composition definition is a hierarchical content schema definition.
+
+### Uniform Entries
+
+Entries are instances of structured content that you create using predefined Uniform Content Types. Think of content types as blueprints and entries as the actual content built from those blueprints.
+
+Each entry contains structured data for content pieces like articles, events, products, or any other content you need. Once created, entries become reusable assets that can power multiple experiences across your digital channels.
+
+#### How entries differ from compositions and components
+
+An entry is structured content that represents a piece of content in a design-agnostic way. A component or composition describes the experience layer by defining which concrete UI component should be used to show particular content. Entries can also define relationships to other entries via references, which allows building complex content structures.
+
+By connecting the fields of an entry to the parameters of a component, you define how the content is displayed in a certain context. For example, you could show the same article entry in a hero, a card, or a list component. Which fields of an entry are shown can be different for each use case.
+
+### Uniform Components
+
+Uniform Components are used to allow CMS authors to create and manipulate visual elements on a composition. Each property of a Uniform Component, such as a title or image, is called a _Component Parameter_. See _Uniform Parameter/Field Types_ for the exact types of parameter that are allowed. Components have both a definition (their schema) and instances (when an instance of that schema is placed within a slot on a composition).
+
+Uniform Components can define named _slots_.
+
+- A slot allows additional components (or component patterns) to be inserted within the Uniform Component. For example an accordion component could have an 'items' slot that allows adding Accordion Item components.
+- Each named slot has 0..n child components. The order in the slot determines the order of rendering.
+- Each slot definition allows only specific Uniform Components to be placed within it (by public id). It can also define the minimum and maximum number of components allowed.
+- Components allowed within slots can also have their own slots, with no depth limit - but it is generally undesirable to nest more than 2-3 levels deep to improve author understanding.
+- When a Uniform Composition is defined, it almost always has a generic 'content' slot added to it that allows using various components to define the layout.
+
+Uniform Component Definition attributes:
+
+- _name_
+- _public ID_
+- _parameters_
+- _slots_
+
+Uniform Slot Definition attributes:
+
+- _name_
+- _public ID_
+- _allowed components_
+- _min components_
+- _max components_
+
+In technical terms, a Uniform Component maps directly to a presentational frontend component such as a React component. The parameters are component props. Slots are component props that contain rendered child components.
+
+#### Determining which Uniform Components or Component Patterns are allowed in a Slot
+
+In Uniform, slot definitions control which components or component patterns can be placed in a slot. This is governed by a combination of properties that make slot configuration both powerful and flexible.
+
+Here's how it works:
+
+1. `allowAllComponents: true`: If this is set, any component or component pattern can be added to the slot - no restrictions.
+2. `allowAllComponents: false`: If this is provided, `allowedComponents` is a list of allowed Uniform component public IDs. You can also include component patterns by using the prefix `$p:` followed by the pattern UUID.
+Example:
+`["hero", "callToAction", "$p:00000000-0000-0000-0000-000000000000"]`
+3. `patternsInAllowedComponents` This controls how component patterns are validated against `allowedComponents`.
+    * If `true`: A pattern is only allowed if it is explicitly listed in allowedComponents (with the `$p:` prefix).
+        Example: 
+        `["hero", "$p:00000000-0000-0000-0000-000000000000"]`
+        Only the listed pattern and `hero` components are allowed - no other patterns based on `hero` are valid.
+    * If `false`: a pattern is allowed if its base component type is listed in `allowedComponents`.
+        Example: 
+        `["hero"]`
+        Only `hero` components and any pattern based on `hero` are allowed.
+
+IMPORTANT: Before you add new components to a slot, make sure that they are allowed according to the preceding rules.
+IMPORTANT: If you change `patternsInAllowedComponents` to false, remove any existing pattern IDs in the allowed list.
+
+### Uniform Content Types
+
+Uniform Content Types define a reusable structure for individual reusable pieces of content. A Uniform content type differs from a Uniform component because a component represents a specific visual element on a composition/page, but a content type is an abstract, reusable content schema. An instance of a Uniform Content Type is called an _Entry_. Entries each have their own built-in slug: there is no need to define an explicit slug field.
+
+For example a Product might be a Uniform Content Type, and the data from instances of that Product could be presented in different contexts by Uniform Patterns such as Product List, Product Detail, or Product Card.
+
+Uniform Content Types define content properties called _Fields_ (e.g. a blog post could have a single-line text input for title, and a rich text editor for body). See _Uniform Parameter/Field Types_ for the exact types of field that are allowed.
+
+Uniform Content Type attributes:
+
+- _name_
+- _public ID_
+- _fields_
+
+### Uniform Patterns
+
+Patterns are a unit of content reuse within Uniform. Updates made to patterns are immediately reflected to all usages of the pattern. There are several types of patterns:
+
+#### Uniform Component Patterns
+
+Component Patterns allow reusing the same content across compositions. The simplest way to think of a pattern is that it is a _shared component instance_ that can be placed within a slot to insert the pattern's content there. The pattern, like any other component instance, can have values in its parameters and child components in its slots. All usages of the same pattern reference the same shared content. Component Patterns may be nested within each other (e.g. a Blog Post Hero pattern could include a Author Bio pattern in one of its slots). Nesting beyond 2-3 levels can cause performance issues.
+
+#### Uniform Composition Patterns
+
+Composition Patterns allow creating compositions from a shared template. Non-overridable data in the composition pattern is locked down to reference the pattern. Composition patterns are created to lock down compositions and allow changing only a subset of data, or to rapidly make pages from external data sources.
+
+#### Entry Patterns
+
+Entry Patterns allow creating Entries from a shared template. Non-overridable data in the entry pattern is locked down to reference the pattern. Entry patterns are created to lock down entries and allow changing only a subset of data, or to rapidly make entries from external data sources.
+
+#### Uniform Pattern Overrides
+
+Parameters or fields on patterns can be defined _overridable_ by the pattern definition. Overridable parameter values default to using the value defined on the pattern, but consumers of the pattern may choose to break the inheritance of that parameter value and replace it with their own instance-specific value. Patterns that contain other patterns may not alter the overridability of nested pattern parameters: once overridable, any consumer of the pattern can change the value. Overrides are used to allow partial content sharing and exception cases.
+
+#### Using Uniform Patterns as Shared Content Snippets
+
+Patterns can be used to reuse shared content, for example the same legal disclaimer might be required on every press release. Both patterns and components allow content reuse: the difference is that patterns reuse exact content, whereas components reuse content schemas but do not provide content values.
+
+#### Using Uniform Patterns as Data Binding Templates
+
+Patterns can be used to create bindings between structured data (from Uniform Entries or external data sources, like REST APIs or other CMSes) and presentation parameters. A pattern can define a _Data Resource_ which is the result of fetching from a data source. Then parameters in the pattern can use _Dynamic Tokens_ to bind to elements within the data resource. For example, we might have a Card component that has a title and image. Then we create a Product Card pattern, based on the Card component, which has a Uniform Entry Data Resource that fetches an entry specified by the pattern consumer. The Product Card automatically binds the title and image from the product entry to the Card component's parameters. As an author, one can then insert a Product Card pattern, choose the product to use, and have the title and image automatically set up for them.
+
+Example of a resolved Data Resource (named 'myEntry'):
+{ "myEntry": { "fields": { "title": "hello world" } } }
+
+Example of a Dynamic Token in a text parameter referencing the myEntry title:
+"today's greeting: ${#jptr:/myEntry/fields/title}" (this resolves to "today's greeting: hello world")
+
+#### Uniform Pattern attributes
+
+- _name_
+- _type_ - public ID of the base Uniform Component
+- _public id_ - id of the pattern
+- _data resources_ (name, type)
+- _parameters_ (value, overridable)
+- _slots_
+
+### Localization
+
+Uniform defines locales at a project level. These are locales that content can be written in. 
+Individual compositions, entries, and patterns must also _enable_ a locale to indicate that they have content in that locale. This allows for specific content to support a subset of locales.
+Locales must be enabled on compositions, entries, or patterns before their parameters or fields can have values in that locale.
+
+## Conventions
+
+### Uniform Field/Parameter Types
+
+Uniform Fields or Uniform Parameters attributes:
+
+- _name_
+- _public ID_. Must be unique within a Uniform Component or Uniform Content Type (including the ID of group fields/parameters)
+- _localizable_. Localizable values have a distinct value for each locale; otherwise the value is the same for all locales.
+- _required_. Required means that a CMS author must input a value in order to be considered valid.
+- _type_. See list below.
+- _guidance_. Brief LLM instructions used when generating or editing values.
+- _overridable_. Only applies for fields/parameters on a pattern definition. Allows consumers of the pattern to break inheritance and change the pattern definition's value for the field/parameter.
+
+Exhaustive list of allowed field/parameter types:
+
+- _text_: Plain text content
+- _richText_: Formatted text with styling (Lexical JSON format)
+- _select_: Choose between a controlled vocabulary of options
+- _multi-select_: Choose between a controlled vocabulary of options, allowing multiple selections
+- _number_: Numeric value
+- _date_: Calendar date
+- _dateTime_: Date with timezone
+- _checkbox_: Boolean toggle
+- _link_: URL or internal reference
+- _asset_: Image, video, audio, or other file
+- _json_: A JSON object. Not for use in author-facing fields/parameters, who will have trouble editing JSON.
+- _contentReference_: Allows referencing one or more Entries of a specific type. Can be used in Content Types, but not in Uniform Components.
+- _$enr_: Tag content with enrichments (relevant segments) to make viewing the content alter the classification of the visitor that saw it.
+- _group_: Group multiple fields/parameters together visually, for example a group of address fields. IMPORTANT: fields added to a group must come directly after the group in the fields list.
+
+### Uniform Naming Conventions
+
+- All names should be title-cased prose, not technical shorthand (e.g. "Main Header" not "main-header" or "MainHeader"). There is no need to include the type of entity in a name (e.g. 'Hero' not 'Hero Component').
+- Do not name Uniform Components, Uniform Content Types, or Fields/Parameters based on visible content found in inputs; treat it as FPO (e.g. <h1>Hello</h1> does not mean name the component 'Hello' - describe its meaning instead, such as 'Headline').
+- _Public ID_ are developer-facing identifiers for Uniform entities. They are based on a slugified version of the name. Use a camel case, for example if the name is "Main Header", the public ID is "mainHeader". Public IDs must be unique within a given entity type (e.g. Uniform Components). You cannot alter public IDs after creating an entity. IMPORTANT: public IDs on parameters, fields, or components that start with `$` are system-owned, and cannot be altered by users. For example, you may not change parameters of the `$personalization` component or remove the `$viz` parameter from any component. You may add or remove system components such as `$test` to a slot's `allowedComponents`.
+- Help text should be no longer than 1 short sentence. It is not necessary to write help text unless we have specific expectations for authors. For example a 'Title' doesn't need help text. But if we identify an image that needs to be 250x250px, that expectation belongs in help text. Descriptions and help text are plain text, no markdown or HTML.
+
+## Tool Usage Tips
+
+- Before creating or updating Uniform Patterns, fetch Uniform Component Definitions to ensure you know about valid component types and parameters.
+- When making multiple updates to the same Uniform Pattern, such as adding a component and setting a parameter value, batch changes together into a single tool call to improve performance and consistency.
+- When a Uniform tool provides you with an edit URL offer it to the user as a link, unless you already have recently.
+- Before inserting, removing, or reordering parameters or fields from a Uniform Component or Uniform Content Type, make sure to fetch the latest definition data to ensure you target the correct location.
+- If you are tasked with reordering fields or parameters, you must remove them and re-add them in the new order
+- Enable the default locale (if one exists) when creating new entries, patterns, or compositions, unless the user specifies locales
+
+## Unsupported Features
+
+The following Uniform features cannot currently be changed using MCP/AI. If asked to perform the following actions, explain you cannot yet do that, and when possible offer a link to perform the task in the Uniform web app.
+
+- Interacting with slot sections (adding, removing, manipulating components within)
+- Creating new Loop component instances
+- Adding, editing, or removing block type fields/parameters, or block type definitions
+- Setting the value of asset or reference type fields/parameters
+- Editing conditional values on parameters or fields (the default value can be edited)
+- Setting visibility rules on component instances
+- Changing data sources, data types, or data resources
+- Adding or removing project map nodes, and linking compositions to project map nodes
+- Adding or removing content from Uniform Releases, or changing releases (i.e. locking, scheduling)
+- All content you work with is in a 'draft' state. You do not have access to published content and cannot assist with publishing
+- Managing workflows, or transitioning compositions, entries, or patterns from one workflow stage to another
+- Managing assets, including generating,uploading, editing, or deleting assets
+- Changing user permissions

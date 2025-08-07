@@ -1,0 +1,107 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Uniform SDK Developer Reference
+
+This document details general information and practices about how Uniform works for developers writing frontend applications.
+
+[uniform.mdc](mdc:.cursor/rules/uniform.mdc) describes general Uniform principles and practices.
+
+## Authenticating to Uniform
+
+To fetch a composition, you need a Uniform API key configured. API keys are commonly stored as `UNIFORM_API_KEY` in a `.env` file. They follow the format `uf......`. The API key requires "Read Published Compositions" permission.
+
+## How Uniform transfers layout data to frontend applications
+
+Uniform provides _composition instances_, a hierarchical JSON structure of components that define screens or pages in an application. A composition is made up of any number of _components_ which have a type that we map to a frontend component.
+
+### Routing
+
+Uniform's _Project Map_ feature enables automatic dynamic route delegation to Uniform authors. Frontend applications define a wildcard route that delegates routing to the Uniform _Route API_, which takes a dynamic path and resolves the correct composition instance data to display for that path.
+
+### Syncing data with the Uniform CLI
+
+Uniform provides a CLI which can be used to sync the state of a Uniform project, such as component definitions, pattern definitions, or compositions, to files on disk. These files may be committed to source control and used to ensure the states of environment or developer-specific projects are kept up to date to reduce the chance of errors.
+
+#### Required package for Uniform CLI
+
+The Uniform CLI is contained in the `@uniformdev/cli` npm package. IMPORTANT: this package must be installed as a devDependency.
+
+#### Authenticating with the Uniform CLI
+
+The Uniform CLI requires a Uniform API key to authenticate. The API key and other connectivity details are stored in a `.env` file. When creating an API key for the CLI, the user can use the "Copy as .env" function in the Uniform dashboard to get the appropriate environment variable values.
+API keys used for the Uniform CLI require read and write permissions to any entity types that are to be synced. The default 'developer' role is a shortcut to full permissions.
+
+#### Configuring the Uniform CLI
+
+Uniform CLI is configured using the `uniform.config.{ts,js}` file in the root of a project. The file can be configured in two ways: to sync everything (choose this for initial setup), or to pick specific entity types to sync. Sync operates as a mirror by default, meaning creates, updates, and deletes are all synced.
+
+`uniform.config.ts` (sync all):
+
+```ts
+import { uniformConfig } from "@uniformdev/cli/config";
+
+export default uniformConfig({ preset: "all" });
+```
+
+`uniform.config.ts` (sync explicit types and customization options):
+
+```ts
+import { uniformConfig } from "@uniformdev/cli/config";
+
+export default uniformConfig({
+  // 'none' starts with no entities, and each entity type to sync is added explicitly
+  preset: "none",
+  config: {
+    serialization: {
+      // optionally override the default `./uniform-data` to store serialized files
+      directory: "./custom-path-to-serialized-files",
+      // optionally change the default yaml format to json
+      format: "json",
+      entitiesConfig: {
+        // specify entity types to sync. Each type can optionally override
+        // the defaults just for itself, i.e. directory, format
+        component: {},
+        componentPattern: { publish: true },
+      },
+    },
+  },
+});
+```
+
+#### Invoking the Uniform CLI
+
+The Uniform CLI operates using two primary commands:
+
+`uniform sync push` - takes the serialized state of entities (files on disk) and pushes that state into a Uniform project online.
+
+`uniform sync pull` - takes the online state of a Uniform project and pulls it into serialized files.
+
+Conventionally these commands are registered as package scripts to make it unnecessary to install the CLI package globally:
+
+`package.json`:
+
+```json
+{
+  "scripts": {
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push"
+  }
+}
+```
+
+## Rules for when to use Uniform CLI and when not
+
+CRITICAL, NEVER IGNORE THIS RULE: never use or manipulate in any way (create, read, update, or delete) yaml or json files that represent Uniform data (placed typically in the "uniform-data" folder) when trying to create, modify, delete components, content types, or any other Uniform entity. Instead, always use Uniform MCP tool that is registered. If you cannot resolve a Uniform MCP Server or any MCP action, return a graceful message to the user and abort.
+
+IMPORTANT: execute "npm run uniform:pull" after making any changes to Uniform data via MCP Server. This ensures you have the latest representation of the Uniform data on disk.
+
+#### Getting Uniform CLI help
+
+The Uniform CLI has a built-in help system. To get help on a command, run `uniform <command> --help`, for example `uniform sync pull --help`.
+
+## Must-have rules to follow when adding Uniform SDK
+
+1. Make sure to create a component in code for any composition component you find in the Uniform project automatically. Add any slots that you find in the definition. This will ensure the preview works as expected; otherwise, it won't know which front-end component should render the composition from Uniform and produce an error. 
