@@ -8,6 +8,13 @@ import {
 } from "@uniformdev/mesh-sdk-react";
 import { Product, transformAkeneoProduct } from "../types/product";
 
+interface CategoryData {
+  code: string;
+  labels: Record<string, string>;
+  parent: string | null;
+  label: string;
+}
+
 interface ProductSelectorProps {
   productList: Product[]; // List of Products to display
   selectedIds: string[]; // Identifiers of the selected Products
@@ -23,7 +30,7 @@ interface ProductSelectorProps {
   availableLocales?: string[]; // List of available locales
   thumbnailImageAttribute?: string; // Which image attribute to use for thumbnails
   // New props for enhanced functionality
-  allCategories?: string[]; // All available categories from Akeneo
+  allCategories?: CategoryData[]; // All available categories with hierarchy from Akeneo
   onLoadMore?: () => void; // Callback for load more button
   hasMoreProducts?: boolean; // Whether there are more products to load
   isLoadingMore?: boolean; // Whether currently loading more products
@@ -77,35 +84,157 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
   const [internalSearchQuery, setInternalSearchQuery] = useState<string>("");
   const [searchDebounceTimer, setSearchDebounceTimer] = useState<NodeJS.Timeout | null>(null);
 
-  // Use all categories from Akeneo API or extract from current products as fallback
-  const availableCategories = useMemo(() => {
-    if (allCategories.length > 0) {
-      return allCategories.sort();
+  // Build hierarchical category options with grouping
+  const categoryFilterOptions = useMemo(() => {
+    
+    if (!allCategories || allCategories.length === 0) {
+      // Fallback: extract from current product list and simulate hierarchy
+      const categorySet = new Set<string>();
+      productList.forEach(product => {
+        product.categories.forEach(category => {
+          if (category && category.trim() && !category.toLowerCase().includes('master')) {
+            categorySet.add(category.trim());
+          }
+        });
+      });
+      
+      const categoryList = Array.from(categorySet).sort();
+      
+      // If we have categories, try to create a simulated hierarchical structure
+      if (categoryList.length > 0) {
+        // Group categories by common prefixes or manually group known patterns
+        const groupedFallback: any[] = [];
+        const ungrouped: string[] = [];
+        const groups: { [key: string]: string[] } = {};
+        
+        // Try to group by common patterns
+        categoryList.forEach(category => {
+          // Look for patterns like "master_clothing_footwear_workwear"
+          const parts = category.split('_');
+          if (parts.length >= 3) {
+            // Use first 2-3 parts as group name
+            const groupKey = parts.slice(0, 3).join('_');
+            const groupLabel = parts.slice(0, 3).join(' ').replace(/master\s*/i, '').trim();
+            
+            if (!groups[groupKey]) {
+              groups[groupKey] = [];
+            }
+            groups[groupKey].push(category);
+          } else {
+            ungrouped.push(category);
+          }
+        });
+        
+        // Add ungrouped items first
+        ungrouped.forEach(category => {
+          groupedFallback.push({
+            value: category,
+            label: category.replace(/master[_\s]*/i, '').replace(/_/g, ' '),
+            indented: true
+          });
+        });
+        
+        // Add grouped items
+        Object.entries(groups).forEach(([groupKey, items]) => {
+          if (items.length > 1) {
+            // Create a group
+            const groupLabel = groupKey.replace(/master[_\s]*/i, '').replace(/_/g, ' ');
+            groupedFallback.push({
+              label: groupLabel,
+              options: items.map(item => ({
+                value: item,
+                label: item.replace(/master[_\s]*/i, '').replace(/_/g, ' ')
+              }))
+            });
+          } else {
+            // Single item, add as ungrouped
+            items.forEach(item => {
+              groupedFallback.push({
+                value: item,
+                label: item.replace(/master[_\s]*/i, '').replace(/_/g, ' '),
+                indented: true
+              });
+            });
+          }
+        });
+        
+        return groupedFallback;
+      }
+      
+      // Final fallback to simple flat structure
+      return categoryList.map(category => ({
+        value: category,
+        label: category
+      }));
     }
-    // Fallback: extract from current product list
-    const categorySet = new Set<string>();
-    productList.forEach(product => {
-      product.categories.forEach(category => {
-        if (category && category.trim()) {
-          categorySet.add(category.trim());
+
+    // Build category hierarchy map
+    const categoryMap = new Map<string, CategoryData>();
+    const rootCategories: CategoryData[] = [];
+    const childrenMap = new Map<string, CategoryData[]>();
+
+    // First pass: populate maps
+    allCategories.forEach(category => {
+      categoryMap.set(category.code, category);
+      if (!category.parent) {
+        rootCategories.push(category);
+      } else {
+        if (!childrenMap.has(category.parent)) {
+          childrenMap.set(category.parent, []);
         }
+        childrenMap.get(category.parent)!.push(category);
+      }
+    });
+
+
+
+    // Build grouped options
+    const groupedOptions: any[] = [];
+    
+    // Add ungrouped (root) categories first
+    const ungroupedRoots = rootCategories.filter(cat => !childrenMap.has(cat.code));
+    ungroupedRoots.forEach(category => {
+      groupedOptions.push({
+        value: category.code,
+        label: category.label,
+        indented: true
       });
     });
-    return Array.from(categorySet).sort();
-  }, [allCategories, productList]);
 
-  // Create filter options for categories without counts
-  const categoryFilterOptions = useMemo(() => {
-    return availableCategories.map(category => ({
-      value: category,
-      label: category
-    }));
-  }, [availableCategories]);
+    // Add root categories with children as groups
+    const groupedRoots = rootCategories.filter(cat => childrenMap.has(cat.code));
+    groupedRoots.forEach(rootCategory => {
+      const children = childrenMap.get(rootCategory.code) || [];
+      if (children.length > 0) {
+        groupedOptions.push({
+          label: rootCategory.label,
+          options: children.map(child => ({
+            value: child.code,
+            label: child.label
+          }))
+        });
+      }
+    });
+
+    return groupedOptions;
+  }, [allCategories, productList]);
 
   // Convert selected category values to option objects for the InputComboBox
   const selectedCategoryOptions = useMemo(() => {
     return selectedCategories.map(category => {
-      const option = categoryFilterOptions.find(opt => opt.value === category);
+      // Find option in flat list or nested groups
+      let option = categoryFilterOptions.find(opt => opt.value === category);
+      
+      if (!option) {
+        // Search in nested groups
+        for (const group of categoryFilterOptions) {
+          if (group.options) {
+            option = group.options.find((opt: any) => opt.value === category);
+            if (option) break;
+          }
+        }
+      }
+      
       return option || { value: category, label: category };
     });
   }, [selectedCategories, categoryFilterOptions]);
@@ -415,7 +544,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
         )}
 
         {/* Category Filter (placed above search) */}
-        {availableCategories.length > 0 && (
+        {categoryFilterOptions.length > 0 && (
           <div className="mb-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">

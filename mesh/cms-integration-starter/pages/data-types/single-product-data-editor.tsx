@@ -34,7 +34,7 @@ const SingleProductDataEditorPage: React.FC = () => {
   const [selectedCategories, setSelectedCategories] = React.useState<string[]>([]);
   const [isLoading, setIsLoading] = React.useState(false);
 
-  // Fetch categories separately
+  // Fetch categories with full data including labels and hierarchy
   const {
     value: categories = [],
     loading: loadingCategories,
@@ -49,12 +49,26 @@ const SingleProductDataEditorPage: React.FC = () => {
       });
 
       if ((response as any)?._embedded?.items) {
-        return (response as any)._embedded.items.map((cat: any) => cat.code);
+        const rawCategories = (response as any)._embedded.items;
+        
+        // Return full category objects with hierarchy info
+        return rawCategories
+          .filter((cat: any) => {
+            // Filter out categories containing "master" in their code
+            return !cat.code.toLowerCase().includes('master');
+          })
+          .map((cat: any) => ({
+            code: cat.code,
+            labels: cat.labels || {},
+            parent: cat.parent,
+            // Use label for current locale, fallback to code
+            label: cat.labels?.en_US || cat.labels?.en || cat.labels?.[Object.keys(cat.labels)[0]] || cat.code
+          }));
       }
       
       return [];
     } catch (error) {
-      console.error("Error fetching categories:", error);
+      console.error("❌ Error fetching categories:", error);
       return [];
     }
   }, [metadata]);
@@ -184,6 +198,7 @@ const SingleProductDataEditorPage: React.FC = () => {
     );
   }
 
+  console.log({ categories });
       // Show the product selector when no product is selected
   return (
     <ProductSelector

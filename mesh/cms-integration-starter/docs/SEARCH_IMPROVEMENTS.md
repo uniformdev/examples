@@ -62,6 +62,33 @@ The ProductSelector component now supports:
 - **Loading states**: Shows spinner during server searches
 - **Error handling**: Displays search errors with fallback message
 - **Search result caching**: Maintains results between UI interactions
+- **Hierarchical category filtering**: Enhanced category support with proper API integration
+
+#### Hierarchical Category Selector
+
+The category selector has been completely redesigned:
+
+- **Fetches full category data** from [Akeneo Categories API](https://api.akeneo.com/api-reference.html#get_categories) with labels and hierarchy
+- **Displays user-friendly labels** instead of technical codes
+- **Builds proper hierarchy** using parent-child relationships from the API
+- **Groups categories** using InputComboBox grouped options:
+  - Root categories without children appear as indented ungrouped options
+  - Root categories with children appear as expandable groups
+  - Child categories appear under their parent groups
+- **Filters out "master" categories** automatically (they're hidden from the interface)
+- **Maintains filtering functionality** by preserving category codes as values
+
+**API Integration:**
+```javascript
+// Fetches from /api/rest/v1/categories endpoint
+// Returns full category objects with:
+{
+  code: "category_code",        // Used for filtering
+  labels: { en_US: "Display Name" }, // Used for display
+  parent: "parent_code",        // Used for hierarchy
+  label: "Display Name"         // Resolved display label
+}
+```
 
 ### 3. Updated Data Editors
 
@@ -147,6 +174,27 @@ To test the search functionality:
 - `"Amazing"` - Finds products with names starting with "Amazing" or descriptions containing "Amazing"
 - `"shoes"` - Finds all products mentioning "shoes" in name or description
 - `"cotton shirt"` - Finds products with both "cotton" and "shirt" in their content
+
+### Example Category Hierarchy Display
+
+The category selector now displays categories in a hierarchical grouped format:
+
+```
+┌─ Ungrouped Categories (indented)
+├─ Single Category Item
+│
+├─ Clothing & Footwear ▼
+│  ├─ Workwear
+│  ├─ Outerwear  
+│  └─ Work Hoodies & Sweatshirts
+│
+└─ Electronics ▼
+   ├─ Computers
+   ├─ Mobile Devices
+   └─ Accessories
+```
+
+Instead of showing technical codes like `master_clothing_footwear_workwear_outerwear_work_hoodies_sweatshirts`, users now see friendly labels like "Work Hoodies & Sweatshirts" grouped under "Clothing & Footwear".
 
 ## Performance Benefits
 
