@@ -1,8 +1,8 @@
 {
   "type": "akeneo-pim-integration",
-  "displayName": "Akeneo PIM Integration",
-  "logoIconUrl": "https://res.cloudinary.com/uniformdev/image/upload/v1736884961/Mock%20Integration/212ec0c3-315f-44ab-904f-11bfd418fdd4_f73wiy.webp",
-  "badgeIconUrl": "https://res.cloudinary.com/uniformdev/image/upload/v1736884962/Mock%20Integration/e74956cf-5b31-4a90-8d8e-413fbbacbcf2_xiurmm.webp",
+  "displayName": "Akeneo PIM",
+  "logoIconUrl": "http://localhost:4063/akeneo-logo.png",
+  "badgeIconUrl": "http://localhost:4063/akeneo-badge.png",
   "category": "content",
   "baseLocationUrl": "http://localhost:4063",
   "locations": {
@@ -22,15 +22,15 @@
         "dataSourceEditorUrl": "/data-connection-editor",
         "supportsUnpublishedData": false,
         "dataArchetypes": {
-          "singleProduct": {
-            "displayName": "Single Product",
-            "typeEditorUrl": "/data-types/single-product-type-editor",
-            "dataEditorUrl": "/data-types/single-product-data-editor"
-          },
           "multiProduct": {
             "displayName": "Multiple Products",
             "typeEditorUrl": "/data-types/multi-product-type-editor",
             "dataEditorUrl": "/data-types/multi-product-data-editor"
+          },
+          "singleProduct": {
+            "displayName": "Single Product",
+            "typeEditorUrl": "/data-types/single-product-type-editor",
+            "dataEditorUrl": "/data-types/single-product-data-editor"
           }
         }
       }
