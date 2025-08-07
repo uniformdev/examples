@@ -1,6 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { VerticalRhythm, Input, Button } from "@uniformdev/design-system";
-import { debounce } from "lodash";
+import React, { useState, useEffect, useMemo } from "react";
+import { VerticalRhythm, Button, InputComboBox } from "@uniformdev/design-system";
+import {
+  ObjectSearchProvider,
+  ObjectSearchContainer,
+  ObjectSearchListItem,
+  InputKeywordSearch,
+} from "@uniformdev/mesh-sdk-react";
 import { Product } from "../types/product";
 
 interface ProductSelectorProps {
@@ -16,6 +21,7 @@ interface ProductSelectorProps {
   selectedLocale?: string; // Currently selected locale
   onLocaleChange?: (locale: string) => void; // Callback for locale changes
   availableLocales?: string[]; // List of available locales
+  thumbnailImageAttribute?: string; // Which image attribute to use for thumbnails
 }
 
 // ProductSelector component is used to select Products from a list of Products from Akeneo PIM.
@@ -37,67 +43,127 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
   selectedLocale = "en_US",
   onLocaleChange,
   availableLocales = ["en_US", "fr_FR", "de_DE", "es_ES", "it_IT"],
+  thumbnailImageAttribute = "image_1",
 }) => {
   const [filteredProductList, setFilteredProductList] = useState<Product[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [localSelectedIds, setLocalSelectedIds] = useState<string[]>(selectedIds);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+
+  // Extract unique categories from all products
+  const availableCategories = useMemo(() => {
+    const categorySet = new Set<string>();
+    productList.forEach(product => {
+      product.categories.forEach(category => {
+        if (category && category.trim()) {
+          categorySet.add(category.trim());
+        }
+      });
+    });
+    return Array.from(categorySet).sort();
+  }, [productList]);
+
+  // Create filter options for categories with counts
+  const categoryFilterOptions = useMemo(() => {
+    const categoryCounts = availableCategories.reduce((acc, category) => {
+      acc[category] = productList.filter(product =>
+        product.categories.includes(category)
+      ).length;
+      return acc;
+    }, {} as Record<string, number>);
+
+    return availableCategories.map(category => ({
+      value: category,
+      label: `${category} (${categoryCounts[category]})`
+    }));
+  }, [availableCategories, productList]);
+
+  // Convert selected category values to option objects for the InputComboBox
+  const selectedCategoryOptions = useMemo(() => {
+    return selectedCategories.map(category => {
+      const option = categoryFilterOptions.find(opt => opt.value === category);
+      return option || { value: category, label: category };
+    });
+  }, [selectedCategories, categoryFilterOptions]);
 
   useEffect(() => {
-    setFilteredProductList(productList);
+    applyFilters(searchQuery, selectedCategories);
   }, [productList]);
 
   useEffect(() => {
     setLocalSelectedIds(selectedIds);
   }, [selectedIds]);
 
-  const handleSearch = debounce((query: string) => {
-    setSearchQuery(query);
-    
+  const applyFilters = (searchQuery: string, categoryFilters: string[]) => {
     if (onSearch) {
-      onSearch(query);
+      onSearch(searchQuery);
       return;
     }
 
     // Local filtering if no onSearch callback provided
-    if (query.trim() !== "") {
-      const results = productList
+    let results = productList;
+
+    // Apply category filter - show products that match ANY of the selected categories
+    if (categoryFilters.length > 0) {
+      results = results.filter((product) =>
+        categoryFilters.some(category => product.categories.includes(category))
+      );
+    }
+
+    // Apply search filter
+    if (searchQuery.trim() !== "") {
+      results = results
         .filter((product) => {
-          const searchableValue = searchCriteria === "identifier" 
-            ? product.identifier 
+          const searchableValue = searchCriteria === "identifier"
+            ? product.identifier
             : product.title;
-          return searchableValue.toLowerCase().includes(query.toLowerCase());
+          return searchableValue.toLowerCase().includes(searchQuery.toLowerCase());
         })
         .sort((a, b) => {
           const valueA = searchCriteria === "identifier" ? a.identifier : a.title;
           const valueB = searchCriteria === "identifier" ? b.identifier : b.title;
-          
+
           // Prioritize names starting with the query
           const startsWithA = valueA
             .toLowerCase()
-            .startsWith(query.toLowerCase());
+            .startsWith(searchQuery.toLowerCase());
           const startsWithB = valueB
             .toLowerCase()
-            .startsWith(query.toLowerCase());
+            .startsWith(searchQuery.toLowerCase());
           if (startsWithA && !startsWithB) return -1;
           if (!startsWithA && startsWithB) return 1;
           return valueA.localeCompare(valueB);
         });
-
-      setFilteredProductList(results);
-    } else {
-      setFilteredProductList(productList);
     }
-  }, 300);
 
-  const handleSelection = (product: Product) => {
+    setFilteredProductList(results);
+  };
+
+  const handleSearchTextChanged = (query: string) => {
+    setSearchQuery(query);
+    applyFilters(query, selectedCategories);
+  };
+
+  const handleCategoryChange = (newValue: readonly { value: string; label: string }[] | null, actionMeta?: any) => {
+    const selectedOptions = newValue ? Array.from(newValue) : [];
+    // Extract category values from the selected options
+    const categories = selectedOptions.map(option => option.value);
+    setSelectedCategories(categories);
+    applyFilters(searchQuery, categories);
+  };
+
+  const handleObjectSelect = (id: string) => {
+    const product = productList.find(p => p.identifier === id);
+    if (!product) return;
+
     if (multiSelect) {
       const newSelectedIds = localSelectedIds.includes(product.identifier)
-        ? localSelectedIds.filter(id => id !== product.identifier)
+        ? localSelectedIds.filter(selectId => selectId !== product.identifier)
         : [...localSelectedIds, product.identifier];
-      
+
       setLocalSelectedIds(newSelectedIds);
-      
-      const selectedProducts = productList.filter(p => 
+
+      const selectedProducts = productList.filter(p =>
         newSelectedIds.includes(p.identifier)
       );
       onSelect(selectedProducts);
@@ -114,26 +180,18 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
   };
 
   return (
-    <VerticalRhythm>
-      <div className="flex gap-4">
-        <div className="flex-1">
-          <Input
-            value={searchQuery}
-            onChange={(e) => handleSearch(e.target.value)}
-            placeholder={`Search by ${searchCriteria}...`}
-            label={`Search Products`}
-          />
-        </div>
-        
+    <ObjectSearchProvider>
+      <VerticalRhythm>
+        {/* Locale Filter */}
         {enableLocaleFilter && onLocaleChange && (
-          <div className="min-w-[200px]">
+          <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Locale Filter
             </label>
             <select
               value={selectedLocale}
               onChange={(e) => onLocaleChange(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              className="w-full max-w-xs px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             >
               {availableLocales.map((locale) => (
                 <option key={locale} value={locale}>
@@ -143,168 +201,121 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
             </select>
           </div>
         )}
-      </div>
-      
-      {multiSelect && localSelectedIds.length > 0 && (
-        <div className="flex items-center justify-between p-2 bg-blue-50 rounded">
-          <span className="text-sm text-blue-700">
-            {localSelectedIds.length} product{localSelectedIds.length !== 1 ? 's' : ''} selected
-          </span>
-          <Button
-            onClick={clearSelection}
-            variant="soft"
-          >
-            Clear Selection
-          </Button>
-        </div>
-      )}
-      
-      <div
-        style={{
-          maxHeight: "400px",
-          overflowY: "auto",
-          border: "1px solid #ccc",
-          borderRadius: "4px",
-          padding: "8px",
-          marginTop: "16px",
-        }}
-      >
-        {filteredProductList.length > 0 ? (
-          filteredProductList.map((product) => (
-            <div
-              key={product.identifier}
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                padding: "12px",
-                borderRadius: "4px",
-                cursor: "pointer",
-                marginBottom: "8px",
-                backgroundColor: localSelectedIds.includes(product.identifier)
-                  ? "#F0F8FF"
-                  : "#FFFFFF",
-                border: localSelectedIds.includes(product.identifier)
-                  ? "2px solid #007BFF"
-                  : "1px solid #e0e0e0",
-                transition: "all 0.2s ease",
-              }}
-              onClick={() => handleSelection(product)}
+
+        {/* Selection Summary */}
+        {multiSelect && localSelectedIds.length > 0 && (
+          <div className="flex items-center justify-between p-2 bg-blue-50 rounded mb-4">
+            <span className="text-sm text-blue-700">
+              {localSelectedIds.length} product{localSelectedIds.length !== 1 ? 's' : ''} selected
+            </span>
+            <Button
+              onClick={clearSelection}
+              variant="soft"
             >
-              {multiSelect && (
-                <input
-                  type="checkbox"
-                  checked={localSelectedIds.includes(product.identifier)}
-                  onChange={() => handleSelection(product)}
-                  className="mr-3 mt-1"
-                  onClick={(e) => e.stopPropagation()}
-                />
-              )}
-              
-              <div style={{ flex: 1 }}>
-                <div style={{ fontWeight: "bold", marginBottom: "4px" }}>
-                  {highlightQuery(product.title, searchQuery)}
-                </div>
-                
-                <div style={{ fontSize: "14px", color: "#666", marginBottom: "4px" }}>
-                  Identifier: {highlightQuery(product.identifier, searchQuery)}
-                </div>
-                
-                {product.family && (
-                  <div style={{ fontSize: "12px", color: "#888", marginBottom: "2px" }}>
-                    Family: {product.family}
-                  </div>
-                )}
-                
-                {product.categories.length > 0 && (
-                  <div style={{ fontSize: "12px", color: "#888", marginBottom: "2px" }}>
-                    Categories: {product.categories.slice(0, 3).join(", ")}
-                    {product.categories.length > 3 && ` (+${product.categories.length - 3} more)`}
-                  </div>
-                )}
-                
-                <div style={{ fontSize: "12px", color: product.enabled ? "#059669" : "#DC2626" }}>
-                  {product.enabled ? "✓ Enabled" : "✗ Disabled"}
-                </div>
-                
-                {product.description && (
-                  <div style={{ 
-                    fontSize: "12px", 
-                    color: "#666", 
-                    marginTop: "4px",
-                    maxHeight: "40px",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis"
-                  }}>
-                    {product.description.length > 100 
-                      ? `${product.description.substring(0, 100)}...`
-                      : product.description
-                    }
-                  </div>
-                )}
-              </div>
-              
-              {product.imageUrl && (
-                <img
-                  src={product.imageUrl}
-                  alt={product.title}
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                    objectFit: "cover",
-                    borderRadius: "4px",
-                    marginLeft: "12px"
-                  }}
-                />
-              )}
-            </div>
-          ))
-        ) : (
-          <div style={{ textAlign: "center", color: "#666", padding: "20px" }}>
-            No products found
+              Clear Selection
+            </Button>
           </div>
         )}
-      </div>
-      
-      {onPageChange && (
-        <div className="flex items-center justify-between mt-4">
-          <Button
-            onClick={() => onPageChange(currentPage - 1)}
-            disabled={currentPage <= 1}
-            variant="soft"
-          >
-            Previous
-          </Button>
-          <span className="text-sm text-gray-600">
-            Page {currentPage}
-          </span>
-          <Button
-            onClick={() => onPageChange(currentPage + 1)}
-            variant="soft"
-          >
-            Next
-          </Button>
-        </div>
-      )}
-    </VerticalRhythm>
-  );
-};
 
-// Helper function to highlight the query in the text
-const highlightQuery = (text: string, query: string): React.ReactNode => {
-  if (!query || !text) return text;
-  const parts = text.split(new RegExp(`(${query})`, "gi"));
-  return (
-    <>
-      {parts.map((part, index) =>
-        part.toLowerCase() === query.toLowerCase() ? (
-          <span key={index} style={{ color: "#007BFF", fontWeight: "bold" }}>
-            {part}
-          </span>
-        ) : (
-          part
-        )
-      )}
-    </>
+        {/* Category Filter (placed above search) */}
+        {availableCategories.length > 0 && (
+          <div className="mb-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Category Filter
+              </label>
+              <InputComboBox
+                placeholder="Select categories..."
+                value={selectedCategoryOptions}
+                onChange={handleCategoryChange}
+                options={categoryFilterOptions}
+                isMulti
+                isSearchable
+                isClearable
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Object Search Container */}
+        <ObjectSearchContainer
+          label="Select Products"
+          searchFilters={
+            <InputKeywordSearch
+              onSearchTextChanged={handleSearchTextChanged}
+              placeholder={`Search by ${searchCriteria}...`}
+            />
+          }
+          resultList={
+            filteredProductList.length > 0 ? (
+              filteredProductList.map((product) => {
+                return (
+                  <ObjectSearchListItem
+                    key={product.identifier}
+                    id={product.identifier}
+                    title={product.title}
+                    contentType={`ID: ${product.identifier}`}
+                    imageUrl={product.imageUrl}
+                    onClick={() => handleObjectSelect(product.identifier)}
+                    style={{
+                      backgroundColor: localSelectedIds.includes(product.identifier) ? "#F0F8FF" : "transparent",
+                      border: localSelectedIds.includes(product.identifier) ? "2px solid #007BFF" : "1px solid #e0e0e0",
+                    }}
+                    metadata={{
+                      ...(product.family && { Family: product.family }),
+                      ...(product.categories.length > 0 && {
+                        Categories: product.categories.slice(0, 3).join(", ") +
+                          (product.categories.length > 3 ? ` (+${product.categories.length - 3} more)` : "")
+                      }),
+                      ...(product.description && {
+                        Description: product.description.length > 100
+                          ? `${product.description.substring(0, 100)}...`
+                          : product.description
+                      }),
+                      Status: product.enabled ? "✓ Enabled" : "✗ Disabled",
+                    }}
+                  />
+                )
+              })
+            ) : (
+              [
+                <div key="empty" style={{ textAlign: "center", color: "#666", padding: "20px" }}>
+                  No products found
+                </div>
+              ]
+            )
+          }
+        />
+
+        {/* Pagination */}
+        {onPageChange && (
+          <div className="flex items-center justify-between mt-4 p-3 bg-gray-50 rounded-md">
+            <Button
+              onClick={() => onPageChange(currentPage - 1)}
+              disabled={currentPage <= 1}
+              variant="soft"
+            >
+              ← Previous
+            </Button>
+            <div className="flex flex-col items-center">
+              <span className="text-sm text-gray-600">
+                Page {currentPage}
+              </span>
+              <span className="text-xs text-gray-500">
+                Showing 20 products per page
+              </span>
+            </div>
+            <Button
+              onClick={() => onPageChange(currentPage + 1)}
+              variant="soft"
+              disabled={filteredProductList.length < 20}
+            >
+              Next →
+            </Button>
+          </div>
+        )}
+      </VerticalRhythm>
+    </ObjectSearchProvider>
   );
 };
 

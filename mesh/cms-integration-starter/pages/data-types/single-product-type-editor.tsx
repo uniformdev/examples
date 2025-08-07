@@ -17,6 +17,8 @@ export interface IntegrationTypeConfig {
     limit: number;
     enableLocaleFilter: boolean;
     defaultLocale: string;
+    attributes: string[];
+    thumbnailImageAttribute: string;
   };
 }
 
@@ -57,6 +59,8 @@ const DEFAULT_VALUE: DataTypeLocationValueExtended = {
     searchCriteria: "identifier",
     enableLocaleFilter: false,
     defaultLocale: "en_US",
+    attributes: [],
+    thumbnailImageAttribute: "image_1",
   },
 };
 
@@ -130,10 +134,39 @@ const SingleProductTypeEditorPage: React.FC = () => {
     { value: "enabled", label: "Enabled Status" },
   ];
 
+  // Available attribute options for Akeneo products
+  const attributeOptions = [
+    { value: "sku", label: "SKU" },
+    { value: "fabric", label: "Fabric" },
+    { value: "gender", label: "Gender" },
+    { value: "image_1", label: "Image 1" },
+    { value: "image_2", label: "Image 2" },
+    { value: "image_3", label: "Image 3" },
+    { value: "returnable", label: "Returnable" },
+    { value: "description", label: "Description" },
+    { value: "short_description", label: "Short Description" },
+    { value: "manufacturer_warranty", label: "Manufacturer Warranty" },
+    { value: "name", label: "Name" },
+    { value: "brand", label: "Brand" },
+    { value: "color", label: "Color" },
+    { value: "price", label: "Price" },
+    { value: "erp_name", label: "ERP Name" },
+    { value: "packshot", label: "Packshot" },
+  ];
+
+  // Available thumbnail image attribute options
+  const thumbnailImageOptions = [
+    { value: "image_1", label: "Image 1" },
+    { value: "image_2", label: "Image 2" },
+    { value: "image_3", label: "Image 3" },
+  ];
+
   const customSettings = value?.custom;
   const searchCriteria = (customSettings?.searchCriteria as string) || "identifier";
   const enableLocaleFilter = (customSettings?.enableLocaleFilter as boolean) || false;
   const defaultLocale = (customSettings?.defaultLocale as string) || "en_US";
+  const attributes = (customSettings?.attributes as string[]) || [];
+  const thumbnailImageAttribute = (customSettings?.thumbnailImageAttribute as string) || "image_1";
 
   return (
     <VerticalRhythm style={{ minHeight: "400px" }}>
@@ -184,6 +217,45 @@ const SingleProductTypeEditorPage: React.FC = () => {
           </Caption>
         </>
       )}
+
+      <Label>Akeneo Attributes</Label>
+      <InputComboBox
+        name="attributes"
+        id="attributes"
+        onChange={(newValue) => {
+          const selectedOptions = newValue ? Array.from(newValue as readonly { value: string; label: string }[]) : [];
+          const selectedAttributes = selectedOptions.map(option => option.value);
+          handleChange({ attributes: selectedAttributes });
+        }}
+        options={attributeOptions}
+        value={attributes.map(attr => {
+          const option = attributeOptions.find(opt => opt.value === attr);
+          return option || { value: attr, label: attr };
+        })}
+        isMulti
+        isSearchable
+        isClearable
+        placeholder="Select attributes to retrieve from Akeneo..."
+      />
+      <Caption>
+        Choose which Akeneo product attributes to retrieve. If none selected, all available attributes will be fetched.
+      </Caption>
+
+      <Label>Thumbnail Image Attribute</Label>
+      <InputComboBox
+        name="thumbnailImageAttribute"
+        id="thumbnailImageAttribute"
+        onChange={(e) => handleChange({ thumbnailImageAttribute: e.value })}
+        options={thumbnailImageOptions}
+        value={{
+          value: thumbnailImageAttribute,
+          label: thumbnailImageOptions.find(opt => opt.value === thumbnailImageAttribute)?.label || "Image 1",
+        }}
+        placeholder="Select thumbnail image attribute..."
+      />
+      <Caption>
+        Choose which image attribute to use as the thumbnail in the product selector list.
+      </Caption>
     </VerticalRhythm>
   );
 };

@@ -9,8 +9,10 @@ This repository provides a Uniform Mesh integration for connecting Akeneo PIM to
 - **Akeneo PIM Integration**: Connect directly to your Akeneo PIM instance using REST API
 - **Dual Archetype Support**: Choose between single product selection or multiple product selection
 - **Bearer Token Authentication**: Secure authentication using Akeneo's bearer token system
+- **Official Mesh SDK UI**: Uses ObjectSearch components for consistent Uniform UI/UX experience
 - **Product Search & Filtering**: Search products by identifier, family, categories, or enabled status
-- **Rich Product Display**: View product details including title, identifier, family, categories, and enabled status
+- **Category Filtering**: Dynamic category filter populated from product catalog with item counts
+- **Rich Product Display**: View product details including title, identifier, family, categories, enabled status, descriptions, and main images
 - **Pagination Support**: Handle large product catalogs with built-in pagination
 - **Uniform Mesh SDK Integration**: Fully compatible with Uniform's Mesh SDK
 
@@ -136,6 +138,23 @@ This integration connects to the Akeneo PIM REST API using the following pattern
 ### Endpoints Used
 - `GET /api/rest/v1/products`: Fetch products with pagination and filtering
 - Supports query parameters for search, pagination, and filtering
+- Automatically detects and requests all available product attributes
+
+### Data Transformation
+The integration includes robust data transformation to handle Akeneo's complex product structure:
+
+#### **Image Handling**
+- **Smart Image Detection**: Automatically finds image attributes by scanning for attributes containing "image", "picture", "photo", or "thumb"
+- **Flexible Attribute Support**: Works with any Akeneo image attribute names (adapts to your specific configuration)
+- **Multiple Format Support**: Handles direct URLs, asset codes, and asset objects with download links
+- **Automatic URL Construction**: Constructs media file URLs using Akeneo's media API endpoints
+- **Locale-Aware**: Respects locale-specific image variants when available
+
+#### **Content Extraction** 
+- **Multi-Language Support**: Extracts localized content based on selected locale
+- **Attribute Fallbacks**: Uses intelligent fallbacks for product names and descriptions
+- **Adaptive Attribute Detection**: Automatically adapts to your Akeneo instance's specific attribute configuration
+- **Clean Data**: Trims whitespace and handles missing/null values gracefully
 
 ### Data Transformation
 
@@ -212,6 +231,55 @@ Once configured, you can use Akeneo product data in your Uniform compositions:
 3. Optionally enable locale filtering and bind the locale variable to `${locale}` token
 4. In your composition, bind component parameters to the data type
 5. Authors can select products directly in the Uniform editor
+
+### Product Filtering & Search
+
+The integration provides powerful filtering capabilities for efficient product discovery:
+
+#### **Category Filtering**
+- **Dynamic category list**: Automatically populated from available products
+- **Item counts**: Each category shows the number of products (e.g., "Electronics (25)")
+- **Multi-select dropdown**: Official Uniform InputComboBox with multi-select capability
+- **Searchable interface**: Built-in search to quickly find categories
+- **Real-time filtering**: Products update immediately when categories are selected
+- **OR logic**: Shows products that match ANY of the selected categories
+- **Smart positioning**: Category filter placed above search for better UX flow
+
+#### **Search Functionality**
+- **Keyword search**: Search by product identifier or title
+- **Real-time results**: Products filter as you type
+- **Intelligent sorting**: Results prioritize exact matches and starts-with matches
+- **Combined filtering**: Search works together with category and locale filters
+
+#### **UI Layout**
+```
+┌─────────────────────────────────────────────────────────┐
+│ [Locale Filter] (if enabled)                           │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│ Category Filter                                         │
+│ ┌─────────────────────────────────────────────────────┐ │
+│ │ Electronics (45), Clothing (32) ▼  [✕]             │ │ ← Multi-select tags
+│ └─────────────────────────────────────────────────────┘ │
+│ ┌─────────────────────────────────────────────────────┐ │ ← Dropdown when open
+│ │ [Search categories...]                              │ │
+│ │ ☐ Books (28)                                        │ │
+│ │ ☐ Home & Garden (15)                                │ │
+│ │ ☑ Electronics (45)     [Multiple selection with    │ │
+│ │ ☑ Clothing (32)         checkboxes]                 │ │
+│ └─────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│ Select Products                                         │
+│ ┌─────────────────────────────────────────────────────┐ │
+│ │ Search by identifier...                             │ │
+│ └─────────────────────────────────────────────────────┘ │
+│                                                         │
+│ [Products from Electronics OR Clothing categories]     │
+└─────────────────────────────────────────────────────────┘
+```
 
 ### Locale Integration
 

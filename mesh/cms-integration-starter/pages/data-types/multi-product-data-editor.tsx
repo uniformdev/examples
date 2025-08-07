@@ -1,54 +1,11 @@
 import React, { useState } from "react";
-import { useMeshLocation, LoadingOverlay } from "@uniformdev/mesh-sdk-react";
+import { useMeshLocation, LoadingOverlay, ObjectSearchResultItem } from "@uniformdev/mesh-sdk-react";
 import { ProductSelector } from "../../components/product-selector";
 import { useAsync } from "react-use";
 import { ErrorCallout } from "../../components/error-callout";
 import { MultiProductTypeConfig } from "./multi-product-type-editor";
-import { AkeneoProductsResponse, Product } from "../../types/product";
-
-// Helper function to transform Akeneo product to simplified Product
-const transformAkeneoProduct = (akeneoProduct: any): Product => {
-  // Get the first available name/label value
-  const getName = () => {
-    if (akeneoProduct.values?.name) {
-      const nameValue = akeneoProduct.values.name.find((v: any) => v.data);
-      if (nameValue) return nameValue.data;
-    }
-    if (akeneoProduct.values?.label) {
-      const labelValue = akeneoProduct.values.label.find((v: any) => v.data);
-      if (labelValue) return labelValue.data;
-    }
-    return akeneoProduct.identifier;
-  };
-
-  // Get description
-  const getDescription = () => {
-    if (akeneoProduct.values?.description) {
-      const descValue = akeneoProduct.values.description.find((v: any) => v.data);
-      if (descValue) return descValue.data;
-    }
-    return "";
-  };
-
-  // Get image URL
-  const getImageUrl = () => {
-    if (akeneoProduct.values?.image) {
-      const imageValue = akeneoProduct.values.image.find((v: any) => v.data);
-      if (imageValue) return imageValue.data;
-    }
-    return "";
-  };
-
-  return {
-    identifier: akeneoProduct.identifier,
-    title: getName(),
-    description: getDescription(),
-    family: akeneoProduct.family,
-    enabled: akeneoProduct.enabled,
-    categories: akeneoProduct.categories || [],
-    imageUrl: getImageUrl(),
-  };
-};
+import { AkeneoProductsResponse, transformAkeneoProduct } from "../../types/product";
+import { VerticalRhythm } from "@uniformdev/design-system";
 
 // This component is used to select multiple products from the Akeneo PIM data source.
 // It is shown when the user is prompted to select multiple products from the data source.
@@ -63,6 +20,8 @@ const MultiProductDataEditorPage: React.FC = () => {
   const defaultLimit = custom?.custom?.limit || 100;
   const enableLocaleFilter = custom?.custom?.enableLocaleFilter || false;
   const defaultLocale = custom?.custom?.defaultLocale || "en_US";
+  const attributes = custom?.custom?.attributes || [];
+  const thumbnailImageAttribute = custom?.custom?.thumbnailImageAttribute || "image_1";
 
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
@@ -77,9 +36,14 @@ const MultiProductDataEditorPage: React.FC = () => {
   } = useAsync(async () => {
     try {
       const params = [
-        { key: "limit", value: defaultLimit.toString() },
+        { key: "limit", value: "20" },
         { key: "page", value: currentPage.toString() },
       ];
+
+      // Add specific attributes if configured
+      if (attributes.length > 0) {
+        params.push({ key: "attributes", value: attributes.join(",") });
+      }
 
       // Add search parameters if search query is provided
       if (searchQuery.trim()) {
@@ -105,7 +69,12 @@ const MultiProductDataEditorPage: React.FC = () => {
           products = products.filter(product => product.enabled);
         }
         
-        return products.map(transformAkeneoProduct);
+        // Get base URL from metadata for constructing image URLs
+        const baseUrl = (metadata?.dataSource?.baseUrl || metadata?.dataSource?.customPublic?.apiUrl) as string | undefined;
+        
+        return products.map(product => 
+          transformAkeneoProduct(product, enableLocaleFilter ? selectedLocale : null, baseUrl, thumbnailImageAttribute)
+        );
       }
       
       return [];
@@ -113,7 +82,7 @@ const MultiProductDataEditorPage: React.FC = () => {
       console.error("Error fetching products:", error);
       throw error;
     }
-  }, [currentPage, searchQuery, enabledOnly, defaultLimit, metadata, searchCriteria, enableLocaleFilter, selectedLocale]);
+  }, [currentPage, searchQuery, enabledOnly, defaultLimit, metadata, searchCriteria, enableLocaleFilter, selectedLocale, attributes]);
 
   if (loadingProducts) {
     return <LoadingOverlay isActive />;
@@ -123,6 +92,86 @@ const MultiProductDataEditorPage: React.FC = () => {
     return <ErrorCallout error={productError.message} />;
   }
 
+  // Find the selected products from the list
+  const selectedProducts = identifiers.map(id => productList.find(p => p.identifier === id)).filter(Boolean);
+
+  // If products are selected, show the result items instead of the selector
+  if (selectedProducts.length > 0) {
+    return (
+      <VerticalRhythm>
+        <div style={{ marginBottom: "16px" }}>
+          <button
+            onClick={() => {
+              setValue((current) => ({
+                ...current,
+                newValue: {
+                  ...current,
+                  identifiers: [],
+                  ...(enableLocaleFilter && { locale: selectedLocale }),
+                } as any,
+              }));
+            }}
+            style={{
+              padding: "8px 16px",
+              background: "#007BFF",
+              color: "white",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+            }}
+          >
+            ← Back to Product Selection
+          </button>
+          <span style={{ marginLeft: "16px", color: "#666" }}>
+            {selectedProducts.length} product{selectedProducts.length !== 1 ? 's' : ''} selected
+          </span>
+        </div>
+        
+        {selectedProducts.map((product, index) => (
+          <ObjectSearchResultItem
+            key={product.identifier}
+            id={product.identifier}
+            createdAt={new Date()}
+            onClick={() => {
+              // Optional: Could implement edit/view functionality
+            }}
+            onRemove={() => {
+              // Remove this specific product
+              const newIdentifiers = identifiers.filter(id => id !== product.identifier);
+              setValue((current) => ({
+                ...current,
+                newValue: {
+                  ...current,
+                  identifiers: newIdentifiers,
+                  ...(enableLocaleFilter && { locale: selectedLocale }),
+                } as any,
+              }));
+            }}
+            popoverData={
+              <>
+                <p><strong>ID:</strong> {product.identifier}</p>
+                {product.family && <p><strong>Family:</strong> {product.family}</p>}
+                {product.categories.length > 0 && (
+                  <p><strong>Categories:</strong> {product.categories.slice(0, 3).join(", ")}</p>
+                )}
+                {product.description && (
+                  <small>{product.description.substring(0, 100)}...</small>
+                )}
+              </>
+            }
+            publishStatus={{
+              text: product.enabled ? 'enabled' : 'disabled'
+            }}
+            publishedAt={new Date()}
+            contentType={`Product ${index + 1}`}
+            title={product.title}
+          />
+        ))}
+      </VerticalRhythm>
+    );
+  }
+
+  // Show the product selector when no products are selected
   return (
     <ProductSelector
       productList={productList || []}
@@ -157,6 +206,7 @@ const MultiProductDataEditorPage: React.FC = () => {
           } as any,
         }));
       } : undefined}
+      thumbnailImageAttribute={thumbnailImageAttribute}
     />
   );
 };
