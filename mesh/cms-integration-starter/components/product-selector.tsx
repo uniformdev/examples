@@ -186,7 +186,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
         {enableLocaleFilter && onLocaleChange && (
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Locale Filter
+              Filter by locale
             </label>
             <select
               value={selectedLocale}
@@ -222,7 +222,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
           <div className="mb-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Category Filter
+                Refine by category
               </label>
               <InputComboBox
                 placeholder="Select categories..."
@@ -239,7 +239,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
 
         {/* Object Search Container */}
         <ObjectSearchContainer
-          label="Select Products"
+          label="Search for products"
           searchFilters={
             <InputKeywordSearch
               onSearchTextChanged={handleSearchTextChanged}
