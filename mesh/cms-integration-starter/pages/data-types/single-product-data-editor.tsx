@@ -59,8 +59,11 @@ const SingleProductDataEditorPage: React.FC = () => {
 
   const custom = metadata.dataType as unknown as IntegrationTypeConfig;
   const searchCriteria = custom?.custom?.searchCriteria || "identifier";
+  const enableLocaleFilter = custom?.custom?.enableLocaleFilter || false;
+  const defaultLocale = custom?.custom?.defaultLocale || "en_US";
 
   const identifier = value?.identifier;
+  const selectedLocale = value?.locale || defaultLocale;
 
   const {
     value: productList = [],
@@ -68,33 +71,34 @@ const SingleProductDataEditorPage: React.FC = () => {
     error: productError,
   } = useAsync(async () => {
     try {
-      console.log("Attempting to fetch products from Akeneo PIM...");
-      console.log("Data source metadata:", metadata);
-      console.log("Data source custom config:", metadata?.dataSource?.custom);
-      console.log("Data source headers:", metadata?.dataSource?.headers);
-      console.log("Data source base URL:", metadata?.dataSource?.baseUrl);
-      
+      // Fetch the product list for selection UI
+      // The actual data consumption uses the configured path with variables
+      const params = [
+        { key: "limit", value: "100" },
+        { key: "page", value: "1" },
+      ];
+
+      // Add locale parameter if locale filtering is enabled
+      if (enableLocaleFilter && selectedLocale) {
+        params.push({ key: "locales", value: selectedLocale });
+      }
+
       const response = await getDataResource<AkeneoProductsResponse>({
         method: "GET",
         path: "/products",
-        parameters: [
-          { key: "limit", value: "100" },
-          { key: "page", value: "1" },
-        ],
+        parameters: params,
       });
 
       if (response?._embedded?.items) {
-        console.log(`Successfully fetched ${response._embedded.items.length} products`);
         return response._embedded.items.map(transformAkeneoProduct);
       }
       
       return [];
     } catch (error) {
       console.error("Error fetching products:", error);
-      console.error("Full error details:", JSON.stringify(error, null, 2));
       throw error;
     }
-  }, [metadata]);
+  }, [metadata, enableLocaleFilter, selectedLocale]);
 
   const selectedIds = identifier ? [identifier] : [];
 
@@ -111,15 +115,28 @@ const SingleProductDataEditorPage: React.FC = () => {
       productList={productList || []}
       selectedIds={selectedIds}
       onSelect={(selectedProduct) => {
+        const product = Array.isArray(selectedProduct) ? selectedProduct[0] : selectedProduct;
         setValue((current) => ({
           ...current,
           newValue: {
-            identifier: selectedProduct.identifier,
+            identifier: product.identifier,
+            ...(enableLocaleFilter && { locale: selectedLocale }),
           },
         }));
       }}
       multiSelect={false}
       searchCriteria={searchCriteria}
+      enableLocaleFilter={enableLocaleFilter}
+      selectedLocale={selectedLocale}
+      onLocaleChange={enableLocaleFilter ? (locale) => {
+        setValue((current) => ({
+          ...current,
+          newValue: {
+            ...current,
+            locale,
+          },
+        }));
+      } : undefined}
     />
   );
 };

@@ -12,6 +12,10 @@ interface ProductSelectorProps {
   onSearch?: (query: string) => void; // Callback for search query changes
   onPageChange?: (page: number) => void; // Callback for page changes
   currentPage?: number; // Current page number
+  enableLocaleFilter?: boolean; // Whether to show locale filter
+  selectedLocale?: string; // Currently selected locale
+  onLocaleChange?: (locale: string) => void; // Callback for locale changes
+  availableLocales?: string[]; // List of available locales
 }
 
 // ProductSelector component is used to select Products from a list of Products from Akeneo PIM.
@@ -29,6 +33,10 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
   onSearch,
   onPageChange,
   currentPage = 1,
+  enableLocaleFilter = false,
+  selectedLocale = "en_US",
+  onLocaleChange,
+  availableLocales = ["en_US", "fr_FR", "de_DE", "es_ES", "it_IT"],
 }) => {
   const [filteredProductList, setFilteredProductList] = useState<Product[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -107,12 +115,35 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
 
   return (
     <VerticalRhythm>
-      <Input
-        value={searchQuery}
-        onChange={(e) => handleSearch(e.target.value)}
-        placeholder={`Search by ${searchCriteria}...`}
-        label={`Search Products`}
-      />
+      <div className="flex gap-4">
+        <div className="flex-1">
+          <Input
+            value={searchQuery}
+            onChange={(e) => handleSearch(e.target.value)}
+            placeholder={`Search by ${searchCriteria}...`}
+            label={`Search Products`}
+          />
+        </div>
+        
+        {enableLocaleFilter && onLocaleChange && (
+          <div className="min-w-[200px]">
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Locale Filter
+            </label>
+            <select
+              value={selectedLocale}
+              onChange={(e) => onLocaleChange(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            >
+              {availableLocales.map((locale) => (
+                <option key={locale} value={locale}>
+                  {locale}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+      </div>
       
       {multiSelect && localSelectedIds.length > 0 && (
         <div className="flex items-center justify-between p-2 bg-blue-50 rounded">
@@ -121,8 +152,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
           </span>
           <Button
             onClick={clearSelection}
-            size="small"
-            variant="ghost"
+            variant="soft"
           >
             Clear Selection
           </Button>
@@ -240,7 +270,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
           <Button
             onClick={() => onPageChange(currentPage - 1)}
             disabled={currentPage <= 1}
-            variant="ghost"
+            variant="soft"
           >
             Previous
           </Button>
@@ -249,7 +279,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
           </span>
           <Button
             onClick={() => onPageChange(currentPage + 1)}
-            variant="ghost"
+            variant="soft"
           >
             Next
           </Button>

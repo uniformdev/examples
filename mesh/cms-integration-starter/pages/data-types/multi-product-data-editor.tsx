@@ -61,11 +61,14 @@ const MultiProductDataEditorPage: React.FC = () => {
   const searchCriteria = custom?.custom?.searchCriteria || "identifier";
   const enabledOnly = custom?.custom?.enabledOnly ?? true;
   const defaultLimit = custom?.custom?.limit || 100;
+  const enableLocaleFilter = custom?.custom?.enableLocaleFilter || false;
+  const defaultLocale = custom?.custom?.defaultLocale || "en_US";
 
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
 
-  const identifiers = value?.identifiers || [];
+  const identifiers = Array.isArray(value?.identifiers) ? value.identifiers : [];
+  const selectedLocale = value?.locale || defaultLocale;
 
   const {
     value: productList = [],
@@ -73,10 +76,6 @@ const MultiProductDataEditorPage: React.FC = () => {
     error: productError,
   } = useAsync(async () => {
     try {
-      console.log("Attempting to fetch products from Akeneo PIM (multi-select)...");
-      console.log("Data source metadata:", metadata);
-      console.log("Search criteria:", searchCriteria);
-      
       const params = [
         { key: "limit", value: defaultLimit.toString() },
         { key: "page", value: currentPage.toString() },
@@ -87,7 +86,10 @@ const MultiProductDataEditorPage: React.FC = () => {
         params.push({ key: "search", value: searchQuery });
       }
 
-      console.log("Request parameters:", params);
+      // Add locale parameter if locale filtering is enabled
+      if (enableLocaleFilter && selectedLocale) {
+        params.push({ key: "locales", value: selectedLocale });
+      }
 
       const response = await getDataResource<AkeneoProductsResponse>({
         method: "GET",
@@ -103,17 +105,15 @@ const MultiProductDataEditorPage: React.FC = () => {
           products = products.filter(product => product.enabled);
         }
         
-        console.log(`Successfully fetched ${products.length} products (after filtering)`);
         return products.map(transformAkeneoProduct);
       }
       
       return [];
     } catch (error) {
       console.error("Error fetching products:", error);
-      console.error("Full error details:", JSON.stringify(error, null, 2));
       throw error;
     }
-  }, [currentPage, searchQuery, enabledOnly, defaultLimit, metadata, searchCriteria]);
+  }, [currentPage, searchQuery, enabledOnly, defaultLimit, metadata, searchCriteria, enableLocaleFilter, selectedLocale]);
 
   if (loadingProducts) {
     return <LoadingOverlay isActive />;
@@ -135,8 +135,10 @@ const MultiProductDataEditorPage: React.FC = () => {
         setValue((current) => ({
           ...current,
           newValue: {
+            ...current,
             identifiers: selectedIdentifiers,
-          },
+            ...(enableLocaleFilter && { locale: selectedLocale }),
+          } as any,
         }));
       }}
       multiSelect={true}
@@ -144,6 +146,17 @@ const MultiProductDataEditorPage: React.FC = () => {
       onSearch={setSearchQuery}
       onPageChange={setCurrentPage}
       currentPage={currentPage}
+      enableLocaleFilter={enableLocaleFilter}
+      selectedLocale={selectedLocale}
+      onLocaleChange={enableLocaleFilter ? (locale) => {
+        setValue((current) => ({
+          ...current,
+          newValue: {
+            ...current,
+            locale,
+          } as any,
+        }));
+      } : undefined}
     />
   );
 };

@@ -57,7 +57,8 @@ After installing the integration:
 
 - Ideal for hero sections, featured products, or single product displays
 - Simple product selection interface
-- Configurable search criteria (identifier, family, enabled status, categories)
+- Configurable search criteria (identifier, family, enabled status)
+- Optional locale filtering with binding to `${locale}` token
 
 ### Multiple Products
 
@@ -67,6 +68,7 @@ After installing the integration:
 - Pagination support for large catalogs
 - Search functionality
 - Configurable result limits
+- Optional locale filtering with binding to `${locale}` token
 
 ---
 
@@ -136,6 +138,14 @@ This integration connects to the Akeneo PIM REST API using the following pattern
 - Supports query parameters for search, pagination, and filtering
 
 ### Data Transformation
+
+#### Response Reshaping
+The integration includes a custom edgehancer that automatically reshapes API responses:
+
+- **Single Product Requests**: Returns the product directly instead of the full Akeneo response structure
+- **Product List Requests**: Returns the full Akeneo response with pagination and metadata
+
+#### Product Data Format
 The integration transforms Akeneo's product data structure into a simplified format for easier use in Uniform:
 
 ```typescript
@@ -147,6 +157,34 @@ interface Product {
   enabled: boolean;
   categories: string[];
   imageUrl?: string;
+}
+```
+
+**Before (Raw Akeneo Response for Single Product):**
+```json
+{
+  "_links": {...},
+  "current_page": 1,
+  "_embedded": {
+    "items": [
+      {
+        "identifier": "1273192971",
+        "enabled": true,
+        "family": "rubber_boots",
+        ...
+      }
+    ]
+  }
+}
+```
+
+**After (Flattened Single Product):**
+```json
+{
+  "identifier": "1273192971",
+  "enabled": true,
+  "family": "rubber_boots",
+  ...
 }
 ```
 
@@ -171,8 +209,34 @@ Once configured, you can use Akeneo product data in your Uniform compositions:
 
 1. Add a data type using the Akeneo PIM integration
 2. Configure the connection and archetype
-3. In your composition, bind component parameters to the data type
-4. Authors can select products directly in the Uniform editor
+3. Optionally enable locale filtering and bind the locale variable to `${locale}` token
+4. In your composition, bind component parameters to the data type
+5. Authors can select products directly in the Uniform editor
+
+### Locale Integration
+
+The integration supports Uniform's localization features:
+
+- **Enable locale filtering** in the data type configuration
+- **Locale selector dropdown** appears in the product selector UI when enabled
+- **Bind the locale variable** to Uniform's `${locale}` token for automatic filtering
+- **Manual locale selection** available in the UI for testing and override
+- **Products are automatically filtered** by the selected locale
+- **Default locale fallback** ensures products are shown even without locale binding
+
+#### UI Features:
+- **Locale dropdown** in product selector (when enabled)
+- **Real-time filtering** as you change locale selection
+- **Available locales**: en_US, fr_FR, de_DE, es_ES, it_IT (configurable)
+- **Immediate product refresh** when locale changes
+
+Example:
+- Enable locale filtering in data type configuration
+- Set default locale to `en_US`
+- Bind locale variable to `${locale}` token
+- Authors see locale dropdown in product selector
+- Selecting `fr_FR` shows only French product data
+- French compositions automatically use French locale
 
 ---
 

@@ -6,16 +6,17 @@ import {
 import {
   VerticalRhythm,
   InputComboBox,
+  Input,
   Label,
   Caption,
 } from "@uniformdev/design-system";
-import { DEFAULT_CONTENT_TYPE } from "../../lib/constants";
-import { useAsync } from "react-use";
 
 export interface IntegrationTypeConfig {
   custom: {
     searchCriteria: string;
     limit: number;
+    enableLocaleFilter: boolean;
+    defaultLocale: string;
   };
 }
 
@@ -34,11 +35,18 @@ const DEFAULT_VALUE: DataTypeLocationValueExtended = {
       helpText: "The identifier of the product to fetch",
       default: "",
     },
+    locale: {
+      displayName: "Locale",
+      type: "string",
+      helpText: "The locale to filter products by (e.g., en_US, fr_FR)",
+      default: "en_US",
+    },
   },
   parameters: [
     {
       key: "search",
-      value: "identifier=${identifier}",
+      value: '{"identifier":[{"operator":"=","value":"${identifier}"}]}',
+      omitIfEmpty: true,
     },
     {
       key: "limit",
@@ -47,7 +55,8 @@ const DEFAULT_VALUE: DataTypeLocationValueExtended = {
   ],
   custom: {
     searchCriteria: "identifier",
-    limit: 1,
+    enableLocaleFilter: false,
+    defaultLocale: "en_US",
   },
 };
 
@@ -70,47 +79,69 @@ const SingleProductTypeEditorPage: React.FC = () => {
     }
   }, [value, setValue]);
 
-  const handleChange = (searchCriteria: string) => {
+  const handleChange = (updates: Partial<IntegrationTypeConfig['custom']>) => {
+    const currentCustom = value?.custom || {};
+    const newCustom = { ...currentCustom, ...updates };
+
     setValue(() => ({
       newValue: {
         ...value,
-        custom: {
-          searchCriteria,
-          limit: 1,
+        custom: newCustom,
+        path: "/products",
+        variables: {
+          identifier: {
+            displayName: "Product Identifier",
+            type: "string",
+            helpText: "The identifier of the product to fetch",
+            default: "",
+          },
+          locale: {
+            displayName: "Locale",
+            type: "string",
+            helpText: "The locale to filter products by (e.g., en_US, fr_FR). Can be bound to ${locale} token.",
+            default: newCustom.defaultLocale || "en_US",
+          },
         },
         parameters: [
           {
             key: "search",
-            value: `${searchCriteria}=\${identifier}`,
+            value: `{"${newCustom.searchCriteria || 'identifier'}":[{"operator":"=","value":"\${identifier}"}]}`,
+            omitIfEmpty: true,
           },
           {
             key: "limit",
             value: "1",
           },
+          ...(newCustom.enableLocaleFilter ? [{
+            key: "locales",
+            value: "${locale}",
+            omitIfEmpty: true,
+          }] : []),
         ],
       },
     }));
   };
 
   // Available search criteria for Akeneo products
+  // These are the most commonly used searchable fields in Akeneo PIM
   const searchOptions = [
-    { value: "identifier", label: "Identifier" },
-    { value: "family", label: "Family" },
+    { value: "identifier", label: "Product Identifier" },
+    { value: "family", label: "Product Family" },
     { value: "enabled", label: "Enabled Status" },
-    { value: "categories", label: "Categories" },
   ];
 
   const customSettings = value?.custom;
-  const searchCriteria =
-    (customSettings?.searchCriteria as string) || "identifier";
+  const searchCriteria = (customSettings?.searchCriteria as string) || "identifier";
+  const enableLocaleFilter = (customSettings?.enableLocaleFilter as boolean) || false;
+  const defaultLocale = (customSettings?.defaultLocale as string) || "en_US";
 
   return (
-    <VerticalRhythm style={{ minHeight: "300px" }}>
-      <Label>Search Criteria</Label>
+    <VerticalRhythm style={{ minHeight: "400px" }}>
+      <Label>Search Field</Label>
       <InputComboBox
         name="searchCriteria"
         id="searchCriteria"
-        onChange={(e) => handleChange(e.value)}
+        onChange={(e) => handleChange({ searchCriteria: e.value })}
         options={searchOptions}
         value={{
           value: searchCriteria,
@@ -118,9 +149,41 @@ const SingleProductTypeEditorPage: React.FC = () => {
         }}
       />
       <Caption>
-        The criteria to use when searching for products. This determines how 
-        the product identifier will be matched in Akeneo PIM.
+        The field to use for product search and filtering in the product selector.
       </Caption>
+
+      <Label>Locale Filtering</Label>
+      <div className="flex items-center space-x-2 mb-2">
+        <input
+          type="checkbox"
+          id="enableLocaleFilter"
+          checked={enableLocaleFilter}
+          onChange={(e) => handleChange({ enableLocaleFilter: e.target.checked })}
+          className="w-4 h-4"
+        />
+        <label htmlFor="enableLocaleFilter" className="text-sm">
+          Enable locale-based product filtering
+        </label>
+      </div>
+      <Caption>
+        When enabled, products will be filtered by locale. This adds a locale variable that can be bound to Uniform's ${`{locale}`} token.
+      </Caption>
+
+      {enableLocaleFilter && (
+        <>
+          <Label>Default Locale</Label>
+          <Input
+            id="defaultLocale"
+            name="defaultLocale"
+            value={defaultLocale}
+            onChange={(e) => handleChange({ defaultLocale: e.currentTarget.value })}
+            placeholder="en_US"
+          />
+          <Caption>
+            Default locale value (e.g., en_US, fr_FR, de_DE). This can be overridden by binding the locale variable to ${`{locale}`} token.
+          </Caption>
+        </>
+      )}
     </VerticalRhythm>
   );
 };

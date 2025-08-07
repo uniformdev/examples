@@ -11,13 +11,15 @@
     "test": "jest --passWithNoTests",
     "deploy": "echo 'empty deploy script'",
     "clean": "rimraf .next && rimraf out && rimraf .swc",
-    "edgehancer:build": "tsup --config edgehancer/tsup.config.ts"
+    "edgehancer:build": "cd edgehancer && npx tsup request.ts --format esm --target es2020 --minify --clean --outDir ../dist/edgehancer",
+    "edgehancer:deploy": "uniform integration definition edgehancer deploy --connectorType akeneo-pim-data-connection --archetype singleProduct --hook request ./dist/edgehancer/request.mjs",
+    "edgehancer:remove": "uniform integration definition edgehancer remove --connectorType akeneo-pim-data-connection --archetype singleProduct --hook request ./dist/edgehancer/request.mjs"
   },
   "dependencies": {
-    "@uniformdev/canvas": "20.6.1",
-    "@uniformdev/design-system": "20.6.1",
-    "@uniformdev/mesh-edgehancer-sdk": "20.6.1",
-    "@uniformdev/mesh-sdk-react": "20.6.1",
+    "@uniformdev/canvas": "^20.27.1",
+    "@uniformdev/design-system": "^20.27.1",
+    "@uniformdev/mesh-edgehancer-sdk": "^20.27.1",
+    "@uniformdev/mesh-sdk-react": "^20.27.1",
     "lodash": "^4.17.21",
     "next": "^15.4.6",
     "react": "19.0.0",
@@ -29,6 +31,7 @@
     "@types/node": "^22.10.0",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
+    "@uniformdev/cli": "^20.27.1",
     "autoprefixer": "^10.4.20",
     "npm-run-all": "4.1.5",
     "postcss": "^8.5.0",

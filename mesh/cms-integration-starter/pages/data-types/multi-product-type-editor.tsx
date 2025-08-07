@@ -16,6 +16,8 @@ export interface MultiProductTypeConfig {
     searchCriteria: string;
     limit: number;
     enabledOnly: boolean;
+    enableLocaleFilter: boolean;
+    defaultLocale: string;
   };
 }
 
@@ -46,6 +48,12 @@ const DEFAULT_VALUE: DataTypeLocationValueExtended = {
       helpText: "Search query to filter products",
       default: "",
     },
+    locale: {
+      displayName: "Locale",
+      type: "string",
+      helpText: "The locale to filter products by (e.g., en_US, fr_FR)",
+      default: "en_US",
+    },
   },
   parameters: [
     {
@@ -66,6 +74,8 @@ const DEFAULT_VALUE: DataTypeLocationValueExtended = {
     searchCriteria: "identifier",
     limit: 100,
     enabledOnly: true,
+    enableLocaleFilter: false,
+    defaultLocale: "en_US",
   },
 };
 
@@ -88,48 +98,60 @@ const MultiProductTypeEditorPage: React.FC = () => {
     }
   }, [value, setValue]);
 
-  const handleSearchCriteriaChange = (searchCriteria: string) => {
+  const handleChange = (updates: Partial<MultiProductTypeConfig['custom']>) => {
     const currentCustom = value?.custom || {};
-    setValue(() => ({
-      newValue: {
-        ...value,
-        custom: {
-          ...currentCustom,
-          searchCriteria,
-        },
-      },
-    }));
-  };
+    const newCustom = { ...currentCustom, ...updates };
 
-  const handleLimitChange = (limit: number) => {
-    const currentCustom = value?.custom || {};
     setValue(() => ({
       newValue: {
         ...value,
-        custom: {
-          ...currentCustom,
-          limit,
-        },
+        custom: newCustom,
         variables: {
-          ...value.variables,
+          page: {
+            displayName: "Page",
+            type: "number",
+            helpText: "Page number for pagination",
+            default: "1",
+          },
           limit: {
-            ...value.variables?.limit,
-            default: limit.toString(),
+            displayName: "Limit",
+            type: "number", 
+            helpText: "Number of products per page",
+            default: newCustom.limit?.toString() || "100",
+          },
+          search: {
+            displayName: "Search Query",
+            type: "string",
+            helpText: "Search query to filter products",
+            default: "",
+          },
+          locale: {
+            displayName: "Locale",
+            type: "string",
+            helpText: "The locale to filter products by (e.g., en_US, fr_FR). Can be bound to ${locale} token.",
+            default: newCustom.defaultLocale || "en_US",
           },
         },
-      },
-    }));
-  };
-
-  const handleEnabledOnlyChange = (enabledOnly: boolean) => {
-    const currentCustom = value?.custom || {};
-    setValue(() => ({
-      newValue: {
-        ...value,
-        custom: {
-          ...currentCustom,
-          enabledOnly,
-        },
+        parameters: [
+          {
+            key: "page",
+            value: "${page}",
+          },
+          {
+            key: "limit",
+            value: "${limit}",
+          },
+          {
+            key: "search",
+            value: "${search}",
+            omitIfEmpty: true,
+          },
+          ...(newCustom.enableLocaleFilter ? [{
+            key: "locales",
+            value: "${locale}",
+            omitIfEmpty: true,
+          }] : []),
+        ],
       },
     }));
   };
@@ -146,14 +168,16 @@ const MultiProductTypeEditorPage: React.FC = () => {
   const searchCriteria = (customSettings?.searchCriteria as string) || "identifier";
   const limit = (customSettings?.limit as number) || 100;
   const enabledOnly = (customSettings?.enabledOnly as boolean) ?? true;
+  const enableLocaleFilter = (customSettings?.enableLocaleFilter as boolean) || false;
+  const defaultLocale = (customSettings?.defaultLocale as string) || "en_US";
 
   return (
-    <VerticalRhythm style={{ minHeight: "400px" }}>
+    <VerticalRhythm style={{ minHeight: "500px" }}>
       <Label>Search Criteria</Label>
       <InputComboBox
         name="searchCriteria"
         id="searchCriteria"
-        onChange={(e) => handleSearchCriteriaChange(e.value)}
+        onChange={(e) => handleChange({ searchCriteria: e.value })}
         options={searchOptions}
         value={{
           value: searchCriteria,
@@ -170,7 +194,7 @@ const MultiProductTypeEditorPage: React.FC = () => {
         name="limit"
         type="number"
         value={limit.toString()}
-        onChange={(e) => handleLimitChange(parseInt(e.currentTarget.value) || 100)}
+        onChange={(e) => handleChange({ limit: parseInt(e.currentTarget.value) || 100 })}
         min="1"
         max="1000"
       />
@@ -179,21 +203,52 @@ const MultiProductTypeEditorPage: React.FC = () => {
       </Caption>
 
       <Label>Filter Settings</Label>
-      <div className="flex items-center space-x-2">
-        <input
-          type="checkbox"
-          id="enabledOnly"
-          checked={enabledOnly}
-          onChange={(e) => handleEnabledOnlyChange(e.target.checked)}
-          className="w-4 h-4"
-        />
-        <label htmlFor="enabledOnly" className="text-sm">
-          Show enabled products only
-        </label>
+      <div className="space-y-3">
+        <div className="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            id="enabledOnly"
+            checked={enabledOnly}
+            onChange={(e) => handleChange({ enabledOnly: e.target.checked })}
+            className="w-4 h-4"
+          />
+          <label htmlFor="enabledOnly" className="text-sm">
+            Show enabled products only
+          </label>
+        </div>
+        
+        <div className="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            id="enableLocaleFilter"
+            checked={enableLocaleFilter}
+            onChange={(e) => handleChange({ enableLocaleFilter: e.target.checked })}
+            className="w-4 h-4"
+          />
+          <label htmlFor="enableLocaleFilter" className="text-sm">
+            Enable locale-based product filtering
+          </label>
+        </div>
       </div>
       <Caption>
-        When enabled, only products marked as enabled in Akeneo will be shown.
+        Configure filtering options for product selection and data fetching.
       </Caption>
+
+      {enableLocaleFilter && (
+        <>
+          <Label>Default Locale</Label>
+          <Input
+            id="defaultLocale"
+            name="defaultLocale"
+            value={defaultLocale}
+            onChange={(e) => handleChange({ defaultLocale: e.currentTarget.value })}
+            placeholder="en_US"
+          />
+          <Caption>
+            Default locale value (e.g., en_US, fr_FR, de_DE). This can be overridden by binding the locale variable to ${`{locale}`} token.
+          </Caption>
+        </>
+      )}
     </VerticalRhythm>
   );
 };
