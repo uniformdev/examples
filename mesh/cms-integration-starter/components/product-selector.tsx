@@ -6,7 +6,7 @@ import {
   ObjectSearchListItem,
   InputKeywordSearch,
 } from "@uniformdev/mesh-sdk-react";
-import { Product } from "../types/product";
+import { Product, transformAkeneoProduct } from "../types/product";
 
 interface ProductSelectorProps {
   productList: Product[]; // List of Products to display
@@ -29,6 +29,11 @@ interface ProductSelectorProps {
   isLoadingMore?: boolean; // Whether currently loading more products
   searchQuery?: string; // Current search query value
   onCategoryChange?: (categories: string[]) => void; // Callback for category filter changes
+  // Server-side search props
+  enableServerSearch?: boolean; // Whether to use server-side search
+  getDataResource?: any; // The getDataResource function from useMeshLocation
+  baseUrl?: string; // Base URL for transformations
+  onServerSearchResults?: (results: Product[], hasMore: boolean) => void; // Callback for server search results
 }
 
 // ProductSelector component is used to select Products from a list of Products from Akeneo PIM.
@@ -58,10 +63,19 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
   isLoadingMore = false,
   searchQuery = "",
   onCategoryChange,
+  // Server-side search props
+  enableServerSearch = false,
+  getDataResource,
+  baseUrl,
+  onServerSearchResults,
 }) => {
   const [filteredProductList, setFilteredProductList] = useState<Product[]>([]);
   const [localSelectedIds, setLocalSelectedIds] = useState<string[]>(selectedIds);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [searchError, setSearchError] = useState<string | null>(null);
+  const [internalSearchQuery, setInternalSearchQuery] = useState<string>("");
+  const [searchDebounceTimer, setSearchDebounceTimer] = useState<NodeJS.Timeout | null>(null);
 
   // Use all categories from Akeneo API or extract from current products as fallback
   const availableCategories = useMemo(() => {
@@ -149,27 +163,171 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
     setFilteredProductList(results);
   };
 
-  const handleSearchTextChanged = (query: string) => {
+  const performServerSearch = async (query: string, categories: string[] = selectedCategories) => {
+    console.log('🔍 Server search debug:', {
+      enableServerSearch,
+      hasGetDataResource: !!getDataResource,
+      hasBaseUrl: !!baseUrl,
+      query,
+      categories
+    });
+    
+    if (!enableServerSearch || !getDataResource) {
+      console.log('❌ Server search disabled or missing getDataResource:', {
+        enableServerSearch,
+        hasGetDataResource: !!getDataResource
+      });
+      return false; // Fall back to client-side search
+    }
+
+    try {
+      setIsSearching(true);
+      setSearchError(null);
+
+      // Build search parameters using Akeneo API search format
+      const params = [
+        { key: "limit", value: "20" },
+        { key: "page", value: "1" },
+      ];
+
+      // Build search criteria
+      const searchCriteriaObj: any = {};
+      
+      if (query?.trim()) {
+        const searchTerm = query.trim();
+        console.log('🔍 Building search criteria for description/name:', { searchTerm });
+        
+        // Use description and name fields with text search operators
+        // These fields support STARTS_WITH and CONTAINS operators properly
+        const searchFields: any = {};
+        
+        // Search in description field with CONTAINS for broader matching
+        searchFields.description = [{
+          operator: "CONTAINS",
+          value: searchTerm,
+          scope: "ecommerce" // Use ecommerce scope as default
+        }];
+       
+        Object.assign(searchCriteriaObj, searchFields);
+        console.log('🔍 Using description/name search with multiple fields:', searchFields);
+      }
+      
+      if (categories.length > 0) {
+        searchCriteriaObj.categories = [{ operator: "IN", value: categories }];
+      }
+      
+      // Add search criteria if any exist
+      if (Object.keys(searchCriteriaObj).length > 0) {
+        params.push({ 
+          key: "search", 
+          value: JSON.stringify(searchCriteriaObj)
+        });
+      }
+
+      // Add locale parameter using search_locale format for better search support
+      if (enableLocaleFilter && selectedLocale) {
+        params.push({ key: "search_locale", value: selectedLocale });
+      }
+
+      console.log('🔍 Calling getDataResource with params:', params);
+
+      const response = await getDataResource({
+        method: "GET",
+        path: "/products",
+        parameters: params,
+      });
+
+      console.log('🔍 Server search response:', response);
+      
+      if (response?._embedded?.items) {
+        // Transform the results using the proper transformation function
+        const transformedProducts = response._embedded.items.map((item: any) =>
+          transformAkeneoProduct(
+            item,
+            enableLocaleFilter ? selectedLocale : null,
+            baseUrl || '',
+            thumbnailImageAttribute
+          )
+        );
+
+        console.log('🔍 Transformed products:', transformedProducts.length);
+
+        setFilteredProductList(transformedProducts);
+
+        if (onServerSearchResults) {
+          onServerSearchResults(transformedProducts, response._embedded.items.length >= 20);
+        }
+
+        return true;
+      }
+
+      setFilteredProductList([]);
+      return true;
+    } catch (error) {
+      console.error('Server search error:', error);
+      setSearchError(error instanceof Error ? error.message : 'Search failed');
+      return false; // Fall back to client-side search
+    } finally {
+      setIsSearching(false);
+    }
+  };
+
+    const performDebouncedSearch = async (query: string) => {
+    // For text-based search, always try server-side first if enabled
+    // Description/name fields support proper text search operators
+    if (enableServerSearch && query.trim().length > 0) {
+      const serverSearchSuccessful = await performServerSearch(query, selectedCategories);
+      if (serverSearchSuccessful) {
+        return; // Server search handled it
+      }
+    }
+
+    // Fall back to original logic
     if (onSearch) {
-      onSearch(query); // Use server-side search
+      onSearch(query); // Use existing callback-based search
     } else {
       // Fallback to client-side filtering if no onSearch provided
       applyFilters(query, selectedCategories);
     }
   };
 
-  const handleCategoryChange = (newValue: readonly { value: string; label: string }[] | null, actionMeta?: any) => {
+  const handleSearchTextChanged = (query: string) => {
+    // Update internal search state immediately for UI responsiveness
+    setInternalSearchQuery(query);
+    
+    // Clear existing timer
+    if (searchDebounceTimer) {
+      clearTimeout(searchDebounceTimer);
+    }
+    
+    // Set up debounced search (wait 300ms after user stops typing)
+    const timer = setTimeout(() => {
+      performDebouncedSearch(query);
+    }, 500);
+    
+    setSearchDebounceTimer(timer);
+  };
+
+  const handleCategoryChange = async (newValue: readonly { value: string; label: string }[] | null, actionMeta?: any) => {
     const selectedOptions = newValue ? Array.from(newValue) : [];
     // Extract category values from the selected options
     const categories = selectedOptions.map(option => option.value);
     setSelectedCategories(categories);
-    
+
+    // Try server-side search first if enabled
+    if (enableServerSearch && internalSearchQuery) {
+      const serverSearchSuccessful = await performServerSearch(internalSearchQuery, categories);
+      if (serverSearchSuccessful) {
+        return; // Server search handled it
+      }
+    }
+
     // Notify parent component if callback is provided (for server-side filtering)
     if (onCategoryChange) {
       onCategoryChange(categories);
     } else {
       // Fallback to local filtering if no callback provided
-      applyFilters(searchQuery, categories);
+      applyFilters(internalSearchQuery, categories);
     }
   };
 
@@ -195,11 +353,28 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
 
   const clearSelection = () => {
     setLocalSelectedIds([]);
+    setInternalSearchQuery(""); // Clear internal search query
+    
+    // Clear any pending search timer
+    if (searchDebounceTimer) {
+      clearTimeout(searchDebounceTimer);
+      setSearchDebounceTimer(null);
+    }
+    
     if (onSearch) {
       onSearch(""); // Clear server-side search
     }
     onSelect(multiSelect ? [] : {} as Product);
   };
+
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (searchDebounceTimer) {
+        clearTimeout(searchDebounceTimer);
+      }
+    };
+  }, [searchDebounceTimer]);
 
   return (
     <ObjectSearchProvider>
@@ -259,15 +434,34 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({
           </div>
         )}
 
+        {/* Search Error Display */}
+        {searchError && (
+          <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-md">
+            <div className="text-red-700 text-sm">
+              <strong>Search Error:</strong> {searchError}
+            </div>
+            <div className="text-red-600 text-xs mt-1">
+              Falling back to local search...
+            </div>
+          </div>
+        )}
+
         {/* Object Search Container */}
         <ObjectSearchContainer
-          label="Search for products"
+          label={`Search for products`}
           searchFilters={
-            <InputKeywordSearch
-              onSearchTextChanged={handleSearchTextChanged}
-              placeholder={`Search by ${searchCriteria}...`}
-              value={searchQuery}
-            />
+            <div className="relative">
+              <InputKeywordSearch
+                onSearchTextChanged={handleSearchTextChanged}
+                placeholder="Search products by name or description..."
+                disabled={isSearching}
+              />
+              {isSearching && (
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
+                  <div className="animate-spin h-4 w-4 border-2 border-blue-500 border-t-transparent rounded-full"></div>
+                </div>
+              )}
+            </div>
           }
           resultList={
             filteredProductList.length > 0 ? (

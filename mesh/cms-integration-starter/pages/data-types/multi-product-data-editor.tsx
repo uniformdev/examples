@@ -69,7 +69,7 @@ const MultiProductDataEditorPage: React.FC = () => {
     }
   }, [metadata]);
 
-  // Memoize the base URL to prevent metadata from causing re-renders
+  // Memoize the base URL for transformations
   const baseUrl = React.useMemo(() => {
     return (metadata?.dataSource?.baseUrl || metadata?.dataSource?.customPublic?.apiUrl) as string | undefined;
   }, [metadata?.dataSource?.baseUrl, metadata?.dataSource?.customPublic?.apiUrl]);
@@ -88,21 +88,26 @@ const MultiProductDataEditorPage: React.FC = () => {
       }
 
       // Build search criteria combining text search and category filters
-      const searchCriteria: any = {};
+      const searchCriteriaObj: any = {};
       
       if (searchQuery.trim()) {
-        searchCriteria.identifier = [{ operator: "CONTAINS", value: searchQuery.trim() }];
+        if (searchCriteria === 'identifier') {
+          searchCriteriaObj.identifier = [{ operator: "CONTAINS", value: searchQuery.trim() }];
+        } else {
+          // Search in name/title fields for better text search
+          searchCriteriaObj.name = [{ operator: "CONTAINS", value: searchQuery.trim() }];
+        }
       }
       
       if (selectedCategories.length > 0) {
-        searchCriteria.categories = [{ operator: "IN", value: selectedCategories }];
+        searchCriteriaObj.categories = [{ operator: "IN", value: selectedCategories }];
       }
       
       // Add combined search parameter if any criteria exist
-      if (Object.keys(searchCriteria).length > 0) {
+      if (Object.keys(searchCriteriaObj).length > 0) {
         params.push({ 
           key: "search", 
-          value: JSON.stringify(searchCriteria)
+          value: JSON.stringify(searchCriteriaObj)
         });
       }
 
@@ -301,6 +306,15 @@ const MultiProductDataEditorPage: React.FC = () => {
       hasMoreProducts={hasMoreProducts}
       isLoadingMore={loadingProducts}
       searchQuery={searchQuery}
+      // Server-side search functionality
+      enableServerSearch={true}
+      getDataResource={getDataResource}
+      baseUrl={baseUrl}
+      onServerSearchResults={(results, hasMore) => {
+        setLoadedProducts(results);
+        setHasMoreProducts(hasMore);
+        setCurrentPage(1); // Reset pagination for server search
+      }}
     />
   );
 };

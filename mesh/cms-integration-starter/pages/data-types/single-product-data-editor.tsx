@@ -2,7 +2,6 @@ import React from "react";
 import { useMeshLocation, LoadingOverlay, ObjectSearchResultItem } from "@uniformdev/mesh-sdk-react";
 import { ProductSelector } from "../../components/product-selector";
 import { useAsync } from "react-use";
-import { ErrorCallout } from "../../components/error-callout";
 import { IntegrationTypeConfig } from "./single-product-type-editor";
 import { AkeneoProductsResponse, transformAkeneoProduct } from "../../types/product";
 
@@ -60,7 +59,7 @@ const SingleProductDataEditorPage: React.FC = () => {
     }
   }, [metadata]);
 
-  // Memoize the base URL to prevent metadata from causing re-renders
+  // Memoize the base URL for transformations
   const baseUrl = React.useMemo(() => {
     return (metadata?.dataSource?.baseUrl || metadata?.dataSource?.customPublic?.apiUrl) as string | undefined;
   }, [metadata?.dataSource?.baseUrl, metadata?.dataSource?.customPublic?.apiUrl]);
@@ -185,7 +184,7 @@ const SingleProductDataEditorPage: React.FC = () => {
     );
   }
 
-  // Show the product selector when no product is selected
+      // Show the product selector when no product is selected
   return (
     <ProductSelector
       productList={productList || []}
@@ -218,6 +217,14 @@ const SingleProductDataEditorPage: React.FC = () => {
       allCategories={categories}
       onCategoryChange={(categories) => {
         setSelectedCategories(categories);
+      }}
+      // Server-side search functionality
+      enableServerSearch={true}
+      getDataResource={getDataResource}
+      baseUrl={baseUrl}
+      onServerSearchResults={(results, hasMore) => {
+        setLoadedProducts(results);
+        // Note: You might want to handle pagination state here if needed
       }}
     />
   );
