@@ -16,9 +16,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc-client-v2": "20.7.1-alpha.64",
-    "@uniformdev/canvas-next-rsc-shared-v2": "20.7.1-alpha.64",
-    "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.64",
+    "@uniformdev/canvas-next-rsc-client-v2": "20.7.1-alpha.73",
+    "@uniformdev/canvas-next-rsc-shared-v2": "20.7.1-alpha.73",
+    "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.73",
     "next": "canary",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
