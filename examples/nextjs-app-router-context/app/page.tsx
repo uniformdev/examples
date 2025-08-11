@@ -1,10 +1,25 @@
-import { HeroVariant } from "@/components/Hero";
+import { HeroTest } from "@/components/HeroTest";
 import { PersonalizedHero } from "@/components/PersonalizedHero";
 
-const fetchHeroData = async (): Promise<HeroVariant[]> => {
-  const variations: HeroVariant[] = [
+// This is a mock function to fetch the hero data from the Uniform API
+const fetchContentWithTest = async (): Promise<any> => {
+  return Promise.resolve([
     {
-      id: "variant-1",
+      id: "variant-a",
+      title: "Variant A",
+    },
+    {
+      id: "variant-b",
+      title: "Variant B",
+    }
+  ]);
+};
+
+// This is a mock function to fetch the hero data from the Uniform API
+const fetchPersonalizedContent = async (): Promise<any> => {
+  return Promise.resolve([
+    {
+      id: "developers-variant",
       title: "Personalized for Developers!",
       pz: {
         crit: [
@@ -17,20 +32,35 @@ const fetchHeroData = async (): Promise<HeroVariant[]> => {
       },
     },
     {
+      id: "registrationComplete-variant",
+      title: "Registration Complete!",
+      pz: {
+        crit: [
+          {
+            l: "registrationComplete",
+            op: ">=",
+            r: 50,
+          },
+        ],
+      },
+    },
+    {
       id: "variant-default",
-      title: "Default Title",
+      title: "Default Content for everyone!",
       pz: undefined,
     },
-  ];
-
-  return Promise.resolve(variations);
+  ]);
 };
 
+
 export default async function Home() {
-  const heroData = await fetchHeroData();
+  const content = await fetchContentWithTest();
+  const personalizedContent = await fetchPersonalizedContent();
   return (
     <div>
-      <PersonalizedHero variations={heroData} />
+      <HeroTest content={content} />
+      <hr />
+      <PersonalizedHero content={personalizedContent} />
     </div>
   );
 }

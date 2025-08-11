@@ -1,9 +1,3 @@
-import { PersonalizedVariant } from "@uniformdev/context";
-
-export type HeroVariant = PersonalizedVariant & {
-  title: string;
-};
-
-export const Hero = ({ title }: HeroVariant) => {
+export const Hero = ({ title }: { title: string }) => {
   return <h1>{title}</h1>;
 };

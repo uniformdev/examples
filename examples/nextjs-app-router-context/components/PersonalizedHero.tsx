@@ -1,16 +1,13 @@
 "use client";
 
+import { PersonalizedVariant } from "@uniformdev/context";
 import { UniformPersonalize } from "@/uniform/UniformPersonalize";
-import { Hero, HeroVariant } from "./Hero";
+import { Hero } from "./Hero";
 
-export const PersonalizedHero = ({
-  variations,
-}: {
-  variations: HeroVariant[];
-}) => {
+export const PersonalizedHero = ({ content }: { content: PersonalizedVariant[] }) => {
   return (
     <UniformPersonalize
-      variations={variations}
+      variations={content}
       name="heroPersonalized"
       component={Hero}
     />
