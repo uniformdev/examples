@@ -7,10 +7,12 @@ const fetchContentWithTest = async (): Promise<any> => {
     {
       id: "variant-a",
       title: "Variant A",
+      distribution: 30,
     },
     {
       id: "variant-b",
       title: "Variant B",
+      distribution: 70,
     }
   ]);
 };
@@ -51,7 +53,6 @@ const fetchPersonalizedContent = async (): Promise<any> => {
     },
   ]);
 };
-
 
 export default async function Home() {
   const content = await fetchContentWithTest();
