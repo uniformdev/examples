@@ -23,7 +23,7 @@
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "contentful": "^9.1.32",
-    "next": "^12.1.6",
+    "next": "^14.2.32",
     "nookies": "^2.5.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
