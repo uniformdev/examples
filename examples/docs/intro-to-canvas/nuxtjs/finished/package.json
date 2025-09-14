@@ -26,6 +26,6 @@
     "@uniformdev/canvas-vue": "^18.34.0",
     "@uniformdev/context": "^18.34.0",
     "@uniformdev/context-vue": "^18.34.0",
-    "@uniformdev/uniform-nuxt": "^18.34.0"
+    "@uniformdev/uniform-nuxt": "^20.13.0"
   }
 }
