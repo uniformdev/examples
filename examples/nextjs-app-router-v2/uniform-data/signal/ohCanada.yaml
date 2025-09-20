@@ -1,0 +1,16 @@
+id: ohCanada
+name: Oh Canada
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: country
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: Canada
+dur: s
+description: ''
+str: 100

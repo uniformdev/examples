@@ -1,0 +1,17 @@
+id: name
+displayName: Name
+ttl: 30
+path: /staticdata
+custom:
+  json:
+    name: Alex
+  proposedName: Alex
+method: GET
+purgeKey: 4553575c-57fc-48ca-b29a-22d7cc3a6151
+archetype: staticData
+variables:
+  json:
+    type: text
+    default: ''
+dataSourceId: jsonData
+allowedOnComponents: []
