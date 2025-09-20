@@ -1,0 +1,151 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 2e949634-6676-42d3-a5df-d031f7f68ddf
+        type: $personalization
+        slots:
+          pz:
+            - _id: 29c61d5a-02bf-4cc4-a28b-c232c0506bb4
+              type: hero
+              variant: ''
+              parameters:
+                title:
+                  type: text
+                  value: Early Bird Registration 🐦
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: earlyBird
+                        op: +
+                    name: early-bird
+            - _id: e9e6c97e-6a46-4f92-a375-6def7268354c
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: 🇨🇦 Canada 🫎
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: country
+                        r: Canada
+                        t: q
+                        op: '='
+                    name: canada
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: Oh, Canada!
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+            - _id: 86a22bfd-582b-49a9-a6b8-c7264da72ce3
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Welcome!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: hero-86a2
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'This is default content shown to every visitor. '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'Trigger campaign-based personalization '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=early-bird
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: now
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: '!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home-Hero
+  _dataResources: {}
+created: '2025-03-13T17:06:14.13542+00:00'
+modified: '2025-07-25T21:02:52.807812+00:00'
+pattern: false

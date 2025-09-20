@@ -1,0 +1,92 @@
+composition:
+  _name: About
+  _id: fa8f8cfb-6f1c-4730-ad93-f0c24060ac16
+  _slug: about
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: About Us
+  slots:
+    content:
+      - _id: 0fe8e308-e491-4130-b16f-bf59758ca7e5
+        type: $test
+        slots:
+          test:
+            - _id: 50275471-3ae9-485d-8fe9-392b71393efc
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Variant B
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    id: test
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: another exciting message
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+            - _id: 34b9d4ab-be0e-4a43-9ac5-10aa9cb61d67
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Variant A
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    id: control
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: some exciting message
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+        parameters:
+          test:
+            type: testSelect
+            value: homeHeroTest
+created: '2025-03-13T18:49:37.076871+00:00'
+modified: '2025-03-13T18:58:32.199305+00:00'
+pattern: false

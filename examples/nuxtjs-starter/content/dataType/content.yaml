@@ -1,0 +1,17 @@
+id: content
+displayName: content
+ttl: 30
+path: /staticdata
+custom:
+  json:
+    hello: world
+  proposedName: JSON Data
+method: GET
+purgeKey: b484c08e-085a-4c0a-9cf1-c86e14aec2fd
+archetype: staticData
+variables:
+  json:
+    type: text
+    default: ''
+dataSourceId: jsonData
+allowedOnComponents: []

@@ -4,30 +4,34 @@
   "private": true,
   "engines": {
     "yarn": "please-use-pnpm",
-    "pnpm": "9.15.0",
+    "pnpm": ">=10.17.0",
     "node": ">=20",
     "npm": "please-use-pnpm"
   },
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@10.17.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push",
+    "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc-client-v2": "20.7.1-alpha.73",
-    "@uniformdev/canvas-next-rsc-shared-v2": "20.7.1-alpha.73",
-    "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.73",
-    "next": "canary",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@uniformdev/canvas-next-rsc-client-v2": "20.7.1-alpha.81",
+    "@uniformdev/canvas-next-rsc-shared-v2": "20.7.1-alpha.81",
+    "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.81",
+    "next": "15.5.3",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@uniformdev/cli": "20.7.1-alpha.81",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
