@@ -6,7 +6,7 @@ import {
 } from "@uniformdev/canvas-next-rsc-v2";
 import { notFound } from "next/navigation";
 
-import { resolveComponent } from "../../../components/resolveComponent";
+import { resolveComponent } from "@/components/resolveComponent";
 
 // enables ISR
 export const generateStaticParams = async () => {
