@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 
 import {
@@ -9,7 +11,7 @@ import {
 import { VerticalRhythm } from "@uniformdev/design-system";
 
 
-import { IntegrationSettings } from "../lib";
+import { IntegrationSettings } from "../../lib";
 
 export default function Settings() {
   const { value, setValue } = useMeshLocation<
