@@ -1,14 +1,15 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: page
 name: Page
-permissions: []
 icon: file-document
 parameters:
   - id: metaTitle
     name: Meta Title
     type: text
-    helpText: ''
     typeConfig:
-      required: true
+      required: false
+    localizable: true
 useTeamPermissions: true
 slots:
   - id: content
@@ -24,7 +25,6 @@ slugSettings:
   required: 'yes'
   regularExpression: ''
   regularExpressionMessage: ''
-titleParameter: ''
 canBeComposition: true
-created: '2022-07-28T02:12:08.542362+00:00'
-updated: '2022-07-28T03:55:11.629983+00:00'
+created: '2025-09-18T20:19:02.373833+00:00'
+updated: '2025-09-18T20:20:57.67993+00:00'
