@@ -8,8 +8,8 @@ import {
 import {
   ContextPlugin,
   enableContextDevTools,
-  enableUniformInsights,
 } from "@uniformdev/context";
+import { enableUniformInsights } from "@uniformdev/insights";
 // TODO: npm install @uniformdev/context-gtag if you need to enable GA4 plugin
 // import { enableGoogleGtagAnalytics } from "@uniformdev/context-gtag";
 import { useRouter } from "next/navigation";
@@ -32,15 +32,16 @@ export const UniformClientContext: ClientContextComponent = ({
     );
 
     // TODO: Uncomment this to enable Uniform Insights plugin
-    // plugins.push(
-    //   // running against a local endpoint, will use edge middleware to rewrite to the actual endpoint
-    //   enableUniformInsights({
-    //     endpoint: {
-    //       type: "proxy",
-    //       path: "/api/analytics",
-    //     },
-    //   })
-    // );
+    plugins.push(
+      // running against a local endpoint, will use edge middleware to rewrite to the actual endpoint
+      enableUniformInsights({
+        endpoint: {
+          type: "proxy",
+          path: "/api/analytics",
+          projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID!,
+        },
+      })
+    );
 
     // TODO: Uncomment this to enable Google Analytics 4 plugin (after installing npm install @uniformdev/context-gtag)
     // plugins.push(enableGoogleGtagAnalytics());
