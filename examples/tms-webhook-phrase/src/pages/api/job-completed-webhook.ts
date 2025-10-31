@@ -158,14 +158,19 @@ const shouldProcessJob = (job: PhraseWebhookPayload['jobParts'][number]): boolea
 
   const phraseProjectUid = job.project.uid;
 
-  if (!process.env.PHRASE_PROJECT_UID || phraseProjectUid !== process.env.PHRASE_PROJECT_UID) {
+  const allowedProjects: string[] = 
+    process.env.PHRASE_PROJECT_UID 
+      ? process.env.PHRASE_PROJECT_UID.split(',').filter((x) => !!x)
+      : [];
+
+  if (!process.env.PHRASE_PROJECT_UID || !allowedProjects.includes(phraseProjectUid)) {
     if (!process.env.PHRASE_PROJECT_UID) {
       // eslint-disable-next-line no-console
       console.log(`skip: missing 'PHRASE_PROJECT_UID' env`);
     } else {
       // eslint-disable-next-line no-console
       console.log(
-        `skip: Phrase project id mismatch (expected: ${process.env.PHRASE_PROJECT_UID}, current: ${phraseProjectUid})`
+        `skip: Phrase project id mismatch (allowed: ${process.env.PHRASE_PROJECT_UID}, current: ${phraseProjectUid})`
       );
     }
 
