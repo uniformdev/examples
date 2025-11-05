@@ -1,0 +1,35 @@
+{
+  "name": "uniform-sdk-v2-codemods",
+  "version": "1.0.0",
+  "description": "Codemods for migrating to Uniform SDK v2",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "init": "ts-node init.ts",
+    "migrate": "ts-node migrate.ts",
+    "migrate:backup": "ts-node transforms/0-backup-files.ts",
+    "migrate:create-utils": "ts-node transforms/1-create-new-files.ts",
+    "migrate:packages": "ts-node transforms/2-update-packages.ts",
+    "migrate:imports": "jscodeshift -t transforms/3-update-imports.ts ../ --extensions=ts,tsx,js,jsx --parser=tsx",
+    "migrate:types": "jscodeshift -t transforms/4-update-types.ts ../ --extensions=ts,tsx,js,jsx --parser=tsx",
+    "migrate:signatures": "jscodeshift -t transforms/5-update-component-signatures.ts ../ --extensions=tsx,jsx --parser=tsx",
+    "migrate:uniform-components": "jscodeshift -t transforms/6-update-uniform-components.ts ../ --extensions=tsx,jsx --parser=tsx",
+    "migrate:data-access": "jscodeshift -t transforms/7-update-data-access.ts ../ --extensions=ts,tsx,js,jsx --parser=tsx",
+    "test": "jest",
+    "dry-run": "ts-node migrate.ts --dry-run"
+  },
+  "devDependencies": {
+    "jscodeshift": "^0.15.1",
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "@babel/types": "^7.23.0",
+    "@types/jscodeshift": "^0.11.10",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

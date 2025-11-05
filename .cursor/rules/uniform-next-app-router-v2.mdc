@@ -1,0 +1,612 @@
+---
+description: Rules for Uniform SDK V2 for Next.js App Router
+globs:
+alwaysApply: true
+---
+
+# Uniform React Next App Router V2 Developer Reference
+
+This document details how to use Uniform V2 SDK with React.js and Next.js App Router.
+
+@uniform.mdc describes general Uniform principles and practices.
+@uniform-sdk.mdc describes framework-agnostic developer principles.
+
+## Key Differences from V1
+
+Uniform SDK V2 introduces significant architectural changes:
+
+1. **Code-based routing** instead of path-based routing
+2. **New middleware architecture** for edge personalization
+3. **Enhanced parameter handling** with typed `ComponentParameter<T>`
+4. **Improved client context access** with `useUniformContext()` hook
+5. **Simplified UniformContext** as self-closing component
+
+### Required npm packages
+
+The following npm packages must be installed to wire Uniform V2 to Next App Router:
+
+```json
+{
+  "@uniformdev/canvas-next-rsc-v2": "^20.7.1",
+  "@uniformdev/canvas-next-rsc-client-v2": "^20.7.1",
+  "@uniformdev/canvas-next-rsc-shared-v2": "^20.7.1"
+}
+```
+
+These replace the V1 packages:
+- ❌ `@uniformdev/canvas-next-rsc` (V1)
+- ✅ `@uniformdev/canvas-next-rsc-v2` (V2)
+
+### Uniform server config
+
+A file named `uniform.server.config.ts` should exist in the root of the Next.js project with the following content:
+
+```ts
+import { UniformServerConfig } from "@uniformdev/canvas-next-rsc-v2/config";
+
+const config: UniformServerConfig = {
+  defaultConsent: true,
+  experimental: {
+    quirkSerialization: true,
+    middlewareRuntimeCache: true,
+  },
+  playgroundPath: "/playground",
+};
+
+export default config;
+```
+
+**Key V2 Changes:**
+- TypeScript file (.ts) instead of JavaScript (.js)
+- Uses ES6 export syntax instead of `module.exports`
+- `playgroundPath` moved to root config (not in preview handler)
+- New `middlewareRuntimeCache` experimental flag
+- No `evaluation.personalization` configuration (handled by middleware)
+
+### Enable Uniform server config
+
+To make the configuration available in Next.js, modify the `next.config.ts` file in the root of the project:
+
+```ts
+import { withUniformConfig } from "@uniformdev/canvas-next-rsc-v2/config";
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // your Next.js config options
+};
+
+export default withUniformConfig(nextConfig);
+```
+
+**Important:** Import from `@uniformdev/canvas-next-rsc-v2/config` (V2), not V1 package.
+
+### Middleware for Edge Personalization
+
+V2 requires middleware configuration in a file named `proxy.ts` (or `middleware.ts`) in the root directory:
+
+```ts
+import { uniformMiddleware } from "@uniformdev/canvas-next-rsc-v2/middleware";
+
+export default uniformMiddleware();
+```
+
+This middleware enables:
+- Edge-side personalization
+- Quirk management
+- Runtime caching for improved performance
+
+### Routing Architecture Changes
+
+**V2 uses code-based routing** instead of path-based routing:
+
+#### Main composition route: `app/uniform/[code]/page.tsx`
+
+```tsx
+import {
+  resolveRouteFromCode,
+  UniformComposition,
+  UniformPageParameters,
+  createUniformStaticParams,
+} from "@uniformdev/canvas-next-rsc-v2";
+import { notFound } from "next/navigation";
+import { resolveComponent } from "@/components/resolveComponent";
+
+// Enable ISR (Incremental Static Regeneration)
+export const generateStaticParams = async () => {
+  return createUniformStaticParams({
+    paths: ["/"],
+  });
+};
+
+export default async function UniformPage(props: UniformPageParameters) {
+  const result = await resolveRouteFromCode(props);
+
+  if (!result.route) {
+    notFound();
+  }
+
+  return <UniformComposition {...result} resolveComponent={resolveComponent} />;
+}
+```
+
+**Key V2 Differences:**
+- ✅ `resolveRouteFromCode(props)` - V2 function for code-based routing
+- ❌ `retrieveRoute(props)` - V1 function (deprecated)
+- ✅ `<UniformComposition {...result} />` - spreads entire result object
+- ❌ `<UniformComposition {...props} route={route} mode="server" />` - V1 approach
+- ✅ `createUniformStaticParams()` - V2 helper for ISR
+- Route path: `app/uniform/[code]/page.tsx` instead of `app/[[...path]]/page.tsx`
+
+#### Playground route: `app/playground/[code]/page.tsx`
+
+```tsx
+import {
+  resolvePlaygroundRoute,
+  UniformPageParameters,
+  UniformPlayground,
+} from "@uniformdev/canvas-next-rsc-v2";
+import { resolveComponent } from "@/components/resolveComponent";
+
+export default async function PlaygroundPage(props: UniformPageParameters) {
+  const result = await resolvePlaygroundRoute(props);
+  return (
+    <UniformPlayground route={result} resolveComponent={resolveComponent} />
+  );
+}
+```
+
+**Key V2 Changes:**
+- Uses `resolvePlaygroundRoute()` instead of special playground page structure
+- Route includes `[code]` dynamic parameter
+- Simplified API compared to V1
+
+### Wrapping page in Uniform Context
+
+In `app/layout.tsx`, wrap the page content with UniformContext. **V2 uses a self-closing component wrapped in Suspense:**
+
+```tsx
+import { UniformContext } from "@uniformdev/canvas-next-rsc-v2";
+import { Suspense } from "react";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+
+        <Suspense>
+          <UniformContext />
+        </Suspense>
+      </body>
+    </html>
+  );
+}
+```
+
+**Critical V2 Change:**
+- ✅ `<UniformContext />` - Self-closing, placed OUTSIDE children, wrapped in Suspense
+- ❌ `<UniformContext>{children}</UniformContext>` - V1 approach (deprecated)
+
+The self-closing component approach enables better streaming and edge rendering capabilities.
+
+### Rendering Uniform Components using React Components
+
+Create a `resolveComponent` function to map Uniform component types to React components. Typically stored in `components/resolveComponent.ts`:
+
+```tsx
+import {
+  ResolveComponentFunction,
+  type ResolveComponentResult,
+} from '@uniformdev/canvas-next-rsc-v2';
+
+import { DefaultNotFoundComponent } from './default';
+import { HeroComponent } from './hero';
+import { PageComponent } from './page';
+
+export const resolveComponent: ResolveComponentFunction = ({ component }) => {
+  let result: ResolveComponentResult | undefined;
+
+  if (component.type === 'page') {
+    result = {
+      component: PageComponent,
+    };
+  } else if (component.type === 'hero') {
+    result = {
+      component: HeroComponent,
+    };
+  }
+
+  return (
+    result || {
+      component: DefaultNotFoundComponent,
+    }
+  );
+};
+```
+
+**V2 Changes:**
+- Import from `@uniformdev/canvas-next-rsc-v2` (not V1 package)
+- `ResolveComponentResult` type imported differently
+- Consider using TypeScript (.ts) for better type safety
+
+### Component Props and Parameter Handling
+
+**V2 introduces a new parameter structure** with typed `ComponentParameter<T>`:
+
+```tsx
+import {
+  ComponentParameter,
+  ComponentProps,
+  UniformText,
+  UniformRichText,
+} from "@uniformdev/canvas-next-rsc-v2/component";
+
+export type HeroProps = {
+  title: ComponentParameter<string>;
+  description: ComponentParameter<string>;
+  showButton?: ComponentParameter<boolean>;
+};
+
+export const HeroComponent = ({
+  parameters: { title, description, showButton },
+  component,
+}: ComponentProps<HeroProps>) => {
+  return (
+    <>
+      <UniformText
+        component={component}
+        parameter={title}
+        className="title"
+        placeholder="Title goes here"
+        as="h1"
+      />
+      <UniformRichText
+        component={component}
+        parameter={description}
+        placeholder="Description goes here"
+      />
+    </>
+  );
+};
+```
+
+**Critical V2 Changes:**
+
+1. **Parameter Access:**
+   - ✅ V2: `parameters: { title, description }` - destructure from `parameters` object
+   - ❌ V1: `{ title, description }` - destructure directly from props
+
+2. **Type Definition:**
+   - ✅ V2: `ComponentParameter<string>` - wrapped parameter type
+   - ❌ V1: `string` - direct type
+
+3. **UniformText/UniformRichText Props:**
+   - ✅ V2: `parameter={title}` - pass parameter object
+   - ❌ V1: `parameterId="title"` - pass string ID
+
+4. **All parameters MUST be optional** (use `?`) because they can be undefined even if marked as required in the component definition.
+
+### Rendering child slots
+
+Slot rendering remains similar but uses the V2 imports:
+
+```tsx
+import {
+  ComponentProps,
+  UniformSlot,
+} from "@uniformdev/canvas-next-rsc-v2/component";
+
+export type PageProps = unknown;
+export type PageSlots = "content" | "header" | "footer";
+
+export const PageComponent = ({
+  slots,
+}: ComponentProps<PageProps, PageSlots>) => {
+  return (
+    <>
+      <UniformSlot slot={slots.header} />
+      <UniformSlot slot={slots.content} />
+      <UniformSlot slot={slots.footer} />
+    </>
+  );
+};
+```
+
+**Key Points:**
+- Import from `@uniformdev/canvas-next-rsc-v2/component`
+- Slot access syntax remains the same: `slots.header`, `slots.content`
+- No need to pass `context` and `data` props to `UniformSlot` in V2
+
+### Accessing Component Context and Data
+
+**V2 provides enhanced access to component metadata:**
+
+```tsx
+import { ComponentProps } from "@uniformdev/canvas-next-rsc-v2/component";
+
+export const MyComponent = ({
+  parameters: { title },
+  component,
+  variant,
+}: ComponentProps<MyComponentProps>) => {
+  // component: full component instance with metadata
+  // variant: active variant information (A/B testing, personalization)
+
+  return (
+    <div data-variant={variant?.id}>
+      {title}
+    </div>
+  );
+};
+```
+
+### Client-Side Context Access
+
+**V2 introduces `useUniformContext()` hook** for client components:
+
+```tsx
+"use client";
+
+import { useUniformContext } from "@uniformdev/canvas-next-rsc-v2/component";
+import { useEffect, useState } from "react";
+
+export const QuirkButton = () => {
+  const { context } = useUniformContext();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (context?.quirks !== undefined) {
+      setIsLoading(false);
+    }
+  }, [context?.quirks]);
+
+  const updateQuirk = async () => {
+    await context?.update({
+      quirks: {
+        country: "Canada",
+      },
+    });
+  };
+
+  return (
+    <button onClick={updateQuirk} disabled={isLoading}>
+      Update Quirk
+    </button>
+  );
+};
+```
+
+**V2 Features:**
+- `useUniformContext()` provides access to Uniform context in client components
+- `context.quirks` - current quirk values
+- `context.update()` - update quirks or signals
+- Enables rich client-side interactivity with personalization
+
+### Asset Parameters
+
+Asset parameter handling in V2 uses the same `flattenValues` utility from `@uniformdev/canvas`:
+
+```tsx
+import { AssetParamValue, flattenValues } from "@uniformdev/canvas";
+import {
+  ComponentParameter,
+  ComponentProps,
+} from "@uniformdev/canvas-next-rsc-v2/component";
+
+interface MyComponentProps {
+  multipleImages: ComponentParameter<AssetParamValue>;
+  singleImage: ComponentParameter<AssetParamValue>;
+}
+
+function MyComponent({
+  parameters: { multipleImages, singleImage },
+}: ComponentProps<MyComponentProps>) {
+  // When multiple assets are allowed, flatten to an array
+  const images = flattenValues(multipleImages);
+  // When only one asset is allowed, flatten to a single object
+  const image = flattenValues(singleImage, { toSingle: true });
+
+  return (
+    <>
+      {images?.map((img, index) => (
+        <img
+          key={index}
+          src={img?.url}
+          width={img?.width}
+          height={img?.height}
+        />
+      ))}
+      <img src={image?.url} width={image?.width} height={image?.height} />
+    </>
+  );
+}
+```
+
+**Critical Rules:**
+1. Always use `flattenValues` from `@uniformdev/canvas` (same as V1)
+2. Destructure from `parameters` object in V2: `parameters: { multipleImages }`
+3. Use `ComponentParameter<AssetParamValue>` type wrapper
+4. Do NOT create custom utility functions when `flattenValues` exists
+
+### Configuring Contextual Editing Live Preview
+
+The preview handler is an API endpoint at `app/api/preview/route.ts`:
+
+```tsx
+import {
+  createPreviewGETRouteHandler,
+  createPreviewPOSTRouteHandler,
+  createPreviewOPTIONSRouteHandler,
+} from "@uniformdev/canvas-next-rsc-v2/handler";
+
+export const GET = createPreviewGETRouteHandler({
+  resolveFullPath: ({ path }) => (path ? path : "/playground"),
+});
+export const POST = createPreviewPOSTRouteHandler();
+export const OPTIONS = createPreviewOPTIONSRouteHandler();
+```
+
+**V2 Changes:**
+- Import from `@uniformdev/canvas-next-rsc-v2/handler`
+- No `playgroundPath` in GET handler (it's in server config)
+- Simplified configuration
+
+### Incremental Static Regeneration (ISR)
+
+V2 provides `createUniformStaticParams()` for ISR support:
+
+```tsx
+import { createUniformStaticParams } from "@uniformdev/canvas-next-rsc-v2";
+
+export const generateStaticParams = async () => {
+  return createUniformStaticParams({
+    paths: ["/", "/about", "/contact"],
+  });
+};
+```
+
+This enables:
+- Static generation at build time for specified paths
+- On-demand revalidation for composition changes
+- Improved performance for frequently accessed pages
+
+### Web Vitals and Performance Monitoring
+
+V2 projects may include Web Vitals tracking for performance monitoring:
+
+```tsx
+"use client";
+
+import { useReportWebVitals } from "next/web-vitals";
+
+export default function WebVitals() {
+  useReportWebVitals((metric) => {
+    console.log(metric);
+    // Send to analytics endpoint
+  });
+
+  return null;
+}
+```
+
+Include in `app/layout.tsx` for tracking.
+
+## Uniform manifest usage
+
+**CRITICAL!** When using Next.js App Router (V1 or V2), you **MUST include** the manifest publish command in package.json:
+
+```json
+{
+  "scripts": {
+    "uniform:push": "uniform sync push",
+    "uniform:publish": "uniform context manifest publish"
+  }
+}
+```
+
+**Key Points:**
+- ✅ `uniform:publish` is **REQUIRED** for App Router (unlike Pages Router)
+- This publishes the component manifest to Uniform
+- Run after pushing content or component definition changes
+- Do NOT include manifest download command (that's for Pages Router only)
+
+## Migration from V1 to V2 Summary
+
+When migrating from V1 to V2, focus on these key changes:
+
+### Package Updates
+- Replace `@uniformdev/canvas-next-rsc` with V2 packages
+- Update all imports to include `-v2` suffix
+
+### Routing Changes
+- Move from `app/[[...path]]/page.tsx` to `app/uniform/[code]/page.tsx`
+- Update playground to `app/playground/[code]/page.tsx`
+- Use `resolveRouteFromCode()` instead of `retrieveRoute()`
+
+### Context Changes
+- Change `<UniformContext>{children}</UniformContext>` to self-closing `<UniformContext />`
+- Wrap UniformContext in `<Suspense>`
+- Move outside of children in layout
+
+### Parameter Handling
+- Wrap all parameter types with `ComponentParameter<T>`
+- Destructure from `parameters` object: `parameters: { title }`
+- Update `UniformText`/`UniformRichText` to use `parameter={}` instead of `parameterId=""`
+
+### Middleware
+- Add `proxy.ts` or `middleware.ts` with `uniformMiddleware()`
+
+### Server Config
+- Convert to TypeScript: `uniform.server.config.ts`
+- Add `playgroundPath` and `middlewareRuntimeCache` flags
+- Remove `evaluation.personalization` configuration
+
+### Client Features
+- Use `useUniformContext()` hook for client component access
+- Leverage edge personalization capabilities
+- Implement runtime quirk updates
+
+## Best Practices for V2
+
+1. **Always use TypeScript** - V2 is designed with TypeScript-first approach
+2. **Leverage edge middleware** - Enable `middlewareRuntimeCache` for best performance
+3. **Use ISR** - Configure `generateStaticParams()` for optimal performance
+4. **Type your parameters** - Use `ComponentParameter<T>` for all parameter types
+5. **Client components** - Use `"use client"` directive only when necessary (quirks, interactivity)
+6. **Error boundaries** - Implement error handling for preview and playground routes
+
+## Common Patterns
+
+### Conditional Rendering Based on Personalization
+```tsx
+export const HeroComponent = ({
+  parameters: { title },
+  variant,
+}: ComponentProps<HeroProps>) => {
+  const isPersonalized = variant?.id !== undefined;
+
+  return (
+    <div className={isPersonalized ? "personalized" : "default"}>
+      <UniformText parameter={title} component={component} />
+    </div>
+  );
+};
+```
+
+### Accessing Quirks in Server Components
+```tsx
+import { getUniformContext } from "@uniformdev/canvas-next-rsc-v2";
+
+export default async function ServerComponent() {
+  const context = await getUniformContext();
+  const userCountry = context?.quirks?.country;
+
+  return <div>Country: {userCountry}</div>;
+}
+```
+
+### Type-Safe Parameter Access
+```tsx
+type ButtonProps = {
+  label: ComponentParameter<string>;
+  link: ComponentParameter<LinkParamValue>;
+  variant?: ComponentParameter<"primary" | "secondary">;
+};
+
+export const ButtonComponent = ({
+  parameters: { label, link, variant },
+  component,
+}: ComponentProps<ButtonProps>) => {
+  const buttonVariant = variant || "primary";
+
+  return (
+    <a href={link?.path} className={`button-${buttonVariant}`}>
+      {label}
+    </a>
+  );
+};
+```
