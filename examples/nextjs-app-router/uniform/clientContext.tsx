@@ -8,8 +8,9 @@ import {
 import {
   ContextPlugin,
   enableContextDevTools,
-  enableUniformInsights,
 } from "@uniformdev/context";
+// TODO: Uncomment this to enable Uniform Insights plugin
+// import { enableUniformInsights } from "@uniformdev/insights";
 // TODO: npm install @uniformdev/context-gtag if you need to enable GA4 plugin
 // import { enableGoogleGtagAnalytics } from "@uniformdev/context-gtag";
 import { useRouter } from "next/navigation";
@@ -38,6 +39,7 @@ export const UniformClientContext: ClientContextComponent = ({
     //     endpoint: {
     //       type: "proxy",
     //       path: "/api/analytics",
+    //       projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID!,
     //     },
     //   })
     // );
