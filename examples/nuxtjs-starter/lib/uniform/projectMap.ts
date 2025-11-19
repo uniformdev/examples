@@ -22,7 +22,6 @@ export async function getCompositionsForNavigation({
     apiKey,
     apiHost,
     projectId,
-    bypassCache: true,
   });
 
   const response = await projectMapClient.getNodes({

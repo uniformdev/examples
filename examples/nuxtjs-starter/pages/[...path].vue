@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+// Explicitly import our custom composable to override the library's version
+import { useUniformComposition } from "~/composables/useUniformComposition";
+
 const route = useRoute();
 const path = Array.isArray(route.params.path)
   ? `/${route.params.path.join("/")}`

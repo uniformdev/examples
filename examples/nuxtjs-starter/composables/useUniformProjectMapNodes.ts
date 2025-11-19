@@ -1,20 +1,15 @@
-import { getCompositionsForNavigation } from "@/lib/uniform/projectMap";
-
 export function useUniformProjectMapNodes() {
   const nuxtApp = useNuxtApp();
   const isPreview = nuxtApp.$preview as boolean;
-  const uniformConfig = useRuntimeConfig().public.$uniform;
 
-  const result = useAsyncData(
+  return useAsyncData(
     `project-map-nodes-${isPreview}`,
-    async () =>
-      await getCompositionsForNavigation({
-        isPreview,
-        apiHost: uniformConfig.apiHost,
-        apiKey: uniformConfig.readOnlyApiKey,
-        projectId: uniformConfig.projectId,
-      })
+    async () => {
+      // Call server API route instead of direct Uniform API call
+      // This keeps the API key server-side only
+      return await $fetch("/api/uniform/project-map", {
+        query: { preview: isPreview },
+      });
+    }
   );
-
-  return result;
 }
