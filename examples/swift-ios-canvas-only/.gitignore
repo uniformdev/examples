@@ -1,0 +1,70 @@
+UniformDataAndCLI/.cursor
+UniformDataAndCLI/.env
+UniformDataAndCLI/node_modules
+
+# Xcode
+#
+# Build generated
+build/
+DerivedData/
+
+# Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# Other Xcode specific files
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source packages.
+# (Make sure to commit Package.resolved if you want reproducible builds)
+.swiftpm/
+.build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# Fastlane
+#
+# Generated screenshots, reports, and logs
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Code coverage
+*.xccoverage
+*.gcno
+
+# AppCode
+.idea/
+
+# macOS
+.DS_Store
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# SPM build artifacts
+Package.resolved
+
+# Temporary or user-specific files
+*.swp
+*.swo
+*.lock
+*.bak
+*.tmp
+*.orig
+buildServer.json

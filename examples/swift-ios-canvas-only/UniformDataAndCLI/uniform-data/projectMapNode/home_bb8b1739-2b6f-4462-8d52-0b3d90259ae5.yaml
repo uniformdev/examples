@@ -1,0 +1,9 @@
+id: bb8b1739-2b6f-4462-8d52-0b3d90259ae5
+name: Home
+order: 500
+path: /v1/home
+type: composition
+pathSegment: home
+data: {}
+compositionId: b60cecbd-79d9-4a68-96b5-3fa9aad55826
+projectMapId: 9279d500-84aa-4ceb-a8c0-16e728f60fc9

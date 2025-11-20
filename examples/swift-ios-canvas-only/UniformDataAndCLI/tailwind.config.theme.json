@@ -1,0 +1,19 @@
+{
+  "extend": {
+    "colors": {
+      "FFFFFF": "var(--FFFFFF)",
+      "1A202C": "var(--1A202C)",
+      "1A365D": "var(--1A365D)",
+      "E2E8F0": "var(--E2E8F0)",
+      "F59E0B": "var(--F59E0B)",
+      "065F46": "var(--065F46)",
+      "D1FAE5": "var(--D1FAE5)",
+      "10B981": "var(--10B981)",
+      "7C2D12": "var(--7C2D12)",
+      "FED7AA": "var(--FED7AA)",
+      "FB923C": "var(--FB923C)"
+    },
+    "spacing": {},
+    "fontFamily": {}
+  }
+}

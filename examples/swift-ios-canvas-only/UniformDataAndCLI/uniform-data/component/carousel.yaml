@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: carousel
+name: Carousel
+icon: stories
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: backgroundColor
+    name: Background Color
+    type: dex-color-palette-parameter
+    typeConfig: null
+description: Carousel container with background styling
+useTeamPermissions: true
+slots:
+  - id: slides
+    name: Slides
+    allowedComponents:
+      - carouselSlide
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2025-11-06T20:09:23.303689+00:00'
+updated: '2025-11-06T23:48:49.164115+00:00'

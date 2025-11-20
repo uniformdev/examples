@@ -1,0 +1,140 @@
+composition:
+  _name: Home-v1
+  _id: b60cecbd-79d9-4a68-96b5-3fa9aad55826
+  type: view
+  parameters:
+    title:
+      type: text
+      value: Home
+    version:
+      type: number
+      value: 1
+  slots:
+    mainContent:
+      - _id: 81378a1d-2b12-4df2-8c85-6065d261dbe2
+        type: carousel
+        slots:
+          slides:
+            - _id: 396325f0-6133-40c0-8f23-8587df8a6012
+              type: carouselSlide
+              parameters:
+                title:
+                  type: text
+                  value: All new gear for every mountain
+                ctaLink:
+                  type: link
+                  value:
+                    path: https://www.example.com/gear-sale
+                    type: url
+                ctaText:
+                  type: text
+                  value: Shop Now
+                imageName:
+                  type: text
+                  value: mountain.2.fill
+                titleColor:
+                  type: dex-color-palette-parameter
+                  value: FFFFFF
+                description:
+                  type: text
+                  value: >-
+                    Discover premium equipment designed for every terrain and
+                    adventure. From summit to base camp.
+                ctaTextColor:
+                  type: dex-color-palette-parameter
+                  value: 1A202C
+                backgroundColor:
+                  type: dex-color-palette-parameter
+                  value: FB923C
+                descriptionColor:
+                  type: dex-color-palette-parameter
+                  value: E2E8F0
+                ctaBackgroundColor:
+                  type: dex-color-palette-parameter
+                  value: F59E0B
+            - _id: e1bf8f99-ce31-4fbd-98e5-a8da19793b47
+              type: carouselSlide
+              parameters:
+                title:
+                  type: text
+                  value: Earn 15% in points
+                ctaLink:
+                  type: link
+                  value:
+                    path: https://www.example.com/rewards
+                    type: url
+                ctaText:
+                  type: text
+                  value: Join Rewards
+                imageName:
+                  type: text
+                  value: star.fill
+                titleColor:
+                  type: dex-color-palette-parameter
+                  value: FFFFFF
+                description:
+                  type: text
+                  value: >-
+                    Join our rewards program and earn points on every purchase.
+                    More adventure, more rewards.
+                ctaTextColor:
+                  type: dex-color-palette-parameter
+                  value: FFFFFF
+                backgroundColor:
+                  type: dex-color-palette-parameter
+                  value: 065F46
+                descriptionColor:
+                  type: dex-color-palette-parameter
+                  value: D1FAE5
+                ctaBackgroundColor:
+                  type: dex-color-palette-parameter
+                  value: 10B981
+            - _id: c3a73e11-ac1d-4bf7-b6f9-378fa1747170
+              type: carouselSlide
+              parameters:
+                title:
+                  type: text
+                  value: Give without guessing
+                ctaLink:
+                  type: link
+                  value:
+                    path: https://www.example.com/giftcard
+                    type: url
+                ctaText:
+                  type: text
+                  value: Send Gift Card
+                imageName:
+                  type: text
+                  value: gift.fill
+                titleColor:
+                  type: dex-color-palette-parameter
+                  value: FFFFFF
+                description:
+                  type: text
+                  value: >-
+                    Send the perfect gift every time with our digital gift
+                    cards. Let them choose their adventure.
+                ctaTextColor:
+                  type: dex-color-palette-parameter
+                  value: FFFFFF
+                backgroundColor:
+                  type: dex-color-palette-parameter
+                  value: 7C2D12
+                descriptionColor:
+                  type: dex-color-palette-parameter
+                  value: FED7AA
+                ctaBackgroundColor:
+                  type: dex-color-palette-parameter
+                  value: FB923C
+        parameters:
+          title:
+            type: text
+            value: Slides
+          backgroundColor:
+            type: dex-color-palette-parameter
+            value: 1A365D
+  _overridability:
+    hideLockedParameters: true
+created: '2025-11-06T20:13:43.176018+00:00'
+modified: '2025-11-07T20:36:33.302321+00:00'
+pattern: false

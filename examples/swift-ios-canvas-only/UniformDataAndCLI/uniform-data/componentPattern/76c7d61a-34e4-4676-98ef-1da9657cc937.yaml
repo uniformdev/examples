@@ -1,0 +1,63 @@
+composition:
+  _name: Slide with data from CS
+  _id: 76c7d61a-34e4-4676-98ef-1da9657cc937
+  type: carouselSlide
+  parameters:
+    title:
+      type: text
+      value: ${#jptr:/Single promo Content/entry/title}
+    ctaLink:
+      type: link
+      value:
+        path: ${#jptr:/Single promo Content/entry/website_link/href}
+        type: url
+    ctaText:
+      type: text
+      value: ${#jptr:/Single promo Content/entry/website_link/title}
+    imageName:
+      type: text
+      value: mountain.2.fill
+    titleColor:
+      type: dex-color-palette-parameter
+      value: FFFFFF
+    description:
+      type: text
+      value: ${#jptr:/Single promo Content/entry/description}
+    ctaTextColor:
+      type: dex-color-palette-parameter
+      value: 1A202C
+    backgroundColor:
+      type: dex-color-palette-parameter
+      value: 1A365D
+    descriptionColor:
+      type: dex-color-palette-parameter
+      value: E2E8F0
+    ctaBackgroundColor:
+      type: dex-color-palette-parameter
+      value: F59E0B
+  _dataResources:
+    Single promo Content:
+      type: singlePromo
+      variables:
+        query: ''
+        entry_uid: blt4f72dd80e3292645
+        content_type_uid: promo
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      title: 'yes'
+      ctaUrl: 'yes'
+      ctaText: 'yes'
+      slideId: 'yes'
+      imageName: 'yes'
+      titleColor: 'yes'
+      description: 'yes'
+      ctaTextColor: 'yes'
+      backgroundColor: 'yes'
+      descriptionColor: 'yes'
+      ctaBackgroundColor: 'yes'
+    hideLockedParameters: true
+created: '2025-11-06T20:10:53.947892+00:00'
+modified: '2025-11-07T17:39:06.679222+00:00'
+pattern: true

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: view
+name: View
+icon: smartphone
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Page title for internal and meta usage
+  - id: version
+    name: Version
+    type: number
+    guidance: Increment when updating the page
+description: Page-level composition with main content
+useTeamPermissions: true
+slots:
+  - id: mainContent
+    name: Main Content
+    allowedComponents:
+      - carousel
+      - $test
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: true
+created: '2025-11-06T20:09:17.151722+00:00'
+updated: '2025-11-06T23:48:36.419839+00:00'

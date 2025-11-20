@@ -1,0 +1,38 @@
+composition:
+  _name: Carousel Pattern v2
+  _id: 463a7e2b-d9a1-4200-976e-4d7456400457
+  type: carousel
+  parameters:
+    title:
+      type: text
+      value: Slides
+    backgroundColor:
+      type: dex-color-palette-parameter
+      value: 1A365D
+  slots:
+    slides:
+      - _id: d0295a21-96ef-41f6-a991-4943765e4f12
+        type: $slotSection
+        parameters:
+          max:
+            type: text
+            value: 3
+          name:
+            type: text
+            value: Slides
+          specific:
+            type: array
+            value:
+              - carouselSlide
+              - $p:76c7d61a-34e4-4676-98ef-1da9657cc937
+          groupType:
+            type: text
+            value: specific
+        _overridability:
+          hideLockedParameters: true
+  _overridability:
+    parameters:
+      backgroundColor: 'yes'
+created: '2025-11-07T17:41:05.680882+00:00'
+modified: '2025-11-07T19:15:20.421987+00:00'
+pattern: true
