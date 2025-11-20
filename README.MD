@@ -23,6 +23,8 @@ These starters don't have a lot of functionality, they are single page, single c
 
 - [Remix starter](./examples/remix-cloudflare-starter/) - essential 1 page, 1 component starter for Remix configured with Cloudlare, recommended as reference for new projects using Uniform Remix SDK.
 
+- [iOS Swift example without personalization](./mobile/swift-ios-canvas-only/) - simple 1 page app with 3 slides carousel, with parameters mappings to Uniform composition
+
 ## Mesh examples
 
 These starters are created to accelerate your learning and development of a new extension to Uniform: 
