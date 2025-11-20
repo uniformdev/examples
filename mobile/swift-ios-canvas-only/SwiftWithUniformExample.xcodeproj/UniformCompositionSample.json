@@ -1,0 +1,213 @@
+{
+    "type": "composition",
+    "matchedRoute": "/v1/home",
+    "dynamicInputs": {},
+    "compositionApiResponse": {
+        "composition": {
+            "_name": "Home-v1",
+            "_id": "b60cecbd-79d9-4a68-96b5-3fa9aad55826",
+            "type": "view",
+            "projectMapNodes": [
+                {
+                    "id": "bb8b1739-2b6f-4462-8d52-0b3d90259ae5",
+                    "projectMapId": "9279d500-84aa-4ceb-a8c0-16e728f60fc9",
+                    "path": "/v1/home",
+                    "locales": {},
+                    "data": {}
+                }
+            ],
+            "parameters": {
+                "title": {
+                    "type": "text",
+                    "value": "Home"
+                },
+                "version": {
+                    "type": "number",
+                    "value": 1
+                }
+            },
+            "slots": {
+                "mainContent": [
+                    {
+                        "type": "carousel",
+                        "slots": {
+                            "slides": [
+                                {
+                                    "type": "carouselSlide",
+                                    "parameters": {
+                                        "title": {
+                                            "type": "text",
+                                            "value": "All new gear for every mountain"
+                                        },
+                                        "ctaUrl": {
+                                            "type": "text",
+                                            "value": "https://www.example.com/gear"
+                                        },
+                                        "ctaLink": {
+                                            "type": "link",
+                                            "value": {
+                                                "path": "https://www.example.com/gear",
+                                                "type": "url"
+                                            }
+                                        },
+                                        "ctaText": {
+                                            "type": "text",
+                                            "value": "Shop Now"
+                                        },
+                                        "imageName": {
+                                            "type": "text",
+                                            "value": "mountain.2.fill"
+                                        },
+                                        "titleColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "FFFFFF"
+                                        },
+                                        "description": {
+                                            "type": "text",
+                                            "value": "Discover premium equipment designed for every terrain and adventure. From summit to base camp."
+                                        },
+                                        "ctaTextColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "1A202C"
+                                        },
+                                        "backgroundColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "1A365D"
+                                        },
+                                        "descriptionColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "E2E8F0"
+                                        },
+                                        "ctaBackgroundColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "F59E0B"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "carouselSlide",
+                                    "parameters": {
+                                        "title": {
+                                            "type": "text",
+                                            "value": "Earn 15% in points"
+                                        },
+                                        "ctaUrl": {
+                                            "type": "text",
+                                            "value": "https://www.example.com/rewards"
+                                        },
+                                        "ctaLink": {
+                                            "type": "link",
+                                            "value": {
+                                                "path": "https://www.example.com/rewards",
+                                                "type": "url"
+                                            }
+                                        },
+                                        "ctaText": {
+                                            "type": "text",
+                                            "value": "Join Rewards"
+                                        },
+                                        "imageName": {
+                                            "type": "text",
+                                            "value": "star.fill"
+                                        },
+                                        "titleColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "FFFFFF"
+                                        },
+                                        "description": {
+                                            "type": "text",
+                                            "value": "Join our rewards program and earn points on every purchase. More adventure, more rewards."
+                                        },
+                                        "ctaTextColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "FFFFFF"
+                                        },
+                                        "backgroundColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "065F46"
+                                        },
+                                        "descriptionColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "D1FAE5"
+                                        },
+                                        "ctaBackgroundColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "10B981"
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "carouselSlide",
+                                    "parameters": {
+                                        "title": {
+                                            "type": "text",
+                                            "value": "Give without guessing"
+                                        },
+                                        "ctaUrl": {
+                                            "type": "text",
+                                            "value": "https://www.example.com/giftcard"
+                                        },
+                                        "ctaLink": {
+                                            "type": "link",
+                                            "value": {
+                                                "path": "https://www.example.com/giftcard",
+                                                "type": "url"
+                                            }
+                                        },
+                                        "ctaText": {
+                                            "type": "text",
+                                            "value": "Send Gift Card"
+                                        },
+                                        "imageName": {
+                                            "type": "text",
+                                            "value": "gift.fill"
+                                        },
+                                        "titleColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "FFFFFF"
+                                        },
+                                        "description": {
+                                            "type": "text",
+                                            "value": "Send the perfect gift every time with our digital gift cards. Let them choose their adventure."
+                                        },
+                                        "ctaTextColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "FFFFFF"
+                                        },
+                                        "backgroundColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "7C2D12"
+                                        },
+                                        "descriptionColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "FED7AA"
+                                        },
+                                        "ctaBackgroundColor": {
+                                            "type": "dex-color-palette-parameter",
+                                            "value": "FB923C"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "parameters": {
+                            "title": {
+                                "type": "text",
+                                "value": "Slides"
+                            },
+                            "backgroundColor": {
+                                "type": "dex-color-palette-parameter",
+                                "value": "1A365D"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "projectId": "aabb5253-1086-48c2-aa47-bf2ad33116d7",
+        "state": 64,
+        "created": "2025-11-06T20:23:24.031153+00:00",
+        "modified": "2025-11-07T16:34:40.835909+00:00",
+        "pattern": false
+    }
+}

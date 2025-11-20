@@ -1,0 +1,24 @@
+composition:
+  _name: View Sample
+  _id: 8c782f98-1cb3-40a2-bcea-6a4001098740
+  type: view
+  parameters:
+    title:
+      type: text
+      value: Sample View
+    version:
+      type: number
+      value: 1
+  slots:
+    mainContent:
+      - _id: c919e6ee-307e-4b0c-826a-e3ad25604223
+        type: carousel
+        _pattern: 8a818e7f-37e1-4ce5-a76b-b22e41f4e2f7
+  _overridability:
+    parameters:
+      title: 'yes'
+      version: 'yes'
+    hideLockedParameters: true
+created: '2025-11-06T20:12:30.443671+00:00'
+modified: '2025-11-06T20:13:20.604572+00:00'
+pattern: true

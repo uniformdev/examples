@@ -1,0 +1,9 @@
+id: 40a1a601-5280-42ba-a919-74ea83613c18
+name: Home
+order: 500
+path: /v2/home
+type: composition
+pathSegment: home
+data: {}
+compositionId: 7de72921-05e7-474d-9083-84e5849e7fc6
+projectMapId: 9279d500-84aa-4ceb-a8c0-16e728f60fc9

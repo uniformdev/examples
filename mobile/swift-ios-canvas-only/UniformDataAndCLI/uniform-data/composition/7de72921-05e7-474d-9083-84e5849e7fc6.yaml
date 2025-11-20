@@ -1,0 +1,127 @@
+composition:
+  _name: Home-v2
+  _id: 7de72921-05e7-474d-9083-84e5849e7fc6
+  _slug: home
+  type: view
+  slots:
+    mainContent:
+      - _id: bd1f3f73-6ece-4ec1-8263-86ed0aa42cf0
+        type: carousel
+        _pattern: 463a7e2b-d9a1-4200-976e-4d7456400457
+  _overrides:
+    3bc941c6-da63-402f-9747-1a00dd04c2e4:
+      parameters:
+        titleColor:
+          type: dex-color-palette-parameter
+          value: E2E8F0
+        backgroundColor:
+          type: dex-color-palette-parameter
+          value: 065F46
+      dataResources:
+        Single promo Content:
+          type: singlePromo
+          variables:
+            query: ''
+            entry_uid: blt4f72dd80e3292645
+            content_type_uid: promo
+    ef37f6b4-c014-4fba-8d96-7afed8be6eba:
+      dataResources:
+        Single promo Content:
+          type: singlePromo
+          variables:
+            query: ''
+            entry_uid: blt4377b538764f25d0
+            content_type_uid: promo
+    bd1f3f73-6ece-4ec1-8263-86ed0aa42cf0|d0295a21-96ef-41f6-a991-4943765e4f12:
+      slots:
+        $slotSectionItems:
+          - _id: c1d6ce18-1eac-43d5-b417-e06d10232003
+            type: carouselSlide
+            parameters:
+              title:
+                type: text
+                value: Give without guessing
+              ctaLink:
+                type: link
+                value:
+                  path: https://www.example.com/giftcard
+                  type: url
+              ctaText:
+                type: text
+                value: Send Gift Card
+              imageName:
+                type: text
+                value: gift.fill
+              titleColor:
+                type: dex-color-palette-parameter
+                value: FFFFFF
+              description:
+                type: text
+                value: >-
+                  Send the perfect gift every time with our digital gift cards.
+                  Let them choose their adventure.
+              ctaTextColor:
+                type: dex-color-palette-parameter
+                value: FFFFFF
+              backgroundColor:
+                type: dex-color-palette-parameter
+                value: 7C2D12
+              descriptionColor:
+                type: dex-color-palette-parameter
+                value: FED7AA
+              ctaBackgroundColor:
+                type: dex-color-palette-parameter
+                value: FB923C
+          - _id: ef37f6b4-c014-4fba-8d96-7afed8be6eba
+            type: carouselSlide
+            _pattern: 76c7d61a-34e4-4676-98ef-1da9657cc937
+            _dataResources:
+              Single promo Content:
+                type: singlePromo
+                variables:
+                  query: ''
+                  entry_uid: blt4377b538764f25d0
+                  content_type_uid: promo
+            _overridability:
+              parameters:
+                title: 'yes'
+                ctaUrl: 'yes'
+                ctaText: 'yes'
+                slideId: 'yes'
+                imageName: 'yes'
+                titleColor: 'yes'
+                description: 'yes'
+                ctaTextColor: 'yes'
+                backgroundColor: 'yes'
+                descriptionColor: 'yes'
+                ctaBackgroundColor: 'yes'
+              hideLockedParameters: true
+          - _id: 3bc941c6-da63-402f-9747-1a00dd04c2e4
+            type: carouselSlide
+            _pattern: 76c7d61a-34e4-4676-98ef-1da9657cc937
+            _dataResources:
+              Single promo Content:
+                type: singlePromo
+                variables:
+                  query: ''
+                  entry_uid: blt4f72dd80e3292645
+                  content_type_uid: promo
+            _overridability:
+              parameters:
+                title: 'yes'
+                ctaUrl: 'yes'
+                ctaText: 'yes'
+                slideId: 'yes'
+                imageName: 'yes'
+                titleColor: 'yes'
+                description: 'yes'
+                ctaTextColor: 'yes'
+                backgroundColor: 'yes'
+                descriptionColor: 'yes'
+                ctaBackgroundColor: 'yes'
+              hideLockedParameters: true
+  _locales:
+    - en
+created: '2025-11-07T20:40:47.934364+00:00'
+modified: '2025-11-07T20:44:31.467769+00:00'
+pattern: false

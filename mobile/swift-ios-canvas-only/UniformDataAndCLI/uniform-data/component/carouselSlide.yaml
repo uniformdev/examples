@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: carouselSlide
+name: Carousel Slide
+icon: list
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Headline displayed on the slide
+  - id: titleColor
+    name: Title Color
+    type: dex-color-palette-parameter
+    typeConfig: null
+  - id: description
+    name: Description
+    type: text
+    guidance: Supporting copy for the slide
+  - id: descriptionColor
+    name: Description Color
+    type: dex-color-palette-parameter
+    typeConfig: null
+  - id: imageName
+    name: Image Name
+    type: text
+    guidance: System image or asset identifier
+  - id: backgroundColor
+    name: Background Color
+    type: dex-color-palette-parameter
+    typeConfig: null
+  - id: 1d60e042-619e-40db-b0eb-1f357e22f00d
+    name: CTA
+    type: group
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - ctaText
+        - ctaLink
+        - ctaTextColor
+        - ctaBackgroundColor
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Label for the call to action button
+  - id: ctaLink
+    name: CTA Link
+    type: link
+    typeConfig:
+      linkTypes:
+        projectMapNode: false
+    localizable: true
+  - id: ctaTextColor
+    name: CTA Text Color
+    type: dex-color-palette-parameter
+    typeConfig: null
+  - id: ctaBackgroundColor
+    name: CTA Background Color
+    type: dex-color-palette-parameter
+    typeConfig: null
+description: Single carousel slide content and styling
+useTeamPermissions: true
+slots: []
+titleParameter: title
+thumbnailParameter: image
+canBeComposition: false
+created: '2025-11-06T20:09:49.918391+00:00'
+updated: '2025-11-07T17:18:26.215899+00:00'
