@@ -30,7 +30,7 @@
     "next": "^13.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-instantsearch-hooks-web": "^6.32.0"
+    "react-instantsearch-hooks-web": "^6.47.3"
   },
   "devDependencies": {
     "@types/node": "^18.6.2",
