@@ -1,0 +1,20 @@
+{
+  "type": "azure-devops-pipeline-status",
+  "displayName": "Azure DevOps Pipeline Status",
+  "logoIconUrl": "https://your-app-url/Azure-DevOps.svg",
+  "badgeIconUrl": "https://your-app-url/Azure-DevOps.svg",
+  "category": "data",
+  "baseLocationUrl": "https://your-app-url",
+  "locations": {
+    "canvas": {
+      "editorTools": [
+        {
+          "id": "azure-devops-status-tool",
+          "name": "Azure DevOps Pipeline Status",
+          "url": "/azure-devops-pipeline-status",
+          "iconUrl": "/Azure-DevOps.svg"
+        }
+      ]
+    }
+  }
+}
