@@ -14,7 +14,6 @@ const config: CLIConfiguration = {
           mode: "create",
         },
       },
-      pattern: {},
       category: {},
       component: {},
       dataType: {},

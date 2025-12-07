@@ -9,24 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@uniformdev/canvas": "20.17.1",
-    "@uniformdev/design-system": "20.17.1",
-    "@uniformdev/mesh-edgehancer-sdk": "20.17.1",
-    "@uniformdev/mesh-sdk": "20.17.1",
-    "@uniformdev/mesh-sdk-react": "20.17.1",
-    "next": "15.1.6",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-use": "17.5.0"
+    "@uniformdev/canvas": "20.43.1",
+    "@uniformdev/design-system": "20.43.1",
+    "@uniformdev/mesh-edgehancer-sdk": "20.43.1",
+    "@uniformdev/mesh-sdk": "20.43.1",
+    "@uniformdev/mesh-sdk-react": "20.43.1",
+    "next": "^15.5.7",
+    "react": "^19",
+    "react-dom": "^19"
   },
   "devDependencies": {
-    "@types/node": "20.10.6",
-    "@types/react": "19.0.8",
-    "@types/react-dom": "19.0.3",
-    "typescript": "5.7.3"
-  },
-  "overrides": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
   }
 }
