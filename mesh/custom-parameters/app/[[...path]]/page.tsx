@@ -10,7 +10,7 @@ import { resolveComponent } from "@/uniform/resolve";
 export default async function HomePage(props: PageParameters) {
   const route = await retrieveRoute(props);
   const serverContext = await createServerUniformContext({
-    searchParams: props.searchParams,
+    searchParams: await props.searchParams,
   });
   return (
     <UniformComposition

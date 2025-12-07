@@ -1,4 +1,5 @@
-const withNextIntl = require("next-intl/plugin")();
+const { withUniformConfig } = require("@uniformdev/canvas-next-rsc/config");
+const withNextIntl = require("next-intl/plugin")("./src/i18n.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,4 +12,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl(nextConfig);
+module.exports = withUniformConfig(withNextIntl(nextConfig));

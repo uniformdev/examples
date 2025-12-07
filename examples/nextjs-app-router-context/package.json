@@ -12,14 +12,14 @@
     "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/context": "^19.211.0",
-    "@uniformdev/context-react": "^19.211.0",
-    "next": "^15.1.4",
+    "@uniformdev/context": "20.43.1",
+    "@uniformdev/context-react": "20.43.1",
+    "next": "^15.5.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@uniformdev/cli": "^19.211.0",
+    "@uniformdev/cli": "20.43.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
