@@ -1,0 +1,48 @@
+{
+  "name": "mesh-playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9000",
+    "build": "next build",
+    "start": "next start -p 9000",
+    "lint": "next lint",
+    "register-to-team": "uniform integration definition register ./mesh-manifest.json",
+    "unregister-from-team": "uniform integration definition remove integration-hello-world",
+    "install-to-project": "uniform integration install integration-hello-world",
+    "uninstall-from-project": "uniform integration uninstall integration-hello-world",
+    "edgehancer:build": "tsup --config edgehancer/tsup.config.ts",
+    "edgehancer:test": "vitest --config edgehancer/vitest.config.ts",
+    "deploy-edgehancer": "npm-run-all -s edgehancer:build -p deploy-edgehancer:preRequest deploy-edgehancer:request",
+    "remove-edgehancer": "run-p remove-edgehancer:preRequest remove-edgehancer:request",
+    "deploy-edgehancer:preRequest": "uniform integration definition edgehancer deploy --connectorType playground --archetype default --hook preRequest ./edgehancer/dist/preRequest.mjs",
+    "remove-edgehancer:preRequest": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook preRequest --compatibilityDate 2025-07-15",
+    "deploy-edgehancer:request": "uniform integration definition edgehancer deploy --connectorType playground --archetype default --hook request ./edgehancer/dist/request.mjs",
+    "remove-edgehancer:request": "uniform integration definition edgehancer remove --connectorType playground --archetype default --hook request --compatibilityDate 2025-07-15"
+  },
+  "dependencies": {
+    "@uniformdev/assets": "20.43.1",
+    "@uniformdev/canvas": "20.43.1",
+    "@uniformdev/cli": "20.43.1",
+    "@uniformdev/design-system": "20.43.1",
+    "@uniformdev/mesh-edgehancer-sdk": "20.43.1",
+    "@uniformdev/mesh-sdk-react": "20.43.1",
+    "next": "15.5.7",
+    "react": "^19",
+    "react-dom": "^19",
+    "tsup": "^8.3.5",
+    "uuid": "9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/uuid": "^9",
+    "eslint": "9.19.0",
+    "eslint-config-next": "15.5.7",
+    "npm-run-all": "4.1.5",
+    "typescript": "^5",
+    "vitest": "^1.2.0",
+    "vitest-environment-miniflare": "^2.14.1"
+  }
+}
