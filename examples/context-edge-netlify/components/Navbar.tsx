@@ -109,7 +109,7 @@ const ActionLink = ({
   onClick: (e: React.MouseEvent) => void;
   label: string;
   isScrolled: boolean;
-  icon: JSX.Element;
+  icon: React.ReactElement;
 }) => (
   <button
     onClick={onClick}
