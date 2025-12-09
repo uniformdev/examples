@@ -3,10 +3,12 @@ import {
   UniformComposition,
   UniformPageParameters,
   createUniformStaticParams,
+  UniformContext,
 } from "@uniformdev/canvas-next-rsc-v2";
 import { notFound } from "next/navigation";
 
 import { resolveComponent } from "@/components/resolveComponent";
+import { CustomUniformClientContext } from "@/components/CustomUniformClientContext";
 
 // enables ISR
 export const generateStaticParams = async () => {
@@ -22,5 +24,13 @@ export default async function UniformPage(props: UniformPageParameters) {
     notFound();
   }
 
-  return <UniformComposition {...result} resolveComponent={resolveComponent} />;
+  return (
+    <>
+      <UniformContext
+        result={result}
+        clientContextComponent={CustomUniformClientContext}
+      />
+      <UniformComposition {...result} resolveComponent={resolveComponent} />
+    </>
+  );
 }

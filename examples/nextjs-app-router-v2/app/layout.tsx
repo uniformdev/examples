@@ -1,11 +1,7 @@
-import WebVitals from "@/components/custom/WebVitals";
-import { UniformContext } from "@uniformdev/canvas-next-rsc-v2";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Suspense } from "react";
 
 import "./globals.css";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,11 +27,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} main`}>
         {children}
-
-        <Suspense>
-          <UniformContext />
-        </Suspense>
-        <WebVitals />
       </body>
     </html>
   );

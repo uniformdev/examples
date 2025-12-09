@@ -21,7 +21,9 @@
     "@uniformdev/canvas-next-rsc-client-v2": "20.7.1-alpha.99",
     "@uniformdev/canvas-next-rsc-shared-v2": "20.7.1-alpha.99",
     "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.99",
-    "next": "^16.0.7",
+    "@uniformdev/context": "20.7.1-alpha.99",
+    "@uniformdev/insights": "20.7.1-alpha.99",
+    "next": "15.5.7",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
