@@ -27,7 +27,7 @@ export default async function UniformPage(props: UniformPageParameters) {
   return (
     <>
       <UniformContext
-        route={result.route}
+        result={result}
         clientContextComponent={CustomUniformClientContext}
       />
       <UniformComposition {...result} resolveComponent={resolveComponent} />

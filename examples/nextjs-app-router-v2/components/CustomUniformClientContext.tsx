@@ -1,10 +1,14 @@
-'use client';
+"use client";
 
-import { ContextPlugin, enableContextDevTools } from '@uniformdev/context';
-import { useRouter } from 'next/navigation';
+import { ContextPlugin, enableContextDevTools } from "@uniformdev/context";
+import { useRouter } from "next/navigation";
 // TODO: Uncomment this to enable Uniform Insights plugin
-// import { enableUniformInsights } from '@uniformdev/insights';
-import { createClientUniformContext, useInitUniformContext, ClientContextComponent } from '@uniformdev/canvas-next-rsc-client-v2';
+// import { enableUniformInsights } from "@uniformdev/insights";
+import {
+  createClientUniformContext,
+  useInitUniformContext,
+  ClientContextComponent,
+} from "@uniformdev/canvas-next-rsc-client-v2";
 
 export const CustomUniformClientContext: ClientContextComponent = ({
   manifest,
@@ -20,7 +24,7 @@ export const CustomUniformClientContext: ClientContextComponent = ({
       // TODO: Uncomment this to enable Uniform Insights plugin
       // enableUniformInsights({
       //   endpoint: {
-      //     type: 'api',
+      //     type: "api",
       //     projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID!,
       //     apiKey: process.env.NEXT_PUBLIC_UNIFORM_INSIGHTS_API_KEY!,
       //     host: process.env.NEXT_PUBLIC_UNIFORM_INSIGHTS_API_URL!,
