@@ -16,6 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@lib/*": ["./lib/*"],
       "@cms": ["cms/static"],
       "@cms/*": ["cms/static/*"]
     }
