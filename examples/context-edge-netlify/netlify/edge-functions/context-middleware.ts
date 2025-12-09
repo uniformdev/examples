@@ -1,11 +1,12 @@
-// @ts-ignore: deno imports failing next build
+// @ts-ignore: netlify:edge is a Deno runtime module, not resolvable by Node TS
 import type { Context } from "netlify:edge";
-import manifest from "../../lib/uniform/context-manifest.json" assert { type: "json" };
+import manifest from "../../lib/uniform/context-manifest.json" with { type: "json" };
 import {
   createEdgeContext,
   createUniformEdgeHandler,
   buildNetlifyQuirks,
-} from "../../lib/uniform/index.deno.js";
+} from "@uniformdev/context-edge-netlify";
+import type { ManifestV2 } from "@uniformdev/context";
 
 const IGNORED_PATHS = /\/.*\.(ico|png|jpg|jpeg|svg|css|js|json)(?:\?.*|$)$/g;
 
@@ -19,7 +20,7 @@ export default async (request: Request, netlifyContext: Context) => {
   }
 
   const context = createEdgeContext({
-    manifest: manifest,
+    manifest: manifest as ManifestV2,
     request,
   });
 
@@ -33,7 +34,10 @@ export default async (request: Request, netlifyContext: Context) => {
     request,
     response: originResponse,
     quirks: {
-      ...buildNetlifyQuirks(netlifyContext), latitude, longitude, timezone
+      ...buildNetlifyQuirks(netlifyContext),
+      latitude,
+      longitude,
+      timezone,
     },
   });
 
