@@ -1,6 +1,6 @@
 // @ts-ignore: netlify:edge is a Deno runtime module, not resolvable by Node TS
 import type { Context } from "netlify:edge";
-import manifest from "@lib/uniform/context-manifest.json";
+import manifest from "../../lib/uniform/context-manifest.json";
 import {
   createEdgeContext,
   createUniformEdgeHandler,
