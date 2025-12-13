@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "next": "13.5.6",
+    "next": "14.2.35",
     "@uniformdev/canvas": "19.164.0",
     "@uniformdev/tms-sdk": "19.164.0",
     "@uniformdev/webhooks": "19.164.0",

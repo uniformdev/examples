@@ -1,8 +1,0 @@
-id: '1'
-name: Persona
-cap: 100
-values:
-  - id: '2'
-    value: Developer
-  - id: '1'
-    value: Marketer
