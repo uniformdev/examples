@@ -13,21 +13,21 @@
     "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.0.6",
-    "@uniformdev/canvas-next-rsc": "20.43.1",
-    "@uniformdev/richtext": "20.43.1",
-    "next": "^15.5.7",
-    "postcss": "^8.5.2",
-    "react": "^19",
-    "react-dom": "^19",
-    "tailwindcss": "^4.0.6"
+    "@uniformdev/canvas-next-rsc": "20.46.0",
+    "@uniformdev/richtext": "20.46.0",
+    "next": "^15.5.9",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
+    "postcss": "^8.5.2",
+    "@tailwindcss/postcss": "^4.0.6",
     "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/react": "^19.2.3",
     "@types/react-dom": "^19",
-    "@uniformdev/cli": "20.43.1",
+    "@uniformdev/cli": "20.46.0",
     "npm-run-all": "^4.1.5",
-    "typescript": "^5"
+    "typescript": "^5",
+    "tailwindcss": "^4.0.6"
   }
 }

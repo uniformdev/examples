@@ -23,9 +23,9 @@
     "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.99",
     "@uniformdev/context": "20.7.1-alpha.99",
     "@uniformdev/insights": "20.7.1-alpha.99",
-    "next": "15.5.7",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "next": "^15.5.9",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

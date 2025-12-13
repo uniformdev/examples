@@ -14,7 +14,7 @@
   "dependencies": {
     "@uniformdev/canvas-next-rsc": "20.43.1",
     "classnames": "^2.5.1",
-    "next": "^15.5.7",
+    "next": "^15.5.9",
     "react": "^19",
     "react-dom": "^19",
     "tailwind-merge": "^2.5.4"

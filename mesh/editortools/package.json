@@ -14,7 +14,7 @@
     "@uniformdev/mesh-edgehancer-sdk": "20.43.1",
     "@uniformdev/mesh-sdk": "20.43.1",
     "@uniformdev/mesh-sdk-react": "20.43.1",
-    "next": "^15.5.7",
+    "next": "^15.5.9",
     "react": "^19",
     "react-dom": "^19"
   },
