@@ -28,6 +28,19 @@
             "dataEditorUrl": "/data-types/single-entry-data-editor"
           }
         }
+      },
+      {
+        "type": "aem-content-fragments",
+        "displayName": "AEM Content Fragments",
+        "dataSourceEditorUrl": "/aem/data-source-editor",
+        "supportsUnpublishedData": true,
+        "dataArchetypes": {
+          "contentFragment": {
+            "displayName": "Content Fragment",
+            "typeEditorUrl": "/aem/content-fragment-type-editor",
+            "dataEditorUrl": "/aem/content-fragment-data-editor"
+          }
+        }
       }
     ]
   }
