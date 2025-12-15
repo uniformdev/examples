@@ -3,6 +3,14 @@
 ## 🚧 Developer Preview
 Contact Uniform for `NPM_TOKEN` to get access to the pre-release package.
 
+## Important: Uniform Preview support
+
+In order to support Uniform preview for Next.js 16, you need to leave `middleware.ts` named as such, don't rename it to `proxy.ts` and keep this export in it:
+
+```
+export const runtime = 'experimental-edge';
+```
+
 ## Demo
 
 See [this live url](https://nextjs-app-router-v2.vercel.app/) to experience personalization and edge personalization.

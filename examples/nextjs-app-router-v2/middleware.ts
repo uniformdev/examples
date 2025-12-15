@@ -26,3 +26,6 @@ const isLocaleInPath = (path: string): boolean => {
     ? (locales as string[]).some((locale) => locale === firstSegment)
     : false;
 };
+
+// IMPORTANT: This is required for the middleware to work correctly for preview in Next.js 16
+export const runtime = 'experimental-edge';

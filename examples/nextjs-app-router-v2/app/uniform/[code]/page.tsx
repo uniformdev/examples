@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import {
   resolveRouteFromCode,
   UniformComposition,
@@ -26,10 +27,12 @@ export default async function UniformPage(props: UniformPageParameters) {
 
   return (
     <>
-      <UniformContext
-        result={result}
-        clientContextComponent={CustomUniformClientContext}
-      />
+      <Suspense fallback={null}>
+        <UniformContext
+          result={result}
+          clientContextComponent={CustomUniformClientContext}
+        />
+      </Suspense>
       <UniformComposition {...result} resolveComponent={resolveComponent} />
     </>
   );
