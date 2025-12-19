@@ -33,6 +33,11 @@ See [this live url](https://nextjs-app-router-v2.vercel.app/) to experience pers
     npm run uniform:push
     ```
 
+1. Publish manifest with Uniform personalization and test configuration:
+    ```bash
+    npm run uniform:manifest
+    ```
+
 1. Run the dev server:
 
     ```bash

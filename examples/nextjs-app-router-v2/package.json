@@ -15,15 +15,15 @@
     "start": "next start",
     "uniform:pull": "uniform sync pull",
     "uniform:push": "uniform sync push",
-    "uniform:publish": "uniform context manifest publish"
+    "uniform:manifest": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc-client-v2": "20.7.1-alpha.106",
-    "@uniformdev/canvas-next-rsc-shared-v2": "20.7.1-alpha.106",
-    "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.106",
-    "@uniformdev/context": "20.7.1-alpha.106",
-    "@uniformdev/insights": "20.7.1-alpha.106",
-    "next": "^16.0.10",
+    "@uniformdev/canvas-next-rsc-client-v2": "20.7.1-alpha.112",
+    "@uniformdev/canvas-next-rsc-shared-v2": "20.7.1-alpha.112",
+    "@uniformdev/canvas-next-rsc-v2": "20.7.1-alpha.112",
+    "@uniformdev/context": "20.7.1-alpha.112",
+    "@uniformdev/insights": "20.7.1-alpha.112",
+    "next": "^16.1.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
@@ -32,7 +32,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@uniformdev/cli": "20.7.1-alpha.106",
+    "@uniformdev/cli": "20.7.1-alpha.112",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
