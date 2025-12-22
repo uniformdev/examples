@@ -1,39 +1,28 @@
-import { Suspense } from "react";
 import {
-  resolveRouteFromCode,
   UniformComposition,
   UniformPageParameters,
   createUniformStaticParams,
-  UniformContext,
 } from "@uniformdev/canvas-next-rsc-v2";
-import { notFound } from "next/navigation";
 
 import { resolveComponent } from "@/components/resolveComponent";
 import { CustomUniformClientContext } from "@/components/CustomUniformClientContext";
 
-// enables ISR
 export const generateStaticParams = async () => {
   return createUniformStaticParams({
     paths: ["/"],
+    // Important: for localized sites, you need to add the locales to the paths
+    // paths: ["/en"],
   });
 };
 
 export default async function UniformPage(props: UniformPageParameters) {
-  const result = await resolveRouteFromCode(props);
-
-  if (!result.route) {
-    notFound();
-  }
-
+  const { code } = await props.params;
   return (
-    <>
-      <Suspense fallback={null}>
-        <UniformContext
-          result={result}
-          clientContextComponent={CustomUniformClientContext}
-        />
-      </Suspense>
-      <UniformComposition {...result} resolveComponent={resolveComponent} />
-    </>
+    <UniformComposition
+      code={code}
+      cacheComponents={true}
+      resolveComponent={resolveComponent}
+      clientContextComponent={CustomUniformClientContext}
+    />
   );
 }

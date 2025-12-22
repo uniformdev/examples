@@ -1,4 +1,6 @@
-# New Next.js App Router SDK v2 Starter
+# New Next.js 16 App Router SDK v2 Starter
+
+Featuring `Cache Components` support.
 
 ## 🚧 Developer Preview
 Contact Uniform for `NPM_TOKEN` to get access to the pre-release package.
@@ -31,6 +33,11 @@ See [this live url](https://nextjs-app-router-v2.vercel.app/) to experience pers
 1. One-time: push content into your empty project with this command:
     ```bash
     npm run uniform:push
+    ```
+
+1. Publish manifest with Uniform personalization and test configuration:
+    ```bash
+    npm run uniform:manifest
     ```
 
 1. Run the dev server:
