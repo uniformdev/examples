@@ -1,4 +1,6 @@
-# New Next.js App Router SDK v2 Starter
+# New Next.js 16 App Router SDK v2 Starter
+
+Featuring `Cache Components` support.
 
 ## 🚧 Developer Preview
 Contact Uniform for `NPM_TOKEN` to get access to the pre-release package.

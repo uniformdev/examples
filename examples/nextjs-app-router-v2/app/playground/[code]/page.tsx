@@ -1,13 +1,18 @@
 import {
-  resolvePlaygroundRoute,
-  UniformPageParameters,
+  createUniformPlaygroundStaticParams,
+  PlaygroundParameters,
   UniformPlayground,
 } from "@uniformdev/canvas-next-rsc-v2";
+
 import { resolveComponent } from "@/components/resolveComponent";
 
-export default async function PlaygroundPage(props: UniformPageParameters) {
-  const result = await resolvePlaygroundRoute(props);
-  return (
-    <UniformPlayground route={result} resolveComponent={resolveComponent} />
-  );
+export const generateStaticParams = async () => {
+  return createUniformPlaygroundStaticParams({
+    paths: ["/"],
+  });
+};
+
+export default async function PlaygroundPage({ params }: PlaygroundParameters) {
+  const { code } = await params;
+  return <UniformPlayground code={code} resolveComponent={resolveComponent} />;
 }
