@@ -1,7 +1,7 @@
 import {
   ResolveComponentFunction,
   type ResolveComponentResult,
-} from "@uniformdev/canvas-next-rsc-v2";
+} from "@uniformdev/next-app-router";
 
 import { DefaultNotFoundComponent } from "./default";
 import { HeroComponent } from "./hero";

@@ -1,7 +1,7 @@
 import {
   ComponentProps,
   UniformSlot,
-} from "@uniformdev/canvas-next-rsc-v2/component";
+} from "@uniformdev/next-app-router/component";
 
 import { QuirkButton } from "./custom/QuirkButton";
 import WebVitals from "./custom/WebVitals";

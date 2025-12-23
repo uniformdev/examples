@@ -1,4 +1,4 @@
-import { uniformMiddleware } from "@uniformdev/canvas-next-rsc-v2/middleware";
+import { uniformMiddleware } from "@uniformdev/next-app-router/middleware";
 
 export default uniformMiddleware();
 

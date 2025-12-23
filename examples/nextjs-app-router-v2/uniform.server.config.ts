@@ -1,4 +1,4 @@
-import { UniformServerConfig } from "@uniformdev/canvas-next-rsc-v2/config";
+import { UniformServerConfig } from "@uniformdev/next-app-router/config";
 
 const config: UniformServerConfig = {
   defaultConsent: true,

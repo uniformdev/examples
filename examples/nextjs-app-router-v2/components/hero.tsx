@@ -3,7 +3,7 @@ import {
   ComponentProps,
   UniformRichText,
   UniformText,
-} from "@uniformdev/canvas-next-rsc-v2/component";
+} from "@uniformdev/next-app-router/component";
 
 export const HeroComponent = ({
   parameters: { title, description },
