@@ -1,4 +1,4 @@
-import { uniformMiddleware } from "@uniformdev/canvas-next-rsc-v2/middleware";
+import { uniformMiddleware } from "@uniformdev/next-app-router/middleware";
 
 // TODO: in production, use locales from your internationalization setup and retrieve default local from Uniform at build time
 const defaultLocale = "en";

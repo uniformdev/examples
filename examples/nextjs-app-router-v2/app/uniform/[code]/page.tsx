@@ -2,8 +2,10 @@ import {
   UniformComposition,
   UniformPageParameters,
   createUniformStaticParams,
-} from "@uniformdev/canvas-next-rsc-v2";
-
+  resolveRouteFromCode,
+} from "@uniformdev/next-app-router";
+// TODO: Uncomment this to use resolveComponent with cache components support
+// import { resolveRouteFromCode } from "@uniformdev/next-app-router/cache";
 import { resolveComponent } from "@/components/resolveComponent";
 import { CustomUniformClientContext } from "@/components/CustomUniformClientContext";
 
@@ -20,7 +22,7 @@ export default async function UniformPage(props: UniformPageParameters) {
   return (
     <UniformComposition
       code={code}
-      cacheComponents={true}
+      resolveRoute={resolveRouteFromCode}
       resolveComponent={resolveComponent}
       clientContextComponent={CustomUniformClientContext}
     />

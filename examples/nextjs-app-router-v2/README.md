@@ -1,9 +1,9 @@
 # New Next.js 16 App Router SDK v2 Starter
 
-Featuring `Cache Components` support.
+Featuring `Cache Components` support (disabled in this starter, read later on how to enable).
 
-## 🚧 Developer Preview
-Contact Uniform for `NPM_TOKEN` to get access to the pre-release package.
+## 🚧 Release Candidate
+This is a late release candidate of the SDK. While we don't anticipate any breaking changes at this point, there may be additional fixes and changes before GA.
 
 ## Important: Uniform Preview support
 
@@ -22,8 +22,6 @@ See [this live url](https://nextjs-app-router-v2.vercel.app/) to experience pers
 1. Prepare an empty Uniform project.
 
 1. Set your Uniform env vars with developer permission API key in .env.
-
-1. Set `NPM_TOKEN` env var with `export set NPM_TOKEN=value-you-got-from-uniform`.
 
 1. Install dependencies:
     ```bash
@@ -47,3 +45,17 @@ See [this live url](https://nextjs-app-router-v2.vercel.app/) to experience pers
     ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## How to enable cache components support
+
+1. Enable `cache components` feature in next.config
+```bash
+    const nextConfig: NextConfig = {
+        cacheComponents: true,
+    };
+```
+
+2. Update your `page.tsx` to import `resolveRouteFromCode` function from another path:
+```bash
+import { resolveRouteFromCode } from '@uniformdev/next-app-router/cache';
+```

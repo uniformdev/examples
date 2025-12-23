@@ -8,7 +8,7 @@ import {
   createClientUniformContext,
   useInitUniformContext,
   ClientContextComponent,
-} from "@uniformdev/canvas-next-rsc-client-v2";
+} from "@uniformdev/next-app-router-client";
 
 export const CustomUniformClientContext: ClientContextComponent = ({
   manifest,
