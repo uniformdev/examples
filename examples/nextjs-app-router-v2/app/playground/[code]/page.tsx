@@ -9,7 +9,7 @@ import { resolveComponent } from "@/components/resolveComponent";
 
 export const generateStaticParams = async () => {
   return createUniformPlaygroundStaticParams({
-    paths: ["/"],
+    paths: ["/en"],
   });
 };
 

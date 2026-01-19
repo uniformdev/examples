@@ -11,9 +11,9 @@ import { CustomUniformClientContext } from "@/components/CustomUniformClientCont
 
 export const generateStaticParams = async () => {
   return createUniformStaticParams({
-    paths: ["/"],
+    // paths: ["/"],
     // Important: for localized sites, you need to add the locales to the paths
-    // paths: ["/en"],
+    paths: ["/en"],
   });
 };
 

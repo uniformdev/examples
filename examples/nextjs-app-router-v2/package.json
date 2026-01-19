@@ -18,12 +18,12 @@
     "uniform:manifest": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/context": "20.7.1-alpha.120",
-    "@uniformdev/insights": "20.7.1-alpha.120",
-    "@uniformdev/next-app-router": "20.7.1-alpha.120",
-    "@uniformdev/next-app-router-client": "20.7.1-alpha.120",
-    "@uniformdev/next-app-router-shared": "20.7.1-alpha.120",
-    "next": "^16.1.1",
+    "@uniformdev/context": "20.7.1-alpha.136",
+    "@uniformdev/insights": "20.7.1-alpha.136",
+    "@uniformdev/next-app-router": "20.7.1-alpha.136",
+    "@uniformdev/next-app-router-client": "20.7.1-alpha.136",
+    "@uniformdev/next-app-router-shared": "20.7.1-alpha.136",
+    "next": "^16.1.3",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
@@ -32,7 +32,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@uniformdev/cli": "20.7.1-alpha.120",
+    "@uniformdev/cli": "20.7.1-alpha.136",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
