@@ -13,7 +13,7 @@ export const generateStaticParams = async () => {
   return createUniformStaticParams({
     // paths: ["/"],
     // Important: for localized sites, you need to add the locales to the paths
-    paths: ["/en"],
+    paths: ["/", "/about", "/news"],
   });
 };
 
