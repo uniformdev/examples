@@ -1,0 +1,264 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 4e3d4d5a-fe22-4ab0-8e8d-2c4677a31a60
+        type: $personalization
+        slots:
+          pz:
+            - _id: e85c86d5-d4b3-41e4-b60c-65d47077b5dd
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Svelte SDK for Uniform is here! 🌶️
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: launchCampaign
+                        r: 0
+                        op: '>'
+                    name: 'Hero: We are launched!'
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                Showing personalized content since "Launch
+                                Campaign" signal has a score.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: Check dev tools for more logging info.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                      direction: ltr
+            - _id: 09414dfb-b4ce-4b17-a030-a15381f0d298
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Welcome, stranger.
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                This is default content shown to every visitor.
+                                Trigger campaign-based personalization 
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=launch
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: now
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: '!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'Enjoy a cool GG Bridge view:'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: asset
+                          __asset:
+                            _id: 3dcfaad8-a928-43fd-ba19-e2c32cc31b88
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 0995932d-41af-4f06-a877-9bf402ab1220
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/dD5sklMTRO2tWwwjR_IkNA/2-krYoNeTpmwGnTlNFElqA-panorama-2154194_1280.jpg
+                                type: text
+                              file:
+                                type: file
+                                value: 98420c0a-75b4-410b-8da0-b7dee78e88c5
+                              size:
+                                value: 159324
+                                type: number
+                              title:
+                                type: text
+                                value: panorama-2154194_1280.jpg
+                              width:
+                                value: 1280
+                                type: number
+                              height:
+                                value: 689
+                                type: number
+                              mediaType:
+                                value: image/jpeg
+                                type: text
+                            _source: uniform-assets
+                          version: 1
+                      direction: ltr
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: Home Hero
+      - _id: f834e9f9-1f01-43cd-a5ca-1486c9fef523
+        type: $test
+        slots:
+          test:
+            - _id: 3b8e97c9-51cd-450b-bd47-d831e9072707
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: variant a
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    id: variant-a
+                    control: true
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                This component is a part of an A/B test. This is
+                                variant A.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+            - _id: b8828c13-a963-4b0c-a6a4-c8e27766b0d2
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: variant b
+                $tstVrnt:
+                  type: testVariant
+                  value:
+                    id: variant-b
+                    control: false
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                This component is a part of an A/B test. This is
+                                variant B.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+        parameters:
+          test:
+            type: testSelect
+            value: heroTest
+created: '2026-01-23T20:53:35.044617+00:00'
+modified: '2026-02-03T06:35:15.958835+00:00'
+pattern: false
