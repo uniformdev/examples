@@ -1,0 +1,10 @@
+composition:
+  _name: Hero pattern
+  _id: f0cab823-bfa4-486e-b700-d6676640b4f2
+  type: hero
+  parameters: {}
+  _overridability:
+    hideLockedParameters: true
+created: '2026-02-03T06:47:59.659742+00:00'
+modified: '2026-02-03T06:47:59.659742+00:00'
+pattern: true

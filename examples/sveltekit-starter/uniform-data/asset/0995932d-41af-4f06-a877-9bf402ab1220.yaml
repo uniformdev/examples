@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 0995932d-41af-4f06-a877-9bf402ab1220
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: panorama-2154194_1280.jpg
+    file:
+      type: file
+      value: 98420c0a-75b4-410b-8da0-b7dee78e88c5
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/dD5sklMTRO2tWwwjR_IkNA/2-krYoNeTpmwGnTlNFElqA-panorama-2154194_1280.jpg
+      type: text
+    size:
+      value: 159324
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 689
+      type: number
+    custom: {}
+created: '2026-01-26T13:59:47.54548+00:00'
+modified: '2026-01-26T13:59:47.54548+00:00'
