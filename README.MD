@@ -8,8 +8,7 @@ This repo contains various examples to facilitate your getting-started experienc
 
 These starters don't have a lot of functionality, they are single page, single component sort of "hello world" starters typically used to learn the essentials of Uniform SDK and be used as a starting point for the greenfield projects. Preview, personalization and A/B testing is enabled on all of these starters.
 
-- [Hello world starter for Next.js 15 App Router](./examples/nextjs-app-router) - essential 1 page, 1 component starter. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
-    > Recommended for learning of Uniform SDK essentials or as a baseline for new projects using Next.js 15 app router if you have existing components / design system and don't want to use [Component Starter Kit](https://github.com/uniformdev/component-starter-kit-next-approuter).
+- [Hello world starter for Next.js 16 App Router](./examples/nextjs-app-router-v2) - essential 1 page, 1 component starter. V2 starter is highly recommended over V1.
 
 - [Hello world starter for Next.js Page Router](./examples/nextjs-starter) - essential 1 page, 1 component starter.
 
@@ -17,9 +16,11 @@ These starters don't have a lot of functionality, they are single page, single c
 
 - [Create React App Starter (CSR)](./examples/react-starter-cra) - basic Create React App starter with Uniform SDK pre-configured using client-side rendering.
 
-- [Nuxt hello world starter](./examples/nuxtjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Nuxt 3. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
+- [Svelte / Sveltekit Starter](./examples/sveltekit-starter/) - a SvelteKit application integrated with Uniform's visual composition and personalization platform. This starter demonstrates how to build component-driven pages with visual editing capabilities and edge-side personalization.
 
-- [Gatsby 5 starter](./examples/gatsby5) - a simple marketing site showing the essentials of Uniform + Gatsby.js integration, including personalization and A/B testing!
+- [Nuxt hello world starter](./examples/nuxtjs-starter) - essential 1 page, 1 component starter, recommended baseline for new projects using Nuxt. The starter is available to be installed via `npx @uniformdev/cli@latest new`.
+
+- [Gatsby starter](./examples/gatsby5) - a simple marketing site showing the essentials of Uniform + Gatsby.js integration, including personalization and A/B testing!
 
 - [Remix starter](./examples/remix-cloudflare-starter/) - essential 1 page, 1 component starter for Remix configured with Cloudlare, recommended as reference for new projects using Uniform Remix SDK.
 
