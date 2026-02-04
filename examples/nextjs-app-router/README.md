@@ -1,5 +1,7 @@
 # Hello World starter for Next.js app router
 
+> ⚠️ This starter is using older version of Next.js SDK and is deprecated in favor of [v2](../nextjs-app-router-v2/).
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Pre-requisites

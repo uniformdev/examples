@@ -1,5 +1,7 @@
 # Search API example app
 
+> ⚠️ This starter is using older version of Next.js SDK and is deprecated in favor of [v2](../nextjs-app-router-v2/).
+
 This starter is based on Next.js App Router but can be used with any other React-based framework.
 
 ## Pre-requisites

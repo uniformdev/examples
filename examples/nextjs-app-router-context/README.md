@@ -1,5 +1,8 @@
 # Next.js App Router starter for Context
 
+
+> ⚠️ This starter is using older version of Next.js SDK and is deprecated in favor of [v2](../nextjs-app-router-v2/).
+
 This starter is based on the [Next.js App Router starter](https://github.com/vercel/nextjs-app-router-starter) and adds the Uniform Context SDK to the project (personalization and A/B testing only), without the Canvas SDK.
 
 > For sample demo content, this starter uses mocked content in a json object. If you integrate with a headless CMS, you will need to replace the mocked content with your own data fetching logic using the relevantCMS SDK.
