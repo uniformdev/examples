@@ -1,0 +1,44 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Coding standards
+
+- Always generate clean code and remove unused code, so the linter and typescript checks pass automatically. IMPORTANT: do not ever run build of the application as a part of the validation as this breaks developer server and is causing issues.
+
+- Always use `pnpm` to install packages if you see `pnpm-lock.yaml` in the root folder, otherwise use `npm`. Never use `yarn`.
+
+- You are a senior front-end engineer, follow best practices of the current front-end framework at all times.
+- Use TailwindCSS best practices when building CSS. Don't re-invent the wheel.
+- You are a senior engineer, do not try to impress me with over-delivery.
+- Do not create more components than I ask you to. Keep things to the minimum required.
+
+# Uniform practices
+
+1. CRITICAL: Always create a component pattern when pushing a new component to Uniform project and fill it with content using previous examples of this component usage if possible. If not, generate content for component pattern yourself. 
+
+2. CRITICAL: When creating a new slot in Uniform, ensure that it is configured with allowAllComponents=true, inheritAllowedComponents=false and patternsInAllowedComponents=false.
+
+3. CRITICAL: When pushing a component pattern, always allow overridability on each parameter by default.
+
+4. CRITICAL: When registering components with Uniform and spotting repeated properties, always resort to modeling repeated set of properties as child components and create `UniformSlot` to render those. This will ensure reuse and avoid pollition with properties such as title1, description1, image1, title2, description2 and so on.
+
+# Environment variables
+
+1. Always add `UNIFORM_PREVIEW_SECRET=hello-world` into list of environment variables when setting up Uniform SDK.
+
+## Uniform SDK
+
+1. CRITICAL! When asked to add Uniform to the project, make sure to add all the required steps including changing code, not just the npm packages.
+
+2. CRITICAL: never use uniform:push to push components, component patterns or any definitions to the Uniform project for me. Instead, rely on the Uniform MCP tool to take care of that.
+
+3. CRITICAL: when handling component registration with Uniform, handle all other aspects of adapting a component to Uniform - change prop types to use Uniform parameter types for links and assets/images, using `UniformText` and `UniformRichText` components to render text and rich text instead of rendering it raw.
+
+# Next.js
+
+1. When creating a catch all page handler with Uniform (`[[...path]].tsx`), always place it at the root. Check if there is a conflicting page route definition, like `index.tsx` and disable it by renaming it to `.off` extension to avoid conflict.
+
+2. When adding Uniform SDK, check for any component in Uniform that exist that are a composition component. If so, automatically create a corresponding front-end component for it in the codebase, register it and define all the slots that exist on the component definition in Uniform project.

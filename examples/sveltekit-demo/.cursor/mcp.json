@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+      "Uniform": {
+        "type": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@uniformdev/uniform-mcp"
+        ],
+        "env": {
+          "UNIFORM_API_KEY": "uf18q5el77u9efqcgmfq3adj4hpxqve62hjnzgvvwqe9sqp4gfrwt28tecx63mqtpcnq26pz4d3y9cc9gh050jzc9mr95uk88",
+          "UNIFORM_PROJECT_ID": "1ddd37ef-f7c6-406d-aa00-4934e61be795",
+          "UNIFORM_AI_API_HOST": "https://ai.uniform.global"
+        }
+      }
+    }
+  }

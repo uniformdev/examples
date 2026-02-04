@@ -1,0 +1,10 @@
+.vercel
+node_modules
+.svelte-kit
+
+.env*
+.env*.local
+
+.test
+
+.reference

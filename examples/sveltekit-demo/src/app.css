@@ -1,0 +1,275 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'), local('SFProDisplay-Regular');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  /* Cherry - Premium consumer tech theme with rich cherry red accent */
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(0 0% 7%);
+  --card: hsl(0 0% 98%);
+  --card-foreground: hsl(0 0% 7%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(0 0% 7%);
+  --primary: hsl(0 0% 7%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(0 0% 96%);
+  --secondary-foreground: hsl(0 0% 7%);
+  --muted: hsl(0 0% 96%);
+  --muted-foreground: hsl(0 0% 45%);
+  --accent: hsl(350 80% 50%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(0 0% 92%);
+  --input: hsl(0 0% 92%);
+  --ring: hsl(0 0% 7%);
+  --chart-1: hsl(350 80% 50%);
+  --chart-2: hsl(0 0% 30%);
+  --chart-3: hsl(0 0% 70%);
+  --chart-4: hsl(350 70% 65%);
+  --chart-5: hsl(0 0% 50%);
+  --radius: 1rem;
+  --sidebar-background: hsl(0 0% 98%);
+  --sidebar-foreground: hsl(240 5.3% 26.1%);
+  --sidebar-primary: hsl(240 5.9% 10%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.dark {
+  --background: hsl(0 0% 4%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(0 0% 8%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(0 0% 4%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(0 0% 98%);
+  --primary-foreground: hsl(0 0% 4%);
+  --secondary: hsl(0 0% 12%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(0 0% 12%);
+  --muted-foreground: hsl(0 0% 60%);
+  --accent: hsl(350 80% 50%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(0 0% 16%);
+  --input: hsl(0 0% 16%);
+  --ring: hsl(0 0% 83.9%);
+  --chart-1: hsl(350 80% 50%);
+  --chart-2: hsl(0 0% 70%);
+  --chart-3: hsl(0 0% 40%);
+  --chart-4: hsl(350 70% 65%);
+  --chart-5: hsl(0 0% 55%);
+  --sidebar-background: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+  --font-serif: 'New York', Georgia, serif;
+  --font-mono: 'SF Mono', 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Aurora Borealis Animations */
+@keyframes aurora-1 {
+  0%, 100% { 
+    transform: translateX(0%) translateY(0%) rotate(0deg) scale(1);
+    opacity: 0.3;
+  }
+  25% { 
+    transform: translateX(5%) translateY(-10%) rotate(5deg) scale(1.1);
+    opacity: 0.4;
+  }
+  50% { 
+    transform: translateX(-5%) translateY(-5%) rotate(-3deg) scale(0.95);
+    opacity: 0.25;
+  }
+  75% { 
+    transform: translateX(3%) translateY(-15%) rotate(2deg) scale(1.05);
+    opacity: 0.35;
+  }
+}
+
+@keyframes aurora-2 {
+  0%, 100% { 
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 0.2;
+  }
+  33% { 
+    transform: translateX(-8%) translateY(5%) rotate(-5deg);
+    opacity: 0.3;
+  }
+  66% { 
+    transform: translateX(5%) translateY(-8%) rotate(3deg);
+    opacity: 0.15;
+  }
+}
+
+@keyframes aurora-3 {
+  0%, 100% { 
+    transform: translateY(0%) scaleY(1) scaleX(1);
+    opacity: 0.25;
+  }
+  50% { 
+    transform: translateY(-10%) scaleY(1.2) scaleX(0.9);
+    opacity: 0.35;
+  }
+}
+
+@keyframes aurora-4 {
+  0%, 100% { 
+    transform: translateX(0%) translateY(0%) scale(1);
+    opacity: 0.15;
+  }
+  40% { 
+    transform: translateX(-10%) translateY(-5%) scale(1.1);
+    opacity: 0.25;
+  }
+  80% { 
+    transform: translateX(5%) translateY(5%) scale(0.9);
+    opacity: 0.1;
+  }
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; filter: blur(40px); }
+  50% { opacity: 0.8; filter: blur(60px); }
+}
+
+.aurora-wave-1 {
+  animation: aurora-1 15s ease-in-out infinite;
+}
+
+.aurora-wave-2 {
+  animation: aurora-2 20s ease-in-out infinite;
+  animation-delay: -5s;
+}
+
+.aurora-wave-3 {
+  animation: aurora-3 12s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+.aurora-wave-4 {
+  animation: aurora-4 18s ease-in-out infinite;
+  animation-delay: -8s;
+}
+
+.star-twinkle {
+  animation: star-twinkle 3s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}

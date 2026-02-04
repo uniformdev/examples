@@ -1,0 +1,592 @@
+---
+description: Uniform SDK integration guide for SvelteKit applications. Use when integrating Uniform Canvas, Context, and personalization into a SvelteKit project.
+globs: 
+alwaysApply: true
+---
+
+[uniform.mdc](mdc:.cursor/rules/uniform.mdc) describes general Uniform principles and practices.
+[uniform-sdk.mdc](mdc:.cursor/rules/uniform-sdk.mdc) describes framework-agnostic developer principles.
+
+## Required npm packages
+
+The following npm packages must be installed to wire Uniform CMS to SvelteKit:
+
+### Core Canvas packages
+- `@uniformdev/canvas` - Core Canvas API client for fetching compositions
+- `@uniformdev/canvas-svelte` - Svelte components: `UniformComposition`, `UniformSlot`, `UniformText`, `UniformRichText`
+- `@uniformdev/canvas-sveltekit` - SvelteKit integrations: `createUniformLoad`, `createUniformHandle`, preview handler, ISR config
+
+### Core Context packages (for personalization)
+- `@uniformdev/context` - Personalization Context engine
+- `@uniformdev/context-svelte` - `UniformContext` provider component
+
+### Edge personalization packages (optional, for production)
+- `@uniformdev/context-edge` - Edge-side context processing
+- `@uniformdev/context-edge-sveltekit` - NESI response handler for edge personalization
+- `@vercel/functions` - Vercel edge functions support
+- `cookie` - Cookie parsing utility
+
+### Dev dependencies
+- `@uniformdev/cli` - CLI for pulling manifests and syncing content (IMPORTANT: must be installed as devDependency)
+
+## Configuring TypeScript Types
+
+Update `src/app.d.ts` to include Uniform preview data types:
+
+```typescript
+import type { UniformPreviewData } from '@uniformdev/canvas-sveltekit';
+
+declare global {
+  namespace App {
+    interface Locals {
+      uniformPreview?: UniformPreviewData;
+    }
+  }
+}
+
+export {};
+```
+
+## Component Mapping
+
+Create `src/lib/uniform/componentMap.ts` to map Uniform component types to Svelte components:
+
+```typescript
+import type { ComponentMap } from '@uniformdev/canvas-svelte';
+import Hero from '$lib/components/Hero.svelte';
+import Page from '$lib/components/Page.svelte';
+
+/**
+ * Maps Uniform component types to Svelte components.
+ * The key is the component type from Uniform Canvas.
+ * Use `type__variant` format to map specific variants.
+ */
+export const componentMap: ComponentMap = {
+  page: Page,
+  hero: Hero,
+  // Variant example: card__featured uses same component with variant styling
+  // card__featured: Card,
+};
+```
+
+## Server Hooks Configuration
+
+Create `src/hooks.server.ts` to handle Uniform preview cookies:
+
+```typescript
+import { sequence } from '@sveltejs/kit/hooks';
+import { createUniformHandle } from '@uniformdev/canvas-sveltekit';
+
+const uniformHandle = createUniformHandle({
+  onPreview: (event, previewData) => {
+    if (previewData.isUniformContextualEditing) {
+      console.log('[Uniform] Contextual editing mode active for:', previewData.compositionPath);
+    }
+  },
+});
+
+export const handle = sequence(uniformHandle);
+```
+
+## Root Layout with Context Provider
+
+Update `src/routes/+layout.svelte` to initialize Uniform Context:
+
+```svelte
+<script lang="ts">
+  import { dev } from '$app/environment';
+  import {
+    Context,
+    CookieTransitionDataStore,
+    enableContextDevTools,
+    enableDebugConsoleLogDrain
+  } from '@uniformdev/context';
+  import { UniformContext } from '@uniformdev/context-svelte';
+  import type { ManifestV2 } from '@uniformdev/context';
+  import manifestJson from '$lib/uniform/contextManifest.json';
+
+  let { children } = $props();
+
+  const context = new Context({
+    defaultConsent: true,
+    transitionStore: new CookieTransitionDataStore({
+      serverCookieValue: undefined,
+    }),
+    plugins: [enableContextDevTools(), enableDebugConsoleLogDrain('debug')],
+    manifest: manifestJson as ManifestV2,
+  });
+</script>
+
+<UniformContext {context} outputType={dev ? 'standard' : 'edge'}>
+  {@render children()}
+</UniformContext>
+```
+
+**Important:** The `outputType` prop controls personalization rendering:
+- `standard`: Used in development - personalization happens client-side
+- `edge`: Used in production - outputs NESI placeholders that the edge middleware replaces
+
+## Catch-All Route for Compositions
+
+### Server Load Function
+
+Create `src/routes/[...path]/+page.server.ts` to fetch compositions:
+
+```typescript
+import { error } from '@sveltejs/kit';
+import { RouteClient } from '@uniformdev/canvas';
+import { env } from '$env/dynamic/private';
+import type { PageServerLoad } from './$types';
+
+// Optional: ISR on Vercel
+import { createVercelIsrConfig } from '@uniformdev/canvas-sveltekit';
+export const config = createVercelIsrConfig({ expiration: 60 });
+
+function hasUniformCredentials(): boolean {
+  return Boolean(env.UNIFORM_API_KEY && env.UNIFORM_PROJECT_ID);
+}
+
+export const load: PageServerLoad = async (event) => {
+  if (!hasUniformCredentials()) {
+    error(500, 'Uniform credentials not configured. Set UNIFORM_API_KEY and UNIFORM_PROJECT_ID in your .env file.');
+  }
+
+  // Lazy import to avoid initialization errors when credentials are missing
+  const { createUniformLoad } = await import('@uniformdev/canvas-sveltekit/route');
+
+  const client = new RouteClient({
+    apiKey: env.UNIFORM_API_KEY,
+    projectId: env.UNIFORM_PROJECT_ID,
+  });
+
+  const uniformLoad = createUniformLoad({
+    client,
+    projectMapId: env.UNIFORM_PROJECT_MAP_ID,
+    param: 'path', // Matches [...path]
+  });
+
+  return uniformLoad(event);
+};
+```
+
+### Page Component
+
+Create `src/routes/[...path]/+page.svelte` to render compositions:
+
+```svelte
+<script lang="ts">
+  import { UniformComposition, UniformSlot } from '@uniformdev/canvas-svelte';
+  import { componentMap } from '$lib/uniform/componentMap.js';
+
+  let { data } = $props();
+</script>
+
+<UniformComposition
+  data={data.data}
+  {componentMap}
+  matchedRoute={data.matchedRoute}
+  dynamicInputs={data.dynamicInputs}
+>
+  <UniformSlot name="content" />
+</UniformComposition>
+```
+
+### Error Page
+
+Create `src/routes/[...path]/+error.svelte`:
+
+```svelte
+<script lang="ts">
+  import { page } from '$app/stores';
+</script>
+
+<div class="error-page">
+  <h1>{$page.status}</h1>
+  <p>{$page.error?.message || 'Page not found'}</p>
+  <a href="/">← Back to home</a>
+</div>
+```
+
+## Preview Handler
+
+Create `src/routes/preview/+server.ts` for Canvas contextual editing:
+
+```typescript
+import { createPreviewHandler } from '@uniformdev/canvas-sveltekit/preview';
+import { env } from '$env/dynamic/private';
+
+const handlers = createPreviewHandler({
+  secret: () => env.UNIFORM_PREVIEW_SECRET ?? '',
+  playgroundPath: '/playground',
+  resolveFullPath: ({ path, slug }) => {
+    return path || slug || '/';
+  },
+});
+
+export const GET = handlers.GET;
+export const POST = handlers.POST;
+export const OPTIONS = handlers.OPTIONS;
+```
+
+## Playground Page
+
+Create `src/routes/playground/+page.svelte` for component/pattern previews:
+
+```svelte
+<script lang="ts">
+  import { UniformComposition, UniformSlot } from '@uniformdev/canvas-svelte';
+  import { componentMap } from '$lib/uniform/componentMap.js';
+  import { EMPTY_COMPOSITION } from '@uniformdev/canvas';
+</script>
+
+<div class="playground">
+  <UniformComposition data={EMPTY_COMPOSITION} {componentMap}>
+    <UniformSlot name="content" />
+  </UniformComposition>
+</div>
+
+<style>
+  .playground {
+    min-height: 100vh;
+    padding: 2rem;
+  }
+</style>
+```
+
+## Rendering Uniform Components with Svelte
+
+> IMPORTANT: before generating Uniform component code, always fetch available component definitions from Uniform to be aware of the schema.
+
+### Component Props Typing
+
+Use `ComponentProps<T>` for type-safe parameter access. All parameter props must be optional since they can be undefined:
+
+```svelte
+<script lang="ts">
+  import type { ComponentProps } from '@uniformdev/canvas-svelte';
+  import type { AssetParamValue, LinkParamValue, RichTextParamValue } from '@uniformdev/canvas';
+
+  interface Props extends ComponentProps<{
+    textParam?: string;
+    richTextParam?: RichTextParamValue;
+    linkParam?: LinkParamValue;
+    assetParam?: AssetParamValue;
+  }> {}
+
+  let { textParam, component }: Props = $props();
+
+  // Access variant info via component.variant
+  const isFeatured = $derived(component.variant === 'featured');
+</script>
+```
+
+### Text Parameters
+
+Always use `UniformText` for editable text parameters. This enables inline editing in Canvas:
+
+```svelte
+<script lang="ts">
+  import { UniformText } from '@uniformdev/canvas-svelte';
+</script>
+
+<!-- Basic usage with placeholder -->
+<UniformText parameterId="title" placeholder="Enter title" />
+
+<!-- With wrapper element and class -->
+<UniformText parameterId="title" as="h1" class="headline" placeholder="Enter title" />
+```
+
+Text parameters without visible components (e.g., alt text) should use raw values.
+
+### Rich Text Parameters
+
+Always use `UniformRichText` for rich text parameters (stored as Lexical JSON):
+
+```svelte
+<script lang="ts">
+  import { UniformRichText } from '@uniformdev/canvas-svelte';
+</script>
+
+<UniformRichText parameterId="body" as="div" placeholder="Enter content" />
+```
+
+### Slots
+
+Use `UniformSlot` to render nested child components from composition slots:
+
+```svelte
+<script lang="ts">
+  import { UniformSlot } from '@uniformdev/canvas-svelte';
+</script>
+
+<div class="container">
+  <UniformSlot name="content" />
+</div>
+
+<aside>
+  <UniformSlot name="sidebar" />
+</aside>
+```
+
+### Asset Parameters
+
+Use `flattenValues` helper to simplify asset value access:
+
+```svelte
+<script lang="ts">
+  import { flattenValues } from '@uniformdev/canvas';
+  import type { AssetParamValue } from '@uniformdev/canvas';
+  import type { ComponentProps } from '@uniformdev/canvas-svelte';
+
+  interface Props extends ComponentProps<{
+    image?: AssetParamValue;
+    gallery?: AssetParamValue;
+  }> {}
+
+  let { image, gallery }: Props = $props();
+
+  // Single asset
+  const img = $derived(flattenValues(image, { toSingle: true }));
+  // Multiple assets
+  const images = $derived(flattenValues(gallery));
+</script>
+
+{#if img}
+  <img src={img.url} width={img.width} height={img.height} alt="" />
+{/if}
+
+{#if images}
+  {#each images as item}
+    <img src={item?.url} width={item?.width} height={item?.height} alt="" />
+  {/each}
+{/if}
+```
+
+### Complete Component Example
+
+```svelte
+<script lang="ts">
+  import { UniformText, UniformRichText, UniformSlot } from '@uniformdev/canvas-svelte';
+  import type { ComponentProps } from '@uniformdev/canvas-svelte';
+
+  interface Props extends ComponentProps<{
+    title?: string;
+    description?: string;
+    showCta?: boolean;
+  }> {}
+
+  let { showCta, component }: Props = $props();
+
+  const isFeatured = $derived(component.variant === 'featured');
+</script>
+
+<section class="hero" class:featured={isFeatured}>
+  <UniformText parameterId="title" as="h1" placeholder="Enter hero title" />
+  <div class="description">
+    <UniformRichText parameterId="description" placeholder="Enter description" />
+  </div>
+  {#if showCta}
+    <UniformSlot name="cta" />
+  {/if}
+</section>
+```
+
+## Edge Personalization (Production)
+
+For production edge personalization with NESI (Nested Edge-Side Includes), create `middleware.ts` in the project root:
+
+```typescript
+import {
+  Context,
+  CookieTransitionDataStore,
+  UNIFORM_DEFAULT_COOKIE_NAME,
+} from '@uniformdev/context';
+import { createUniformNesiResponseHandler } from '@uniformdev/context-edge-sveltekit';
+import { next } from '@vercel/functions';
+import { parse } from 'cookie';
+import type { ManifestV2 } from '@uniformdev/context';
+import manifestJson from './src/lib/uniform/contextManifest.json';
+
+const manifest = manifestJson as ManifestV2;
+
+export default async function middleware(request: Request) {
+  // Skip subrequests from this middleware
+  if (request.headers.get('x-from-middleware') === 'true') {
+    return next(request);
+  }
+
+  const url = new URL(request.url);
+  const cookieValue = request.headers.get('cookie');
+  const cookies = parse(cookieValue ?? '');
+
+  const context = new Context({
+    manifest: manifest as ManifestV2,
+    defaultConsent: true,
+    transitionStore: new CookieTransitionDataStore({
+      serverCookieValue: cookies[UNIFORM_DEFAULT_COOKIE_NAME] ?? undefined,
+    }),
+  });
+
+  await context.update({ cookies, url });
+
+  const response = await fetch(url, {
+    headers: { 'x-from-middleware': 'true' },
+  });
+
+  const handler = createUniformNesiResponseHandler();
+  return handler({ response, context });
+}
+
+export const config = {
+  matcher: [
+    '/((?!_app|__data\\.json|@vite|@id|@fs|_next|.*\\..*|favicon\\.ico).*)',
+  ],
+};
+```
+
+**Note:** The `@uniformdev/context-edge-sveltekit` package requires an NPM token. Create `.npmrc`:
+
+```
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+```
+
+## CLI Configuration and Scripts
+
+### uniform.config.ts
+
+```typescript
+import { uniformConfig } from '@uniformdev/cli/config';
+
+export default uniformConfig({ preset: 'all', disableEntities: ['webhook'] });
+```
+
+### Package.json scripts
+
+Add these npm scripts:
+
+```json
+{
+  "scripts": {
+    "dev": "pnpm pull:manifest && vite dev",
+    "build": "pnpm pull:manifest && vite build",
+    "pull:manifest": "uniform context manifest download --output ./src/lib/uniform/contextManifest.json",
+    "pull:content": "uniform sync pull",
+    "push:content": "uniform sync push"
+  }
+}
+```
+
+### Placeholder manifest
+
+Create `src/lib/uniform/contextManifest.json`:
+
+```json
+{
+  "project": {}
+}
+```
+
+Add to `src/lib/uniform/.gitignore`:
+
+```
+contextManifest.json
+```
+
+## Environment Variables
+
+Required `.env` configuration:
+
+```bash
+UNIFORM_API_KEY=           # From Uniform dashboard
+UNIFORM_PROJECT_ID=        # Your Uniform project ID
+UNIFORM_PROJECT_MAP_ID=    # Optional - uses default if not set
+UNIFORM_PREVIEW_SECRET=hello-world  # Secret for preview validation
+```
+
+## Vercel Adapter Configuration
+
+For Vercel deployments, update `svelte.config.js`:
+
+```javascript
+import adapter from '@sveltejs/adapter-vercel';
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+  kit: {
+    adapter: adapter(),
+  },
+};
+
+export default config;
+```
+
+## Project Structure Reference
+
+```
+your-project/
+├── src/
+│   ├── app.d.ts                          # TypeScript declarations
+│   ├── app.html                          # HTML template
+│   ├── hooks.server.ts                   # Server hooks
+│   ├── lib/
+│   │   ├── components/                   # Svelte components
+│   │   │   ├── Hero.svelte
+│   │   │   ├── Page.svelte
+│   │   │   └── index.ts
+│   │   └── uniform/
+│   │       ├── componentMap.ts           # Component type mapping
+│   │       ├── contextManifest.json      # Generated by CLI
+│   │       └── .gitignore
+│   └── routes/
+│       ├── +layout.svelte                # Root layout with UniformContext
+│       ├── [...path]/
+│       │   ├── +page.server.ts           # Fetches compositions
+│       │   ├── +page.svelte              # Renders compositions
+│       │   └── +error.svelte
+│       ├── playground/
+│       │   └── +page.svelte
+│       └── preview/
+│           └── +server.ts
+├── middleware.ts                          # Edge middleware (optional)
+├── uniform.config.ts                      # CLI configuration
+├── package.json
+├── svelte.config.js
+├── vite.config.ts
+└── .env
+```
+
+## Key Differences from Next.js
+
+| Aspect | Next.js Page Router | SvelteKit |
+|--------|---------------------|-----------|
+| Component registration | `registerUniformComponent()` | `componentMap` object |
+| SSR data loading | `withUniformGetServerSideProps()` | `createUniformLoad()` in `+page.server.ts` |
+| Preview handler | `pages/api/preview.ts` | `src/routes/preview/+server.ts` |
+| Server hooks | `_app.tsx` / `_document.tsx` | `hooks.server.ts` |
+| Context provider | HOC in `_app.tsx` | `UniformContext` in `+layout.svelte` |
+| Props pattern | `ComponentProps<T>` generic | `ComponentProps<T>` with `$props()` |
+| Reactivity | React hooks | Svelte runes (`$derived`, `$props`) |
+
+## Troubleshooting
+
+### Common Issues
+
+1. **"Cannot find module contextManifest.json"**
+   - Run `pnpm pull:manifest` to download the manifest
+   - Ensure valid `UNIFORM_API_KEY` and `UNIFORM_PROJECT_ID` are set
+
+2. **Preview not working**
+   - Verify preview URL is configured in Uniform Canvas settings
+   - Check `UNIFORM_PREVIEW_SECRET` matches in both places
+   - Consult [troubleshooting guide](https://docs.uniform.app/docs/guides/composition/visual-editing/troubleshoot-preview)
+
+3. **Components not rendering**
+   - Verify component type names in `componentMap` match Uniform Canvas
+   - Check browser console for mapping errors
+
+4. **TypeScript errors with slots**
+   - Ensure `UniformSlot` name matches the slot name in Uniform Canvas
+
+5. **Edge personalization not working**
+   - Confirm `outputType="edge"` is set in production layout
+   - Verify middleware is correctly deployed and matching paths
