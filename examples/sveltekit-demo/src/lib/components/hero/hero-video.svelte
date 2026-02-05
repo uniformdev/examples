@@ -64,7 +64,7 @@
     if (videoElement) {
       videoElement.play().catch(() => {
         // Autoplay was prevented, video will remain paused
-        console.log('[alex] Autoplay was prevented by browser');
+        console.log('Autoplay was prevented by browser');
       });
     }
   });

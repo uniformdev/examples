@@ -21,10 +21,6 @@
     animationsEnabled = true
   }: Props = $props();
 
-  // Debug logging
-  $effect(() => {
-    console.log('[alex] HeroAurora - animationsEnabled:', animationsEnabled, 'type:', typeof animationsEnabled);
-  });
 </script>
 
 <!-- Hero Section - Aurora animation variant -->
