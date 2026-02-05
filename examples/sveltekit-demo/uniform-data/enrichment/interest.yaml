@@ -1,0 +1,8 @@
+id: interest
+name: Interest
+cap: 100
+values:
+  - id: products
+    value: Products
+  - id: support
+    value: Support

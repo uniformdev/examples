@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "videoUrl": "https://res.cloudinary.com/uniformdev/video/upload/v1770248737/cherry-demo/hero-bg_u9bprs.mp4",
+    "image": "/images/hero-device.png",
+    "imageAlt": "Cherry Neural Band Pro",
+    "headline": "Think beyond.",
+    "subheadline": "Technology that feels like magic. Devices that understand you. Welcome to the future of human potential.",
+    "announcement": "Introducing the 2030 Collection",
+    "ctaLink": "/products/neural",
+    "ctaText": "Explore Collection",
+    "secondaryLink": "/products/neural/neural-band-pro",
+    "secondaryText": "Watch the film"
+  },
+  "productSpotlights": {
+    "eyebrow": "The Lineup",
+    "headline": "Six devices. Infinite possibilities.",
+    "featuredBadge": "New",
+    "learnMoreText": "Learn more",
+    "featuredProductIndex": 0,
+    "gridProductIndices": [2, 3]
+  },
+  "categoryShowcase": {
+    "headline": "Explore by category",
+    "exploreText": "Explore",
+    "categoryIcons": {
+      "neural": "brain",
+      "vision": "eye",
+      "ambient": "wifi"
+    }
+  },
+  "featuredProduct": {
+    "productIndex": 4,
+    "specsLimit": 4,
+    "learnMoreText": "Learn more"
+  },
+  "productGrid": {
+    "headline": "The complete lineup",
+    "subheadline": "Every device, designed to work together.",
+    "viewText": "View"
+  },
+  "newsletter": {
+    "headline": "The future is closer than you think",
+    "description": "Get early access to new products, exclusive events, and a glimpse into what's next from Cherry.",
+    "placeholder": "Enter your email",
+    "buttonText": "Join",
+    "disclaimer": "By signing up, you agree to our Privacy Policy. No spam, ever."
+  }
+}

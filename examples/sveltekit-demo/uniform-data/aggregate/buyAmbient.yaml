@@ -1,0 +1,7 @@
+id: buyAmbient
+name: Buy Ambient
+description: ''
+type: 1
+inputs:
+  - dim: category_ambient
+    sign: +

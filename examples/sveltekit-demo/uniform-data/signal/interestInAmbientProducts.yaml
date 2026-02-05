@@ -1,0 +1,15 @@
+id: interestInAmbientProducts
+name: Interest in Ambient Products
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - path:
+        cs: false
+        op: '~'
+        rhs: products/ambient
+      type: PV
+dur: s
+description: ''
+str: 10
