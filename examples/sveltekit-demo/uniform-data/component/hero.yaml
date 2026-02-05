@@ -1,0 +1,98 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: screen
+parameters:
+  - id: media
+    name: Background Media
+    type: asset
+    guidance: Background image or video for the hero section
+    typeConfig:
+      required: false
+      allowedTypes:
+        - image
+        - video
+  - id: mediaAlt
+    name: Media Alt Text
+    type: text
+    guidance: Alternative text for the background media (for accessibility)
+    typeConfig:
+      required: false
+    localizable: true
+  - id: announcement
+    name: Announcement
+    type: text
+    guidance: Short announcement text shown in the badge above the headline
+    typeConfig:
+      required: false
+    localizable: true
+  - id: headline
+    name: Headline
+    type: text
+    guidance: Main headline, 2-4 words maximum for impact
+    typeConfig:
+      required: true
+    localizable: true
+  - id: subheadline
+    name: Subheadline
+    type: text
+    guidance: Supporting text below the headline, 1-2 sentences
+    typeConfig:
+      required: true
+    localizable: true
+  - id: ctaGroup
+    name: Primary CTA
+    type: group
+    guidance: Primary call-to-action button settings
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - ctaLink
+        - ctaText
+  - id: ctaLink
+    name: Primary Link
+    type: link
+    guidance: Main call-to-action button destination
+    typeConfig:
+      required: true
+  - id: ctaText
+    name: Primary Button Text
+    type: text
+    guidance: Label for the primary CTA button
+    typeConfig:
+      required: true
+    localizable: true
+  - id: secondaryCtaGroup
+    name: Secondary CTA
+    type: group
+    guidance: Secondary call-to-action button settings
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - secondaryLink
+        - secondaryText
+  - id: secondaryLink
+    name: Secondary Link
+    type: link
+    guidance: Secondary call-to-action link destination
+    typeConfig:
+      required: false
+  - id: secondaryText
+    name: Secondary Button Text
+    type: text
+    guidance: Label for the secondary CTA button
+    typeConfig:
+      required: false
+    localizable: true
+description: >-
+  Full-screen hero section with optional media background (video or image),
+  headline, subheadline, announcement badge, and call-to-action buttons. Use
+  variants to control rendering style.
+useTeamPermissions: true
+slots: []
+titleParameter: mediaAlt
+thumbnailParameter: media
+canBeComposition: false
+created: '2026-02-05T00:35:45.752049+00:00'
+updated: '2026-02-05T00:35:45.752049+00:00'

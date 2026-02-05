@@ -1,0 +1,13 @@
+composition:
+  _name: Home
+  _id: c27883df-777e-4c07-83cf-bac361576aa9
+  _slug: /
+  type: page
+  slots:
+    content:
+      - _id: 4bb8e174-80ea-4527-af00-d756de81c274
+        type: hero
+        _pattern: b79df4fb-9740-4f1a-9b7a-0588cbe0b70d
+created: '2026-02-04T23:54:51.998166+00:00'
+modified: '2026-02-05T00:36:34.459692+00:00'
+pattern: false

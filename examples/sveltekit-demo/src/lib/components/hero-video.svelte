@@ -115,10 +115,12 @@
   <!-- Content -->
   <div class="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
     <!-- Announcement pill -->
-    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-8 animate-fade-up">
-      <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
-      <span class="text-sm font-medium text-white/90">{announcement}</span>
-    </div>
+    {#if announcement}
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-8 animate-fade-up">
+        <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+        <span class="text-sm font-medium text-white/90">{announcement}</span>
+      </div>
+    {/if}
     
     <!-- Main headline -->
     <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-balance animate-fade-up delay-100 text-white drop-shadow-lg" style="opacity: 0;">

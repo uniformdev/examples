@@ -1,6 +1,5 @@
 import type { ComponentMap } from '@uniformdev/canvas-svelte';
-
-import { Card, Container, Grid, Hero, Page, RichText } from '$lib/components/index.js';
+import { Page, Hero } from '$lib/components/uniform/index.js';
 
 /**
  * Maps Uniform component types to Svelte components.
@@ -8,16 +7,10 @@ import { Card, Container, Grid, Hero, Page, RichText } from '$lib/components/ind
  * Use `type__variant` format to map specific variants.
  */
 export const componentMap: ComponentMap = {
-  // Page types
+  // Composition types
   page: Page,
 
-  // Layout components
-  container: Container,
-  grid: Grid,
-
-  // Content components
+  // Hero component - all variants use the same adapter
+  // Variants (to be created in Uniform): default (aurora), image, video
   hero: Hero,
-  card: Card,
-  card__featured: Card, // Featured variant uses same component
-  richText: RichText,
 };
