@@ -21,7 +21,7 @@
     "@uniformdev/context-next": "20.46.0",
     "@uniformdev/context-react": "20.46.0",
     "@uniformdev/project-map": "20.46.0",
-    "next": "^15.5.9",
+    "next": "^16.1.5",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
