@@ -8,10 +8,13 @@ useTeamPermissions: true
 slots:
   - id: content
     name: Content
-    allowedComponents: []
-    allowAllComponents: true
+    allowedComponents:
+      - hero
+      - $test
+      - $personalization
+    allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 canBeComposition: true
 created: '2026-02-04T23:54:15.01478+00:00'
-updated: '2026-02-04T23:54:15.01478+00:00'
+updated: '2026-02-05T01:21:00.818566+00:00'

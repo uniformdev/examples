@@ -1,0 +1,9 @@
+id: techSupport
+name: Tech Support
+description: ''
+type: 1
+inputs:
+  - dim: interest_support
+    sign: +
+  - dim: interest_products
+    sign: '-'

@@ -1,0 +1,7 @@
+id: buyNeural
+name: Buy Neural
+description: ''
+type: 1
+inputs:
+  - dim: category_neural
+    sign: +

@@ -5,9 +5,133 @@ composition:
   type: page
   slots:
     content:
-      - _id: 4bb8e174-80ea-4527-af00-d756de81c274
-        type: hero
-        _pattern: b79df4fb-9740-4f1a-9b7a-0588cbe0b70d
+      - _id: 306eec72-e2ca-4e1c-8e5f-93c0c82d81f5
+        type: $personalization
+        slots:
+          pz:
+            - _id: 4bb8e174-80ea-4527-af00-d756de81c274
+              type: hero
+              parameters:
+                media:
+                  type: asset
+                  value:
+                    - _id: 431b9cdf-0689-49d3-8a3a-7e39f921a033
+                      type: video
+                      fields:
+                        url:
+                          type: text
+                          value: >-
+                            https://res.cloudinary.com/uniformdev/video/upload/v1770248737/cherry-demo/hero-bg_u9bprs.mp4
+                        title:
+                          type: text
+                          value: ''
+                        description:
+                          type: text
+                          value: ''
+                      _source: custom-url
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    op: '|'
+                    crit:
+                      - l: productLaunch
+                        r: 0
+                        op: '>'
+                      - l: interestInNeuralProducts
+                        r: '30'
+                        op: '>='
+                    name: neural-band-promo
+                ctaLink:
+                  type: link
+                  value:
+                    path: /products/neural
+                    type: url
+                ctaText:
+                  type: text
+                  value: Pre-order yours
+                headline:
+                  type: text
+                  value: Neural Band Pro is here!
+                subheadline:
+                  type: text
+                  value: >-
+                    Technology that feels like magic. Devices that understand
+                    you. Welcome to the future of human potential.
+                announcement:
+                  type: text
+                  value: Introducing the 2030 Collection is here!
+                secondaryLink:
+                  type: link
+                  value:
+                    path: /products/neural/neural-band-pro
+                    type: url
+                secondaryText:
+                  type: text
+                  value: Watch the film
+                animationsEnabled:
+                  type: checkbox
+                  value: 'false'
+              _overridability:
+                parameters:
+                  media: 'yes'
+                  ctaLink: 'yes'
+                  ctaText: 'yes'
+                  headline: 'yes'
+                  subheadline: 'yes'
+                  announcement: 'yes'
+                  secondaryLink: 'yes'
+                  secondaryText: 'yes'
+                hideLockedParameters: true
+            - _id: 9cdc7e94-7779-4b22-86be-10d3a7139236
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: default
+                ctaLink:
+                  type: link
+                  value:
+                    path: /products/neural
+                    type: url
+                ctaText:
+                  type: text
+                  value: Explore Collection
+                headline:
+                  type: text
+                  value: Think beyond
+                subheadline:
+                  type: text
+                  value: >-
+                    Technology that feels like magic. Devices that understand
+                    you. Welcome to the future of human potential.
+                secondaryLink:
+                  type: link
+                  value:
+                    path: /products/neural/neural-band-pro
+                    type: url
+                secondaryText:
+                  type: text
+                  value: Watch the film
+                animationsEnabled:
+                  type: checkbox
+                  value: 'false'
+              _overridability:
+                parameters:
+                  media: 'yes'
+                  ctaLink: 'yes'
+                  ctaText: 'yes'
+                  headline: 'yes'
+                  subheadline: 'yes'
+                  announcement: 'yes'
+                  secondaryLink: 'yes'
+                  secondaryText: 'yes'
+                hideLockedParameters: true
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home Hero
 created: '2026-02-04T23:54:51.998166+00:00'
-modified: '2026-02-05T00:36:34.459692+00:00'
+modified: '2026-02-05T01:28:05.04453+00:00'
 pattern: false

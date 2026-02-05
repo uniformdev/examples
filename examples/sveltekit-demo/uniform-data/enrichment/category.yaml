@@ -1,0 +1,10 @@
+id: category
+name: Category
+cap: 100
+values:
+  - id: ambient
+    value: Ambient
+  - id: neural
+    value: Neural
+  - id: vision
+    value: Vision

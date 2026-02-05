@@ -1,0 +1,7 @@
+id: buyVision
+name: Buy Vision
+description: ''
+type: 1
+inputs:
+  - dim: category_vision
+    sign: +

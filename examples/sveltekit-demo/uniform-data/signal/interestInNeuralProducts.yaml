@@ -1,0 +1,15 @@
+id: interestInNeuralProducts
+name: Interest in Neural Products
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - path:
+        cs: false
+        op: '~'
+        rhs: products/neural
+      type: PV
+dur: s
+description: ''
+str: 10

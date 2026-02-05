@@ -1,0 +1,15 @@
+id: interestInVisionProducts
+name: Interest in Vision Products
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - path:
+        cs: false
+        op: '~'
+        rhs: products/vision
+      type: PV
+dur: s
+description: ''
+str: 10

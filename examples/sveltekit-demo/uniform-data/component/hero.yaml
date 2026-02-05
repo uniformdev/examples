@@ -4,22 +4,6 @@ id: hero
 name: Hero
 icon: screen
 parameters:
-  - id: media
-    name: Background Media
-    type: asset
-    guidance: Background image or video for the hero section
-    typeConfig:
-      required: false
-      allowedTypes:
-        - image
-        - video
-  - id: mediaAlt
-    name: Media Alt Text
-    type: text
-    guidance: Alternative text for the background media (for accessibility)
-    typeConfig:
-      required: false
-    localizable: true
   - id: announcement
     name: Announcement
     type: text
@@ -41,6 +25,15 @@ parameters:
     typeConfig:
       required: true
     localizable: true
+  - id: media
+    name: Background Media
+    type: asset
+    guidance: Background image or video for the hero section
+    typeConfig:
+      required: false
+      allowedTypes:
+        - image
+        - video
   - id: ctaGroup
     name: Primary CTA
     type: group
@@ -85,14 +78,27 @@ parameters:
     typeConfig:
       required: false
     localizable: true
+  - id: d0015003-fdc9-4abd-afd2-54247967330f
+    name: Presentation Settings
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - animationsEnabled
+  - id: animationsEnabled
+    name: Enable Animations
+    type: checkbox
+    guidance: Enable entrance and background animations
+    typeConfig:
+      required: false
 description: >-
   Full-screen hero section with optional media background (video or image),
   headline, subheadline, announcement badge, and call-to-action buttons. Use
   variants to control rendering style.
 useTeamPermissions: true
 slots: []
-titleParameter: mediaAlt
+titleParameter: headline
 thumbnailParameter: media
 canBeComposition: false
 created: '2026-02-05T00:35:45.752049+00:00'
-updated: '2026-02-05T00:35:45.752049+00:00'
+updated: '2026-02-05T01:17:50.261115+00:00'
