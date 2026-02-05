@@ -1,26 +1,26 @@
 <script lang="ts">
   interface Props {
-    image?: string;
-    imageAlt?: string;
-    headline?: string;
-    subheadline?: string;
-    announcement?: string;
-    ctaLink?: string;
-    ctaText?: string;
-    secondaryLink?: string;
-    secondaryText?: string;
+    image: string;
+    imageAlt: string;
+    headline: string;
+    subheadline: string;
+    announcement: string;
+    ctaLink: string;
+    ctaText: string;
+    secondaryLink: string;
+    secondaryText: string;
   }
 
   let {
-    image = "/images/hero-device.png",
-    imageAlt = "Cherry Neural Band Pro",
-    headline = "Think beyond.",
-    subheadline = "Technology that feels like magic. Devices that understand you. Welcome to the future of human potential.",
-    announcement = "Introducing the 2030 Collection",
-    ctaLink = "/products/neural",
-    ctaText = "Explore Collection",
-    secondaryLink = "/products/neural/neural-band-pro",
-    secondaryText = "Watch the film"
+    image,
+    imageAlt,
+    headline,
+    subheadline,
+    announcement,
+    ctaLink,
+    ctaText,
+    secondaryLink,
+    secondaryText
   }: Props = $props();
 </script>
 

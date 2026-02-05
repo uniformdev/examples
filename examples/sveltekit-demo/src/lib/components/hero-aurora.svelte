@@ -1,22 +1,22 @@
 <script lang="ts">
   interface Props {
-    headline?: string;
-    subheadline?: string;
-    announcement?: string;
-    ctaLink?: string;
-    ctaText?: string;
-    secondaryLink?: string;
-    secondaryText?: string;
+    headline: string;
+    subheadline: string;
+    announcement: string;
+    ctaLink: string;
+    ctaText: string;
+    secondaryLink: string;
+    secondaryText: string;
   }
 
   let {
-    headline = "Think beyond.",
-    subheadline = "Technology that feels like magic. Devices that understand you. Welcome to the future of human potential.",
-    announcement = "Introducing the 2030 Collection",
-    ctaLink = "/products/neural",
-    ctaText = "Explore Collection",
-    secondaryLink = "/products/neural/neural-band-pro",
-    secondaryText = "Watch the film"
+    headline,
+    subheadline,
+    announcement,
+    ctaLink,
+    ctaText,
+    secondaryLink,
+    secondaryText
   }: Props = $props();
 </script>
 

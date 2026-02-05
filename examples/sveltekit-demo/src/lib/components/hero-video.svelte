@@ -2,25 +2,25 @@
   import { onMount } from 'svelte';
 
   interface Props {
-    videoUrl?: string;
-    headline?: string;
-    subheadline?: string;
-    announcement?: string;
-    ctaLink?: string;
-    ctaText?: string;
-    secondaryLink?: string;
-    secondaryText?: string;
+    videoUrl: string;
+    headline: string;
+    subheadline: string;
+    announcement: string;
+    ctaLink: string;
+    ctaText: string;
+    secondaryLink: string;
+    secondaryText: string;
   }
 
   let {
-    videoUrl = "https://res.cloudinary.com/uniformdev/video/upload/v1770248737/cherry-demo/hero-bg_u9bprs.mp4",
-    headline = "Think beyond.",
-    subheadline = "Technology that feels like magic. Devices that understand you. Welcome to the future of human potential.",
-    announcement = "Introducing the 2030 Collection",
-    ctaLink = "/products/neural",
-    ctaText = "Explore Collection",
-    secondaryLink = "/products/neural/neural-band-pro",
-    secondaryText = "Watch the film"
+    videoUrl,
+    headline,
+    subheadline,
+    announcement,
+    ctaLink,
+    ctaText,
+    secondaryLink,
+    secondaryText
   }: Props = $props();
 
   let videoElement: HTMLVideoElement;
