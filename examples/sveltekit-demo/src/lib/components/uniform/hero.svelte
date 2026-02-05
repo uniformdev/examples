@@ -1,91 +1,73 @@
+<!--
+  Hero Adapter Component
+  
+  This adapter bridges Uniform's parameter types to the props expected by 
+  HeroVideo and HeroAurora components. It handles:
+  - Link parameters → simple href strings
+  - Asset parameters → URL strings
+  - Checkbox parameters → boolean values
+  - Variant selection based on whether media is present
+-->
 <script lang="ts">
   import type { ComponentProps } from "@uniformdev/canvas-svelte";
   import type { LinkParamValue, AssetParamValue } from "@uniformdev/canvas";
-  import { flattenValues } from "@uniformdev/canvas";
+  import { linkHref, assetUrl, checkbox } from "$lib/uniform/paramHelpers";
 
   import HeroVideo from "$lib/components/hero/hero-video.svelte";
   import HeroAurora from "$lib/components/hero/hero-aurora.svelte";
 
-  interface Props
-    extends ComponentProps<{
-      media?: AssetParamValue;
-      headline?: string;
-      subheadline?: string;
-      announcement?: string;
-      ctaLink?: LinkParamValue;
-      ctaText?: string;
-      secondaryLink?: LinkParamValue;
-      secondaryText?: string;
-      animationsEnabled?: boolean | string; // Uniform checkbox can be string "true"/"false"
-    }> {}
+  interface Props extends ComponentProps<{
+    media?: AssetParamValue;
+    headline?: string;
+    subheadline?: string;
+    announcement?: string;
+    ctaLink?: LinkParamValue;
+    ctaText?: string;
+    secondaryLink?: LinkParamValue;
+    secondaryText?: string;
+    animationsEnabled?: boolean | string;
+  }> {}
 
   let {
     media,
-    headline,
-    subheadline,
-    announcement,
+    headline = "",
+    subheadline = "",
+    announcement = "",
     ctaLink,
-    ctaText,
+    ctaText = "",
     secondaryLink,
-    secondaryText,
+    secondaryText = "",
     animationsEnabled,
-    component, // Raw component data from Uniform
   }: Props = $props();
 
-  // Extract href from LinkParamValue
-  const ctaHref = $derived(ctaLink?.path || "");
-  const secondaryHref = $derived(secondaryLink?.path || "");
-  // Flatten asset to get media details
-  const mediaAsset = $derived(flattenValues(media, { toSingle: true }));
-
-  // Determine media type from asset
-  const mediaUrl = $derived(mediaAsset?.url || "");
-
-  // Check if we have all required content
-  const hasRequiredContent = $derived(
-    Boolean(headline && subheadline && ctaHref && ctaText),
-  );
-
-  // Resolved values for template (with defaults to satisfy type checker)
-  const resolvedHeadline = $derived(headline ?? "");
-  const resolvedSubheadline = $derived(subheadline ?? "");
-  const resolvedAnnouncement = $derived(announcement ?? "");
-  const resolvedCtaText = $derived(ctaText ?? "");
-  const resolvedSecondaryText = $derived(secondaryText ?? "");
-  // Uniform checkbox values come as strings ("true"/"false"), convert to boolean
-  // Default to true when undefined (animations enabled by default)
-  const resolvedAnimationsEnabled = $derived(() => {
-    if (animationsEnabled === undefined || animationsEnabled === null) {
-      return false; // default: animations enabled
-    }
-    if (typeof animationsEnabled === "string") {
-      return animationsEnabled === "true";
-    }
-    return Boolean(animationsEnabled);
-  });
+  const ctaHref = $derived(linkHref(ctaLink));
+  const secondaryHref = $derived(linkHref(secondaryLink));
+  const videoUrl = $derived(assetUrl(media));
+  const animated = $derived(checkbox(animationsEnabled, true));
+  const hasVideo = $derived(Boolean(videoUrl));
 </script>
 
-{#if mediaUrl}
+{#if hasVideo}
   <HeroVideo
-    videoUrl={mediaUrl}
-    headline={resolvedHeadline}
-    subheadline={resolvedSubheadline}
-    announcement={resolvedAnnouncement}
+    {videoUrl}
+    {headline}
+    {subheadline}
+    {announcement}
     ctaLink={ctaHref}
-    ctaText={resolvedCtaText}
+    {ctaText}
     secondaryLink={secondaryHref}
-    secondaryText={resolvedSecondaryText}
-    animationsEnabled={resolvedAnimationsEnabled()}
+    {secondaryText}
+    animationsEnabled={animated}
   />
 {:else}
   <HeroAurora
-    headline={resolvedHeadline}
-    subheadline={resolvedSubheadline}
-    announcement={resolvedAnnouncement}
+    {headline}
+    {subheadline}
+    {announcement}
     ctaLink={ctaHref}
-    ctaText={resolvedCtaText}
+    {ctaText}
     secondaryLink={secondaryHref}
-    secondaryText={resolvedSecondaryText}
-    animationsEnabled={resolvedAnimationsEnabled()}
+    {secondaryText}
+    animationsEnabled={animated}
   />
 {/if}
