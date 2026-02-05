@@ -26,6 +26,21 @@
   let imageZoomed = $state(false);
   let addedToCart = $state(false);
 
+  // Track enrichments when PDP page is visited
+  $effect(() => {
+    if (!context || !product || !categorySlug) return;
+
+    // Track category enrichment (score 10) and interest in products (score 5)
+    context.update({
+      enrichments: [
+        { cat: 'category', key: categorySlug, str: 10 },
+        { cat: 'interest', key: 'products', str: 5 },
+      ],
+    });
+    
+    console.log('PDP enrichments tracked - category:', categorySlug, 'interest: products');
+  });
+
   async function handleAddToCart() {
     if (addedToCart) return; // Prevent multiple clicks during animation
     
@@ -33,7 +48,7 @@
       await context.update({
         events: [{ event: 'add-to-cart' }],
       });
-      console.log('[alex] Add to cart event sent for:', product.name);
+      console.log('Add to cart event sent for:', product.name);
     }
     
     // Show "Added to Cart" state
