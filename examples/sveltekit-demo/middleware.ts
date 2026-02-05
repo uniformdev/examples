@@ -30,9 +30,23 @@ export default async function middleware(request: Request) {
     }),
   });
 
+  // Extract geo data from Vercel headers
+  const geoCity = request.headers.get('x-vercel-ip-city') ?? '';
+  const geoCountry = request.headers.get('x-vercel-ip-country') ?? '';
+  const geoRegion = request.headers.get('x-vercel-ip-country-region') ?? '';
+  const geoLatitude = request.headers.get('x-vercel-ip-latitude') ?? '';
+  const geoLongitude = request.headers.get('x-vercel-ip-longitude') ?? '';
+
   await context.update({
     cookies,
     url,
+    quirks: {
+      geoCity: decodeURIComponent(geoCity), // City names may be URL-encoded
+      geoCountry,
+      geoRegion,
+      geoLatitude,
+      geoLongitude,
+    }
   });
 
   const response = await fetch(url, {
