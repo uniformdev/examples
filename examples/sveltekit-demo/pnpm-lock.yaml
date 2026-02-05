@@ -29,6 +29,9 @@ importers:
       '@uniformdev/context-svelte':
         specifier: 20.48.1-alpha.26
         version: 20.48.1-alpha.26(svelte@5.49.2)
+      '@uniformdev/insights':
+        specifier: 20.48.1-alpha.26
+        version: 20.48.1-alpha.26
       '@vercel/functions':
         specifier: ^3.4.0
         version: 3.4.1
@@ -1099,6 +1102,9 @@ packages:
 
   '@uniformdev/files@20.48.1-alpha.26':
     resolution: {integrity: sha512-qtMKXnITWYaIwQze1o0ipDfmqV/vaU2f2be2w/pBuTVrwJJT3tDgy7RHlLQDh5tXTlRcLCn3XTKlMmrzJnY5Hw==}
+
+  '@uniformdev/insights@20.48.1-alpha.26':
+    resolution: {integrity: sha512-5kdwXzhfRMVL9X1bscPPHlkzdm8il4j+ZHWDOWMj+WuGrJhHkJ4PCGVE/xlwlOY2vr1jXxZWwtKEPwgkBCXrbQ==}
 
   '@uniformdev/project-map@20.48.1-alpha.26':
     resolution: {integrity: sha512-jCjjjAdq4CxgP6KK7JC5Wm+InPOjHOc0Px4Olyq5BmwpMgxZ5GOZWy973feRTm45Xc4n+eWAw4gllGzuQsdeeQ==}
@@ -3081,6 +3087,11 @@ snapshots:
   '@uniformdev/files@20.48.1-alpha.26':
     dependencies:
       '@uniformdev/context': 20.48.1-alpha.26
+
+  '@uniformdev/insights@20.48.1-alpha.26':
+    dependencies:
+      '@uniformdev/context': 20.48.1-alpha.26
+      p-limit: 3.1.0
 
   '@uniformdev/project-map@20.48.1-alpha.26':
     dependencies:

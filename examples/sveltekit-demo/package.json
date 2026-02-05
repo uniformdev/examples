@@ -24,6 +24,7 @@
 		"@uniformdev/context-edge": "20.48.1-alpha.26",
 		"@uniformdev/context-edge-sveltekit": "20.48.1-alpha.26",
 		"@uniformdev/context-svelte": "20.48.1-alpha.26",
+		"@uniformdev/insights": "20.48.1-alpha.26",
 		"@vercel/functions": "^3.4.0",
 		"cookie": "1.0.1",
 		"immer": "10.1.3"

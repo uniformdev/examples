@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { Button } from "$lib/components/ui/button";
+  import { getUniformContext } from '@uniformdev/context-svelte';
   import { 
     getProductById, 
     getCategoryBySlug,
@@ -9,8 +10,11 @@
     type Product
   } from "$lib/data/products";
 
-  let productId = $derived($page.params.product);
-  let categorySlug = $derived($page.params.category);
+  // Get Uniform context for tracking events
+  const { context } = getUniformContext({ throwOnMissingProvider: false }) ?? {};
+
+  let productId = $derived($page.params.product ?? '');
+  let categorySlug = $derived($page.params.category ?? '');
   
   let product = $derived(getProductById(productId));
   let category = $derived(getCategoryBySlug(categorySlug));
@@ -20,6 +24,26 @@
 
   let activeTab = $state<'specs' | 'features'>('specs');
   let imageZoomed = $state(false);
+  let addedToCart = $state(false);
+
+  async function handleAddToCart() {
+    if (addedToCart) return; // Prevent multiple clicks during animation
+    
+    if (context && product) {
+      await context.update({
+        events: [{ event: 'add-to-cart' }],
+      });
+      console.log('[alex] Add to cart event sent for:', product.name);
+    }
+    
+    // Show "Added to Cart" state
+    addedToCart = true;
+    setTimeout(() => {
+      addedToCart = false;
+    }, 1500);
+    
+    // TODO: Add actual cart logic here
+  }
 </script>
 
 <svelte:head>
@@ -95,14 +119,27 @@
           </div>
 
           <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <Button size="lg" class="flex-1 bg-foreground text-background hover:bg-foreground/90">
-              Request Quote
+            <Button 
+              size="lg" 
+              class="flex-1 transition-all duration-300 {addedToCart ? 'bg-green-600 hover:bg-green-600 text-white' : 'bg-foreground text-background hover:bg-foreground/90'}"
+              onclick={handleAddToCart}
+              disabled={addedToCart}
+            >
+              {#if addedToCart}
+                <svg class="w-5 h-5 mr-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Added to Cart
+              {:else}
+                Add to Cart
+              {/if}
             </Button>
             <Button size="lg" variant="outline" class="flex-1 border-foreground/30">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                <!-- AR cube icon -->
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
               </svg>
-              Datasheet PDF
+              Preview in AR
             </Button>
           </div>
 
@@ -114,7 +151,7 @@
                 </svg>
               </div>
               <div>
-                <p class="text-sm font-medium">Speak with a specialist</p>
+                <p class="text-sm font-medium">Chat with us</p>
                 <p class="text-sm text-muted-foreground">+1 (800) 555-1234</p>
               </div>
             </div>
