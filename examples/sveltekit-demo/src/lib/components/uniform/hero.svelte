@@ -18,6 +18,7 @@
       ctaText?: string;
       secondaryLink?: LinkParamValue;
       secondaryText?: string;
+      animationsEnabled?: boolean | string; // Uniform checkbox can be string "true"/"false"
     }> {}
 
   let {
@@ -29,6 +30,8 @@
     ctaText,
     secondaryLink,
     secondaryText,
+    animationsEnabled,
+    component, // Raw component data from Uniform
   }: Props = $props();
 
   // Extract href from LinkParamValue
@@ -73,7 +76,27 @@
   const resolvedAnnouncement = $derived(announcement ?? "");
   const resolvedCtaText = $derived(ctaText ?? "");
   const resolvedSecondaryText = $derived(secondaryText ?? "");
+  // Uniform checkbox values come as strings ("true"/"false"), convert to boolean
+  // Default to true when undefined (animations enabled by default)
+  const resolvedAnimationsEnabled = $derived(() => {
+    if (animationsEnabled === undefined || animationsEnabled === null) {
+      return true; // default: animations enabled
+    }
+    if (typeof animationsEnabled === 'string') {
+      return animationsEnabled === 'true';
+    }
+    return Boolean(animationsEnabled);
+  });
   //const resolvedMediaAlt = $derived(mediaTitle ?? headline ?? "");
+
+  // Debug logging
+  $effect(() => {
+    console.log('[alex] Uniform Hero - raw component:', component);
+    console.log('[alex] Uniform Hero - raw parameters:', component?.parameters);
+    console.log('[alex] Uniform Hero - animationsEnabled param:', component?.parameters?.animationsEnabled);
+    console.log('[alex] Uniform Hero - animationsEnabled prop:', animationsEnabled, 'type:', typeof animationsEnabled);
+    console.log('[alex] Uniform Hero - resolvedAnimationsEnabled:', resolvedAnimationsEnabled());
+  });
 </script>
 
 
@@ -88,6 +111,7 @@
       ctaText={resolvedCtaText}
       secondaryLink={secondaryHref}
       secondaryText={resolvedSecondaryText}
+      animationsEnabled={resolvedAnimationsEnabled()}
     />
   {:else}
     <HeroAurora
@@ -98,6 +122,7 @@
       ctaText={resolvedCtaText}
       secondaryLink={secondaryHref}
       secondaryText={resolvedSecondaryText}
+      animationsEnabled={resolvedAnimationsEnabled()}
     />
   {/if}
 {/if} 
@@ -113,6 +138,7 @@
       ctaText={resolvedCtaText}
       secondaryLink={secondaryHref}
       secondaryText={resolvedSecondaryText}
+      animationsEnabled={resolvedAnimationsEnabled()}
     />
  {:else if heroType === "image" && mediaUrl}
     <HeroImage
@@ -125,6 +151,7 @@
       ctaText={resolvedCtaText}
       secondaryLink={secondaryHref}
       secondaryText={resolvedSecondaryText}
+      animationsEnabled={resolvedAnimationsEnabled()}
     />
   {:else}
     <HeroAurora
@@ -135,6 +162,7 @@
       ctaText={resolvedCtaText}
       secondaryLink={secondaryHref}
       secondaryText={resolvedSecondaryText}
+      animationsEnabled={resolvedAnimationsEnabled()}
     />
   {/if}
 {/if} -->

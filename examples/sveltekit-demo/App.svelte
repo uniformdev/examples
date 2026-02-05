@@ -39,7 +39,7 @@
 </script>
 
 <svelte:head>
-  <title>ForgeTech Industries | Precision Manufacturing Equipment</title>
+  <title>Cherry | Technology that feels like magic</title>
   <meta name="description" content="World-class CNC machines, cutting systems, and precision tools for industrial manufacturing." />
 </svelte:head>
 

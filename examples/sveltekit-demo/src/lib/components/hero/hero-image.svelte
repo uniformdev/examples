@@ -9,6 +9,7 @@
     ctaText: string;
     secondaryLink: string;
     secondaryText: string;
+    animationsEnabled?: boolean;
   }
 
   let {
@@ -20,7 +21,8 @@
     ctaLink,
     ctaText,
     secondaryLink,
-    secondaryText
+    secondaryText,
+    animationsEnabled = true
   }: Props = $props();
 </script>
 
@@ -41,23 +43,32 @@
   <div class="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
     <!-- Announcement pill -->
     {#if announcement}
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-8 animate-fade-up">
-        <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-8 {animationsEnabled ? 'animate-fade-up' : ''}">
+        <span class="w-2 h-2 bg-accent rounded-full {animationsEnabled ? 'animate-pulse' : ''}"></span>
         <span class="text-sm font-medium text-white/90">{announcement}</span>
       </div>
     {/if}
     
     <!-- Main headline -->
-    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-balance animate-fade-up delay-100 text-white drop-shadow-lg" style="opacity: 0;">
+    <h1 
+      class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-balance text-white drop-shadow-lg {animationsEnabled ? 'animate-fade-up delay-100' : ''}"
+      style={animationsEnabled ? 'opacity: 0;' : ''}
+    >
       {headline}
     </h1>
     
-    <p class="mt-6 text-xl md:text-2xl text-white/80 max-w-2xl mx-auto animate-fade-up delay-200 drop-shadow-md" style="opacity: 0;">
+    <p 
+      class="mt-6 text-xl md:text-2xl text-white/80 max-w-2xl mx-auto drop-shadow-md {animationsEnabled ? 'animate-fade-up delay-200' : ''}"
+      style={animationsEnabled ? 'opacity: 0;' : ''}
+    >
       {subheadline}
     </p>
     
     <!-- CTA Buttons -->
-    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300" style="opacity: 0;">
+    <div 
+      class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 {animationsEnabled ? 'animate-fade-up delay-300' : ''}"
+      style={animationsEnabled ? 'opacity: 0;' : ''}
+    >
       <a 
         href={ctaLink}
         class="group inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-medium hover:bg-white/90 transition-all duration-300 hover:gap-4 shadow-lg"
@@ -80,7 +91,7 @@
   </div>
   
   <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 animate-bounce z-10">
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 {animationsEnabled ? 'animate-bounce' : ''} z-10">
     <span class="text-xs uppercase tracking-widest">Scroll</span>
     <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />

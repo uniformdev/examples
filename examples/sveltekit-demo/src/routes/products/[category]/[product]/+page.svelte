@@ -23,7 +23,7 @@
 </script>
 
 <svelte:head>
-  <title>{product?.name || 'Product'} | ForgeTech Industries</title>
+  <title>{product?.name || 'Product'} | Cherry</title>
   <meta name="description" content={product?.shortDescription || 'High-quality precision manufacturing equipment.'} />
 </svelte:head>
 
