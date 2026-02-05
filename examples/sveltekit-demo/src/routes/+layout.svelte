@@ -1,6 +1,7 @@
 <script lang="ts">
   import "../app.css";
   import { page } from "$app/stores";
+  import { onMount } from "svelte";
   import Header from "$lib/components/header.svelte";
   import Footer from "$lib/components/footer.svelte";
   import { dev } from "$app/environment";
@@ -19,6 +20,7 @@
   import { enableUniformInsights } from "@uniformdev/insights";
 
   import manifestJson from "$lib/uniform/contextManifest.json";
+  import { tealiumData } from "$lib/tealium-mock";
 
   let { children } = $props();
 
@@ -40,6 +42,34 @@
       }),
     ],
     manifest: manifestJson as ManifestV2,
+  });
+
+  // Project Tealium utag data to Uniform quirks
+  function projectTealiumToQuirks() {
+    const quirks: Record<string, string> = {};
+    
+    // Map Tealium fields to quirks (remove underscores, lowercase)
+    if (tealiumData.customer_type) {
+      quirks['customertype'] = tealiumData.customer_type;
+    }
+    if (tealiumData.is_mobile_tablet_desktop) {
+      quirks['devicetype'] = tealiumData.is_mobile_tablet_desktop;
+    }
+    if (tealiumData.osType) {
+      quirks['ostype'] = tealiumData.osType;
+    }
+    
+    return quirks;
+  }
+
+  // Set quirks from Tealium data when app loads
+  onMount(async () => {
+    const quirks = projectTealiumToQuirks();
+    
+    if (Object.keys(quirks).length > 0) {
+      await context.update({ quirks });
+      console.log('Tealium quirks set:', quirks);
+    }
   });
 
   // Only use dark hero mode on homepage
