@@ -4,9 +4,9 @@
   import { flattenValues } from "@uniformdev/canvas";
 
   // Import all hero variants
-  import HeroVideo from "$lib/components/hero-video.svelte";
-  // import HeroImage from "$lib/components/hero-image.svelte";
-  import HeroAurora from "$lib/components/hero-aurora.svelte";
+  import HeroVideo from "$lib/components/hero/hero-video.svelte";
+  // import HeroImage from "$lib/components/hero/hero-image.svelte";
+  import HeroAurora from "$lib/components/hero/hero-aurora.svelte";
 
   interface Props
     extends ComponentProps<{

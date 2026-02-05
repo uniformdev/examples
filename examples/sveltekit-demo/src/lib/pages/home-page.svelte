@@ -1,15 +1,15 @@
 <script lang="ts">
   import { categories, products } from "$lib/data/products";
   import homeContent from "$lib/data/home-content.json";
-  import HeroVideo from "$lib/components/hero-video.svelte";
+  import HeroVideo from "$lib/components/hero/hero-video.svelte";
   import ProductSpotlights from "$lib/components/sections/product-spotlights.svelte";
   import CategoryShowcase from "$lib/components/sections/category-showcase.svelte";
   import FeaturedProduct from "$lib/components/sections/featured-product.svelte";
   import ProductGrid from "$lib/components/sections/product-grid.svelte";
   import Newsletter from "$lib/components/sections/newsletter.svelte";
   // Alternative hero variants:
-  // import HeroImage from "$lib/components/hero-image.svelte";
-  // import HeroAurora from "$lib/components/hero-aurora.svelte";
+  // import HeroImage from "$lib/components/hero/hero-image.svelte";
+  // import HeroAurora from "$lib/components/hero/hero-aurora.svelte";
 
   // Derive product data from content config
   const featuredSpotlightProduct = products[homeContent.productSpotlights.featuredProductIndex];
