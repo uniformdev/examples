@@ -51,7 +51,7 @@ export const QuirkButton = () => {
               ? '🛂 Checking your visa...' 
               : isCanada 
                 ? 'Already in Canada' 
-                : 'Immigrate to Canada'}
+                : 'Set your location to Canada'}
           </span>
           <span className="text-2xl">
             {isLoading 
