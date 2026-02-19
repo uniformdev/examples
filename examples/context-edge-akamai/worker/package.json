@@ -20,13 +20,13 @@
     "worker:status": "node ./scripts/check-status.js"
   },
   "dependencies": {
-    "@uniformdev/context": "19.173.0",
-    "@uniformdev/context-edge-akamai": "19.173.0"
+    "@uniformdev/context": "20.49.4",
+    "@uniformdev/context-edge-akamai": "20.49.4"
   },
   "devDependencies": {
     "@types/akamai-edgeworkers": "1.0.10",
     "@types/node": "^17.0.44",
-    "@uniformdev/cli": "19.173.0",
+    "@uniformdev/cli": "20.49.4",
     "dotenv": "^16.0.1",
     "semver": "7.3.7",
     "tsup": "^8.1.0",

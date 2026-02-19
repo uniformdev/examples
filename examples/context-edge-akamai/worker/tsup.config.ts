@@ -6,7 +6,7 @@ export var tsup: Options = {
     format: ['esm'],
     entry: ['src/main.ts'],
     splitting: false,
-    external: ['http-request', 'create-response', 'streams', 'cookies'],
+    external: ['http-request', 'create-response', 'streams', 'cookies', 'encoding'],
     noExternal: [/@uniformdev/],
     publicDir: './public'
 };
