@@ -5,7 +5,7 @@ const { exec } = require("child_process");
 
 require("dotenv").config();
 
-const data = fs.readFileSync('src/bundle.json', { encoding: 'utf-8' });
+const data = fs.readFileSync('public/bundle.json', { encoding: 'utf-8' });
 const json = JSON.parse(data);
 
 const currentVersion = coerce(json['edgeworker-version']);

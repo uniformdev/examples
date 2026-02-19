@@ -8,7 +8,7 @@ const FALLBACK_VERSION = '0.1.0';
 
 const VERSION_INCREMENT = process.env.AKAMAI_WORKER_VERSION_INCREMENT || 'patch';
 
-const data = fs.readFileSync('src/bundle.json', { encoding: 'utf-8' });
+const data = fs.readFileSync('public/bundle.json', { encoding: 'utf-8' });
 const json = JSON.parse(data);
 
 const oldVersion = coerce(json['edgeworker-version']);
@@ -29,4 +29,4 @@ if (valid(oldVersion)) {
 
 json['edgeworker-version'] = newVersion;
 
-fs.writeFileSync('src/bundle.json', JSON.stringify(json, null, 2));
+fs.writeFileSync('public/bundle.json', JSON.stringify(json, null, 2));

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "es2015",
-    "target": "ES2015",
+    "module": "esnext",
+    "target": "ES2018",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "rootDir": ".",
@@ -11,6 +11,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
   },
-  "include": ["**/*.ts", "src/bundle.json"],
+  "include": ["**/*.ts", "public/bundle.json"],
   "exclude": ["node_modules", "dist"],
 }
