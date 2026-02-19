@@ -8,5 +8,10 @@ export var tsup: Options = {
     splitting: false,
     external: ['http-request', 'create-response', 'streams', 'cookies', 'encoding'],
     noExternal: [/@uniformdev/],
-    publicDir: './public'
+    publicDir: './public',
+    outExtension() {
+      return {
+        js: `.js`
+      }
+    }
 };
