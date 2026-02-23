@@ -1,0 +1,31 @@
+{
+  "name": "@uniformdev/next-app-router-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "uniform:pull": "uniform sync pull",
+    "uniform:push": "uniform sync push",
+    "uniform:manifest": "uniform context manifest publish"
+  },
+  "dependencies": {
+    "@uniformdev/context": "20.49.4",
+    "@uniformdev/insights": "20.49.4",
+    "@uniformdev/next-app-router": "20.49.4",
+    "@uniformdev/next-app-router-client": "20.49.4",
+    "next": "^16.1.6",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@uniformdev/cli": "20.49.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
