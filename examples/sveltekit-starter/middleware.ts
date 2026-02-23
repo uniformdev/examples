@@ -17,6 +17,13 @@ export default async function middleware(request: Request) {
     return next(request);
   }
 
+  // check to see if bypass token is present for sveltekit on vercel
+  const bypassToken = request.headers.get("x-prerender-revalidate");
+  const envBypassToken = process.env.BYPASS_TOKEN;
+  if (bypassToken && envBypassToken && bypassToken === envBypassToken) {
+    return next(request);
+  }
+
   const url = new URL(request.url);
 
   const cookieValue = request.headers.get("cookie");
