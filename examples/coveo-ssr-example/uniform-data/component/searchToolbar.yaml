@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchToolbar
+name: Search Toolbar
+icon: screen
+parameters: []
+description: Shows result count and sort order for Coveo search.
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-02-24T04:56:47.803101+00:00'
+updated: '2026-02-24T04:56:47.803101+00:00'

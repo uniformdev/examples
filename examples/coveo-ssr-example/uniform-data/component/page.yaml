@@ -18,6 +18,7 @@ slots:
       - $personalization
       - $test
       - $localization
+      - searchContainer
     inheritAllowedComponents: false
 slugSettings:
   unique: global
@@ -25,5 +26,5 @@ slugSettings:
   regularExpression: ''
   regularExpressionMessage: ''
 canBeComposition: true
-created: '2025-03-13T17:06:13.452815+00:00'
-updated: '2025-03-13T17:06:13.452815+00:00'
+created: '2026-02-23T21:59:12.68714+00:00'
+updated: '2026-02-24T04:57:00.556383+00:00'
