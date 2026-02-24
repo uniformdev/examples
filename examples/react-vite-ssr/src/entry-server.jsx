@@ -8,5 +8,6 @@ export async function render({ composition }) {
       <App composition={composition} />
     </React.StrictMode>
   );
-  return { html };
+  const dataScript = `<script>window._uniformPreloadedComposition = ${JSON.stringify(composition)};</script>`;
+  return { html, dataScript };
 }
