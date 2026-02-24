@@ -1,0 +1,42 @@
+{
+  "composition": {
+    "_name": "Home",
+    "_id": "63a58d5e-30fb-4b3e-9613-9a66686427b3",
+    "type": "page",
+    "slots": {
+      "content": [
+        {
+          "_id": "7980d1ee-903d-400a-9e1e-bf84e1171e22",
+          "type": "hero",
+          "_pattern": "5e0987d1-4c32-437a-8252-b40956ef9003"
+        },
+        {
+          "_id": "1324cc2a-1bec-47d0-b180-d3a8e18eddc8",
+          "type": "federatedModule",
+          "parameters": {
+            "title": {
+              "type": "text",
+              "value": "Up Your Game"
+            }
+          }
+        }
+      ]
+    },
+    "_overrides": {
+      "7980d1ee-903d-400a-9e1e-bf84e1171e22": {
+        "parameters": {
+          "subtitle": {
+            "type": "text",
+            "value": null
+          }
+        }
+      }
+    },
+    "_overridability": {
+      "hideLockedParameters": true
+    }
+  },
+  "created": "2026-02-05T14:10:55.119833+00:00",
+  "modified": "2026-02-10T17:12:49.107045+00:00",
+  "pattern": false
+}

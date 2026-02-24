@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "pnpm -r --parallel --if-present dev",
+    "build": "pnpm -r --if-present build",
+    "preview": "pnpm -r --if-present preview",
+    "uniform:manifest": "pnpm -r uniform:manifest",
+    "uniform:pull": "pnpm -r uniform:pull",
+    "uniform:push": "pnpm -r uniform:push"
+  }
+}

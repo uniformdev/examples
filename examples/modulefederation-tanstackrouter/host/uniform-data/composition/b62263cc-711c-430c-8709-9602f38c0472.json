@@ -1,0 +1,30 @@
+{
+  "composition": {
+    "_name": "Products",
+    "_id": "b62263cc-711c-430c-8709-9602f38c0472",
+    "_slug": "products",
+    "type": "page",
+    "slots": {
+      "content": [
+        {
+          "_id": "919d68aa-b7fa-4824-ba52-dff8788d8de6",
+          "type": "hero",
+          "_pattern": "5e0987d1-4c32-437a-8252-b40956ef9003"
+        }
+      ]
+    },
+    "_overrides": {
+      "919d68aa-b7fa-4824-ba52-dff8788d8de6": {
+        "parameters": {
+          "title": {
+            "type": "text",
+            "value": "Our Products"
+          }
+        }
+      }
+    }
+  },
+  "created": "2026-02-06T15:23:06.823038+00:00",
+  "modified": "2026-02-18T16:00:13.461297+00:00",
+  "pattern": false
+}

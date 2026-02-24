@@ -1,0 +1,29 @@
+{
+  "$schema": "https://eu.uniform.app/schemas/json-schema/component-definition/v1.json",
+  "id": "moduleRootPage",
+  "name": "Module Root Page",
+  "icon": "screen",
+  "parameters": [],
+  "useTeamPermissions": true,
+  "slots": [
+    {
+      "id": "header",
+      "name": "Header",
+      "allowedComponents": [],
+      "allowAllComponents": true,
+      "inheritAllowedComponents": false,
+      "patternsInAllowedComponents": false
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "allowedComponents": [],
+      "allowAllComponents": true,
+      "inheritAllowedComponents": false,
+      "patternsInAllowedComponents": false
+    }
+  ],
+  "canBeComposition": true,
+  "created": "2026-02-10T11:29:00.851293+00:00",
+  "updated": "2026-02-24T13:37:31.082921+00:00"
+}

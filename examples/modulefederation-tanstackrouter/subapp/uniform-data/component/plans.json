@@ -1,0 +1,21 @@
+{
+  "$schema": "https://eu.uniform.app/schemas/json-schema/component-definition/v1.json",
+  "id": "plans",
+  "name": "Plans",
+  "icon": "screen",
+  "parameters": [
+    {
+      "id": "title",
+      "name": "Title",
+      "type": "text",
+      "typeConfig": null,
+      "localizable": true
+    }
+  ],
+  "useTeamPermissions": true,
+  "slots": [],
+  "titleParameter": "title",
+  "canBeComposition": false,
+  "created": "2026-02-18T13:24:43.431793+00:00",
+  "updated": "2026-02-18T13:24:43.431793+00:00"
+}

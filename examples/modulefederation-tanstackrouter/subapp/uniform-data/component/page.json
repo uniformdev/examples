@@ -1,0 +1,21 @@
+{
+  "$schema": "https://eu.uniform.app/schemas/json-schema/component-definition/v1.json",
+  "id": "page",
+  "name": "Page",
+  "icon": "screen",
+  "parameters": [],
+  "useTeamPermissions": true,
+  "slots": [
+    {
+      "id": "content",
+      "name": "Content",
+      "allowedComponents": [],
+      "allowAllComponents": true,
+      "inheritAllowedComponents": false,
+      "patternsInAllowedComponents": false
+    }
+  ],
+  "canBeComposition": true,
+  "created": "2026-02-05T14:14:02.334214+00:00",
+  "updated": "2026-02-05T14:14:02.334214+00:00"
+}

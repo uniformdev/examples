@@ -1,0 +1,64 @@
+{
+  "composition": {
+    "_name": "Demo",
+    "_id": "6a56c468-f1f6-4476-aca2-d28188378884",
+    "_slug": "demo",
+    "type": "page",
+    "slots": {
+      "content": [
+        {
+          "_id": "08847d4a-4747-4f68-8382-b08bef20d73d",
+          "type": "hero",
+          "_pattern": "5e0987d1-4c32-437a-8252-b40956ef9003"
+        }
+      ]
+    },
+    "_overrides": {
+      "08847d4a-4747-4f68-8382-b08bef20d73d": {
+        "parameters": {
+          "title": {
+            "type": "text",
+            "value": "Book a Demo"
+          },
+          "description": {
+            "type": "richText",
+            "value": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Ready to see what you can achieve? Book a demo today and explore how our platform empowers you to create seamless, innovative experiences tailored to your needs.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": null,
+                    "textStyle": "",
+                    "textFormat": 0
+                  }
+                ],
+                "direction": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "created": "2026-02-24T14:03:37.859745+00:00",
+  "modified": "2026-02-24T14:04:40.437048+00:00",
+  "pattern": false
+}

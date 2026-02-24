@@ -1,0 +1,11 @@
+{
+  "id": "85e658da-c52d-4fc1-83f9-cd8a647d4dd8",
+  "name": "Sub App",
+  "order": 500,
+  "path": "/subapp",
+  "type": "composition",
+  "pathSegment": "subapp",
+  "data": {},
+  "compositionId": "02a3a08a-39b9-4667-abc6-23f67fc50bad",
+  "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+}

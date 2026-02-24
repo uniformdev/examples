@@ -1,0 +1,27 @@
+{
+  "composition": {
+    "_name": "Sub App Paths",
+    "_id": "8b385f0d-588f-438c-a88b-ed7045912766",
+    "_slug": ":splat",
+    "type": "moduleRootPage",
+    "slots": {
+      "footer": [
+        {
+          "_id": "1c13d228-c6dc-4364-945a-fceef2d5efc6",
+          "type": "siteFooter",
+          "_pattern": "75b44f17-f50c-423a-8746-4012da814ad6"
+        }
+      ],
+      "header": [
+        {
+          "_id": "639e235b-1773-4b2d-9cea-39c9cc218704",
+          "type": "siteHeader",
+          "_pattern": "e162db2b-9aa3-4aa2-a47e-9d73e3f164b3"
+        }
+      ]
+    }
+  },
+  "created": "2026-02-10T11:31:41.99952+00:00",
+  "modified": "2026-02-18T15:48:52.411267+00:00",
+  "pattern": false
+}

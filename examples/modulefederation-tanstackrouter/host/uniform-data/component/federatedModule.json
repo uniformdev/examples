@@ -1,0 +1,21 @@
+{
+  "$schema": "https://eu.uniform.app/schemas/json-schema/component-definition/v1.json",
+  "id": "federatedModule",
+  "name": "Sub App Banner",
+  "icon": "shopping-bag",
+  "parameters": [
+    {
+      "id": "title",
+      "name": "Title",
+      "type": "text",
+      "typeConfig": null,
+      "localizable": true
+    }
+  ],
+  "useTeamPermissions": true,
+  "slots": [],
+  "titleParameter": "title",
+  "canBeComposition": false,
+  "created": "2026-02-05T15:48:44.08704+00:00",
+  "updated": "2026-02-06T17:26:08.191703+00:00"
+}

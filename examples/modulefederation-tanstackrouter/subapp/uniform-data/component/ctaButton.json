@@ -1,0 +1,47 @@
+{
+  "$schema": "https://eu.uniform.app/schemas/json-schema/component-definition/v1.json",
+  "id": "ctaButton",
+  "name": "CTA Button",
+  "icon": "screen",
+  "parameters": [
+    {
+      "id": "label",
+      "name": "Label",
+      "type": "text",
+      "guidance": "Button text label",
+      "typeConfig": {
+        "required": true
+      }
+    },
+    {
+      "id": "link",
+      "name": "Link",
+      "type": "link",
+      "guidance": "URL the button links to"
+    },
+    {
+      "id": "variant",
+      "name": "Variant",
+      "type": "select",
+      "guidance": "Visual style of the button",
+      "typeConfig": {
+        "options": [
+          {
+            "text": "Primary",
+            "value": "primary"
+          },
+          {
+            "text": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    }
+  ],
+  "useTeamPermissions": true,
+  "slots": [],
+  "titleParameter": "label",
+  "canBeComposition": false,
+  "created": "2026-02-24T12:59:56.373846+00:00",
+  "updated": "2026-02-24T12:59:56.373846+00:00"
+}

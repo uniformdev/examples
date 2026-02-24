@@ -1,0 +1,27 @@
+{
+  "composition": {
+    "_name": "Sub App",
+    "_id": "02a3a08a-39b9-4667-abc6-23f67fc50bad",
+    "_slug": "subapp",
+    "type": "moduleRootPage",
+    "slots": {
+      "footer": [
+        {
+          "_id": "e6241690-e98b-41fd-b851-d6f367abc36d",
+          "type": "siteFooter",
+          "_pattern": "75b44f17-f50c-423a-8746-4012da814ad6"
+        }
+      ],
+      "header": [
+        {
+          "_id": "88134035-7d2f-48c5-9d98-4e1f63a9ab06",
+          "type": "siteHeader",
+          "_pattern": "e162db2b-9aa3-4aa2-a47e-9d73e3f164b3"
+        }
+      ]
+    }
+  },
+  "created": "2026-02-10T11:29:34.216462+00:00",
+  "modified": "2026-02-18T13:24:42.037634+00:00",
+  "pattern": false
+}

@@ -3,6 +3,8 @@ node_modules
 transpiled
 /.idea/
 .vscode
+.claude
+.mcp.json
 .DS_Store
 
 # Local Netlify folder

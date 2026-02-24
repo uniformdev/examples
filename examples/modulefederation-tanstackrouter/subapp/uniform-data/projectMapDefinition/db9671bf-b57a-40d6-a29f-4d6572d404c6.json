@@ -1,0 +1,6 @@
+{
+  "id": "db9671bf-b57a-40d6-a29f-4d6572d404c6",
+  "name": "Default",
+  "baseUrl": "http://localhost:5183/subapp",
+  "default": true
+}

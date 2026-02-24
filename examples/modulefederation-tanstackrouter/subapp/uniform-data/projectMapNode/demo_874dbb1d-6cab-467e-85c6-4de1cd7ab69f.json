@@ -1,0 +1,11 @@
+{
+  "id": "874dbb1d-6cab-467e-85c6-4de1cd7ab69f",
+  "name": "Demo",
+  "order": 500,
+  "path": "/demo",
+  "type": "composition",
+  "pathSegment": "demo",
+  "data": {},
+  "compositionId": "6a56c468-f1f6-4476-aca2-d28188378884",
+  "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+}

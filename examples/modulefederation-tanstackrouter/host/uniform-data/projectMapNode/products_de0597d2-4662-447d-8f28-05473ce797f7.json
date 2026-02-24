@@ -1,0 +1,11 @@
+{
+  "id": "de0597d2-4662-447d-8f28-05473ce797f7",
+  "name": "Products",
+  "order": 500,
+  "path": "/products",
+  "type": "composition",
+  "pathSegment": "products",
+  "data": {},
+  "compositionId": "b62263cc-711c-430c-8709-9602f38c0472",
+  "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+}
