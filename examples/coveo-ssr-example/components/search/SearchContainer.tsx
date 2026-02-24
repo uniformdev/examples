@@ -1,4 +1,3 @@
-
 import type { ComponentProps } from "@uniformdev/next-app-router/component";
 import { UniformSlot } from "@uniformdev/next-app-router/component";
 import { Suspense } from "react";
@@ -16,16 +15,18 @@ type SearchContainerProps = ComponentProps<
   SearchContainerSlots
 >;
 
-export function SearchContainer({ slots, parameters }: SearchContainerProps) {
+export function SearchContainer({
+  slots,
+  parameters: { coveoPipelineName } = {},
+}: SearchContainerProps) {
   return (
     <Suspense fallback={null}>
-      <SearchPageProviderWithState pipeline={parameters?.coveoPipelineName}>
+      <SearchPageProviderWithState pipeline={coveoPipelineName}>
         <URLSearchParameterSync />
         <div>
           <UniformSlot slot={slots.content} />
         </div>
       </SearchPageProviderWithState>
     </Suspense>
-
   );
 }

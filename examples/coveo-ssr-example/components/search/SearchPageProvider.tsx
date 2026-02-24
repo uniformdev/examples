@@ -1,7 +1,15 @@
 'use client';
 
 import { PropsWithChildren, useEffect, useState } from 'react';
-import { engineDefinition, hydrateStaticState } from '../../lib/coveo/engine-definition';
+import type { SearchCompletedAction } from '@coveo/headless/ssr';
+import {
+  engineDefinition,
+  type SearchStaticState,
+  hydrateStaticState,
+} from '../../lib/coveo/engine-definition';
+
+type HydratedState = Awaited<ReturnType<typeof hydrateStaticState>>;
+
 const { StaticStateProvider, HydratedStateProvider } = engineDefinition;
 
 /**
@@ -12,11 +20,14 @@ export function SearchPageProvider({
   staticState,
   children,
   pipeline,
-}: PropsWithChildren<{ staticState: any; pipeline?: string }>) {
-  const [hydratedState, setHydratedState] = useState<any>(null);
+}: PropsWithChildren<{ staticState: SearchStaticState; pipeline?: string }>) {
+  const [hydratedState, setHydratedState] = useState<HydratedState | null>(null);
 
   useEffect(() => {
-    hydrateStaticState({ searchAction: staticState.searchAction, pipeline: pipeline }).then(setHydratedState);
+    hydrateStaticState({
+      searchAction: staticState.searchAction as SearchCompletedAction,
+      pipeline: pipeline,
+    }).then(setHydratedState);
   }, []); // (Coveo docs intentionally suppress deps here)
 
   if (!hydratedState) {

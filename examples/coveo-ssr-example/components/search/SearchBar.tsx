@@ -12,18 +12,11 @@ type SearchBarParameters = {
   placeholder?: ComponentParameter<string>;
 };
 
-type SearchBarProps = Partial<ComponentProps<SearchBarParameters>> & {
-  parameters?: {
-    buttonText?: ComponentParameter<string>;
-    placeholder?: ComponentParameter<string>;
-  };
-};
-
-export function SearchBar(props: SearchBarProps = {}) {
+export function SearchBar({
+  parameters: { buttonText, placeholder } = {},
+  component,
+}: ComponentProps<SearchBarParameters> = {} as ComponentProps<SearchBarParameters>) {
   const searchBox = useSearchBox();
-  const parameters = props.parameters ?? {};
-  const { buttonText, placeholder } = parameters;
-  const { component } = props;
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     searchBox.methods?.updateText(e.target.value);
