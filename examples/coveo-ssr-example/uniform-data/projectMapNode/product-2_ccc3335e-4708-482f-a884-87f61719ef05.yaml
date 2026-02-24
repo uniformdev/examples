@@ -1,0 +1,9 @@
+id: ccc3335e-4708-482f-a884-87f61719ef05
+name: Product 2
+order: 600
+path: /products/product-2
+type: composition
+pathSegment: product-2
+data: {}
+compositionId: bfa0f5dd-c61d-4cc1-8385-e0fad8d6b8ad
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

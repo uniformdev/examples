@@ -9,6 +9,26 @@ parameters:
     type: text
     typeConfig:
       required: true
+  - id: 966f3a42-a526-4395-8ebf-4eea6a9d6fe4
+    name: Search metadata
+    type: group
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - searchTitle
+        - searchDescription
+  - id: searchTitle
+    name: Search Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: searchDescription
+    name: Search Description
+    type: text
+    typeConfig:
+      multiline: true
+      linesCount: 5
+    localizable: true
 useTeamPermissions: true
 slots:
   - id: content
@@ -27,4 +47,4 @@ slugSettings:
   regularExpressionMessage: ''
 canBeComposition: true
 created: '2026-02-23T21:59:12.68714+00:00'
-updated: '2026-02-24T04:57:00.556383+00:00'
+updated: '2026-02-24T22:06:06.374158+00:00'

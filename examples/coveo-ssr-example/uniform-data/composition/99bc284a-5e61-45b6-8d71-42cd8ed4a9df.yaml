@@ -1,0 +1,114 @@
+composition:
+  _name: Products
+  _id: 99bc284a-5e61-45b6-8d71-42cd8ed4a9df
+  _slug: products
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Collection of all products
+    searchTitle:
+      type: text
+      value: All products
+    searchDescription:
+      type: text
+      value: product-1,product-2,product-3
+  slots:
+    content:
+      - _id: c79ef738-e143-463f-814b-d759f575d797
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: All product links
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - link:
+                          path: /products/product-1
+                          type: projectMapNode
+                          nodeId: 9a6cc424-0a07-43e3-a992-a97f679b22de
+                          projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Product 1
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - link:
+                          path: /products/product-2
+                          type: projectMapNode
+                          nodeId: ccc3335e-4708-482f-a884-87f61719ef05
+                          projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Product 2
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - link:
+                          path: /products/product-3
+                          type: projectMapNode
+                          nodeId: 97f5393f-52f6-464c-8ae5-3562985ff0b1
+                          projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb
+                        type: link
+                        format: ''
+                        indent: 0
+                        version: 1
+                        children:
+                          - mode: normal
+                            text: Product 3
+                            type: text
+                            style: ''
+                            detail: 0
+                            format: 0
+                            version: 1
+                        direction: null
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+created: '2026-02-24T22:06:28.644056+00:00'
+modified: '2026-02-24T22:12:53.153601+00:00'
+pattern: false
