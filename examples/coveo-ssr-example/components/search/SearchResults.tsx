@@ -1,9 +1,21 @@
 "use client";
 
+import {
+  type ComponentParameter,
+  type ComponentProps,
+  UniformText,
+} from "@uniformdev/next-app-router/component";
 import { usePager, useResultList } from "@/lib/coveo/engine-definition";
 import { SearchResultItem } from "./SearchResultItem";
 
-export function SearchResults() {
+type SearchResultsParameters = {
+  noResultsText?: ComponentParameter<string>;
+};
+
+export function SearchResults({
+  parameters: { noResultsText } = {},
+  component,
+}: ComponentProps<SearchResultsParameters> = {} as ComponentProps<SearchResultsParameters>) {
   const { state: resultListState } = useResultList();
   const pager = usePager();
 
@@ -11,9 +23,17 @@ export function SearchResults() {
   const hasResults = results.length > 0;
 
   return (
-    <div className="space-y-4">
+    <div>
       {!hasResults && (
-        <p className="text-sm text-gray-500">No results. Try a different query.</p>
+        <p className="text-sm text-gray-500">
+          {component && noResultsText && (
+            <UniformText
+              component={component}
+              parameter={noResultsText}
+              placeholder="Text when there are no search results"
+            />
+          )}
+        </p>
       )}
       {hasResults && (
         <ul className="divide-y divide-gray-100">

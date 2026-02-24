@@ -1,46 +1,54 @@
 "use client";
 
-import { useQuerySummary, useSort } from "@/lib/coveo/engine-definition";
+import { useQuerySummary, useSearchBox, useSort } from "@/lib/coveo/engine-definition";
+import { SortBy, SortCriterion, SortOrder } from "@coveo/headless";
+
+const sortOptions: Array<{ label: string; criterion: SortCriterion }> = [
+  {
+    label: 'Date ↓',
+    criterion: { by: SortBy.Date, order: SortOrder.Descending },
+  },
+  {
+    label: 'Date ↑',
+    criterion: { by: SortBy.Date, order: SortOrder.Ascending },
+  },
+  { label: 'Relevancy', criterion: { by: SortBy.Relevancy } },
+];
 
 export function SearchToolbar() {
-  const summary = useQuerySummary();
+  const { state: querySummaryState } = useQuerySummary();
+  const { state: searchBoxState } = useSearchBox();
+  const { methods: sortMethods } = useSort();
+
   const sort = useSort();
 
-  const totalCount =
-    "totalCount" in summary.state
-      ? (summary.state as { totalCount?: number }).totalCount ?? 0
-      : 0;
-  const sortCriteria = sort.state.sortCriteria;
-  const sortOptions = Array.isArray(sortCriteria) ? sortCriteria : [];
-  const currentExpression =
-    Array.isArray(sortCriteria) && sortCriteria.length > 0
-      ? sortCriteria[0].expression
-      : "";
+  const searchQuery = searchBoxState.value || '';
+  const totalCount = querySummaryState?.total || 0;
+
+  const handleSortClick = (label: string) => {
+    const criterion = sortOptions.find(c => c.label === label)?.criterion;
+    if (criterion && sortMethods) {
+      sortMethods.sortBy(criterion);
+    }
+  };
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-200 pb-2">
-      <p className="text-sm text-gray-600">
-        {totalCount} {totalCount === 1 ? "result" : "results"}
+    <div>
+      <p>
+        {totalCount} {totalCount === 1 ? "result" : "results"} for "{searchQuery}"
       </p>
       {sortOptions.length > 0 && (
-        <div className="flex items-center gap-2">
-          <label htmlFor="sort" className="text-sm text-gray-600">
+        <div>
+          <label htmlFor="sort">
             Sort:
           </label>
           <select
             id="sort"
-            value={currentExpression}
-            onChange={(e) => {
-              const criterion = sortOptions.find(
-                (c) => c.expression === e.target.value
-              );
-              if (criterion) sort.methods?.sortBy(criterion);
-            }}
-            className="rounded border border-gray-300 px-2 py-1 text-sm"
+            onChange={(e) => handleSortClick(e.target.value)}
           >
             {sortOptions.map((criterion) => (
-              <option key={criterion.expression} value={criterion.expression}>
-                {criterion.expression}
+              <option key={criterion.label} value={criterion.label}>
+                {criterion.label}
               </option>
             ))}
           </select>

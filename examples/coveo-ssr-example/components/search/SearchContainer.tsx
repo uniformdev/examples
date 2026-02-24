@@ -8,7 +8,7 @@ type SearchContainerParameters = {
   coveoPipelineName?: string;
 };
 
-type SearchContainerSlots = "content";
+type SearchContainerSlots = "content" | "sidebar";
 
 type SearchContainerProps = ComponentProps<
   SearchContainerParameters,
@@ -23,8 +23,13 @@ export function SearchContainer({
     <Suspense fallback={null}>
       <SearchPageProviderWithState pipeline={coveoPipelineName}>
         <URLSearchParameterSync />
-        <div>
-          <UniformSlot slot={slots.content} />
+        <div className="flex w-[80vw] mx-auto gap-4">
+          <div className="w-[30%] min-w-0 shrink-0">
+            <UniformSlot slot={slots.sidebar} />
+          </div>
+          <div className="w-[70%] min-w-0">
+            <UniformSlot slot={slots.content} />
+          </div>
         </div>
       </SearchPageProviderWithState>
     </Suspense>
