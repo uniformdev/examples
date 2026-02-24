@@ -8,6 +8,11 @@ import { HeroComponent } from "./hero";
 import { Page } from "./page";
 import { HeaderComponent } from "./header";
 import { FooterComponent } from "./footer";
+import { SearchContainer } from "./search/SearchContainer";
+import { SearchBar } from "./search/SearchBar";
+import { SearchResults } from "./search/SearchResults";
+import { SearchToolbar } from "./search/SearchToolbar";
+import { SearchFacets } from "./search/SearchFacets";
 
 export const resolveComponent: ResolveComponentFunction = ({ component }) => {
   let result: ResolveComponentResult | undefined;
@@ -27,6 +32,26 @@ export const resolveComponent: ResolveComponentFunction = ({ component }) => {
   } else if (component.type === "footer") {
     result = {
       component: FooterComponent,
+    };
+  } else if (component.type === "searchContainer") {
+    result = {
+      component: SearchContainer,
+    };
+  } else if (component.type === "searchBar") {
+    result = {
+      component: SearchBar,
+    };
+  } else if (component.type === "searchResults") {
+    result = {
+      component: SearchResults,
+    };
+  } else if (component.type === "searchToolbar") {
+    result = {
+      component: SearchToolbar,
+    };
+  } else if (component.type === "searchFacets") {
+    result = {
+      component: SearchFacets,
     };
   }
 
