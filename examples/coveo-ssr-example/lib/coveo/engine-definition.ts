@@ -90,7 +90,7 @@ async function getBuildResult(pipeline?: string) {
     },
   });
 
-  if (pipeline) {
+  if (pipeline && typeof pipeline === 'string') {
     const pipelineActions = loadPipelineActions(buildResult.engine);
     buildResult.engine.dispatch(pipelineActions.setPipeline(pipeline));
   }
