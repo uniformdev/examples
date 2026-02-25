@@ -45,7 +45,7 @@ Often, you may want to see filtered data and not everything in the source. You c
 
 The `/api/index-rebuild` endpoint handles adding data into the Coveo push source. You need to set up a new push source and configure these environment varioabbles:
 ```bash
-  COVEO_ORG_ID;
+  NEXT_PUBLIC_COVEO_ORGANIZATION_ID;
   COVEO_SOURCE_ID;
   COVEO_BEARER_TOKEN;
 ```
