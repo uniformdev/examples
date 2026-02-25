@@ -7,7 +7,6 @@ import {
 // TODO: Uncomment this to use resolveComponent with cache components support
 // import { resolveRouteFromCode } from "@uniformdev/next-app-router/cache";
 import { resolveComponent } from "@/components/resolveComponent";
-import { CustomUniformClientContext } from "@/components/CustomUniformClientContext";
 
 export const generateStaticParams = async () => {
   return createUniformStaticParams({
@@ -24,7 +23,6 @@ export default async function UniformPage(props: UniformPageParameters) {
       code={code}
       resolveRoute={resolveRouteFromCode}
       resolveComponent={resolveComponent}
-      clientContextComponent={CustomUniformClientContext}
     />
   );
 }
