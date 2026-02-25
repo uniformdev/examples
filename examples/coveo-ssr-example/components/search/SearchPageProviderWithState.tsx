@@ -7,7 +7,7 @@ export async function SearchPageProviderWithState({
   pipeline,
   children,
 }: PropsWithChildren<{ pipeline: string | undefined }>) {
-  await connection();
+  // await connection();
   const staticState = await fetchStaticState(pipeline);
   return (
     <SearchPageProvider staticState={staticState} pipeline={pipeline}>
