@@ -254,7 +254,10 @@ async function deleteOldItemsFromCoveo(state: PushRunState): Promise<boolean> {
   const coveoSourceId = process.env.COVEO_SOURCE_ID;
   const coveoBearerToken = process.env.COVEO_BEARER_TOKEN;
 
-  if (!coveoOrgId || !coveoSourceId || !coveoBearerToken) return false;
+  if (!coveoOrgId || !coveoSourceId || !coveoBearerToken) {
+    console.error('Missing Coveo config (COVEO_ORG_ID / COVEO_SOURCE_ID / COVEO_BEARER_TOKEN)');
+    return false;
+  }
 
   const url = `https://api.cloud.coveo.com/push/v1/organizations/${coveoOrgId}/sources/${coveoSourceId}/documents/olderthan?orderingId=${state.orderingId}`;
 
