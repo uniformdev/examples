@@ -1,6 +1,11 @@
-# TanStack Router + Module Federation + Uniform CMS
+# Module Federation + TanStack Router + Vite
 
-This repository demonstrates how to use @tanstack/react-router in a module federation architecture, with [Uniform](https://uniform.app) providing CMS-driven composition and visual editing.
+This demonstrates how to use [@tanstack/react-router](https://tanstack.com/router/latest) in a [Module Federation](https://module-federation.io) architecture, with [Uniform](https://uniform.app) providing CMS-driven composition and visual editing.
+
+1. Shared Uniform Components between micro-frontend modules
+2. Content lives in multiple projects for separation of teams
+3. Content editors get a visual preview experience
+4. A "host" project to bring all micro-frontend projects together
 
 ## Architecture overview
 
@@ -44,7 +49,9 @@ This shared package (`/packages/uniform-preview`) provides three entry points:
 
 ### Uniform server integration with Vite
 
-Instead of a separate backend, Uniform's API layer runs as Vite dev server middleware. The `setupUniformServer()` function from `@repo/uniform-preview/vite` is registered as a Vite plugin in each app's `vite.config.ts`:
+Instead of a separate backend, Uniform's API layer runs as Vite dev server middleware. This is sufficient for this POC, in production you will need to replicate these API endpoints in your own API layer.
+
+The `setupUniformServer()` function from `@repo/uniform-preview/vite` is registered as a Vite plugin in each app's `vite.config.ts`:
 
 ```ts
 // host/vite.config.ts (simplified)
@@ -151,3 +158,29 @@ The host starts at `http://localhost:5173`.
 
 The subapp starts at `http://localhost:5183`. 
 To use a different port, create a `.env.development.local` and override the `PORT` value.
+
+## Known Limitations
+
+### Uniform does not support nested compositions.
+
+We get around this by using a `keepSingleSlot` util to render the header and footer slots above and below the Subapp's Outlet.
+
+See: examples/modulefederation-tanstackrouter/host/src/routes/__root.tsx
+
+```
+-------------------------
+| HOST:   Site Header   | <= UniformComposition
+-------------------------
+| SUBAPP: Page          | <= UniformComposition
+-------------------------
+| HOST:   Site Footer   | <= UniformComposition
+-------------------------
+```
+
+### A page can only have a single Uniform Context
+
+Only the host can include UniformContext in a page. All optimisations from MFEs will need to be synced with the host project using the CLI.
+
+### Preview is no longer showing the current composition warning
+
+The Canvas editor will show a warning when you are previewing a page from the Subapp in the host.

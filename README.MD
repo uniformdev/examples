@@ -77,3 +77,4 @@ There are more useful starters and examples in other repos:
 
 - [Next.js Marketing Starter](https://github.com/uniformdev/uniformconf) - imaginary conference site in Next.js leveraging all the Uniform goodness: Canvas and Context.
 - [Nuxt Marketing Starter](https://github.com/uniformdev/uniformconf-nuxt) - imaginary conference site in Nuxt 3 leveraging all the Uniform goodness: Canvas and Context.
+- [Module Federation, Tanstack Router and Vite](./examples/modulefederation-tanstackrouter) - imaginary tech saas starter with module federation for micro-frontends and Vite.
