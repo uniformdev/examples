@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchContainer
+name: Search Container
+icon: screen
+parameters:
+  - id: coveoPipelineName
+    name: Coveo Pipeline Name
+    type: text
+    guidance: Coveo search hub / pipeline name for this search instance.
+    typeConfig: {}
+description: >-
+  Coveo search provider wrapper. Place search bar, results, toolbar and facets
+  in the content slot. Use on a search route that provides URL search params.
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - searchBar
+      - searchResults
+      - searchToolbar
+      - searchFacets
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: sidebar
+    name: Sidebar
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: coveoPipelineName
+canBeComposition: false
+created: '2026-02-24T04:56:53.776145+00:00'
+updated: '2026-02-24T21:06:28.259216+00:00'

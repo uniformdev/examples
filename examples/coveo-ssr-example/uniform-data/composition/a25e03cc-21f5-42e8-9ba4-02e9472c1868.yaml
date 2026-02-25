@@ -1,0 +1,23 @@
+composition:
+  _name: Search
+  _id: a25e03cc-21f5-42e8-9ba4-02e9472c1868
+  _slug: search
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Search example
+  slots:
+    content:
+      - _id: 38c617cb-6cc6-4dd5-a503-d0db8d010b9b
+        type: searchContainer
+        _pattern: 6a6c3481-e5f6-4381-adb0-5de8f96d0b09
+  _overrides:
+    38c617cb-6cc6-4dd5-a503-d0db8d010b9b:
+      parameters:
+        coveoPipelineName:
+          type: text
+          value: null
+created: '2026-02-23T22:05:42.962909+00:00'
+modified: '2026-02-25T19:31:01.91528+00:00'
+pattern: false

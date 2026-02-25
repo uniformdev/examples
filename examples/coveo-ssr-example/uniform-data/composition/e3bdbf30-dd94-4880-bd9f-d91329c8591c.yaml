@@ -1,0 +1,26 @@
+composition:
+  _name: Product 1
+  _id: e3bdbf30-dd94-4880-bd9f-d91329c8591c
+  _slug: product-1
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Product 1
+    searchTitle:
+      type: text
+      value: product-1
+    searchDescription:
+      type: text
+      value: product-1, black and white color, offers customization
+  slots:
+    content:
+      - _id: e7a81f84-7d4d-401b-a0a3-f326bc3f62b4
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Product 1
+created: '2026-02-24T22:09:19.117098+00:00'
+modified: '2026-02-24T22:10:18.069364+00:00'
+pattern: false

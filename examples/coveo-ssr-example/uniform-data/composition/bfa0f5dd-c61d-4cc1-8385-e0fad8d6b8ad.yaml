@@ -1,0 +1,26 @@
+composition:
+  _name: Product 2
+  _id: bfa0f5dd-c61d-4cc1-8385-e0fad8d6b8ad
+  _slug: product-1-copy
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Product 1
+    searchTitle:
+      type: text
+      value: product-2
+    searchDescription:
+      type: text
+      value: product-2, red and green color, no customization
+  slots:
+    content:
+      - _id: e7a81f84-7d4d-401b-a0a3-f326bc3f62b4
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Product 2
+created: '2026-02-24T22:10:25.034253+00:00'
+modified: '2026-02-24T22:11:21.369613+00:00'
+pattern: false

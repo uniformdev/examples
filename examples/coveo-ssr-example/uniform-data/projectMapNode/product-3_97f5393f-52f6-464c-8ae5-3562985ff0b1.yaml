@@ -1,0 +1,9 @@
+id: 97f5393f-52f6-464c-8ae5-3562985ff0b1
+name: Product 3
+order: 700
+path: /products/product-3
+type: composition
+pathSegment: product-3
+data: {}
+compositionId: 04a63e0b-0518-4e64-934d-803efaf53c80
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

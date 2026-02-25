@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchResults
+name: Search Results
+icon: screen
+parameters:
+  - id: noResultsText
+    name: No Results Text
+    type: text
+    guidance: Message shown when the search returns no results.
+    typeConfig: {}
+description: Displays Coveo search results with pagination.
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-02-24T04:56:46.643238+00:00'
+updated: '2026-02-24T21:26:37.511051+00:00'

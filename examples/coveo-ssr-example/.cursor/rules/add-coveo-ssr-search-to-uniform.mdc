@@ -1,0 +1,166 @@
+---
+description: Add Coveo SSR search components and index-rebuild API to an existing Uniform Next.js App Router project
+globs:
+alwaysApply: false
+---
+
+# Adding Coveo SSR Search to an Existing Uniform Next.js App Router Project
+
+**Copy-paste:** You can copy this rule file into any Uniform Next.js App Router project’s `.cursor/rules/` (e.g. `add-coveo-ssr-search-to-uniform.mdc`) and adjust paths/names to match that project. Keep or remove the `@...mdc` references depending on whether those rules exist in the target project.
+
+This rule describes how to add the Coveo SSR search experience from `examples/coveo-ssr-example` into an existing Uniform Next.js App Router project (e.g. one based on `examples/nextjs-app-router-v2`). Follow @solution-architecture.mdc, @uniform-next-app-router.mdc, @uniform-sdk.mdc, and @uniform.mdc when applying these steps.
+
+## Prerequisites
+
+- Existing Next.js App Router project with Uniform SDK already configured (`@uniformdev/next-app-router`, `uniform.server.config.js`, `withUniformConfig`, catch-all or `uniform/[code]` page, `resolveComponent`, preview/playground).
+- Do **not** use `uniform:push` for component/pattern definitions; use the **Uniform MCP** tools only. Run `npm run uniform:pull` (or `pnpm run uniform:pull`) after making changes via MCP.
+
+## 1. Dependencies
+
+Add Coveo and Uniform Canvas/Project Map packages if missing:
+
+```json
+"dependencies": {
+  "@coveo/headless": "^3.45.0",
+  "@coveo/headless-react": "^2.9.1"
+}
+```
+
+If the project uses `@uniformdev/canvas-next-rsc` and `RouteClient`/`ProjectMapClient`, ensure `@uniformdev/canvas` and `@uniformdev/project-map` are present (as in the index-rebuild route). For `@uniformdev/next-app-router`-based projects, the index-rebuild route uses `@uniformdev/project-map` and `@uniformdev/canvas` (for `RouteClient`, `flattenValues`, `CANVAS_PUBLISHED_STATE`). Install any missing packages.
+
+Use `pnpm` if the project has `pnpm-lock.yaml`, otherwise `npm`.
+
+## 2. Files to Add or Adapt
+
+### 2.1 Coveo engine and lib
+
+- Copy or adapt `lib/coveo/engine-definition.ts` from coveo-ssr-example. It defines the search engine with `defineSearchEngine`, controllers (`searchBox`, `resultList`, `sort`, `pager`, `querySummary`, `authorFacet`, `searchParameterManager`), and exports `fetchStaticState` and optional `hydrateStaticState`. Ensure `@/lib/coveo/engine-definition` (or equivalent path) is used consistently.
+
+### 2.2 Search UI components
+
+Copy these from `examples/coveo-ssr-example/components/search/` into the destination `components/search/` (or equivalent), preserving structure:
+
+| File | Purpose |
+|------|--------|
+| `SearchContainer.tsx` | Wraps search in `SearchPageProviderWithState`, renders `URLSearchParameterSync` and two `UniformSlot`s: `content`, `sidebar`. Uses `ComponentProps<SearchContainerParameters, SearchContainerSlots>` and parameter `coveoPipelineName`. |
+| `SearchBar.tsx` | Client component; uses `useSearchBox`, `UniformText` for `buttonText`/`placeholder`. |
+| `SearchResults.tsx` | Client component; uses `useResultList`, `usePager`, `UniformText` for `noResultsText`, renders `SearchResultItem` list and pager. |
+| `SearchToolbar.tsx` | Client component; uses `useQuerySummary`, `useSearchBox`, `useSort`; no Uniform parameters. |
+| `SearchFacets.tsx` | Client component; uses `useAuthorFacet`; no Uniform parameters. |
+| `SearchResultItem.tsx` | Presentational; receives Coveo `Result`, renders title/link/excerpt. |
+| `SearchPageProvider.tsx` | Client wrapper that provides Coveo engine state to children. |
+| `SearchPageProviderWithState.tsx` | Server-friendly wrapper; calls `fetchStaticState(pipeline)` then renders `SearchPageProvider`. |
+| `URLSearchParameterSync.tsx` | Client component; syncs URL hash with Coveo search state (no visible UI). |
+
+Update imports in these files to match the destination (e.g. `@/lib/coveo/engine-definition`, `@/components/...`). For Uniform parameter types and slots, follow the destination’s conventions: use `ComponentProps<Params, Slots>`, destructure parameters from props (not `component?.parameters?.x`), and use `UniformText` / `UniformRichText` for editable text. Use `flattenValues` from `@uniformdev/canvas` for asset parameters if any are added later.
+
+### 2.3 Index-rebuild API route
+
+- Copy `app/api/index-rebuild/route.ts` from coveo-ssr-example into the destination `app/api/index-rebuild/route.ts`.
+- It expects: `UNIFORM_PREVIEW_SECRET`, `UNIFORM_API_KEY`, `UNIFORM_PROJECT_ID`, and for Coveo push: `NEXT_PUBLIC_COVEO_ORGANIZATION_ID`, `COVEO_SOURCE_ID`, `COVEO_BEARER_TOKEN`. Optional: `COVEO_INDEX_REBUILD_ENABLE_PUSH`, `COVEO_INDEX_REBUILD_ENABLE_DEBUG_STORE`, `COVEO_INDEX_REBUILD_SITE_HOSTNAME`.
+- The route validates `secret` query param against `UNIFORM_PREVIEW_SECRET`, fetches project map nodes (compositions) with `ProjectMapClient`, resolves each with `RouteClient`, reads composition parameters `searchTitle` and `searchDescription`, builds Coveo documents and optionally pushes them and/or deletes old items. Adjust composition parameter names in the route if the destination Page composition uses different IDs.
+- Ensure the project has the required Uniform packages for `ProjectMapClient`, `RouteClient`, `flattenValues`, and `CANVAS_PUBLISHED_STATE`.
+
+## 3. Register components in the destination
+
+- In the destination’s **resolveComponent** (e.g. `components/resolveComponent.ts`), follow the **existing pattern** of that file (e.g. `if (component.type === "…") result = { component: X }; return result || { component: DefaultNotFoundComponent }`).
+- Add mappings for the five Uniform search component types:
+
+  - `searchContainer` → `SearchContainer`
+  - `searchBar` → `SearchBar`
+  - `searchResults` → `SearchResults`
+  - `searchToolbar` → `SearchToolbar`
+  - `searchFacets` → `SearchFacets`
+
+Use the same `component.type` strings as in the Uniform component definitions (public IDs). Keep the same style as other entries (imports, `else if` vs object map, etc.).
+
+## 4. Uniform component definitions (MCP only)
+
+Use the **Uniform MCP** `componentAction` tool to create the following component definitions in the **destination** project. Do not create or edit YAML/JSON in `uniform-data` for these; use MCP only. After changes, run `npm run uniform:pull` (or `pnpm run uniform:pull`).
+
+### 4.1 Search Container (publicId: `searchContainer`)
+
+- **name**: Search Container  
+- **description**: Coveo search provider wrapper. Place search bar, results, toolbar and facets in the content slot. Use on a search route that provides URL search params.  
+- **canBeComposition**: false  
+- **parameters**:  
+  - id: `coveoPipelineName`, name: Coveo Pipeline Name, type: `text`, guidance: Coveo search hub / pipeline name for this search instance.  
+- **slots**:  
+  - id: `content`, name: Content, allowedComponents: `["searchBar", "searchResults", "searchToolbar", "searchFacets"]`, inheritAllowedComponents: false.  
+  - id: `sidebar`, name: Sidebar. If MCP supports it: allowAllComponents: true, inheritAllowedComponents: false, patternsInAllowedComponents: false. If not, create the slot with allowedComponents as required by the tool (e.g. empty array) and then configure **allowAllComponents=true** and **patternsInAllowedComponents=false** for the sidebar slot in the Uniform dashboard so authors can add any component in the sidebar.
+
+### 4.2 Search Bar (publicId: `searchBar`)
+
+- **name**: Search Bar  
+- **description**: Search input and submit button for Coveo search.  
+- **canBeComposition**: false  
+- **parameters**:  
+  - id: `buttonText`, name: Button Text, type: `text`, guidance: Label for the search submit button.  
+  - id: `placeholder`, name: Placeholder, type: `text`, guidance: Placeholder text when the search input is empty.  
+- **slots**: (none)
+
+### 4.3 Search Results (publicId: `searchResults`)
+
+- **name**: Search Results  
+- **description**: Displays Coveo search results with pagination.  
+- **canBeComposition**: false  
+- **parameters**:  
+  - id: `noResultsText`, name: No Results Text, type: `text`, guidance: Message shown when the search returns no results.  
+- **slots**: (none)
+
+### 4.4 Search Toolbar (publicId: `searchToolbar`)
+
+- **name**: Search Toolbar  
+- **description**: Shows result count and sort order for Coveo search.  
+- **canBeComposition**: false  
+- **parameters**: (none)  
+- **slots**: (none)
+
+### 4.5 Search Facets (publicId: `searchFacets`)
+
+- **name**: Search Facets  
+- **description**: Renders search facets for filtering Coveo results.  
+- **canBeComposition**: false  
+- **parameters**: (none)  
+- **slots**: (none)
+
+## 5. Allow Search Container on the Page composition
+
+- In the **destination** project, the Page (or equivalent composition root) component must allow `searchContainer` in its content slot. Use MCP `componentGet` for the page component, then `componentAction` with action `update` and **patches** to add `searchContainer` to the content slot’s `allowedComponents` list (or configure this in the Uniform dashboard). Do not modify uniform-data files manually.
+
+## 6. Search metadata on the Page composition (for index-rebuild)
+
+The index-rebuild route reads composition-level **searchTitle** and **searchDescription** to build Coveo documents. If the destination Page composition does not have these parameters:
+
+- Use MCP to add to the **Page** component definition: a group parameter (e.g. "Search metadata") and two text parameters, **searchTitle** and **searchDescription** (localizable if the project uses locales). Match the parameter IDs to what `app/api/index-rebuild/route.ts` expects (e.g. `searchTitle`, `searchDescription`).
+- Ensure compositions that should be indexed have these parameters filled so the route can push meaningful documents.
+
+## 7. Component pattern
+
+Per solution-architecture: when pushing a new component, create a **component pattern** and fill it with content. For the Search Container:
+
+- Use MCP **patternAction** to create a **component pattern** based on component type `searchContainer`, with a name like "Search Container".
+- In the pattern, add component instances in the **content** slot in order: searchBar (with buttonText/placeholder), searchToolbar, searchResults (with noResultsText), and in **sidebar**: searchFacets. Set parameter overridability as desired (e.g. coveoPipelineName, buttonText, placeholder, noResultsText overridable).
+- Authors can then insert this pattern on a search page instead of building the layout from scratch.
+
+## 8. Environment variables
+
+Add to `.env` (and document in `.env.example`):
+
+- **Uniform**: `UNIFORM_PREVIEW_SECRET=hello-world` (or project value), `UNIFORM_API_KEY`, `UNIFORM_PROJECT_ID` (and if used: `UNIFORM_PROJECT_MAP_ID`, `UNIFORM_CLI_BASE_URL` / `UNIFORM_API_HOST`).
+- **Coveo search (client)**: `NEXT_PUBLIC_COVEO_ORGANIZATION_ID`, `NEXT_PUBLIC_COVEO_ACCESS_TOKEN`, optional `NEXT_PUBLIC_COVEO_DEFAULT_PIPELINE` (or rely on sample config).
+- **Coveo index-rebuild**: `COVEO_SOURCE_ID`, `COVEO_BEARER_TOKEN`; optional `COVEO_INDEX_REBUILD_ENABLE_PUSH`, `COVEO_INDEX_REBUILD_ENABLE_DEBUG_STORE`, `COVEO_INDEX_REBUILD_SITE_HOSTNAME`.
+
+See `examples/coveo-ssr-example/README.md` and `.env.example` for details and limitations (e.g. facets configured in engine-definition and SearchFacets, public API key exposure, full rebuild behavior).
+
+## 9. Checklist
+
+- [ ] Dependencies installed (Coveo headless, headless-react; Uniform canvas/project-map if needed for index-rebuild).
+- [ ] All search components and `lib/coveo/engine-definition` (or equivalent) in place; imports and paths aligned with destination.
+- [ ] `app/api/index-rebuild/route.ts` added; env vars and composition parameter names (`searchTitle`, `searchDescription`) aligned with destination.
+- [ ] resolveComponent updated with the five search component types, following the destination’s existing format.
+- [ ] Five Uniform components created via **MCP** (searchContainer, searchBar, searchResults, searchToolbar, searchFacets); sidebar slot configured (allowAllComponents if needed) in dashboard when MCP does not expose it.
+- [ ] Page (or composition root) allows `searchContainer` in content slot; Page has searchTitle/searchDescription if index-rebuild is used.
+- [ ] Optional: Search Container component pattern created and populated via MCP.
+- [ ] `uniform:pull` run after MCP changes.
+- [ ] Env vars and README/docs updated for Coveo and index-rebuild.

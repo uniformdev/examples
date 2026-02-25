@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchBar
+name: Search Bar
+icon: screen
+parameters:
+  - id: buttonText
+    name: Button Text
+    type: text
+    guidance: Label for the search submit button.
+    typeConfig: {}
+  - id: placeholder
+    name: Placeholder
+    type: text
+    guidance: Placeholder text when the search input is empty.
+    typeConfig: {}
+description: Search input and submit button for Coveo search.
+useTeamPermissions: true
+slots: []
+titleParameter: buttonText
+canBeComposition: false
+created: '2026-02-24T04:56:45.662043+00:00'
+updated: '2026-02-24T04:56:45.662043+00:00'

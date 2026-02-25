@@ -1,0 +1,26 @@
+composition:
+  _name: Product 3
+  _id: 04a63e0b-0518-4e64-934d-803efaf53c80
+  _slug: product-1-copy-copy
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Product 1
+    searchTitle:
+      type: text
+      value: product-3
+    searchDescription:
+      type: text
+      value: product-3, only in yellow, wooden or metal options
+  slots:
+    content:
+      - _id: e7a81f84-7d4d-401b-a0a3-f326bc3f62b4
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Product 3
+created: '2026-02-24T22:10:28.242179+00:00'
+modified: '2026-02-24T22:11:57.917092+00:00'
+pattern: false

@@ -1,0 +1,47 @@
+composition:
+  _name: Search Container
+  _id: 6a6c3481-e5f6-4381-adb0-5de8f96d0b09
+  type: searchContainer
+  parameters:
+    $internal_displayName:
+      type: text
+      value: Search Container
+  slots:
+    content:
+      - _id: 236f2004-a344-48c4-9e6d-1682bb6f91d2
+        type: searchBar
+        parameters:
+          buttonText:
+            type: text
+            value: Search
+          placeholder:
+            type: text
+            value: Search term
+          $internal_displayName:
+            type: text
+            value: Search Bar
+        _overridability:
+          parameters:
+            buttonText: 'yes'
+            placeholder: 'yes'
+      - _id: 0cdeac6a-9cb4-40fa-af20-158d52e2ced4
+        type: searchToolbar
+        parameters:
+          $internal_displayName:
+            type: text
+            value: Search Stats and Sorting
+      - _id: d8d97121-0b4d-466f-bb31-8d0216d00505
+        type: searchResults
+        parameters:
+          noResultsText:
+            type: text
+            value: No results. Try a different query.
+    sidebar:
+      - _id: e69c40f3-265f-42f7-8bdb-5086057edf6e
+        type: searchFacets
+  _overridability:
+    parameters:
+      coveoPipelineName: 'yes'
+created: '2026-02-24T21:02:59.247959+00:00'
+modified: '2026-02-24T21:30:03.758257+00:00'
+pattern: true
