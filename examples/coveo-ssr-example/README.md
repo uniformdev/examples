@@ -1,5 +1,8 @@
 This example is based on the nextjs-app-router-v2 example in this repo. 
 
+## Demo
+https://coveo-ssr-example.vercel.app/search#q=news
+
 ## Getting Started
 
 1. Prepare an empty Uniform project.
