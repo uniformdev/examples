@@ -18,18 +18,18 @@ import {
 import { defineSearchEngine } from "@coveo/headless-react/ssr";
 
 function getEngineConfiguration() {
-  const organizationId = process.env.COVEO_ORGANIZATION_ID;
-  const accessToken = process.env.COVEO_ACCESS_TOKEN;
-  const searchHub = process.env.COVEO_SEARCH_HUB;
+  const accessToken = process.env.NEXT_PUBLIC_COVEO_ACCESS_TOKEN || '';
+  const organizationId = process.env.NEXT_PUBLIC_COVEO_ORGANIZATION_ID || '';
 
   if (organizationId && accessToken) {
     return {
       organizationId,
       accessToken,
-      ...(searchHub && { search: { searchHub } }),
+      search: {
+        pipeline: process.env.NEXT_PUBLIC_COVEO_DEFAULT_PIPELINE,
+      },
       analytics: {
-        analyticsMode: "next" as const,
-        trackingId: "coveo-ssr-example",
+        enabled: false,
       },
     };
   }

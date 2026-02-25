@@ -10,7 +10,7 @@
  *
  * Env: UNIFORM_PREVIEW_SECRET, UNIFORM_API_KEY, UNIFORM_PROJECT_ID, UNIFORM_PROJECT_MAP_ID (required),
  *      UNIFORM_CLI_BASE_URL | UNIFORM_API_HOST, COVEO_BASE_URL | SITE_HOSTNAME,
- *      COVEO_ORG_ID, COVEO_SOURCE_ID, COVEO_BEARER_TOKEN
+ *      NEXT_PUBLIC_COVEO_ORGANIZATION_ID, COVEO_SOURCE_ID, COVEO_BEARER_TOKEN
  *
  * Flow: Validates secret, returns 200 immediately, runs rebuild in background: fetches project map
  * nodes (compositions only), resolves each composition via RouteClient, builds Coveo docs
@@ -209,14 +209,14 @@ async function pushToCoveo(
 ): Promise<PushResult> {
   if (!ENABLE_COVEO_PUSH) return { ok: true, skipped: true };
 
-  const coveoOrgId = process.env.COVEO_ORG_ID;
+  const coveoOrgId = process.env.NEXT_PUBLIC_COVEO_ORGANIZATION_ID;
   const coveoSourceId = process.env.COVEO_SOURCE_ID;
   const coveoBearerToken = process.env.COVEO_BEARER_TOKEN;
 
   if (!coveoOrgId || !coveoSourceId || !coveoBearerToken) {
     return {
       ok: false,
-      error: 'Missing Coveo config (COVEO_ORG_ID / COVEO_SOURCE_ID / COVEO_BEARER_TOKEN)',
+      error: 'Missing Coveo config (NEXT_PUBLIC_COVEO_ORGANIZATION_ID / COVEO_SOURCE_ID / COVEO_BEARER_TOKEN)',
     };
   }
 
@@ -250,12 +250,12 @@ async function pushToCoveo(
 async function deleteOldItemsFromCoveo(state: PushRunState): Promise<boolean> {
   if (!ENABLE_COVEO_PUSH) return true;
 
-  const coveoOrgId = process.env.COVEO_ORG_ID;
+  const coveoOrgId = process.env.NEXT_PUBLIC_COVEO_ORGANIZATION_ID;
   const coveoSourceId = process.env.COVEO_SOURCE_ID;
   const coveoBearerToken = process.env.COVEO_BEARER_TOKEN;
 
   if (!coveoOrgId || !coveoSourceId || !coveoBearerToken) {
-    console.error('Missing Coveo config (COVEO_ORG_ID / COVEO_SOURCE_ID / COVEO_BEARER_TOKEN)');
+    console.error('Missing Coveo config (NEXT_PUBLIC_COVEO_ORGANIZATION_ID / COVEO_SOURCE_ID / COVEO_BEARER_TOKEN)');
     return false;
   }
 
