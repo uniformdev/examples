@@ -1,0 +1,12 @@
+{
+  "$schema": "https://eu.uniform.app/schemas/json-schema/component-definition/v1.json",
+  "id": "siteHeader",
+  "name": "Site Header",
+  "icon": "screen",
+  "parameters": [],
+  "useTeamPermissions": true,
+  "slots": [],
+  "canBeComposition": false,
+  "created": "2026-02-13T14:08:25.281471+00:00",
+  "updated": "2026-02-13T14:08:25.281471+00:00"
+}

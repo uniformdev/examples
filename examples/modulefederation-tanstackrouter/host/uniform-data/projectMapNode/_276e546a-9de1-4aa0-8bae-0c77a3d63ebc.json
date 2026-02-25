@@ -1,0 +1,11 @@
+{
+  "id": "276e546a-9de1-4aa0-8bae-0c77a3d63ebc",
+  "name": "Root",
+  "order": 500,
+  "path": "/",
+  "type": "composition",
+  "pathSegment": "",
+  "data": {},
+  "compositionId": "63a58d5e-30fb-4b3e-9613-9a66686427b3",
+  "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+}

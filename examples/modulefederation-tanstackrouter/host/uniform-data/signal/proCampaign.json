@@ -1,0 +1,23 @@
+{
+  "id": "proCampaign",
+  "name": "Pro Campaign",
+  "cap": 100,
+  "crit": {
+    "op": "&",
+    "type": "G",
+    "clauses": [
+      {
+        "type": "QS",
+        "match": {
+          "cs": false,
+          "op": "=",
+          "rhs": "pro"
+        },
+        "queryName": "utm_campaign"
+      }
+    ]
+  },
+  "dur": "p",
+  "description": "",
+  "str": 50
+}

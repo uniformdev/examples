@@ -1,0 +1,168 @@
+{
+  "composition": {
+    "_name": "Pro",
+    "_id": "fc66374d-b114-4f58-9fe0-bddce024a029",
+    "_slug": "pro",
+    "type": "page",
+    "slots": {
+      "content": [
+        {
+          "_id": "34a0d673-d4c7-4bba-a5b4-719824a6851d",
+          "type": "$personalization",
+          "slots": {
+            "pz": [
+              {
+                "_id": "36deba77-533b-4155-9b31-01f8307d7360",
+                "type": "hero",
+                "_pattern": "5e0987d1-4c32-437a-8252-b40956ef9003"
+              },
+              {
+                "_id": "17fcd3a2-6e27-4fe3-b336-29e99d499212",
+                "type": "hero",
+                "_pattern": "5e0987d1-4c32-437a-8252-b40956ef9003"
+              }
+            ]
+          },
+          "parameters": {
+            "algorithm": {
+              "type": "pzAlgorithm",
+              "value": "ssc"
+            },
+            "trackingEventName": {
+              "type": "text",
+              "value": "pz-pro-campaign"
+            }
+          }
+        }
+      ]
+    },
+    "_overrides": {
+      "17fcd3a2-6e27-4fe3-b336-29e99d499212": {
+        "parameters": {
+          "title": {
+            "type": "text",
+            "value": "Pro Plan"
+          },
+          "$pzCrit": {
+            "type": "$pzCrit",
+            "value": {
+              "name": "hero-17fc"
+            }
+          },
+          "description": {
+            "type": "richText",
+            "value": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "The Pro plan offers unlimited projects, 100 GB storage, advanced analytics, and priority support for $49/month. Billed monthly, cancel anytime.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": null,
+                    "textStyle": "",
+                    "textFormat": 0
+                  }
+                ],
+                "direction": null
+              }
+            }
+          }
+        }
+      },
+      "36deba77-533b-4155-9b31-01f8307d7360": {
+        "parameters": {
+          "title": {
+            "type": "text",
+            "value": "Pro plan special offer"
+          },
+          "$pzCrit": {
+            "type": "$pzCrit",
+            "value": {
+              "dim": "proCampaign",
+              "name": "pro-campaign"
+            }
+          },
+          "description": {
+            "type": "richText",
+            "value": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "The Pro plan offers unlimited projects, 100 GB storage, advanced analytics, and priority support for $49/month. Billed monthly, cancel anytime.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": null,
+                    "textStyle": "",
+                    "textFormat": 0
+                  }
+                ],
+                "direction": null
+              }
+            }
+          }
+        }
+      },
+      "17fcd3a2-6e27-4fe3-b336-29e99d499212|d55dc5e2-5147-4821-9993-8373e6b368e8": {
+        "parameters": {
+          "link": {
+            "type": "link",
+            "value": {
+              "path": "/demo",
+              "type": "projectMapNode",
+              "nodeId": "874dbb1d-6cab-467e-85c6-4de1cd7ab69f",
+              "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+            }
+          }
+        }
+      },
+      "36deba77-533b-4155-9b31-01f8307d7360|d55dc5e2-5147-4821-9993-8373e6b368e8": {
+        "parameters": {
+          "link": {
+            "type": "link",
+            "value": {
+              "path": "/demo",
+              "type": "projectMapNode",
+              "nodeId": "874dbb1d-6cab-467e-85c6-4de1cd7ab69f",
+              "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+            }
+          }
+        }
+      }
+    }
+  },
+  "created": "2026-02-18T13:57:05.546198+00:00",
+  "modified": "2026-02-24T14:05:43.682653+00:00",
+  "pattern": false
+}

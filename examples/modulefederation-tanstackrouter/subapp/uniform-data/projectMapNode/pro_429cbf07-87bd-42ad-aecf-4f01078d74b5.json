@@ -1,0 +1,11 @@
+{
+  "id": "429cbf07-87bd-42ad-aecf-4f01078d74b5",
+  "name": "Pro",
+  "order": 500,
+  "path": "/pro",
+  "type": "composition",
+  "pathSegment": "pro",
+  "data": {},
+  "compositionId": "fc66374d-b114-4f58-9fe0-bddce024a029",
+  "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+}

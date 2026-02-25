@@ -1,0 +1,6 @@
+{
+  "id": "74a4449d-7b06-4a6d-86c6-b7a4ec1015b9",
+  "name": "Local",
+  "url": "http://localhost:5173/api/preview?app=host&secret=hello-world",
+  "order": 1
+}

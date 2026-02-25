@@ -1,0 +1,83 @@
+{
+  "$schema": "https://eu.uniform.app/schemas/json-schema/component-definition/v1.json",
+  "id": "hero",
+  "name": "Hero",
+  "icon": "screen",
+  "parameters": [
+    {
+      "id": "title",
+      "name": "Title",
+      "type": "text",
+      "guidance": "Main headline text for the hero section"
+    },
+    {
+      "id": "subtitle",
+      "name": "Subtitle",
+      "type": "text",
+      "guidance": "Supporting text below the title"
+    },
+    {
+      "id": "description",
+      "name": "Description",
+      "type": "richText",
+      "guidance": "Detailed description content for the hero section",
+      "typeConfig": {
+        "elements": {
+          "builtIn": [
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "unorderedList",
+            "orderedList",
+            "link",
+            "quote",
+            "code",
+            "table",
+            "asset",
+            "variable"
+          ]
+        },
+        "required": false,
+        "formatting": {
+          "builtIn": [
+            "bold",
+            "italic",
+            "underline",
+            "strikethrough",
+            "code",
+            "superscript",
+            "subscript"
+          ]
+        },
+        "elementsConfig": {
+          "asset": {
+            "allowedTypes": [
+              "image"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "ctaText",
+      "name": "CTA Text",
+      "type": "text",
+      "guidance": "Call-to-action button label"
+    },
+    {
+      "id": "ctaLink",
+      "name": "CTA Link",
+      "type": "link",
+      "guidance": "URL the call-to-action button links to"
+    }
+  ],
+  "useTeamPermissions": true,
+  "slots": [],
+  "titleParameter": "title",
+  "canBeComposition": false,
+  "created": "2026-02-05T14:10:51.600633+00:00",
+  "updated": "2026-02-05T14:10:51.600633+00:00"
+}

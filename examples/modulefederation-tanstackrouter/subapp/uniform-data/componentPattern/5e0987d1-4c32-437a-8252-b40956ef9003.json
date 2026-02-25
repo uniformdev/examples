@@ -1,0 +1,124 @@
+{
+  "composition": {
+    "_name": "Hero",
+    "_id": "5e0987d1-4c32-437a-8252-b40956ef9003",
+    "type": "hero",
+    "parameters": {
+      "title": {
+        "type": "text",
+        "value": "Welcome to Our Platform"
+      },
+      "subtitle": {
+        "type": "text",
+        "value": "Build amazing experiences with modern tools"
+      },
+      "description": {
+        "type": "richText",
+        "value": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Create stunning, high-performance web applications with our cutting-edge platform. Powered by the latest technology stack for speed, reliability, and developer happiness.",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "textStyle": "",
+                "textFormat": 0
+              }
+            ],
+            "direction": null
+          }
+        }
+      }
+    },
+    "slots": {
+      "ctas": [
+        {
+          "_id": "9e2641f1-ec17-4aea-bb00-fac5c7f1b30f",
+          "type": "ctaButton",
+          "parameters": {
+            "link": {
+              "type": "link",
+              "value": {
+                "path": "#",
+                "type": "url"
+              }
+            },
+            "label": {
+              "type": "text",
+              "value": "Start free trial"
+            },
+            "variant": {
+              "type": "select",
+              "value": "primary"
+            }
+          },
+          "_overridability": {
+            "parameters": {
+              "link": "yes",
+              "label": "yes",
+              "variant": "yes"
+            }
+          }
+        },
+        {
+          "_id": "d55dc5e2-5147-4821-9993-8373e6b368e8",
+          "type": "ctaButton",
+          "parameters": {
+            "link": {
+              "type": "link",
+              "value": {
+                "path": "#",
+                "type": "url"
+              }
+            },
+            "label": {
+              "type": "text",
+              "value": "Book a demo"
+            },
+            "variant": {
+              "type": "select",
+              "value": "secondary"
+            }
+          },
+          "_overridability": {
+            "parameters": {
+              "link": "yes",
+              "label": "yes",
+              "variant": "yes"
+            }
+          }
+        }
+      ]
+    },
+    "_overridability": {
+      "parameters": {
+        "title": "yes",
+        "ctaLink": "yes",
+        "ctaText": "yes",
+        "subtitle": "yes",
+        "description": "yes"
+      },
+      "hideLockedParameters": true
+    }
+  },
+  "created": "2026-02-05T14:14:02.725596+00:00",
+  "modified": "2026-02-24T13:55:28.145615+00:00",
+  "pattern": true
+}

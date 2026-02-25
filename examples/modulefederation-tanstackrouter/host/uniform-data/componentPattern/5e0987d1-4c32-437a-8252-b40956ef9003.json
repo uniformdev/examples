@@ -1,0 +1,75 @@
+{
+  "composition": {
+    "_name": "Hero",
+    "_id": "5e0987d1-4c32-437a-8252-b40956ef9003",
+    "type": "hero",
+    "parameters": {
+      "title": {
+        "type": "text",
+        "value": "Welcome to Our Platform"
+      },
+      "ctaLink": {
+        "type": "link",
+        "value": {
+          "path": "/demo/start/server-funcs",
+          "type": "url"
+        }
+      },
+      "ctaText": {
+        "type": "text",
+        "value": "Get Started"
+      },
+      "subtitle": {
+        "type": "text",
+        "value": "Build amazing experiences with modern tools"
+      },
+      "description": {
+        "type": "richText",
+        "value": {
+          "root": {
+            "type": "root",
+            "format": "",
+            "indent": 0,
+            "version": 1,
+            "children": [
+              {
+                "type": "paragraph",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "mode": "normal",
+                    "text": "Create stunning, high-performance web applications with our cutting-edge platform. Powered by the latest technology stack for speed, reliability, and developer happiness.",
+                    "type": "text",
+                    "style": "",
+                    "detail": 0,
+                    "format": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "textStyle": "",
+                "textFormat": 0
+              }
+            ],
+            "direction": null
+          }
+        }
+      }
+    },
+    "_overridability": {
+      "parameters": {
+        "title": "yes",
+        "ctaLink": "yes",
+        "ctaText": "yes",
+        "subtitle": "yes",
+        "description": "yes"
+      },
+      "hideLockedParameters": true
+    }
+  },
+  "created": "2026-02-05T14:10:54.182168+00:00",
+  "modified": "2026-02-05T14:10:54.182168+00:00",
+  "pattern": true
+}

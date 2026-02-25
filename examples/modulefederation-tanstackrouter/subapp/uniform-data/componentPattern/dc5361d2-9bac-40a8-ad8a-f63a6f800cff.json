@@ -1,0 +1,35 @@
+{
+  "composition": {
+    "_name": "CTA Button",
+    "_id": "dc5361d2-9bac-40a8-ad8a-f63a6f800cff",
+    "type": "ctaButton",
+    "parameters": {
+      "link": {
+        "type": "link",
+        "value": {
+          "path": "#",
+          "type": "url"
+        }
+      },
+      "label": {
+        "type": "text",
+        "value": "Start free trial"
+      },
+      "variant": {
+        "type": "select",
+        "value": "primary"
+      }
+    },
+    "_overridability": {
+      "parameters": {
+        "link": "yes",
+        "label": "yes",
+        "variant": "yes"
+      },
+      "hideLockedParameters": true
+    }
+  },
+  "created": "2026-02-24T13:01:32.420095+00:00",
+  "modified": "2026-02-24T13:01:32.420095+00:00",
+  "pattern": true
+}

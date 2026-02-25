@@ -1,0 +1,12 @@
+{
+  "composition": {
+    "_name": "Sub App",
+    "_id": "f56c5fcd-397e-452f-a8ae-75c82a91c213",
+    "_slug": "subapp",
+    "type": "page",
+    "parameters": {}
+  },
+  "created": "2026-02-06T18:27:58.646192+00:00",
+  "modified": "2026-02-18T13:24:42.112123+00:00",
+  "pattern": false
+}

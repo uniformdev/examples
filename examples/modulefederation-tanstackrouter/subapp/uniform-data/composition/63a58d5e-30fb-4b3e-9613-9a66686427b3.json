@@ -1,0 +1,27 @@
+{
+  "composition": {
+    "_name": "Home",
+    "_id": "63a58d5e-30fb-4b3e-9613-9a66686427b3",
+    "type": "page",
+    "slots": {
+      "content": [
+        {
+          "_id": "457a4b86-2538-4ad3-93c1-7f6f2abddfd2",
+          "type": "plans",
+          "parameters": {
+            "title": {
+              "type": "text",
+              "value": "Plans"
+            }
+          }
+        }
+      ]
+    },
+    "_overridability": {
+      "hideLockedParameters": true
+    }
+  },
+  "created": "2026-02-05T14:14:03.509243+00:00",
+  "modified": "2026-02-18T13:24:44.124662+00:00",
+  "pattern": false
+}

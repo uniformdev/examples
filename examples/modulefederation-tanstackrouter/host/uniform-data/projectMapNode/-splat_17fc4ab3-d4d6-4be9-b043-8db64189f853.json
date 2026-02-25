@@ -1,0 +1,13 @@
+{
+  "id": "17fc4ab3-d4d6-4be9-b043-8db64189f853",
+  "name": "Sub App Paths",
+  "order": 500,
+  "path": "/subapp/:splat",
+  "type": "composition",
+  "pathSegment": ":splat",
+  "data": {
+    "previewValue": ""
+  },
+  "compositionId": "8b385f0d-588f-438c-a88b-ed7045912766",
+  "projectMapId": "db9671bf-b57a-40d6-a29f-4d6572d404c6"
+}
