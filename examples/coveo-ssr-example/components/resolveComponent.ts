@@ -6,8 +6,6 @@ import {
 import { DefaultNotFoundComponent } from "./default";
 import { HeroComponent } from "./hero";
 import { Page } from "./page";
-import { HeaderComponent } from "./header";
-import { FooterComponent } from "./footer";
 import { SearchContainer } from "./search/SearchContainer";
 import { SearchBar } from "./search/SearchBar";
 import { SearchResults } from "./search/SearchResults";
@@ -24,14 +22,6 @@ export const resolveComponent: ResolveComponentFunction = ({ component }) => {
   } else if (component.type === "hero") {
     result = {
       component: HeroComponent,
-    };
-  } else if (component.type === "header") {
-    result = {
-      component: HeaderComponent,
-    };
-  } else if (component.type === "footer") {
-    result = {
-      component: FooterComponent,
     };
   } else if (component.type === "searchContainer") {
     result = {

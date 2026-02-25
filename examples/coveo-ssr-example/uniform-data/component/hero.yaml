@@ -40,8 +40,8 @@ useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2025-03-13T17:06:13.469662+00:00'
-updated: '2025-03-17T13:51:31.665871+00:00'
+created: '2026-02-23T21:59:12.523445+00:00'
+updated: '2026-02-23T21:59:12.523445+00:00'
 variants:
   - id: primary
     name: Primary

@@ -14,11 +14,7 @@ export const Page = ({ slots }: ComponentProps<PageProps, PageSlots>) => {
     <>
       <UniformSlot slot={slots.header} />
       <UniformSlot slot={slots.content} />
-      <div>
-        <QuirkButton />
-      </div>
       <UniformSlot slot={slots.footer} />
-      <WebVitals />
     </>
   );
 };

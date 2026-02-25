@@ -1,8 +1,0 @@
-id: country
-name: Country
-description: ''
-options:
-  - name: Canada
-    value: Canada
-  - name: USA
-    value: US
