@@ -17,6 +17,13 @@ export default async function middleware(request: Request) {
     return next(request);
   }
 
+  // check to see if bypass token is present for sveltekit on vercel
+  const bypassToken = request.headers.get("x-prerender-revalidate");
+  const envBypassToken = process.env.BYPASS_TOKEN;
+  if (bypassToken && envBypassToken && bypassToken === envBypassToken) {
+    return next(request);
+  }
+
   const url = new URL(request.url);
 
   const cookieValue = request.headers.get("cookie");
@@ -31,11 +38,11 @@ export default async function middleware(request: Request) {
   });
 
   // Extract geo data from Vercel headers
-  const geoCity = request.headers.get('x-vercel-ip-city') ?? '';
-  const geoCountry = request.headers.get('x-vercel-ip-country') ?? '';
-  const geoRegion = request.headers.get('x-vercel-ip-country-region') ?? '';
-  const geoLatitude = request.headers.get('x-vercel-ip-latitude') ?? '';
-  const geoLongitude = request.headers.get('x-vercel-ip-longitude') ?? '';
+  const geoCity = request.headers.get("x-vercel-ip-city") ?? "";
+  const geoCountry = request.headers.get("x-vercel-ip-country") ?? "";
+  const geoRegion = request.headers.get("x-vercel-ip-country-region") ?? "";
+  const geoLatitude = request.headers.get("x-vercel-ip-latitude") ?? "";
+  const geoLongitude = request.headers.get("x-vercel-ip-longitude") ?? "";
 
   await context.update({
     cookies,
@@ -46,7 +53,7 @@ export default async function middleware(request: Request) {
       geoRegion,
       geoLatitude,
       geoLongitude,
-    }
+    },
   });
 
   const response = await fetch(url, {
