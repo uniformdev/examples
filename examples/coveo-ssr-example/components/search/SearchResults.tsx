@@ -1,19 +1,18 @@
 "use client";
 
 import {
-  type ComponentParameter,
   type ComponentProps,
+  registerUniformComponent,
   UniformText,
-} from "@uniformdev/next-app-router/component";
+} from "@uniformdev/canvas-react";
 import { usePager, useResultList } from "@/lib/coveo/engine-definition";
 import { SearchResultItem } from "./SearchResultItem";
 
 type SearchResultsParameters = {
-  noResultsText?: ComponentParameter<string>;
+  noResultsText?: string;
 };
 
 export function SearchResults({
-  parameters: { noResultsText } = {},
   component,
 }: ComponentProps<SearchResultsParameters> = {} as ComponentProps<SearchResultsParameters>) {
   const { state: resultListState } = useResultList();
@@ -26,13 +25,12 @@ export function SearchResults({
     <div>
       {!hasResults && (
         <p className="text-sm text-gray-500">
-          {component && noResultsText && (
+          {component ? (
             <UniformText
-              component={component}
-              parameter={noResultsText}
+              parameterId="noResultsText"
               placeholder="Text when there are no search results"
             />
-          )}
+          ) : null}
         </p>
       )}
       {hasResults && (
@@ -70,3 +68,8 @@ export function SearchResults({
     </div>
   );
 }
+
+registerUniformComponent({
+  type: "searchResults",
+  component: SearchResults,
+});

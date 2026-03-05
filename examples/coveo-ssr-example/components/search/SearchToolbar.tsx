@@ -1,18 +1,19 @@
 "use client";
 
+import { registerUniformComponent } from "@uniformdev/canvas-react";
 import { useQuerySummary, useSearchBox, useSort } from "@/lib/coveo/engine-definition";
 import { SortBy, SortCriterion, SortOrder } from "@coveo/headless";
 
 const sortOptions: Array<{ label: string; criterion: SortCriterion }> = [
   {
-    label: 'Date ↓',
+    label: "Date ↓",
     criterion: { by: SortBy.Date, order: SortOrder.Descending },
   },
   {
-    label: 'Date ↑',
+    label: "Date ↑",
     criterion: { by: SortBy.Date, order: SortOrder.Ascending },
   },
-  { label: 'Relevancy', criterion: { by: SortBy.Relevancy } },
+  { label: "Relevancy", criterion: { by: SortBy.Relevancy } },
 ];
 
 export function SearchToolbar() {
@@ -20,13 +21,11 @@ export function SearchToolbar() {
   const { state: searchBoxState } = useSearchBox();
   const { methods: sortMethods } = useSort();
 
-  const sort = useSort();
-
-  const searchQuery = searchBoxState.value || '';
+  const searchQuery = searchBoxState.value || "";
   const totalCount = querySummaryState?.total || 0;
 
   const handleSortClick = (label: string) => {
-    const criterion = sortOptions.find(c => c.label === label)?.criterion;
+    const criterion = sortOptions.find((c) => c.label === label)?.criterion;
     if (criterion && sortMethods) {
       sortMethods.sortBy(criterion);
     }
@@ -35,13 +34,12 @@ export function SearchToolbar() {
   return (
     <div>
       <p>
-        {totalCount} {totalCount === 1 ? "result" : "results"} for "{searchQuery}"
+        {totalCount} {totalCount === 1 ? "result" : "results"} for &quot;
+        {searchQuery}&quot;
       </p>
       {sortOptions.length > 0 && (
         <div>
-          <label htmlFor="sort">
-            Sort:
-          </label>
+          <label htmlFor="sort">Sort:</label>
           <select
             id="sort"
             onChange={(e) => handleSortClick(e.target.value)}
@@ -57,3 +55,8 @@ export function SearchToolbar() {
     </div>
   );
 }
+
+registerUniformComponent({
+  type: "searchToolbar",
+  component: SearchToolbar,
+});

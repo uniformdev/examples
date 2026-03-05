@@ -1,5 +1,6 @@
 /**
  * Next.js API endpoint for rebuilding Coveo index from Uniform Project Map compositions.
+ * (Pages Router)
  *
  * Usage:
  * GET /api/index-rebuild?secret=<UNIFORM_PREVIEW_SECRET>&locale=en
@@ -17,7 +18,7 @@
  * (search title, search description, URL) and optionally pushes to Coveo and/or writes debug JSON.
  */
 
-import { connection, NextRequest, NextResponse } from 'next/server';
+import type { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs/promises';
 import path from 'path';
 import { ProjectMapClient } from '@uniformdev/project-map';
@@ -43,15 +44,22 @@ type PushRunState = {
 
 type PushResult = { ok: true; skipped?: true } | { ok: false; error: string };
 
-export async function GET(request: NextRequest) {
-  await connection();
+function getQueryString(value: string | string[] | undefined): string | null {
+  if (value == null) return null;
+  return Array.isArray(value) ? value[0] ?? null : value;
+}
 
-  const searchParams = new URL(request.url).searchParams;
-  const secret = searchParams.get('secret');
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method !== 'GET') {
+    res.setHeader('Allow', 'GET');
+    return res.status(405).json({ success: false, error: 'Method Not Allowed' });
+  }
+
+  const secret = getQueryString(req.query.secret);
   const expectedSecret = process.env.UNIFORM_PREVIEW_SECRET;
 
   if (!secret || !expectedSecret || secret !== expectedSecret) {
-    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 403 });
+    return res.status(403).json({ success: false, error: 'Unauthorized' });
   }
 
   const apiKey = process.env.UNIFORM_API_KEY;
@@ -64,21 +72,21 @@ export async function GET(request: NextRequest) {
   if (missing.length > 0) {
     const message = `Configuration is invalid: ${missing.join(', ')} are required.`;
     console.error(message);
-    return NextResponse.json({ success: false, error: message }, { status: 400 });
+    return res.status(400).json({ success: false, error: message });
   }
 
   try {
-    const locale = searchParams.get('locale') || 'en';
+    const locale = getQueryString(req.query.locale) || 'en';
     rebuildIndexInBackground(locale).catch(err => {
       console.error('Error in background index rebuild:', err);
     });
-    return NextResponse.json({ success: true, message: 'rebuild requested accepted' });
+    return res.status(200).json({ success: true, message: 'rebuild requested accepted' });
   } catch (error) {
     console.error('Error in index rebuild endpoint:', error);
-    return NextResponse.json(
-      { success: false, error: error instanceof Error ? error.message : 'Unknown error' },
-      { status: 500 }
-    );
+    return res.status(500).json({
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    });
   }
 }
 
@@ -165,7 +173,7 @@ async function rebuildIndexInBackground(_locale: string) {
 
       found++;
 
-      if (ENABLE_DEBUG_STORE) { 
+      if (ENABLE_DEBUG_STORE) {
         const relPath = nodePath === '/' ? 'index.json' : `${nodePath.replace(/^\//, '')}.json`;
         const outPath = path.join(process.cwd(), 'coveo-result', relPath);
         await fs.mkdir(path.dirname(outPath), { recursive: true });

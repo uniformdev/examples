@@ -1,5 +1,6 @@
 "use client";
 
+import { registerUniformComponent } from "@uniformdev/canvas-react";
 import { useAuthorFacet } from "@/lib/coveo/engine-definition";
 
 export function SearchFacets() {
@@ -33,3 +34,8 @@ export function SearchFacets() {
     </div>
   );
 }
+
+registerUniformComponent({
+  type: "searchFacets",
+  component: SearchFacets,
+});

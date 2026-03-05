@@ -1,35 +1,34 @@
 import {
-  ComponentParameter,
-  ComponentProps,
+  type ComponentProps,
+  registerUniformComponent,
   UniformRichText,
   UniformText,
-} from "@uniformdev/next-app-router/component";
+} from "@uniformdev/canvas-react";
+import type { RichTextParamValue } from "@uniformdev/canvas";
 
-export const HeroComponent = ({
-  parameters: { title, description },
-  // you can get variant if needed
-  // variant,
-  component,
-}: ComponentProps<HeroProps>) => {
+export type HeroProps = ComponentProps<{
+  title?: string;
+  description?: RichTextParamValue;
+}>;
+
+export function HeroComponent(_props: HeroProps) {
   return (
     <>
       <UniformText
-        component={component}
-        parameter={title}
+        parameterId="title"
         className="title"
-        placeholder={"title goes here"}
+        placeholder="title goes here"
         as="h1"
       />
       <UniformRichText
-        component={component}
-        parameter={description}
-        placeholder={"description goes here"}
+        parameterId="description"
+        placeholder="description goes here"
       />
     </>
   );
-};
+}
 
-export type HeroProps = {
-  title: ComponentParameter<string>;
-  description: ComponentParameter<string>;
-};
+registerUniformComponent({
+  type: "hero",
+  component: HeroComponent,
+});

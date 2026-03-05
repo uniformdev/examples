@@ -3,20 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "pnpm run uniform:manifest && next dev",
+    "build": "pnpm run uniform:manifest && next build",
     "start": "next start",
     "uniform:pull": "uniform sync pull",
     "uniform:push": "uniform sync push",
-    "uniform:manifest": "uniform context manifest publish"
+    "uniform:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
+    "uniform:publish": "uniform context manifest publish"
   },
   "dependencies": {
     "@coveo/headless": "^3.45.0",
     "@coveo/headless-react": "^2.9.1",
+    "@uniformdev/canvas": "20.49.4",
+    "@uniformdev/canvas-react": "20.49.4",
+    "@uniformdev/canvas-next": "20.49.4",
     "@uniformdev/context": "20.49.4",
-    "@uniformdev/insights": "20.49.4",
-    "@uniformdev/next-app-router": "20.49.4",
-    "@uniformdev/next-app-router-client": "20.49.4",
+    "@uniformdev/context-next": "20.49.4",
+    "@uniformdev/context-react": "20.49.4",
     "next": "^16.1.6",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"

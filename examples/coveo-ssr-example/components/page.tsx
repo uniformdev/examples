@@ -1,15 +1,17 @@
-import {
-  ComponentProps,
-  UniformSlot,
-} from "@uniformdev/next-app-router/component";
+import { registerUniformComponent, UniformSlot } from "@uniformdev/canvas-react";
 
 export type PageProps = unknown;
 export type PageSlots = "content";
 
-export const Page = ({ slots }: ComponentProps<PageProps, PageSlots>) => {
+export function Page() {
   return (
     <>
-      <UniformSlot slot={slots.content} />
+      <UniformSlot name="content" />
     </>
   );
-};
+}
+
+registerUniformComponent({
+  type: "page",
+  component: Page,
+});
