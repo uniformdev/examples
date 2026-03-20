@@ -42,7 +42,6 @@ This project contains some example code for custom edgehancers in the `edgehance
 
 * Configure your .env file as outlined under `Manual installation via CLI` above. You will need a team admin level API key for this.
 * Execute `npm run deploy-edgehancer`. This will:
-  - Transpile and bundle the edgehancers from their TypeScript source (see `edgehancer/tsup.config.ts`)
   - Deploy the bundle to the `default` archetype of the `playground` data connector (as configured in `mesh-manifest.json` by default). This means that the custom code will run for any data resource that uses the target archetype.
   - There are two available hook points (the `deploy-edgehancer` script deploys an example of both): `preRequest` which may alter the HTTP request for a data resource but does not execute it (pre-caching), and `request` which replaces the default logic to make the fetch for a data resource and place it into cache. Much more detail is available in the source code for each example hook.
 
@@ -52,9 +51,33 @@ Run `npm run remove-edgehancer` to tear down the custom edgehancer if you would 
 
 ### Custom edgehancer tips and tricks
 
+* **Code:** Custom edgehancers are written using ES2022 modules that run at the edge in a V8 runtime. The Uniform CLI automatically transpiles and bundles your TypeScript or JavaScript code before deploying it. Node.js libraries cannot be used.
 * **Limits:** Your custom edgehancers are allowed up to 100ms of CPU time to execute. This is purely CPU time, not wall time, and awaiting HTTP requests does not count against CPU time. Pre-request edgehancers may not make HTTP requests. Request edgehancers may make up to 2 * dataResourceBatchSizeProvided HTTP requests.
 * **Breaking changes:** Deploying custom edgehancers that make breaking changes to API response formats where authors are already using those data types will result in breaking dynamic tokens in the authors' content. We strongly recommend a full unit test battery on your custom edgehancers to prevent this. Example unit tests are provided for the sample hooks.
 * **Batching:** all hooks are provided with an array of all data resources of the registered archetype that need to be handled if more than one exists. For example a composition might reference 4 'singleEntry' data resources; in that case the hook receives an array of all 4. This can be used to facilitate batched requests (see `edgehancer/requestBatched.ts`). Note that response arrays must be in the same order as they were provided.
 * **Testing:** The _test data type_ function on the Uniform dashboard is the fastest way to test a custom edgehancer at runtime.
 * **Debugging:** Custom edgehancers do not capture console statements. For debugging, you can return warnings or errors to debug. If a hook throws an unhandled exception, that will be caught and added as an error to all affected data resources automatically.
+
+## AI Data Resource Editors
+
+Custom data resource editors allow AI agents to understand and modify data resources from your integration.
+
+- `createAIDataResourceEdit` creates prompt and edit output schema for data resource content
+- `afterAIDataResourceEdit` optional - gets AI edit result and can transform, apply custom business rules, detect hallucinations, etc
+
+> NOTE: AI data resource editing is only available to select customers, please contact Uniform if you are interested in using it
+
+See `dataResourceEditor/createAIDataResourceEdit.ts` and `dataResourceEditor/afterAIDataResourceEdit.ts` for examples, and `npm run deploy-dataResourceEditor` for deployment.
+
+## AI Editing Param Types
+
+Custom param types provided by integrations cannot be edited by Uniform MCP or the Scout agent unless they are instructed how to make the edits.
+Similar to Custom Edgehancers, you may deploy code to control how AI edits your param types.
+
+- `createAIEdit` creates prompt and edit output schema
+- `afterAIEdit` optional - gets AI edit result and can transform, apply custom business rules, detect hallucinations, etc
+
+> NOTE: custom AI editing is only available to select customers, please contact Uniform if you are interested in using it
+
+See `propertyEditor/*.ts` for examples of these hooks, and `npm run deploy-propertyEditor` for deployment.
 

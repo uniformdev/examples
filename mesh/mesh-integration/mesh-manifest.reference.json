@@ -37,6 +37,16 @@
                 "url": "../namedDialog"
               }
             }
+          },
+          "assetLibrary": {
+            "displayName": "Assets Library",
+            "typeEditorUrl": "/reference/assets/type-editor",
+            "dataEditorUrl": "/reference/assets/data-editor"
+          },
+          "assetLibrarySingleAsset": {
+            "displayName": "Single Library Asset",
+            "typeEditorUrl": "/reference/assets/type-editor",
+            "dataEditorUrl": "/reference/assets/data-editor"
           }
         },
         "dataSourceEditorUrl": "/reference/dataSource",
@@ -86,6 +96,14 @@
           "type": "reference-placement",
           "editorUrl": "/reference/paramTypePlacement",
           "displayName": "Reference Parameter (Allowed Placement)",
+          "renderableInPropertyPanel": true,
+          "allowedPlacement": ["parameter", "field"]
+        },
+        {
+          "type": "reference-ai-edit",
+          "editorUrl": "/reference/paramTypeAIEdit",
+          "displayName": "Reference Parameter (AI Editable Colour Picker)",
+          "configureUrl": "/reference/paramTypeAIEditConfig",
           "renderableInPropertyPanel": true,
           "allowedPlacement": ["parameter", "field"]
         }
