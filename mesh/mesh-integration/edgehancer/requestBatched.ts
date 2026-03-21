@@ -1,8 +1,8 @@
 import {
   convertBatchResultsToEdgehancerResult,
   getDataResourceAsRequest,
-  RequestEdgehancerDataResourceContext,
-  RequestHookFn,
+  type RequestEdgehancerDataResourceContext,
+  type RequestHookFn,
   resolveBatchFetchIds,
 } from '@uniformdev/mesh-edgehancer-sdk';
 
