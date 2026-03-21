@@ -6,30 +6,37 @@
   import FeaturedProduct from "$lib/components/sections/featured-product.svelte";
   import ProductGrid from "$lib/components/sections/product-grid.svelte";
   import Newsletter from "$lib/components/sections/newsletter.svelte";
- 
-  import { UniformComposition, UniformSlot } from '@uniformdev/canvas-svelte';
-  import { componentMap } from '$lib/uniform/componentMap.js';
-  const featuredSpotlightProduct = products[homeContent.productSpotlights.featuredProductIndex];
-  const gridSpotlightProducts = homeContent.productSpotlights.gridProductIndices.map(i => products[i]);
-  const featuredDeepDiveProduct = products[homeContent.featuredProduct.productIndex];
+
+  import { UniformComposition, UniformSlot } from "@uniformdev/canvas-svelte";
+  import { componentMap } from "$lib/uniform/componentMap.js";
+  const featuredSpotlightProduct =
+    products[homeContent.productSpotlights.featuredProductIndex];
+  const gridSpotlightProducts =
+    homeContent.productSpotlights.gridProductIndices.map((i) => products[i]);
+  const featuredDeepDiveProduct =
+    products[homeContent.featuredProduct.productIndex];
 
   let { data } = $props();
 </script>
 
 <svelte:head>
   <title>Cherry | Technology that feels like magic</title>
-  <meta name="description" content="Technology that feels like magic. Devices that understand you. Welcome to the future of human potential." />
+  <meta
+    name="description"
+    content="Technology that feels like magic. Devices that understand you. Welcome to the future of human potential."
+  />
 </svelte:head>
 
-<UniformComposition
-  data={data.data}
-  {componentMap}
-  matchedRoute={data.matchedRoute}
-  dynamicInputs={data.dynamicInputs}
->
-  <UniformSlot name="content" />
-</UniformComposition>
-
+{#if data.data}
+  <UniformComposition
+    data={data.data}
+    {componentMap}
+    matchedRoute={data.matchedRoute}
+    dynamicInputs={data.dynamicInputs}
+  >
+    <UniformSlot name="content" />
+  </UniformComposition>
+{/if}
 
 <!-- Product Spotlights - Bento Grid -->
 <ProductSpotlights
@@ -72,4 +79,3 @@
   buttonText={homeContent.newsletter.buttonText}
   disclaimer={homeContent.newsletter.disclaimer}
 />
-
