@@ -1,0 +1,29 @@
+id: productList
+displayName: Product List
+ttl: 30
+body: ''
+path: /query
+custom:
+  allowedContentTypes:
+    - product
+method: GET
+purgeKey: 96677cf6-e261-4549-bc88-5116ff91beb7
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

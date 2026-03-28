@@ -1,0 +1,27 @@
+id: articleList
+displayName: Article List
+path: /query
+custom:
+  allowedContentTypes:
+    - article
+method: GET
+purgeKey: 00ca5fe0-5712-4971-8743-53ec50615935
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

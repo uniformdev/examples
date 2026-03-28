@@ -1,0 +1,8 @@
+id: int
+name: Interest
+cap: 100
+values:
+  - id: beans
+    value: Beans
+  - id: coffee-makers
+    value: Coffee Makers

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5cecc18f-87ba-4a83-8456-0aabfb2db3a5
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: chevron-down-white.svg
+    file:
+      type: file
+      value: 29997414-1698-4f3b-8803-bc9b520da13e
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/2yJ6YqdIS5intjeozTiLiA-chevron-down-white.svg
+      type: text
+    size:
+      value: 228
+      type: number
+    width:
+      value: 24
+      type: number
+    height:
+      value: 24
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:55.621308+00:00'
+modified: '2026-03-10T23:26:55.621308+00:00'

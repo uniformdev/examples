@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 6b2c6448-2e43-4b65-810d-e0e730e91987
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: EspressoMakersReview_OG.png
+    file:
+      type: file
+      value: f26b93ba-7243-497a-9d62-c2500c8f107d
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/vCc_LJFmSPG_UhA8WeD0HA-EspressoMakersReview_OG.png
+      type: text
+    size:
+      value: 1585180
+      type: number
+    width:
+      value: 1167
+      type: number
+    height:
+      value: 775
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:10.867382+00:00'
+modified: '2026-03-10T23:27:10.867382+00:00'

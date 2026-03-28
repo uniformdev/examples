@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: c424e408-6515-49b8-9147-a2ef08c1c4ff
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: vietnamese-coffee-filter-drip.jpeg
+    file:
+      type: file
+      value: eb765e63-a646-4b81-9694-ee3cbea0c421
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/_nV70vlXQqGDssalGG3LpA-vietnamese-coffee-filter-drip.jpeg
+      type: text
+    size:
+      value: 243065
+      type: number
+    width:
+      value: 2600
+      type: number
+    height:
+      value: 1300
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:04.475622+00:00'
+modified: '2026-03-10T23:28:04.475622+00:00'

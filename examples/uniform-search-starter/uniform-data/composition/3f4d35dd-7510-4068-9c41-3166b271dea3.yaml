@@ -1,0 +1,96 @@
+composition:
+  _name: Articles
+  _id: 3f4d35dd-7510-4068-9c41-3166b271dea3
+  _slug: articles
+  type: page
+  _overrides:
+    3d5dadc8-b8fe-44f1-a7ea-ba85052d8e76:
+      dataResources:
+        Author List:
+          type: authorList
+          variables:
+            locale: ${locale}
+            search: ''
+            filters: '{"type[eq]":"author"}'
+            contentTypes: author
+    3f4d35dd-7510-4068-9c41-3166b271dea3:
+      parameters:
+        pageTitle:
+          type: text
+          locales:
+            en-us: Article Search Demo
+        pageKeywords:
+          type: text
+          locales:
+            en-us: null
+        openGraphType:
+          type: select
+          value: website
+        openGraphImage:
+          type: asset
+          value:
+            - _id: 516bf10a-161d-4c99-a806-b2b173621852
+              type: image
+              fields:
+                id:
+                  type: text
+                  value: d0565648-3211-4de9-9b30-ef03c342b554
+                url:
+                  value: >-
+                    https://img.uniform.global/p/hb1xZU-bQXiyr1OXGDuiIQ/4ZBTBDOzT124N9GmRQgEaw-articles-og-image.png
+                  type: text
+                file:
+                  type: file
+                  value: bcfc68fe-28a6-4cd7-82d1-18dd2b597b79
+                size:
+                  value: 1805651
+                  type: number
+                title:
+                  type: text
+                  value: articles-og-image.png
+                width:
+                  value: 1808
+                  type: number
+                height:
+                  value: 908
+                  type: number
+                mediaType:
+                  value: image/png
+                  type: text
+              _source: uniform-assets
+        openGraphTitle:
+          type: text
+          locales:
+            en-us: null
+        pageDescription:
+          type: text
+          locales:
+            en-us: null
+        openGraphDescription:
+          type: text
+          locales:
+            en-us: null
+    3f4d35dd-7510-4068-9c41-3166b271dea3|dc2e95be-21b5-4476-a309-f8a34922f528:
+      slots:
+        $slotSectionItems:
+          - _id: 3d5dadc8-b8fe-44f1-a7ea-ba85052d8e76
+            type: searchEngine
+            _pattern: 052624b2-ff61-410a-857b-f71b1895a7fb
+            _dataResources:
+              Author List:
+                type: authorList
+                variables:
+                  locale: ${locale}
+                  search: ''
+                  filters: '{"type[eq]":"author"}'
+                  contentTypes: author
+            _overridability:
+              parameters:
+                boostEnrichments: 'yes'
+              hideLockedParameters: true
+  _locales:
+    - en-us
+  _pattern: f9c058ea-c40d-4435-ac5a-53423cf654dc
+created: '2026-03-26T04:22:43.576136+00:00'
+modified: '2026-03-26T05:25:03.72722+00:00'
+pattern: false

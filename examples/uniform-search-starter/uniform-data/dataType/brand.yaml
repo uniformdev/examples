@@ -1,0 +1,15 @@
+id: brand
+displayName: Brand
+path: /single
+custom:
+  allowedContentTypes:
+    - brand
+method: GET
+purgeKey: fb3d5dcf-83c0-4359-8a05-e9917ba04b04
+archetype: singleEntry
+variables:
+  entryId:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

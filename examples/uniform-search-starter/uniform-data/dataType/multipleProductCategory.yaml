@@ -1,0 +1,17 @@
+id: multipleProductCategory
+displayName: Multiple Product Category
+ttl: 30
+path: /multiple
+custom:
+  proposedName: Multiple Product Category
+  allowedContentTypes:
+    - productCategory
+method: GET
+purgeKey: 42b958ad-c8fa-4475-a5ea-522719f88c79
+archetype: multipleEntries
+variables:
+  entryIds:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

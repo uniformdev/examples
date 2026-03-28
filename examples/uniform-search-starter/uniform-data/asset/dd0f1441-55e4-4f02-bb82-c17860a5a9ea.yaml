@@ -1,0 +1,11 @@
+asset:
+  type: other
+  _id: dd0f1441-55e4-4f02-bb82-c17860a5a9ea
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: MA_MoccaExpress.png
+    custom: {}
+created: '2026-03-10T23:26:20.563259+00:00'
+modified: '2026-03-10T23:26:20.563259+00:00'

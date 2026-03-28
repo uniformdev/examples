@@ -1,0 +1,52 @@
+created: '2026-03-10T23:32:17.78748+00:00'
+modified: '2026-03-10T23:32:17.78748+00:00'
+pattern: false
+entry:
+  _id: 2563e21e-3b39-439c-9eac-3294ce456a55
+  _name: Alex Brent
+  _slug: alex-brent
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/RTTViASjR1idTvKo3fwF9A-author-logo-placeholder.png
+  type: author
+  fields:
+    name:
+      type: text
+      locales:
+        da-dk: Alex Brent
+        de-at: Alex Brent
+        de-ch: Alex Brent
+        de-de: Alex Brent
+        en-au: Alex Brent
+        en-ca: Alex Brent
+        en-gb: Alex Brent
+        en-nl: Alex Brent
+        en-nz: Alex Brent
+        en-us: Alex Brent
+        fr-ca: Alex Brent
+        fr-ch: Alex Brent
+        fr-fr: Alex Brent
+        ja-jp: アレックス・ブレント
+        nl-nl: Alex Brent
+        sv-se: Alex Brent
+        ar-uae: أليكس برنت
+    thumbnail:
+      type: asset
+      value: []
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

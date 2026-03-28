@@ -1,0 +1,11 @@
+asset:
+  type: other
+  _id: 1697b6ae-aa6f-4bd6-b844-c8fb3c86216c
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: chevron-down.svg
+    custom: {}
+created: '2026-03-10T23:26:20.491994+00:00'
+modified: '2026-03-10T23:26:20.491994+00:00'

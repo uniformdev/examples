@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: f118b73e-d427-4db0-960f-76b018aacc03
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: favourite-icon-red.svg
+    file:
+      type: file
+      value: a8b111b7-62f0-4ae4-92ed-f8b6531e6df0
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/B7qCr7NHRw2-IflIBxSmfg-favourite-icon-red.svg
+      type: text
+    size:
+      value: 689
+      type: number
+    width:
+      value: 24
+      type: number
+    height:
+      value: 24
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:31.096679+00:00'
+modified: '2026-03-10T23:28:31.096679+00:00'

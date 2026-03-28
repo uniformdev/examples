@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 240cb8b5-fdea-4570-af4f-cad7878eec92
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: jd-earth-to-bean.jpg
+    file:
+      type: file
+      value: 3460ce7f-742e-4f59-b880-31fffddbf613
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/4tmeWk06TQ2SOlx_pJdRRQ-jd-earth-to-bean.jpg
+      type: text
+    size:
+      value: 945417
+      type: number
+    width:
+      value: 2600
+      type: number
+    height:
+      value: 1300
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:35.286379+00:00'
+modified: '2026-03-10T23:26:35.286379+00:00'

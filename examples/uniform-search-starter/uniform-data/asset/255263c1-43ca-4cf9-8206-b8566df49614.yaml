@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 255263c1-43ca-4cf9-8206-b8566df49614
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: not-found-og-image.png
+    file:
+      type: file
+      value: a06257e2-8ea6-4ec9-b8fd-c7fa041b8d6c
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/nXzeeZR9SW-UHXkAm7GILA-not-found-og-image.png
+      type: text
+    size:
+      value: 1827822
+      type: number
+    width:
+      value: 1808
+      type: number
+    height:
+      value: 908
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:39.086485+00:00'
+modified: '2026-03-10T23:26:39.086485+00:00'

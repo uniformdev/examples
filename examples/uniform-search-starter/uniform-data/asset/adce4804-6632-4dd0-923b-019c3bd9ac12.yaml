@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: adce4804-6632-4dd0-923b-019c3bd9ac12
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: MA_MoccaExpress.png
+    file:
+      type: file
+      value: 823047a0-e6c0-4af3-8668-fb59365c0f38
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/1sHw88fkSWaBPFKnZbKhaA-MA_MoccaExpress.png
+      type: text
+    size:
+      value: 944127
+      type: number
+    width:
+      value: 778
+      type: number
+    height:
+      value: 777
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:52.150696+00:00'
+modified: '2026-03-10T23:27:52.150696+00:00'

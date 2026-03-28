@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 2f9f9f7a-f7e0-4182-9faa-f5747d06e3c4
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: BB_IrishBlend.png
+    file:
+      type: file
+      value: 5ba76076-6d40-4fce-8f71-924216aef28b
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/GK5ZoXfFRUu-CbmgAjNaYw-BB_IrishBlend.png
+      type: text
+    size:
+      value: 1797830
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:39.561788+00:00'
+modified: '2026-03-10T23:26:39.561788+00:00'

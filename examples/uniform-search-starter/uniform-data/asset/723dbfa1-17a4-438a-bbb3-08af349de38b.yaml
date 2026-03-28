@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 723dbfa1-17a4-438a-bbb3-08af349de38b
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: types-of-coffee-grinders.jpg
+    file:
+      type: file
+      value: f068f1d2-26c9-48a8-a3bd-4566cdf7e3b1
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/VTWbsX2FQESiZsfvevxwOg-types-of-coffee-grinders.jpg
+      type: text
+    size:
+      value: 3303657
+      type: number
+    width:
+      value: 5184
+      type: number
+    height:
+      value: 3456
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:14.152051+00:00'
+modified: '2026-03-10T23:27:14.152051+00:00'

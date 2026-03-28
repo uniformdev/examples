@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 373459e9-c74e-4694-83b3-05e51429216c
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Summer-2025-Outdoor-with-Friends.png
+    file:
+      type: file
+      value: a4a44695-af18-4cbf-a3cb-f308093d15f1
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/vJ-XMA43R6iXsvfgK5tMYA-Summer-2025-Outdoor-with-Friends.png
+      type: text
+    size:
+      value: 1617574
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:43.427323+00:00'
+modified: '2026-03-10T23:26:43.427323+00:00'

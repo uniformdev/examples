@@ -1,0 +1,178 @@
+created: '2026-03-10T23:34:21.246588+00:00'
+modified: '2026-03-10T23:34:21.246588+00:00'
+pattern: false
+entry:
+  _id: bb55a2ae-cc49-4f1f-ae91-0cafa3128834
+  _name: Impresso
+  _slug: impresso
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/IlMz2_1RSqORmn2UHPNMWg-impresso.png
+  type: brand
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Impresso
+        de-at: Impresso
+        de-ch: Impresso
+        de-de: Impresso
+        en-au: Impresso
+        en-ca: Impresso
+        en-gb: Impressum
+        en-nl: Impresso
+        en-nz: Impresso
+        en-us: Impresso
+        fr-ca: Impresso
+        fr-ch: Impresso
+        fr-fr: Impresso
+        ja-jp: インプレッソ
+        nl-nl: Impresso
+        sv-se: Impresso
+        ar-uae: إمبريسو
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Impresso er dedikeret til at levere en ekstraordinær kaffeoplevelse
+          gennem sine innovative kaffemaskiner og premium kaffeprodukter. Vores
+          mål er at blande tradition med teknologi og tilbyde kaffeentusiaster
+          den perfekte brygning hver gang. Fra avancerede espressomaskiner til
+          omhyggeligt udvalgte kaffebønner står Impresso for kvalitet,
+          innovation og passion i hver kop.
+        de-at: >-
+          Impresso ist bestrebt, ein außergewöhnliches Kaffeeerlebnis durch
+          seine innovativen Kaffeemaschinen und Premium-Kaffeeprodukte zu
+          bieten. Unser Ziel ist es, Tradition mit Technologie zu verbinden und
+          Kaffeeliebhabern jedes Mal den perfekten Kaffee zu bieten. Von
+          fortschrittlichen Espressomaschinen bis hin zu sorgfältig ausgewählten
+          Kaffeebohnen steht Impresso für Qualität, Innovation und Leidenschaft
+          in jeder Tasse.
+        de-ch: >-
+          Impresso ist bestrebt, ein außergewöhnliches Kaffeeerlebnis durch
+          seine innovativen Kaffeemaschinen und Premium-Kaffeeprodukte zu
+          bieten. Unser Ziel ist es, Tradition mit Technologie zu verbinden und
+          Kaffeeliebhabern jedes Mal den perfekten Kaffee zu bieten. Von
+          fortschrittlichen Espressomaschinen bis hin zu sorgfältig ausgewählten
+          Kaffeebohnen steht Impresso für Qualität, Innovation und Leidenschaft
+          in jeder Tasse.
+        de-de: >-
+          Impresso ist bestrebt, ein außergewöhnliches Kaffeeerlebnis durch
+          seine innovativen Kaffeemaschinen und Premium-Kaffeeprodukte zu
+          bieten. Unser Ziel ist es, Tradition mit Technologie zu verbinden und
+          Kaffeeliebhabern jedes Mal den perfekten Kaffee zu bieten. Von
+          fortschrittlichen Espressomaschinen bis hin zu sorgfältig ausgewählten
+          Kaffeebohnen steht Impresso für Qualität, Innovation und Leidenschaft
+          in jeder Tasse.
+        en-au: >-
+          Impresso est dédié à offrir une expérience café extraordinaire grâce à
+          ses machines à café innovantes et ses produits de café haut de gamme.
+          Notre objectif est de mêler tradition et technologie, en offrant aux
+          amateurs de café la tasse parfaite à chaque fois. Des machines à
+          espresso avancées aux grains de café soigneusement sélectionnés,
+          Impresso incarne la qualité, l'innovation et la passion dans chaque
+          tasse.
+        en-ca: >-
+          Impresso is dedicated to delivering an extraordinary coffee experience
+          through its innovative coffee makers and premium coffee products. Our
+          goal is to blend tradition with technology, offering coffee
+          enthusiasts the perfect brew every time. From advanced espresso
+          machines to carefully selected coffee beans, Impresso stands for
+          quality, innovation, and passion in every cup.
+        en-gb: >-
+          Impresso is dedicated to delivering an extraordinary coffee experience
+          through its innovative coffee makers and premium coffee products. Our
+          goal is to blend tradition with technology, offering coffee
+          enthusiasts the perfect brew every time. From advanced espresso
+          machines to carefully selected coffee beans, Impresso stands for
+          quality, innovation, and passion in every cup.
+        en-nl: >-
+          Impresso is toegewijd aan het leveren van een buitengewone
+          koffie-ervaring door middel van zijn innovatieve koffiemachines en
+          premium koffieproducten. Ons doel is om traditie te combineren met
+          technologie, zodat koffieliefhebbers elke keer de perfecte kop koffie
+          kunnen zetten. Van geavanceerde espressomachines tot zorgvuldig
+          geselecteerde koffiebonen, Impresso staat voor kwaliteit, innovatie en
+          passie in elke kop.
+        en-nz: >-
+          Impresso ist bestrebt, ein außergewöhnliches Kaffeeerlebnis durch
+          seine innovativen Kaffeemaschinen und Premium-Kaffeeprodukte zu
+          bieten. Unser Ziel ist es, Tradition mit Technologie zu verbinden und
+          Kaffeeliebhabern jedes Mal den perfekten Kaffee zu bieten. Von
+          fortschrittlichen Espressomaschinen bis hin zu sorgfältig ausgewählten
+          Kaffeebohnen steht Impresso für Qualität, Innovation und Leidenschaft
+          in jeder Tasse.
+        en-us: >-
+          Impresso is dedicated to delivering an extraordinary coffee experience
+          through its innovative coffee makers and premium coffee products. Our
+          goal is to blend tradition with technology, offering coffee
+          enthusiasts the perfect brew every time. From advanced espresso
+          machines to carefully selected coffee beans, Impresso stands for
+          quality, innovation, and passion in every cup.
+        fr-ca: >-
+          Impresso est dédié à offrir une expérience café extraordinaire grâce à
+          ses machines à café innovantes et ses produits de café haut de gamme.
+          Notre objectif est de mêler tradition et technologie, en offrant aux
+          amateurs de café la tasse parfaite à chaque fois. Des machines à
+          espresso avancées aux grains de café soigneusement sélectionnés,
+          Impresso incarne la qualité, l'innovation et la passion dans chaque
+          tasse.
+        fr-ch: >-
+          Impresso est dédié à offrir une expérience café extraordinaire grâce à
+          ses machines à café innovantes et ses produits de café haut de gamme.
+          Notre objectif est de mêler tradition et technologie, en proposant aux
+          amateurs de café la tasse parfaite à chaque fois. Des machines à
+          espresso avancées aux grains de café soigneusement sélectionnés,
+          Impresso incarne la qualité, l'innovation et la passion dans chaque
+          tasse.
+        fr-fr: >-
+          Impresso est dédié à offrir une expérience café extraordinaire grâce à
+          ses machines à café innovantes et ses produits de café haut de gamme.
+          Notre objectif est de mêler tradition et technologie, en proposant aux
+          amateurs de café la tasse parfaite à chaque fois. Des machines à
+          espresso avancées aux grains de café soigneusement sélectionnés,
+          Impresso incarne la qualité, l'innovation et la passion dans chaque
+          tasse.
+        ja-jp: >-
+          インプレッソは、革新的なコーヒーメーカーとプレミアムなコーヒー製品を通じて、特別なコーヒー体験を提供することに専念しています。私たちの目標は、伝統と技術を融合させ、コーヒー愛好家に毎回完璧な一杯を提供することです。高度なエスプレッソマシンから厳選されたコーヒー豆まで、インプレッソはすべてのカップにおいて品質、革新、情熱を象徴します。
+        nl-nl: >-
+          Impresso is toegewijd aan het leveren van een buitengewone
+          koffie-ervaring door middel van zijn innovatieve koffiemachines en
+          premium koffieproducten. Ons doel is om traditie te combineren met
+          technologie, zodat koffieliefhebbers elke keer de perfecte kop koffie
+          kunnen zetten. Van geavanceerde espressomachines tot zorgvuldig
+          geselecteerde koffiebonen, Impresso staat voor kwaliteit, innovatie en
+          passie in elke kop.
+        sv-se: >-
+          Impresso är dedikerat till att leverera en extraordinär
+          kaffeupplevelse genom sina innovativa kaffemaskiner och
+          premiumkaffeprodukter. Vårt mål är att blanda tradition med teknik och
+          erbjuda kaffeentusiaster den perfekta brygden varje gång. Från
+          avancerade espressomaskiner till noggrant utvalda kaffebönor, står
+          Impresso för kvalitet, innovation och passion i varje kopp.
+        ar-uae: >-
+          تكرّس إمبريسو جهودها لتقديم تجربة قهوة استثنائية من خلال ماكيناتها
+          المبتكرة ومنتجات القهوة الفاخرة. هدفنا هو دمج التقاليد مع التكنولوجيا،
+          لنقدم لعشاق القهوة التحضير المثالي في كل مرة. من آلات الإسبريسو
+          المتقدمة إلى حبوب القهوة المختارة بعناية، تمثل إمبريسو الجودة
+          والابتكار والشغف في كل فنجان.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

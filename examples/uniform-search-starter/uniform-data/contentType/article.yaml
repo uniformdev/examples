@@ -1,0 +1,125 @@
+id: article
+name: Article
+created: '2026-03-10T23:29:03.859997+00:00'
+updated: '2026-03-10T23:29:03.859997+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: shortDescription
+    name: Short Description
+    type: text
+    typeConfig:
+      multiline: true
+      linesCount: 5
+    localizable: true
+  - id: thumbnail
+    name: Thumbnail
+    type: asset
+    typeConfig:
+      max: 1
+  - id: content
+    name: Content
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+    localizable: true
+  - id: publishDate
+    name: Publish Date
+    type: date
+    typeConfig:
+      required: true
+  - id: author
+    name: Author
+    type: contentReference
+    typeConfig:
+      allowedContentTypes:
+        - author
+  - id: category
+    name: Category
+    type: contentReference
+    typeConfig:
+      required: true
+      allowedContentTypes:
+        - articleCategory
+  - id: enrichments
+    name: Enrichments
+    type: $enr
+    typeConfig: null
+  - id: 4b28ec13-cc0d-4a2d-a595-94b8c12661ce
+    name: SEO
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - metaTitle
+        - metaDescription
+        - ogImage
+  - id: metaTitle
+    name: Meta Title
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: metaDescription
+    name: Meta Description
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: ogImage
+    name: Open Graph Image
+    type: asset
+    typeConfig:
+      max: 1
+      allowedTypes:
+        - image
+entryName: title
+thumbnailField: thumbnail
+description: ''
+icon: template
+type: contentType
+permissions: []
+previewConfigurations:
+  - type: project-map
+    id: 0b2a6284-3d74-4ef6-a3de-b2617058c861
+    label: Article Detail Page
+    dynamicInputs:
+      locale: ${locale}
+      article-slug: ${#jptr:/entry/_slug}
+  - type: project-map
+    id: c4676b67-e635-44b3-83ba-c12ec2ee774f
+    label: Article Components
+    dynamicInputs:
+      locale: ${locale}
+      article-slug: ${#jptr:/entry/_slug}

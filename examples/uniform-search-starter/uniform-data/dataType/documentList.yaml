@@ -1,0 +1,30 @@
+id: documentList
+displayName: Document List
+path: /query
+custom:
+  allowedContentTypes:
+    - document
+method: GET
+purgeKey: 9cb2aba2-32c9-44a1-b31d-f629b7eeab75
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  search:
+    type: text
+    default: ''
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 1d031d0c-b082-45b9-adf4-5a8edcea2e61
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: ''
+    file:
+      type: file
+      value: d602553e-d138-4d20-bdbe-399d2b326208
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/sC6qzEj1SXmM_ETNi0vNXg-EDMBLOG_HEADERS_AND_FOOTERS_16.png
+      type: text
+    size:
+      value: 364064
+      type: number
+    width:
+      value: 1920
+      type: number
+    height:
+      value: 400
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:32.888172+00:00'
+modified: '2026-03-10T23:26:32.888172+00:00'

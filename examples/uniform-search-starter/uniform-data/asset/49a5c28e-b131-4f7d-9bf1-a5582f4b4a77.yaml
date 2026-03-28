@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 49a5c28e-b131-4f7d-9bf1-a5582f4b4a77
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: author-logo-placeholder.png
+    file:
+      type: file
+      value: 71a22ae6-7089-405e-b149-f137a174404c
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/4Qj8xJsLR367grSsPIMyzQ-author-logo-placeholder.png
+      type: text
+    size:
+      value: 23734
+      type: number
+    width:
+      value: 1143
+      type: number
+    height:
+      value: 947
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:48.65101+00:00'
+modified: '2026-03-10T23:26:48.65101+00:00'

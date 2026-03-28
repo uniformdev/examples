@@ -1,0 +1,193 @@
+created: '2026-03-10T23:35:45.836743+00:00'
+modified: '2026-03-10T23:35:45.836743+00:00'
+pattern: false
+entry:
+  _id: 60970e06-2563-452a-b344-f89d54d1e83b
+  _name: Pour-Over
+  _slug: pour-over
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/bvmc2-AuT3GH3XDiEJbSDw-pour-over.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Pour-Over
+        de-at: Pour-Over
+        de-ch: Pour-Over
+        de-de: Pour-Over
+        en-au: Versement-filtré
+        en-ca: Pour-Over
+        en-gb: Pour-Over
+        en-nl: Pour-Over
+        en-nz: Pour-Over
+        en-us: Pour-Over
+        fr-ca: Café filtre
+        fr-ch: Café Filtré
+        fr-fr: Café Filtré
+        ja-jp: プアオーバー
+        nl-nl: Pour-Over
+        sv-se: Pour-Over
+        ar-uae: سكب القهوة
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Udforsk kunsten ved manuel kaffebrygning med vores udvalg af pour-over
+          kaffemaskiner. Kendt for deres præcision og evne til at fremhæve
+          kaffens nuancerede smagsnoter, tilbyder pour-over metoder en praktisk
+          bryggeoplevelse. Vores kollektion inkluderer drippere, filtre og
+          karafler af høj kvalitet, perfekt til enhver kaffeentusiast. Nyd de
+          delikate og komplekse smagsoplevelser, som kun en pour-over kan
+          tilbyde, og løft din kafferutine til en kunstart.
+        de-at: >-
+          Entdecken Sie die Kunst des manuellen Kaffeebrühens mit unserer
+          Auswahl an Pour-Over-Kaffeemaschinen. Pour-Over-Methoden sind bekannt
+          für ihre Präzision und die Fähigkeit, die nuancierten Aromen des
+          Kaffees hervorzuheben, und bieten ein handwerkliches Brüherlebnis.
+          Unsere Kollektion umfasst hochwertige Dripper, Filter und Karaffen,
+          perfekt für jeden Kaffeeliebhaber. Genießen Sie die feinen und
+          komplexen Aromen, die nur ein Pour-Over bieten kann, und heben Sie
+          Ihre Kaffeeroutine auf eine Kunstform.
+        de-ch: >-
+          Entdecken Sie die Kunst des manuellen Kaffeebrühens mit unserer
+          Auswahl an Pour-Over-Kaffeemaschinen. Bekannt für ihre Präzision und
+          die Fähigkeit, die nuancierten Aromen des Kaffees hervorzuheben,
+          bieten Pour-Over-Methoden ein handwerkliches Brüherlebnis. Unsere
+          Kollektion umfasst hochwertige Dripper, Filter und Karaffen, perfekt
+          für jeden Kaffeeliebhaber. Genießen Sie die feinen und komplexen
+          Aromen, die nur ein Pour-Over bieten kann, und heben Sie Ihre
+          Kaffeeroutine auf ein Kunstniveau.
+        de-de: >-
+          Entdecken Sie die Kunst des manuellen Kaffeebrühens mit unserer
+          Auswahl an Pour-Over-Kaffeemaschinen. Bekannt für ihre Präzision und
+          die Fähigkeit, die nuancierten Aromen des Kaffees hervorzuheben,
+          bieten Pour-Over-Methoden ein handwerkliches Brüherlebnis. Unsere
+          Kollektion umfasst hochwertige Dripper, Filter und Karaffen, perfekt
+          für jeden Kaffeeliebhaber. Genießen Sie die feinen und komplexen
+          Aromen, die nur ein Pour-Over bieten kann, und heben Sie Ihre
+          Kaffeeroutine auf ein Kunstniveau.
+        en-au: >-
+          Explorez l'art de l'infusion manuelle du café avec notre sélection de
+          cafetières à verser. Connues pour leur précision et leur capacité à
+          révéler les saveurs subtiles du café, les méthodes de versement
+          offrent une expérience d'infusion pratique. Notre collection comprend
+          des égouttoirs, filtres et carafes de haute qualité, parfaits pour
+          tout amateur de café. Appréciez les saveurs délicates et complexes
+          qu'une méthode de versement peut offrir, et élevez votre routine de
+          café à une forme d'art.
+        en-ca: >-
+          Explorez l'art de l'infusion manuelle du café avec notre sélection de
+          cafetières à verser. Connues pour leur précision et leur capacité à
+          révéler les saveurs subtiles du café, les méthodes de versement
+          offrent une expérience d'infusion pratique. Notre collection comprend
+          des goutteurs, des filtres et des carafes de haute qualité, parfaits
+          pour tout amateur de café. Savourez les saveurs délicates et complexes
+          qu'une méthode de versement peut offrir, et élevez votre routine de
+          café à une forme d'art.
+        en-gb: >-
+          Explore the art of manual coffee brewing with our selection of
+          pour-over coffee makers. Known for their precision and ability to
+          bring out the nuanced flavours of coffee, pour-over methods offer a
+          hands-on brewing experience. Our collection includes high-quality
+          drippers, filters, and carafes, perfect for any coffee enthusiast.
+          Enjoy the delicate and complex flavours that only a pour-over can
+          provide, and elevate your coffee routine to an art form.
+        en-nl: >-
+          Ontdek de kunst van handmatig koffiezetten met onze selectie van
+          pour-over koffiezetapparaten. Bekend om hun precisie en het vermogen
+          om de genuanceerde smaken van koffie naar voren te brengen, bieden
+          pour-over methoden een praktische zetervaring. Onze collectie omvat
+          hoogwaardige drippers, filters en karaffen, perfect voor elke
+          koffieliefhebber. Geniet van de delicate en complexe smaken die alleen
+          een pour-over kan bieden, en til je koffieroutine naar een kunstvorm.
+        en-nz: >-
+          Entdecken Sie die Kunst des manuellen Kaffeebrühens mit unserer
+          Auswahl an Pour-Over-Kaffeemaschinen. Bekannt für ihre Präzision und
+          die Fähigkeit, die nuancierten Aromen des Kaffees hervorzuheben,
+          bieten Pour-Over-Methoden ein praktisches Brüherlebnis. Unsere
+          Kollektion umfasst hochwertige Dripper, Filter und Karaffen, perfekt
+          für jeden Kaffeeliebhaber. Genießen Sie die feinen und komplexen
+          Aromen, die nur ein Pour-Over bieten kann, und heben Sie Ihre
+          Kaffee-Routine zu einer Kunstform.
+        en-us: >-
+          Explore the art of manual coffee brewing with our selection of
+          pour-over coffee makers. Known for their precision and ability to
+          bring out the nuanced flavors of coffee, pour-over methods offer a
+          hands-on brewing experience. Our collection includes high-quality
+          drippers, filters, and carafes, perfect for any coffee enthusiast.
+          Enjoy the delicate and complex flavors that only a pour-over can
+          provide, and elevate your coffee routine to an art form.
+        fr-ca: >-
+          Découvrez l'art de l'infusion manuelle du café avec notre sélection de
+          cafetières à verser. Connues pour leur précision et leur capacité à
+          révéler les saveurs subtiles du café, les méthodes de versement
+          offrent une expérience d'infusion pratique. Notre collection comprend
+          des verseurs, des filtres et des carafes de haute qualité, parfaits
+          pour tout amateur de café. Appréciez les saveurs délicates et
+          complexes qu'un versement peut offrir, et élevez votre routine de café
+          à une forme d'art.
+        fr-ch: >-
+          Découvrez l'art de la préparation manuelle du café avec notre
+          sélection de cafetières à filtre. Connues pour leur précision et leur
+          capacité à révéler les saveurs subtiles du café, les méthodes de
+          filtration offrent une expérience de préparation pratique. Notre
+          collection comprend des verseurs, filtres et carafes de haute qualité,
+          parfaits pour tout amateur de café. Appréciez les saveurs délicates et
+          complexes qu'une cafetière à filtre peut offrir, et élevez votre
+          routine caféière au rang d'art.
+        fr-fr: >-
+          Découvrez l'art de la préparation manuelle du café avec notre
+          sélection de cafetières à filtre. Connues pour leur précision et leur
+          capacité à révéler les saveurs subtiles du café, les méthodes de
+          filtration offrent une expérience de préparation pratique. Notre
+          collection comprend des verseurs, filtres et carafes de haute qualité,
+          parfaits pour tout amateur de café. Appréciez les saveurs délicates et
+          complexes qu'une cafetière à filtre peut offrir, et élevez votre
+          routine caféière au rang d'art.
+        ja-jp: >-
+          手動でのコーヒー抽出の技を探求するために、私たちのプアオーバーコーヒーメーカーのセレクションをご覧ください。精密さとコーヒーの微妙な風味を引き出す能力で知られるプアオーバー方式は、手作業による抽出体験を提供します。私たちのコレクションには、高品質のドリッパー、フィルター、カラフェが含まれており、どんなコーヒー愛好家にも最適です。プアオーバーでしか味わえない繊細で複雑な風味を楽しみ、コーヒーの習慣を芸術の域に引き上げましょう。
+        nl-nl: >-
+          Ontdek de kunst van handmatig koffiezetten met onze selectie van
+          pour-over koffiemakers. Bekend om hun precisie en vermogen om de
+          subtiele smaken van koffie naar voren te brengen, bieden pour-over
+          methoden een hands-on zetervaring. Onze collectie omvat hoogwaardige
+          drippers, filters en karaffen, perfect voor elke koffieliefhebber.
+          Geniet van de delicate en complexe smaken die alleen een pour-over kan
+          bieden, en til je koffieroutine naar een kunstvorm.
+        sv-se: >-
+          Utforska konsten av manuell kaffebryggning med vårt urval av pour-over
+          kaffebryggare. Kända för sin precision och förmåga att framhäva
+          kaffets nyanserade smaker, erbjuder pour-over-metoder en praktisk
+          bryggupplevelse. Vår kollektion inkluderar högkvalitativa droppare,
+          filter och karaffer, perfekta för alla kaffeentusiaster. Njut av de
+          delikata och komplexa smaker som endast en pour-over kan erbjuda, och
+          höj din kaffevana till en konstform.
+        ar-uae: >-
+          استكشف فن تحضير القهوة اليدوي مع مجموعتنا من أدوات تحضير القهوة
+          بالتقطير. معروفة بدقتها وقدرتها على إبراز النكهات الدقيقة للقهوة، توفر
+          طرق التقطير تجربة تحضير يدوية. تشمل مجموعتنا مرشحات وأباريق عالية
+          الجودة، مثالية لأي محب للقهوة. استمتع بالنكهات الرقيقة والمعقدة التي
+          لا يمكن أن يوفرها إلا التقطير، وارفع روتين القهوة الخاص بك إلى شكل من
+          أشكال الفن.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

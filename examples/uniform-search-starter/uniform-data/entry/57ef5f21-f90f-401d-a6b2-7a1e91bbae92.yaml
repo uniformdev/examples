@@ -1,0 +1,47 @@
+created: '2026-03-10T23:34:07.16418+00:00'
+modified: '2026-03-10T23:34:07.16418+00:00'
+pattern: false
+entry:
+  _id: 57ef5f21-f90f-401d-a6b2-7a1e91bbae92
+  _name: Guides
+  _slug: guides
+  type: articleCategory
+  fields:
+    title:
+      type: text
+      locales:
+        da-dk: Vejledninger
+        de-at: Leitfäden
+        de-ch: Anleitungen
+        de-de: Anleitungen
+        en-au: Guides
+        en-ca: Guides
+        en-gb: Guides
+        en-nl: Gidsen
+        en-nz: Leitfäden
+        en-us: Guides
+        fr-ca: Guides
+        fr-ch: Guides
+        fr-fr: Guides
+        ja-jp: ガイド
+        nl-nl: Gidsen
+        sv-se: Guider
+        ar-uae: أدلة
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

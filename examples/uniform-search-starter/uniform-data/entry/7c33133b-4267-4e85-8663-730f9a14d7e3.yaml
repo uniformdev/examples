@@ -1,0 +1,193 @@
+created: '2026-03-10T23:35:34.562422+00:00'
+modified: '2026-03-10T23:35:34.562422+00:00'
+pattern: false
+entry:
+  _id: 7c33133b-4267-4e85-8663-730f9a14d7e3
+  _name: Percolators
+  _slug: percolators
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/qr83u5N5SoKdfZiOr5hRXg-percolators.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Perkolatorer
+        de-at: Perkolatoren
+        de-ch: Perkolatoren
+        de-de: Perkolatoren
+        en-au: Percolateurs
+        en-ca: Percolators
+        en-gb: Percolators
+        en-nl: Percolators
+        en-nz: Perkolatoren
+        en-us: Percolators
+        fr-ca: Percolateurs
+        fr-ch: Percolateurs
+        fr-fr: Percolateurs
+        ja-jp: パーコレーター
+        nl-nl: Percolators
+        sv-se: Perkolatorer
+        ar-uae: المرشحات
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Genopdag den tidløse metode til brygning med vores udvalg af
+          kaffeperkolatorer. Kendt for deres robuste og fyldige smagsudtrækning,
+          bringer perkolatorer et nostalgisk præg til moderne kaffebrygning.
+          Vores sortiment inkluderer perkolatorer af høj kvalitet i forskellige
+          størrelser og materialer, perfekt til enhver kaffeentusiast, der
+          ønsker at nyde en klassisk bryg. Udforsk vores kollektion og oplev den
+          rige, aromatiske kaffe, som kun en perkolator kan levere.
+        de-at: >-
+          Entdecken Sie die zeitlose Methode des Kaffeebrühens neu mit unserer
+          Auswahl an Kaffeekochern. Bekannt für ihre kräftige und vollmundige
+          Geschmacksentfaltung, verleihen Kaffeekocher der modernen
+          Kaffeezubereitung einen nostalgischen Touch. Unser Sortiment umfasst
+          hochwertige Kaffeekocher in verschiedenen Größen und Materialien,
+          perfekt für jeden Kaffeeliebhaber, der einen klassischen Aufguss
+          genießen möchte. Entdecken Sie unsere Kollektion und erleben Sie den
+          reichen, aromatischen Kaffee, den nur ein Kaffeekocher liefern kann.
+        de-ch: >-
+          Entdecken Sie die zeitlose Methode des Kaffeebrühens neu mit unserer
+          Auswahl an Kaffeekochern. Bekannt für ihre kräftige und vollmundige
+          Geschmacksentfaltung, verleihen Kaffeekocher der modernen
+          Kaffeezubereitung einen nostalgischen Touch. Unser Sortiment umfasst
+          hochwertige Kaffeekocher in verschiedenen Größen und Materialien,
+          perfekt für jeden Kaffeeliebhaber, der einen klassischen Aufguss
+          genießen möchte. Entdecken Sie unsere Kollektion und erleben Sie den
+          reichen, aromatischen Kaffee, den nur ein Kaffeekocher liefern kann.
+        de-de: >-
+          Entdecken Sie die zeitlose Methode des Kaffeebrühens neu mit unserer
+          Auswahl an Kaffeekochern. Bekannt für ihre kräftige und vollmundige
+          Geschmacksentfaltung, verleihen Kaffeekocher der modernen
+          Kaffeezubereitung einen nostalgischen Touch. Unser Sortiment umfasst
+          hochwertige Kaffeekocher in verschiedenen Größen und Materialien,
+          perfekt für jeden Kaffeeliebhaber, der einen klassischen Aufguss
+          genießen möchte. Entdecken Sie unsere Kollektion und erleben Sie den
+          reichen, aromatischen Kaffee, den nur ein Kaffeekocher liefern kann.
+        en-au: >-
+          Redécouvrez la méthode intemporelle de préparation avec notre
+          sélection de cafetières à percolateur. Connues pour leur extraction de
+          saveurs robustes et corsées, les percolateurs apportent une touche
+          nostalgique à la préparation moderne du café. Notre gamme comprend des
+          percolateurs de haute qualité de différentes tailles et matériaux,
+          parfaits pour tout amateur de café souhaitant savourer une infusion
+          classique. Explorez notre collection et découvrez le café riche et
+          aromatique qu'un percolateur seul peut offrir.
+        en-ca: >-
+          Rediscover the timeless method of brewing with our selection of coffee
+          percolators. Known for their robust and full-bodied flavour
+          extraction, percolators bring a nostalgic touch to modern coffee
+          making. Our range includes high-quality percolators in various sizes
+          and materials, perfect for any coffee enthusiast looking to enjoy a
+          classic brew. Explore our collection and experience the rich, aromatic
+          coffee that only a percolator can deliver.
+        en-gb: >-
+          Rediscover the timeless method of brewing with our selection of coffee
+          percolators. Known for their robust and full-bodied flavour
+          extraction, percolators bring a nostalgic touch to modern coffee
+          making. Our range includes high-quality percolators in various sizes
+          and materials, perfect for any coffee enthusiast looking to enjoy a
+          classic brew. Explore our collection and experience the rich, aromatic
+          coffee that only a percolator can deliver.
+        en-nl: >-
+          Herontdek de tijdloze methode van koffiezetten met onze selectie van
+          koffiepercolators. Bekend om hun robuuste en volle smaakextractie,
+          geven percolators een nostalgisch tintje aan het moderne koffiezetten.
+          Ons assortiment omvat percolators van hoge kwaliteit in verschillende
+          maten en materialen, perfect voor elke koffieliefhebber die wil
+          genieten van een klassieke kop koffie. Ontdek onze collectie en ervaar
+          de rijke, aromatische koffie die alleen een percolator kan leveren.
+        en-nz: >-
+          Entdecken Sie die zeitlose Methode des Kaffeebrühens neu mit unserer
+          Auswahl an Kaffeekochern. Bekannt für ihre kräftige und vollmundige
+          Geschmacksentfaltung, verleihen Kaffeekocher der modernen
+          Kaffeezubereitung einen nostalgischen Touch. Unser Sortiment umfasst
+          hochwertige Kaffeekocher in verschiedenen Größen und Materialien,
+          perfekt für jeden Kaffeeliebhaber, der einen klassischen Aufguss
+          genießen möchte. Entdecken Sie unsere Kollektion und erleben Sie den
+          reichen, aromatischen Kaffee, den nur ein Kaffeekocher liefern kann.
+        en-us: >-
+          Rediscover the timeless method of brewing with our selection of coffee
+          percolators. Known for their robust and full-bodied flavor extraction,
+          percolators bring a nostalgic touch to modern coffee making. Our range
+          includes high-quality percolators in various sizes and materials,
+          perfect for any coffee enthusiast looking to enjoy a classic brew.
+          Explore our collection and experience the rich, aromatic coffee that
+          only a percolator can deliver.
+        fr-ca: >-
+          Redécouvrez la méthode intemporelle de préparation avec notre
+          sélection de percolateurs à café. Réputés pour leur extraction de
+          saveurs robustes et corsées, les percolateurs apportent une touche
+          nostalgique à la préparation moderne du café. Notre gamme comprend des
+          percolateurs de haute qualité de différentes tailles et matériaux,
+          parfaits pour tout amateur de café souhaitant savourer une infusion
+          classique. Explorez notre collection et découvrez le café riche et
+          aromatique qu'un percolateur peut offrir.
+        fr-ch: >-
+          Redécouvrez la méthode intemporelle de préparation avec notre
+          sélection de percolateurs à café. Connus pour leur extraction de
+          saveurs robustes et corsées, les percolateurs apportent une touche
+          nostalgique à la préparation moderne du café. Notre gamme comprend des
+          percolateurs de haute qualité, disponibles en différentes tailles et
+          matériaux, parfaits pour tout amateur de café souhaitant savourer un
+          breuvage classique. Explorez notre collection et découvrez le café
+          riche et aromatique qu'un percolateur seul peut offrir.
+        fr-fr: >-
+          Redécouvrez la méthode intemporelle de préparation avec notre
+          sélection de percolateurs à café. Connus pour leur extraction de
+          saveurs robustes et corsées, les percolateurs apportent une touche
+          nostalgique à la préparation moderne du café. Notre gamme comprend des
+          percolateurs de haute qualité, disponibles en différentes tailles et
+          matériaux, parfaits pour tout amateur de café souhaitant savourer un
+          breuvage classique. Explorez notre collection et découvrez le café
+          riche et aromatique qu'un percolateur seul peut offrir.
+        ja-jp: >-
+          コーヒーパーコレーターのセレクションで、時を超えた抽出方法を再発見しましょう。力強く、コクのある風味の抽出で知られるパーコレーターは、現代のコーヒー作りに懐かしさを添えます。当店のラインナップには、さまざまなサイズと素材の高品質なパーコレーターが揃っており、クラシックな一杯を楽しみたいコーヒー愛好家に最適です。コレクションを探索し、パーコレーターだけが提供できる豊かで芳醇なコーヒーを体験してください。
+        nl-nl: >-
+          Herontdek de tijdloze methode van koffiezetten met onze selectie
+          koffiepercolators. Bekend om hun robuuste en volle smaakextractie,
+          brengen percolators een nostalgisch tintje aan het moderne
+          koffiezetten. Ons assortiment omvat hoogwaardige percolators in
+          verschillende maten en materialen, perfect voor elke koffieliefhebber
+          die wil genieten van een klassieke kop koffie. Ontdek onze collectie
+          en ervaar de rijke, aromatische koffie die alleen een percolator kan
+          leveren.
+        sv-se: >-
+          Återupptäck den tidlösa metoden för bryggning med vårt urval av
+          kaffeperkulatorer. Kända för sin robusta och fylliga smakextraktion,
+          ger perkulatorer en nostalgisk känsla till modern kaffetillverkning.
+          Vårt sortiment inkluderar högkvalitativa perkulatorer i olika
+          storlekar och material, perfekta för alla kaffeentusiaster som vill
+          njuta av en klassisk bryggning. Utforska vår kollektion och upplev det
+          rika, aromatiska kaffet som bara en perkulator kan leverera.
+        ar-uae: >-
+          اكتشف من جديد الطريقة التقليدية لتحضير القهوة مع مجموعتنا من أجهزة
+          تحضير القهوة بالترشيح. معروفة باستخلاصها لنكهة قوية وغنية، تضيف أجهزة
+          الترشيح لمسة من الحنين إلى عملية صنع القهوة الحديثة. تشمل مجموعتنا
+          أجهزة ترشيح عالية الجودة بأحجام ومواد متنوعة، مثالية لأي محب للقهوة
+          يتطلع للاستمتاع بتحضير تقليدي. استكشف مجموعتنا واختبر القهوة الغنية
+          والعطرية التي لا يمكن أن يقدمها سوى جهاز الترشيح.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

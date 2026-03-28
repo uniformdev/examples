@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 63261713-b52d-4ef6-ba59-319088af1545
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: black-mountain-bistro-burr-coffee-grinder-1.png
+    file:
+      type: file
+      value: 8cd17783-c603-4a96-a46d-dcc44d40ec46
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/wXHo4IwYTHeAonin8x9UHw-black-mountain-bistro-burr-coffee-grinder-1.png
+      type: text
+    size:
+      value: 163499
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:02.967698+00:00'
+modified: '2026-03-10T23:27:02.967698+00:00'

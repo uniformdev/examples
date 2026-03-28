@@ -1,0 +1,11 @@
+asset:
+  type: other
+  _id: 7770ab14-93dd-46bb-9ef6-7dab66fff401
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: profile-icon-white.svg
+    custom: {}
+created: '2026-03-10T23:26:20.930186+00:00'
+modified: '2026-03-10T23:26:20.930186+00:00'

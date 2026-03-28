@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 3976a407-c116-43bf-8d3d-8850e5efbbb6
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: jd-white-big-logo.png
+    file:
+      type: file
+      value: 80082982-820c-49e6-b87e-fc10731d7604
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/BhHmk7FRQtOlJ1y9CqCY0g-jd-white-big-logo.png
+      type: text
+    size:
+      value: 4426
+      type: number
+    width:
+      value: 326
+      type: number
+    height:
+      value: 78
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:45.901105+00:00'
+modified: '2026-03-10T23:26:45.901105+00:00'

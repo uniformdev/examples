@@ -1,0 +1,1398 @@
+created: '2026-03-10T23:33:07.671104+00:00'
+modified: '2026-03-10T23:33:07.671104+00:00'
+pattern: false
+entry:
+  _id: a3350939-1ebf-4764-a952-55fd25647f23
+  _name: Coffee Permanent Filter
+  _slug: coffee-permanent-filter
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/H12-KInrRESdB1KpNM3fEw-coffee-permanent-filter-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Forbedr din kaffeoplevelse med den permanente kaffefilter,
+                      et genanvendeligt og holdbart filter designet specielt til
+                      specialkaffemaskiner. Sig farvel til engangspapirfiltre og
+                      omfavn en mere miljøvenlig og omkostningseffektiv
+                      brygningsløsning. Dette permanente filter er fremstillet
+                      til at levere en glat, fyldig smag ved at lade
+                      kaffebønnernes naturlige olier passere igennem, mens det
+                      effektivt fanger grums for en ren kop.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fremstillet af materialer af høj kvalitet og
+                      fødevarekvalitet er den permanente kaffefilter bygget til
+                      langvarig brug og nem vedligeholdelse. Skyl blot efter
+                      hver brygning, og det er klar til næste kop. Med dette
+                      genanvendelige filter reducerer du ikke kun affald, men du
+                      nyder også en konsekvent og pålidelig kaffeoplevelse, der
+                      komplementerer din specialkaffemaskine. Perfekt til
+                      kaffeentusiaster, der søger bæredygtighed uden at gå på
+                      kompromis med smagen, er den permanente kaffefilter en
+                      essentiel tilføjelse til dit bryggeudstyr.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Kaffeezubereitungserlebnis mit dem
+                      Permanentkaffeefilter, einem wiederverwendbaren und
+                      langlebigen Filter, der speziell für
+                      Spezialitätenkaffeemaschinen entwickelt wurde.
+                      Verabschieden Sie sich von Einweg-Papierfiltern und setzen
+                      Sie auf eine umweltfreundlichere und kostengünstigere
+                      Brühlösung. Dieser Permanentfilter ist darauf ausgelegt,
+                      ein sanftes, vollmundiges Aroma zu liefern, indem er die
+                      natürlichen Öle der Kaffeebohnen durchlässt und
+                      gleichzeitig den Kaffeesatz effektiv auffängt, um eine
+                      saubere Tasse zu gewährleisten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Hergestellt aus hochwertigen, lebensmittelechten
+                      Materialien, ist der Permanentkaffeefilter für eine lange
+                      Lebensdauer und einfache Wartung ausgelegt. Einfach nach
+                      jedem Brühvorgang ausspülen, und er ist bereit für die
+                      nächste Tasse. Mit diesem wiederverwendbaren Filter
+                      reduzieren Sie nicht nur Abfall, sondern genießen auch ein
+                      konsistentes und zuverlässiges Kaffeeerlebnis, das Ihre
+                      Spezialitätenkaffeemaschine ergänzt. Perfekt für
+                      Kaffeeliebhaber, die Nachhaltigkeit suchen, ohne
+                      Kompromisse beim Geschmack einzugehen, ist der
+                      Permanentkaffeefilter eine unverzichtbare Ergänzung für
+                      Ihr Brühset.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Kaffeeerlebnis mit dem Permanentfilter
+                      für Kaffee, einem wiederverwendbaren und langlebigen
+                      Filter, der speziell für Spezialitätenkaffeemaschinen
+                      entwickelt wurde. Verabschieden Sie sich von
+                      Einweg-Papierfiltern und begrüßen Sie eine
+                      umweltfreundlichere und kostengünstigere Brühlösung.
+                      Dieser Permanentfilter ist so konzipiert, dass er einen
+                      sanften, vollmundigen Geschmack liefert, indem er die
+                      natürlichen Öle der Kaffeebohnen durchlässt und
+                      gleichzeitig den Kaffeesatz effektiv auffängt, um eine
+                      saubere Tasse zu gewährleisten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Hergestellt aus hochwertigen, lebensmittelechten
+                      Materialien, ist der Permanentfilter für Kaffee für eine
+                      lange Lebensdauer und einfache Wartung ausgelegt. Einfach
+                      nach jedem Brühvorgang ausspülen, und er ist bereit für
+                      die nächste Tasse. Mit diesem wiederverwendbaren Filter
+                      reduzieren Sie nicht nur Abfall, sondern genießen auch ein
+                      konstantes und zuverlässiges Kaffeeerlebnis, das Ihre
+                      Spezialitätenkaffeemaschine ergänzt. Perfekt für
+                      Kaffeeliebhaber, die Nachhaltigkeit suchen, ohne
+                      Kompromisse beim Geschmack einzugehen, ist der
+                      Permanentfilter für Kaffee eine wesentliche Ergänzung für
+                      Ihr Brühwerkzeug.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Kaffeeerlebnis mit dem Permanentfilter
+                      für Kaffee, einem wiederverwendbaren und langlebigen
+                      Filter, der speziell für Spezialitätenkaffeemaschinen
+                      entwickelt wurde. Verabschieden Sie sich von
+                      Einweg-Papierfiltern und begrüßen Sie eine
+                      umweltfreundlichere und kostengünstigere Brühlösung.
+                      Dieser Permanentfilter ist so konzipiert, dass er einen
+                      sanften, vollmundigen Geschmack liefert, indem er die
+                      natürlichen Öle der Kaffeebohnen durchlässt und
+                      gleichzeitig den Kaffeesatz effektiv auffängt, um eine
+                      saubere Tasse zu gewährleisten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Hergestellt aus hochwertigen, lebensmittelechten
+                      Materialien, ist der Permanentfilter für Kaffee für eine
+                      lange Lebensdauer und einfache Wartung ausgelegt. Einfach
+                      nach jedem Brühvorgang ausspülen, und er ist bereit für
+                      die nächste Tasse. Mit diesem wiederverwendbaren Filter
+                      reduzieren Sie nicht nur Abfall, sondern genießen auch ein
+                      konstantes und zuverlässiges Kaffeeerlebnis, das Ihre
+                      Spezialitätenkaffeemaschine ergänzt. Perfekt für
+                      Kaffeeliebhaber, die Nachhaltigkeit suchen, ohne
+                      Kompromisse beim Geschmack einzugehen, ist der
+                      Permanentfilter für Kaffee eine wesentliche Ergänzung für
+                      Ihr Brühwerkzeug.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de préparation de café avec le
+                      filtre permanent à café, un filtre réutilisable et durable
+                      conçu spécifiquement pour les machines à café
+                      spécialisées. Dites adieu aux filtres en papier jetables
+                      et adoptez une solution de brassage plus écologique et
+                      économique. Ce filtre permanent est conçu pour offrir une
+                      saveur douce et corsée en permettant aux huiles naturelles
+                      des grains de café de passer tout en capturant
+                      efficacement le marc pour une tasse propre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux de haute qualité et de
+                      qualité alimentaire, le filtre permanent à café est conçu
+                      pour une utilisation durable et un entretien facile. Il
+                      suffit de le rincer après chaque infusion, et il est prêt
+                      pour la prochaine tasse. Avec ce filtre réutilisable, non
+                      seulement vous réduisez les déchets, mais vous profitez
+                      également d'une expérience de café constante et fiable qui
+                      complète votre machine à café spécialisée. Parfait pour
+                      les amateurs de café à la recherche de durabilité sans
+                      compromettre le goût, le filtre permanent à café est un
+                      ajout essentiel à votre kit de brassage.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de préparation de café avec le
+                      Filtre Permanent à Café, un filtre réutilisable et durable
+                      conçu spécifiquement pour les cafetières spécialisées.
+                      Dites adieu aux filtres en papier jetables et adoptez une
+                      solution de brassage plus écologique et économique. Ce
+                      filtre permanent est conçu pour offrir une saveur douce et
+                      corsée en permettant aux huiles naturelles des grains de
+                      café de passer tout en capturant efficacement le marc pour
+                      une tasse propre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux de haute qualité et de
+                      qualité alimentaire, le Filtre Permanent à Café est conçu
+                      pour une utilisation durable et un entretien facile. Il
+                      suffit de le rincer après chaque infusion, et il est prêt
+                      pour la prochaine tasse. Avec ce filtre réutilisable, non
+                      seulement vous réduisez les déchets, mais vous profitez
+                      également d'une expérience de café constante et fiable qui
+                      complète votre cafetière spécialisée. Parfait pour les
+                      amateurs de café à la recherche de durabilité sans
+                      compromettre le goût, le Filtre Permanent à Café est un
+                      ajout essentiel à votre kit de brassage.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Enhance your coffee-making experience with the Coffee
+                      Permanent Filter, a reusable and durable filter designed
+                      specifically for speciality coffee makers. Say goodbye to
+                      disposable paper filters and embrace a more eco-friendly
+                      and cost-effective brewing solution. This permanent filter
+                      is crafted to deliver a smooth, full-bodied flavour by
+                      allowing the natural oils of the coffee beans to pass
+                      through while effectively capturing grounds for a clean
+                      cup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Made from high-quality, food-grade materials, the Coffee
+                      Permanent Filter is built for long-lasting use and easy
+                      maintenance. Simply rinse after each brew, and it’s ready
+                      for the next cup. With this reusable filter, not only do
+                      you reduce waste, but you also enjoy a consistent and
+                      reliable coffee experience that complements your
+                      speciality coffee maker. Perfect for coffee enthusiasts
+                      looking for sustainability without compromising on taste,
+                      the Coffee Permanent Filter is an essential addition to
+                      your brewing toolkit.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbeter je koffiezetervaring met het Permanente
+                      Koffiefilter, een herbruikbaar en duurzaam filter dat
+                      speciaal is ontworpen voor speciale koffiezetapparaten.
+                      Zeg vaarwel tegen wegwerp papieren filters en omarm een
+                      milieuvriendelijkere en kosteneffectieve brouwoplossing.
+                      Dit permanente filter is ontworpen om een soepele, volle
+                      smaak te leveren door de natuurlijke oliën van de
+                      koffiebonen door te laten terwijl het effectief de
+                      koffiedik opvangt voor een schone kop.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gemaakt van hoogwaardige, voedselveilige materialen, is
+                      het Permanente Koffiefilter gebouwd voor langdurig gebruik
+                      en eenvoudig onderhoud. Spoel eenvoudig na elke zetbeurt
+                      af en het is klaar voor de volgende kop. Met dit
+                      herbruikbare filter verminder je niet alleen afval, maar
+                      geniet je ook van een consistente en betrouwbare
+                      koffie-ervaring die je speciale koffiezetapparaat aanvult.
+                      Perfect voor koffieliefhebbers die op zoek zijn naar
+                      duurzaamheid zonder concessies te doen aan de smaak, is
+                      het Permanente Koffiefilter een essentiële aanvulling op
+                      je brouwgereedschap.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Kaffeeerlebnis mit dem
+                      Permanent-Kaffeefilter, einem wiederverwendbaren und
+                      langlebigen Filter, der speziell für
+                      Spezialitätenkaffeemaschinen entwickelt wurde.
+                      Verabschieden Sie sich von Einweg-Papierfiltern und
+                      begrüßen Sie eine umweltfreundlichere und kostengünstigere
+                      Brühlösung. Dieser Permanentfilter ist so konzipiert, dass
+                      er einen weichen, vollmundigen Geschmack liefert, indem er
+                      die natürlichen Öle der Kaffeebohnen durchlässt und
+                      gleichzeitig den Kaffeesatz effektiv auffängt, um eine
+                      saubere Tasse zu gewährleisten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Hergestellt aus hochwertigen, lebensmittelechten
+                      Materialien, ist der Permanent-Kaffeefilter für eine lange
+                      Lebensdauer und einfache Wartung ausgelegt. Einfach nach
+                      jedem Brühvorgang abspülen, und er ist bereit für die
+                      nächste Tasse. Mit diesem wiederverwendbaren Filter
+                      reduzieren Sie nicht nur Abfall, sondern genießen auch ein
+                      gleichbleibendes und zuverlässiges Kaffeeerlebnis, das
+                      Ihre Spezialitätenkaffeemaschine ergänzt. Perfekt für
+                      Kaffeeliebhaber, die Nachhaltigkeit suchen, ohne
+                      Kompromisse beim Geschmack einzugehen, ist der
+                      Permanent-Kaffeefilter eine wesentliche Ergänzung für Ihr
+                      Brühwerkzeug.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Enhance your coffee-making experience with the Coffee
+                      Permanent Filter, a reusable and durable filter designed
+                      specifically for specialty coffee makers. Say goodbye to
+                      disposable paper filters and embrace a more eco-friendly
+                      and cost-effective brewing solution. This permanent filter
+                      is crafted to deliver a smooth, full-bodied flavor by
+                      allowing the natural oils of the coffee beans to pass
+                      through while effectively capturing grounds for a clean
+                      cup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Made from high-quality, food-grade materials, the Coffee
+                      Permanent Filter is built for long-lasting use and easy
+                      maintenance. Simply rinse after each brew, and it’s ready
+                      for the next cup. With this reusable filter, not only do
+                      you reduce waste, but you also enjoy a consistent and
+                      reliable coffee experience that complements your specialty
+                      coffee maker. Perfect for coffee enthusiasts looking for
+                      sustainability without compromising on taste, the Coffee
+                      Permanent Filter is an essential addition to your brewing
+                      toolkit.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de préparation de café avec le
+                      Filtre Permanent à Café, un filtre réutilisable et durable
+                      conçu spécifiquement pour les cafetières spécialisées.
+                      Dites adieu aux filtres en papier jetables et adoptez une
+                      solution de brassage plus écologique et économique. Ce
+                      filtre permanent est conçu pour offrir une saveur douce et
+                      corsée en permettant aux huiles naturelles des grains de
+                      café de passer tout en capturant efficacement le marc pour
+                      une tasse propre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux de qualité alimentaire de
+                      haute qualité, le Filtre Permanent à Café est conçu pour
+                      une utilisation durable et un entretien facile. Il suffit
+                      de le rincer après chaque infusion, et il est prêt pour la
+                      prochaine tasse. Avec ce filtre réutilisable, non
+                      seulement vous réduisez les déchets, mais vous profitez
+                      également d'une expérience de café constante et fiable qui
+                      complète votre cafetière spécialisée. Parfait pour les
+                      amateurs de café à la recherche de durabilité sans
+                      compromettre le goût, le Filtre Permanent à Café est un
+                      ajout essentiel à votre kit de brassage.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de préparation de café avec le
+                      Filtre Permanent à Café, un filtre réutilisable et durable
+                      conçu spécifiquement pour les cafetières spécialisées.
+                      Dites adieu aux filtres en papier jetables et adoptez une
+                      solution de préparation plus écologique et économique. Ce
+                      filtre permanent est conçu pour offrir une saveur douce et
+                      corsée en permettant aux huiles naturelles des grains de
+                      café de passer tout en capturant efficacement le marc pour
+                      une tasse propre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux de haute qualité et de
+                      qualité alimentaire, le Filtre Permanent à Café est conçu
+                      pour une utilisation durable et un entretien facile. Il
+                      suffit de le rincer après chaque infusion, et il est prêt
+                      pour la prochaine tasse. Avec ce filtre réutilisable, non
+                      seulement vous réduisez les déchets, mais vous profitez
+                      également d'une expérience caféière constante et fiable
+                      qui complète votre cafetière spécialisée. Parfait pour les
+                      amateurs de café à la recherche de durabilité sans
+                      compromettre le goût, le Filtre Permanent à Café est un
+                      ajout essentiel à votre kit de préparation.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de préparation de café avec le
+                      Filtre Permanent à Café, un filtre réutilisable et durable
+                      conçu spécifiquement pour les cafetières spécialisées.
+                      Dites adieu aux filtres en papier jetables et adoptez une
+                      solution de préparation plus écologique et économique. Ce
+                      filtre permanent est conçu pour offrir une saveur douce et
+                      corsée en permettant aux huiles naturelles des grains de
+                      café de passer tout en capturant efficacement le marc pour
+                      une tasse propre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux de haute qualité et de
+                      qualité alimentaire, le Filtre Permanent à Café est conçu
+                      pour une utilisation durable et un entretien facile. Il
+                      suffit de le rincer après chaque infusion, et il est prêt
+                      pour la prochaine tasse. Avec ce filtre réutilisable, non
+                      seulement vous réduisez les déchets, mais vous profitez
+                      également d'une expérience caféière constante et fiable
+                      qui complète votre cafetière spécialisée. Parfait pour les
+                      amateurs de café à la recherche de durabilité sans
+                      compromettre le goût, le Filtre Permanent à Café est un
+                      ajout essentiel à votre kit de préparation.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      コーヒーパーマネントフィルターでコーヒー作りの体験を向上させましょう。これは、スペシャルティコーヒーメーカー専用に設計された再利用可能で耐久性のあるフィルターです。使い捨ての紙フィルターに別れを告げ、より環境に優しく、コスト効果の高い抽出ソリューションを取り入れましょう。このパーマネントフィルターは、コーヒー豆の自然なオイルを通過させながら、粉を効果的にキャッチしてクリーンなカップを提供することで、滑らかでコクのある風味を引き出すように作られています。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      高品質の食品グレードの素材で作られたコーヒーパーマネントフィルターは、長期間の使用と簡単なメンテナンスのために設計されています。抽出後に簡単にすすぐだけで、次のカップの準備が整います。この再利用可能なフィルターを使用することで、廃棄物を減らすだけでなく、スペシャルティコーヒーメーカーにぴったりの一貫した信頼性のあるコーヒー体験を楽しむことができます。味を妥協せずに持続可能性を求めるコーヒー愛好家に最適なコーヒーパーマネントフィルターは、抽出ツールキットに欠かせないアイテムです。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbeter je koffiezetervaring met het Koffie Permanente
+                      Filter, een herbruikbaar en duurzaam filter dat speciaal
+                      is ontworpen voor speciale koffiemachines. Zeg vaarwel
+                      tegen wegwerp papieren filters en omarm een
+                      milieuvriendelijkere en kosteneffectieve zetoplossing. Dit
+                      permanente filter is ontworpen om een soepele, volle smaak
+                      te leveren door de natuurlijke oliën van de koffiebonen
+                      door te laten terwijl het effectief de koffiedik opvangt
+                      voor een schone kop.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gemaakt van hoogwaardige, voedselveilige materialen, is
+                      het Koffie Permanente Filter gebouwd voor langdurig
+                      gebruik en eenvoudig onderhoud. Spoel het eenvoudig af na
+                      elke zetbeurt en het is klaar voor de volgende kop. Met
+                      dit herbruikbare filter verminder je niet alleen afval,
+                      maar geniet je ook van een consistente en betrouwbare
+                      koffie-ervaring die je speciale koffiemachine aanvult.
+                      Perfect voor koffieliefhebbers die op zoek zijn naar
+                      duurzaamheid zonder concessies te doen aan smaak, is het
+                      Koffie Permanente Filter een essentiële aanvulling op je
+                      zetgereedschap.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Förbättra din kaffebryggningsupplevelse med det permanenta
+                      kaffefiltret, ett återanvändbart och hållbart filter
+                      designat specifikt för specialkaffebryggare. Säg adjö till
+                      engångspappersfilter och omfamna en mer miljövänlig och
+                      kostnadseffektiv brygglösning. Detta permanenta filter är
+                      utformat för att leverera en mjuk, fyllig smak genom att
+                      låta kaffebönornas naturliga oljor passera igenom
+                      samtidigt som det effektivt fångar upp kaffesump för en
+                      ren kopp.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Tillverkat av högkvalitativa, livsmedelsklassade material
+                      är det permanenta kaffefiltret byggt för långvarig
+                      användning och enkel underhåll. Skölj det helt enkelt
+                      efter varje bryggning, och det är redo för nästa kopp. Med
+                      detta återanvändbara filter minskar du inte bara avfallet,
+                      utan du njuter också av en konsekvent och pålitlig
+                      kaffeupplevelse som kompletterar din specialkaffebryggare.
+                      Perfekt för kaffeentusiaster som söker hållbarhet utan att
+                      kompromissa med smaken, är det permanenta kaffefiltret ett
+                      viktigt tillskott till din bryggningsverktygslåda.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      عزز تجربة صنع القهوة الخاصة بك مع فلتر القهوة الدائم، فلتر
+                      قابل لإعادة الاستخدام ومتين مصمم خصيصًا لصانعي القهوة
+                      المتخصصين. قل وداعًا للفلاتر الورقية القابلة للتخلص منها
+                      وتبنى حلاً أكثر صداقة للبيئة وفعالية من حيث التكلفة لتحضير
+                      القهوة. تم تصميم هذا الفلتر الدائم لتقديم نكهة ناعمة وغنية
+                      من خلال السماح للزيوت الطبيعية لحبوب القهوة بالمرور بينما
+                      يقوم بفعالية بالتقاط الرواسب للحصول على كوب نظيف.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      مصنوع من مواد عالية الجودة وصالحة للطعام، تم بناء فلتر
+                      القهوة الدائم للاستخدام طويل الأمد وسهولة الصيانة. ببساطة
+                      اشطفه بعد كل تحضير، وسيكون جاهزًا للكوب التالي. مع هذا
+                      الفلتر القابل لإعادة الاستخدام، لا تقلل فقط من النفايات،
+                      بل تستمتع أيضًا بتجربة قهوة متسقة وموثوقة تكمل صانع القهوة
+                      المتخصص الخاص بك. مثالي لعشاق القهوة الذين يبحثون عن
+                      الاستدامة دون المساومة على الطعم، يعد فلتر القهوة الدائم
+                      إضافة أساسية لأدوات تحضير القهوة الخاصة بك.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Permanent kaffefilter
+        de-at: Kaffeedauerfilter
+        de-ch: Kaffee Permanentfilter
+        de-de: Kaffee Permanentfilter
+        en-au: Filtre Permanent à Café
+        en-ca: Coffee Permanent Filter
+        en-gb: Coffee Permanent Filter
+        en-nl: Koffie Permanente Filter
+        en-nz: Kaffee Permanentfilter
+        en-us: Coffee Permanent Filter
+        fr-ca: Filtre Permanent à Café
+        fr-ch: Filtre Permanent à Café
+        fr-fr: Filtre Permanent à Café
+        ja-jp: コーヒーパーマネントフィルター
+        nl-nl: Koffie Permanente Filter
+        sv-se: Kaffepermanentfilter
+        ar-uae: فلتر قهوة دائم
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-a3350939-1ebf-4764-a952-55fd25647f23-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Kaffefilter Permanent
+        de-at: Kaffee Permanentfilter
+        de-ch: Kaffeedauerfilter
+        de-de: Kaffeedauerfilter
+        en-au: Filtre Permanent à Café
+        en-ca: Coffee Permanent Filter
+        en-gb: Coffee Permanent Filter
+        en-nl: Koffie Permanente Filter
+        en-nz: Kaffee Permanentfilter
+        en-us: Coffee Permanent Filter
+        fr-ca: Filtre Permanent à Café
+        fr-ch: Filtre Permanent à Café
+        fr-fr: Filtre Permanent à Café
+        ja-jp: コーヒーパーマネントフィルター
+        nl-nl: Koffie Permanente Filter
+        sv-se: Kaffepermanentfilter
+        ar-uae: فلتر قهوة دائم
+    rating:
+      type: number
+      value: '4.9'
+    ogImage:
+      type: asset
+      value:
+        - _id: b2ee904e-104f-441b-a12e-ac48e5e5ffd1
+          type: image
+          fields:
+            id:
+              type: text
+              value: 481a9d97-a553-4001-931b-abbc812ee743
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/DYHi8wPoTOiBAooW707gRQ-coffee-permanent-filter-1.png
+              type: text
+            file:
+              type: file
+              value: 1b370459-583f-4578-ba4a-faa7e889c6d4
+            size:
+              value: 53290
+              type: number
+            title:
+              type: text
+              value: coffee-permanent-filter-1.png
+            width:
+              value: 800
+              type: number
+            height:
+              value: 600
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-a3350939-1ebf-4764-a952-55fd25647f23-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: e1b8b640-9a22-4728-b981-90cf169ec598
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '147'
+            price:
+              type: number
+              locales:
+                da-dk: '12.95'
+                de-at: '12.95'
+                de-ch: '12.95'
+                de-de: '12.95'
+                en-au: '12.95'
+                en-ca: '12.95'
+                en-gb: '12.95'
+                en-nl: '12.95'
+                en-nz: '12.95'
+                en-us: '12.95'
+                fr-ca: '12.95'
+                fr-ch: '12.95'
+                fr-fr: '12.95'
+                ja-jp: '12.95'
+                nl-nl: '12.95'
+                sv-se: '12.95'
+                ar-uae: '12.95'
+            title:
+              type: text
+              locales:
+                da-dk: Permanent kaffefilter
+                de-at: Kaffeedauerfilter
+                de-ch: Kaffee Permanentfilter
+                de-de: Kaffee Permanentfilter
+                en-au: Filtre Permanent à Café
+                en-ca: Coffee Permanent Filter
+                en-gb: Coffee Permanent Filter
+                en-nl: Koffie Permanente Filter
+                en-nz: Kaffee Permanentfilter
+                en-us: Coffee Permanent Filter
+                fr-ca: Filtre Permanent à Café
+                fr-ch: Filtre Permanent à Café
+                fr-fr: Filtre Permanent à Café
+                ja-jp: コーヒーパーマネントフィルター
+                nl-nl: Koffie Permanente Filter
+                sv-se: Kaffepermanentfilter
+                ar-uae: فلتر قهوة دائم
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: 7307ce06-90d5-40ed-8b45-bab472b82480
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 481a9d97-a553-4001-931b-abbc812ee743
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/DYHi8wPoTOiBAooW707gRQ-coffee-permanent-filter-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: 1b370459-583f-4578-ba4a-faa7e889c6d4
+                    size:
+                      value: 53290
+                      type: number
+                    title:
+                      type: text
+                      value: coffee-permanent-filter-1.png
+                    width:
+                      value: 800
+                      type: number
+                    height:
+                      value: 600
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Permanent Kaffefilter
+        de-at: Kaffee Dauerfilter
+        de-ch: Kaffee Permanentfilter
+        de-de: Kaffee Permanentfilter
+        en-au: Filtre Permanent à Café
+        en-ca: Permanent Coffee Filter
+        en-gb: Coffee Permanent Filter
+        en-nl: Koffie Permanente Filter
+        en-nz: Kaffee Permanentfilter
+        en-us: Coffee Permanent Filter
+        fr-ca: Filtre Permanent à Café
+        fr-ch: Filtre Permanent à Café
+        fr-fr: Filtre Permanent à Café
+        ja-jp: コーヒー永久フィルター
+        nl-nl: Koffie Permanente Filter
+        sv-se: Permanent kaffefilter
+        ar-uae: فلتر قهوة دائم
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: b2ee904e-104f-441b-a12e-ac48e5e5ffd1
+          type: image
+          fields:
+            id:
+              type: text
+              value: 481a9d97-a553-4001-931b-abbc812ee743
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/DYHi8wPoTOiBAooW707gRQ-coffee-permanent-filter-1.png
+              type: text
+            file:
+              type: file
+              value: 1b370459-583f-4578-ba4a-faa7e889c6d4
+            size:
+              value: 53290
+              type: number
+            title:
+              type: text
+              value: coffee-permanent-filter-1.png
+            width:
+              value: 800
+              type: number
+            height:
+              value: 600
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Miljøvenligt permanent kaffefilter til rige, smagfulde bryg.
+          Genanvendeligt, omkostningseffektivt og perfekt til
+          specialkaffemaskiner.
+        de-at: >-
+          Umweltfreundlicher Kaffee-Dauerfilter für reichhaltige, geschmackvolle
+          Aufgüsse. Wiederverwendbar, kosteneffektiv und perfekt für
+          Spezialitäten-Kaffeemaschinen.
+        de-ch: >-
+          Umweltfreundlicher Kaffee-Dauerfilter für reichhaltige, aromatische
+          Aufgüsse. Wiederverwendbar, kostengünstig und perfekt für
+          Spezialitäten-Kaffeemaschinen.
+        de-de: >-
+          Umweltfreundlicher Kaffee-Dauerfilter für reichhaltige, aromatische
+          Aufgüsse. Wiederverwendbar, kostengünstig und perfekt für
+          Spezialitäten-Kaffeemaschinen.
+        en-au: >-
+          Filtre à café permanent écologique pour des infusions riches et
+          savoureuses. Réutilisable, économique et parfait pour les machines à
+          café spécialisées.
+        en-ca: >-
+          Eco-friendly Coffee Permanent Filter for rich, flavourful brews.
+          Reusable, cost-effective, and perfect for specialty coffee makers.
+        en-gb: >-
+          Eco-friendly Coffee Permanent Filter for rich, flavourful brews.
+          Reusable, cost-effective, and perfect for speciality coffee makers.
+        en-nl: >-
+          Milieuvriendelijke permanente koffiefilter voor rijke, smaakvolle
+          brouwsels. Herbruikbaar, kosteneffectief en perfect voor speciale
+          koffiezetapparaten.
+        en-nz: >-
+          Umweltfreundlicher Kaffee-Dauerfilter für reichhaltige, geschmackvolle
+          Aufgüsse. Wiederverwendbar, kostengünstig und perfekt für
+          Spezialitäten-Kaffeemaschinen.
+        en-us: >-
+          Eco-friendly Coffee Permanent Filter for rich, flavorful brews.
+          Reusable, cost-effective, and perfect for specialty coffee makers.
+        fr-ca: >-
+          Filtre à café permanent écologique pour des infusions riches et
+          savoureuses. Réutilisable, économique et parfait pour les cafetières
+          spécialisées.
+        fr-ch: >-
+          Filtre à café permanent écologique pour des infusions riches et
+          savoureuses. Réutilisable, économique et parfait pour les cafetières
+          spécialisées.
+        fr-fr: >-
+          Filtre à café permanent écologique pour des infusions riches et
+          savoureuses. Réutilisable, économique et parfait pour les cafetières
+          spécialisées.
+        ja-jp: >-
+          リッチで風味豊かな抽出のためのエコフレンドリーなコーヒー用永久フィルター。再利用可能でコスト効果が高く、スペシャルティコーヒーメーカーに最適です。
+        nl-nl: >-
+          Milieuvriendelijke permanente koffiefilter voor rijke, smaakvolle
+          brouwsels. Herbruikbaar, kosteneffectief en perfect voor speciale
+          koffiezetapparaten.
+        sv-se: >-
+          Miljövänligt permanent kaffefilter för rika, smakfulla bryggningar.
+          Återanvändbart, kostnadseffektivt och perfekt för
+          specialkaffemaskiner.
+        ar-uae: >-
+          فلتر قهوة دائم صديق للبيئة لتحضير قهوة غنية بالنكهة. قابل لإعادة
+          الاستخدام، اقتصادي، ومثالي لصانعي القهوة المتخصصين.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Kaffepermanentfilteret er et genanvendeligt tilbehør designet til
+          specialkaffemaskiner, der tilbyder en miljøvenlig og
+          omkostningseffektiv løsning for konsekvent rige og smagfulde bryg.
+        de-at: >-
+          Der Permanent-Kaffeefilter ist ein wiederverwendbares Zubehör, das für
+          Spezialkaffeemaschinen entwickelt wurde und eine umweltfreundliche und
+          kostengünstige Lösung für gleichbleibend reichhaltige, geschmackvolle
+          Aufgüsse bietet.
+        de-ch: >-
+          Der Kaffee Permanentfilter ist ein wiederverwendbares Zubehör, das für
+          Spezialkaffeemaschinen entwickelt wurde und eine umweltfreundliche und
+          kostengünstige Lösung für gleichbleibend reichhaltige, aromatische
+          Aufgüsse bietet.
+        de-de: >-
+          Der Kaffee Permanentfilter ist ein wiederverwendbares Zubehör, das für
+          Spezialkaffeemaschinen entwickelt wurde und eine umweltfreundliche und
+          kostengünstige Lösung für gleichbleibend reichhaltige, aromatische
+          Aufgüsse bietet.
+        en-au: >-
+          Le Filtre Permanent à Café est un accessoire réutilisable conçu pour
+          les machines à café spécialisées, offrant une solution écologique et
+          économique pour des infusions riches et savoureuses de manière
+          constante.
+        en-ca: >-
+          The Coffee Permanent Filter is a reusable accessory designed for
+          specialty coffee makers, providing an eco-friendly and cost-effective
+          solution for consistently rich, flavourful brews.
+        en-gb: >-
+          The Coffee Permanent Filter is a reusable accessory designed for
+          speciality coffee makers, providing an eco-friendly and cost-effective
+          solution for consistently rich, flavourful brews.
+        en-nl: >-
+          Het Koffie Permanente Filter is een herbruikbaar accessoire ontworpen
+          voor speciale koffiemachines, en biedt een milieuvriendelijke en
+          kosteneffectieve oplossing voor consequent rijke, smaakvolle
+          brouwsels.
+        en-nz: >-
+          Der Kaffee Permanentfilter ist ein wiederverwendbares Zubehör, das für
+          Spezialkaffeemaschinen entwickelt wurde und eine umweltfreundliche und
+          kostengünstige Lösung für gleichbleibend reichhaltige, geschmackvolle
+          Aufgüsse bietet.
+        en-us: >-
+          The Coffee Permanent Filter is a reusable accessory designed for
+          specialty coffee makers, providing an eco-friendly and cost-effective
+          solution for consistently rich, flavorful brews.
+        fr-ca: >-
+          Le Filtre Permanent à Café est un accessoire réutilisable conçu pour
+          les cafetières spécialisées, offrant une solution écologique et
+          économique pour des infusions riches et savoureuses de manière
+          constante.
+        fr-ch: >-
+          Le Filtre Permanent à Café est un accessoire réutilisable conçu pour
+          les machines à café spécialisées, offrant une solution écologique et
+          économique pour des infusions riches et savoureuses de manière
+          constante.
+        fr-fr: >-
+          Le Filtre Permanent à Café est un accessoire réutilisable conçu pour
+          les machines à café spécialisées, offrant une solution écologique et
+          économique pour des infusions riches et savoureuses de manière
+          constante.
+        ja-jp: >-
+          コーヒーパーマネントフィルターは、スペシャルティコーヒーメーカー用に設計された再利用可能なアクセサリーで、環境に優しく、コスト効果の高い方法で、常に豊かで風味豊かなコーヒーを提供します。
+        nl-nl: >-
+          Het Permanente Koffiefilter is een herbruikbaar accessoire ontworpen
+          voor speciale koffiezetapparaten, en biedt een milieuvriendelijke en
+          kosteneffectieve oplossing voor consequent rijke, smaakvolle
+          brouwsels.
+        sv-se: >-
+          Det Permanenta Kaffefiltret är ett återanvändbart tillbehör designat
+          för specialkaffebryggare, som erbjuder en miljövänlig och
+          kostnadseffektiv lösning för konsekvent fylliga och smakrika
+          bryggningar.
+        ar-uae: >-
+          فلتر القهوة الدائم هو ملحق قابل لإعادة الاستخدام مصمم لصانعي القهوة
+          المتخصصين، ويوفر حلاً صديقًا للبيئة وفعالاً من حيث التكلفة للحصول على
+          مشروبات غنية بالنكهة بشكل مستمر.
+  _dataResources:
+    ref-a3350939-1ebf-4764-a952-55fd25647f23-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-a3350939-1ebf-4764-a952-55fd25647f23-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

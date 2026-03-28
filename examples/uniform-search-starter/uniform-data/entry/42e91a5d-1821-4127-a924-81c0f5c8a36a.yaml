@@ -1,0 +1,1368 @@
+created: '2026-03-10T23:33:11.516166+00:00'
+modified: '2026-03-10T23:33:11.516166+00:00'
+pattern: false
+entry:
+  _id: 42e91a5d-1821-4127-a924-81c0f5c8a36a
+  _name: Coffee Removable Filter Holder for Specialty Coffee Maker
+  _slug: coffee-removable-filter-holder
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/OrVGBPY2SYCIhbVAHTcFhA-coffee-removable-filter-holder-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Opgrader dit bryggeudstyr med den aftagelige
+                      kaffefilterholder, specielt designet til
+                      specialkaffemaskiner. Dette praktiske og brugervenlige
+                      tilbehør gør det nemt at indsætte og fjerne kaffefiltre,
+                      hvilket giver en mere problemfri og effektiv bryggeproces.
+                      Bygget til at forbedre din kaffebrygningsrutine, sikrer
+                      denne filterholder stabilitet under brygning og hjælper
+                      med at opretholde en ren, rodfri arbejdsplads.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fremstillet af holdbare, materialer af høj kvalitet, er
+                      den aftagelige kaffefilterholder bygget til at modstå
+                      daglig brug, samtidig med at integriteten af din
+                      kaffemaskine bevares. Dens design tillader også nem
+                      rengøring, hvilket fremmer bedre hygiejne og smag med hver
+                      kop. Uanset om du forbereder din morgenkaffe eller
+                      serverer gæster, tilføjer denne filterholder
+                      bekvemmelighed og pålidelighed til din
+                      specialkaffemaskine, hvilket gør den til en essentiel
+                      komponent for kaffeentusiaster.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Brühsetup mit dem abnehmbaren
+                      Kaffeefilterhalter, der speziell für
+                      Spezialitätenkaffeemaschinen entwickelt wurde. Dieses
+                      praktische und benutzerfreundliche Zubehör erleichtert das
+                      Einsetzen und Entfernen von Kaffeefiltern und ermöglicht
+                      einen nahtloseren und effizienteren Brühvorgang. Dieser
+                      Filterhalter, der entwickelt wurde, um Ihre
+                      Kaffeezubereitung zu verbessern, sorgt für Stabilität
+                      während des Brühens und hilft, einen sauberen,
+                      ordentlichen Arbeitsplatz zu erhalten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gefertigt aus langlebigen, hochwertigen Materialien, ist
+                      der abnehmbare Kaffeefilterhalter darauf ausgelegt, den
+                      täglichen Gebrauch zu überstehen und gleichzeitig die
+                      Integrität Ihrer Kaffeemaschine zu bewahren. Sein Design
+                      ermöglicht auch eine einfache Reinigung, was bei jeder
+                      Tasse für bessere Hygiene und Geschmack sorgt. Ob Sie
+                      Ihren morgendlichen Kaffee zubereiten oder Gäste bedienen,
+                      dieser Filterhalter bietet Komfort und Zuverlässigkeit für
+                      Ihre Spezialitätenkaffeemaschine und ist ein
+                      unverzichtbares Element für Kaffeeliebhaber.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Brühsetup mit dem abnehmbaren
+                      Kaffeefilterhalter, der speziell für
+                      Spezialitätenkaffeemaschinen entwickelt wurde. Dieses
+                      praktische und benutzerfreundliche Zubehör erleichtert das
+                      Einsetzen und Entfernen von Kaffeefiltern und ermöglicht
+                      einen nahtloseren und effizienteren Brühvorgang. Der
+                      Filterhalter wurde entwickelt, um Ihre Kaffeezubereitung
+                      zu verbessern, und sorgt für Stabilität während des
+                      Brühens und hilft, einen sauberen, ordentlichen
+                      Arbeitsplatz zu erhalten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gefertigt aus langlebigen, hochwertigen Materialien, ist
+                      der abnehmbare Kaffeefilterhalter darauf ausgelegt,
+                      täglichem Gebrauch standzuhalten und gleichzeitig die
+                      Integrität Ihrer Kaffeemaschine zu bewahren. Sein Design
+                      ermöglicht auch eine einfache Reinigung, was zu besserer
+                      Hygiene und Geschmack bei jeder Tasse beiträgt. Egal, ob
+                      Sie Ihren Morgenkaffee zubereiten oder Gäste bedienen,
+                      dieser Filterhalter bietet Komfort und Zuverlässigkeit für
+                      Ihre Spezialitätenkaffeemaschine und macht ihn zu einem
+                      unverzichtbaren Bestandteil für Kaffeeliebhaber.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Brühsetup mit dem abnehmbaren
+                      Kaffeefilterhalter, der speziell für
+                      Spezialitätenkaffeemaschinen entwickelt wurde. Dieses
+                      praktische und benutzerfreundliche Zubehör erleichtert das
+                      Einsetzen und Entfernen von Kaffeefiltern und ermöglicht
+                      einen nahtloseren und effizienteren Brühvorgang. Der
+                      Filterhalter wurde entwickelt, um Ihre Kaffeezubereitung
+                      zu verbessern, und sorgt für Stabilität während des
+                      Brühens und hilft, einen sauberen, ordentlichen
+                      Arbeitsplatz zu erhalten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gefertigt aus langlebigen, hochwertigen Materialien, ist
+                      der abnehmbare Kaffeefilterhalter darauf ausgelegt,
+                      täglichem Gebrauch standzuhalten und gleichzeitig die
+                      Integrität Ihrer Kaffeemaschine zu bewahren. Sein Design
+                      ermöglicht auch eine einfache Reinigung, was zu besserer
+                      Hygiene und Geschmack bei jeder Tasse beiträgt. Egal, ob
+                      Sie Ihren Morgenkaffee zubereiten oder Gäste bedienen,
+                      dieser Filterhalter bietet Komfort und Zuverlässigkeit für
+                      Ihre Spezialitätenkaffeemaschine und macht ihn zu einem
+                      unverzichtbaren Bestandteil für Kaffeeliebhaber.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre installation de brassage avec le
+                      Porte-Filtre Amovible pour Café, spécialement conçu pour
+                      les machines à café spécialisées. Cet accessoire pratique
+                      et convivial facilite l'insertion et le retrait des
+                      filtres à café, permettant un processus de brassage plus
+                      fluide et efficace. Conçu pour améliorer votre routine de
+                      préparation de café, ce porte-filtre assure la stabilité
+                      pendant le brassage et aide à maintenir un espace de
+                      travail propre et sans désordre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux durables et de haute
+                      qualité, le Porte-Filtre Amovible pour Café est conçu pour
+                      résister à une utilisation quotidienne tout en préservant
+                      l'intégrité de votre machine à café. Son design permet
+                      également un nettoyage facile, favorisant une meilleure
+                      hygiène et un meilleur goût à chaque tasse. Que vous
+                      prépariez votre café du matin ou que vous serviez des
+                      invités, ce porte-filtre ajoute commodité et fiabilité à
+                      votre machine à café spécialisée, en faisant un composant
+                      essentiel pour les amateurs de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre installation de brassage avec le
+                      Porte-filtre Amovible pour Café, spécialement conçu pour
+                      les cafetières spécialisées. Cet accessoire pratique et
+                      convivial facilite l'insertion et le retrait des filtres à
+                      café, permettant un processus de brassage plus fluide et
+                      efficace. Conçu pour améliorer votre routine de
+                      préparation de café, ce porte-filtre assure la stabilité
+                      pendant le brassage et aide à maintenir un espace de
+                      travail propre et sans désordre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux durables et de haute
+                      qualité, le Porte-filtre Amovible pour Café est conçu pour
+                      résister à une utilisation quotidienne tout en préservant
+                      l'intégrité de votre cafetière. Son design permet
+                      également un nettoyage facile, favorisant une meilleure
+                      hygiène et un meilleur goût à chaque tasse. Que vous
+                      prépariez votre café du matin ou que vous serviez des
+                      invités, ce porte-filtre ajoute commodité et fiabilité à
+                      votre cafetière spécialisée, en faisant un composant
+                      essentiel pour les amateurs de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Upgrade your brewing setup with the Coffee Removable
+                      Filter Holder, specifically designed for speciality coffee
+                      makers. This practical and user-friendly accessory makes
+                      it simple to insert and remove coffee filters, allowing
+                      for a more seamless and efficient brewing process. Built
+                      to enhance your coffee-making routine, this filter holder
+                      ensures stability during brewing and helps maintain a
+                      clean, mess-free workspace.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Crafted from durable, high-quality materials, the Coffee
+                      Removable Filter Holder is built to withstand daily use
+                      while preserving the integrity of your coffee maker. Its
+                      design also allows for easy cleaning, promoting better
+                      hygiene and taste with every cup. Whether you're preparing
+                      your morning brew or serving guests, this filter holder
+                      adds convenience and reliability to your speciality coffee
+                      maker, making it an essential component for coffee
+                      enthusiasts.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Upgrade je brouwopstelling met de Koffie Verwijderbare
+                      Filterhouder, speciaal ontworpen voor speciale
+                      koffiemachines. Dit praktische en gebruiksvriendelijke
+                      accessoire maakt het eenvoudig om koffiefilters in te
+                      voegen en te verwijderen, waardoor het brouwproces
+                      soepeler en efficiënter verloopt. Gebouwd om je
+                      koffieroutine te verbeteren, zorgt deze filterhouder voor
+                      stabiliteit tijdens het brouwen en helpt het een schone,
+                      rommelvrije werkruimte te behouden.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gemaakt van duurzame, hoogwaardige materialen, is de
+                      Koffie Verwijderbare Filterhouder gebouwd om dagelijks
+                      gebruik te weerstaan terwijl de integriteit van je
+                      koffiemachine behouden blijft. Het ontwerp maakt ook
+                      eenvoudige reiniging mogelijk, wat zorgt voor betere
+                      hygiëne en smaak bij elke kop. Of je nu je ochtendbrouwsel
+                      bereidt of gasten bedient, deze filterhouder voegt gemak
+                      en betrouwbaarheid toe aan je speciale koffiemachine,
+                      waardoor het een essentieel onderdeel is voor
+                      koffieliefhebbers.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Brausetup mit dem abnehmbaren
+                      Kaffeefilterhalter, der speziell für
+                      Spezialitäten-Kaffeemaschinen entwickelt wurde. Dieses
+                      praktische und benutzerfreundliche Zubehör erleichtert das
+                      Einsetzen und Entfernen von Kaffeefiltern und ermöglicht
+                      einen nahtloseren und effizienteren Brühvorgang. Dieser
+                      Filterhalter, der entwickelt wurde, um Ihre
+                      Kaffeezubereitung zu verbessern, sorgt für Stabilität
+                      während des Brühens und hilft, einen sauberen,
+                      ordentlichen Arbeitsplatz zu erhalten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gefertigt aus langlebigen, hochwertigen Materialien, ist
+                      der abnehmbare Kaffeefilterhalter darauf ausgelegt,
+                      täglichem Gebrauch standzuhalten und gleichzeitig die
+                      Integrität Ihrer Kaffeemaschine zu bewahren. Sein Design
+                      ermöglicht auch eine einfache Reinigung, was zu besserer
+                      Hygiene und Geschmack bei jeder Tasse beiträgt. Ob Sie
+                      Ihren morgendlichen Kaffee zubereiten oder Gäste bedienen,
+                      dieser Filterhalter bietet Komfort und Zuverlässigkeit für
+                      Ihre Spezialitäten-Kaffeemaschine und macht ihn zu einem
+                      unverzichtbaren Bestandteil für Kaffeeliebhaber.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Upgrade your brewing setup with the Coffee Removable
+                      Filter Holder, specifically designed for specialty coffee
+                      makers. This practical and user-friendly accessory makes
+                      it simple to insert and remove coffee filters, allowing
+                      for a more seamless and efficient brewing process. Built
+                      to enhance your coffee-making routine, this filter holder
+                      ensures stability during brewing and helps maintain a
+                      clean, mess-free workspace.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Crafted from durable, high-quality materials, the Coffee
+                      Removable Filter Holder is built to withstand daily use
+                      while preserving the integrity of your coffee maker. Its
+                      design also allows for easy cleaning, promoting better
+                      hygiene and taste with every cup. Whether you're preparing
+                      your morning brew or serving guests, this filter holder
+                      adds convenience and reliability to your specialty coffee
+                      maker, making it an essential component for coffee
+                      enthusiasts.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre installation de brassage avec le
+                      Porte-Filtre Amovible pour Café, spécialement conçu pour
+                      les cafetières spécialisées. Cet accessoire pratique et
+                      convivial facilite l'insertion et le retrait des filtres à
+                      café, permettant un processus de brassage plus fluide et
+                      efficace. Conçu pour améliorer votre routine de
+                      préparation de café, ce porte-filtre assure la stabilité
+                      pendant le brassage et aide à maintenir un espace de
+                      travail propre et sans désordre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux durables et de haute
+                      qualité, le Porte-Filtre Amovible pour Café est conçu pour
+                      résister à une utilisation quotidienne tout en préservant
+                      l'intégrité de votre cafetière. Son design permet
+                      également un nettoyage facile, favorisant une meilleure
+                      hygiène et un meilleur goût à chaque tasse. Que vous
+                      prépariez votre café du matin ou que vous serviez des
+                      invités, ce porte-filtre ajoute commodité et fiabilité à
+                      votre cafetière spécialisée, en faisant un composant
+                      essentiel pour les amateurs de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre installation de brassage avec le
+                      Porte-filtre amovible pour café, spécialement conçu pour
+                      les cafetières spécialisées. Cet accessoire pratique et
+                      convivial facilite l'insertion et le retrait des filtres à
+                      café, permettant un processus de brassage plus fluide et
+                      efficace. Conçu pour améliorer votre routine de
+                      préparation de café, ce porte-filtre assure la stabilité
+                      pendant le brassage et aide à maintenir un espace de
+                      travail propre et sans désordre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux durables et de haute
+                      qualité, le Porte-filtre amovible pour café est conçu pour
+                      résister à une utilisation quotidienne tout en préservant
+                      l'intégrité de votre cafetière. Son design permet
+                      également un nettoyage facile, favorisant une meilleure
+                      hygiène et un meilleur goût à chaque tasse. Que vous
+                      prépariez votre café du matin ou que vous serviez des
+                      invités, ce porte-filtre ajoute commodité et fiabilité à
+                      votre cafetière spécialisée, en faisant un élément
+                      essentiel pour les amateurs de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre installation de brassage avec le
+                      Porte-filtre amovible pour café, spécialement conçu pour
+                      les cafetières spécialisées. Cet accessoire pratique et
+                      convivial facilite l'insertion et le retrait des filtres à
+                      café, permettant un processus de brassage plus fluide et
+                      efficace. Conçu pour améliorer votre routine de
+                      préparation de café, ce porte-filtre assure la stabilité
+                      pendant le brassage et aide à maintenir un espace de
+                      travail propre et sans désordre.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Fabriqué à partir de matériaux durables et de haute
+                      qualité, le Porte-filtre amovible pour café est conçu pour
+                      résister à une utilisation quotidienne tout en préservant
+                      l'intégrité de votre cafetière. Son design permet
+                      également un nettoyage facile, favorisant une meilleure
+                      hygiène et un meilleur goût à chaque tasse. Que vous
+                      prépariez votre café du matin ou que vous serviez des
+                      invités, ce porte-filtre ajoute commodité et fiabilité à
+                      votre cafetière spécialisée, en faisant un élément
+                      essentiel pour les amateurs de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      コーヒー用取り外し可能フィルターホルダーで、あなたの抽出セットアップをアップグレードしましょう。これは、スペシャルティコーヒーメーカー専用に設計された実用的で使いやすいアクセサリーです。コーヒーフィルターの挿入と取り外しが簡単になり、よりスムーズで効率的な抽出プロセスを実現します。このフィルターホルダーは、コーヒー作りのルーチンを向上させるために作られており、抽出中の安定性を確保し、清潔で散らからない作業スペースを維持するのに役立ちます。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      耐久性のある高品質な素材で作られたコーヒー用取り外し可能フィルターホルダーは、コーヒーメーカーの品質を保ちながら、日常使用に耐えるように設計されています。そのデザインはまた、簡単に掃除できるようになっており、毎回のカップでより良い衛生と味を促進します。朝の一杯を準備する時も、ゲストにサービスする時も、このフィルターホルダーはスペシャルティコーヒーメーカーに便利さと信頼性を加え、コーヒー愛好家にとって必須のコンポーネントとなります。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Upgrade uw brouwinstallatie met de Coffee Removable Filter
+                      Holder, speciaal ontworpen voor speciale
+                      koffiezetapparaten. Dit praktische en gebruiksvriendelijke
+                      accessoire maakt het eenvoudig om koffiefilters in te
+                      voegen en te verwijderen, waardoor het brouwproces
+                      soepeler en efficiënter verloopt. Ontworpen om uw
+                      koffieroutine te verbeteren, zorgt deze filterhouder voor
+                      stabiliteit tijdens het brouwen en helpt het een schone,
+                      rommelvrije werkruimte te behouden.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Gemaakt van duurzame, hoogwaardige materialen, is de
+                      Coffee Removable Filter Holder gebouwd om dagelijks
+                      gebruik te weerstaan terwijl de integriteit van uw
+                      koffiezetapparaat behouden blijft. Het ontwerp maakt ook
+                      eenvoudige reiniging mogelijk, wat zorgt voor betere
+                      hygiëne en smaak bij elke kop. Of u nu uw ochtendkoffie
+                      bereidt of gasten bedient, deze filterhouder voegt gemak
+                      en betrouwbaarheid toe aan uw speciale koffiezetapparaat,
+                      waardoor het een essentieel onderdeel is voor
+                      koffieliefhebbers.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Uppgradera din bryggningsutrustning med det avtagbara
+                      filterhållaren för kaffe, speciellt utformad för
+                      specialkaffebryggare. Detta praktiska och användarvänliga
+                      tillbehör gör det enkelt att sätta in och ta bort
+                      kaffefilter, vilket möjliggör en mer sömlös och effektiv
+                      bryggningsprocess. Byggd för att förbättra din
+                      kaffetillverkningsrutin, säkerställer denna filterhållare
+                      stabilitet under bryggningen och hjälper till att
+                      upprätthålla en ren, rörfri arbetsyta.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Tillverkad av hållbara, högkvalitativa material, är det
+                      avtagbara filterhållaren för kaffe byggd för att tåla
+                      daglig användning samtidigt som den bevarar integriteten
+                      hos din kaffebryggare. Dess design möjliggör också enkel
+                      rengöring, vilket främjar bättre hygien och smak med varje
+                      kopp. Oavsett om du förbereder ditt morgonkaffe eller
+                      serverar gäster, tillför denna filterhållare bekvämlighet
+                      och tillförlitlighet till din specialkaffebryggare, vilket
+                      gör den till en viktig komponent för kaffeentusiaster.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      قم بترقية إعدادات تحضير القهوة لديك مع حامل فلتر القهوة
+                      القابل للإزالة، المصمم خصيصًا لصانعي القهوة المتخصصين. هذا
+                      الملحق العملي وسهل الاستخدام يجعل من السهل إدخال وإزالة
+                      فلاتر القهوة، مما يتيح عملية تحضير أكثر سلاسة وكفاءة. مصمم
+                      لتعزيز روتين صنع القهوة الخاص بك، يضمن حامل الفلتر هذا
+                      الاستقرار أثناء التحضير ويساعد في الحفاظ على مساحة عمل
+                      نظيفة وخالية من الفوضى.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      مصنوع من مواد متينة وعالية الجودة، تم تصميم حامل فلتر
+                      القهوة القابل للإزالة لتحمل الاستخدام اليومي مع الحفاظ على
+                      سلامة صانع القهوة الخاص بك. كما أن تصميمه يسمح بالتنظيف
+                      السهل، مما يعزز من النظافة والطعم مع كل كوب. سواء كنت تحضر
+                      قهوتك الصباحية أو تقدم للضيوف، يضيف حامل الفلتر هذا الراحة
+                      والموثوقية إلى صانع القهوة المتخصص الخاص بك، مما يجعله
+                      مكونًا أساسيًا لعشاق القهوة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Aftagelig filterholder til kaffemaskine til specialkaffe
+        de-at: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        de-ch: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        de-de: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        en-au: Porte-filtre amovible pour cafetière spécialisée
+        en-ca: Coffee Removable Filter Holder for Specialty Coffee Maker
+        en-gb: Coffee Removable Filter Holder for Speciality Coffee Maker
+        en-nl: Koffie Verwijderbare Filterhouder voor Speciale Koffiezetapparaat
+        en-nz: Kaffee abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        en-us: Coffee Removable Filter Holder for Specialty Coffee Maker
+        fr-ca: Porte-filtre amovible pour cafetière spécialisée
+        fr-ch: Porte-filtre amovible pour cafetière spécialisée
+        fr-fr: Porte-filtre amovible pour cafetière spécialisée
+        ja-jp: スペシャルティコーヒーメーカー用コーヒー取り外し可能フィルターホルダー
+        nl-nl: Koffie Verwijderbare Filterhouder voor Specialty Koffiezetapparaat
+        sv-se: Avtagbar filterhållare för specialkaffebryggare
+        ar-uae: حامل فلتر قابل للإزالة لماكينة صنع القهوة المتخصصة
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-42e91a5d-1821-4127-a924-81c0f5c8a36a-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Kaffemaskine med aftagelig filterholder til specialkaffe
+        de-at: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        de-ch: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        de-de: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        en-au: Porte-filtre amovible pour cafetière spécialisée
+        en-ca: Coffee Removable Filter Holder for Specialty Coffee Maker
+        en-gb: Coffee Removable Filter Holder for Speciality Coffee Maker
+        en-nl: Koffie Verwijderbare Filterhouder voor Speciale Koffiezetapparaat
+        en-nz: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        en-us: Coffee Removable Filter Holder for Specialty Coffee Maker
+        fr-ca: Porte-filtre amovible pour cafetière spécialisée
+        fr-ch: Porte-filtre amovible pour cafetière spécialisée
+        fr-fr: Porte-filtre amovible pour cafetière spécialisée
+        ja-jp: スペシャルティコーヒーメーカー用コーヒー取り外し可能フィルターホルダー
+        nl-nl: Koffie Verwijderbare Filterhouder voor Speciale Koffiezetapparaat
+        sv-se: Avtagbar filterhållare för kaffe till specialkaffebryggare
+        ar-uae: حامل فلتر قابل للإزالة لصانع القهوة المتخصص
+    rating:
+      type: number
+      value: '4.2'
+    ogImage:
+      type: asset
+      value:
+        - _id: 61c6397d-6746-4225-9adb-9841e84b6756
+          type: image
+          fields:
+            id:
+              type: text
+              value: 7b12c50f-be10-446f-899c-70bca80a7c55
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/1xRHDTT8SoS2SwtSG5XdmQ-coffee-removable-filter-holder-1.png
+              type: text
+            file:
+              type: file
+              value: fa86ebbf-0771-474a-a717-b4c0fff8eb9b
+            size:
+              value: 61687
+              type: number
+            title:
+              type: text
+              value: coffee-removable-filter-holder-1.png
+            width:
+              value: 800
+              type: number
+            height:
+              value: 600
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-42e91a5d-1821-4127-a924-81c0f5c8a36a-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: 7af1be25-f4e5-4c11-b2fc-98db0b8c53bf
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '148'
+            price:
+              type: number
+              locales:
+                da-dk: '12.95'
+                de-at: '12.95'
+                de-ch: '12.95'
+                de-de: '12.95'
+                en-au: '12.95'
+                en-ca: '12.95'
+                en-gb: '12.95'
+                en-nl: '12.95'
+                en-nz: '12.95'
+                en-us: '12.95'
+                fr-ca: '12.95'
+                fr-ch: '12.95'
+                fr-fr: '12.95'
+                ja-jp: '12.95'
+                nl-nl: '12.95'
+                sv-se: '12.95'
+                ar-uae: '12.95'
+            title:
+              type: text
+              locales:
+                da-dk: Udtagelig filterholder til kaffe til specialkaffemaskine
+                de-at: >-
+                  Kaffee Abnehmbarer Filterhalter für
+                  Spezialitäten-Kaffeemaschine
+                de-ch: >-
+                  Kaffee Abnehmbarer Filterhalter für
+                  Spezialitäten-Kaffeemaschine
+                de-de: >-
+                  Kaffee Abnehmbarer Filterhalter für
+                  Spezialitäten-Kaffeemaschine
+                en-au: Porte-filtre amovible pour cafetière spécialisée
+                en-ca: Coffee Removable Filter Holder for Specialty Coffee Maker
+                en-gb: Coffee Removable Filter Holder for Speciality Coffee Maker
+                en-nl: >-
+                  Koffie Verwijderbare Filterhouder voor Speciale
+                  Koffiezetapparaat
+                en-nz: >-
+                  Kaffee Abnehmbarer Filterhalter für
+                  Spezialitäten-Kaffeemaschine
+                en-us: Coffee Removable Filter Holder for Specialty Coffee Maker
+                fr-ca: Porte-filtre amovible pour cafetière spécialisée
+                fr-ch: Porte-filtre amovible pour cafetière spécialisée
+                fr-fr: Porte-filtre amovible pour cafetière spécialisée
+                ja-jp: スペシャルティコーヒーメーカー用コーヒー取り外し可能フィルターホルダー
+                nl-nl: >-
+                  Verwijderbare Filterhouder voor Koffie voor Specialty
+                  Koffiezetapparaat
+                sv-se: Avtagbar filterhållare för specialkaffebryggare
+                ar-uae: حامل فلتر قابل للإزالة لصانع القهوة المتخصص
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: d6832117-3c84-4bda-a930-43d3bf35ede5
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 7b12c50f-be10-446f-899c-70bca80a7c55
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/1xRHDTT8SoS2SwtSG5XdmQ-coffee-removable-filter-holder-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: fa86ebbf-0771-474a-a717-b4c0fff8eb9b
+                    size:
+                      value: 61687
+                      type: number
+                    title:
+                      type: text
+                      value: coffee-removable-filter-holder-1.png
+                    width:
+                      value: 800
+                      type: number
+                    height:
+                      value: 600
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Udtagelig filterholder til kaffe til specialkaffemaskine
+        de-at: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        de-ch: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        de-de: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        en-au: Porte-filtre amovible pour cafetière spécialisée
+        en-ca: Coffee Removable Filter Holder for Specialty Coffee Maker
+        en-gb: Coffee Removable Filter Holder for Speciality Coffee Maker
+        en-nl: Koffie Verwijderbare Filterhouder voor Speciale Koffiezetapparaat
+        en-nz: Kaffee Abnehmbarer Filterhalter für Spezialitäten-Kaffeemaschine
+        en-us: Coffee Removable Filter Holder for Specialty Coffee Maker
+        fr-ca: Porte-filtre amovible pour cafetière spécialisée
+        fr-ch: Porte-filtre amovible pour cafetière spécialisée
+        fr-fr: Porte-filtre amovible pour cafetière spécialisée
+        ja-jp: スペシャルティコーヒーメーカー用コーヒー取り外し可能フィルターホルダー
+        nl-nl: Koffie Verwijderbare Filterhouder voor Speciale Koffiezetapparaat
+        sv-se: Avtagbar filterhållare för specialkaffebryggare
+        ar-uae: حامل فلتر قابل للإزالة لصانعة القهوة المتخصصة
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: 61c6397d-6746-4225-9adb-9841e84b6756
+          type: image
+          fields:
+            id:
+              type: text
+              value: 7b12c50f-be10-446f-899c-70bca80a7c55
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/1xRHDTT8SoS2SwtSG5XdmQ-coffee-removable-filter-holder-1.png
+              type: text
+            file:
+              type: file
+              value: fa86ebbf-0771-474a-a717-b4c0fff8eb9b
+            size:
+              value: 61687
+              type: number
+            title:
+              type: text
+              value: coffee-removable-filter-holder-1.png
+            width:
+              value: 800
+              type: number
+            height:
+              value: 600
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Problemfri brygning med vores aftagelige kaffefilterholder—perfekt til
+          specialkaffemaskiner og nem rengøring.
+        de-at: >-
+          Müheloses Brühen mit unserem abnehmbaren Kaffeefilterhalter—perfekt
+          für Spezialitäten-Kaffeemaschinen und einfache Reinigung.
+        de-ch: >-
+          Müheloses Brühen mit unserem herausnehmbaren
+          Kaffeefilterhalter—perfekt für Spezialitäten-Kaffeemaschinen und
+          einfache Reinigung.
+        de-de: >-
+          Müheloses Brühen mit unserem herausnehmbaren
+          Kaffeefilterhalter—perfekt für Spezialitäten-Kaffeemaschinen und
+          einfache Reinigung.
+        en-au: >-
+          Une infusion sans effort avec notre Porte-Filtre Amovible pour
+          Café—parfait pour les machines à café spécialisées et un nettoyage
+          facile.
+        en-ca: >-
+          Effortless brewing with our Coffee Removable Filter Holder—perfect for
+          specialty coffee makers and easy cleaning.
+        en-gb: >-
+          Effortless brewing with our Coffee Removable Filter Holder—perfect for
+          speciality coffee makers and easy cleaning.
+        en-nl: >-
+          Moeiteloos brouwen met onze Koffie Verwijderbare Filterhouder—perfect
+          voor speciale koffiemachines en eenvoudig schoonmaken.
+        en-nz: >-
+          Müheloses Brühen mit unserem abnehmbaren Kaffeefilterhalter—perfekt
+          für Spezialitäten-Kaffeemaschinen und einfache Reinigung.
+        en-us: >-
+          Effortless brewing with our Coffee Removable Filter Holder—perfect for
+          specialty coffee makers and easy cleaning.
+        fr-ca: >-
+          Infusion sans effort avec notre porte-filtre amovible pour
+          cafetière—parfait pour les cafetières spécialisées et un nettoyage
+          facile.
+        fr-ch: >-
+          Préparation sans effort avec notre Porte-filtre Amovible pour
+          Café—parfait pour les cafetières spécialisées et un nettoyage facile.
+        fr-fr: >-
+          Préparation sans effort avec notre Porte-filtre Amovible pour
+          Café—parfait pour les cafetières spécialisées et un nettoyage facile.
+        ja-jp: スペシャルティコーヒーメーカーに最適で、簡単に洗えるコーヒー用取り外し可能フィルターホルダーで手間いらずの抽出を。
+        nl-nl: >-
+          Moeiteloos brouwen met onze Koffie Verwijderbare Filterhouder—perfect
+          voor speciale koffiemachines en eenvoudig schoon te maken.
+        sv-se: >-
+          Enkel bryggning med vår avtagbara kaffefilterhållare—perfekt för
+          specialkaffemaskiner och enkel rengöring.
+        ar-uae: >-
+          تحضير القهوة بسهولة مع حامل الفلتر القابل للإزالة—مثالي لصانعي القهوة
+          المتخصصين وسهل التنظيف.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Filterholderen til kaffe er designet til specialkaffemaskiner og
+          tilbyder nem indsætning og fjernelse for en problemfri bryggeoplevelse
+          og enkel rengøring.
+        de-at: >-
+          Der abnehmbare Kaffeefilterhalter ist für
+          Spezialitäten-Kaffeemaschinen konzipiert und ermöglicht ein einfaches
+          Einsetzen und Entfernen für ein nahtloses Brüherlebnis und eine
+          einfache Reinigung.
+        de-ch: >-
+          Der herausnehmbare Kaffeefilterhalter ist für
+          Spezialitäten-Kaffeemaschinen konzipiert und bietet eine einfache
+          Einfügung und Entnahme für ein nahtloses Brüherlebnis und eine
+          unkomplizierte Reinigung.
+        de-de: >-
+          Der herausnehmbare Kaffeefilterhalter ist für
+          Spezialitäten-Kaffeemaschinen konzipiert und bietet eine einfache
+          Einfügung und Entnahme für ein nahtloses Brüherlebnis und eine
+          unkomplizierte Reinigung.
+        en-au: >-
+          Le Porte-Filtre Amovible pour Café est conçu pour les machines à café
+          spécialisées, offrant une insertion et un retrait faciles pour une
+          expérience de préparation sans faille et un nettoyage simple.
+        en-ca: >-
+          The Coffee Removable Filter Holder is designed for specialty coffee
+          makers, offering easy insertion and removal for a seamless brewing
+          experience and simple cleaning.
+        en-gb: >-
+          The Coffee Removable Filter Holder is designed for speciality coffee
+          makers, offering easy insertion and removal for a seamless brewing
+          experience and simple cleaning.
+        en-nl: >-
+          De Koffie Verwijderbare Filterhouder is ontworpen voor speciale
+          koffiemachines en biedt eenvoudige plaatsing en verwijdering voor een
+          naadloze zetervaring en eenvoudige reiniging.
+        en-nz: >-
+          Der abnehmbare Kaffeefilterhalter ist für
+          Spezialitäten-Kaffeemaschinen konzipiert und ermöglicht ein einfaches
+          Einsetzen und Entfernen für ein nahtloses Brüherlebnis und eine
+          einfache Reinigung.
+        en-us: >-
+          The Coffee Removable Filter Holder is designed for specialty coffee
+          makers, offering easy insertion and removal for a seamless brewing
+          experience and simple cleaning.
+        fr-ca: >-
+          Le porte-filtre amovible pour café est conçu pour les cafetières
+          spécialisées, offrant une insertion et un retrait faciles pour une
+          expérience de préparation sans faille et un nettoyage simple.
+        fr-ch: >-
+          Le porte-filtre amovible pour café est conçu pour les cafetières
+          spécialisées, offrant une insertion et un retrait faciles pour une
+          expérience de préparation sans faille et un nettoyage simple.
+        fr-fr: >-
+          Le porte-filtre amovible pour café est conçu pour les cafetières
+          spécialisées, offrant une insertion et un retrait faciles pour une
+          expérience de préparation sans faille et un nettoyage simple.
+        ja-jp: >-
+          コーヒー用取り外し可能なフィルターホルダーは、スペシャルティコーヒーメーカー向けに設計されており、シームレスな抽出体験と簡単な清掃のために簡単に挿入および取り外しができます。
+        nl-nl: >-
+          De Koffie Verwijderbare Filterhouder is ontworpen voor speciale
+          koffiemachines en biedt eenvoudige plaatsing en verwijdering voor een
+          naadloze zetervaring en eenvoudige reiniging.
+        sv-se: >-
+          Filterhållare för kaffe är designad för specialkaffebryggare och
+          erbjuder enkel insättning och borttagning för en smidig
+          bryggupplevelse och enkel rengöring.
+        ar-uae: >-
+          حامل فلتر القهوة القابل للإزالة مصمم لصانعي القهوة المتخصصين، مما يوفر
+          سهولة الإدخال والإزالة لتجربة تخمير سلسة وتنظيف بسيط.
+  _dataResources:
+    ref-42e91a5d-1821-4127-a924-81c0f5c8a36a-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-42e91a5d-1821-4127-a924-81c0f5c8a36a-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

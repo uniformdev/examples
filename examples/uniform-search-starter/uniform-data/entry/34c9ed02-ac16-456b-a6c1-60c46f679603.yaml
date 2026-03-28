@@ -1,0 +1,1348 @@
+created: '2026-03-10T23:34:02.032757+00:00'
+modified: '2026-03-10T23:34:02.032757+00:00'
+pattern: false
+entry:
+  _id: 34c9ed02-ac16-456b-a6c1-60c46f679603
+  _name: Glass Carafe & Brew-Through Lid
+  _slug: glass-carafe-and-brew-through-lid
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/gxjb6l60SqCfRMlcdTzQEQ-glass-carafe-brew-through-lid-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Forbedr din specialkaffeoplevelse med glaskaraffel og
+                      bryglåg, designet til at komplementere din kaffemaskine af
+                      høj kvalitet. Denne karaffel er designet med holdbart,
+                      varmebestandigt glas for at bevare integriteten af din
+                      bryg, hvilket sikrer en ren og fyldig smag. Det
+                      medfølgende bryglåg gør det muligt at brygge direkte i
+                      karaflen og gør servering enkel, samtidig med at det
+                      hjælper med at bevare varme og aroma for en mere behagelig
+                      kaffeoplevelse.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Uanset om du brygger en enkelt kop eller serverer gæster,
+                      giver denne karaffel en elegant og funktionel løsning til
+                      enhver kaffesituation. Dens slanke design passer perfekt
+                      ind i dit køkken, mens den robuste konstruktion sikrer
+                      langvarig brug. Ideel til kaffeelskere, der værdsætter
+                      både æstetik og funktion, er glaskaraffel og bryglåg en
+                      essentiel tilføjelse til dit specialkaffemaskine-setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Spezialitätenkaffee-Erlebnis mit der
+                      Glaskaraffe & dem Durchbrühdeckel, die entwickelt wurden,
+                      um Ihre hochwertige Kaffeemaschine zu ergänzen. Diese
+                      Karaffe ist aus langlebigem, hitzebeständigem Glas
+                      gefertigt, um die Integrität Ihres Kaffees zu bewahren und
+                      einen reinen und vollmundigen Geschmack zu gewährleisten.
+                      Der mitgelieferte Durchbrühdeckel ermöglicht müheloses
+                      Brühen direkt in die Karaffe und erleichtert das
+                      Servieren, während er gleichzeitig hilft, Wärme und Aroma
+                      zu bewahren, für ein angenehmeres Kaffeeerlebnis.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ob Sie eine einzelne Tasse brühen oder Gäste bedienen,
+                      diese Karaffe bietet eine elegante und funktionale Lösung
+                      für jede Kaffeesituation. Ihr schlankes Design fügt sich
+                      nahtlos in Ihre Küche ein, während die robuste
+                      Konstruktion eine lange Lebensdauer gewährleistet. Ideal
+                      für Kaffeeliebhaber, die sowohl Wert auf Ästhetik als auch
+                      auf Funktion legen, ist die Glaskaraffe & der
+                      Durchbrühdeckel eine wesentliche Ergänzung für Ihr
+                      Spezialitätenkaffeemaschinen-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Spezialitätenkaffee-Erlebnis mit der
+                      Glaskaraffe & Durchbrühdeckel, die entwickelt wurde, um
+                      Ihre hochwertige Kaffeemaschine zu ergänzen. Diese Karaffe
+                      ist aus strapazierfähigem, hitzebeständigem Glas
+                      gefertigt, um die Integrität Ihres Kaffees zu bewahren und
+                      einen reinen und vollmundigen Geschmack zu gewährleisten.
+                      Der mitgelieferte Durchbrühdeckel ermöglicht müheloses
+                      Brühen direkt in die Karaffe und erleichtert das
+                      Servieren, während er gleichzeitig hilft, Wärme und Aroma
+                      für ein angenehmeres Kaffeeerlebnis zu bewahren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Egal, ob Sie eine einzelne Tasse brühen oder Gäste
+                      bedienen, diese Karaffe bietet eine elegante und
+                      funktionale Lösung für jede Kaffeesituation. Ihr schlankes
+                      Design fügt sich nahtlos in Ihre Küche ein, während die
+                      robuste Konstruktion eine lange Lebensdauer gewährleistet.
+                      Ideal für Kaffeeliebhaber, die sowohl Ästhetik als auch
+                      Funktion schätzen, ist die Glaskaraffe & Durchbrühdeckel
+                      eine wesentliche Ergänzung für Ihr
+                      Spezialitätenkaffeemaschinen-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Spezialitätenkaffee-Erlebnis mit der
+                      Glaskaraffe & Durchbrühdeckel, die entwickelt wurde, um
+                      Ihre hochwertige Kaffeemaschine zu ergänzen. Diese Karaffe
+                      ist aus strapazierfähigem, hitzebeständigem Glas
+                      gefertigt, um die Integrität Ihres Kaffees zu bewahren und
+                      einen reinen und vollmundigen Geschmack zu gewährleisten.
+                      Der mitgelieferte Durchbrühdeckel ermöglicht müheloses
+                      Brühen direkt in die Karaffe und erleichtert das
+                      Servieren, während er gleichzeitig hilft, Wärme und Aroma
+                      für ein angenehmeres Kaffeeerlebnis zu bewahren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Egal, ob Sie eine einzelne Tasse brühen oder Gäste
+                      bedienen, diese Karaffe bietet eine elegante und
+                      funktionale Lösung für jede Kaffeesituation. Ihr schlankes
+                      Design fügt sich nahtlos in Ihre Küche ein, während die
+                      robuste Konstruktion eine lange Lebensdauer gewährleistet.
+                      Ideal für Kaffeeliebhaber, die sowohl Ästhetik als auch
+                      Funktion schätzen, ist die Glaskaraffe & Durchbrühdeckel
+                      eine wesentliche Ergänzung für Ihr
+                      Spezialitätenkaffeemaschinen-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de café de spécialité avec la
+                      Carafe en Verre et le Couvercle de Filtration, conçus pour
+                      compléter votre cafetière de haute qualité. Cette carafe
+                      est fabriquée en verre durable et résistant à la chaleur
+                      pour maintenir l'intégrité de votre infusion, garantissant
+                      une saveur pure et corsée. Le couvercle de filtration
+                      inclus permet une infusion sans effort directement dans la
+                      carafe et facilite le service, tout en aidant à conserver
+                      la chaleur et l'arôme pour une expérience café plus
+                      agréable.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous prépariez une tasse unique ou serviez des
+                      invités, cette carafe offre une solution élégante et
+                      fonctionnelle pour tout environnement de café. Son design
+                      épuré s'intègre parfaitement dans votre cuisine tandis que
+                      sa construction robuste assure une utilisation durable.
+                      Idéale pour les amateurs de café qui apprécient à la fois
+                      l'esthétique et la fonctionnalité, la Carafe en Verre et
+                      le Couvercle de Filtration est un ajout essentiel à votre
+                      installation de cafetière de spécialité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de café de spécialité avec la
+                      Carafe en Verre et le Couvercle de Filtration, conçus pour
+                      compléter votre cafetière de haute qualité. Cette carafe
+                      est fabriquée en verre durable et résistant à la chaleur
+                      pour maintenir l'intégrité de votre infusion, garantissant
+                      une saveur pure et corsée. Le couvercle de filtration
+                      inclus permet une infusion sans effort directement dans la
+                      carafe et facilite le service, tout en aidant à retenir la
+                      chaleur et l'arôme pour une expérience café plus agréable.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous prépariez une seule tasse ou que vous serviez des
+                      invités, cette carafe offre une solution élégante et
+                      fonctionnelle pour tout environnement de café. Son design
+                      épuré s'intègre parfaitement dans votre cuisine tandis que
+                      sa construction robuste assure une utilisation durable.
+                      Idéale pour les amateurs de café qui apprécient à la fois
+                      l'esthétique et la fonctionnalité, la Carafe en Verre et
+                      le Couvercle de Filtration est un ajout essentiel à votre
+                      installation de cafetière de spécialité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Enhance your speciality coffee experience with the Glass
+                      Carafe & Brew-Through Lid, crafted to complement your
+                      high-quality coffee maker. This carafe is designed with
+                      durable, heat-resistant glass to maintain the integrity of
+                      your brew, ensuring a pure and full-bodied flavour. The
+                      included brew-through lid allows for effortless brewing
+                      directly into the carafe and makes serving simple, while
+                      also helping to retain heat and aroma for a more enjoyable
+                      coffee experience.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Whether you're brewing a single cup or serving guests,
+                      this carafe provides an elegant and functional solution
+                      for any coffee setting. Its sleek design fits seamlessly
+                      into your kitchen while the sturdy construction ensures
+                      long-lasting use. Ideal for coffee lovers who value both
+                      aesthetics and function, the Glass Carafe & Brew-Through
+                      Lid is an essential addition to your speciality coffee
+                      maker setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verhoog uw speciale koffie-ervaring met de Glazen Karaf &
+                      Doorzetdeksel, ontworpen om uw hoogwaardige
+                      koffiezetapparaat aan te vullen. Deze karaf is gemaakt van
+                      duurzaam, hittebestendig glas om de integriteit van uw
+                      brouwsel te behouden, wat zorgt voor een pure en volle
+                      smaak. De meegeleverde doorzetdeksel maakt moeiteloos
+                      direct in de karaf brouwen mogelijk en maakt serveren
+                      eenvoudig, terwijl het ook helpt om warmte en aroma te
+                      behouden voor een aangenamere koffie-ervaring.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Of u nu een enkele kop zet of gasten bedient, deze karaf
+                      biedt een elegante en functionele oplossing voor elke
+                      koffiesetting. Het slanke ontwerp past naadloos in uw
+                      keuken, terwijl de stevige constructie zorgt voor
+                      langdurig gebruik. Ideaal voor koffieliefhebbers die zowel
+                      esthetiek als functionaliteit waarderen, de Glazen Karaf &
+                      Doorzetdeksel is een essentiële aanvulling op uw speciale
+                      koffiezetapparaat.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verbessern Sie Ihr Spezialitätenkaffee-Erlebnis mit der
+                      Glaskaraffe und dem Durchbrühdeckel, die entwickelt
+                      wurden, um Ihre hochwertige Kaffeemaschine zu ergänzen.
+                      Diese Karaffe ist aus strapazierfähigem, hitzebeständigem
+                      Glas gefertigt, um die Integrität Ihres Kaffees zu
+                      bewahren und einen reinen, vollmundigen Geschmack zu
+                      gewährleisten. Der mitgelieferte Durchbrühdeckel
+                      ermöglicht müheloses Brühen direkt in die Karaffe und
+                      erleichtert das Servieren, während er gleichzeitig hilft,
+                      Wärme und Aroma zu bewahren, für ein angenehmeres
+                      Kaffeeerlebnis.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Egal, ob Sie eine einzelne Tasse brühen oder Gäste
+                      bedienen, diese Karaffe bietet eine elegante und
+                      funktionale Lösung für jede Kaffeesituation. Ihr schlankes
+                      Design fügt sich nahtlos in Ihre Küche ein, während die
+                      robuste Konstruktion eine lange Lebensdauer gewährleistet.
+                      Ideal für Kaffeeliebhaber, die sowohl Ästhetik als auch
+                      Funktion schätzen, ist die Glaskaraffe mit Durchbrühdeckel
+                      eine unverzichtbare Ergänzung für Ihr
+                      Spezialitätenkaffee-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Enhance your specialty coffee experience with the Glass
+                      Carafe & Brew-Through Lid, crafted to complement your
+                      high-quality coffee maker. This carafe is designed with
+                      durable, heat-resistant glass to maintain the integrity of
+                      your brew, ensuring a pure and full-bodied flavor. The
+                      included brew-through lid allows for effortless brewing
+                      directly into the carafe and makes serving simple, while
+                      also helping to retain heat and aroma for a more enjoyable
+                      coffee experience.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Whether you're brewing a single cup or serving guests,
+                      this carafe provides an elegant and functional solution
+                      for any coffee setting. Its sleek design fits seamlessly
+                      into your kitchen while the sturdy construction ensures
+                      long-lasting use. Ideal for coffee lovers who value both
+                      aesthetics and function, the Glass Carafe & Brew-Through
+                      Lid is an essential addition to your specialty coffee
+                      maker setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de café de spécialité avec la
+                      carafe en verre et le couvercle à infusion, conçus pour
+                      compléter votre cafetière de haute qualité. Cette carafe
+                      est fabriquée en verre durable et résistant à la chaleur
+                      pour maintenir l'intégrité de votre infusion, garantissant
+                      une saveur pure et corsée. Le couvercle à infusion inclus
+                      permet une infusion sans effort directement dans la carafe
+                      et facilite le service, tout en aidant à retenir la
+                      chaleur et l'arôme pour une expérience café plus agréable.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous prépariez une seule tasse ou que vous serviez des
+                      invités, cette carafe offre une solution élégante et
+                      fonctionnelle pour tout cadre de café. Son design épuré
+                      s'intègre parfaitement dans votre cuisine tandis que sa
+                      construction robuste assure une utilisation durable.
+                      Idéale pour les amateurs de café qui apprécient à la fois
+                      l'esthétique et la fonctionnalité, la carafe en verre et
+                      le couvercle à infusion sont un ajout essentiel à votre
+                      installation de cafetière de spécialité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de café de spécialité avec la
+                      carafe en verre et le couvercle à infusion, conçus pour
+                      compléter votre cafetière de haute qualité. Cette carafe
+                      est conçue avec du verre durable et résistant à la chaleur
+                      pour maintenir l'intégrité de votre infusion, garantissant
+                      une saveur pure et corsée. Le couvercle à infusion inclus
+                      permet une infusion sans effort directement dans la carafe
+                      et facilite le service, tout en aidant à retenir la
+                      chaleur et l'arôme pour une expérience café plus agréable.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous prépariez une seule tasse ou serviez des invités,
+                      cette carafe offre une solution élégante et fonctionnelle
+                      pour tout cadre de café. Son design élégant s'intègre
+                      parfaitement dans votre cuisine tandis que sa construction
+                      robuste assure une utilisation durable. Idéale pour les
+                      amateurs de café qui apprécient à la fois l'esthétique et
+                      la fonctionnalité, la carafe en verre et le couvercle à
+                      infusion sont un ajout essentiel à votre installation de
+                      cafetière de spécialité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Améliorez votre expérience de café de spécialité avec la
+                      carafe en verre et le couvercle à infusion, conçus pour
+                      compléter votre cafetière de haute qualité. Cette carafe
+                      est conçue avec du verre durable et résistant à la chaleur
+                      pour maintenir l'intégrité de votre infusion, garantissant
+                      une saveur pure et corsée. Le couvercle à infusion inclus
+                      permet une infusion sans effort directement dans la carafe
+                      et facilite le service, tout en aidant à retenir la
+                      chaleur et l'arôme pour une expérience café plus agréable.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous prépariez une seule tasse ou serviez des invités,
+                      cette carafe offre une solution élégante et fonctionnelle
+                      pour tout cadre de café. Son design élégant s'intègre
+                      parfaitement dans votre cuisine tandis que sa construction
+                      robuste assure une utilisation durable. Idéale pour les
+                      amateurs de café qui apprécient à la fois l'esthétique et
+                      la fonctionnalité, la carafe en verre et le couvercle à
+                      infusion sont un ajout essentiel à votre installation de
+                      cafetière de spécialité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      高品質なコーヒーメーカーを引き立てるように作られた、ガラスカラフェ＆ブリュー・スルー・リッドで、スペシャルティコーヒーの体験を向上させましょう。このカラフェは、耐熱性のある丈夫なガラスで設計されており、抽出の品質を保ち、純粋でコクのある風味を確保します。付属のブリュー・スルー・リッドは、カラフェに直接抽出できるようにし、サーブを簡単にするだけでなく、熱と香りを保つことで、より楽しいコーヒー体験を提供します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      一杯だけ淹れる場合でも、ゲストに振る舞う場合でも、このカラフェはどんなコーヒーシーンにもエレガントで機能的なソリューションを提供します。その洗練されたデザインはキッチンに自然に溶け込み、頑丈な構造は長持ちする使用を保証します。美しさと機能性の両方を重視するコーヒー愛好家に最適な、ガラスカラフェ＆ブリュー・スルー・リッドは、スペシャルティコーヒーメーカーのセットアップに欠かせないアイテムです。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verhoog je specialty koffie-ervaring met de Glazen Karaf &
+                      Brew-Through Deksel, ontworpen om je hoogwaardige
+                      koffiezetapparaat aan te vullen. Deze karaf is gemaakt van
+                      duurzaam, hittebestendig glas om de integriteit van je
+                      brouwsel te behouden, wat zorgt voor een pure en volle
+                      smaak. Het meegeleverde brew-through deksel maakt
+                      moeiteloos brouwen direct in de karaf mogelijk en maakt
+                      serveren eenvoudig, terwijl het ook helpt om warmte en
+                      aroma te behouden voor een aangenamere koffie-ervaring.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Of je nu een enkele kop zet of gasten bedient, deze karaf
+                      biedt een elegante en functionele oplossing voor elke
+                      koffiesetting. Het slanke ontwerp past naadloos in je
+                      keuken, terwijl de stevige constructie zorgt voor
+                      langdurig gebruik. Ideaal voor koffieliefhebbers die zowel
+                      esthetiek als functie waarderen, de Glazen Karaf &
+                      Brew-Through Deksel is een essentiële aanvulling op je
+                      specialty koffiezetapparaat setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Förbättra din specialkaffeupplevelse med Glaskaraffen &
+                      Brygglocket, utformad för att komplettera din
+                      högkvalitativa kaffebryggare. Denna karaff är designad med
+                      hållbart, värmebeständigt glas för att bevara bryggningens
+                      integritet och säkerställa en ren och fyllig smak. Det
+                      medföljande brygglocket möjliggör enkel bryggning direkt i
+                      karaffen och gör serveringen enkel, samtidigt som det
+                      hjälper till att behålla värme och arom för en mer njutbar
+                      kaffeupplevelse.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Oavsett om du brygger en enda kopp eller serverar gäster,
+                      erbjuder denna karaff en elegant och funktionell lösning
+                      för alla kaffesammanhang. Dess eleganta design passar
+                      sömlöst in i ditt kök medan den robusta konstruktionen
+                      säkerställer långvarig användning. Perfekt för
+                      kaffeälskare som värdesätter både estetik och funktion, är
+                      Glaskaraffen & Brygglocket ett viktigt tillskott till din
+                      specialkaffebryggaruppsättning.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      عزز تجربتك مع القهوة المتخصصة باستخدام دورق الزجاج وغطاء
+                      التخمير، المصمم ليتكامل مع ماكينة القهوة عالية الجودة
+                      الخاصة بك. تم تصميم هذا الدورق بزجاج متين ومقاوم للحرارة
+                      للحفاظ على نقاء قهوتك، مما يضمن نكهة نقية وغنية. يتيح
+                      الغطاء المرفق بالتخمير السهل مباشرة في الدورق ويسهل
+                      التقديم، بينما يساعد أيضًا في الاحتفاظ بالحرارة والنكهة
+                      لتجربة قهوة أكثر متعة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      سواء كنت تقوم بتخمير كوب واحد أو تقديم الضيوف، يوفر هذا
+                      الدورق حلاً أنيقًا وعمليًا لأي إعداد قهوة. يتناسب تصميمه
+                      الأنيق بسلاسة مع مطبخك بينما يضمن البناء القوي استخدامًا
+                      طويل الأمد. مثالي لعشاق القهوة الذين يقدرون الجمال
+                      والوظيفة، يعتبر دورق الزجاج وغطاء التخمير إضافة أساسية
+                      لإعداد ماكينة القهوة المتخصصة لديك.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Glaskaraffel & Bryggelåg
+        de-at: Glaskaraffe & Durchbrühdeckel
+        de-ch: Glaskaraffe & Durchbrühdeckel
+        de-de: Glaskaraffe & Durchbrühdeckel
+        en-au: Carafe en Verre et Couvercle à Infusion
+        en-ca: Glass Carafe & Brew-Through Lid
+        en-gb: Glass Carafe & Brew-Through Lid
+        en-nl: Glazen Karaf & Zetdeksel
+        en-nz: Glaskaraffe & Durchbrühdeckel
+        en-us: Glass Carafe & Brew-Through Lid
+        fr-ca: Carafe en verre et couvercle à infusion
+        fr-ch: Carafe en Verre & Couvercle à Infusion
+        fr-fr: Carafe en Verre & Couvercle à Infusion
+        ja-jp: ガラスカラフェ & ブリュースルーリッド
+        nl-nl: Glazen Karaf & Zetdeksel
+        sv-se: Glaskaraff & Brygglock
+        ar-uae: زجاج إبريق وغطاء تخمير
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-34c9ed02-ac16-456b-a6c1-60c46f679603-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Glaskaraffel & Bryggelåg
+        de-at: Glaskaraffe & Durchbrühdeckel
+        de-ch: Glaskaraffe & Brühdeckel
+        de-de: Glaskaraffe & Brühdeckel
+        en-au: Carafe en Verre & Couvercle Infuseur
+        en-ca: Glass Carafe & Brew-Through Lid
+        en-gb: Glass Carafe & Brew-Through Lid
+        en-nl: Glazen Karaf & Zetdeksel
+        en-nz: Glaskaraffe & Brühdeckel
+        en-us: Glass Carafe & Brew-Through Lid
+        fr-ca: Carafe en verre et couvercle à infusion
+        fr-ch: Carafe en Verre & Couvercle de Filtration
+        fr-fr: Carafe en Verre & Couvercle de Filtration
+        ja-jp: ガラスカラフェ & ブリュー・スルーリッド
+        nl-nl: Glazen Karaf & Zetdeksel
+        sv-se: Glaskaraff & Brygglock
+        ar-uae: زجاجة قهوة وغطاء تخمير
+    rating:
+      type: number
+      value: '3.7'
+    ogImage:
+      type: asset
+      value:
+        - _id: be8e82b0-31af-4f84-ab8f-9fc38a4650b3
+          type: image
+          fields:
+            id:
+              type: text
+              value: 1622156a-53b9-4bfe-a630-9010ee4892d8
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/e83d3ikkQqmWZvDz8foEfA-glass-carafe-brew-through-lid-1.png
+              type: text
+            file:
+              type: file
+              value: 51660e45-2758-4975-a3a5-b909a80aed8f
+            size:
+              value: 28194
+              type: number
+            title:
+              type: text
+              value: glass-carafe-brew-through-lid-1.png
+            width:
+              value: 570
+              type: number
+            height:
+              value: 467
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-34c9ed02-ac16-456b-a6c1-60c46f679603-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: 74ca92a6-3b9e-4328-b3a4-21c8d54d0829
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '146'
+            price:
+              type: number
+              locales:
+                da-dk: '24.95'
+                de-at: '24.95'
+                de-ch: '24.95'
+                de-de: '24.95'
+                en-au: '24.95'
+                en-ca: '24.95'
+                en-gb: '24.95'
+                en-nl: '24.95'
+                en-nz: '24.95'
+                en-us: '24.95'
+                fr-ca: '24.95'
+                fr-ch: '24.95'
+                fr-fr: '24.95'
+                ja-jp: '24.95'
+                nl-nl: '24.95'
+                sv-se: '24.95'
+                ar-uae: '24.95'
+            title:
+              type: text
+              locales:
+                da-dk: Glaskaraffel & Bryggelåg
+                de-at: Glaskaraffe & Durchbrühdeckel
+                de-ch: Glaskaraffe & Brühdeckel
+                de-de: Glaskaraffe & Brühdeckel
+                en-au: Carafe en Verre & Couvercle de Préparation
+                en-ca: Glass Carafe & Brew-Through Lid
+                en-gb: Glass Carafe & Brew-Through Lid
+                en-nl: Glazen Karaf & Zetdeksel
+                en-nz: Glaskaraffe & Durchbrühdeckel
+                en-us: Glass Carafe & Brew-Through Lid
+                fr-ca: Carafe en verre et couvercle à infusion
+                fr-ch: Carafe en Verre & Couvercle Infuseur
+                fr-fr: Carafe en Verre & Couvercle Infuseur
+                ja-jp: ガラスカラフェ＆ブリュースルーリッド
+                nl-nl: Glazen Karaf & Doorzetdeksel
+                sv-se: Glaskaraff & Brygglock
+                ar-uae: إبريق زجاجي وغطاء للتخمير
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: 48f29b72-c624-4ef7-b36c-21e9be6f1652
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 1622156a-53b9-4bfe-a630-9010ee4892d8
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/e83d3ikkQqmWZvDz8foEfA-glass-carafe-brew-through-lid-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: 51660e45-2758-4975-a3a5-b909a80aed8f
+                    size:
+                      value: 28194
+                      type: number
+                    title:
+                      type: text
+                      value: glass-carafe-brew-through-lid-1.png
+                    width:
+                      value: 570
+                      type: number
+                    height:
+                      value: 467
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Glaskaraffel & Bryggelåg
+        de-at: Glaskaraffe & Durchbrühdeckel
+        de-ch: Glaskaraffe & Durchbrühdeckel
+        de-de: Glaskaraffe & Durchbrühdeckel
+        en-au: Carafe en Verre & Couvercle à Infusion
+        en-ca: Glass Carafe & Brew-Through Lid
+        en-gb: Glass Carafe & Brew-Through Lid
+        en-nl: Glazen Karaf & Zetdeksel
+        en-nz: Glaskaraffe & Brühdeckel
+        en-us: Glass Carafe & Brew-Through Lid
+        fr-ca: Carafe en Verre et Couvercle à Infusion
+        fr-ch: Carafe en Verre & Couvercle à Infusion
+        fr-fr: Carafe en Verre & Couvercle à Infusion
+        ja-jp: ガラスカラフェ & ブリュースルーリッド
+        nl-nl: Glazen Karaf & Zet-Door Deksel
+        sv-se: Glaskaraff & Brygglock
+        ar-uae: زجاج إبريق وغطاء تخمير
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: be8e82b0-31af-4f84-ab8f-9fc38a4650b3
+          type: image
+          fields:
+            id:
+              type: text
+              value: 1622156a-53b9-4bfe-a630-9010ee4892d8
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/e83d3ikkQqmWZvDz8foEfA-glass-carafe-brew-through-lid-1.png
+              type: text
+            file:
+              type: file
+              value: 51660e45-2758-4975-a3a5-b909a80aed8f
+            size:
+              value: 28194
+              type: number
+            title:
+              type: text
+              value: glass-carafe-brew-through-lid-1.png
+            width:
+              value: 570
+              type: number
+            height:
+              value: 467
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Elegant glaskarafel med bryggelåg til perfekt kaffebrygning og
+          servering, der forbedrer smagen med sit holdbare design.
+        de-at: >-
+          Elegante Glaskaraffe mit Durchbrühdeckel für perfektes Kaffeebrühen
+          und Servieren, verbessert den Geschmack durch ihr langlebiges Design.
+        de-ch: >-
+          Elegante Glaskaraffe mit Brühdeckel für perfektes Kaffeebrühen und
+          Servieren, verbessert den Geschmack durch ihr robustes Design.
+        de-de: >-
+          Elegante Glaskaraffe mit Brühdeckel für perfektes Kaffeebrühen und
+          Servieren, verbessert den Geschmack durch ihr robustes Design.
+        en-au: >-
+          Carafe en verre élégante avec couvercle à infusion pour une
+          préparation et un service de café parfaits, rehaussant la saveur grâce
+          à son design durable.
+        en-ca: >-
+          Sleek Glass Carafe with Brew-Through Lid for perfect coffee brewing
+          and serving, enhancing flavour with its durable design.
+        en-gb: >-
+          Sleek Glass Carafe with Brew-Through Lid for perfect coffee brewing
+          and serving, enhancing flavour with its durable design.
+        en-nl: >-
+          Stijlvolle glazen karaf met doorzetdeksel voor perfecte koffiezet- en
+          serveerervaring, verbetert de smaak met zijn duurzame ontwerp.
+        en-nz: >-
+          Elegante Glaskaraffe mit Durchbrühdeckel für perfektes Kaffeebrühen
+          und Servieren, verbessert den Geschmack durch ihr langlebiges Design.
+        en-us: >-
+          Sleek Glass Carafe with Brew-Through Lid for perfect coffee brewing
+          and serving, enhancing flavor with its durable design.
+        fr-ca: >-
+          Carafe en verre élégante avec couvercle à infusion pour un brassage et
+          un service de café parfaits, rehaussant la saveur grâce à son design
+          durable.
+        fr-ch: >-
+          Carafe en verre élégante avec couvercle à infusion pour un brassage et
+          un service de café parfaits, améliorant la saveur grâce à son design
+          durable.
+        fr-fr: >-
+          Carafe en verre élégante avec couvercle à infusion pour un brassage et
+          un service de café parfaits, améliorant la saveur grâce à son design
+          durable.
+        ja-jp: 完璧なコーヒー抽出とサービングのためのブリュー・スルー・リッド付きのスリークなガラスカラフェ。耐久性のあるデザインで風味を高めます。
+        nl-nl: >-
+          Slanke glazen karaf met doorzetdeksel voor perfecte koffiezetten en
+          serveren, verbetert de smaak met zijn duurzame ontwerp.
+        sv-se: >-
+          Elegant glaskaraff med brygglock för perfekt kaffebryggning och
+          servering, förbättrar smaken med sin hållbara design.
+        ar-uae: >-
+          قارورة زجاجية أنيقة مع غطاء تحضير مثالي لتحضير وتقديم القهوة، تعزز
+          النكهة بتصميمها المتين.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Glaskaraflen & Bryggelåg er designet til specialkaffemaskiner og
+          tilbyder problemfri brygning og servering med en elegant, holdbar
+          glaskonstruktion og et praktisk låg, der bevarer smagen.
+        de-at: >-
+          Die Glaskaraffe & der Durchbrühdeckel sind für
+          Spezialitäten-Kaffeemaschinen konzipiert und bieten nahtloses Brühen
+          und Servieren mit einer eleganten, langlebigen Glaskonstruktion und
+          einem praktischen Deckel, der das Aroma einschließt.
+        de-ch: >-
+          Die Glaskaraffe & der Durchbrühdeckel sind für Spezialkaffeemaschinen
+          konzipiert und bieten nahtloses Brühen und Servieren mit einer
+          eleganten, langlebigen Glaskonstruktion und einem praktischen Deckel,
+          der das Aroma einschließt.
+        de-de: >-
+          Die Glaskaraffe & der Durchbrühdeckel sind für Spezialkaffeemaschinen
+          konzipiert und bieten nahtloses Brühen und Servieren mit einer
+          eleganten, langlebigen Glaskonstruktion und einem praktischen Deckel,
+          der das Aroma einschließt.
+        en-au: >-
+          La Carafe en Verre avec Couvercle à Infusion Directe est conçue pour
+          les cafetières spécialisées, offrant une infusion et un service sans
+          faille grâce à une construction en verre élégante et durable et un
+          couvercle pratique qui préserve la saveur.
+        en-ca: >-
+          The Glass Carafe & Brew-Through Lid is designed for specialty coffee
+          makers, offering seamless brewing and serving with a sleek, durable
+          glass construction and a convenient lid that locks in flavour.
+        en-gb: >-
+          The Glass Carafe & Brew-Through Lid is designed for speciality coffee
+          makers, offering seamless brewing and serving with a sleek, durable
+          glass construction and a convenient lid that locks in flavour.
+        en-nl: >-
+          De Glazen Karaf & Brew-Through Deksel is ontworpen voor speciale
+          koffiemachines en biedt naadloos brouwen en serveren met een slanke,
+          duurzame glazen constructie en een handig deksel dat de smaak
+          vasthoudt.
+        en-nz: >-
+          Die Glaskaraffe & der Durchbrühdeckel sind für Spezialkaffeemaschinen
+          konzipiert und bieten nahtloses Brühen und Servieren mit einer
+          eleganten, langlebigen Glaskonstruktion und einem praktischen Deckel,
+          der das Aroma bewahrt.
+        en-us: >-
+          The Glass Carafe & Brew-Through Lid is designed for specialty coffee
+          makers, offering seamless brewing and serving with a sleek, durable
+          glass construction and a convenient lid that locks in flavor.
+        fr-ca: >-
+          La Carafe en Verre avec Couvercle à Infusion est conçue pour les
+          cafetières spécialisées, offrant une infusion et un service sans
+          faille grâce à une construction en verre élégante et durable et un
+          couvercle pratique qui préserve la saveur.
+        fr-ch: >-
+          La Carafe en Verre avec Couvercle à Infusion est conçue pour les
+          machines à café spécialisées, offrant une infusion et un service sans
+          faille grâce à une construction en verre élégante et durable et un
+          couvercle pratique qui préserve la saveur.
+        fr-fr: >-
+          La Carafe en Verre avec Couvercle à Infusion est conçue pour les
+          machines à café spécialisées, offrant une infusion et un service sans
+          faille grâce à une construction en verre élégante et durable et un
+          couvercle pratique qui préserve la saveur.
+        ja-jp: >-
+          ガラスカラフェ＆ブリュー・スルー・リッドは、スペシャルティコーヒーメーカー向けに設計されており、洗練された耐久性のあるガラス構造と風味を閉じ込める便利な蓋で、シームレスな抽出とサービングを提供します。
+        nl-nl: >-
+          De Glazen Karaf & Brew-Through Deksel is ontworpen voor speciale
+          koffiemachines, en biedt naadloos brouwen en serveren met een slanke,
+          duurzame glazen constructie en een handig deksel dat de smaak
+          vasthoudt.
+        sv-se: >-
+          Glaskaraffen och brygglocket är designade för specialkaffebryggare och
+          erbjuder sömlös bryggning och servering med en elegant, hållbar
+          glaskonstruktion och ett praktiskt lock som bevarar smaken.
+        ar-uae: >-
+          إبريق الزجاج وغطاء التخمير مصمم لصانعي القهوة المتخصصين، حيث يوفر
+          تجربة تخمير وتقديم سلسة مع تصميم زجاجي أنيق ومتين وغطاء مريح يحافظ على
+          النكهة.
+  _dataResources:
+    ref-34c9ed02-ac16-456b-a6c1-60c46f679603-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-34c9ed02-ac16-456b-a6c1-60c46f679603-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

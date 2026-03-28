@@ -1,0 +1,154 @@
+id: product
+name: Product
+created: '2026-03-10T23:29:06.200553+00:00'
+updated: '2026-03-10T23:29:06.200553+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: name
+    name: Product Name
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: shortDescription
+    name: Short Description
+    type: text
+    typeConfig:
+      multiline: true
+      linesCount: 4
+    localizable: true
+  - id: body
+    name: Body
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h2
+          - h3
+          - h4
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - variable
+          - table
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+    localizable: true
+  - id: primaryImage
+    name: Primary Image
+    type: asset
+    typeConfig:
+      max: 1
+      min: 0
+  - id: 53c66f1e-0962-41e2-bc01-8892c265ae34
+    name: Taxonomy
+    type: group
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - rating
+        - category
+        - subcategory
+        - brand
+        - variants
+        - documentation
+  - id: rating
+    name: Rating
+    type: number
+    typeConfig:
+      max: '5'
+      min: '1'
+      decimal: true
+      required: true
+      decimalPlaces: '1'
+  - id: category
+    name: Category
+    type: contentReference
+    typeConfig:
+      required: true
+      allowedContentTypes:
+        - productCategory
+  - id: subcategory
+    name: Subcategory
+    type: contentReference
+    typeConfig:
+      allowedContentTypes:
+        - productCategory
+  - id: brand
+    name: Brand
+    type: contentReference
+    typeConfig:
+      allowedContentTypes:
+        - brand
+  - id: variants
+    name: Variants
+    type: $block
+    typeConfig:
+      min: 1
+      allowedTypes:
+        - $loop
+        - variant
+  - id: documentation
+    name: Documentation
+    type: asset
+    typeConfig:
+      allowedTypes:
+        - other
+    localizable: true
+  - id: enrichments
+    name: Enrichments
+    type: $enr
+    typeConfig: null
+  - id: 1803ee5c-829c-47a0-adbb-08dd2f0cd186
+    name: SEO
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - metaTitle
+        - metaDescription
+        - ogImage
+  - id: metaTitle
+    name: Meta Title
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: metaDescription
+    name: Meta Description
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: ogImage
+    name: Open Graph Image
+    type: asset
+    typeConfig:
+      max: 1
+      allowedTypes:
+        - image
+entryName: title
+thumbnailField: primaryImage
+description: ''
+icon: shopping-cart
+type: contentType
+permissions: []
+previewConfigurations:
+  - type: project-map
+    id: 702b0e0b-3858-4b5d-99e4-bdb98097ca0f
+    label: Product Detail Page
+    dynamicInputs:
+      locale: ${locale}
+      product-slug: ${#jptr:/entry/_slug}

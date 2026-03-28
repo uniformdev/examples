@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 2b92b553-0d54-4b6e-a64b-e58bbf32e117
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: jd-logo-black.png
+    file:
+      type: file
+      value: 0647121f-a6ce-4762-990d-d757629d2192
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/QmMa9a7rQpOmCs6O02O8_g-jd-logo-black.png
+      type: text
+    size:
+      value: 8074
+      type: number
+    width:
+      value: 627
+      type: number
+    height:
+      value: 150
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:35.986663+00:00'
+modified: '2026-03-10T23:26:35.986663+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 253e6ca5-a8d0-4084-a7ad-ad4481f9c587
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: chevron-right.svg
+    file:
+      type: file
+      value: 0ce47b34-f86b-4f68-b3d6-2f84c59d6f62
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/dXgo00G0R6G63MUDPQI57g-chevron-right.svg
+      type: text
+    size:
+      value: 269
+      type: number
+    width:
+      value: 24
+      type: number
+    height:
+      value: 24
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:33.302735+00:00'
+modified: '2026-03-10T23:26:33.302735+00:00'

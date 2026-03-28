@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: c38a6695-b6bc-41cd-a6b3-33ae76b95c60
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: cervello-di-caffe-the-ultimate-ai-powered-espresso.png
+    file:
+      type: file
+      value: a89fbc3a-2d32-4628-a840-30c0d2a6541a
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/k-hVwPU3SVClqlW-wHUMvg-cervello-di-caffe-the-ultimate-ai-powered-espresso.png
+      type: text
+    size:
+      value: 238075
+      type: number
+    width:
+      value: 1500
+      type: number
+    height:
+      value: 1500
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:02.112911+00:00'
+modified: '2026-03-10T23:28:02.112911+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: dd702947-d211-49fe-80cd-93c23ca30bf8
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: jd-logo-white.svg
+    file:
+      type: file
+      value: 257caedb-ebe8-4624-918f-61404c031b66
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/fTtQSVnJS4GcCVRomV2kQA-jd-logo-white.svg
+      type: text
+    size:
+      value: 5252
+      type: number
+    width:
+      value: 408
+      type: number
+    height:
+      value: 65
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:16.710481+00:00'
+modified: '2026-03-10T23:28:16.710481+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 4b8f3a23-e27e-4502-962c-851bf513d4ca
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: house-blend-coffee-1.png
+    file:
+      type: file
+      value: 8169cd0f-ca19-4608-bc37-b466ebf5121e
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/YPCiBQIyTEiGUcMMRKCNRg-house-blend-coffee-1.png
+      type: text
+    size:
+      value: 214912
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:53.141938+00:00'
+modified: '2026-03-10T23:26:53.141938+00:00'

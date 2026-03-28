@@ -1,0 +1,4532 @@
+created: '2026-03-10T23:34:35.810076+00:00'
+modified: '2026-03-10T23:34:35.810076+00:00'
+pattern: false
+entry:
+  _id: 3c645825-e4fa-4294-96f4-6f48fc9cad17
+  _name: Indulge in Luxury Espresso at Home
+  _slug: indulge-in-luxury-espresso-at-home
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/LzvZubWFSRKXdT8PeaV9sQ-image.png
+  type: article
+  fields:
+    title:
+      type: text
+      locales:
+        da-dk: Forkæl dig selv med luksus-espresso derhjemme
+        de-at: Genießen Sie Luxus-Espresso zu Hause
+        de-ch: Genießen Sie luxuriösen Espresso zu Hause
+        de-de: Genießen Sie luxuriösen Espresso zu Hause
+        en-au: Savourez un Espresso de Luxe à la Maison
+        en-ca: Indulge in Luxury Espresso at Home
+        en-gb: Indulge in Luxury Espresso at Home
+        en-nl: Geniet van Luxe Espresso Thuis
+        en-nz: Genießen Sie Luxus-Espresso zu Hause
+        en-us: Indulge in Luxury Espresso at Home
+        fr-ca: Savourez un espresso de luxe à la maison
+        fr-ch: Savourez un Espresso de Luxe à la Maison
+        fr-fr: Savourez un Espresso de Luxe à la Maison
+        ja-jp: 自宅で贅沢なエスプレッソを楽しむ
+        nl-nl: Geniet van Luxe Espresso Thuis
+        sv-se: Njut av Lyxig Espresso Hemma
+        ar-uae: استمتع بالإسبريسو الفاخر في المنزل
+    author:
+      type: contentReference
+      value: ${#jptr:/ref-3c645825-e4fa-4294-96f4-6f48fc9cad17-author/entries/0}
+    content:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      At overvære en mesterbarista orkestrere bag en cafés
+                      kolossale espressomaskine fremkalder utvivlsomt beundring
+                      for deres raffinerede færdigheder. Men hvorfor skulle
+                      luksuriøse espressooplevelser være begrænset til en cafés
+                      rammer? Dyrk din egen hjemme-espresso-rejse skræddersyet
+                      til den kræsne kender.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Ubemærket Elegance Hver Morgen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Omgå de lange køer for din dosis af overdådig
+                          forfriskning. EspressoGPT med sin avantgarde
+                          bryggeteknologi integrerer perfekt i din sofistikerede
+                          morgenrutine og afspejler essensen af det italienske
+                          udtryk for "hurtig."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Rejs gennem et Eksklusivt Kaffeunivers
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Kapsler og for-malede poser begrænser din palet til
+                          trivielle smage. Kaffeverdenen er enorm og konstant
+                          udviklende—på tværs af ristningsteknikker, årstider og
+                          terræner. Din personlige espressomaskine er dit pas
+                          til toppen af global kaffe-kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Pleje Din Kaffeekspertise
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Ægte kaffekendere forstår: hver slurk er en
+                          uddannelse. Dyk ned i forskellige blandinger,
+                          oprindelser og ristningsnuancer, og forbedr din palets
+                          skelneevne med hver smagning. Det store udvalg af
+                          førsteklasses online ressourcer, inklusive sessioner
+                          med anerkendte eksperter som US Barista Champion
+                          Charles Babinski, beriger kun din rejse.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Behersk Kunsten af Præcision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          JavaDrips espressomaskiner er indbegrebet af
+                          elitehåndværk, der giver dig mulighed for at skabe din
+                          kop til perfektion. Uanset om det er at justere
+                          temperaturen for at fremhæve en blands subtilitet
+                          eller opnå den perfekte fløjlsagtige mælkeskum,
+                          afspejler disse maskiner de fineste baristaers
+                          dygtighed.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Bæredygtigt Elite
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Hvorfor gå på kompromis med bæredygtighed for
+                          bekvemmelighed? Mens de kapselkaffer samler sig til
+                          svimlende omkostninger, kunne du nyde bønner fra
+                          førsteklasses risterier. Prioriter både smag og
+                          øko-ansvar, og vend dig væk fra ikke-genanvendelige
+                          kapsler til et mere planetbevidst valg.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Løft Hver Lejlighed
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Ægte elegance ligger i kunsten at servere. Fra
+                          morgenmad i sengen til din partner til at forynge en
+                          soirée med friskbryggede Americanos, imponér gæster
+                          med dine barista-kreationer. Bliv den misundte vært
+                          med din dygtighed i espresso-kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Besid en Italiensk Arv
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Hver JavaDrip-maskine, fra EspressoGPT til GS3, er
+                          omhyggeligt fremstillet i de rolige bjerge i
+                          Scarperia, Firenze. Grundlagt i 1927 forbliver
+                          JavaDrip et fyrtårn for espresso-arv, der forener
+                          årtiers tradition med innovative gennembrud. Din
+                          EspressoGPT eller GS3 er ikke bare et apparat—det er
+                          et vidnesbyrd om italiensk ekspertise og en værdsat
+                          artefakt, der yndefuldt ældes med tiden.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Forkæl dig selv med denne rejse af luksus og smag. Løft
+                      dine morgener og hvert øjeblik derefter. Dit hjem
+                      fortjener pragt af den fineste espresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Einen Meister-Barista hinter der kolossalen
+                      Espressomaschine eines Cafés zu beobachten, weckt
+                      zweifellos Bewunderung für seine verfeinerten Fähigkeiten.
+                      Aber warum sollten luxuriöse Espresso-Erlebnisse auf die
+                      Grenzen eines Cafés beschränkt sein? Kultivieren Sie Ihre
+                      eigene Espresso-Reise zu Hause, maßgeschneidert für den
+                      anspruchsvollen Kenner.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Mühelose Eleganz jeden Morgen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Umgehen Sie die langen Warteschlangen für Ihre Dosis
+                          opulenter Erfrischung. Der EspressoGPT mit seiner
+                          avantgardistischen Brühgruppentechnologie integriert
+                          sich perfekt in Ihre anspruchsvolle Morgenroutine und
+                          spiegelt das Wesen des italienischen Begriffs für
+                          "schnell" wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Durchqueren Sie ein elitäres Kaffee-Universum
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Kapseln und vorgemahlene Beutel beschränken Ihre
+                          Palette auf alltägliche Geschmäcker. Die Welt des
+                          Kaffees ist weit und ständig im Wandel – über
+                          Rösttechniken, Jahreszeiten und Terrains hinweg. Ihre
+                          persönliche Espressomaschine ist Ihr Reisepass zum
+                          Gipfel der globalen Kaffeekunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Pflegen Sie Ihr Kaffee-Kennerwissen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Kaffeekenner verstehen: Jeder Schluck ist eine
+                          Bildung. Tauchen Sie ein in verschiedene Mischungen,
+                          Ursprünge und Röstnuancen und verfeinern Sie mit jeder
+                          Verkostung das Unterscheidungsvermögen Ihres Gaumens.
+                          Die große Auswahl an hochwertigen Online-Ressourcen,
+                          einschließlich Sitzungen mit renommierten Experten wie
+                          dem US-Barista-Champion Charles Babinski, bereichert
+                          nur Ihre Reise.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Meistern Sie die Kunst der Präzision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Die Espressomaschinen von JavaDrip verkörpern
+                          erstklassige Handwerkskunst und befähigen Sie, Ihre
+                          Tasse zur Perfektion zu bringen. Ob es darum geht, die
+                          Temperatur anzupassen, um die Feinheiten einer
+                          Mischung zu betonen, oder den perfekten samtigen
+                          Milchschaum zu erreichen, diese Maschinen spiegeln die
+                          Kompetenz der besten Baristas wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nachhaltig elitär
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Warum bei der Nachhaltigkeit Kompromisse für
+                          Bequemlichkeit eingehen? Während sich diese
+                          Kapselkaffees zu erstaunlichen Kosten anhäufen,
+                          könnten Sie Bohnen von erstklassigen Röstern genießen.
+                          Priorisieren Sie sowohl Geschmack als auch ökologische
+                          Verantwortung, indem Sie sich von nicht recycelbaren
+                          Kapseln abwenden und eine umweltbewusstere Wahl
+                          treffen.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Jeden Anlass erheben
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Eleganz liegt in der Kunst des Servierens. Vom
+                          Frühstück im Bett für Ihren Partner bis hin zur
+                          Belebung einer Soiree mit frisch gebrühten Americanos,
+                          beeindrucken Sie Gäste mit Ihren barista-würdigen
+                          Kreationen. Werden Sie der beneidete Gastgeber mit
+                          Ihrem Können in der Espresso-Kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Besitzen Sie ein italienisches Erbe
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Jede JavaDrip-Maschine, vom EspressoGPT bis zur GS3,
+                          wird sorgfältig in den ruhigen Bergen von Scarperia,
+                          Florenz, gefertigt. Gegründet im Jahr 1927, bleibt
+                          JavaDrip ein Leuchtfeuer des Espresso-Erbes, das
+                          Jahrzehnte der Tradition mit innovativen Durchbrüchen
+                          vereint. Ihr EspressoGPT oder GS3 ist nicht nur ein
+                          Gerät – es ist ein Zeugnis italienischer Exzellenz und
+                          ein geschätztes Artefakt, das mit der Zeit anmutig
+                          altert.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Genießen Sie diese Reise von Luxus und Geschmack. Erheben
+                      Sie Ihre Morgen und jeden Moment danach. Ihr Zuhause
+                      verdient den Glanz des feinsten Espressos.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Einen Meister-Barista hinter der kolossalen
+                      Espressomaschine eines Cafés zu beobachten, weckt
+                      zweifellos Bewunderung für seine verfeinerten Fähigkeiten.
+                      Aber warum sollten luxuriöse Espresso-Erlebnisse auf die
+                      Grenzen eines Cafés beschränkt sein? Kultivieren Sie Ihre
+                      eigene Espresso-Reise zu Hause, maßgeschneidert für den
+                      anspruchsvollen Kenner.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Mühelose Eleganz jeden Morgen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Umgehen Sie die langen Warteschlangen für Ihre Dosis
+                          opulenter Erfrischung. Der EspressoGPT mit seiner
+                          avantgardistischen Brühgruppentechnologie integriert
+                          sich perfekt in Ihre anspruchsvolle Morgenroutine und
+                          spiegelt das Wesen des italienischen Begriffs für
+                          "schnell" wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Durchqueren Sie ein elitäres Kaffee-Universum
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Kapseln und vorgemahlene Beutel beschränken Ihren
+                          Gaumen auf alltägliche Geschmäcker. Die Welt des
+                          Kaffees ist vielfältig und ständig im Wandel – über
+                          Rösttechniken, Jahreszeiten und Landschaften hinweg.
+                          Ihre persönliche Espressomaschine ist Ihr Reisepass
+                          zum Gipfel der globalen Kaffeekunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Pflegen Sie Ihr Kaffee-Kennerwissen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Kaffeekenner wissen: Jeder Schluck ist eine
+                          Bildung. Tauchen Sie ein in verschiedene Mischungen,
+                          Ursprünge und Röstnuancen und verbessern Sie das
+                          Unterscheidungsvermögen Ihres Gaumens mit jeder
+                          Verkostung. Die große Auswahl an erstklassigen
+                          Online-Ressourcen, einschließlich Sitzungen mit
+                          renommierten Experten wie dem US-Barista-Champion
+                          Charles Babinski, bereichert nur Ihre Reise.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Meistern Sie die Kunst der Präzision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Die Espressomaschinen von JavaDrip verkörpern
+                          erstklassige Handwerkskunst und befähigen Sie, Ihre
+                          Tasse zur Perfektion zu bringen. Ob es darum geht, die
+                          Temperatur anzupassen, um die Feinheiten einer
+                          Mischung zu betonen, oder den perfekten samtigen
+                          Milchschaum zu erzielen, diese Maschinen spiegeln die
+                          Kompetenz der besten Baristas wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nachhaltig elitär
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Warum auf Nachhaltigkeit zugunsten von Bequemlichkeit
+                          verzichten? Während diese Kapselkaffees zu
+                          erstaunlichen Kosten ansammeln, könnten Sie sich
+                          Bohnen von erstklassigen Röstern gönnen. Priorisieren
+                          Sie sowohl Geschmack als auch ökologische
+                          Verantwortung und wenden Sie sich von nicht
+                          recycelbaren Kapseln zu einer umweltbewussteren Wahl
+                          ab.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Erheben Sie jeden Anlass
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Eleganz liegt in der Kunst des Servierens. Vom
+                          Frühstück im Bett für Ihren Partner bis zur
+                          Auffrischung einer Soiree mit frisch gebrühten
+                          Americanos beeindrucken Sie Gäste mit Ihren
+                          barista-qualifizierten Kreationen. Werden Sie der
+                          beneidete Gastgeber mit Ihrem Können in der
+                          Espresso-Kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Besitzen Sie ein italienisches Erbe
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Jede JavaDrip-Maschine, vom EspressoGPT bis zur GS3,
+                          wird sorgfältig in den ruhigen Bergen von Scarperia,
+                          Florenz, gefertigt. Gegründet im Jahr 1927, bleibt
+                          JavaDrip ein Leuchtfeuer des Espresso-Erbes und
+                          vereint Jahrzehnte der Tradition mit innovativen
+                          Durchbrüchen. Ihr EspressoGPT oder GS3 ist nicht nur
+                          ein Gerät – es ist ein Zeugnis italienischer Exzellenz
+                          und ein geschätztes Artefakt, das mit der Zeit anmutig
+                          altert.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Genießen Sie diese Reise von Luxus und Geschmack. Erheben
+                      Sie Ihre Morgen und jeden Moment danach. Ihr Zuhause
+                      verdient den Glanz des feinsten Espressos.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Einen Meister-Barista hinter der kolossalen
+                      Espressomaschine eines Cafés zu beobachten, weckt
+                      zweifellos Bewunderung für seine verfeinerten Fähigkeiten.
+                      Aber warum sollten luxuriöse Espresso-Erlebnisse auf die
+                      Grenzen eines Cafés beschränkt sein? Kultivieren Sie Ihre
+                      eigene Espresso-Reise zu Hause, maßgeschneidert für den
+                      anspruchsvollen Kenner.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Mühelose Eleganz jeden Morgen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Umgehen Sie die langen Warteschlangen für Ihre Dosis
+                          opulenter Erfrischung. Der EspressoGPT mit seiner
+                          avantgardistischen Brühgruppentechnologie integriert
+                          sich perfekt in Ihre anspruchsvolle Morgenroutine und
+                          spiegelt das Wesen des italienischen Begriffs für
+                          "schnell" wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Durchqueren Sie ein elitäres Kaffee-Universum
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Kapseln und vorgemahlene Beutel beschränken Ihren
+                          Gaumen auf alltägliche Geschmäcker. Die Welt des
+                          Kaffees ist vielfältig und ständig im Wandel – über
+                          Rösttechniken, Jahreszeiten und Landschaften hinweg.
+                          Ihre persönliche Espressomaschine ist Ihr Reisepass
+                          zum Gipfel der globalen Kaffeekunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Pflegen Sie Ihr Kaffee-Kennerwissen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Kaffeekenner wissen: Jeder Schluck ist eine
+                          Bildung. Tauchen Sie ein in verschiedene Mischungen,
+                          Ursprünge und Röstnuancen und verbessern Sie das
+                          Unterscheidungsvermögen Ihres Gaumens mit jeder
+                          Verkostung. Die große Auswahl an erstklassigen
+                          Online-Ressourcen, einschließlich Sitzungen mit
+                          renommierten Experten wie dem US-Barista-Champion
+                          Charles Babinski, bereichert nur Ihre Reise.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Meistern Sie die Kunst der Präzision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Die Espressomaschinen von JavaDrip verkörpern
+                          erstklassige Handwerkskunst und befähigen Sie, Ihre
+                          Tasse zur Perfektion zu bringen. Ob es darum geht, die
+                          Temperatur anzupassen, um die Feinheiten einer
+                          Mischung zu betonen, oder den perfekten samtigen
+                          Milchschaum zu erzielen, diese Maschinen spiegeln die
+                          Kompetenz der besten Baristas wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nachhaltig elitär
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Warum auf Nachhaltigkeit zugunsten von Bequemlichkeit
+                          verzichten? Während diese Kapselkaffees zu
+                          erstaunlichen Kosten ansammeln, könnten Sie sich
+                          Bohnen von erstklassigen Röstern gönnen. Priorisieren
+                          Sie sowohl Geschmack als auch ökologische
+                          Verantwortung und wenden Sie sich von nicht
+                          recycelbaren Kapseln zu einer umweltbewussteren Wahl
+                          ab.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Erheben Sie jeden Anlass
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Eleganz liegt in der Kunst des Servierens. Vom
+                          Frühstück im Bett für Ihren Partner bis zur
+                          Auffrischung einer Soiree mit frisch gebrühten
+                          Americanos beeindrucken Sie Gäste mit Ihren
+                          barista-qualifizierten Kreationen. Werden Sie der
+                          beneidete Gastgeber mit Ihrem Können in der
+                          Espresso-Kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Besitzen Sie ein italienisches Erbe
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Jede JavaDrip-Maschine, vom EspressoGPT bis zur GS3,
+                          wird sorgfältig in den ruhigen Bergen von Scarperia,
+                          Florenz, gefertigt. Gegründet im Jahr 1927, bleibt
+                          JavaDrip ein Leuchtfeuer des Espresso-Erbes und
+                          vereint Jahrzehnte der Tradition mit innovativen
+                          Durchbrüchen. Ihr EspressoGPT oder GS3 ist nicht nur
+                          ein Gerät – es ist ein Zeugnis italienischer Exzellenz
+                          und ein geschätztes Artefakt, das mit der Zeit anmutig
+                          altert.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Genießen Sie diese Reise von Luxus und Geschmack. Erheben
+                      Sie Ihre Morgen und jeden Moment danach. Ihr Zuhause
+                      verdient den Glanz des feinsten Espressos.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Observer un maître barista orchestrer derrière la
+                      colossale machine à espresso d'un café suscite sans aucun
+                      doute l'admiration pour ses compétences raffinées. Mais
+                      pourquoi les expériences de luxe en matière d'espresso
+                      devraient-elles être limitées aux confins d'un café ?
+                      Cultivez votre propre voyage à domicile en matière
+                      d'espresso, adapté à l'aficionado exigeant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élégance Sans Effort Chaque Matin
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Évitez ces longues files d'attente pour votre dose de
+                          rafraîchissement opulent. L'EspressoGPT avec sa
+                          technologie de groupe de brassage avant-gardiste
+                          s'intègre parfaitement dans votre routine matinale
+                          sophistiquée, reflétant l'essence de la phrase
+                          italienne pour "rapide."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Traversez un Univers de Café Élitaire
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les capsules et sachets pré-moulus limitent votre
+                          palette à des goûts banals. Le monde du café est vaste
+                          et en constante évolution—à travers les techniques de
+                          torréfaction, les saisons et les terrains. Votre
+                          machine à espresso personnelle est votre passeport
+                          vers le sommet de l'art du café mondial.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nourrissez Votre Connaissance du Café
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les vrais connaisseurs de café comprennent : chaque
+                          gorgée est une éducation. Plongez dans divers
+                          mélanges, origines et nuances de torréfaction,
+                          améliorant le discernement de votre palais à chaque
+                          dégustation. La vaste gamme de ressources en ligne de
+                          qualité, y compris des sessions avec des experts
+                          renommés comme le champion barista américain Charles
+                          Babinski, ne fait qu'enrichir votre voyage.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Maîtrisez l'Art de la Précision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les machines à espresso de JavaDrip incarnent un
+                          artisanat d'élite, vous permettant de préparer votre
+                          tasse à la perfection. Qu'il s'agisse d'ajuster la
+                          température pour améliorer la subtilité d'un mélange
+                          ou d'obtenir la mousse de lait veloutée parfaite, ces
+                          machines reflètent la compétence des meilleurs
+                          baristas.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élite et Durable
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Pourquoi compromettre la durabilité pour la commodité
+                          ? Alors que ces cafés en capsules s'accumulent à des
+                          coûts stupéfiants, vous pourriez vous adonner à des
+                          grains provenant de torréfacteurs de premier plan.
+                          Priorisez à la fois le goût et l'éco-responsabilité,
+                          en vous détournant des capsules non recyclables pour
+                          un choix plus respectueux de la planète.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élevez Chaque Occasion
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          La véritable élégance réside dans l'art de servir. Du
+                          petit-déjeuner au lit pour votre partenaire à la
+                          revitalisation d'une soirée avec des Americanos
+                          fraîchement préparés, impressionnez vos invités avec
+                          vos créations dignes d'un barista. Devenez l'hôte
+                          envié grâce à votre maîtrise de l'art de l'espresso.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Possédez un Héritage Italien
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Chaque machine JavaDrip, de l'EspressoGPT au GS3, est
+                          méticuleusement fabriquée dans les montagnes sereines
+                          de Scarperia, Florence. Fondée en 1927, JavaDrip reste
+                          un phare du patrimoine espresso, unissant des
+                          décennies de tradition avec des percées innovantes.
+                          Votre EspressoGPT ou GS3 n'est pas seulement un
+                          appareil—c'est un témoignage de l'excellence italienne
+                          et un artefact précieux qui vieillit gracieusement
+                          avec le temps.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Offrez-vous ce voyage de luxe et de goût. Élevez vos
+                      matins et chaque moment qui suit. Votre maison mérite la
+                      splendeur du meilleur espresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Être témoin d'un maître barista orchestrant derrière la
+                      colossale machine à espresso d'un café suscite sans aucun
+                      doute l'admiration pour ses compétences raffinées. Mais
+                      pourquoi les expériences de luxe en matière d'espresso
+                      devraient-elles être limitées aux confins d'un café?
+                      Cultivez votre propre voyage espresso à domicile, adapté
+                      pour l'aficionado exigeant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élégance sans effort chaque matin
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Évitez ces longues files d'attente pour votre dose de
+                          rafraîchissement opulent. L'EspressoGPT avec sa
+                          technologie de groupe de brassage avant-gardiste
+                          s'intègre parfaitement dans votre routine matinale
+                          sophistiquée, reflétant l'essence de l'expression
+                          italienne pour « rapide ».
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Traversez un univers de café d'élite
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les capsules et les sachets pré-moulus limitent votre
+                          palette à des goûts banals. Le monde du café est vaste
+                          et en constante évolution—à travers les techniques de
+                          torréfaction, les saisons et les terrains. Votre
+                          machine à espresso personnelle est votre passeport
+                          vers le sommet de l'art du café mondial.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nourrissez votre expertise en café
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les vrais connaisseurs de café comprennent : chaque
+                          gorgée est une éducation. Plongez dans divers
+                          mélanges, origines et nuances de torréfaction,
+                          améliorant la discernement de votre palais à chaque
+                          dégustation. La vaste gamme de ressources en ligne de
+                          qualité supérieure, y compris des sessions avec des
+                          experts renommés comme le champion barista américain
+                          Charles Babinski, ne fait qu'enrichir votre voyage.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Maîtrisez l'art de la précision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les machines à espresso de JavaDrip incarnent
+                          l'artisanat d'élite, vous permettant de préparer votre
+                          tasse à la perfection. Qu'il s'agisse d'ajuster la
+                          température pour améliorer la subtilité d'un mélange
+                          ou d'obtenir la mousse de lait veloutée parfaite, ces
+                          machines reflètent la compétence des meilleurs
+                          baristas.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élite durable
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Pourquoi compromettre la durabilité pour la commodité?
+                          Alors que ces cafés en capsules s'accumulent à des
+                          coûts stupéfiants, vous pourriez vous adonner à des
+                          grains provenant de torréfacteurs de premier plan.
+                          Priorisez à la fois le goût et l'éco-responsabilité,
+                          en vous détournant des capsules non recyclables vers
+                          un choix plus conscient de la planète.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élevez chaque occasion
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          La véritable élégance réside dans l'art de servir. Du
+                          petit-déjeuner au lit pour votre partenaire à la
+                          revitalisation d'une soirée avec des Americanos
+                          fraîchement préparés, impressionnez vos invités avec
+                          vos créations de qualité barista. Devenez l'hôte envié
+                          grâce à votre maîtrise de l'art de l'espresso.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Possédez un héritage italien
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Chaque machine JavaDrip, de l'EspressoGPT au GS3, est
+                          méticuleusement fabriquée dans les montagnes sereines
+                          de Scarperia, Florence. Fondée en 1927, JavaDrip reste
+                          un phare du patrimoine espresso, unissant des
+                          décennies de tradition avec des innovations
+                          révolutionnaires. Votre EspressoGPT ou GS3 n'est pas
+                          seulement un appareil—c'est un témoignage de
+                          l'excellence italienne et un artefact précieux qui
+                          vieillit gracieusement avec le temps.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Offrez-vous ce voyage de luxe et de goût. Élevez vos
+                      matins et chaque moment par la suite. Votre maison mérite
+                      la splendeur du meilleur espresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Witnessing a master barista orchestrate behind a café's
+                      colossal espresso machine undoubtedly evokes admiration
+                      for their refined skills. But why should luxury espresso
+                      experiences be limited to the confines of a café?
+                      Cultivate your own at-home espresso journey tailored for
+                      the discerning aficionado.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Effortless Elegance Each Morning
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Bypass those long queues for your dose of opulent
+                          refreshment. The EspressoGPT with its avant-garde brew
+                          group technology perfectly integrates into your
+                          sophisticated morning routine, reflecting the essence
+                          of the Italian phrase for "swift."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Traverse an Elite Coffee Universe
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Capsules and pre-ground sachets limit your palette to
+                          mundane tastes. The world of coffee is vast and
+                          ever-evolving—across roasting techniques, seasons, and
+                          terrains. Your personal espresso machine is your
+                          passport to the pinnacle of global coffee artistry.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nurture Your Coffee Connoisseurship
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          True coffee connoisseurs understand: every sip is an
+                          education. Dive into various blends, origins, and
+                          roasting nuances, enhancing your palate's discernment
+                          with each tasting. The vast array of premium online
+                          resources, including sessions with renowned experts
+                          like US Barista Champion Charles Babinski, only
+                          enriches your journey.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Master the Art of Precision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          JavaDrip’s espresso machines epitomise elite
+                          craftsmanship, empowering you to craft your cup to
+                          perfection. Whether it's attuning the temperature to
+                          enhance a blend's subtlety or achieving the perfect
+                          velvety milk froth, these machines mirror the
+                          proficiency of the finest baristas.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Sustainably Elite
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Why compromise on sustainability for convenience?
+                          While those capsule coffees amass at staggering costs,
+                          you could indulge in beans sourced from premier
+                          roasters. Prioritise both taste and
+                          eco-responsibility, turning away from non-recyclable
+                          capsules to a more planet-conscious choice.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Elevate Every Occasion
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          True elegance lies in the art of serving. From
+                          breakfast in bed for your partner to rejuvenating a
+                          soirée with freshly brewed Americanos, impress guests
+                          with your barista-grade creations. Become the envied
+                          host with your prowess in espresso artistry.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Possess an Italian Legacy
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Each JavaDrip machine, from the EspressoGPT to the
+                          GS3, is meticulously crafted in the serene mountains
+                          of Scarperia, Florence. Founded in 1927, JavaDrip
+                          remains a beacon of espresso heritage, uniting decades
+                          of tradition with innovative breakthroughs. Your
+                          EspressoGPT or GS3 isn't just an appliance—it's a
+                          testament to Italian excellence and a cherished
+                          artefact that gracefully ages with time.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Indulge in this journey of luxury and taste. Elevate your
+                      mornings and every moment thereafter. Your home deserves
+                      the splendour of the finest espresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Het aanschouwen van een meester-barista die achter een
+                      kolossale espressomachine in een café orkestreert, wekt
+                      ongetwijfeld bewondering op voor hun verfijnde
+                      vaardigheden. Maar waarom zouden luxe espresso-ervaringen
+                      beperkt moeten blijven tot de grenzen van een café?
+                      Cultiveer je eigen espresso-reis thuis, op maat gemaakt
+                      voor de veeleisende liefhebber.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Moeiteloze Elegantie Elke Ochtend
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Omzeil die lange rijen voor je dosis weelderige
+                          verfrissing. De EspressoGPT met zijn avant-garde
+                          zetgroeptechnologie integreert perfect in je verfijnde
+                          ochtendroutine en weerspiegelt de essentie van de
+                          Italiaanse uitdrukking voor "snel."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Verken een Elite Koffie-universum
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Capsules en voorgemalen zakjes beperken je palet tot
+                          alledaagse smaken. De wereld van koffie is groot en
+                          voortdurend in ontwikkeling—over verschillende
+                          brandtechnieken, seizoenen en terreinen. Je
+                          persoonlijke espressomachine is je paspoort naar het
+                          toppunt van wereldwijde koffie-kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Koester Je Koffiekennerschap
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Echte koffiekenners begrijpen: elke slok is een
+                          educatie. Duik in verschillende melanges, oorsprongen
+                          en brandnuances, en verbeter het
+                          onderscheidingsvermogen van je palet bij elke
+                          proeverij. De enorme hoeveelheid premium online
+                          bronnen, inclusief sessies met gerenommeerde experts
+                          zoals US Barista Champion Charles Babinski, verrijkt
+                          je reis alleen maar.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Beheers de Kunst van Precisie
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          JavaDrip's espressomachines belichamen elite
+                          vakmanschap, waardoor je je kopje tot in de perfectie
+                          kunt maken. Of het nu gaat om het afstemmen van de
+                          temperatuur om de subtiliteit van een melange te
+                          verbeteren of het bereiken van de perfecte
+                          fluweelzachte melkschuim, deze machines weerspiegelen
+                          de bekwaamheid van de beste barista's.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Duurzaam Elite
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Waarom compromissen sluiten op duurzaamheid voor
+                          gemak? Terwijl die capsulekoffies zich opstapelen
+                          tegen verbazingwekkende kosten, kun je genieten van
+                          bonen afkomstig van eersteklas branders. Geef
+                          prioriteit aan zowel smaak als ecologische
+                          verantwoordelijkheid en keer je af van
+                          niet-recyclebare capsules naar een meer planeetbewuste
+                          keuze.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Verhoog Elke Gelegenheid
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Ware elegantie ligt in de kunst van het serveren. Van
+                          ontbijt op bed voor je partner tot het verlevendigen
+                          van een soiree met vers gezette Americanos, maak
+                          indruk op gasten met je creaties van
+                          barista-kwaliteit. Word de benijde gastheer met je
+                          bekwaamheid in espresso-kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Bezit een Italiaanse Erfenis
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Elke JavaDrip-machine, van de EspressoGPT tot de GS3,
+                          is zorgvuldig vervaardigd in de serene bergen van
+                          Scarperia, Florence. Opgericht in 1927, blijft
+                          JavaDrip een baken van espresso-erfgoed, dat decennia
+                          van traditie verenigt met innovatieve doorbraken. Je
+                          EspressoGPT of GS3 is niet zomaar een apparaat—het is
+                          een bewijs van Italiaanse uitmuntendheid en een
+                          gekoesterd artefact dat gracieus met de tijd
+                          meegroeit.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Geniet van deze reis van luxe en smaak. Verhoog je
+                      ochtenden en elk moment daarna. Je huis verdient de pracht
+                      van de fijnste espresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Einen Meister-Barista hinter der kolossalen
+                      Espressomaschine eines Cafés zu beobachten, weckt
+                      zweifellos Bewunderung für seine verfeinerten Fähigkeiten.
+                      Aber warum sollten luxuriöse Espresso-Erlebnisse auf die
+                      Grenzen eines Cafés beschränkt sein? Gestalten Sie Ihre
+                      eigene Espresso-Reise zu Hause, maßgeschneidert für den
+                      anspruchsvollen Kenner.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Mühelose Eleganz jeden Morgen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Umgehen Sie die langen Warteschlangen für Ihre Dosis
+                          opulenter Erfrischung. Der EspressoGPT mit seiner
+                          avantgardistischen Brühgruppentechnologie integriert
+                          sich perfekt in Ihre anspruchsvolle Morgenroutine und
+                          spiegelt das Wesen des italienischen Begriffs für
+                          "schnell" wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Durchqueren Sie ein elitäres Kaffeeuniversum
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Kapseln und vorgemahlene Beutel beschränken Ihr
+                          Geschmackserlebnis auf alltägliche Aromen. Die Welt
+                          des Kaffees ist weit und ständig im Wandel – über
+                          Rösttechniken, Jahreszeiten und Landschaften hinweg.
+                          Ihre persönliche Espressomaschine ist Ihr Reisepass
+                          zum Gipfel der globalen Kaffeekunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Pflegen Sie Ihr Kaffee-Kennerwissen
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Kaffeekenner verstehen: Jeder Schluck ist eine
+                          Ausbildung. Tauchen Sie ein in verschiedene
+                          Mischungen, Ursprünge und Röstnuancen und verfeinern
+                          Sie mit jeder Verkostung das Urteilsvermögen Ihres
+                          Gaumens. Die große Auswahl an erstklassigen
+                          Online-Ressourcen, einschließlich Sitzungen mit
+                          renommierten Experten wie dem US-Barista-Champion
+                          Charles Babinski, bereichert nur Ihre Reise.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Meistern Sie die Kunst der Präzision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Die Espressomaschinen von JavaDrip verkörpern
+                          erstklassige Handwerkskunst und befähigen Sie, Ihre
+                          Tasse zur Perfektion zu bringen. Ob es darum geht, die
+                          Temperatur anzupassen, um die Feinheiten einer
+                          Mischung zu betonen, oder den perfekten samtigen
+                          Milchschaum zu erreichen, diese Maschinen spiegeln die
+                          Kompetenz der besten Baristas wider.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nachhaltig elitär
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Warum bei der Nachhaltigkeit Kompromisse für
+                          Bequemlichkeit eingehen? Während sich diese
+                          Kapselkaffees zu erstaunlichen Kosten anhäufen,
+                          könnten Sie sich Bohnen von erstklassigen Röstern
+                          gönnen. Priorisieren Sie sowohl Geschmack als auch
+                          ökologische Verantwortung, indem Sie sich von nicht
+                          recycelbaren Kapseln abwenden und eine
+                          umweltbewusstere Wahl treffen.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Jeden Anlass aufwerten
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Wahre Eleganz liegt in der Kunst des Servierens. Vom
+                          Frühstück im Bett für Ihren Partner bis hin zur
+                          Belebung einer Soiree mit frisch gebrühten Americanos
+                          – beeindrucken Sie Gäste mit Ihren barista-würdigen
+                          Kreationen. Werden Sie der beneidete Gastgeber mit
+                          Ihrem Können in der Espresso-Kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Besitzen Sie ein italienisches Erbe
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Jede JavaDrip-Maschine, vom EspressoGPT bis zur GS3,
+                          wird sorgfältig in den ruhigen Bergen von Scarperia,
+                          Florenz, gefertigt. Gegründet im Jahr 1927, bleibt
+                          JavaDrip ein Leuchtfeuer des Espresso-Erbes und
+                          vereint Jahrzehnte der Tradition mit innovativen
+                          Durchbrüchen. Ihr EspressoGPT oder GS3 ist nicht nur
+                          ein Gerät – es ist ein Zeugnis italienischer Exzellenz
+                          und ein geschätztes Artefakt, das mit der Zeit anmutig
+                          altert.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Genießen Sie diese Reise von Luxus und Geschmack. Erheben
+                      Sie Ihre Morgen und jeden Moment danach. Ihr Zuhause
+                      verdient die Pracht des feinsten Espressos.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Witnessing a master barista orchestrate behind a cafe's
+                      colossal espresso machine undoubtedly evokes admiration
+                      for their refined skills. But why should luxury espresso
+                      experiences be limited to the confines of a café?
+                      Cultivate your own at-home espresso journey tailored for
+                      the discerning aficionado.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Effortless Elegance Each Morning
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Bypass those long queues for your dose of opulent
+                          refreshment. The EspressoGPT with its avant-garde brew
+                          group technology perfectly integrates into your
+                          sophisticated morning routine, reflecting the essence
+                          of the Italian phrase for "swift."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Traverse an Elite Coffee Universe
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Capsules and pre-ground sachets limit your palette to
+                          mundane tastes. The world of coffee is vast and
+                          ever-evolving—across roasting techniques, seasons, and
+                          terrains. Your personal espresso machine is your
+                          passport to the pinnacle of global coffee artistry.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Nurture Your Coffee Connoisseurship
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          True coffee connoisseurs understand: every sip is an
+                          education. Dive into various blends, origins, and
+                          roasting nuances, enhancing your palate's discernment
+                          with each tasting. The vast array of premium online
+                          resources, including sessions with renowned experts
+                          like US Barista Champion Charles Babinski, only
+                          enriches your journey.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Master the Art of Precision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          JavaDrip’s espresso machines epitomize elite
+                          craftsmanship, empowering you to craft your cup to
+                          perfection. Whether it's attuning the temperature to
+                          enhance a blend's subtlety or achieving the perfect
+                          velvety milk froth, these machines mirror the
+                          proficiency of the finest baristas.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Sustainably Elite
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Why compromise on sustainability for convenience?
+                          While those capsule coffees amass at staggering costs,
+                          you could indulge in beans sourced from premier
+                          roasters. Prioritize both taste and
+                          eco-responsibility, turning away from non-recyclable
+                          capsules to a more planet-conscious choice.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Elevate Every Occasion
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          True elegance lies in the art of serving. From
+                          breakfast in bed for your partner to rejuvenating a
+                          soiree with freshly brewed Americanos, impress guests
+                          with your barista-grade creations. Become the envied
+                          host with your prowess in espresso artistry.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Possess an Italian Legacy
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Each JavaDrip machine, from the EspressoGPT to the
+                          GS3, is meticulously crafted in the serene mountains
+                          of Scarperia, Florence. Founded in 1927, JavaDrip
+                          remains a beacon of espresso heritage, uniting decades
+                          of tradition with innovative breakthroughs. Your
+                          EspressoGPT or GS3 isn't just an appliance—it's a
+                          testament to Italian excellence and a cherished
+                          artifact that gracefully ages with time.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Indulge in this journey of luxury and taste. Elevate your
+                      mornings and every moment thereafter. Your home deserves
+                      the splendor of the finest espresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Voir un maître barista orchestrer derrière la colossale
+                      machine à expresso d'un café suscite sans aucun doute
+                      l'admiration pour ses compétences raffinées. Mais pourquoi
+                      les expériences de luxe en matière d'expresso
+                      devraient-elles être limitées aux confins d'un café ?
+                      Cultivez votre propre voyage à domicile en matière
+                      d'expresso, adapté à l'aficionado exigeant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élégance Sans Effort Chaque Matin
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Évitez ces longues files d'attente pour votre dose de
+                          rafraîchissement opulent. L'EspressoGPT avec sa
+                          technologie de groupe d'infusion avant-gardiste
+                          s'intègre parfaitement dans votre routine matinale
+                          sophistiquée, reflétant l'essence de l'expression
+                          italienne pour "rapide".
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Traversez un Univers de Café Élitaire
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les capsules et les sachets pré-moulus limitent votre
+                          palette à des goûts banals. Le monde du café est vaste
+                          et en constante évolution—à travers les techniques de
+                          torréfaction, les saisons et les terrains. Votre
+                          machine à expresso personnelle est votre passeport
+                          vers le sommet de l'art du café mondial.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Cultivez Votre Expertise en Café
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les vrais connaisseurs de café comprennent : chaque
+                          gorgée est une éducation. Plongez dans divers
+                          mélanges, origines et nuances de torréfaction,
+                          améliorant la discernement de votre palais à chaque
+                          dégustation. La vaste gamme de ressources en ligne de
+                          qualité supérieure, y compris des sessions avec des
+                          experts renommés comme le Champion Barista des
+                          États-Unis Charles Babinski, ne fait qu'enrichir votre
+                          voyage.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Maîtrisez l'Art de la Précision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les machines à expresso de JavaDrip incarnent
+                          l'artisanat d'élite, vous permettant de préparer votre
+                          tasse à la perfection. Que ce soit pour ajuster la
+                          température afin d'améliorer la subtilité d'un mélange
+                          ou pour obtenir la mousse de lait veloutée parfaite,
+                          ces machines reflètent la compétence des meilleurs
+                          baristas.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élite Durable
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Pourquoi compromettre la durabilité pour la commodité
+                          ? Alors que ces cafés en capsules s'accumulent à des
+                          coûts stupéfiants, vous pourriez vous adonner à des
+                          grains provenant de torréfacteurs de premier plan.
+                          Priorisez à la fois le goût et l'éco-responsabilité,
+                          en vous détournant des capsules non recyclables vers
+                          un choix plus respectueux de la planète.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élevez Chaque Occasion
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          La véritable élégance réside dans l'art de servir. Du
+                          petit-déjeuner au lit pour votre partenaire à la
+                          revitalisation d'une soirée avec des Americanos
+                          fraîchement préparés, impressionnez vos invités avec
+                          vos créations de qualité barista. Devenez l'hôte envié
+                          grâce à votre maîtrise de l'art de l'expresso.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Possédez un Héritage Italien
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Chaque machine JavaDrip, de l'EspressoGPT au GS3, est
+                          méticuleusement fabriquée dans les montagnes sereines
+                          de Scarperia, Florence. Fondée en 1927, JavaDrip reste
+                          un phare de l'héritage de l'expresso, unissant des
+                          décennies de tradition à des percées innovantes. Votre
+                          EspressoGPT ou GS3 n'est pas seulement un
+                          appareil—c'est un témoignage de l'excellence italienne
+                          et un artefact précieux qui vieillit gracieusement
+                          avec le temps.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Offrez-vous ce voyage de luxe et de goût. Élevez vos
+                      matins et chaque moment qui suit. Votre maison mérite la
+                      splendeur du meilleur expresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Voir un maître barista orchestrer derrière la colossale
+                      machine à expresso d'un café suscite sans aucun doute
+                      l'admiration pour ses compétences raffinées. Mais pourquoi
+                      les expériences de luxe en matière d'expresso
+                      devraient-elles être limitées aux confins d'un café ?
+                      Cultivez votre propre voyage à domicile en matière
+                      d'expresso, adapté à l'aficionado exigeant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élégance sans effort chaque matin
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Évitez ces longues files d'attente pour votre dose de
+                          rafraîchissement opulent. L'EspressoGPT avec sa
+                          technologie de groupe de brassage avant-gardiste
+                          s'intègre parfaitement dans votre routine matinale
+                          sophistiquée, reflétant l'essence de la phrase
+                          italienne pour "rapide".
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Traversez un univers de café d'élite
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les capsules et sachets pré-moulus limitent votre
+                          palette à des goûts banals. Le monde du café est vaste
+                          et en constante évolution—à travers les techniques de
+                          torréfaction, les saisons et les terrains. Votre
+                          machine à expresso personnelle est votre passeport
+                          vers le sommet de l'art du café mondial.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Cultivez votre expertise en café
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les vrais connaisseurs de café comprennent : chaque
+                          gorgée est une éducation. Plongez dans divers
+                          mélanges, origines et nuances de torréfaction,
+                          améliorant la discernement de votre palais à chaque
+                          dégustation. La vaste gamme de ressources en ligne de
+                          qualité, y compris des sessions avec des experts
+                          renommés comme le champion barista américain Charles
+                          Babinski, ne fait qu'enrichir votre voyage.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Maîtrisez l'art de la précision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les machines à expresso de JavaDrip incarnent un
+                          artisanat d'élite, vous permettant de préparer votre
+                          tasse à la perfection. Que ce soit pour ajuster la
+                          température afin d'améliorer la subtilité d'un mélange
+                          ou pour obtenir la mousse de lait veloutée parfaite,
+                          ces machines reflètent la compétence des meilleurs
+                          baristas.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élite durable
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Pourquoi compromettre la durabilité pour la commodité
+                          ? Alors que ces cafés en capsules s'accumulent à des
+                          coûts stupéfiants, vous pourriez vous adonner à des
+                          grains provenant de torréfacteurs de premier plan.
+                          Priorisez à la fois le goût et l'éco-responsabilité,
+                          en vous détournant des capsules non recyclables vers
+                          un choix plus respectueux de la planète.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élevez chaque occasion
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          La véritable élégance réside dans l'art de servir. Du
+                          petit-déjeuner au lit pour votre partenaire à la
+                          revitalisation d'une soirée avec des Americanos
+                          fraîchement préparés, impressionnez vos invités avec
+                          vos créations de qualité barista. Devenez l'hôte envié
+                          grâce à votre maîtrise de l'art de l'expresso.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Possédez un héritage italien
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Chaque machine JavaDrip, de l'EspressoGPT au GS3, est
+                          méticuleusement fabriquée dans les montagnes sereines
+                          de Scarperia, Florence. Fondée en 1927, JavaDrip reste
+                          un phare de l'héritage de l'expresso, unissant des
+                          décennies de tradition avec des innovations
+                          révolutionnaires. Votre EspressoGPT ou GS3 n'est pas
+                          seulement un appareil—c'est un témoignage de
+                          l'excellence italienne et un artefact précieux qui
+                          vieillit gracieusement avec le temps.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Offrez-vous ce voyage de luxe et de goût. Élevez vos
+                      matins et chaque moment qui suit. Votre maison mérite la
+                      splendeur du meilleur expresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Voir un maître barista orchestrer derrière la colossale
+                      machine à expresso d'un café suscite sans aucun doute
+                      l'admiration pour ses compétences raffinées. Mais pourquoi
+                      les expériences de luxe en matière d'expresso
+                      devraient-elles être limitées aux confins d'un café ?
+                      Cultivez votre propre voyage à domicile en matière
+                      d'expresso, adapté à l'aficionado exigeant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élégance sans effort chaque matin
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Évitez ces longues files d'attente pour votre dose de
+                          rafraîchissement opulent. L'EspressoGPT avec sa
+                          technologie de groupe de brassage avant-gardiste
+                          s'intègre parfaitement dans votre routine matinale
+                          sophistiquée, reflétant l'essence de la phrase
+                          italienne pour "rapide".
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Traversez un univers de café d'élite
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les capsules et sachets pré-moulus limitent votre
+                          palette à des goûts banals. Le monde du café est vaste
+                          et en constante évolution—à travers les techniques de
+                          torréfaction, les saisons et les terrains. Votre
+                          machine à expresso personnelle est votre passeport
+                          vers le sommet de l'art du café mondial.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Cultivez votre expertise en café
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les vrais connaisseurs de café comprennent : chaque
+                          gorgée est une éducation. Plongez dans divers
+                          mélanges, origines et nuances de torréfaction,
+                          améliorant la discernement de votre palais à chaque
+                          dégustation. La vaste gamme de ressources en ligne de
+                          qualité, y compris des sessions avec des experts
+                          renommés comme le champion barista américain Charles
+                          Babinski, ne fait qu'enrichir votre voyage.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Maîtrisez l'art de la précision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Les machines à expresso de JavaDrip incarnent un
+                          artisanat d'élite, vous permettant de préparer votre
+                          tasse à la perfection. Que ce soit pour ajuster la
+                          température afin d'améliorer la subtilité d'un mélange
+                          ou pour obtenir la mousse de lait veloutée parfaite,
+                          ces machines reflètent la compétence des meilleurs
+                          baristas.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élite durable
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Pourquoi compromettre la durabilité pour la commodité
+                          ? Alors que ces cafés en capsules s'accumulent à des
+                          coûts stupéfiants, vous pourriez vous adonner à des
+                          grains provenant de torréfacteurs de premier plan.
+                          Priorisez à la fois le goût et l'éco-responsabilité,
+                          en vous détournant des capsules non recyclables vers
+                          un choix plus respectueux de la planète.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Élevez chaque occasion
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          La véritable élégance réside dans l'art de servir. Du
+                          petit-déjeuner au lit pour votre partenaire à la
+                          revitalisation d'une soirée avec des Americanos
+                          fraîchement préparés, impressionnez vos invités avec
+                          vos créations de qualité barista. Devenez l'hôte envié
+                          grâce à votre maîtrise de l'art de l'expresso.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Possédez un héritage italien
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Chaque machine JavaDrip, de l'EspressoGPT au GS3, est
+                          méticuleusement fabriquée dans les montagnes sereines
+                          de Scarperia, Florence. Fondée en 1927, JavaDrip reste
+                          un phare de l'héritage de l'expresso, unissant des
+                          décennies de tradition avec des innovations
+                          révolutionnaires. Votre EspressoGPT ou GS3 n'est pas
+                          seulement un appareil—c'est un témoignage de
+                          l'excellence italienne et un artefact précieux qui
+                          vieillit gracieusement avec le temps.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Offrez-vous ce voyage de luxe et de goût. Élevez vos
+                      matins et chaque moment qui suit. Votre maison mérite la
+                      splendeur du meilleur expresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      カフェの巨大なエスプレッソマシンの背後で巧みに指揮を執るマスターバリスタを目の当たりにすると、その洗練された技術に感嘆せずにはいられません。しかし、贅沢なエスプレッソ体験がカフェの中だけに限られるべき理由は何でしょうか？洗練された愛好家のために、自宅でのエスプレッソの旅を育んでください。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 毎朝の優雅さを簡単に
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          贅沢なリフレッシュメントのために長い列を避けましょう。最先端の醸造技術を備えたEspressoGPTは、洗練された朝のルーチンに完璧に溶け込み、「速さ」を意味するイタリア語の本質を反映しています。
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: エリートなコーヒーの世界を旅する
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          カプセルや事前に挽かれたサシェは、あなたのパレットを平凡な味に制限します。コーヒーの世界は広大で進化し続けています—焙煎技術、季節、地形を超えて。あなたの個人的なエスプレッソマシンは、世界のコーヒー芸術の頂点へのパスポートです。
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: コーヒーの鑑識眼を育む
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          真のコーヒー愛好家は理解しています：一口一口が教育です。さまざまなブレンド、起源、焙煎のニュアンスに飛び込み、各テイスティングでパレットの識別力を高めましょう。米国バリスタチャンピオンのチャールズ・バビンスキーのような著名な専門家とのセッションを含む、オンラインのプレミアムリソースの豊富な配列が、あなたの旅をさらに豊かにします。
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 精密さの芸術をマスターする
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          JavaDripのエスプレッソマシンは、エリートの職人技を象徴しており、完璧なカップを作り上げる力を与えます。ブレンドの微妙さを高めるために温度を調整するか、完璧なベルベットのようなミルクの泡を達成するか、これらのマシンは最高のバリスタの熟練度を反映しています。
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: 持続可能なエリート
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          便利さのために持続可能性を妥協する理由は何でしょうか？カプセルコーヒーが驚異的なコストで蓄積される一方で、プレミアムロースターから調達された豆を楽しむことができます。味とエコ責任の両方を優先し、リサイクル不可能なカプセルからより地球に優しい選択に切り替えましょう。
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: すべての機会を高める
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          真の優雅さは、提供の芸術にあります。パートナーのためのベッドでの朝食から、新鮮に淹れたアメリカーノでソワレを活気づけるまで、バリスタ級の創作でゲストを感動させましょう。エスプレッソの芸術におけるあなたの腕前で羨望の的となるホストになりましょう。
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: イタリアの遺産を所有する
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          EspressoGPTからGS3まで、すべてのJavaDripマシンは、フィレンツェのスカルペリアの静かな山々で丹念に作られています。1927年に設立されたJavaDripは、エスプレッソの遺産の灯台であり、何十年にもわたる伝統と革新的なブレークスルーを結びつけています。あなたのEspressoGPTやGS3は単なる家電ではなく、イタリアの卓越性の証であり、時とともに優雅に年を重ねる大切なアーティファクトです。
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      この贅沢と味の旅に浸りましょう。朝とその後のすべての瞬間を高めましょう。あなたの家には最高のエスプレッソの輝きがふさわしいのです。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Het aanschouwen van een meester-barista die achter de
+                      kolossale espressomachine van een café orkestreert, wekt
+                      ongetwijfeld bewondering op voor hun verfijnde
+                      vaardigheden. Maar waarom zouden luxe espresso-ervaringen
+                      beperkt moeten blijven tot de grenzen van een café?
+                      Cultiveer uw eigen espresso-reis thuis, op maat gemaakt
+                      voor de veeleisende fijnproever.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Moeiteloze elegantie elke ochtend
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Sla die lange rijen over voor uw dosis weelderige
+                          verfrissing. De EspressoGPT met zijn avant-garde
+                          brouwgroeptechnologie integreert perfect in uw
+                          verfijnde ochtendroutine, en weerspiegelt de essentie
+                          van de Italiaanse uitdrukking voor "snel."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Reis door een elite koffiewereld
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Capsules en voorgemalen zakjes beperken uw palet tot
+                          alledaagse smaken. De wereld van koffie is uitgestrekt
+                          en voortdurend in ontwikkeling—over verschillende
+                          brandtechnieken, seizoenen en terreinen. Uw
+                          persoonlijke espressomachine is uw paspoort naar de
+                          top van wereldwijde koffie-kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Koester uw koffiekennerschap
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Echte koffiekenners begrijpen: elke slok is een
+                          leerervaring. Duik in verschillende melanges,
+                          oorsprongen en nuances van het branden, en verbeter
+                          het onderscheidingsvermogen van uw palet bij elke
+                          proeverij. Het brede scala aan premium online bronnen,
+                          inclusief sessies met gerenommeerde experts zoals de
+                          Amerikaanse Barista-kampioen Charles Babinski,
+                          verrijkt alleen maar uw reis.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Beheers de kunst van precisie
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          De espressomachines van JavaDrip belichamen elite
+                          vakmanschap, waardoor u uw kopje tot in de perfectie
+                          kunt maken. Of het nu gaat om het afstemmen van de
+                          temperatuur om de subtiliteit van een melange te
+                          verbeteren of om de perfecte fluweelzachte melkschuim
+                          te bereiken, deze machines weerspiegelen de
+                          bekwaamheid van de beste barista's.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Duurzaam elitair
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Waarom zou u duurzaamheid opofferen voor gemak?
+                          Terwijl die capsulekoffies zich opstapelen tegen
+                          verbazingwekkende kosten, kunt u genieten van bonen
+                          afkomstig van eersteklas branders. Geef prioriteit aan
+                          zowel smaak als ecologische verantwoordelijkheid, en
+                          keer u af van niet-recycleerbare capsules naar een
+                          meer planeetbewuste keuze.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Verhoog elke gelegenheid
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Ware elegantie ligt in de kunst van het serveren. Van
+                          ontbijt op bed voor uw partner tot het verlevendigen
+                          van een soiree met vers gezette Americanos, maak
+                          indruk op gasten met uw creaties van
+                          barista-kwaliteit. Word de benijde gastheer met uw
+                          bekwaamheid in espresso-kunst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Bezit een Italiaans erfgoed
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Elke JavaDrip-machine, van de EspressoGPT tot de GS3,
+                          is met zorg vervaardigd in de serene bergen van
+                          Scarperia, Florence. Opgericht in 1927, blijft
+                          JavaDrip een baken van espresso-erfgoed, dat decennia
+                          van traditie verenigt met innovatieve doorbraken. Uw
+                          EspressoGPT of GS3 is niet zomaar een apparaat—het is
+                          een bewijs van Italiaanse uitmuntendheid en een
+                          gekoesterd artefact dat gracieus met de tijd meegaat.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Geniet van deze reis van luxe en smaak. Verhoog uw
+                      ochtenden en elk moment daarna. Uw huis verdient de pracht
+                      van de fijnste espresso.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Att bevittna en mästerbarista orkestrera bakom ett kafés
+                      kolossala espressomaskin väcker utan tvekan beundran för
+                      deras förfinade färdigheter. Men varför ska lyxiga
+                      espresso-upplevelser begränsas till ett kafé? Odla din
+                      egen espressoresa hemma anpassad för den kräsna
+                      finsmakaren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Enkel Elegans Varje Morgon
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Hoppa över de långa köerna för din dos av lyxig
+                          uppfriskning. EspressoGPT med sin avantgardistiska
+                          bryggteknologi integreras perfekt i din sofistikerade
+                          morgonrutin och återspeglar essensen av det italienska
+                          uttrycket för "snabb."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Utforska ett Elitkaffeuniversum
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Kapslar och förmalda påsar begränsar din palett till
+                          vardagliga smaker. Kaffevärlden är enorm och ständigt
+                          utvecklande—över rostningstekniker, säsonger och
+                          terränger. Din personliga espressomaskin är ditt pass
+                          till toppen av global kaffekonst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Vårda Ditt Kaffekunnande
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Sanna kaffekännare förstår: varje klunk är en
+                          utbildning. Dyk ner i olika blandningar, ursprung och
+                          rostningsnyanser och förbättra din paletts urskiljning
+                          med varje provsmakning. Det stora utbudet av
+                          premiumresurser online, inklusive sessioner med kända
+                          experter som den amerikanska baristamästaren Charles
+                          Babinski, berikar bara din resa.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Bemästra Konsten av Precision
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          JavaDrips espressomaskiner förkroppsligar elit
+                          hantverk, vilket ger dig möjlighet att skapa din kopp
+                          till perfektion. Oavsett om det handlar om att justera
+                          temperaturen för att förbättra en blandnings
+                          subtilitet eller uppnå den perfekta sammetslena
+                          mjölkskummet, speglar dessa maskiner de finaste
+                          baristornas skicklighet.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Hållbart Elit
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Varför kompromissa med hållbarhet för bekvämlighet?
+                          Medan de där kapselkaffena samlas till häpnadsväckande
+                          kostnader, kan du njuta av bönor från
+                          premiärrosterier. Prioritera både smak och
+                          ekovänlighet genom att vända dig bort från
+                          icke-återvinningsbara kapslar till ett mer
+                          miljömedvetet val.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Förhöj Varje Tillfälle
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Sann elegans ligger i konsten att servera. Från
+                          frukost på sängen för din partner till att förnya en
+                          soiree med nybryggda Americanos, imponera på gästerna
+                          med dina baristaklassade skapelser. Bli den avundade
+                          värden med din skicklighet i espresso-konst.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: Äga ett Italienskt Arv
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          Varje JavaDrip-maskin, från EspressoGPT till GS3, är
+                          noggrant tillverkad i de fridfulla bergen i Scarperia,
+                          Florens. Grundat 1927, förblir JavaDrip en fyr av
+                          espressoarv, som förenar decennier av tradition med
+                          innovativa genombrott. Din EspressoGPT eller GS3 är
+                          inte bara en apparat—det är ett bevis på italiensk
+                          excellens och en älskad artefakt som åldras graciöst
+                          med tiden.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Njut av denna resa av lyx och smak. Förhöj dina morgnar
+                      och varje ögonblick därefter. Ditt hem förtjänar prakten
+                      av den finaste espresson.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      مشاهدة باريستا ماهر ينظم خلف آلة إسبرسو ضخمة في مقهى بلا
+                      شك تثير الإعجاب بمهاراتهم الرفيعة. ولكن لماذا يجب أن تكون
+                      تجارب الإسبرسو الفاخرة محصورة في حدود المقهى؟ قم بتطوير
+                      رحلتك الخاصة في صنع الإسبرسو في المنزل المصممة خصيصًا
+                      للذواقة المميزين.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - tag: ol
+                type: list
+                start: 1
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: أناقة بلا جهد كل صباح
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          تجاوز تلك الطوابير الطويلة للحصول على جرعتك من
+                          الانتعاش الفاخر. يتكامل EspressoGPT بتقنية مجموعة
+                          التخمير المتقدمة بشكل مثالي في روتينك الصباحي الراقي،
+                          مما يعكس جوهر العبارة الإيطالية لـ "السريع."
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 2
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: استكشاف عالم قهوة النخبة
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          الكبسولات والأكياس المطحونة مسبقًا تقيد ذوقك بالنكهات
+                          العادية. عالم القهوة واسع ومتطور باستمرار - عبر تقنيات
+                          التحميص، المواسم، والأراضي. آلة الإسبرسو الشخصية
+                          الخاصة بك هي جواز سفرك إلى قمة فن القهوة العالمي.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 3
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: تنمية معرفتك بالقهوة
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          يفهم عشاق القهوة الحقيقيون: كل رشفة هي تعليم. انغمس في
+                          مختلف الخلطات، الأصول، وفروق التحميص، مما يعزز تمييز
+                          ذوقك مع كل تذوق. مجموعة واسعة من الموارد المتميزة عبر
+                          الإنترنت، بما في ذلك جلسات مع خبراء مشهورين مثل بطل
+                          باريستا الولايات المتحدة تشارلز بابينسكي، تثري رحلتك
+                          فقط.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 4
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: إتقان فن الدقة
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          آلات الإسبرسو من JavaDrip تجسد الحرفية الراقية، مما
+                          يمكنك من صنع كوبك بإتقان. سواء كان ضبط درجة الحرارة
+                          لتعزيز دقة الخلطة أو تحقيق رغوة الحليب المخملية
+                          المثالية، فإن هذه الآلات تعكس براعة أفضل الباريستا.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 5
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: نخبة مستدامة
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          لماذا التنازل عن الاستدامة من أجل الراحة؟ بينما تتراكم
+                          تلك القهوة بالكبسولات بتكاليف مذهلة، يمكنك الاستمتاع
+                          بحبوب مستوردة من أفضل المحامص. أولي الأولوية لكل من
+                          الطعم والمسؤولية البيئية، مبتعدًا عن الكبسولات غير
+                          القابلة لإعادة التدوير إلى خيار أكثر وعيًا بالكوكب.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 6
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: رفع كل مناسبة
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          تكمن الأناقة الحقيقية في فن التقديم. من الإفطار في
+                          السرير لشريكك إلى تجديد السهرة بأمريكانو طازج، أبهج
+                          الضيوف بإبداعاتك من مستوى الباريستا. كن المضيف المحسود
+                          بمهارتك في فن الإسبرسو.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                  - type: listitem
+                    value: 7
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: امتلك إرثًا إيطاليًا
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 1
+                        version: 1
+                      - mode: normal
+                        text: >-
+                          كل آلة JavaDrip، من EspressoGPT إلى GS3، مصنوعة بدقة
+                          في جبال سكاربيريا الهادئة، فلورنسا. تأسست في عام 1927،
+                          تظل JavaDrip منارة لتراث الإسبرسو، توحد عقودًا من
+                          التقاليد مع الابتكارات الرائدة. جهاز EspressoGPT أو
+                          GS3 الخاص بك ليس مجرد جهاز - إنه شهادة على التميز
+                          الإيطالي وقطعة أثرية عزيزة تتقدم بكرامة مع الزمن.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: ltr
+                listType: number
+                direction: ltr
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      استمتع بهذه الرحلة من الفخامة والطعم. ارفع مستوى صباحك وكل
+                      لحظة بعدها. منزلك يستحق روعة أفضل إسبرسو.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    ogImage:
+      type: asset
+      value:
+        - _id: eb16abca-e73e-4359-98d7-4a263d732475
+          type: image
+          fields:
+            id:
+              type: text
+              value: d3a8701d-e216-45a0-8def-381858fad958
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/xHOYu0ltR_6yqq2CfL4XIg-image.png
+              type: text
+            file:
+              type: file
+              value: bd1c84df-d205-4779-a145-d6d915f95282
+            size:
+              value: 1478877
+              type: number
+            title:
+              type: text
+              value: image.png
+            width:
+              value: 1440
+              type: number
+            height:
+              value: 960
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-3c645825-e4fa-4294-96f4-6f48fc9cad17-category/entries/0}
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Forkæl dig med luksus-espresso derhjemme
+        de-at: Genießen Sie Luxus-Espresso zu Hause
+        de-ch: Genießen Sie luxuriösen Espresso zu Hause
+        de-de: Genießen Sie luxuriösen Espresso zu Hause
+        en-au: Savourez un Espresso de Luxe à la Maison
+        en-ca: Indulge in Luxury Espresso at Home
+        en-gb: Indulge in Luxury Espresso at Home
+        en-nl: Geniet van Luxe Espresso Thuis
+        en-nz: Gönnen Sie sich luxuriösen Espresso zu Hause
+        en-us: Indulge in Luxury Espresso at Home
+        fr-ca: Savourez un Espresso de Luxe à la Maison
+        fr-ch: Savourez un Espresso de Luxe à la Maison
+        fr-fr: Savourez un Espresso de Luxe à la Maison
+        ja-jp: 自宅で贅沢なエスプレッソを楽しむ
+        nl-nl: Geniet van Luxe Espresso Thuis
+        sv-se: Njut av Lyxig Espresso Hemma
+        ar-uae: استمتع بإسبريسو فاخر في المنزل
+    thumbnail:
+      type: asset
+      value:
+        - _id: ee289b00-f3af-4fa8-8b6d-1e9eff06ece9
+          type: image
+          fields:
+            id:
+              type: text
+              value: d3a8701d-e216-45a0-8def-381858fad958
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/xHOYu0ltR_6yqq2CfL4XIg-image.png
+              type: text
+            file:
+              type: file
+              value: bd1c84df-d205-4779-a145-d6d915f95282
+            size:
+              value: 1478877
+              type: number
+            title:
+              type: text
+              value: image.png
+            width:
+              value: 1440
+              type: number
+            height:
+              value: 960
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    enrichments:
+      type: $enr
+      value:
+        - cat: topic
+          key: coffee
+          str: 5
+    publishDate:
+      type: date
+      value: '2025-03-06'
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          At se en barista danse bag en cafés enorme, dampende tre-gruppe
+          espresso-maskine er en fornøjelse i sig selv, helt sikkert—et øjeblik
+          af respekt og ærefrygt for disse håndværkere og deres tilsyneladende
+          mystiske færdigheder.
+        de-at: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein eigenes
+          Vergnügen, sicher – ein Moment des Respekts und der Ehrfurcht vor
+          diesen Handwerkern und ihren scheinbar geheimnisvollen Fähigkeiten.
+        de-ch: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein eigenes
+          Vergnügen, sicher – ein Moment des Respekts und der Ehrfurcht vor
+          diesen Handwerkern und ihren scheinbar geheimnisvollen Fähigkeiten.
+        de-de: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein eigenes
+          Vergnügen, sicher – ein Moment des Respekts und der Ehrfurcht vor
+          diesen Handwerkern und ihren scheinbar geheimnisvollen Fähigkeiten.
+        en-au: >-
+          Regarder un barista danser derrière l'énorme machine à expresso à
+          trois groupes fumante d'un café est un plaisir en soi, bien sûr—un
+          moment de respect et d'admiration pour ces artisans et leurs
+          compétences apparemment ésotériques.
+        en-ca: >-
+          Watching a barista dance behind a café’s massive, steaming three-group
+          hotrod espresso machine is its own pleasure, sure—a moment of respect
+          and awe for these artisans and their seemingly arcane skills.
+        en-gb: >-
+          Watching a barista dance behind a café’s massive, steaming three-group
+          hotrod espresso machine is its own pleasure, sure—a moment of respect
+          and awe for these artisans and their seemingly arcane skills.
+        en-nl: >-
+          Het kijken naar een barista die danst achter de enorme, stomende
+          driegroeps espressomachine van een café is op zich al een genoegen,
+          zeker—een moment van respect en ontzag voor deze ambachtslieden en hun
+          schijnbaar mysterieuze vaardigheden.
+        en-nz: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein eigenes
+          Vergnügen, sicher – ein Moment des Respekts und der Ehrfurcht vor
+          diesen Künstlern und ihren scheinbar geheimnisvollen Fähigkeiten.
+        en-us: >-
+          Watching a barista dance behind a cafe’s massive, steaming three-group
+          hotrod espresso machine is its own pleasure, sure—a moment of respect
+          and awe for these artisans and their seemingly arcane skills.
+        fr-ca: >-
+          Regarder un barista danser derrière l'énorme machine à espresso à
+          trois groupes d'un café est un plaisir en soi, bien sûr—un moment de
+          respect et d'admiration pour ces artisans et leurs compétences
+          apparemment ésotériques.
+        fr-ch: >-
+          Regarder un barista danser derrière l'énorme machine à expresso à
+          trois groupes fumante d'un café est un plaisir en soi, certes—un
+          moment de respect et d'admiration pour ces artisans et leurs
+          compétences apparemment ésotériques.
+        fr-fr: >-
+          Regarder un barista danser derrière l'énorme machine à expresso à
+          trois groupes fumante d'un café est un plaisir en soi, certes—un
+          moment de respect et d'admiration pour ces artisans et leurs
+          compétences apparemment ésotériques.
+        ja-jp: >-
+          カフェの巨大で蒸気を上げる三連エスプレッソマシンの後ろでバリスタが踊る姿を見るのは、それ自体が一つの喜びです。これらの職人と彼らの一見神秘的な技術に対する敬意と畏敬の瞬間です。
+        nl-nl: >-
+          Het kijken naar een barista die danst achter de enorme, stomende
+          driegroeps espressomachine van een café is op zichzelf al een
+          genoegen, zeker—een moment van respect en ontzag voor deze
+          ambachtslieden en hun schijnbaar mysterieuze vaardigheden.
+        sv-se: >-
+          Att se en barista dansa bakom ett kafés massiva, ångande tregrupps
+          espressomaskin är en njutning i sig—ett ögonblick av respekt och
+          beundran för dessa hantverkare och deras till synes mystiska
+          färdigheter.
+        ar-uae: >-
+          مشاهدة باريستا يرقص خلف آلة إسبرسو ضخمة بثلاث مجموعات في مقهى هو متعة
+          بحد ذاتها، لحظة من الاحترام والإعجاب لهؤلاء الحرفيين ومهاراتهم التي
+          تبدو غامضة.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          At se en barista danse bag en cafés enorme, dampende tre-gruppe
+          espresso-maskine er en fornøjelse i sig selv, helt sikkert—et øjeblik
+          af respekt og ærefrygt for disse håndværkere og deres tilsyneladende
+          hemmelige færdigheder.
+        de-at: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein eigenes
+          Vergnügen – ein Moment des Respekts und der Ehrfurcht vor diesen
+          Künstlern und ihren scheinbar geheimnisvollen Fähigkeiten.
+        de-ch: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein eigenes
+          Vergnügen, sicher – ein Moment des Respekts und der Ehrfurcht vor
+          diesen Handwerkern und ihren scheinbar geheimnisvollen Fähigkeiten.
+        de-de: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein eigenes
+          Vergnügen, sicher – ein Moment des Respekts und der Ehrfurcht vor
+          diesen Handwerkern und ihren scheinbar geheimnisvollen Fähigkeiten.
+        en-au: >-
+          Observer un barista danser derrière l'énorme machine à espresso à
+          trois groupes fumante d'un café est un plaisir en soi, bien sûr—un
+          moment de respect et d'admiration pour ces artisans et leurs
+          compétences apparemment ésotériques.
+        en-ca: >-
+          Watching a barista dance behind a café’s massive, steaming three-group
+          hotrod espresso machine is its own pleasure, sure—a moment of respect
+          and awe for these artisans and their seemingly arcane skills.
+        en-gb: >-
+          Watching a barista dance behind a café’s massive, steaming three-group
+          hotrod espresso machine is its own pleasure, sure—a moment of respect
+          and awe for these artisans and their seemingly arcane skills.
+        en-nl: >-
+          Het kijken naar een barista die danst achter de enorme, stomende
+          driegroeps espressomachine van een café is op zichzelf al een
+          genoegen, zeker—een moment van respect en ontzag voor deze
+          ambachtslieden en hun schijnbaar geheimzinnige vaardigheden.
+        en-nz: >-
+          Einem Barista zuzusehen, wie er hinter der massiven, dampfenden
+          Dreigruppen-Espressomaschine eines Cafés tanzt, ist ein Vergnügen für
+          sich—ein Moment des Respekts und der Ehrfurcht vor diesen Handwerkern
+          und ihren scheinbar geheimnisvollen Fähigkeiten.
+        en-us: >-
+          Watching a barista dance behind a cafe’s massive, steaming three-group
+          hotrod espresso machine is its own pleasure, sure—a moment of respect
+          and awe for these artisans and their seemingly arcane skills.
+        fr-ca: >-
+          Observer un barista danser derrière la massive machine à espresso à
+          trois groupes d'un café, crachant de la vapeur, est un plaisir en soi,
+          bien sûr—un moment de respect et d'admiration pour ces artisans et
+          leurs compétences apparemment ésotériques.
+        fr-ch: >-
+          Observer un barista danser derrière la gigantesque machine à expresso
+          à trois groupes d'un café est un plaisir en soi, bien sûr—un moment de
+          respect et d'admiration pour ces artisans et leurs compétences
+          apparemment ésotériques.
+        fr-fr: >-
+          Observer un barista danser derrière la gigantesque machine à expresso
+          à trois groupes d'un café est un plaisir en soi, bien sûr—un moment de
+          respect et d'admiration pour ces artisans et leurs compétences
+          apparemment ésotériques.
+        ja-jp: >-
+          カフェの巨大で蒸気を上げる三連式エスプレッソマシンの後ろでバリスタが踊る姿を見るのは、それ自体が一つの楽しみです。これらの職人たちと彼らの一見神秘的な技術に対する敬意と畏敬の瞬間です。
+        nl-nl: >-
+          Het kijken naar een barista die achter de enorme, stomende driegroeps
+          espressomachine van een café danst, is op zichzelf al een genoegen,
+          zeker—een moment van respect en ontzag voor deze ambachtslieden en hun
+          ogenschijnlijk mysterieuze vaardigheden.
+        sv-se: >-
+          Att se en barista dansa bakom en cafés massiva, ångande tregrupps
+          espressomaskin är en njutning i sig—ett ögonblick av respekt och
+          beundran för dessa hantverkare och deras till synes hemliga
+          färdigheter.
+        ar-uae: >-
+          مشاهدة باريستا يرقص خلف آلة إسبرسو ضخمة بثلاث مجموعات في مقهى هو متعة
+          بحد ذاتها، بالتأكيد - لحظة من الاحترام والدهشة لهؤلاء الحرفيين
+          ومهاراتهم التي تبدو غامضة.
+  _dataResources:
+    ref-3c645825-e4fa-4294-96f4-6f48fc9cad17-author:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 43fdda6b-7531-4e87-9f93-2bccbe77a10a
+    ref-3c645825-e4fa-4294-96f4-6f48fc9cad17-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 8f126a53-19d3-46d9-a855-63be62ffca1d
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

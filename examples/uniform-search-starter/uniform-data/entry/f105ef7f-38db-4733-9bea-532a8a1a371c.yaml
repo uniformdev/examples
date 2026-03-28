@@ -1,0 +1,1980 @@
+created: '2026-03-10T23:35:26.729749+00:00'
+modified: '2026-03-10T23:35:26.729749+00:00'
+pattern: false
+entry:
+  _id: f105ef7f-38db-4733-9bea-532a8a1a371c
+  _name: Milk carafe
+  _slug: milk-carafe
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/DpZpHnWyTByeudWjLxa80w-milk-carafe-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Den kompakte Cool Control passer ind i små rum. Dens
+                      elegante design komplementerer JavaDrip kaffemaskiner med
+                      materialer af høj kvalitet. Skab perfekt mælkeskum til
+                      drikke som flat whites med afkølet mælk, der holdes ved
+                      4°C. Niveauindikatoren minder brugerne om at fylde mælk op
+                      efter behov.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideel udnyttelse af plads: Det elegante design af Cool
+                      Control gør det muligt at bruge den på forskellige steder,
+                      hvor pladsen er begrænset. Uanset om det er i kompakte
+                      tekøkkener eller små kontorer, vil denne slanke mælkekøler
+                      passe problemfrit ind i ethvert miljø takket være dens
+                      kompakte dimensioner og alsidige design.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegant design: Cool Control legemliggør den tidløse
+                      elegance af det klassiske JavaDrip-look. Fremstillet med
+                      materialer af høj kvalitet, herunder et låg lavet af 1,5
+                      mm tykt rustfrit stål, og prydet med stilfulde
+                      ventilationsåbninger, udstråler denne mælkekøler
+                      sofistikering. Dens rene, minimalistiske linjer
+                      komplementerer perfekt enhver JavaDrip kaffemaskine og
+                      skaber en harmonisk og stilfuld kaffeløsning.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfekte mælkresultater: Cool Control leverer konsekvent
+                      perfekt mælkeskum til en række lækre drikke, såsom flat
+                      white. Ved at holde mælken afkølet til en optimal
+                      temperatur på 4 °C sikrer denne innovative køler, at hver
+                      kop kaffe er af højeste kvalitet. Og med en praktisk
+                      niveauindikator vil brugerne altid vide, hvornår det er
+                      tid til at fylde køleren op med frisk mælk, hvilket
+                      garanterer konsekvent fremragende resultater ved hver
+                      brug.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Der kompakte Cool Control passt in kleine Räume. Sein
+                      elegantes Design ergänzt JavaDrip-Kaffeemaschinen mit
+                      hochwertigen Materialien. Erstellen Sie perfekten
+                      Milchschaum für Getränke wie Flat Whites mit gekühlter
+                      Milch, die bei 4 °C gehalten wird. Der Füllstandsanzeiger
+                      erinnert die Benutzer daran, die Milch bei Bedarf
+                      nachzufüllen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideale Raumnutzung: Das elegante Design des Cool Control
+                      ermöglicht den Einsatz an verschiedenen Orten, an denen
+                      der Platz begrenzt ist. Ob in kompakten Küchenzeilen oder
+                      kleinen Büros, dieser schlanke Milchkühler fügt sich dank
+                      seiner kompakten Abmessungen und seines vielseitigen
+                      Designs nahtlos in jede Umgebung ein.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegantes Design: Der Cool Control verkörpert die zeitlose
+                      Eleganz des klassischen JavaDrip-Looks. Gefertigt aus
+                      hochwertigen Materialien, einschließlich eines Deckels aus
+                      1,5 mm dickem Edelstahl, und verziert mit stilvollen
+                      Lüftungsschlitzen, strahlt dieser Milchkühler Raffinesse
+                      aus. Seine klaren, minimalistischen Linien ergänzen jede
+                      JavaDrip-Kaffeemaschine perfekt und schaffen ein
+                      harmonisches und stilvolles Kaffee-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfekte Milchergebnisse: Der Cool Control liefert
+                      konstant perfekten Milchschaum für eine Vielzahl
+                      köstlicher Getränke, wie den Flat White. Durch das Kühlen
+                      der Milch auf optimale 4 °C sorgt dieser innovative Kühler
+                      dafür, dass jede Tasse Kaffee von höchster Qualität ist.
+                      Und mit einem praktischen Füllstandsanzeiger wissen die
+                      Benutzer immer, wann es Zeit ist, den Kühler mit frischer
+                      Milch aufzufüllen, um bei jedem Gebrauch konstant
+                      hervorragende Ergebnisse zu garantieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Der kompakte Cool Control passt in kleine Räume. Sein
+                      elegantes Design ergänzt JavaDrip-Kaffeemaschinen mit
+                      hochwertigen Materialien. Erzeugen Sie perfekten
+                      Milchschaum für Getränke wie Flat Whites mit gekühlter
+                      Milch, die bei 4°C gehalten wird. Der Füllstandsanzeiger
+                      erinnert die Benutzer daran, Milch bei Bedarf
+                      nachzufüllen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideale Raumnutzung: Das elegante Design des Cool Control
+                      ermöglicht es, ihn an verschiedenen Orten zu verwenden, an
+                      denen der Platz begrenzt ist. Ob in kompakten Küchenzeilen
+                      oder kleinen Büros, dieser schlanke Milchkühler fügt sich
+                      dank seiner kompakten Abmessungen und seines vielseitigen
+                      Designs nahtlos in jede Umgebung ein.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegantes Design: Der Cool Control verkörpert die zeitlose
+                      Eleganz des klassischen JavaDrip-Looks. Gefertigt aus
+                      hochwertigen Materialien, einschließlich einer Abdeckung
+                      aus 1,5 mm dickem Edelstahl und stilvollen
+                      Lüftungsschlitzen, strahlt dieser Milchkühler Raffinesse
+                      aus. Seine klaren, minimalistischen Linien ergänzen jede
+                      JavaDrip-Kaffeemaschine perfekt und schaffen ein
+                      harmonisches und stilvolles Kaffee-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfekte Milchergebnisse: Der Cool Control liefert
+                      konstant perfekten Milchschaum für eine Vielzahl
+                      köstlicher Getränke, wie den Flat White. Indem die Milch
+                      auf optimalen 4 °C gekühlt wird, stellt dieser innovative
+                      Kühler sicher, dass jede Tasse Kaffee von höchster
+                      Qualität ist. Und mit einem praktischen Füllstandsanzeiger
+                      wissen die Benutzer immer, wann es Zeit ist, den Kühler
+                      mit frischer Milch aufzufüllen, um bei jeder Verwendung
+                      konstant hervorragende Ergebnisse zu garantieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Der kompakte Cool Control passt in kleine Räume. Sein
+                      elegantes Design ergänzt JavaDrip-Kaffeemaschinen mit
+                      hochwertigen Materialien. Erzeugen Sie perfekten
+                      Milchschaum für Getränke wie Flat Whites mit gekühlter
+                      Milch, die bei 4°C gehalten wird. Der Füllstandsanzeiger
+                      erinnert die Benutzer daran, Milch bei Bedarf
+                      nachzufüllen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideale Raumnutzung: Das elegante Design des Cool Control
+                      ermöglicht es, ihn an verschiedenen Orten zu verwenden, an
+                      denen der Platz begrenzt ist. Ob in kompakten Küchenzeilen
+                      oder kleinen Büros, dieser schlanke Milchkühler fügt sich
+                      dank seiner kompakten Abmessungen und seines vielseitigen
+                      Designs nahtlos in jede Umgebung ein.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegantes Design: Der Cool Control verkörpert die zeitlose
+                      Eleganz des klassischen JavaDrip-Looks. Gefertigt aus
+                      hochwertigen Materialien, einschließlich einer Abdeckung
+                      aus 1,5 mm dickem Edelstahl und stilvollen
+                      Lüftungsschlitzen, strahlt dieser Milchkühler Raffinesse
+                      aus. Seine klaren, minimalistischen Linien ergänzen jede
+                      JavaDrip-Kaffeemaschine perfekt und schaffen ein
+                      harmonisches und stilvolles Kaffee-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfekte Milchergebnisse: Der Cool Control liefert
+                      konstant perfekten Milchschaum für eine Vielzahl
+                      köstlicher Getränke, wie den Flat White. Indem die Milch
+                      auf optimalen 4 °C gekühlt wird, stellt dieser innovative
+                      Kühler sicher, dass jede Tasse Kaffee von höchster
+                      Qualität ist. Und mit einem praktischen Füllstandsanzeiger
+                      wissen die Benutzer immer, wann es Zeit ist, den Kühler
+                      mit frischer Milch aufzufüllen, um bei jeder Verwendung
+                      konstant hervorragende Ergebnisse zu garantieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le Cool Control compact s'adapte aux petits espaces. Son
+                      design élégant complète les machines à café JavaDrip avec
+                      des matériaux de qualité supérieure. Créez une mousse de
+                      lait parfaite pour des boissons comme les flat whites avec
+                      du lait refroidi à 4°C. L'indicateur de niveau rappelle
+                      aux utilisateurs de remplir le lait si nécessaire.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Utilisation idéale de l'espace : Le design élégant du Cool
+                      Control permet de l'utiliser dans une variété d'endroits
+                      où l'espace est limité. Que ce soit dans des kitchenettes
+                      compactes ou de petits bureaux, ce refroidisseur de lait
+                      mince s'intègre parfaitement dans n'importe quel
+                      environnement, grâce à ses dimensions compactes et à son
+                      design polyvalent.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Design élégant : Le Cool Control incarne l'élégance
+                      intemporelle du look classique JavaDrip. Conçu avec des
+                      matériaux de qualité supérieure, y compris un couvercle en
+                      acier inoxydable de 1,5 mm d'épaisseur et orné de fentes
+                      de ventilation élégantes, ce refroidisseur de lait dégage
+                      une sophistication. Ses lignes épurées et minimalistes
+                      complètent parfaitement toute machine à café JavaDrip,
+                      créant un ensemble café harmonieux et élégant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Résultats de lait parfaits : Le Cool Control offre une
+                      mousse de lait toujours parfaite pour une variété de
+                      boissons délicieuses, comme le flat white. En maintenant
+                      le lait refroidi à une température optimale de 4 °C, ce
+                      refroidisseur innovant garantit que chaque tasse de café
+                      est de la plus haute qualité. Et avec un indicateur de
+                      niveau pratique, les utilisateurs sauront toujours quand
+                      il est temps de remplir le refroidisseur avec du lait
+                      frais, garantissant des résultats excellents à chaque
+                      utilisation.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le Cool Control compact s'adapte aux petits espaces. Son
+                      design élégant complète les machines à café JavaDrip avec
+                      des matériaux de qualité supérieure. Créez une mousse de
+                      lait parfaite pour des boissons comme les flat whites avec
+                      du lait refroidi à 4 °C. L'indicateur de niveau rappelle
+                      aux utilisateurs de remplir le lait au besoin.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Utilisation idéale de l'espace : Le design élégant du Cool
+                      Control lui permet d'être utilisé dans une variété
+                      d'endroits où l'espace est limité. Que ce soit dans des
+                      kitchenettes compactes ou de petits bureaux, ce
+                      refroidisseur de lait mince s'intègre parfaitement dans
+                      n'importe quel environnement, grâce à ses dimensions
+                      compactes et son design polyvalent.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Design élégant : Le Cool Control incarne l'élégance
+                      intemporelle du look classique JavaDrip. Fabriqué avec des
+                      matériaux de qualité supérieure, y compris un couvercle en
+                      acier inoxydable de 1,5 mm d'épaisseur et orné de fentes
+                      de ventilation élégantes, ce refroidisseur de lait respire
+                      la sophistication. Ses lignes épurées et minimalistes
+                      complètent parfaitement toute machine à café JavaDrip,
+                      créant un ensemble café harmonieux et élégant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Résultats de lait parfaits : Le Cool Control offre une
+                      mousse de lait parfaitement constante pour une variété de
+                      boissons délicieuses, comme le flat white. En gardant le
+                      lait refroidi à une température optimale de 4 °C, ce
+                      refroidisseur innovant garantit que chaque tasse de café
+                      est de la plus haute qualité. Et avec un indicateur de
+                      niveau pratique, les utilisateurs sauront toujours quand
+                      il est temps de remplir le refroidisseur avec du lait
+                      frais, garantissant des résultats excellents à chaque
+                      utilisation.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      The compact Cool Control fits in small spaces. Its elegant
+                      design complements JavaDrip coffee machines with premium
+                      materials. Create perfect milk foam for drinks like flat
+                      whites with chilled milk kept at 4°C. Level indicator
+                      reminds users to top up milk as needed.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideal use of space: The elegant design of the Cool Control
+                      allows it to be used in a variety of locations where space
+                      is limited. Whether it's in compact kitchenettes or small
+                      offices, this slimline milk cooler will fit seamlessly
+                      into any environment, thanks to its compact dimensions and
+                      versatile design.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegant design: The Cool Control embodies the timeless
+                      elegance of the classic JavaDrip look. Crafted with
+                      premium materials, including a cover made of high-quality
+                      1.5 mm thick stainless steel, and adorned with stylish
+                      ventilation slots, this milk cooler exudes sophistication.
+                      Its clean, minimalist lines perfectly complement any
+                      JavaDrip coffee machine, creating a harmonious and stylish
+                      coffee set-up.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfect milk results: The Cool Control delivers
+                      consistently perfect milk foam for a variety of delicious
+                      drinks, such as the flat white. By keeping the milk
+                      chilled to an optimal 4 °C, this innovative cooler ensures
+                      that every cup of coffee is of the highest quality. And
+                      with a convenient level indicator, users will always know
+                      when it's time to top up the cooler with fresh milk,
+                      guaranteeing consistently excellent results with every
+                      use.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      De compacte Cool Control past in kleine ruimtes. Het
+                      elegante ontwerp vult JavaDrip-koffiemachines aan met
+                      hoogwaardige materialen. Creëer perfecte melkschuim voor
+                      dranken zoals flat whites met gekoelde melk die op 4°C
+                      wordt gehouden. Niveau-indicator herinnert gebruikers
+                      eraan om melk bij te vullen indien nodig.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideaal ruimtegebruik: Het elegante ontwerp van de Cool
+                      Control maakt het mogelijk om deze op verschillende
+                      locaties te gebruiken waar de ruimte beperkt is. Of het nu
+                      in compacte keukentjes of kleine kantoren is, deze slanke
+                      melkkoeler past naadloos in elke omgeving dankzij zijn
+                      compacte afmetingen en veelzijdig ontwerp.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegant ontwerp: De Cool Control belichaamt de tijdloze
+                      elegantie van de klassieke JavaDrip-look. Gemaakt van
+                      hoogwaardige materialen, waaronder een deksel van
+                      hoogwaardig 1,5 mm dik roestvrij staal, en versierd met
+                      stijlvolle ventilatiesleuven, straalt deze melkkoeler
+                      verfijning uit. De strakke, minimalistische lijnen passen
+                      perfect bij elke JavaDrip-koffiemachine, waardoor een
+                      harmonieuze en stijlvolle koffieset ontstaat.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfecte melkresultaten: De Cool Control levert consequent
+                      perfect melkschuim voor een verscheidenheid aan heerlijke
+                      dranken, zoals de flat white. Door de melk op een optimale
+                      4 °C te houden, zorgt deze innovatieve koeler ervoor dat
+                      elke kop koffie van de hoogste kwaliteit is. En met een
+                      handige niveau-indicator weten gebruikers altijd wanneer
+                      het tijd is om de koeler bij te vullen met verse melk, wat
+                      zorgt voor consistent uitstekende resultaten bij elk
+                      gebruik.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Der kompakte Cool Control passt in kleine Räume. Sein
+                      elegantes Design ergänzt JavaDrip-Kaffeemaschinen mit
+                      hochwertigen Materialien. Erstellen Sie perfekten
+                      Milchschaum für Getränke wie Flat Whites mit gekühlter
+                      Milch, die bei 4 °C gehalten wird. Der Füllstandsanzeiger
+                      erinnert die Benutzer daran, die Milch bei Bedarf
+                      nachzufüllen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideale Raumnutzung: Das elegante Design des Cool Control
+                      ermöglicht es, ihn an verschiedenen Orten zu verwenden, an
+                      denen der Platz begrenzt ist. Ob in kompakten Küchenzeilen
+                      oder kleinen Büros, dieser schlanke Milchkühler fügt sich
+                      dank seiner kompakten Abmessungen und seines vielseitigen
+                      Designs nahtlos in jede Umgebung ein.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegantes Design: Der Cool Control verkörpert die zeitlose
+                      Eleganz des klassischen JavaDrip-Looks. Gefertigt aus
+                      hochwertigen Materialien, einschließlich eines Deckels aus
+                      1,5 mm dickem Edelstahl, und verziert mit stilvollen
+                      Lüftungsschlitzen, strahlt dieser Milchkühler Raffinesse
+                      aus. Seine klaren, minimalistischen Linien ergänzen jede
+                      JavaDrip-Kaffeemaschine perfekt und schaffen ein
+                      harmonisches und stilvolles Kaffee-Setup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfekte Milchergebnisse: Der Cool Control liefert
+                      durchgehend perfekten Milchschaum für eine Vielzahl
+                      köstlicher Getränke, wie den Flat White. Indem die Milch
+                      auf optimalen 4 °C gekühlt wird, stellt dieser innovative
+                      Kühler sicher, dass jede Tasse Kaffee von höchster
+                      Qualität ist. Und mit einem praktischen Füllstandsanzeiger
+                      wissen die Benutzer immer, wann es Zeit ist, den Kühler
+                      mit frischer Milch aufzufüllen, um bei jeder Verwendung
+                      konstant hervorragende Ergebnisse zu garantieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      The compact Cool Control fits in small spaces. Its elegant
+                      design complements JavaDrip coffee machines with premium
+                      materials. Create perfect milk foam for drinks like flat
+                      whites with chilled milk kept at 4°C. Level indicator
+                      reminds users to top up milk as needed.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideal use of space: The elegant design of the Cool Control
+                      allows it to be used in a variety of locations where space
+                      is limited. Whether it's in compact kitchenettes or small
+                      offices, this slimline milk cooler will fit seamlessly
+                      into any environment, thanks to its compact dimensions and
+                      versatile design.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegant design: The Cool Control embodies the timeless
+                      elegance of the classic JavaDrip look. Crafted with
+                      premium materials, including a cover made of high-quality
+                      1.5 mm thick stainless steel, and adorned with stylish
+                      ventilation slots, this milk cooler exudes sophistication.
+                      Its clean, minimalist lines perfectly complement any
+                      JavaDrip coffee machine, creating a harmonious and stylish
+                      coffee set-up.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfect milk results: The Cool Control delivers
+                      consistently perfect milk foam for a variety of delicious
+                      drinks, such as the flat white. By keeping the milk
+                      chilled to an optimal 4 °C, this innovative cooler ensures
+                      that every cup of coffee is of the highest quality. And
+                      with a convenient level indicator, users will always know
+                      when it's time to top up the cooler with fresh milk,
+                      guaranteeing consistently excellent results with every
+                      use.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le Cool Control compact s'adapte aux petits espaces. Son
+                      design élégant complète les machines à café JavaDrip avec
+                      des matériaux de qualité supérieure. Créez une mousse de
+                      lait parfaite pour des boissons comme les flat whites avec
+                      du lait refroidi à 4°C. L'indicateur de niveau rappelle
+                      aux utilisateurs de remplir le lait au besoin.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Utilisation idéale de l'espace : Le design élégant du Cool
+                      Control permet de l'utiliser dans une variété d'endroits
+                      où l'espace est limité. Que ce soit dans de petites
+                      kitchenettes ou de petits bureaux, ce refroidisseur de
+                      lait mince s'intègre parfaitement dans n'importe quel
+                      environnement, grâce à ses dimensions compactes et son
+                      design polyvalent.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Design élégant : Le Cool Control incarne l'élégance
+                      intemporelle du look classique JavaDrip. Fabriqué avec des
+                      matériaux de qualité supérieure, y compris un couvercle en
+                      acier inoxydable de 1,5 mm d'épaisseur, et orné de fentes
+                      de ventilation élégantes, ce refroidisseur de lait dégage
+                      une sophistication. Ses lignes épurées et minimalistes
+                      complètent parfaitement toute machine à café JavaDrip,
+                      créant une installation café harmonieuse et élégante.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Résultats de lait parfaits : Le Cool Control offre une
+                      mousse de lait toujours parfaite pour une variété de
+                      boissons délicieuses, comme le flat white. En maintenant
+                      le lait à une température optimale de 4 °C, ce
+                      refroidisseur innovant garantit que chaque tasse de café
+                      est de la plus haute qualité. Et avec un indicateur de
+                      niveau pratique, les utilisateurs sauront toujours quand
+                      il est temps de remplir le refroidisseur avec du lait
+                      frais, garantissant des résultats excellents à chaque
+                      utilisation.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le Cool Control compact s'adapte aux petits espaces. Son
+                      design élégant complète les machines à café JavaDrip avec
+                      des matériaux de qualité supérieure. Créez une mousse de
+                      lait parfaite pour des boissons comme les flat whites avec
+                      du lait refroidi à 4°C. L'indicateur de niveau rappelle
+                      aux utilisateurs de remplir le lait si nécessaire.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Utilisation idéale de l'espace : Le design élégant du Cool
+                      Control lui permet d'être utilisé dans une variété
+                      d'endroits où l'espace est limité. Que ce soit dans de
+                      petites kitchenettes ou de petits bureaux, ce
+                      refroidisseur de lait mince s'intégrera parfaitement dans
+                      n'importe quel environnement, grâce à ses dimensions
+                      compactes et son design polyvalent.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Design élégant : Le Cool Control incarne l'élégance
+                      intemporelle du look classique JavaDrip. Fabriqué avec des
+                      matériaux de qualité supérieure, y compris un couvercle en
+                      acier inoxydable de 1,5 mm d'épaisseur de haute qualité,
+                      et orné de fentes de ventilation élégantes, ce
+                      refroidisseur de lait dégage une sophistication. Ses
+                      lignes épurées et minimalistes complètent parfaitement
+                      toute machine à café JavaDrip, créant un ensemble café
+                      harmonieux et élégant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Résultats parfaits pour le lait : Le Cool Control offre
+                      une mousse de lait parfaitement constante pour une variété
+                      de boissons délicieuses, comme le flat white. En
+                      maintenant le lait à une température optimale de 4 °C, ce
+                      refroidisseur innovant garantit que chaque tasse de café
+                      est de la plus haute qualité. Et avec un indicateur de
+                      niveau pratique, les utilisateurs sauront toujours quand
+                      il est temps de remplir le refroidisseur avec du lait
+                      frais, garantissant des résultats excellents à chaque
+                      utilisation.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le Cool Control compact s'adapte aux petits espaces. Son
+                      design élégant complète les machines à café JavaDrip avec
+                      des matériaux de qualité supérieure. Créez une mousse de
+                      lait parfaite pour des boissons comme les flat whites avec
+                      du lait refroidi à 4°C. L'indicateur de niveau rappelle
+                      aux utilisateurs de remplir le lait si nécessaire.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Utilisation idéale de l'espace : Le design élégant du Cool
+                      Control lui permet d'être utilisé dans une variété
+                      d'endroits où l'espace est limité. Que ce soit dans de
+                      petites kitchenettes ou de petits bureaux, ce
+                      refroidisseur de lait mince s'intégrera parfaitement dans
+                      n'importe quel environnement, grâce à ses dimensions
+                      compactes et son design polyvalent.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Design élégant : Le Cool Control incarne l'élégance
+                      intemporelle du look classique JavaDrip. Fabriqué avec des
+                      matériaux de qualité supérieure, y compris un couvercle en
+                      acier inoxydable de 1,5 mm d'épaisseur de haute qualité,
+                      et orné de fentes de ventilation élégantes, ce
+                      refroidisseur de lait dégage une sophistication. Ses
+                      lignes épurées et minimalistes complètent parfaitement
+                      toute machine à café JavaDrip, créant un ensemble café
+                      harmonieux et élégant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Résultats parfaits pour le lait : Le Cool Control offre
+                      une mousse de lait parfaitement constante pour une variété
+                      de boissons délicieuses, comme le flat white. En
+                      maintenant le lait à une température optimale de 4 °C, ce
+                      refroidisseur innovant garantit que chaque tasse de café
+                      est de la plus haute qualité. Et avec un indicateur de
+                      niveau pratique, les utilisateurs sauront toujours quand
+                      il est temps de remplir le refroidisseur avec du lait
+                      frais, garantissant des résultats excellents à chaque
+                      utilisation.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      コンパクトなクールコントロールは狭いスペースに収まります。そのエレガントなデザインは、プレミアム素材を使用したJavaDripコーヒーマシンを引き立てます。4°Cに保たれた冷たいミルクで、フラットホワイトのような飲み物に完璧なミルクフォームを作り出します。レベルインジケーターは、必要に応じてミルクを補充するようユーザーに知らせます。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      スペースの理想的な活用：クールコントロールのエレガントなデザインにより、スペースが限られたさまざまな場所で使用できます。コンパクトなキッチンや小さなオフィスでも、このスリムなミルククーラーはそのコンパクトなサイズと多用途なデザインのおかげで、どんな環境にもシームレスにフィットします。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      エレガントなデザイン：クールコントロールは、クラシックなJavaDripの外観の時代を超えたエレガンスを体現しています。高品質の1.5mm厚のステンレススチール製カバーを含むプレミアム素材で作られ、スタイリッシュな通気スロットで装飾されたこのミルククーラーは洗練された雰囲気を醸し出します。そのクリーンでミニマリストなラインは、どんなJavaDripコーヒーマシンにも完璧に調和し、調和の取れたスタイリッシュなコーヒーセットアップを作り出します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      完璧なミルクの結果：クールコントロールは、フラットホワイトのようなさまざまなおいしい飲み物のために、一貫して完璧なミルクフォームを提供します。ミルクを最適な4°Cに冷却することで、この革新的なクーラーは、すべてのコーヒーが最高品質であることを保証します。また、便利なレベルインジケーターにより、ユーザーは常に新鮮なミルクをクーラーに補充するタイミングを知ることができ、毎回一貫して優れた結果を保証します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      De compacte Cool Control past in kleine ruimtes. Het
+                      elegante ontwerp vult JavaDrip-koffiemachines aan met
+                      hoogwaardige materialen. Creëer perfecte melkschuim voor
+                      dranken zoals flat whites met gekoelde melk die op 4°C
+                      wordt gehouden. Niveau-indicator herinnert gebruikers
+                      eraan om melk bij te vullen indien nodig.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ideaal ruimtegebruik: Het elegante ontwerp van de Cool
+                      Control maakt het mogelijk om deze op verschillende
+                      locaties te gebruiken waar de ruimte beperkt is. Of het nu
+                      in compacte keukens of kleine kantoren is, deze slanke
+                      melkkoeler past naadloos in elke omgeving dankzij zijn
+                      compacte afmetingen en veelzijdig ontwerp.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegant ontwerp: De Cool Control belichaamt de tijdloze
+                      elegantie van de klassieke JavaDrip-look. Gemaakt van
+                      hoogwaardige materialen, waaronder een deksel van
+                      hoogwaardig 1,5 mm dik roestvrij staal, en versierd met
+                      stijlvolle ventilatiesleuven, straalt deze melkkoeler
+                      verfijning uit. Zijn strakke, minimalistische lijnen
+                      vullen elke JavaDrip-koffiemachine perfect aan, waardoor
+                      een harmonieuze en stijlvolle koffieopstelling ontstaat.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfecte melkresultaten: De Cool Control levert consequent
+                      perfect melkschuim voor een verscheidenheid aan heerlijke
+                      dranken, zoals de flat white. Door de melk op een optimale
+                      4 °C te houden, zorgt deze innovatieve koeler ervoor dat
+                      elke kop koffie van de hoogste kwaliteit is. En met een
+                      handige niveau-indicator weten gebruikers altijd wanneer
+                      het tijd is om de koeler bij te vullen met verse melk, wat
+                      zorgt voor consistent uitstekende resultaten bij elk
+                      gebruik.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Den kompakta Cool Control passar i små utrymmen. Dess
+                      eleganta design kompletterar JavaDrip kaffemaskiner med
+                      premium material. Skapa perfekt mjölkskum för drycker som
+                      flat whites med kyld mjölk som hålls vid 4°C.
+                      Nivåindikatorn påminner användarna om att fylla på mjölk
+                      vid behov.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Idealisk användning av utrymme: Den eleganta designen av
+                      Cool Control gör att den kan användas på olika platser där
+                      utrymmet är begränsat. Oavsett om det är i kompakta
+                      pentryn eller små kontor, kommer denna smala mjölkkylare
+                      att passa sömlöst in i vilken miljö som helst, tack vare
+                      sina kompakta dimensioner och mångsidiga design.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elegant design: Cool Control förkroppsligar den tidlösa
+                      elegansen i det klassiska JavaDrip-utseendet. Tillverkad
+                      med premium material, inklusive ett lock av högkvalitativt
+                      1,5 mm tjockt rostfritt stål, och prydd med stiliga
+                      ventilationsslitsar, utstrålar denna mjölkkylare
+                      sofistikering. Dess rena, minimalistiska linjer
+                      kompletterar perfekt vilken JavaDrip kaffemaskin som
+                      helst, och skapar en harmonisk och stilren kaffemiljö.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Perfekta mjölkresultat: Cool Control levererar konsekvent
+                      perfekt mjölkskum för en mängd utsökta drycker, såsom flat
+                      white. Genom att hålla mjölken kyld till optimala 4 °C
+                      säkerställer denna innovativa kylare att varje kopp kaffe
+                      är av högsta kvalitet. Och med en praktisk nivåindikator
+                      vet användarna alltid när det är dags att fylla på kylaren
+                      med färsk mjölk, vilket garanterar konsekvent utmärkta
+                      resultat vid varje användning.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      يتناسب جهاز التحكم في البرودة المدمج في المساحات الصغيرة.
+                      يكمل تصميمه الأنيق آلات القهوة JavaDrip بمواد فاخرة. اصنع
+                      رغوة الحليب المثالية للمشروبات مثل الفلات وايت مع الحليب
+                      المبرد المحفوظ عند 4 درجات مئوية. يذكّر مؤشر المستوى
+                      المستخدمين بإضافة الحليب حسب الحاجة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      الاستخدام المثالي للمساحة: يسمح التصميم الأنيق لجهاز
+                      التحكم في البرودة باستخدامه في مجموعة متنوعة من المواقع
+                      حيث تكون المساحة محدودة. سواء كان ذلك في المطابخ الصغيرة
+                      أو المكاتب الصغيرة، فإن هذا المبرد النحيف للحليب سيتناسب
+                      بسلاسة مع أي بيئة، بفضل أبعاده المدمجة وتصميمه المتنوع.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      تصميم أنيق: يجسد جهاز التحكم في البرودة الأناقة الخالدة
+                      لمظهر JavaDrip الكلاسيكي. مصنوع من مواد فاخرة، بما في ذلك
+                      غطاء مصنوع من الفولاذ المقاوم للصدأ عالي الجودة بسمك 1.5
+                      مم، ومزود بفتحات تهوية أنيقة، هذا المبرد للحليب ينبعث منه
+                      الأناقة. خطوطه النظيفة والبسيطة تكمل تمامًا أي آلة قهوة
+                      JavaDrip، مما يخلق إعداد قهوة متناغم وأنيق.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      نتائج حليب مثالية: يوفر جهاز التحكم في البرودة رغوة حليب
+                      مثالية باستمرار لمجموعة متنوعة من المشروبات اللذيذة، مثل
+                      الفلات وايت. من خلال الحفاظ على الحليب مبردًا عند درجة
+                      حرارة مثالية تبلغ 4 درجات مئوية، يضمن هذا المبرد المبتكر
+                      أن كل كوب من القهوة يكون بأعلى جودة. ومع وجود مؤشر مستوى
+                      مريح، سيعرف المستخدمون دائمًا متى يحين الوقت لإضافة الحليب
+                      الطازج إلى المبرد، مما يضمن نتائج ممتازة باستمرار مع كل
+                      استخدام.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Mælkekaraffel
+        de-at: Milchkaraffe
+        de-ch: Milchkaraffe
+        de-de: Milchkaraffe
+        en-au: Carafe à lait
+        en-ca: Milk carafe
+        en-gb: Milk jug
+        en-nl: Melkkaraf
+        en-nz: Milchkännchen
+        en-us: Milk carafe
+        fr-ca: Carafe à lait
+        fr-ch: Carafe à lait
+        fr-fr: Carafe à lait
+        ja-jp: ミルクカラフェ
+        nl-nl: Melkkaraf
+        sv-se: Mjölkkaraff
+        ar-uae: إبريق حليب
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-f105ef7f-38db-4733-9bea-532a8a1a371c-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Mælkekaraffel
+        de-at: Milchkaraffe
+        de-ch: Milchkaraffe
+        de-de: Milchkaraffe
+        en-au: Carafe à lait
+        en-ca: Milk carafe
+        en-gb: Milk carafe
+        en-nl: Melkkaraf
+        en-nz: Milchkännchen
+        en-us: Milk carafe
+        fr-ca: Carafe à lait
+        fr-ch: Carafe à lait
+        fr-fr: Carafe à lait
+        ja-jp: ミルクカラフェ
+        nl-nl: Melkkaraf
+        sv-se: Mjölkkaraff
+        ar-uae: إبريق حليب
+    rating:
+      type: number
+      value: '4.6'
+    ogImage:
+      type: asset
+      value:
+        - _id: 3187dd16-affb-4aa5-9e93-bce380f52979
+          type: image
+          fields:
+            id:
+              type: text
+              value: b1e79a4b-f663-494c-abdc-025d7c047d2a
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/v6-DzCNnRT6IeYKYjTNiVA-milk-carafe-1.png
+              type: text
+            file:
+              type: file
+              value: e30656f0-346d-4346-bf01-ef4227844bec
+            size:
+              value: 6598
+              type: number
+            title:
+              type: text
+              value: milk-carafe-1.png
+            width:
+              value: 386
+              type: number
+            height:
+              value: 386
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-f105ef7f-38db-4733-9bea-532a8a1a371c-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: 9882a893-922b-4148-abf6-15ece9dad5a6
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '144'
+            price:
+              type: number
+              locales:
+                da-dk: '44.00'
+                de-at: '44.00'
+                de-ch: '44.00'
+                de-de: '44.00'
+                en-au: '44.00'
+                en-ca: '44.00'
+                en-gb: '44.00'
+                en-nl: '44.00'
+                en-nz: '44.00'
+                en-us: '44.00'
+                fr-ca: '44.00'
+                fr-ch: '44.00'
+                fr-fr: '44.00'
+                ja-jp: '44.00'
+                nl-nl: '44.00'
+                sv-se: '44.00'
+                ar-uae: '44.00'
+            title:
+              type: text
+              locales:
+                da-dk: Mælkekaraffel
+                de-at: Milchkaraffe
+                de-ch: Milchkännchen
+                de-de: Milchkännchen
+                en-au: Carafe à lait
+                en-ca: Milk carafe
+                en-gb: Milk carafe
+                en-nl: Melkkaraf
+                en-nz: Milchkännchen
+                en-us: Milk carafe
+                fr-ca: Carafe à lait
+                fr-ch: Carafe à lait
+                fr-fr: Carafe à lait
+                ja-jp: ミルクカラフェ
+                nl-nl: Melkkaraf
+                sv-se: Mjölkkaraff
+                ar-uae: إبريق حليب
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: f86949e1-9734-4476-98d5-1e17ad08c0fb
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: b1e79a4b-f663-494c-abdc-025d7c047d2a
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/v6-DzCNnRT6IeYKYjTNiVA-milk-carafe-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: e30656f0-346d-4346-bf01-ef4227844bec
+                    size:
+                      value: 6598
+                      type: number
+                    title:
+                      type: text
+                      value: milk-carafe-1.png
+                    width:
+                      value: 386
+                      type: number
+                    height:
+                      value: 386
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Mælkekaraffel
+        de-at: Milchkaraffe
+        de-ch: Milchkännchen
+        de-de: Milchkännchen
+        en-au: Carafe à lait
+        en-ca: Milk carafe
+        en-gb: Milk carafe
+        en-nl: Melkkaraf
+        en-nz: Milchkaraffe
+        en-us: Milk carafe
+        fr-ca: Carafe à lait
+        fr-ch: Carafe à lait
+        fr-fr: Carafe à lait
+        ja-jp: ミルクカラフェ
+        nl-nl: Melkkaraf
+        sv-se: Mjölkkaraff
+        ar-uae: إبريق حليب
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: 3187dd16-affb-4aa5-9e93-bce380f52979
+          type: image
+          fields:
+            id:
+              type: text
+              value: b1e79a4b-f663-494c-abdc-025d7c047d2a
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/v6-DzCNnRT6IeYKYjTNiVA-milk-carafe-1.png
+              type: text
+            file:
+              type: file
+              value: e30656f0-346d-4346-bf01-ef4227844bec
+            size:
+              value: 6598
+              type: number
+            title:
+              type: text
+              value: milk-carafe-1.png
+            width:
+              value: 386
+              type: number
+            height:
+              value: 386
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Kompakt mælkekøler til perfekt skum. Holder mælken frisk til kaffe.
+          Elegant og pladsbesparende design.
+        de-at: >-
+          Kompakter Milch-Kühler für perfekten Schaum. Hält Milch frisch für
+          Kaffee. Elegantes und platzsparendes Design.
+        de-ch: >-
+          Kompakter Milchkühler für perfekten Schaum. Hält Milch für Kaffee
+          frisch. Elegantes und platzsparendes Design.
+        de-de: >-
+          Kompakter Milchkühler für perfekten Schaum. Hält Milch für Kaffee
+          frisch. Elegantes und platzsparendes Design.
+        en-au: >-
+          Refroidisseur de lait compact pour une mousse parfaite. Garde le lait
+          frais pour le café. Design élégant et peu encombrant.
+        en-ca: >-
+          Compact milk cooler for perfect foam. Keeps milk fresh for coffee.
+          Elegant and space-saving design.
+        en-gb: >-
+          Compact milk cooler for perfect froth. Keeps milk fresh for coffee.
+          Elegant and space-saving design.
+        en-nl: >-
+          Compacte melkkoeler voor perfecte schuim. Houdt melk vers voor koffie.
+          Elegant en ruimtebesparend ontwerp.
+        en-nz: >-
+          Kompakter Milch-Kühler für perfekten Schaum. Hält Milch frisch für
+          Kaffee. Elegantes und platzsparendes Design.
+        en-us: >-
+          Compact milk cooler for perfect foam. Keeps milk fresh for coffee.
+          Elegant and space-saving design.
+        fr-ca: >-
+          Refroidisseur de lait compact pour une mousse parfaite. Garde le lait
+          frais pour le café. Design élégant et peu encombrant.
+        fr-ch: >-
+          Refroidisseur de lait compact pour une mousse parfaite. Garde le lait
+          frais pour le café. Design élégant et peu encombrant.
+        fr-fr: >-
+          Refroidisseur de lait compact pour une mousse parfaite. Garde le lait
+          frais pour le café. Design élégant et peu encombrant.
+        ja-jp: 完璧な泡立ちのためのコンパクトなミルククーラー。コーヒー用のミルクを新鮮に保ちます。エレガントで省スペースなデザイン。
+        nl-nl: >-
+          Compacte melkkoeler voor perfecte schuim. Houdt melk vers voor koffie.
+          Elegant en ruimtebesparend ontwerp.
+        sv-se: >-
+          Kompakt mjölkkylare för perfekt skum. Håller mjölken färsk för kaffe.
+          Elegant och platsbesparande design.
+        ar-uae: >-
+          مبرد حليب مدمج للحصول على رغوة مثالية. يحافظ على الحليب طازجًا للقهوة.
+          تصميم أنيق وموفر للمساحة.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Kompakt og elegant mælkekøler til perfekt mælkeskum. Hold mælken frisk
+          og kølig til dine yndlingskaffedrikke. Ideel til små rum.
+        de-at: >-
+          Kompakter und eleganter Milchkühler für perfekten Milchschaum. Hält
+          Milch frisch und gekühlt für Ihre Lieblingskaffeegetränke. Ideal für
+          kleine Räume.
+        de-ch: >-
+          Kompakter und eleganter Milchkühler für perfekten Milchschaum. Hält
+          Milch frisch und gekühlt für Ihre Lieblingskaffeegetränke. Ideal für
+          kleine Räume.
+        de-de: >-
+          Kompakter und eleganter Milchkühler für perfekten Milchschaum. Hält
+          Milch frisch und gekühlt für Ihre Lieblingskaffeegetränke. Ideal für
+          kleine Räume.
+        en-au: >-
+          Refroidisseur de lait compact et élégant pour une mousse de lait
+          parfaite. Gardez le lait frais et réfrigéré pour vos boissons café
+          préférées. Idéal pour les petits espaces.
+        en-ca: >-
+          Compact and elegant milk cooler for perfect milk foam. Keep milk fresh
+          and chilled for your favourite coffee drinks. Ideal for small spaces.
+        en-gb: >-
+          Compact and elegant milk cooler for perfect milk froth. Keep milk
+          fresh and chilled for your favourite coffee drinks. Ideal for small
+          spaces.
+        en-nl: >-
+          Compacte en elegante melkkoeler voor perfecte melkschuim. Houd melk
+          vers en gekoeld voor je favoriete koffiedranken. Ideaal voor kleine
+          ruimtes.
+        en-nz: >-
+          Kompakter und eleganter Milchkühler für perfekten Milchschaum. Hält
+          Milch frisch und gekühlt für Ihre Lieblingskaffeegetränke. Ideal für
+          kleine Räume.
+        en-us: >-
+          Compact and elegant milk cooler for perfect milk foam. Keep milk fresh
+          and chilled for your favorite coffee drinks. Ideal for small spaces.
+        fr-ca: >-
+          Refroidisseur de lait compact et élégant pour une mousse de lait
+          parfaite. Gardez le lait frais et réfrigéré pour vos boissons café
+          préférées. Idéal pour les petits espaces.
+        fr-ch: >-
+          Refroidisseur de lait compact et élégant pour une mousse de lait
+          parfaite. Gardez le lait frais et réfrigéré pour vos boissons café
+          préférées. Idéal pour les petits espaces.
+        fr-fr: >-
+          Refroidisseur de lait compact et élégant pour une mousse de lait
+          parfaite. Gardez le lait frais et réfrigéré pour vos boissons café
+          préférées. Idéal pour les petits espaces.
+        ja-jp: >-
+          完璧なミルクフォームのためのコンパクトでエレガントなミルククーラー。お気に入りのコーヒードリンクのためにミルクを新鮮で冷たく保ちます。小さなスペースに最適です。
+        nl-nl: >-
+          Compacte en elegante melkkoeler voor perfecte melkschuim. Houd melk
+          vers en gekoeld voor je favoriete koffiedranken. Ideaal voor kleine
+          ruimtes.
+        sv-se: >-
+          Kompakt och elegant mjölkkylare för perfekt mjölkskum. Håll mjölken
+          färsk och kyld för dina favoritkaffedrycker. Perfekt för små utrymmen.
+        ar-uae: >-
+          مبرد حليب مدمج وأنيق للحصول على رغوة حليب مثالية. يحافظ على الحليب
+          طازجًا ومبردًا لمشروبات القهوة المفضلة لديك. مثالي للمساحات الصغيرة.
+  _dataResources:
+    ref-f105ef7f-38db-4733-9bea-532a8a1a371c-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-f105ef7f-38db-4733-9bea-532a8a1a371c-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

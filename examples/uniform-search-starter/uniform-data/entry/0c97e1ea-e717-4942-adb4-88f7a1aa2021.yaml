@@ -1,0 +1,211 @@
+created: '2026-03-10T23:33:56.429383+00:00'
+modified: '2026-03-10T23:33:56.429383+00:00'
+pattern: false
+entry:
+  _id: 0c97e1ea-e717-4942-adb4-88f7a1aa2021
+  _name: French Press
+  _slug: french-press
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/2Ts-1QgHTSKwwt6ocykhxQ-french-press.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Fransk Presse
+        de-at: French Press
+        de-ch: Französische Presse
+        de-de: Französische Presse
+        en-au: Presse française
+        en-ca: French Press
+        en-gb: French Press
+        en-nl: Franse pers
+        en-nz: Französische Presse
+        en-us: French Press
+        fr-ca: Presse française
+        fr-ch: Presse française
+        fr-fr: Presse française
+        ja-jp: フレンチプレス
+        nl-nl: French Press
+        sv-se: Fransk press
+        ar-uae: الصحافة الفرنسية
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Oplev den rige, fyldige smag af kaffe brygget i en stempelkande. Vores
+          udvalg af stempelkander inkluderer forskellige størrelser og designs,
+          perfekt til enhver kaffeelsker. Kendt for sin evne til at udtrække de
+          mest smagfulde olier fra dine kaffebønner, tilbyder stempelkanden en
+          enkel, men sofistikeret bryggemetode. Nyd ritualet med at presse din
+          kaffe og værdsæt den dybe, aromatiske bryg, der opstår. Gennemse vores
+          kollektion og find den perfekte stempelkande til at løfte dine
+          kaffestunder.
+        de-at: >-
+          Erleben Sie den reichen, vollmundigen Geschmack von Kaffee, der in
+          einer French Press gebrüht wird. Unsere Auswahl an French Presses
+          umfasst verschiedene Größen und Designs, perfekt für jeden
+          Kaffeeliebhaber. Bekannt für ihre Fähigkeit, die aromatischsten Öle
+          aus Ihren Kaffeebohnen zu extrahieren, bietet die French Press eine
+          einfache, aber raffinierte Brühmethode. Genießen Sie das Ritual des
+          Pressens Ihres Kaffees und kosten Sie den tiefen, aromatischen
+          Aufguss, der daraus entsteht. Durchstöbern Sie unsere Kollektion und
+          finden Sie die perfekte French Press, um Ihre Kaffeemomente zu
+          bereichern.
+        de-ch: >-
+          Erleben Sie den reichen, vollmundigen Geschmack von Kaffee, der in
+          einer French Press gebrüht wird. Unsere Auswahl an French Presses
+          umfasst verschiedene Größen und Designs, perfekt für jeden
+          Kaffeeliebhaber. Bekannt für ihre Fähigkeit, die aromatischsten Öle
+          aus Ihren Kaffeebohnen zu extrahieren, bietet die French Press eine
+          einfache, aber raffinierte Brühmethode. Genießen Sie das Ritual des
+          Pressens Ihres Kaffees und kosten Sie den tiefen, aromatischen
+          Aufguss, der daraus entsteht. Durchstöbern Sie unsere Kollektion und
+          finden Sie die perfekte French Press, um Ihre Kaffeegenussmomente zu
+          bereichern.
+        de-de: >-
+          Erleben Sie den reichen, vollmundigen Geschmack von Kaffee, der in
+          einer French Press gebrüht wird. Unsere Auswahl an French Presses
+          umfasst verschiedene Größen und Designs, perfekt für jeden
+          Kaffeeliebhaber. Bekannt für ihre Fähigkeit, die aromatischsten Öle
+          aus Ihren Kaffeebohnen zu extrahieren, bietet die French Press eine
+          einfache, aber raffinierte Brühmethode. Genießen Sie das Ritual des
+          Pressens Ihres Kaffees und kosten Sie den tiefen, aromatischen
+          Aufguss, der daraus entsteht. Durchstöbern Sie unsere Kollektion und
+          finden Sie die perfekte French Press, um Ihre Kaffeegenussmomente zu
+          bereichern.
+        en-au: >-
+          Découvrez la saveur riche et corsée du café préparé dans une cafetière
+          à piston. Notre sélection de cafetières à piston inclut divers formats
+          et designs, parfaits pour tout amateur de café. Réputée pour sa
+          capacité à extraire les huiles les plus savoureuses de vos grains de
+          café, la cafetière à piston offre une méthode d'infusion simple mais
+          sophistiquée. Appréciez le rituel de presser votre café et savourez
+          l'infusion profonde et aromatique qui en résulte. Parcourez notre
+          collection et trouvez la cafetière à piston parfaite pour sublimer vos
+          moments café.
+        en-ca: >-
+          Experience the rich, full-bodied flavour of coffee brewed in a French
+          press. Our selection of French presses includes various sizes and
+          designs, perfect for any coffee lover. Known for its ability to
+          extract the most flavourful oils from your coffee grounds, the French
+          press offers a simple yet sophisticated brewing method. Enjoy the
+          ritual of pressing your coffee and savour the deep, aromatic brew that
+          results. Browse our collection and find the perfect French press to
+          elevate your coffee moments.
+        en-gb: >-
+          Experience the rich, full-bodied flavour of coffee brewed in a
+          cafetière. Our selection of cafetières includes various sizes and
+          designs, perfect for any coffee lover. Known for its ability to
+          extract the most flavoursome oils from your coffee grounds, the
+          cafetière offers a simple yet sophisticated brewing method. Enjoy the
+          ritual of pressing your coffee and savour the deep, aromatic brew that
+          results. Browse our collection and find the perfect cafetière to
+          elevate your coffee moments.
+        en-nl: >-
+          Ervaar de rijke, volle smaak van koffie gezet in een cafetière. Onze
+          selectie cafetières omvat verschillende maten en ontwerpen, perfect
+          voor elke koffieliefhebber. Bekend om zijn vermogen om de meest
+          smaakvolle oliën uit uw gemalen koffie te halen, biedt de cafetière
+          een eenvoudige maar verfijnde zetmethode. Geniet van het ritueel van
+          het persen van uw koffie en proef de diepe, aromatische drank die
+          daaruit voortkomt. Blader door onze collectie en vind de perfecte
+          cafetière om uw koffiemomenten te verrijken.
+        en-nz: >-
+          Erleben Sie den reichen, vollmundigen Geschmack von Kaffee, der in
+          einer French Press gebrüht wird. Unsere Auswahl an French Presses
+          umfasst verschiedene Größen und Designs, die perfekt für jeden
+          Kaffeeliebhaber sind. Bekannt für ihre Fähigkeit, die aromatischsten
+          Öle aus Ihren Kaffeebohnen zu extrahieren, bietet die French Press
+          eine einfache, aber raffinierte Brühmethode. Genießen Sie das Ritual
+          des Pressens Ihres Kaffees und erfreuen Sie sich an dem tiefen,
+          aromatischen Gebräu, das daraus entsteht. Durchstöbern Sie unsere
+          Kollektion und finden Sie die perfekte French Press, um Ihre
+          Kaffeegenussmomente zu bereichern.
+        en-us: >-
+          Experience the rich, full-bodied flavor of coffee brewed in a French
+          press. Our selection of French presses includes various sizes and
+          designs, perfect for any coffee lover. Known for its ability to
+          extract the most flavorsome oils from your coffee grounds, the French
+          press offers a simple yet sophisticated brewing method. Enjoy the
+          ritual of pressing your coffee and savor the deep, aromatic brew that
+          results. Browse our collection and find the perfect French press to
+          elevate your coffee moments.
+        fr-ca: >-
+          Découvrez la saveur riche et corsée du café préparé dans une cafetière
+          à piston. Notre sélection de cafetières à piston comprend divers
+          formats et designs, parfaits pour tout amateur de café. Réputée pour
+          sa capacité à extraire les huiles les plus savoureuses de vos grains
+          de café, la cafetière à piston offre une méthode d'infusion simple
+          mais sophistiquée. Appréciez le rituel de presser votre café et
+          savourez l'infusion profonde et aromatique qui en résulte. Parcourez
+          notre collection et trouvez la cafetière à piston parfaite pour
+          sublimer vos moments café.
+        fr-ch: >-
+          Découvrez la saveur riche et corsée du café préparé dans une cafetière
+          à piston. Notre sélection de cafetières à piston comprend diverses
+          tailles et designs, parfaits pour tout amateur de café. Réputée pour
+          sa capacité à extraire les huiles les plus savoureuses de votre
+          mouture de café, la cafetière à piston offre une méthode d'infusion
+          simple mais sophistiquée. Appréciez le rituel de presser votre café et
+          savourez l'infusion profonde et aromatique qui en résulte. Parcourez
+          notre collection et trouvez la cafetière à piston parfaite pour
+          sublimer vos moments café.
+        fr-fr: >-
+          Découvrez la saveur riche et corsée du café préparé dans une cafetière
+          à piston. Notre sélection de cafetières à piston comprend diverses
+          tailles et designs, parfaits pour tout amateur de café. Réputée pour
+          sa capacité à extraire les huiles les plus savoureuses de votre
+          mouture de café, la cafetière à piston offre une méthode d'infusion
+          simple mais sophistiquée. Appréciez le rituel de presser votre café et
+          savourez l'infusion profonde et aromatique qui en résulte. Parcourez
+          notre collection et trouvez la cafetière à piston parfaite pour
+          sublimer vos moments café.
+        ja-jp: >-
+          フレンチプレスで淹れたコーヒーの豊かでコクのある味わいを体験してください。私たちのフレンチプレスのセレクションには、さまざまなサイズとデザインがあり、コーヒー愛好家に最適です。コーヒー豆から最も風味豊かなオイルを抽出する能力で知られるフレンチプレスは、シンプルでありながら洗練された抽出方法を提供します。コーヒーをプレスする儀式を楽しみ、深く芳醇な香りの飲み物を味わってください。私たちのコレクションを閲覧し、コーヒーのひとときを高める完璧なフレンチプレスを見つけてください。
+        nl-nl: >-
+          Ervaar de rijke, volle smaak van koffie gezet in een cafetière. Onze
+          selectie cafetières omvat verschillende maten en ontwerpen, perfect
+          voor elke koffieliefhebber. Bekend om zijn vermogen om de meest
+          smaakvolle oliën uit uw gemalen koffie te halen, biedt de cafetière
+          een eenvoudige maar verfijnde zetmethode. Geniet van het ritueel van
+          het persen van uw koffie en proef de diepe, aromatische drank die
+          daaruit voortkomt. Blader door onze collectie en vind de perfecte
+          cafetière om uw koffiemomenten te verheffen.
+        sv-se: >-
+          Upplev den rika, fylliga smaken av kaffe bryggt i en fransk press.
+          Vårt urval av franska pressar inkluderar olika storlekar och designer,
+          perfekt för alla kaffeälskare. Känd för sin förmåga att extrahera de
+          mest smakrika oljorna från dina kaffebönor, erbjuder den franska
+          pressen en enkel men sofistikerad bryggmetod. Njut av ritualen att
+          pressa ditt kaffe och avnjut den djupa, aromatiska brygden som blir
+          resultatet. Bläddra i vår kollektion och hitta den perfekta franska
+          pressen för att höja dina kaffestunder.
+        ar-uae: >-
+          اكتشف النكهة الغنية والممتلئة للقهوة المحضرة في مكبس فرنسي. يتضمن
+          اختيارنا من المكابس الفرنسية أحجامًا وتصاميم متنوعة، مثالية لأي محب
+          للقهوة. يُعرف المكبس الفرنسي بقدرته على استخراج الزيوت الأكثر نكهة من
+          حبيبات القهوة الخاصة بك، مما يوفر طريقة تحضير بسيطة لكنها راقية.
+          استمتع بطقوس ضغط قهوتك وتذوق المشروب العميق والعطري الناتج. تصفح
+          مجموعتنا واعثر على المكبس الفرنسي المثالي لرفع لحظات قهوتك.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

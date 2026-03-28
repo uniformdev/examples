@@ -1,0 +1,1356 @@
+created: '2026-03-10T23:33:21.829663+00:00'
+modified: '2026-03-10T23:33:21.829663+00:00'
+pattern: false
+entry:
+  _id: 428cd544-92ed-45b5-b702-b274bb5f912f
+  _name: Descaling tablets
+  _slug: descaling-tablets
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/057nkK7vQ5Kr1DMZuunkfw-descaling-tablets-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Bevar levetiden og effektiviteten af din kaffemaskine med
+                      JavaDrips afkalkningstabletter. Specielt formuleret til at
+                      fjerne kalk og mineralophobning, hjælper disse tabletter
+                      med at bevare din maskines ydeevne, så hver kop kaffe
+                      brygges til perfektion. Regelmæssig brug af
+                      afkalkningstabletter forhindrer kalkdannelse, som kan
+                      påvirke smagen af din kaffe og hæmme maskinens
+                      funktionalitet over tid.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDrips afkalkningstabletter er designet til at være
+                      skånsomme, men effektive, og virker uden at forårsage
+                      skade på de interne komponenter i din kaffemaskine. Uanset
+                      om du har en avanceret espressomaskine eller en pålidelig
+                      drypkaffemaskine, giver disse tabletter en nem og
+                      pålidelig løsning til vedligeholdelse. Hold din kaffe
+                      smagende frisk og din maskine kørende glat med JavaDrips
+                      afkalkningstabletter, en essentiel tilføjelse til enhver
+                      kaffeentusiasts rutine.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhalten Sie die Langlebigkeit und Effizienz Ihrer
+                      Kaffeemaschine mit den Entkalkungstabletten von JavaDrip.
+                      Speziell formuliert, um Kalk- und Mineralablagerungen zu
+                      entfernen, helfen diese Tabletten, die Leistung Ihrer
+                      Maschine zu erhalten und sicherzustellen, dass jede Tasse
+                      Kaffee perfekt gebrüht wird. Die regelmäßige Verwendung
+                      von Entkalkungstabletten verhindert Kalkablagerungen, die
+                      den Geschmack Ihres Kaffees beeinträchtigen und die
+                      Funktionalität der Maschine im Laufe der Zeit behindern
+                      können.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Entkalkungstabletten von JavaDrip sind so konzipiert,
+                      dass sie sanft, aber effektiv wirken, ohne die internen
+                      Komponenten Ihrer Kaffeemaschine zu beschädigen. Egal, ob
+                      Sie eine hochwertige Espressomaschine oder eine
+                      zuverlässige Filterkaffeemaschine haben, diese Tabletten
+                      bieten eine einfache, zuverlässige Lösung für die Wartung.
+                      Halten Sie Ihren Kaffee frisch im Geschmack und Ihre
+                      Maschine reibungslos in Betrieb mit den
+                      Entkalkungstabletten von JavaDrip, einer unverzichtbaren
+                      Ergänzung für die Routine eines jeden Kaffeeliebhabers.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhalten Sie die Langlebigkeit und Effizienz Ihrer
+                      Kaffeemaschine mit den Entkalkungstabletten von JavaDrip.
+                      Speziell formuliert, um Kalk und Mineralablagerungen zu
+                      entfernen, helfen diese Tabletten, die Leistung Ihrer
+                      Maschine zu erhalten und sicherzustellen, dass jede Tasse
+                      Kaffee perfekt gebrüht wird. Die regelmäßige Verwendung
+                      von Entkalkungstabletten verhindert Kalkablagerungen, die
+                      den Geschmack Ihres Kaffees beeinträchtigen und die
+                      Funktionalität der Maschine im Laufe der Zeit behindern
+                      können.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Entkalkungstabletten von JavaDrip sind so konzipiert,
+                      dass sie sanft, aber effektiv arbeiten, ohne die internen
+                      Komponenten Ihrer Kaffeemaschine zu beschädigen. Egal, ob
+                      Sie eine hochwertige Espressomaschine oder eine
+                      zuverlässige Filterkaffeemaschine haben, diese Tabletten
+                      bieten eine einfache, zuverlässige Lösung für die Wartung.
+                      Halten Sie Ihren Kaffee frisch und Ihre Maschine
+                      reibungslos in Betrieb mit den Entkalkungstabletten von
+                      JavaDrip, einer unverzichtbaren Ergänzung für die Routine
+                      jedes Kaffeeliebhabers.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhalten Sie die Langlebigkeit und Effizienz Ihrer
+                      Kaffeemaschine mit den Entkalkungstabletten von JavaDrip.
+                      Speziell formuliert, um Kalk und Mineralablagerungen zu
+                      entfernen, helfen diese Tabletten, die Leistung Ihrer
+                      Maschine zu erhalten und sicherzustellen, dass jede Tasse
+                      Kaffee perfekt gebrüht wird. Die regelmäßige Verwendung
+                      von Entkalkungstabletten verhindert Kalkablagerungen, die
+                      den Geschmack Ihres Kaffees beeinträchtigen und die
+                      Funktionalität der Maschine im Laufe der Zeit behindern
+                      können.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Entkalkungstabletten von JavaDrip sind so konzipiert,
+                      dass sie sanft, aber effektiv arbeiten, ohne die internen
+                      Komponenten Ihrer Kaffeemaschine zu beschädigen. Egal, ob
+                      Sie eine hochwertige Espressomaschine oder eine
+                      zuverlässige Filterkaffeemaschine haben, diese Tabletten
+                      bieten eine einfache, zuverlässige Lösung für die Wartung.
+                      Halten Sie Ihren Kaffee frisch und Ihre Maschine
+                      reibungslos in Betrieb mit den Entkalkungstabletten von
+                      JavaDrip, einer unverzichtbaren Ergänzung für die Routine
+                      jedes Kaffeeliebhabers.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Maintenez la longévité et l'efficacité de votre machine à
+                      café avec les tablettes de détartrage de JavaDrip.
+                      Spécialement formulées pour éliminer le tartre et les
+                      dépôts minéraux, ces tablettes aident à préserver les
+                      performances de votre machine, garantissant que chaque
+                      tasse de café est préparée à la perfection. L'utilisation
+                      régulière de tablettes de détartrage prévient
+                      l'entartrage, qui peut affecter le goût de votre café et
+                      nuire au fonctionnement de la machine au fil du temps.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Les tablettes de détartrage de JavaDrip sont conçues pour
+                      être douces mais efficaces, agissant sans causer de
+                      dommages aux composants internes de votre machine à café.
+                      Que vous ayez une machine à expresso haut de gamme ou une
+                      cafetière goutte à goutte fiable, ces tablettes offrent
+                      une solution simple et fiable pour l'entretien. Gardez
+                      votre café frais et votre machine en bon état de
+                      fonctionnement avec les tablettes de détartrage de
+                      JavaDrip, un ajout essentiel à la routine de tout amateur
+                      de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Maintenez la longévité et l'efficacité de votre machine à
+                      café avec les comprimés de détartrage de JavaDrip.
+                      Spécialement formulés pour éliminer le tartre et les
+                      dépôts minéraux, ces comprimés aident à préserver les
+                      performances de votre machine, garantissant que chaque
+                      tasse de café est infusée à la perfection. L'utilisation
+                      régulière de comprimés de détartrage prévient
+                      l'entartrage, qui peut affecter le goût de votre café et
+                      nuire au fonctionnement de la machine au fil du temps.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Les comprimés de détartrage de JavaDrip sont conçus pour
+                      être doux mais efficaces, fonctionnant sans causer de
+                      dommages aux composants internes de votre cafetière. Que
+                      vous ayez une machine à expresso haut de gamme ou une
+                      cafetière à filtre fiable, ces comprimés offrent une
+                      solution de maintenance facile et fiable. Gardez votre
+                      café frais et votre machine en bon état de marche avec les
+                      comprimés de détartrage de JavaDrip, un ajout essentiel à
+                      la routine de tout amateur de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Maintain the longevity and efficiency of your coffee
+                      machine with JavaDrip's descaling tablets. Specially
+                      formulated to remove scale and mineral buildup, these
+                      tablets help preserve your machine's performance, ensuring
+                      that every cup of coffee is brewed to perfection. Regular
+                      use of descaling tablets prevents scaling, which can
+                      affect the taste of your coffee and hinder the machine’s
+                      functionality over time.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDrip's descaling tablets are designed to be gentle yet
+                      effective, working without causing any damage to the
+                      internal components of your coffee maker. Whether you have
+                      a high-end espresso machine or a reliable drip coffee
+                      maker, these tablets provide an easy, reliable solution
+                      for maintenance. Keep your coffee tasting fresh and your
+                      machine running smoothly with JavaDrip's descaling
+                      tablets, an essential addition to any coffee enthusiast’s
+                      routine.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Behoud de levensduur en efficiëntie van uw koffiemachine
+                      met JavaDrip's ontkalkingstabletten. Speciaal samengesteld
+                      om kalkaanslag en minerale ophoping te verwijderen, helpen
+                      deze tabletten de prestaties van uw machine te behouden,
+                      zodat elke kop koffie perfect wordt gezet. Regelmatig
+                      gebruik van ontkalkingstabletten voorkomt kalkaanslag, wat
+                      de smaak van uw koffie kan beïnvloeden en de
+                      functionaliteit van de machine na verloop van tijd kan
+                      belemmeren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDrip's ontkalkingstabletten zijn ontworpen om zacht
+                      maar effectief te zijn, zonder schade aan te richten aan
+                      de interne componenten van uw koffiemachine. Of u nu een
+                      high-end espressomachine of een betrouwbare
+                      filterkoffiemachine heeft, deze tabletten bieden een
+                      eenvoudige, betrouwbare oplossing voor onderhoud. Houd uw
+                      koffie vers van smaak en uw machine soepel werkend met
+                      JavaDrip's ontkalkingstabletten, een essentiële toevoeging
+                      aan de routine van elke koffieliefhebber.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhalten Sie die Langlebigkeit und Effizienz Ihrer
+                      Kaffeemaschine mit den Entkalkungstabletten von JavaDrip.
+                      Speziell formuliert, um Kalk- und Mineralablagerungen zu
+                      entfernen, helfen diese Tabletten, die Leistung Ihrer
+                      Maschine zu erhalten und sicherzustellen, dass jede Tasse
+                      Kaffee perfekt gebrüht wird. Die regelmäßige Verwendung
+                      von Entkalkungstabletten verhindert Kalkablagerungen, die
+                      den Geschmack Ihres Kaffees beeinträchtigen und die
+                      Funktionalität der Maschine im Laufe der Zeit
+                      beeinträchtigen können.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Entkalkungstabletten von JavaDrip sind so konzipiert,
+                      dass sie sanft und dennoch effektiv wirken, ohne die
+                      internen Komponenten Ihrer Kaffeemaschine zu beschädigen.
+                      Egal, ob Sie eine hochwertige Espressomaschine oder eine
+                      zuverlässige Filterkaffeemaschine haben, diese Tabletten
+                      bieten eine einfache, zuverlässige Lösung für die Wartung.
+                      Halten Sie Ihren Kaffee frisch im Geschmack und Ihre
+                      Maschine reibungslos am Laufen mit den
+                      Entkalkungstabletten von JavaDrip, einer unverzichtbaren
+                      Ergänzung für die Routine jedes Kaffeeliebhabers.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Maintain the longevity and efficiency of your coffee
+                      machine with JavaDrip's descaling tablets. Specially
+                      formulated to remove scale and mineral buildup, these
+                      tablets help preserve your machine's performance, ensuring
+                      that every cup of coffee is brewed to perfection. Regular
+                      use of descaling tablets prevents scaling, which can
+                      affect the taste of your coffee and hinder the machine’s
+                      functionality over time.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDrip's descaling tablets are designed to be gentle yet
+                      effective, working without causing any damage to the
+                      internal components of your coffee maker. Whether you have
+                      a high-end espresso machine or a reliable drip coffee
+                      maker, these tablets provide an easy, reliable solution
+                      for maintenance. Keep your coffee tasting fresh and your
+                      machine running smoothly with JavaDrip's descaling
+                      tablets, an essential addition to any coffee enthusiast’s
+                      routine.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Maintenez la longévité et l'efficacité de votre machine à
+                      café avec les tablettes de détartrage de JavaDrip.
+                      Spécialement formulées pour éliminer le tartre et les
+                      dépôts minéraux, ces tablettes aident à préserver la
+                      performance de votre machine, garantissant que chaque
+                      tasse de café est infusée à la perfection. L'utilisation
+                      régulière de tablettes de détartrage prévient le tartre,
+                      qui peut affecter le goût de votre café et nuire au
+                      fonctionnement de la machine au fil du temps.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Les tablettes de détartrage de JavaDrip sont conçues pour
+                      être douces mais efficaces, fonctionnant sans causer de
+                      dommages aux composants internes de votre cafetière. Que
+                      vous ayez une machine à expresso haut de gamme ou une
+                      cafetière à filtre fiable, ces tablettes offrent une
+                      solution facile et fiable pour l'entretien. Gardez votre
+                      café frais et votre machine en bon état de marche avec les
+                      tablettes de détartrage de JavaDrip, un ajout essentiel à
+                      la routine de tout amateur de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Maintenez la longévité et l'efficacité de votre machine à
+                      café avec les tablettes de détartrage de JavaDrip.
+                      Spécialement formulées pour éliminer le tartre et les
+                      dépôts minéraux, ces tablettes aident à préserver les
+                      performances de votre machine, garantissant que chaque
+                      tasse de café est infusée à la perfection. L'utilisation
+                      régulière de tablettes de détartrage prévient
+                      l'entartrage, qui peut affecter le goût de votre café et
+                      nuire au fonctionnement de la machine au fil du temps.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Les tablettes de détartrage de JavaDrip sont conçues pour
+                      être douces mais efficaces, fonctionnant sans causer de
+                      dommages aux composants internes de votre cafetière. Que
+                      vous ayez une machine à expresso haut de gamme ou une
+                      cafetière à filtre fiable, ces tablettes offrent une
+                      solution facile et fiable pour l'entretien. Gardez votre
+                      café frais et votre machine en bon état de marche avec les
+                      tablettes de détartrage de JavaDrip, un ajout essentiel à
+                      la routine de tout amateur de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Maintenez la longévité et l'efficacité de votre machine à
+                      café avec les tablettes de détartrage de JavaDrip.
+                      Spécialement formulées pour éliminer le tartre et les
+                      dépôts minéraux, ces tablettes aident à préserver les
+                      performances de votre machine, garantissant que chaque
+                      tasse de café est infusée à la perfection. L'utilisation
+                      régulière de tablettes de détartrage prévient
+                      l'entartrage, qui peut affecter le goût de votre café et
+                      nuire au fonctionnement de la machine au fil du temps.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Les tablettes de détartrage de JavaDrip sont conçues pour
+                      être douces mais efficaces, fonctionnant sans causer de
+                      dommages aux composants internes de votre cafetière. Que
+                      vous ayez une machine à expresso haut de gamme ou une
+                      cafetière à filtre fiable, ces tablettes offrent une
+                      solution facile et fiable pour l'entretien. Gardez votre
+                      café frais et votre machine en bon état de marche avec les
+                      tablettes de détartrage de JavaDrip, un ajout essentiel à
+                      la routine de tout amateur de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDripの除石灰タブレットでコーヒーマシンの寿命と効率を維持しましょう。スケールやミネラルの蓄積を取り除くために特別に配合されたこれらのタブレットは、マシンの性能を維持し、毎回完璧なコーヒーを淹れることを保証します。定期的に除石灰タブレットを使用することで、コーヒーの味に影響を与えたり、時間とともにマシンの機能を妨げるスケーリングを防ぎます。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDripの除石灰タブレットは、内部コンポーネントに損傷を与えることなく効果的に働くように設計されています。高級エスプレッソマシンでも信頼できるドリップコーヒーメーカーでも、これらのタブレットはメンテナンスのための簡単で信頼性のあるソリューションを提供します。JavaDripの除石灰タブレットでコーヒーの新鮮な味を保ち、マシンをスムーズに動作させましょう。コーヒー愛好家のルーチンに欠かせないアイテムです。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Behoud de levensduur en efficiëntie van uw koffiemachine
+                      met JavaDrip's ontkalkingstabletten. Speciaal samengesteld
+                      om kalkaanslag en minerale ophoping te verwijderen, helpen
+                      deze tabletten de prestaties van uw machine te behouden,
+                      zodat elke kop koffie perfect wordt gezet. Regelmatig
+                      gebruik van ontkalkingstabletten voorkomt kalkaanslag, wat
+                      de smaak van uw koffie kan beïnvloeden en de
+                      functionaliteit van de machine na verloop van tijd kan
+                      belemmeren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDrip's ontkalkingstabletten zijn ontworpen om zacht
+                      maar effectief te zijn, zonder schade toe te brengen aan
+                      de interne componenten van uw koffiemachine. Of u nu een
+                      hoogwaardige espressomachine of een betrouwbare
+                      filterkoffiemachine heeft, deze tabletten bieden een
+                      eenvoudige, betrouwbare oplossing voor onderhoud. Houd uw
+                      koffie vers van smaak en uw machine soepel werkend met
+                      JavaDrip's ontkalkingstabletten, een essentiële toevoeging
+                      aan de routine van elke koffieliefhebber.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Bibehåll livslängden och effektiviteten hos din
+                      kaffemaskin med JavaDrips avkalkningstabletter. Speciellt
+                      formulerade för att ta bort kalk och mineralavlagringar,
+                      hjälper dessa tabletter till att bevara din maskins
+                      prestanda och säkerställer att varje kopp kaffe bryggs
+                      till perfektion. Regelbunden användning av
+                      avkalkningstabletter förhindrar kalkbildning, vilket kan
+                      påverka smaken på ditt kaffe och hindra maskinens
+                      funktionalitet över tid.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      JavaDrips avkalkningstabletter är utformade för att vara
+                      skonsamma men effektiva, och fungerar utan att orsaka
+                      skador på de interna komponenterna i din kaffebryggare.
+                      Oavsett om du har en avancerad espressomaskin eller en
+                      pålitlig droppkaffebryggare, erbjuder dessa tabletter en
+                      enkel och pålitlig lösning för underhåll. Håll ditt kaffe
+                      fräscht och din maskin igång smidigt med JavaDrips
+                      avkalkningstabletter, ett viktigt tillskott till varje
+                      kaffeentusiasts rutin.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      حافظ على عمر وكفاءة ماكينة القهوة الخاصة بك مع أقراص إزالة
+                      الترسبات من JavaDrip. مصممة خصيصًا لإزالة الترسبات
+                      المعدنية، تساعد هذه الأقراص في الحفاظ على أداء الماكينة،
+                      مما يضمن أن كل فنجان قهوة يتم تحضيره بشكل مثالي. الاستخدام
+                      المنتظم لأقراص إزالة الترسبات يمنع التراكمات التي يمكن أن
+                      تؤثر على طعم القهوة وتعيق وظيفة الماكينة مع مرور الوقت.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      تم تصميم أقراص إزالة الترسبات من JavaDrip لتكون لطيفة
+                      وفعالة في نفس الوقت، حيث تعمل دون التسبب في أي ضرر
+                      للمكونات الداخلية لماكينة القهوة الخاصة بك. سواء كان لديك
+                      ماكينة إسبريسو عالية الجودة أو ماكينة قهوة بالتنقيط
+                      موثوقة، توفر هذه الأقراص حلاً سهلاً وموثوقًا للصيانة. حافظ
+                      على نكهة القهوة طازجة وماكينتك تعمل بسلاسة مع أقراص إزالة
+                      الترسبات من JavaDrip، وهي إضافة أساسية لأي شخص يعشق
+                      القهوة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Afkalkningstabletter
+        de-at: Entkalkungstabletten
+        de-ch: Entkalkungstabletten
+        de-de: Entkalkungstabletten
+        en-au: Tablettes de détartrage
+        en-ca: Descaling tablets
+        en-gb: Descaling tablets
+        en-nl: Ontkalkingstabletten
+        en-nz: Entkalkungstabletten
+        en-us: Descaling tablets
+        fr-ca: Tablettes de détartrage
+        fr-ch: Tablettes de détartrage
+        fr-fr: Tablettes de détartrage
+        ja-jp: 除石灰剤タブレット
+        nl-nl: Ontkalkingstabletten
+        sv-se: Avkalkningstabletter
+        ar-uae: أقراص إزالة الترسبات
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-428cd544-92ed-45b5-b702-b274bb5f912f-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Afkalkningstabletter
+        de-at: Entkalkungstabletten
+        de-ch: Entkalkungstabletten
+        de-de: Entkalkungstabletten
+        en-au: Tablettes de détartrage
+        en-ca: Descaling tablets
+        en-gb: Descaling tablets
+        en-nl: Ontkalkingstabletten
+        en-nz: Entkalkungstabletten
+        en-us: Descaling tablets
+        fr-ca: Tablettes de détartrage
+        fr-ch: Tablettes détartrantes
+        fr-fr: Tablettes détartrantes
+        ja-jp: スケール除去タブレット
+        nl-nl: Ontkalkingstabletten
+        sv-se: Avkalkningstabletter
+        ar-uae: أقراص إزالة الترسبات
+    rating:
+      type: number
+      value: '4.4'
+    ogImage:
+      type: asset
+      value:
+        - _id: c70a8c0e-54b3-442c-9060-89f2d8b70c5d
+          type: image
+          fields:
+            id:
+              type: text
+              value: 5dc9b795-1bd9-41d6-bf52-9e098cb585d1
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/00HI80z5Rzqqv9ilQ1nyBg-descaling-tablets-1.png
+              type: text
+            file:
+              type: file
+              value: 87bd3aa2-3825-4bab-84fa-797deaa1ef29
+            size:
+              value: 25973
+              type: number
+            title:
+              type: text
+              value: descaling-tablets-1.png
+            width:
+              value: 386
+              type: number
+            height:
+              value: 386
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-428cd544-92ed-45b5-b702-b274bb5f912f-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: 9e4b9293-33bd-4dfe-a90b-c9c4c54255a8
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '142'
+            price:
+              type: number
+              locales:
+                da-dk: '35.00'
+                de-at: '35.00'
+                de-ch: '35.00'
+                de-de: '35.00'
+                en-au: '35.00'
+                en-ca: '35.00'
+                en-gb: '35.00'
+                en-nl: '35.00'
+                en-nz: '35.00'
+                en-us: '35.00'
+                fr-ca: '35.00'
+                fr-ch: '35.00'
+                fr-fr: '35.00'
+                ja-jp: '35.00'
+                nl-nl: '35.00'
+                sv-se: '35.00'
+                ar-uae: '35.00'
+            title:
+              type: text
+              locales:
+                da-dk: Afkalkningstabletter
+                de-at: Entkalkungstabletten
+                de-ch: Entkalkungstabletten
+                de-de: Entkalkungstabletten
+                en-au: Tablettes de détartrage
+                en-ca: Descaling tablets
+                en-gb: Descaling tablets
+                en-nl: Ontkalkingstabletten
+                en-nz: Entkalkungstabletten
+                en-us: Descaling tablets
+                fr-ca: Tablettes de détartrage
+                fr-ch: Tablettes de détartrage
+                fr-fr: Tablettes de détartrage
+                ja-jp: スケール除去タブレット
+                nl-nl: Ontkalkingstabletten
+                sv-se: Avkalkningstabletter
+                ar-uae: أقراص إزالة الترسبات
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: f39c5e0c-90da-4abd-ab61-1875d2912731
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 5dc9b795-1bd9-41d6-bf52-9e098cb585d1
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/00HI80z5Rzqqv9ilQ1nyBg-descaling-tablets-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: 87bd3aa2-3825-4bab-84fa-797deaa1ef29
+                    size:
+                      value: 25973
+                      type: number
+                    title:
+                      type: text
+                      value: descaling-tablets-1.png
+                    width:
+                      value: 386
+                      type: number
+                    height:
+                      value: 386
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Afkalkningstabletter
+        de-at: Entkalkungstabletten
+        de-ch: Entkalkungstabletten
+        de-de: Entkalkungstabletten
+        en-au: Tablettes de détartrage
+        en-ca: Descaling Tablets
+        en-gb: Descaling tablets
+        en-nl: Ontkalkingstabletten
+        en-nz: Entkalkungstabletten
+        en-us: Descaling tablets
+        fr-ca: Tablettes de détartrage
+        fr-ch: Tablettes de détartrage
+        fr-fr: Tablettes de détartrage
+        ja-jp: スケール除去タブレット
+        nl-nl: Ontkalkingstabletten
+        sv-se: Avkalkningstabletter
+        ar-uae: أقراص إزالة الترسبات
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: c70a8c0e-54b3-442c-9060-89f2d8b70c5d
+          type: image
+          fields:
+            id:
+              type: text
+              value: 5dc9b795-1bd9-41d6-bf52-9e098cb585d1
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/00HI80z5Rzqqv9ilQ1nyBg-descaling-tablets-1.png
+              type: text
+            file:
+              type: file
+              value: 87bd3aa2-3825-4bab-84fa-797deaa1ef29
+            size:
+              value: 25973
+              type: number
+            title:
+              type: text
+              value: descaling-tablets-1.png
+            width:
+              value: 386
+              type: number
+            height:
+              value: 386
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Forlæng din kaffemaskines levetid med JavaDrips afkalkningstabletter,
+          der sikrer optimal ydeevne og sikkerhed.
+        de-at: >-
+          Verlängern Sie die Lebensdauer Ihrer Kaffeemaschine mit den
+          Entkalkungstabletten von JavaDrip und sorgen Sie für optimale Leistung
+          und Sicherheit.
+        de-ch: >-
+          Verlängern Sie die Lebensdauer Ihrer Kaffeemaschine mit den
+          Entkalkungstabletten von JavaDrip und sorgen Sie für optimale Leistung
+          und Sicherheit.
+        de-de: >-
+          Verlängern Sie die Lebensdauer Ihrer Kaffeemaschine mit den
+          Entkalkungstabletten von JavaDrip und sorgen Sie für optimale Leistung
+          und Sicherheit.
+        en-au: >-
+          Prolongez la durée de vie de votre machine à café avec les tablettes
+          de détartrage JavaDrip, garantissant des performances optimales et la
+          sécurité.
+        en-ca: >-
+          Extend the life of your coffee machine with JavaDrip's descaling
+          tablets, ensuring optimal performance and safety.
+        en-gb: >-
+          Extend your coffee machine's life with JavaDrip's descaling tablets,
+          ensuring optimal performance and safety.
+        en-nl: >-
+          Verleng de levensduur van uw koffiemachine met JavaDrip's
+          ontkalkingstabletten, voor optimale prestaties en veiligheid.
+        en-nz: >-
+          Verlängern Sie die Lebensdauer Ihrer Kaffeemaschine mit den
+          Entkalkungstabletten von JavaDrip und sorgen Sie für optimale Leistung
+          und Sicherheit.
+        en-us: >-
+          Extend your coffee machine's life with JavaDrip's descaling tablets,
+          ensuring optimal performance and safety.
+        fr-ca: >-
+          Prolongez la durée de vie de votre machine à café avec les pastilles
+          de détartrage JavaDrip, assurant une performance optimale et une
+          sécurité accrue.
+        fr-ch: >-
+          Prolongez la durée de vie de votre machine à café avec les tablettes
+          de détartrage JavaDrip, garantissant des performances optimales et une
+          sécurité accrue.
+        fr-fr: >-
+          Prolongez la durée de vie de votre machine à café avec les tablettes
+          de détartrage JavaDrip, garantissant des performances optimales et une
+          sécurité accrue.
+        ja-jp: JavaDripの除石灰タブレットでコーヒーマシンの寿命を延ばし、最適な性能と安全性を確保しましょう。
+        nl-nl: >-
+          Verleng de levensduur van uw koffiemachine met JavaDrip's
+          ontkalkingstabletten, voor optimale prestaties en veiligheid.
+        sv-se: >-
+          Förläng livslängden på din kaffemaskin med JavaDrips
+          avkalkningstabletter, vilket säkerställer optimal prestanda och
+          säkerhet.
+        ar-uae: >-
+          قم بتمديد عمر ماكينة القهوة الخاصة بك باستخدام أقراص إزالة الترسبات من
+          JavaDrip، لضمان الأداء الأمثل والسلامة.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          JavaDrip's afkalkningstabletter fjerner effektivt kalkaflejringer for
+          at forlænge levetiden på din kaffemaskine og sikrer optimal ydeevne
+          uden at forårsage skade.
+        de-at: >-
+          Die Entkalkungstabletten von JavaDrip entfernen Kalkablagerungen
+          effektiv, um die Lebensdauer Ihrer Kaffeemaschine zu verlängern und
+          optimale Leistung zu gewährleisten, ohne Schäden zu verursachen.
+        de-ch: >-
+          Die Entkalkungstabletten von JavaDrip entfernen effektiv
+          Kalkablagerungen, um die Lebensdauer Ihrer Kaffeemaschine zu
+          verlängern und optimale Leistung zu gewährleisten, ohne Schäden zu
+          verursachen.
+        de-de: >-
+          Die Entkalkungstabletten von JavaDrip entfernen effektiv
+          Kalkablagerungen, um die Lebensdauer Ihrer Kaffeemaschine zu
+          verlängern und optimale Leistung zu gewährleisten, ohne Schäden zu
+          verursachen.
+        en-au: >-
+          Les tablettes de détartrage de JavaDrip éliminent efficacement
+          l'accumulation de tartre pour prolonger la durée de vie de votre
+          machine à café, garantissant des performances optimales sans causer de
+          dommages.
+        en-ca: >-
+          JavaDrip's descaling tablets effectively remove scale buildup to
+          extend the life of your coffee machine, ensuring optimal performance
+          without causing any damage.
+        en-gb: >-
+          JavaDrip's descaling tablets effectively remove limescale buildup to
+          extend the life of your coffee machine, ensuring optimal performance
+          without causing any damage.
+        en-nl: >-
+          JavaDrip's ontkalkingstabletten verwijderen effectief kalkaanslag om
+          de levensduur van uw koffiemachine te verlengen, waardoor optimale
+          prestaties worden gegarandeerd zonder schade te veroorzaken.
+        en-nz: >-
+          Die Entkalkungstabletten von JavaDrip entfernen effektiv
+          Kalkablagerungen, um die Lebensdauer Ihrer Kaffeemaschine zu
+          verlängern und optimale Leistung zu gewährleisten, ohne Schäden zu
+          verursachen.
+        en-us: >-
+          JavaDrip's descaling tablets effectively remove scale buildup to
+          extend the life of your coffee machine, ensuring optimal performance
+          without causing any damage.
+        fr-ca: >-
+          Les tablettes de détartrage de JavaDrip éliminent efficacement
+          l'accumulation de tartre pour prolonger la durée de vie de votre
+          machine à café, assurant une performance optimale sans causer de
+          dommages.
+        fr-ch: >-
+          Les tablettes de détartrage de JavaDrip éliminent efficacement les
+          dépôts de calcaire pour prolonger la durée de vie de votre machine à
+          café, garantissant des performances optimales sans causer de dommages.
+        fr-fr: >-
+          Les tablettes de détartrage de JavaDrip éliminent efficacement les
+          dépôts de calcaire pour prolonger la durée de vie de votre machine à
+          café, garantissant des performances optimales sans causer de dommages.
+        ja-jp: >-
+          JavaDripの除石灰タブレットは、コーヒーマシンの寿命を延ばし、最適な性能を確保しながら、スケールの蓄積を効果的に除去し、損傷を与えることはありません。
+        nl-nl: >-
+          JavaDrip's ontkalkingstabletten verwijderen effectief kalkaanslag om
+          de levensduur van uw koffiemachine te verlengen, waardoor optimale
+          prestaties worden gegarandeerd zonder schade te veroorzaken.
+        sv-se: >-
+          JavaDrips avkalkningstabletter tar effektivt bort kalkavlagringar för
+          att förlänga livslängden på din kaffemaskin, vilket säkerställer
+          optimal prestanda utan att orsaka någon skada.
+        ar-uae: >-
+          تعمل أقراص إزالة الترسبات من JavaDrip على إزالة تراكم الترسبات بشكل
+          فعال لتمديد عمر ماكينة القهوة الخاصة بك، مما يضمن أداءً مثاليًا دون
+          التسبب في أي ضرر.
+  _dataResources:
+    ref-428cd544-92ed-45b5-b702-b274bb5f912f-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-428cd544-92ed-45b5-b702-b274bb5f912f-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

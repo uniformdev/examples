@@ -1,0 +1,47 @@
+created: '2026-03-10T23:36:04.565015+00:00'
+modified: '2026-03-10T23:36:04.565015+00:00'
+pattern: false
+entry:
+  _id: bec8d216-984a-48b9-867c-f7a38d9e7fa6
+  _name: Tea
+  _slug: tea
+  type: articleCategory
+  fields:
+    title:
+      type: text
+      locales:
+        da-dk: Te
+        de-at: Tee
+        de-ch: Tee
+        de-de: Tee
+        en-au: Thé
+        en-ca: Tea
+        en-gb: Tea
+        en-nl: Thee
+        en-nz: Tee
+        en-us: Tea
+        fr-ca: Thé
+        fr-ch: Thé
+        fr-fr: Thé
+        ja-jp: お茶
+        nl-nl: Thee
+        sv-se: Te
+        ar-uae: شاي
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

@@ -1,0 +1,215 @@
+created: '2026-03-10T23:33:04.788054+00:00'
+modified: '2026-03-10T23:33:04.788054+00:00'
+pattern: false
+entry:
+  _id: 2f6cc670-cdaa-4532-b70e-424206c8d0ba
+  _name: Coffee Makers
+  _slug: coffee-makers
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/QvJeAkWASMeqNPrugk1bWg-coffee-makers.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Kaffemaskiner
+        de-at: Kaffeemaschinen
+        de-ch: Kaffeemaschinen
+        de-de: Kaffeemaschinen
+        en-au: Cafetière
+        en-ca: Coffee Makers
+        en-gb: Coffee Machines
+        en-nl: Koffiezetapparaten
+        en-nz: Kaffeemaschinen
+        en-us: Coffee Makers
+        fr-ca: Cafetière
+        fr-ch: Cafetière
+        fr-fr: Cafetière
+        ja-jp: コーヒーメーカー
+        nl-nl: Koffiezetapparaten
+        sv-se: Kaffebryggare
+        ar-uae: صانعات القهوة
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Opdag den perfekte kaffemaskine, der passer til dine bryggebehov.
+          Vores udvalg af kaffemaskiner spænder fra traditionelle drypmaskiner
+          til avancerede espressomaskiner, alle designet til at fremhæve de
+          rige, robuste smagsnuancer af dine yndlingsbønner. Uanset om du er en
+          afslappet kaffedrikker eller en dedikeret kender, tilbyder vores
+          kaffemaskiner præcision, bekvemmelighed og stil. Bryg din ideelle kop
+          med lethed og nyd den perfekte balance af aroma og smag hver morgen.
+          Udforsk vores kollektion og løft din kaffeoplevelse til nye højder.
+        de-at: >-
+          Entdecken Sie die perfekte Kaffeemaschine, die Ihren Brühbedürfnissen
+          entspricht. Unsere Auswahl an Kaffeemaschinen reicht von
+          traditionellen Filtermaschinen bis hin zu fortschrittlichen
+          Espressomaschinen, die alle darauf ausgelegt sind, die reichen,
+          kräftigen Aromen Ihrer Lieblingsbohnen hervorzubringen. Egal, ob Sie
+          ein gelegentlicher Kaffeetrinker oder ein engagierter Liebhaber sind,
+          unsere Kaffeemaschinen bieten Präzision, Komfort und Stil. Brühen Sie
+          Ihre ideale Tasse mühelos und genießen Sie jeden Morgen das perfekte
+          Gleichgewicht von Aroma und Geschmack. Entdecken Sie unsere Kollektion
+          und heben Sie Ihr Kaffeeerlebnis auf ein neues Niveau.
+        de-ch: >-
+          Entdecken Sie die perfekte Kaffeemaschine, die Ihren Brühbedürfnissen
+          entspricht. Unsere Auswahl an Kaffeemaschinen reicht von
+          traditionellen Filtermaschinen bis hin zu fortschrittlichen
+          Espressomaschinen, die alle darauf ausgelegt sind, die reichen,
+          kräftigen Aromen Ihrer Lieblingsbohnen hervorzuheben. Egal, ob Sie ein
+          gelegentlicher Kaffeetrinker oder ein engagierter Liebhaber sind,
+          unsere Kaffeemaschinen bieten Präzision, Komfort und Stil. Brühen Sie
+          Ihre ideale Tasse mühelos und genießen Sie jeden Morgen die perfekte
+          Balance aus Aroma und Geschmack. Entdecken Sie unsere Kollektion und
+          heben Sie Ihr Kaffeeerlebnis auf ein neues Niveau.
+        de-de: >-
+          Entdecken Sie die perfekte Kaffeemaschine, die Ihren Brühbedürfnissen
+          entspricht. Unsere Auswahl an Kaffeemaschinen reicht von
+          traditionellen Filtermaschinen bis hin zu fortschrittlichen
+          Espressomaschinen, die alle darauf ausgelegt sind, die reichen,
+          kräftigen Aromen Ihrer Lieblingsbohnen hervorzuheben. Egal, ob Sie ein
+          gelegentlicher Kaffeetrinker oder ein engagierter Liebhaber sind,
+          unsere Kaffeemaschinen bieten Präzision, Komfort und Stil. Brühen Sie
+          Ihre ideale Tasse mühelos und genießen Sie jeden Morgen die perfekte
+          Balance aus Aroma und Geschmack. Entdecken Sie unsere Kollektion und
+          heben Sie Ihr Kaffeeerlebnis auf ein neues Niveau.
+        en-au: >-
+          Découvrez la cafetière parfaite pour répondre à vos besoins en matière
+          de préparation. Notre sélection de cafetières va des machines à filtre
+          traditionnelles aux machines à espresso avancées, toutes conçues pour
+          révéler les saveurs riches et robustes de vos grains préférés. Que
+          vous soyez un buveur de café occasionnel ou un passionné dévoué, nos
+          cafetières offrent précision, commodité et style. Préparez votre tasse
+          idéale en toute simplicité et profitez chaque matin de l'équilibre
+          parfait entre arôme et goût. Explorez notre collection et élevez votre
+          expérience café à de nouveaux sommets.
+        en-ca: >-
+          Discover the perfect coffee maker to suit your brewing needs. Our
+          selection of coffee makers ranges from traditional drip machines to
+          advanced espresso machines, all designed to bring out the rich, robust
+          flavours of your favourite beans. Whether you’re a casual coffee
+          drinker or a dedicated aficionado, our coffee makers offer precision,
+          convenience, and style. Brew your ideal cup with ease and enjoy the
+          perfect balance of aroma and taste every morning. Explore our
+          collection and elevate your coffee experience to new heights.
+        en-gb: >-
+          Discover the perfect coffee maker to suit your brewing needs. Our
+          selection of coffee makers ranges from traditional filter machines to
+          advanced espresso machines, all designed to bring out the rich, robust
+          flavours of your favourite beans. Whether you’re a casual coffee
+          drinker or a dedicated aficionado, our coffee makers offer precision,
+          convenience, and style. Brew your ideal cup with ease and enjoy the
+          perfect balance of aroma and taste every morning. Explore our
+          collection and elevate your coffee experience to new heights.
+        en-nl: >-
+          Ontdek de perfecte koffiezetapparaat die aan uw zetbehoeften voldoet.
+          Onze selectie koffiezetapparaten varieert van traditionele
+          filtermachines tot geavanceerde espressomachines, allemaal ontworpen
+          om de rijke, robuuste smaken van uw favoriete bonen naar voren te
+          brengen. Of u nu een occasionele koffiedrinker bent of een toegewijde
+          liefhebber, onze koffiezetapparaten bieden precisie, gemak en stijl.
+          Zet met gemak uw ideale kopje en geniet elke ochtend van de perfecte
+          balans tussen aroma en smaak. Verken onze collectie en til uw
+          koffie-ervaring naar een hoger niveau.
+        en-nz: >-
+          Entdecken Sie die perfekte Kaffeemaschine, die Ihren Brühbedürfnissen
+          entspricht. Unsere Auswahl an Kaffeemaschinen reicht von
+          traditionellen Filtermaschinen bis hin zu fortschrittlichen
+          Espressomaschinen, die alle darauf ausgelegt sind, die reichen,
+          kräftigen Aromen Ihrer Lieblingsbohnen hervorzuheben. Egal, ob Sie ein
+          gelegentlicher Kaffeetrinker oder ein engagierter Liebhaber sind,
+          unsere Kaffeemaschinen bieten Präzision, Komfort und Stil. Brühen Sie
+          Ihre ideale Tasse mühelos und genießen Sie jeden Morgen das perfekte
+          Gleichgewicht von Aroma und Geschmack. Entdecken Sie unsere Kollektion
+          und heben Sie Ihr Kaffeeerlebnis auf ein neues Niveau.
+        en-us: >-
+          Discover the perfect coffee maker to suit your brewing needs. Our
+          selection of coffee makers ranges from traditional drip machines to
+          advanced espresso machines, all designed to bring out the rich, robust
+          flavors of your favorite beans. Whether you’re a casual coffee drinker
+          or a dedicated aficionado, our coffee makers offer precision,
+          convenience, and style. Brew your ideal cup with ease and enjoy the
+          perfect balance of aroma and taste every morning. Explore our
+          collection and elevate your coffee experience to new heights.
+        fr-ca: >-
+          Découvrez la cafetière parfaite pour répondre à vos besoins en matière
+          de préparation. Notre sélection de cafetières va des machines à goutte
+          traditionnelles aux machines à espresso avancées, toutes conçues pour
+          révéler les saveurs riches et robustes de vos grains préférés. Que
+          vous soyez un buveur de café occasionnel ou un aficionado dévoué, nos
+          cafetières offrent précision, commodité et style. Préparez votre tasse
+          idéale avec facilité et profitez chaque matin de l'équilibre parfait
+          entre arôme et goût. Explorez notre collection et élevez votre
+          expérience café à de nouveaux sommets.
+        fr-ch: >-
+          Découvrez la cafetière parfaite pour répondre à vos besoins en matière
+          de préparation. Notre sélection de cafetières va des machines à filtre
+          traditionnelles aux machines à expresso avancées, toutes conçues pour
+          révéler les saveurs riches et robustes de vos grains préférés. Que
+          vous soyez un buveur de café occasionnel ou un passionné dévoué, nos
+          cafetières offrent précision, commodité et style. Préparez votre tasse
+          idéale en toute simplicité et profitez chaque matin du parfait
+          équilibre entre arôme et goût. Explorez notre collection et élevez
+          votre expérience café à de nouveaux sommets.
+        fr-fr: >-
+          Découvrez la cafetière parfaite pour répondre à vos besoins en matière
+          de préparation. Notre sélection de cafetières va des machines à filtre
+          traditionnelles aux machines à expresso avancées, toutes conçues pour
+          révéler les saveurs riches et robustes de vos grains préférés. Que
+          vous soyez un buveur de café occasionnel ou un passionné dévoué, nos
+          cafetières offrent précision, commodité et style. Préparez votre tasse
+          idéale en toute simplicité et profitez chaque matin du parfait
+          équilibre entre arôme et goût. Explorez notre collection et élevez
+          votre expérience café à de nouveaux sommets.
+        ja-jp: >-
+          あなたの抽出ニーズに合った完璧なコーヒーメーカーを見つけましょう。当社のコーヒーメーカーのセレクションは、伝統的なドリップマシンから高度なエスプレッソマシンまで多岐にわたり、お気に入りの豆の豊かで力強い風味を引き出すよう設計されています。カジュアルなコーヒー愛飲者でも、熱心な愛好家でも、当社のコーヒーメーカーは精度、利便性、スタイルを提供します。理想の一杯を簡単に淹れ、毎朝香りと味の完璧なバランスをお楽しみください。コレクションを探索し、コーヒー体験を新たな高みへと引き上げましょう。
+        nl-nl: >-
+          Ontdek de perfecte koffiemachine die aan uw zetbehoeften voldoet. Onze
+          selectie koffiemachines varieert van traditionele filtermachines tot
+          geavanceerde espressomachines, allemaal ontworpen om de rijke,
+          robuuste smaken van uw favoriete bonen naar voren te brengen. Of u nu
+          een occasionele koffiedrinker bent of een toegewijde liefhebber, onze
+          koffiemachines bieden precisie, gemak en stijl. Zet met gemak uw
+          ideale kopje en geniet elke ochtend van de perfecte balans tussen
+          aroma en smaak. Verken onze collectie en til uw koffie-ervaring naar
+          een hoger niveau.
+        sv-se: >-
+          Upptäck den perfekta kaffebryggaren för att passa dina bryggbehov.
+          Vårt urval av kaffebryggare sträcker sig från traditionella
+          droppmaskiner till avancerade espressomaskiner, alla utformade för att
+          framhäva de rika, robusta smakerna av dina favoritbönor. Oavsett om du
+          är en tillfällig kaffedrickare eller en hängiven entusiast, erbjuder
+          våra kaffebryggare precision, bekvämlighet och stil. Brygg din
+          perfekta kopp med lätthet och njut av den perfekta balansen av arom
+          och smak varje morgon. Utforska vår kollektion och höj din
+          kaffeupplevelse till nya höjder.
+        ar-uae: >-
+          اكتشف ماكينة القهوة المثالية التي تناسب احتياجاتك في التحضير. يتراوح
+          اختيارنا من ماكينات القهوة بين الآلات التقليدية بالتنقيط إلى آلات
+          الإسبريسو المتقدمة، جميعها مصممة لإبراز النكهات الغنية والقوية لحبوبك
+          المفضلة. سواء كنت من محبي القهوة العاديين أو من عشاقها المتفانين، فإن
+          ماكينات القهوة لدينا تقدم الدقة والراحة والأناقة. حضّر فنجانك المثالي
+          بسهولة واستمتع بالتوازن المثالي بين الرائحة والطعم كل صباح. استكشف
+          مجموعتنا وارتقِ بتجربتك في تناول القهوة إلى مستويات جديدة.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

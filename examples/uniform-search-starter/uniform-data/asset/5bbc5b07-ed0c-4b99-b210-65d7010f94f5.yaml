@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5bbc5b07-ed0c-4b99-b210-65d7010f94f5
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: picking-the-right-bean-a-guide-to-coffee-selection.jpg
+    file:
+      type: file
+      value: 810fb4b0-3b11-4ac4-a29c-75095408119a
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/CnlHt-EvSdutkaxrrEyuqQ-picking-the-right-bean-a-guide-to-coffee-selection.jpg
+      type: text
+    size:
+      value: 9269401
+      type: number
+    width:
+      value: 9453
+      type: number
+    height:
+      value: 7090
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:04.295266+00:00'
+modified: '2026-03-10T23:27:04.295266+00:00'

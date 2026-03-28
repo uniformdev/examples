@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: f09aaed0-56bf-4b7f-96c6-62b3037352ce
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Joanne_closeup.png
+    file:
+      type: file
+      value: c63fe61a-80b4-4d97-9050-0a58b3f6a667
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/iHRC2af-SKGobUxpLj8BqQ-Joanne_closeup.png
+      type: text
+    size:
+      value: 944362
+      type: number
+    width:
+      value: 777
+      type: number
+    height:
+      value: 775
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:34.063499+00:00'
+modified: '2026-03-10T23:28:34.063499+00:00'

@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchBox
+name: Search Box
+icon: rename
+parameters:
+  - id: delay
+    name: Delay
+    type: number
+    helpText: 'Default value: 300ms'
+    typeConfig:
+      min: '1'
+  - id: label
+    name: Label
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: placeholder
+    name: Placeholder
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: 289e99b7-4843-48bf-990f-e24d746f4f3b
+    name: Presentation Settings
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - textSize
+        - border
+        - size
+  - id: textSize
+    name: Text Size
+    type: dex-segmented-control-parameter
+    typeConfig:
+      options:
+        - key: Base
+          value: base
+        - key: LG
+          value: lg
+        - key: XL
+          value: xl
+        - key: 2XL
+          value: 2xl
+        - key: 3XL
+          value: 3xl
+        - key: 4XL
+          value: 4xl
+        - key: 5XL
+          value: 5xl
+        - key: 6XL
+          value: 6xl
+        - key: 7XL
+          value: 7xl
+  - id: border
+    name: Border
+    type: dex-token-selector-parameter
+    typeConfig:
+      selectedTokenType: border
+  - id: size
+    name: Size
+    type: dex-token-selector-parameter
+    typeConfig:
+      selectedGroup: input
+      allowDimensions: []
+      selectedTokenType: dimension
+  - id: d2dad875-8d01-4802-af77-10bcf689b7e9
+    name: Label
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - labelColor
+        - labelSize
+        - font
+  - id: labelColor
+    name: Label Color
+    type: dex-color-palette-parameter
+    typeConfig:
+      allowColors: []
+      selectedGroup: text
+  - id: labelSize
+    name: Label Size
+    type: dex-segmented-control-parameter
+    typeConfig:
+      options:
+        - key: Base
+          value: base
+        - key: LG
+          value: lg
+        - key: XL
+          value: xl
+        - key: 2XL
+          value: 2xl
+        - key: 3XL
+          value: 3xl
+        - key: 4XL
+          value: 4xl
+        - key: 5XL
+          value: 5xl
+        - key: 6XL
+          value: 6xl
+        - key: 7XL
+          value: 7xl
+  - id: font
+    name: Font
+    type: dex-token-selector-parameter
+    typeConfig:
+      selectedTokenType: font
+categoryId: 624b55ca-4671-46e2-8fd5-4a9b34b4c121
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/coffee-shop-template/preview-images/entries_search_box.png
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-03-10T23:28:49.744159+00:00'
+updated: '2026-03-25T23:50:02.383133+00:00'

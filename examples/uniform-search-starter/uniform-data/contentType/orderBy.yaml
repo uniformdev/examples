@@ -1,0 +1,34 @@
+id: orderBy
+name: Order By
+created: '2026-03-10T23:29:05.865668+00:00'
+updated: '2026-03-10T23:29:05.865668+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: field
+    name: Field
+    type: text
+    typeConfig:
+      required: true
+  - id: direction
+    name: Direction
+    type: select
+    typeConfig:
+      options:
+        - text: Ascending
+          value: ASC
+        - text: Descending
+          value: DESC
+      required: true
+entryName: title
+description: ''
+icon: sort-az
+type: block
+permissions: []
+previewConfigurations: []

@@ -1,0 +1,11 @@
+asset:
+  type: other
+  _id: 511356c8-8058-4312-9d7b-6d73218b67c1
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: arrow-right.svg
+    custom: {}
+created: '2026-03-10T23:26:21.065906+00:00'
+modified: '2026-03-10T23:26:21.065906+00:00'

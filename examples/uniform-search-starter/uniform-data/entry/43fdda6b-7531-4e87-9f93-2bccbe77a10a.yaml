@@ -1,0 +1,52 @@
+created: '2026-03-10T23:34:50.749225+00:00'
+modified: '2026-03-10T23:34:50.749225+00:00'
+pattern: false
+entry:
+  _id: 43fdda6b-7531-4e87-9f93-2bccbe77a10a
+  _name: Jonathan Blake
+  _slug: jonathan-blake
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/RTTViASjR1idTvKo3fwF9A-author-logo-placeholder.png
+  type: author
+  fields:
+    name:
+      type: text
+      locales:
+        da-dk: Jonathan Blake
+        de-at: Jonathan Blake
+        de-ch: Jonathan Blake
+        de-de: Jonathan Blake
+        en-au: Jonathan Blake
+        en-ca: Jonathan Blake
+        en-gb: Jonathan Blake
+        en-nl: Jonathan Blake
+        en-nz: Jonathan Blake
+        en-us: Jonathan Blake
+        fr-ca: Jonathan Blake
+        fr-ch: Jonathan Blake
+        fr-fr: Jonathan Blake
+        ja-jp: ジョナサン・ブレイク
+        nl-nl: Jonathan Blake
+        sv-se: Jonathan Blake
+        ar-uae: جوناثان بليك
+    thumbnail:
+      type: asset
+      value: []
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

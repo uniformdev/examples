@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 9cbdd243-b534-46c7-bc02-6c282062b515
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: jd-mini-logo-black.png
+    file:
+      type: file
+      value: 8b3b1388-5b1b-4697-96c4-d4d4a06755d2
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/5-sfdDcZTqq0HL3A1boNUg-jd-mini-logo-black.png
+      type: text
+    size:
+      value: 2973
+      type: number
+    width:
+      value: 141
+      type: number
+    height:
+      value: 180
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:38.371033+00:00'
+modified: '2026-03-10T23:27:38.371033+00:00'

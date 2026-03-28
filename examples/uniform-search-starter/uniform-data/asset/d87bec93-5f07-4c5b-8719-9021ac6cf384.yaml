@@ -1,0 +1,24 @@
+asset:
+  type: other
+  _id: d87bec93-5f07-4c5b-8719-9021ac6cf384
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Coffee-Drip-Brewing-Manual.pdf
+    file:
+      type: file
+      value: d641ba48-6dcf-4ee4-b3ab-cd8015d95834
+    mediaType:
+      value: application/pdf
+      type: text
+    url:
+      value: >-
+        https://files.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/MKnx88s7R2y-fvqIL6sZBQ-Coffee-Drip-Brewing-Manual.pdf
+      type: text
+    size:
+      value: 64494
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:40.924284+00:00'
+modified: '2026-03-10T23:28:40.924284+00:00'

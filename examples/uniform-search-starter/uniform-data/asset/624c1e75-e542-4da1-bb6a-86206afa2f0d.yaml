@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 624c1e75-e542-4da1-bb6a-86206afa2f0d
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: kosmic-coffee-stainless-steel-precision-brewer-1.png
+    file:
+      type: file
+      value: b28e01a9-1edf-4b6d-bf30-0604376a17de
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/-aytbnyDQlOSm1sWZmLfPQ-kosmic-coffee-stainless-steel-precision-brewer-1.png
+      type: text
+    size:
+      value: 193857
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:05.155528+00:00'
+modified: '2026-03-10T23:27:05.155528+00:00'

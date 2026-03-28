@@ -1,0 +1,18 @@
+id: brand
+name: Brand
+cap: 100
+values:
+  - id: black-mountain
+    value: Black Mountain
+  - id: cervello-di-caffer
+    value: Cervello di Caffe
+  - id: ember
+    value: Ember
+  - id: impresso
+    value: Impresso
+  - id: javadrip
+    value: JavaDrip
+  - id: kosmic-coffee
+    value: Kosmic Coffee
+  - id: royale
+    value: Royale

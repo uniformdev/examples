@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: af9d50fb-ea3c-4e53-959a-688cbe135e8f
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: javadrip.png
+    file:
+      type: file
+      value: 35e8eafd-5386-4b1c-aa26-d054a8c7ffa1
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/tPT0nR_gRWyFl4QRKUuioQ-javadrip.png
+      type: text
+    size:
+      value: 3763
+      type: number
+    width:
+      value: 196
+      type: number
+    height:
+      value: 47
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:54.872551+00:00'
+modified: '2026-03-10T23:27:54.872551+00:00'

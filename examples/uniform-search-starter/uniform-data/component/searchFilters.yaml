@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchFilters
+name: Search Filters
+icon: filters
+parameters: []
+categoryId: 624b55ca-4671-46e2-8fd5-4a9b34b4c121
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/coffee-shop-template/preview-images/entries_search_filters.png
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-03-10T23:28:50.081994+00:00'
+updated: '2026-03-25T23:50:34.021647+00:00'

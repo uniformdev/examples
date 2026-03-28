@@ -1,0 +1,239 @@
+created: '2026-03-10T23:32:25.253428+00:00'
+modified: '2026-03-10T23:32:25.253428+00:00'
+pattern: false
+entry:
+  _id: 9853aed9-07d5-4d58-a45b-c23157e149fe
+  _name: Arabica
+  _slug: arabica
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/0pB1--3qTU2d9W0YxmWx3Q-arabica.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Arabica
+        de-at: Arabica
+        de-ch: Arabica
+        de-de: Arabica
+        en-au: Arabica
+        en-ca: Arabica
+        en-gb: Arabica
+        en-nl: Arabica
+        en-nz: Arabica
+        en-us: Arabica
+        fr-ca: Arabica
+        fr-ch: Arabica
+        fr-fr: Arabica
+        ja-jp: アラビカ
+        nl-nl: Arabica
+        sv-se: Arabica
+        ar-uae: أرابيكا
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Oplev den enestående kvalitet og smag af Arabica kaffebønner, der er
+          kendt for deres glatte og komplekse smagsprofiler. Arabica bønner
+          dyrkes i højere højder og er kendt for deres delikate balance mellem
+          sødme, syrlighed og aromatiske noter. Vores udvalg af Arabica bønner
+          er hentet fra de bedste kaffeproducerende regioner, hvilket sikrer, at
+          du oplever hele spektret af smagsnuancer fra blomsteragtige og
+          frugtige til nøddeagtige og chokoladeagtige. Perfekt til enhver
+          bryggemetode leverer Arabica bønner en raffineret og fornøjelig
+          kaffeoplevelse med hver kop. Udforsk vores Arabica-kollektion og nyd
+          fremragende kvalitet af disse førsteklasses bønner.
+        de-at: >-
+          Entdecken Sie die außergewöhnliche Qualität und den Geschmack von
+          Arabica-Kaffeebohnen, die für ihre sanften und komplexen
+          Geschmacksprofile bekannt sind. Arabica-Bohnen werden in höheren Lagen
+          angebaut und sind für ihre feine Balance von Süße, Säure und
+          aromatischen Noten bekannt. Unsere Auswahl an Arabica-Bohnen stammt
+          aus den besten Kaffeeanbaugebieten, sodass Sie das volle Spektrum an
+          Aromen von blumig und fruchtig bis nussig und schokoladig erleben
+          können. Perfekt für jede Brühmethode, bieten Arabica-Bohnen mit jeder
+          Tasse ein raffiniertes und genussvolles Kaffeeerlebnis. Entdecken Sie
+          unsere Arabica-Kollektion und genießen Sie die Exzellenz dieser
+          Premium-Bohnen.
+        de-ch: >-
+          Entdecken Sie die außergewöhnliche Qualität und den Geschmack von
+          Arabica-Kaffeebohnen, die für ihre sanften und komplexen
+          Geschmacksprofile bekannt sind. Arabica-Bohnen werden in höheren Lagen
+          angebaut und zeichnen sich durch ihre feine Balance von Süße, Säure
+          und aromatischen Noten aus. Unsere Auswahl an Arabica-Bohnen stammt
+          aus den besten Kaffeeanbaugebieten, sodass Sie das volle Spektrum an
+          Aromen von blumig und fruchtig bis nussig und schokoladig erleben
+          können. Perfekt für jede Brühmethode, bieten Arabica-Bohnen mit jeder
+          Tasse ein raffiniertes und genussvolles Kaffeeerlebnis. Entdecken Sie
+          unsere Arabica-Kollektion und genießen Sie die Exzellenz dieser
+          Premium-Bohnen.
+        de-de: >-
+          Entdecken Sie die außergewöhnliche Qualität und den Geschmack von
+          Arabica-Kaffeebohnen, die für ihre sanften und komplexen
+          Geschmacksprofile bekannt sind. Arabica-Bohnen werden in höheren Lagen
+          angebaut und zeichnen sich durch ihre feine Balance von Süße, Säure
+          und aromatischen Noten aus. Unsere Auswahl an Arabica-Bohnen stammt
+          aus den besten Kaffeeanbaugebieten, sodass Sie das volle Spektrum an
+          Aromen von blumig und fruchtig bis nussig und schokoladig erleben
+          können. Perfekt für jede Brühmethode, bieten Arabica-Bohnen mit jeder
+          Tasse ein raffiniertes und genussvolles Kaffeeerlebnis. Entdecken Sie
+          unsere Arabica-Kollektion und genießen Sie die Exzellenz dieser
+          Premium-Bohnen.
+        en-au: >-
+          Découvrez la qualité exceptionnelle et la saveur des grains de café
+          Arabica, réputés pour leurs profils de goût doux et complexes. Les
+          grains Arabica sont cultivés à des altitudes plus élevées et sont
+          connus pour leur équilibre délicat entre douceur, acidité et notes
+          aromatiques. Notre sélection de grains Arabica est issue des
+          meilleures régions productrices de café, vous garantissant de
+          découvrir tout le spectre des saveurs, allant des notes florales et
+          fruitées aux notes de noix et de chocolat. Parfaits pour toute méthode
+          de préparation, les grains Arabica offrent une expérience de café
+          raffinée et agréable à chaque tasse. Explorez notre collection Arabica
+          et savourez l'excellence de ces grains haut de gamme.
+        en-ca: >-
+          Discover the exceptional quality and flavour of Arabica coffee beans,
+          renowned for their smooth and complex taste profiles. Arabica beans
+          are grown at higher altitudes and are known for their delicate balance
+          of sweetness, acidity, and aromatic notes. Our selection of Arabica
+          beans is sourced from the best coffee-growing regions, ensuring you
+          experience the full spectrum of flavours from floral and fruity to
+          nutty and chocolaty. Perfect for any brewing method, Arabica beans
+          deliver a refined and enjoyable coffee experience with every cup.
+          Explore our Arabica collection and savour the excellence of these
+          premium beans.
+        en-gb: >-
+          Discover the exceptional quality and flavour of Arabica coffee beans,
+          renowned for their smooth and complex taste profiles. Arabica beans
+          are grown at higher altitudes and are known for their delicate balance
+          of sweetness, acidity, and aromatic notes. Our selection of Arabica
+          beans is sourced from the best coffee-growing regions, ensuring you
+          experience the full spectrum of flavours from floral and fruity to
+          nutty and chocolatey. Perfect for any brewing method, Arabica beans
+          deliver a refined and enjoyable coffee experience with every cup.
+          Explore our Arabica collection and savour the excellence of these
+          premium beans.
+        en-nl: >-
+          Ontdek de uitzonderlijke kwaliteit en smaak van Arabica-koffiebonen,
+          beroemd om hun zachte en complexe smaakprofielen. Arabica-bonen worden
+          op grotere hoogten geteeld en staan bekend om hun delicate balans van
+          zoetheid, zuurgraad en aromatische tonen. Onze selectie Arabica-bonen
+          is afkomstig uit de beste koffieproducerende regio's, zodat u het
+          volledige spectrum van smaken kunt ervaren, van bloemig en fruitig tot
+          nootachtig en chocoladerijk. Perfect voor elke zetmethode,
+          Arabica-bonen zorgen voor een verfijnde en aangename koffie-ervaring
+          bij elke kop. Verken onze Arabica-collectie en geniet van de
+          uitmuntendheid van deze premium bonen.
+        en-nz: >-
+          Entdecken Sie die außergewöhnliche Qualität und den Geschmack von
+          Arabica-Kaffeebohnen, die für ihre sanften und komplexen
+          Geschmacksprofile bekannt sind. Arabica-Bohnen werden in höheren Lagen
+          angebaut und sind für ihre delikate Balance aus Süße, Säure und
+          aromatischen Noten bekannt. Unsere Auswahl an Arabica-Bohnen stammt
+          aus den besten Kaffeeanbaugebieten, sodass Sie das volle Spektrum an
+          Aromen von blumig und fruchtig bis nussig und schokoladig erleben
+          können. Perfekt für jede Brühmethode liefern Arabica-Bohnen mit jeder
+          Tasse ein verfeinertes und genussvolles Kaffeeerlebnis. Entdecken Sie
+          unsere Arabica-Kollektion und genießen Sie die Exzellenz dieser
+          Premium-Bohnen.
+        en-us: >-
+          Discover the exceptional quality and flavor of Arabica coffee beans,
+          renowned for their smooth and complex taste profiles. Arabica beans
+          are grown at higher altitudes and are known for their delicate balance
+          of sweetness, acidity, and aromatic notes. Our selection of Arabica
+          beans is sourced from the best coffee-growing regions, ensuring you
+          experience the full spectrum of flavors from floral and fruity to
+          nutty and chocolaty. Perfect for any brewing method, Arabica beans
+          deliver a refined and enjoyable coffee experience with every cup.
+          Explore our Arabica collection and savor the excellence of these
+          premium beans.
+        fr-ca: >-
+          Découvrez la qualité exceptionnelle et la saveur des grains de café
+          Arabica, réputés pour leurs profils de goût doux et complexes. Les
+          grains d'Arabica sont cultivés à des altitudes plus élevées et sont
+          connus pour leur équilibre délicat entre douceur, acidité et notes
+          aromatiques. Notre sélection de grains d'Arabica provient des
+          meilleures régions productrices de café, vous garantissant de
+          découvrir tout le spectre des saveurs, allant des notes florales et
+          fruitées aux notes de noix et de chocolat. Parfaits pour toute méthode
+          d'infusion, les grains d'Arabica offrent une expérience de café
+          raffinée et agréable à chaque tasse. Explorez notre collection
+          d'Arabica et savourez l'excellence de ces grains de qualité
+          supérieure.
+        fr-ch: >-
+          Découvrez la qualité exceptionnelle et la saveur des grains de café
+          Arabica, réputés pour leurs profils de goût doux et complexes. Les
+          grains d'Arabica sont cultivés à des altitudes plus élevées et sont
+          connus pour leur équilibre délicat entre douceur, acidité et notes
+          aromatiques. Notre sélection de grains d'Arabica est issue des
+          meilleures régions productrices de café, vous garantissant de
+          découvrir tout le spectre des saveurs, allant des notes florales et
+          fruitées aux notes de noix et chocolatées. Parfaits pour toute méthode
+          de préparation, les grains d'Arabica offrent une expérience de café
+          raffinée et agréable à chaque tasse. Explorez notre collection
+          d'Arabica et savourez l'excellence de ces grains de première qualité.
+        fr-fr: >-
+          Découvrez la qualité exceptionnelle et la saveur des grains de café
+          Arabica, réputés pour leurs profils de goût doux et complexes. Les
+          grains d'Arabica sont cultivés à des altitudes plus élevées et sont
+          connus pour leur équilibre délicat entre douceur, acidité et notes
+          aromatiques. Notre sélection de grains d'Arabica est issue des
+          meilleures régions productrices de café, vous garantissant de
+          découvrir tout le spectre des saveurs, allant des notes florales et
+          fruitées aux notes de noix et chocolatées. Parfaits pour toute méthode
+          de préparation, les grains d'Arabica offrent une expérience de café
+          raffinée et agréable à chaque tasse. Explorez notre collection
+          d'Arabica et savourez l'excellence de ces grains de première qualité.
+        ja-jp: >-
+          アラビカコーヒー豆の卓越した品質と風味を発見してください。その滑らかで複雑な味わいで知られるアラビカ豆は、高地で栽培され、甘さ、酸味、香りのバランスが繊細です。私たちのアラビカ豆のセレクションは、最高のコーヒー生産地域から調達されており、花やフルーツのような風味からナッツやチョコレートのような風味まで、フレーバーの全スペクトルを体験できます。どの抽出方法にも最適なアラビカ豆は、洗練された楽しいコーヒー体験を一杯ごとに提供します。私たちのアラビカコレクションを探索し、これらのプレミアム豆の卓越性を味わってください。
+        nl-nl: >-
+          Ontdek de uitzonderlijke kwaliteit en smaak van Arabica koffiebonen,
+          beroemd om hun zachte en complexe smaakprofielen. Arabica bonen worden
+          op grotere hoogtes verbouwd en staan bekend om hun delicate balans van
+          zoetheid, zuurgraad en aromatische tonen. Onze selectie van Arabica
+          bonen is afkomstig uit de beste koffieproducerende regio's, zodat u
+          het volledige spectrum van smaken ervaart, van bloemig en fruitig tot
+          nootachtig en chocoladerijk. Perfect voor elke zetmethode, Arabica
+          bonen zorgen voor een verfijnde en aangename koffie-ervaring met elke
+          kop. Verken onze Arabica collectie en geniet van de uitmuntendheid van
+          deze premium bonen.
+        sv-se: >-
+          Upptäck den exceptionella kvaliteten och smaken hos
+          Arabica-kaffebönor, kända för sina mjuka och komplexa smakprofiler.
+          Arabica-bönor odlas på högre höjder och är kända för sin delikata
+          balans av sötma, syra och aromatiska toner. Vårt urval av
+          Arabica-bönor kommer från de bästa kaffeodlingsregionerna, vilket
+          säkerställer att du upplever hela spektrumet av smaker från blommiga
+          och fruktiga till nötiga och chokladiga. Perfekta för alla
+          bryggmetoder, Arabica-bönor levererar en raffinerad och njutbar
+          kaffeupplevelse med varje kopp. Utforska vår Arabica-kollektion och
+          njut av excellensen hos dessa premiumbönor.
+        ar-uae: >-
+          اكتشف الجودة الاستثنائية ونكهة حبوب قهوة أرابيكا، المشهورة بمذاقها
+          الناعم والمعقد. تُزرع حبوب أرابيكا في مرتفعات أعلى وتُعرف بتوازنها
+          الدقيق بين الحلاوة والحموضة والنكهات العطرية. يتم اختيار حبوب أرابيكا
+          لدينا من أفضل مناطق زراعة القهوة، مما يضمن لك تجربة طيف كامل من
+          النكهات من الزهرية والفواكه إلى الجوزية والشوكولاتية. مثالية لأي طريقة
+          تحضير، تقدم حبوب أرابيكا تجربة قهوة راقية وممتعة مع كل فنجان. استكشف
+          مجموعتنا من حبوب أرابيكا واستمتع بتميز هذه الحبوب الفاخرة.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

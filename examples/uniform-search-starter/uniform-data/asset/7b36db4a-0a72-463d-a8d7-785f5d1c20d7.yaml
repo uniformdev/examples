@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7b36db4a-0a72-463d-a8d7-785f5d1c20d7
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: royale-iq-espresso-machine-2.png
+    file:
+      type: file
+      value: 56b1bb7e-9265-48f7-9fe5-48f0f19ffe67
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/jWZ842vYTgWHSDCKQoMU6w-royale-iq-espresso-machine-2.png
+      type: text
+    size:
+      value: 215224
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:19.589396+00:00'
+modified: '2026-03-10T23:27:19.589396+00:00'

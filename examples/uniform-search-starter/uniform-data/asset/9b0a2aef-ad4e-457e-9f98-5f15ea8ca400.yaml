@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 9b0a2aef-ad4e-457e-9f98-5f15ea8ca400
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: medium-roast-coffee-1.png
+    file:
+      type: file
+      value: 86645d0b-03c0-4571-8265-444eee726acb
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/BiFCPZ7CReKDlioO7XkKmw-medium-roast-coffee-1.png
+      type: text
+    size:
+      value: 200970
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:38.221561+00:00'
+modified: '2026-03-10T23:27:38.221561+00:00'

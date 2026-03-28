@@ -1,0 +1,18 @@
+id: topic
+name: Topic
+cap: 100
+values:
+  - id: brewing
+    value: Brewing
+  - id: coffee
+    value: Coffee
+  - id: gear
+    value: Gear
+  - id: guides
+    value: Guides
+  - id: ingredients-and-preparation
+    value: Ingredients & Preparation
+  - id: tea
+    value: Tea
+  - id: tips
+    value: Tips

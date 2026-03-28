@@ -1,0 +1,27 @@
+composition:
+  _name: Search Demo Page
+  _id: aeba33b6-415a-4f7d-85f1-052e276f3781
+  _slug: search-demo-page-composition
+  type: searchDemoPage
+  slots:
+    pageContent:
+      - _id: 4372982f-d516-433e-8d9f-c256fe583a37
+        type: hero
+        parameters:
+          titleText:
+            type: text
+            locales:
+              en-us: Welcome to Uniform Search Playground
+          descriptionText:
+            type: text
+            locales:
+              en-us: explore product and article search experience
+          eyebrowTitleText:
+            type: text
+            locales:
+              en-us: fully integrated state of the art search
+  _locales:
+    - en-us
+created: '2026-03-26T04:23:07.329703+00:00'
+modified: '2026-03-26T04:23:07.329703+00:00'
+pattern: false

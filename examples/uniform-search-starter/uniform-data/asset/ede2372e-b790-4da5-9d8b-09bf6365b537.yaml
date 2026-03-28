@@ -1,0 +1,24 @@
+asset:
+  type: video
+  _id: ede2372e-b790-4da5-9d8b-09bf6365b537
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: 4820352-uhd_4096_2160_25fps.mp4
+    file:
+      type: file
+      value: 8bbfcbb1-4e17-4f0a-a101-33a2075b10b9
+    mediaType:
+      value: video/mp4
+      type: text
+    url:
+      value: >-
+        https://files.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/gQ9iOUBaQva5Irc-w2llqA-4820352-uhd_4096_2160_25fps.mp4
+      type: text
+    size:
+      value: 39836004
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:30.866244+00:00'
+modified: '2026-03-10T23:28:30.866244+00:00'

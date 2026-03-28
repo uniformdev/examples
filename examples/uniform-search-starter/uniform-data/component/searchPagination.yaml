@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchPagination
+name: Search Pagination
+icon: desktop
+parameters:
+  - id: siblingCount
+    name: Sibling Count
+    type: text
+    helpText: 'Default value: 1'
+    typeConfig: null
+    localizable: true
+categoryId: 624b55ca-4671-46e2-8fd5-4a9b34b4c121
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/coffee-shop-template/preview-images/entries_search_pagination.png
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-03-10T23:28:50.61915+00:00'
+updated: '2026-03-25T23:51:46.304805+00:00'

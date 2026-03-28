@@ -1,0 +1,3183 @@
+created: '2026-03-10T23:33:53.025589+00:00'
+modified: '2026-03-10T23:33:53.025589+00:00'
+pattern: false
+entry:
+  _id: f6663a55-c9e0-46e8-8e06-5abcf3f33d7d
+  _name: 'Exploring Coffee: Summer Beans and Brewing'
+  _slug: exploring-coffee-summer-beans-and-brewing
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/2XtFGAw1QaGgZyF53tpLsA-Summer-2025-Watching-a-race.png
+  type: article
+  fields:
+    title:
+      type: text
+      locales:
+        da-dk: 'Udforskning af Kaffe: Sommerbønner og Brygning'
+        de-at: 'Erkundung von Kaffee: Sommerbohnen und Zubereitung'
+        de-ch: 'Erkundung des Kaffees: Sommerbohnen und Zubereitung'
+        de-de: 'Erkundung des Kaffees: Sommerbohnen und Zubereitung'
+        en-au: 'Exploration du café : Grains d''été et techniques de préparation'
+        en-ca: 'Exploring Coffee: Summer Beans and Brewing'
+        en-gb: |-
+          Exploring Coffee: Summer Beans and Brewing
+
+          Field description: Title of the article (shown to readers).
+          Content type: article
+        en-nl: 'Koffie Verkennen: Zomerbonen en Brouwen'
+        en-nz: 'Erkundung von Kaffee: Sommerbohnen und Zubereitung'
+        en-us: 'Exploring Coffee: Summer Beans and Brewing'
+        fr-ca: 'Explorer le café : Grains d''été et méthodes d''infusion'
+        fr-ch: 'Exploration du café : Grains d''été et méthodes de préparation'
+        fr-fr: 'Exploration du café : Grains d''été et méthodes de préparation'
+        ja-jp: コーヒー探訪：夏の豆と抽出方法
+        nl-nl: 'Koffie Verkennen: Zomerbonen en Brouwen'
+        sv-se: 'Utforska Kaffe: Sommarbönor och Bryggning'
+        ar-uae: 'استكشاف القهوة: حبوب الصيف وطرق التحضير'
+    author:
+      type: contentReference
+      value: ${#jptr:/ref-f6663a55-c9e0-46e8-8e06-5abcf3f33d7d-author/entries/0}
+    content:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Bedste kaffebønner til sommertiden
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Når solen skinner, og temperaturerne stiger, kan dine
+                      kaffepreferencer skifte fra den traditionelle varme bryg
+                      til mere forfriskende muligheder. At vælge de bedste
+                      kaffebønner til sommertiden kan transformere din
+                      kaffeoplevelse. Kig efter bønner, der udviser citrus-,
+                      frugt- eller blomsteragtige noter, typisk fundet i
+                      etiopiske eller kenyanske sorter. Disse bønner kan gøre
+                      dine kolde bryg og iskaffer livligt forfriskende og
+                      tilbyde lag af smag, der er perfekte til at nippe til
+                      under en solrig himmel.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nye kolde kaffebrygningsteknikker
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Efterhånden som kaffekulturen udvikler sig, gør
+                      brygningsteknikkerne det også, og kold kaffe er ingen
+                      undtagelse. Nye metoder som snap chilling, hvor varm kaffe
+                      hurtigt afkøles over is for at bevare smagen, eller nitro
+                      cold brew, der tilfører nitrogen for en cremet tekstur,
+                      ændrer den måde, vi oplever kold kaffe på. At
+                      eksperimentere med disse teknikker derhjemme kan løfte
+                      dine sommerkaffeoplevelser og sikre, at hver kop er lige
+                      så spændende som den sidste.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica eller Liberica bønner - hvad skal man vælge?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Valget mellem Arabica og Liberica bønner afhænger af dine
+                      smagspræferencer. Arabica bønner er kendt for deres
+                      glatte, milde smag med hints af chokolade og sukker,
+                      foretrukket af mange for deres afbalancerede syre og
+                      komplekse aroma. På den anden side tilbyder Liberica
+                      bønner, som er sjældnere på kaffemarkedet, dristige,
+                      unikke smagsoplevelser med en røget, blomsteragtig
+                      afslutning. Overvej hvilken oplevelse du søger—komfort og
+                      subtilitet fra Arabica eller eventyr og særpræg fra
+                      Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Japanske iskaffetips fra en ekspertbarista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japansk iskaffe er en elsket teknik blandt baristaer,
+                      kendt for at maksimere smagsintegriteten ved at brygge
+                      kaffe direkte på is. Her er ekspertips til at
+                      perfektionere din bryg: brug et præcist
+                      kaffe-til-vand-forhold, typisk 1:15, for klarhed og
+                      styrke. Brug is af høj kvalitet, da det påvirker smag og
+                      fortyndingsgrad. Endelig, mal din kaffe til en medium-fin
+                      konsistens for at sikre optimal ekstraktion og en sømløs,
+                      forfriskende afslutning. Oplev den skarpe intensitet,
+                      denne metode tilbyder, ved at prøve disse tips selv.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Beste Kaffeebohnen für den Sommer
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Wenn die Sonne scheint und die Temperaturen steigen,
+                      könnten sich Ihre Kaffeepreferenzen von der traditionellen
+                      heißen Tasse zu erfrischenderen Optionen verschieben. Die
+                      Auswahl der besten Kaffeebohnen für den Sommer kann Ihr
+                      Kaffeeerlebnis verwandeln. Suchen Sie nach Bohnen mit
+                      zitrusartigen, fruchtigen oder blumigen Noten, die
+                      typischerweise in äthiopischen oder kenianischen Sorten zu
+                      finden sind. Diese Bohnen können Ihre Cold Brews und
+                      Eiskaffees lebhaft erfrischend machen und bieten
+                      Geschmacksnuancen, die perfekt zum Genießen unter einem
+                      sonnigen Himmel sind.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Neue Techniken zur Zubereitung von kaltem Kaffee
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Mit der Entwicklung der Kaffeekultur entwickeln sich auch
+                      die Brühtechniken, und kalter Kaffee ist da keine
+                      Ausnahme. Neue Methoden wie das Schnappkühlen, bei dem
+                      heißer Kaffee schnell über Eis abgekühlt wird, um die
+                      Aromen einzuschließen, oder Nitro Cold Brew, das
+                      Stickstoff für eine cremige Textur einführt, verändern die
+                      Art und Weise, wie wir kalten Kaffee erleben. Das
+                      Experimentieren mit diesen Techniken zu Hause kann Ihre
+                      sommerlichen Kaffeeabenteuer aufwerten und sicherstellen,
+                      dass jede Tasse so aufregend ist wie die letzte.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica- oder Liberica-Bohnen - Was soll man wählen?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Wahl zwischen Arabica- und Liberica-Bohnen hängt von
+                      Ihren Geschmackspräferenzen ab. Arabica-Bohnen werden für
+                      ihre sanften, milden Aromen mit Anklängen von Schokolade
+                      und Zucker geschätzt, die von vielen wegen ihrer
+                      ausgewogenen Säure und komplexen Aromen bevorzugt werden.
+                      Liberica-Bohnen hingegen, die auf dem Kaffeemarkt seltener
+                      sind, bieten kräftige, einzigartige Aromen mit einem
+                      rauchigen, blumigen Abgang. Überlegen Sie, welches
+                      Erlebnis Sie suchen – Komfort und Subtilität von Arabica
+                      oder Abenteuer und Unterscheidung von Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Tipps zur Zubereitung von japanischem Eiskaffee von einem
+                      erfahrenen Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanischer Eiskaffee ist eine bei Baristas beliebte
+                      Technik, die dafür bekannt ist, die Geschmacksintegrität
+                      zu maximieren, indem Kaffee direkt auf Eis gebraut wird.
+                      Hier sind Expertentipps, um Ihren Brühvorgang zu
+                      perfektionieren: Verwenden Sie ein genaues
+                      Kaffee-Wasser-Verhältnis, typischerweise 1:15, für
+                      Klarheit und Stärke. Verwenden Sie hochwertiges Eis, da es
+                      den Geschmack und die Verdünnungsrate beeinflusst. Mahlen
+                      Sie Ihren Kaffee schließlich auf eine mittelfeine
+                      Konsistenz, um eine optimale Extraktion und einen
+                      nahtlosen, erfrischenden Abgang zu gewährleisten.
+                      Entdecken Sie die knackige Intensität, die diese Methode
+                      bietet, indem Sie diese Tipps selbst ausprobieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Beste Kaffeebohnen für den Sommer
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Wenn die Sonne scheint und die Temperaturen steigen,
+                      könnten sich Ihre Kaffeepreferenzen von der traditionellen
+                      heißen Tasse zu erfrischenderen Optionen verschieben. Die
+                      Auswahl der besten Kaffeebohnen für den Sommer kann Ihr
+                      Kaffeeerlebnis transformieren. Suchen Sie nach Bohnen mit
+                      zitrusartigen, fruchtigen oder blumigen Noten, die
+                      typischerweise in äthiopischen oder kenianischen Sorten zu
+                      finden sind. Diese Bohnen können Ihre Cold Brews und
+                      Eiskaffees lebendig erfrischend machen und bieten
+                      Geschmacksnuancen, die perfekt sind, um sie unter einem
+                      sonnigen Himmel zu genießen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Neue Techniken zur Zubereitung von kaltem Kaffee
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Mit der Weiterentwicklung der Kaffeekultur ändern sich
+                      auch die Brühtechniken, und kalter Kaffee bildet da keine
+                      Ausnahme. Neue Methoden wie das Snap Chilling, bei dem
+                      heißer Kaffee schnell über Eis abgekühlt wird, um die
+                      Aromen einzuschließen, oder Nitro Cold Brew, das
+                      Stickstoff für eine cremige Textur einfügt, verändern die
+                      Art und Weise, wie wir kalten Kaffee erleben. Das
+                      Experimentieren mit diesen Techniken zu Hause kann Ihre
+                      sommerlichen Kaffeeabenteuer aufwerten und sicherstellen,
+                      dass jede Tasse so aufregend ist wie die letzte.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica- oder Liberica-Bohnen - Was soll man wählen?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Wahl zwischen Arabica- und Liberica-Bohnen hängt von
+                      Ihren Geschmackspräferenzen ab. Arabica-Bohnen werden für
+                      ihre glatten, milden Aromen mit Anklängen von Schokolade
+                      und Zucker geschätzt, die von vielen wegen ihrer
+                      ausgewogenen Säure und komplexen Aroma bevorzugt werden.
+                      Liberica-Bohnen hingegen, die auf dem Kaffeemarkt seltener
+                      sind, bieten kräftige, einzigartige Aromen mit einem
+                      rauchigen, blumigen Abgang. Überlegen Sie, welches
+                      Erlebnis Sie suchen – Komfort und Subtilität von Arabica
+                      oder Abenteuer und Unterscheidung von Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Tipps zur Zubereitung von japanischem Eiskaffee von einem
+                      erfahrenen Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanischer Eiskaffee ist eine beliebte Technik unter
+                      Baristas, die dafür bekannt ist, die Geschmacksintegrität
+                      zu maximieren, indem der Kaffee direkt auf Eis gebrüht
+                      wird. Hier sind Expertentipps, um Ihren Brühvorgang zu
+                      perfektionieren: Verwenden Sie ein genaues
+                      Kaffee-Wasser-Verhältnis, typischerweise 1:15, für
+                      Klarheit und Stärke. Verwenden Sie hochwertiges Eis, da es
+                      den Geschmack und die Verdünnungsrate beeinflusst. Mahlen
+                      Sie Ihren Kaffee zuletzt zu einer mittelfeinen Konsistenz,
+                      um eine optimale Extraktion und einen nahtlosen,
+                      erfrischenden Abgang zu gewährleisten. Entdecken Sie die
+                      knackige Intensität, die diese Methode bietet, indem Sie
+                      diese Tipps selbst ausprobieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Beste Kaffeebohnen für den Sommer
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Wenn die Sonne scheint und die Temperaturen steigen,
+                      könnten sich Ihre Kaffeepreferenzen von der traditionellen
+                      heißen Tasse zu erfrischenderen Optionen verschieben. Die
+                      Auswahl der besten Kaffeebohnen für den Sommer kann Ihr
+                      Kaffeeerlebnis transformieren. Suchen Sie nach Bohnen mit
+                      zitrusartigen, fruchtigen oder blumigen Noten, die
+                      typischerweise in äthiopischen oder kenianischen Sorten zu
+                      finden sind. Diese Bohnen können Ihre Cold Brews und
+                      Eiskaffees lebendig erfrischend machen und bieten
+                      Geschmacksnuancen, die perfekt sind, um sie unter einem
+                      sonnigen Himmel zu genießen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Neue Techniken zur Zubereitung von kaltem Kaffee
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Mit der Weiterentwicklung der Kaffeekultur ändern sich
+                      auch die Brühtechniken, und kalter Kaffee bildet da keine
+                      Ausnahme. Neue Methoden wie das Snap Chilling, bei dem
+                      heißer Kaffee schnell über Eis abgekühlt wird, um die
+                      Aromen einzuschließen, oder Nitro Cold Brew, das
+                      Stickstoff für eine cremige Textur einfügt, verändern die
+                      Art und Weise, wie wir kalten Kaffee erleben. Das
+                      Experimentieren mit diesen Techniken zu Hause kann Ihre
+                      sommerlichen Kaffeeabenteuer aufwerten und sicherstellen,
+                      dass jede Tasse so aufregend ist wie die letzte.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica- oder Liberica-Bohnen - Was soll man wählen?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Wahl zwischen Arabica- und Liberica-Bohnen hängt von
+                      Ihren Geschmackspräferenzen ab. Arabica-Bohnen werden für
+                      ihre glatten, milden Aromen mit Anklängen von Schokolade
+                      und Zucker geschätzt, die von vielen wegen ihrer
+                      ausgewogenen Säure und komplexen Aroma bevorzugt werden.
+                      Liberica-Bohnen hingegen, die auf dem Kaffeemarkt seltener
+                      sind, bieten kräftige, einzigartige Aromen mit einem
+                      rauchigen, blumigen Abgang. Überlegen Sie, welches
+                      Erlebnis Sie suchen – Komfort und Subtilität von Arabica
+                      oder Abenteuer und Unterscheidung von Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Tipps zur Zubereitung von japanischem Eiskaffee von einem
+                      erfahrenen Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanischer Eiskaffee ist eine beliebte Technik unter
+                      Baristas, die dafür bekannt ist, die Geschmacksintegrität
+                      zu maximieren, indem der Kaffee direkt auf Eis gebrüht
+                      wird. Hier sind Expertentipps, um Ihren Brühvorgang zu
+                      perfektionieren: Verwenden Sie ein genaues
+                      Kaffee-Wasser-Verhältnis, typischerweise 1:15, für
+                      Klarheit und Stärke. Verwenden Sie hochwertiges Eis, da es
+                      den Geschmack und die Verdünnungsrate beeinflusst. Mahlen
+                      Sie Ihren Kaffee zuletzt zu einer mittelfeinen Konsistenz,
+                      um eine optimale Extraktion und einen nahtlosen,
+                      erfrischenden Abgang zu gewährleisten. Entdecken Sie die
+                      knackige Intensität, die diese Methode bietet, indem Sie
+                      diese Tipps selbst ausprobieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Meilleurs Grains de Café pour l'Été
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Quand le soleil brille et que les températures montent,
+                      vos préférences en matière de café peuvent passer du
+                      traditionnel café chaud à des options plus
+                      rafraîchissantes. Sélectionner les meilleurs grains de
+                      café pour l'été peut transformer votre expérience du café.
+                      Recherchez des grains qui présentent des notes d'agrumes,
+                      de fruits ou de fleurs, que l'on trouve généralement dans
+                      les variétés éthiopiennes ou kényanes. Ces grains peuvent
+                      rendre vos cafés froids et glacés vibrants et
+                      rafraîchissants, offrant des couches de saveurs parfaites
+                      pour siroter sous un ciel ensoleillé.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nouvelles Techniques de Préparation de Café Froid
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      À mesure que la culture du café évolue, les techniques de
+                      préparation évoluent également, et le café froid ne fait
+                      pas exception. De nouvelles méthodes comme le
+                      refroidissement rapide, où le café chaud est rapidement
+                      refroidi sur de la glace pour verrouiller les saveurs, ou
+                      le nitro cold brew, qui infuse de l'azote pour une texture
+                      crémeuse, changent notre façon de vivre le café froid.
+                      Expérimenter ces techniques à la maison peut élever vos
+                      escapades estivales de café, garantissant que chaque tasse
+                      est aussi excitante que la précédente.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Grains d'Arabica ou de Liberica - Que Choisir ?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Choisir entre les grains d'Arabica et de Liberica dépend
+                      de vos préférences gustatives. Les grains d'Arabica sont
+                      estimés pour leurs saveurs douces et légères avec des
+                      notes de chocolat et de sucre, prisés par beaucoup pour
+                      leur acidité équilibrée et leur arôme complexe. D'autre
+                      part, les grains de Liberica, plus rares sur le marché du
+                      café, offrent des saveurs audacieuses et uniques avec une
+                      finition fumée et florale. Considérez l'expérience que
+                      vous recherchez : le confort et la subtilité de l'Arabica
+                      ou l'aventure et la distinction du Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Conseils d'un Barista Expert pour Préparer le Café Glacé
+                      Japonais
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le café glacé japonais est une technique appréciée parmi
+                      les baristas, réputée pour maximiser l'intégrité des
+                      saveurs en infusant le café directement sur de la glace.
+                      Voici des conseils d'experts pour parfaire votre infusion
+                      : utilisez un ratio précis de café à eau, généralement
+                      1:15, pour la clarté et la force. Utilisez de la glace de
+                      haute qualité, car elle impacte les saveurs et les taux de
+                      dilution. Enfin, moulez votre café à une consistance
+                      moyennement fine pour assurer une extraction optimale et
+                      une finition rafraîchissante et homogène. Découvrez
+                      l'intensité vive que cette méthode offre en essayant ces
+                      conseils vous-même.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Meilleurs grains de café pour l'été
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Quand le soleil brille et que les températures montent,
+                      vos préférences en matière de café peuvent passer du
+                      traditionnel café chaud à des options plus
+                      rafraîchissantes. Sélectionner les meilleurs grains de
+                      café pour l'été peut transformer votre expérience du café.
+                      Recherchez des grains qui présentent des notes d'agrumes,
+                      de fruits ou de fleurs, que l'on trouve généralement dans
+                      les variétés éthiopiennes ou kényanes. Ces grains peuvent
+                      rendre vos cafés froids et cafés glacés vibrants et
+                      rafraîchissants, offrant des couches de saveurs parfaites
+                      pour siroter sous un ciel ensoleillé.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nouvelles techniques de préparation de café froid
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      À mesure que la culture du café évolue, les techniques de
+                      préparation évoluent également, et le café froid ne fait
+                      pas exception. De nouvelles méthodes comme le
+                      refroidissement rapide, où le café chaud est rapidement
+                      refroidi sur de la glace pour verrouiller les saveurs, ou
+                      le nitro cold brew, qui infuse de l'azote pour une texture
+                      crémeuse, changent notre façon de vivre le café froid.
+                      Expérimenter ces techniques à la maison peut élever vos
+                      escapades estivales de café, garantissant que chaque tasse
+                      est aussi excitante que la précédente.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Grains d'Arabica ou de Liberica - Que choisir ?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Choisir entre les grains d'Arabica et de Liberica dépend
+                      de vos préférences gustatives. Les grains d'Arabica sont
+                      estimés pour leurs saveurs douces et légères avec des
+                      notes de chocolat et de sucre, prisés par beaucoup pour
+                      leur acidité équilibrée et leur arôme complexe. D'autre
+                      part, les grains de Liberica, plus rares sur le marché du
+                      café, offrent des saveurs audacieuses et uniques avec une
+                      finition fumée et florale. Considérez l'expérience que
+                      vous recherchez : confort et subtilité avec l'Arabica ou
+                      aventure et distinction avec le Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Conseils d'un barista expert pour préparer le café glacé
+                      japonais
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le café glacé japonais est une technique appréciée parmi
+                      les baristas, réputée pour maximiser l'intégrité des
+                      saveurs en infusant le café directement sur de la glace.
+                      Voici des conseils d'experts pour perfectionner votre
+                      infusion : utilisez un ratio café-eau précis, généralement
+                      1:15, pour la clarté et la force. Utilisez de la glace de
+                      haute qualité, car elle impacte les saveurs et les taux de
+                      dilution. Enfin, moulez votre café à une consistance
+                      moyennement fine pour assurer une extraction optimale et
+                      une finition rafraîchissante et homogène. Découvrez
+                      l'intensité vive que cette méthode offre en essayant ces
+                      conseils vous-même.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Best Coffee Beans for Summertime
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      When the sun is shining and temperatures rise, your coffee
+                      preferences might shift from the traditional hot brew to
+                      more refreshing options. Selecting the best coffee beans
+                      for summertime can transform your coffee experience. Look
+                      for beans that exhibit citrusy, fruity, or floral notes,
+                      typically found in Ethiopian or Kenyan varieties. These
+                      beans can make your cold brews and iced coffees vibrantly
+                      refreshing, offering layers of flavour that are perfect
+                      for sipping under a sunny sky.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: New Cold Coffee Brewing Techniques
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      As coffee culture evolves, so do brewing techniques, and
+                      cold coffee is no exception. New methods like snap
+                      chilling, where hot coffee is rapidly cooled over ice to
+                      lock in flavours, or nitro cold brew, which infuses
+                      nitrogen for a creamy texture, are changing the way we
+                      experience cold coffee. Experimenting with these
+                      techniques at home can elevate your summer coffee
+                      escapades, ensuring every cup is as exciting as the last.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica or Liberica Beans - What to Choose?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Choosing between Arabica and Liberica beans depends on
+                      your palate preferences. Arabica beans are esteemed for
+                      their smooth, mild flavours with hints of chocolate and
+                      sugar, favoured by many for their balanced acidity and
+                      complex aroma. On the other hand, Liberica beans, rarer in
+                      the coffee market, offer bold, unique flavours with a
+                      smoky, floral finish. Consider what experience you're
+                      seeking—comfort and subtlety from Arabica or adventure and
+                      distinction from Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Japanese Ice Coffee Making Tips from an Expert Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanese iced coffee is a beloved technique among
+                      baristas, renowned for maximising flavour integrity by
+                      brewing coffee directly onto ice. Here are expert tips to
+                      perfect your brew: use a precise coffee-to-water ratio,
+                      typically 1:15, for clarity and strength. Utilise
+                      high-quality ice, as it impacts flavour and dilution
+                      rates. Lastly, grind your coffee to a medium-fine
+                      consistency to ensure optimal extraction and a seamless,
+                      refreshing finish. Discover the crisp intensity this
+                      method offers by trying these tips yourself.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Beste Koffiebonen voor de Zomer
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Wanneer de zon schijnt en de temperaturen stijgen, kunnen
+                      je koffievoorkeuren verschuiven van de traditionele warme
+                      koffie naar meer verfrissende opties. Het selecteren van
+                      de beste koffiebonen voor de zomer kan je koffie-ervaring
+                      transformeren. Zoek naar bonen met citrusachtige, fruitige
+                      of bloemige tonen, die je meestal vindt in Ethiopische of
+                      Keniaanse variëteiten. Deze bonen kunnen je koude
+                      brouwsels en ijskoffies levendig verfrissend maken, met
+                      lagen van smaak die perfect zijn om van te genieten onder
+                      een zonnige hemel.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nieuwe Technieken voor het Zetten van Koude Koffie
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Naarmate de koffiecultuur evolueert, doen ook de
+                      zetmethoden dat, en koude koffie is daarop geen
+                      uitzondering. Nieuwe methoden zoals snap chilling, waarbij
+                      hete koffie snel wordt afgekoeld over ijs om smaken vast
+                      te houden, of nitro cold brew, dat stikstof infuseert voor
+                      een romige textuur, veranderen de manier waarop we koude
+                      koffie ervaren. Experimenteren met deze technieken thuis
+                      kan je zomerse koffie-avonturen naar een hoger niveau
+                      tillen, zodat elke kop net zo spannend is als de vorige.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica of Liberica Bonen - Wat te Kiezen?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      De keuze tussen Arabica en Liberica bonen hangt af van je
+                      smaakvoorkeuren. Arabica bonen worden geprezen om hun
+                      zachte, milde smaken met hints van chocolade en suiker,
+                      geliefd bij velen vanwege hun gebalanceerde zuurgraad en
+                      complexe aroma. Aan de andere kant bieden Liberica bonen,
+                      zeldzamer op de koffiemarkt, gedurfde, unieke smaken met
+                      een rokerige, bloemige afdronk. Overweeg welke ervaring je
+                      zoekt—comfort en subtiliteit van Arabica of avontuur en
+                      onderscheid van Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Japanse Ijskoffie Tips van een Expert Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanse ijskoffie is een geliefde techniek onder
+                      barista's, bekend om het maximaliseren van de
+                      smaakintegriteit door koffie direct op ijs te zetten. Hier
+                      zijn expert tips om je brouwsel te perfectioneren: gebruik
+                      een nauwkeurige koffie-tot-water verhouding, meestal 1:15,
+                      voor helderheid en sterkte. Gebruik hoogwaardig ijs, omdat
+                      dit de smaak en verdunningssnelheden beïnvloedt. Maal ten
+                      slotte je koffie tot een middel-fijne consistentie om
+                      optimale extractie en een naadloze, verfrissende afdronk
+                      te garanderen. Ontdek de scherpe intensiteit die deze
+                      methode biedt door deze tips zelf te proberen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Beste Kaffeebohnen für den Sommer
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Wenn die Sonne scheint und die Temperaturen steigen,
+                      könnten sich Ihre Kaffeepreferenzen von der traditionellen
+                      heißen Tasse zu erfrischenderen Optionen verschieben. Die
+                      Auswahl der besten Kaffeebohnen für den Sommer kann Ihr
+                      Kaffeeerlebnis verwandeln. Suchen Sie nach Bohnen, die
+                      zitrusartige, fruchtige oder blumige Noten aufweisen, die
+                      typischerweise in äthiopischen oder kenianischen Sorten zu
+                      finden sind. Diese Bohnen können Ihre Cold Brews und
+                      Eiskaffees lebhaft erfrischend machen und bieten
+                      Geschmacksnuancen, die perfekt sind, um sie unter einem
+                      sonnigen Himmel zu genießen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Neue Techniken zur Zubereitung von kaltem Kaffee
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Mit der Entwicklung der Kaffeekultur entwickeln sich auch
+                      die Brühtechniken, und kalter Kaffee bildet da keine
+                      Ausnahme. Neue Methoden wie das Snap Chilling, bei dem
+                      heißer Kaffee schnell über Eis abgekühlt wird, um die
+                      Aromen einzuschließen, oder Nitro Cold Brew, das
+                      Stickstoff für eine cremige Textur einführt, verändern die
+                      Art und Weise, wie wir kalten Kaffee erleben. Das
+                      Experimentieren mit diesen Techniken zu Hause kann Ihre
+                      sommerlichen Kaffeeabenteuer aufwerten und sicherstellen,
+                      dass jede Tasse so aufregend ist wie die letzte.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica- oder Liberica-Bohnen - Was soll man wählen?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Die Wahl zwischen Arabica- und Liberica-Bohnen hängt von
+                      Ihren Geschmackspräferenzen ab. Arabica-Bohnen werden für
+                      ihre glatten, milden Aromen mit Anklängen von Schokolade
+                      und Zucker geschätzt, die von vielen wegen ihrer
+                      ausgewogenen Säure und des komplexen Aromas bevorzugt
+                      werden. Liberica-Bohnen hingegen, die auf dem Kaffeemarkt
+                      seltener sind, bieten kräftige, einzigartige Aromen mit
+                      einem rauchigen, blumigen Abgang. Überlegen Sie, welches
+                      Erlebnis Sie suchen – Komfort und Subtilität von Arabica
+                      oder Abenteuer und Unterscheidung von Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Tipps zur Zubereitung von japanischem Eiskaffee von einem
+                      erfahrenen Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanischer Eiskaffee ist eine beliebte Technik unter
+                      Baristas, die dafür bekannt ist, den Geschmack zu
+                      maximieren, indem der Kaffee direkt auf Eis gebrüht wird.
+                      Hier sind Expertentipps, um Ihren Aufguss zu
+                      perfektionieren: Verwenden Sie ein genaues
+                      Kaffee-Wasser-Verhältnis, typischerweise 1:15, für
+                      Klarheit und Stärke. Verwenden Sie hochwertiges Eis, da es
+                      den Geschmack und die Verdünnungsrate beeinflusst. Mahlen
+                      Sie schließlich Ihren Kaffee auf eine mittelfeine
+                      Konsistenz, um eine optimale Extraktion und einen
+                      nahtlosen, erfrischenden Abgang zu gewährleisten.
+                      Entdecken Sie die knackige Intensität, die diese Methode
+                      bietet, indem Sie diese Tipps selbst ausprobieren.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Best Coffee Beans for Summertime
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      When the sun is shining and temperatures rise, your coffee
+                      preferences might shift from the traditional hot brew to
+                      more refreshing options. Selecting the best coffee beans
+                      for summertime can transform your coffee experience. Look
+                      for beans that exhibit citrusy, fruity, or floral notes,
+                      typically found in Ethiopian or Kenyan varieties. These
+                      beans can make your cold brews and iced coffees vibrantly
+                      refreshing, offering layers of flavor that are perfect for
+                      sipping under a sunny sky.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: New Cold Coffee Brewing Techniques
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      As coffee culture evolves, so do brewing techniques, and
+                      cold coffee is no exception. New methods like snap
+                      chilling, where hot coffee is rapidly cooled over ice to
+                      lock in flavors, or nitro cold brew, which infuses
+                      nitrogen for a creamy texture, are changing the way we
+                      experience cold coffee. Experimenting with these
+                      techniques at home can elevate your summer coffee
+                      escapades, ensuring every cup is as exciting as the last.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica or Liberica Beans - What to Choose?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Choosing between Arabica and Liberica beans depends on
+                      your palate preferences. Arabica beans are esteemed for
+                      their smooth, mild flavors with hints of chocolate and
+                      sugar, favored by many for their balanced acidity and
+                      complex aroma. On the other hand, Liberica beans, rarer in
+                      the coffee market, offer bold, unique flavors with a
+                      smoky, floral finish. Consider what experience you're
+                      seeking—comfort and subtlety from Arabica or adventure and
+                      distinction from Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Japanese Ice Coffee Making Tips from an Expert Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanese iced coffee is a beloved technique among
+                      baristas, renowned for maximizing flavor integrity by
+                      brewing coffee directly onto ice. Here are expert tips to
+                      perfect your brew: use a precise coffee-to-water ratio,
+                      typically 1:15, for clarity and strength. Utilize
+                      high-quality ice, as it impacts flavor and dilution rates.
+                      Lastly, grind your coffee to a medium-fine consistency to
+                      ensure optimal extraction and a seamless, refreshing
+                      finish. Discover the crisp intensity this method offers by
+                      trying these tips yourself.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Meilleurs grains de café pour l'été
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Lorsque le soleil brille et que les températures
+                      augmentent, vos préférences en matière de café peuvent
+                      passer du traditionnel café chaud à des options plus
+                      rafraîchissantes. Sélectionner les meilleurs grains de
+                      café pour l'été peut transformer votre expérience du café.
+                      Recherchez des grains qui présentent des notes d'agrumes,
+                      de fruits ou de fleurs, généralement trouvées dans les
+                      variétés éthiopiennes ou kenyanes. Ces grains peuvent
+                      rendre vos cafés froids et glacés vibrants et
+                      rafraîchissants, offrant des couches de saveurs parfaites
+                      pour siroter sous un ciel ensoleillé.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nouvelles techniques de préparation de café froid
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      À mesure que la culture du café évolue, les techniques de
+                      préparation évoluent également, et le café froid ne fait
+                      pas exception. De nouvelles méthodes comme le
+                      refroidissement rapide, où le café chaud est rapidement
+                      refroidi sur de la glace pour conserver les saveurs, ou le
+                      nitro cold brew, qui infuse de l'azote pour une texture
+                      crémeuse, changent notre façon de vivre le café froid.
+                      Expérimenter ces techniques à la maison peut élever vos
+                      escapades estivales de café, garantissant que chaque tasse
+                      est aussi excitante que la précédente.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Grains d'Arabica ou de Liberica - Que choisir ?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Choisir entre les grains d'Arabica et de Liberica dépend
+                      de vos préférences gustatives. Les grains d'Arabica sont
+                      réputés pour leurs saveurs douces et légères avec des
+                      notes de chocolat et de sucre, prisés par beaucoup pour
+                      leur acidité équilibrée et leur arôme complexe. En
+                      revanche, les grains de Liberica, plus rares sur le marché
+                      du café, offrent des saveurs audacieuses et uniques avec
+                      une finition fumée et florale. Considérez l'expérience que
+                      vous recherchez : confort et subtilité avec l'Arabica ou
+                      aventure et distinction avec le Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Conseils d'un barista expert pour préparer le café glacé
+                      japonais
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le café glacé japonais est une technique appréciée des
+                      baristas, réputée pour maximiser l'intégrité des saveurs
+                      en infusant le café directement sur de la glace. Voici des
+                      conseils d'experts pour parfaire votre infusion : utilisez
+                      un ratio précis de café à eau, généralement de 1:15, pour
+                      la clarté et la force. Utilisez de la glace de haute
+                      qualité, car elle impacte les saveurs et les taux de
+                      dilution. Enfin, moulez votre café à une consistance
+                      moyenne-fine pour garantir une extraction optimale et une
+                      finition rafraîchissante et homogène. Découvrez
+                      l'intensité vive que cette méthode offre en essayant ces
+                      conseils vous-même.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Meilleurs grains de café pour l'été
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Quand le soleil brille et que les températures montent,
+                      vos préférences en matière de café peuvent passer du
+                      traditionnel café chaud à des options plus
+                      rafraîchissantes. Sélectionner les meilleurs grains de
+                      café pour l'été peut transformer votre expérience café.
+                      Recherchez des grains qui présentent des notes d'agrumes,
+                      de fruits ou de fleurs, généralement trouvées dans les
+                      variétés éthiopiennes ou kényanes. Ces grains peuvent
+                      rendre vos cafés froids et cafés glacés vibrants et
+                      rafraîchissants, offrant des couches de saveurs parfaites
+                      pour siroter sous un ciel ensoleillé.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nouvelles techniques de préparation de café froid
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      À mesure que la culture du café évolue, les techniques de
+                      préparation évoluent également, et le café froid ne fait
+                      pas exception. De nouvelles méthodes comme le
+                      refroidissement rapide, où le café chaud est rapidement
+                      refroidi sur de la glace pour verrouiller les saveurs, ou
+                      le nitro cold brew, qui infuse de l'azote pour une texture
+                      crémeuse, changent notre façon de vivre le café froid.
+                      Expérimenter ces techniques à la maison peut élever vos
+                      escapades café estivales, garantissant que chaque tasse
+                      est aussi excitante que la précédente.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Grains d'Arabica ou de Liberica - Que choisir ?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Choisir entre les grains d'Arabica et de Liberica dépend
+                      de vos préférences gustatives. Les grains d'Arabica sont
+                      réputés pour leurs saveurs douces et légères avec des
+                      notes de chocolat et de sucre, prisés par beaucoup pour
+                      leur acidité équilibrée et leur arôme complexe. D'autre
+                      part, les grains de Liberica, plus rares sur le marché du
+                      café, offrent des saveurs audacieuses et uniques avec une
+                      finition fumée et florale. Considérez l'expérience que
+                      vous recherchez : confort et subtilité avec l'Arabica ou
+                      aventure et distinction avec le Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Conseils d'un barista expert pour préparer le café glacé
+                      japonais
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le café glacé japonais est une technique appréciée des
+                      baristas, réputée pour maximiser l'intégrité des saveurs
+                      en préparant le café directement sur de la glace. Voici
+                      des conseils d'experts pour perfectionner votre
+                      préparation : utilisez un ratio précis café-eau,
+                      généralement 1:15, pour la clarté et la force. Utilisez de
+                      la glace de haute qualité, car elle impacte les saveurs et
+                      les taux de dilution. Enfin, moulez votre café à une
+                      consistance moyennement fine pour assurer une extraction
+                      optimale et une finition rafraîchissante et sans faille.
+                      Découvrez l'intensité vive que cette méthode offre en
+                      essayant ces conseils vous-même.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Meilleurs grains de café pour l'été
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Quand le soleil brille et que les températures montent,
+                      vos préférences en matière de café peuvent passer du
+                      traditionnel café chaud à des options plus
+                      rafraîchissantes. Sélectionner les meilleurs grains de
+                      café pour l'été peut transformer votre expérience café.
+                      Recherchez des grains qui présentent des notes d'agrumes,
+                      de fruits ou de fleurs, généralement trouvées dans les
+                      variétés éthiopiennes ou kényanes. Ces grains peuvent
+                      rendre vos cafés froids et cafés glacés vibrants et
+                      rafraîchissants, offrant des couches de saveurs parfaites
+                      pour siroter sous un ciel ensoleillé.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nouvelles techniques de préparation de café froid
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      À mesure que la culture du café évolue, les techniques de
+                      préparation évoluent également, et le café froid ne fait
+                      pas exception. De nouvelles méthodes comme le
+                      refroidissement rapide, où le café chaud est rapidement
+                      refroidi sur de la glace pour verrouiller les saveurs, ou
+                      le nitro cold brew, qui infuse de l'azote pour une texture
+                      crémeuse, changent notre façon de vivre le café froid.
+                      Expérimenter ces techniques à la maison peut élever vos
+                      escapades café estivales, garantissant que chaque tasse
+                      est aussi excitante que la précédente.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Grains d'Arabica ou de Liberica - Que choisir ?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Choisir entre les grains d'Arabica et de Liberica dépend
+                      de vos préférences gustatives. Les grains d'Arabica sont
+                      réputés pour leurs saveurs douces et légères avec des
+                      notes de chocolat et de sucre, prisés par beaucoup pour
+                      leur acidité équilibrée et leur arôme complexe. D'autre
+                      part, les grains de Liberica, plus rares sur le marché du
+                      café, offrent des saveurs audacieuses et uniques avec une
+                      finition fumée et florale. Considérez l'expérience que
+                      vous recherchez : confort et subtilité avec l'Arabica ou
+                      aventure et distinction avec le Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Conseils d'un barista expert pour préparer le café glacé
+                      japonais
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Le café glacé japonais est une technique appréciée des
+                      baristas, réputée pour maximiser l'intégrité des saveurs
+                      en préparant le café directement sur de la glace. Voici
+                      des conseils d'experts pour perfectionner votre
+                      préparation : utilisez un ratio précis café-eau,
+                      généralement 1:15, pour la clarté et la force. Utilisez de
+                      la glace de haute qualité, car elle impacte les saveurs et
+                      les taux de dilution. Enfin, moulez votre café à une
+                      consistance moyennement fine pour assurer une extraction
+                      optimale et une finition rafraîchissante et sans faille.
+                      Découvrez l'intensité vive que cette méthode offre en
+                      essayant ces conseils vous-même.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 夏におすすめのコーヒー豆
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      太陽が輝き、気温が上がると、コーヒーの好みも伝統的なホットブリューからより爽やかな選択肢に変わるかもしれません。夏に最適なコーヒー豆を選ぶことで、コーヒー体験が変わります。エチオピアやケニアの品種に見られるシトラス、フルーティー、またはフローラルなノートを持つ豆を探しましょう。これらの豆は、コールドブリューやアイスコーヒーを鮮やかに爽やかにし、晴れた空の下で飲むのにぴったりな層のある風味を提供します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 新しいコールドコーヒーの抽出技術
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      コーヒーカルチャーが進化するにつれ、抽出技術も進化し、コールドコーヒーも例外ではありません。ホットコーヒーを氷の上で急速に冷やして風味を閉じ込めるスナップチリングや、クリーミーな食感を与える窒素を注入するニトロコールドブリューなどの新しい方法が、コールドコーヒーの体験を変えています。これらの技術を自宅で試すことで、夏のコーヒー体験を高め、毎杯が最後の一杯と同じくらいエキサイティングになることを保証します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: アラビカ豆かリベリカ豆か - どちらを選ぶ？
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      アラビカ豆とリベリカ豆の選択は、あなたの味覚の好みに依存します。アラビカ豆は、チョコレートや砂糖のヒントを持つ滑らかで穏やかな風味で評価され、多くの人にバランスの取れた酸味と複雑な香りで好まれています。一方、コーヒー市場では珍しいリベリカ豆は、スモーキーでフローラルな仕上げを持つ大胆でユニークな風味を提供します。アラビカの快適さと微妙さを求めるのか、リベリカの冒険と独自性を求めるのか、どのような体験を求めているかを考えてみてください。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 専門バリスタによる日本のアイスコーヒー作りのコツ
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      日本のアイスコーヒーは、バリスタの間で愛されている技術で、コーヒーを直接氷の上に抽出することで風味の純度を最大化することで知られています。抽出を完璧にするための専門家のコツを紹介します：明確さと強度のために、通常1:15の正確なコーヒーと水の比率を使用します。風味と希釈率に影響を与えるため、高品質の氷を使用します。最後に、コーヒーを中細挽きにして、最適な抽出とシームレスで爽やかな仕上がりを確保します。この方法が提供するシャープな強度を、これらのコツを試して発見してください。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Beste Koffiebonen voor de Zomer
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Wanneer de zon schijnt en de temperaturen stijgen, kunnen
+                      je koffievoorkeuren verschuiven van de traditionele hete
+                      koffie naar meer verfrissende opties. Het selecteren van
+                      de beste koffiebonen voor de zomer kan je koffie-ervaring
+                      transformeren. Zoek naar bonen met citrusachtige, fruitige
+                      of bloemige tonen, die je meestal vindt in Ethiopische of
+                      Keniaanse variëteiten. Deze bonen kunnen je koude
+                      brouwsels en ijskoffies levendig verfrissend maken, met
+                      lagen van smaak die perfect zijn om te nippen onder een
+                      zonnige hemel.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nieuwe Technieken voor het Zetten van Koude Koffie
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Naarmate de koffiecultuur evolueert, veranderen ook de
+                      zetmethoden, en koude koffie is daarop geen uitzondering.
+                      Nieuwe methoden zoals snap chilling, waarbij hete koffie
+                      snel wordt afgekoeld over ijs om smaken vast te houden, of
+                      nitro cold brew, dat stikstof infuseert voor een romige
+                      textuur, veranderen de manier waarop we koude koffie
+                      ervaren. Experimenteren met deze technieken thuis kan je
+                      zomerse koffie-avonturen naar een hoger niveau tillen,
+                      zodat elke kop net zo spannend is als de vorige.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica of Liberica Bonen - Wat te Kiezen?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      De keuze tussen Arabica en Liberica bonen hangt af van je
+                      smaakvoorkeuren. Arabica bonen worden geprezen om hun
+                      zachte, milde smaken met hints van chocolade en suiker,
+                      geliefd bij velen vanwege hun gebalanceerde zuurgraad en
+                      complexe aroma. Aan de andere kant bieden Liberica bonen,
+                      zeldzamer op de koffiemarkt, gedurfde, unieke smaken met
+                      een rokerige, bloemige afdronk. Overweeg welke ervaring je
+                      zoekt—comfort en subtiliteit van Arabica of avontuur en
+                      onderscheid van Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Japanse Ijskoffie Tips van een Expert Barista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanse ijskoffie is een geliefde techniek onder
+                      barista's, bekend om het maximaliseren van de
+                      smaakintegriteit door koffie direct op ijs te zetten. Hier
+                      zijn expert tips om je brouwsel te perfectioneren: gebruik
+                      een nauwkeurige koffie-tot-water verhouding, meestal 1:15,
+                      voor helderheid en sterkte. Gebruik hoogwaardig ijs,
+                      aangezien dit de smaak en verdunningssnelheid beïnvloedt.
+                      Maal je koffie tot een medium-fijne consistentie om
+                      optimale extractie en een naadloze, verfrissende afdronk
+                      te garanderen. Ontdek de scherpe intensiteit die deze
+                      methode biedt door deze tips zelf te proberen.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Bästa Kaffebönorna för Sommaren
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      När solen skiner och temperaturen stiger kan dina
+                      kaffepreferenser skifta från den traditionella varma
+                      bryggningen till mer uppfriskande alternativ. Att välja de
+                      bästa kaffebönorna för sommaren kan förvandla din
+                      kaffeupplevelse. Leta efter bönor som uppvisar citrus-,
+                      frukt- eller blomnoter, som vanligtvis finns i etiopiska
+                      eller kenyanska sorter. Dessa bönor kan göra dina kalla
+                      bryggningar och iskaffen livligt uppfriskande och erbjuda
+                      smaklager som är perfekta att sippa på under en solig
+                      himmel.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Nya Tekniker för Kall Kaffebryggning
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      När kaffekulturen utvecklas gör även bryggteknikerna det,
+                      och kallt kaffe är inget undantag. Nya metoder som snap
+                      chilling, där varmt kaffe snabbt kyls över is för att låsa
+                      in smaker, eller nitro cold brew, som infunderar kväve för
+                      en krämig textur, förändrar hur vi upplever kallt kaffe.
+                      Att experimentera med dessa tekniker hemma kan höja dina
+                      sommar-kaffeäventyr och säkerställa att varje kopp är lika
+                      spännande som den förra.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Arabica eller Liberica Bönor - Vad ska man välja?
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Att välja mellan Arabica- och Liberica-bönor beror på dina
+                      smakpreferenser. Arabica-bönor är kända för sina mjuka,
+                      milda smaker med inslag av choklad och socker, och är
+                      omtyckta av många för sin balanserade syra och komplexa
+                      arom. Å andra sidan erbjuder Liberica-bönor, som är
+                      sällsyntare på kaffemarknaden, djärva, unika smaker med en
+                      rökig, blommig avslutning. Överväg vilken upplevelse du
+                      söker—komfort och subtilitet från Arabica eller äventyr
+                      och distinktion från Liberica.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Japanska Iskaffe Tips från en Expertbarista
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Japanskt iskaffe är en älskad teknik bland baristor, känd
+                      för att maximera smakens integritet genom att brygga kaffe
+                      direkt på is. Här är expertens tips för att fullända din
+                      bryggning: använd ett exakt kaffe-till-vatten-förhållande,
+                      vanligtvis 1:15, för klarhet och styrka. Använd
+                      högkvalitativ is, eftersom den påverkar smak och
+                      utspädningsgrad. Slutligen, mal ditt kaffe till en
+                      medelfin konsistens för att säkerställa optimal extraktion
+                      och en sömlös, uppfriskande avslutning. Upptäck den
+                      krispiga intensiteten denna metod erbjuder genom att prova
+                      dessa tips själv.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: أفضل حبوب القهوة لفصل الصيف
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      عندما تشرق الشمس وترتفع درجات الحرارة، قد تتغير تفضيلاتك
+                      للقهوة من القهوة الساخنة التقليدية إلى خيارات أكثر
+                      انتعاشًا. اختيار أفضل حبوب القهوة لفصل الصيف يمكن أن يغير
+                      تجربتك مع القهوة. ابحث عن الحبوب التي تظهر نكهات حمضية أو
+                      فاكهية أو زهرية، والتي توجد عادة في الأنواع الإثيوبية أو
+                      الكينية. يمكن لهذه الحبوب أن تجعل القهوة الباردة والقهوة
+                      المثلجة منعشة بشكل نابض بالحياة، مما يوفر طبقات من النكهة
+                      المثالية للارتشاف تحت سماء مشمسة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: تقنيات جديدة لتحضير القهوة الباردة
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      مع تطور ثقافة القهوة، تتطور أيضًا تقنيات التحضير، والقهوة
+                      الباردة ليست استثناءً. طرق جديدة مثل التبريد السريع، حيث
+                      يتم تبريد القهوة الساخنة بسرعة فوق الثلج للحفاظ على
+                      النكهات، أو القهوة الباردة بالنيتروجين، التي تضيف
+                      النيتروجين للحصول على قوام كريمي، تغير الطريقة التي نختبر
+                      بها القهوة الباردة. تجربة هذه التقنيات في المنزل يمكن أن
+                      ترفع من مستوى مغامراتك الصيفية مع القهوة، مما يضمن أن كل
+                      كوب يكون مثيرًا مثل السابق.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: حبوب أرابيكا أو ليبيريكا - ماذا تختار؟
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      الاختيار بين حبوب أرابيكا وليبيريكا يعتمد على تفضيلات
+                      ذوقك. حبوب أرابيكا مشهورة بنكهتها الناعمة والخفيفة مع
+                      لمسات من الشوكولاتة والسكر، مفضلة لدى الكثيرين بسبب
+                      حموضتها المتوازنة ورائحتها المعقدة. من ناحية أخرى، تقدم
+                      حبوب ليبيريكا، النادرة في سوق القهوة، نكهات جريئة وفريدة
+                      مع لمسة نهائية مدخنة وزهرية. فكر في التجربة التي تبحث عنها
+                      - الراحة والدقة من أرابيكا أو المغامرة والتميز من
+                      ليبيريكا.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: نصائح لتحضير القهوة المثلجة اليابانية من باريستا خبير
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      القهوة المثلجة اليابانية هي تقنية محبوبة بين الباريستا،
+                      مشهورة بالحفاظ على نكهة القهوة عن طريق تحضيرها مباشرة على
+                      الثلج. إليك نصائح الخبراء لتحسين تحضيرك: استخدم نسبة دقيقة
+                      من القهوة إلى الماء، عادة 1:15، للحصول على وضوح وقوة.
+                      استخدم ثلج عالي الجودة، حيث يؤثر على النكهة ومعدلات
+                      التخفيف. وأخيرًا، اطحن القهوة إلى قوام متوسط-ناعم لضمان
+                      استخراج مثالي ونهاية منعشة وسلسة. اكتشف الكثافة الحادة
+                      التي تقدمها هذه الطريقة من خلال تجربة هذه النصائح بنفسك.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+    ogImage:
+      type: asset
+      value:
+        - _id: 1542a436-6ef3-42da-ba0b-dc0c69e65dba
+          type: image
+          fields:
+            id:
+              type: text
+              value: 343e6e3f-f884-4d64-b0b1-002adacbea91
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/6Pz_dQZhSDyEDrXlWXeepA-Summer-2025-Fields-of-Beans.png
+              type: text
+            file:
+              type: file
+              value: 76703096-5e35-429f-a2ea-e7879ae274cb
+            size:
+              value: 2676410
+              type: number
+            title:
+              type: text
+              value: Summer-2025-Fields-of-Beans.png
+            width:
+              value: 1536
+              type: number
+            height:
+              value: 1024
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-f6663a55-c9e0-46e8-8e06-5abcf3f33d7d-category/entries/0}
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Bedste Sommerkaffebønner og Bryggetips
+        de-at: Beste Sommerkaffeebohnen und Brüh-Tipps
+        de-ch: Beste Sommer-Kaffeebohnen und Brüh-Tipps
+        de-de: Beste Sommer-Kaffeebohnen und Brüh-Tipps
+        en-au: Meilleurs Grains de Café d'Été et Conseils de Préparation
+        en-ca: Best Summer Coffee Beans and Brewing Tips
+        en-gb: Best Summer Coffee Beans and Brewing Tips
+        en-nl: |-
+          Beste Zomerkoffiebonen en Zetmethoden
+
+          Veldbeschrijving: SEO-metatitel voor de artikelpagina.
+          Inhoudstype: artikel
+        en-nz: Beste Sommerkaffeebohnen und Brüh-Tipps
+        en-us: Best Summer Coffee Beans and Brewing Tips
+        fr-ca: Meilleurs Grains de Café d'Été et Conseils de Préparation
+        fr-ch: Meilleurs Grains de Café d'Été et Conseils de Préparation
+        fr-fr: Meilleurs Grains de Café d'Été et Conseils de Préparation
+        ja-jp: 最高の夏のコーヒー豆と抽出のコツ
+        nl-nl: |-
+          Beste Zomerkoffiebonen en Zetmethoden
+
+          Veldbeschrijving: SEO-metatitel voor de artikelpagina.
+          Inhoudstype: artikel
+        sv-se: Bästa sommarkaffebönor och bryggtips
+        ar-uae: أفضل حبوب القهوة الصيفية ونصائح التحضير
+    thumbnail:
+      type: asset
+      value:
+        - _id: 4d7a4e23-6159-45a8-86e3-16704a8b111e
+          type: image
+          fields:
+            id:
+              type: text
+              value: 7e2d6341-389a-4bc5-b32b-e1ff671c5747
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/2XtFGAw1QaGgZyF53tpLsA-Summer-2025-Watching-a-race.png
+              type: text
+            file:
+              type: file
+              value: c9b8a5be-c46a-473c-9cc6-6df281ab9cd8
+            size:
+              value: 2147107
+              type: number
+            title:
+              type: text
+              value: Summer-2025-Watching-a-race.png
+            width:
+              value: 1536
+              type: number
+            height:
+              value: 1024
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    enrichments:
+      type: $enr
+      value:
+        - cat: int
+          key: beans
+          str: 50
+        - cat: subCategory
+          key: arabica
+          str: 30
+        - cat: subCategory
+          key: liberica
+          str: 30
+        - cat: topic
+          key: brewing
+          str: 70
+        - cat: topic
+          key: tips
+          str: 50
+    publishDate:
+      type: date
+      value: '2025-04-10'
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Opdag de fineste kaffebønner til sommeren, lær nye cold
+          brew-teknikker, og vælg mellem Arabica og Liberica bønner med
+          ekspertindsigt.
+        de-at: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, meistern Sie
+          neue Cold-Brew-Techniken und entscheiden Sie sich mit
+          Experteneinsichten zwischen Arabica- und Liberica-Bohnen.
+        de-ch: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, meistern Sie
+          neue Cold Brew-Techniken und entscheiden Sie sich mit
+          Experteneinblicken zwischen Arabica- und Liberica-Bohnen.
+        de-de: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, meistern Sie
+          neue Cold Brew-Techniken und entscheiden Sie sich mit
+          Experteneinblicken zwischen Arabica- und Liberica-Bohnen.
+        en-au: >-
+          Découvrez les meilleurs grains de café pour l'été, maîtrisez de
+          nouvelles techniques de cold brew et choisissez entre les grains
+          Arabica et Liberica grâce aux conseils d'experts.
+        en-ca: >-
+          Discover the finest coffee beans for summertime, master new cold brew
+          techniques, and decide between Arabica and Liberica beans with expert
+          insights.
+        en-gb: >-
+          Discover the finest coffee beans for summer, master new cold brew
+          techniques, and decide between Arabica and Liberica beans with expert
+          insights.
+        en-nl: >-
+          Ontdek de beste koffiebonen voor de zomer, beheers nieuwe cold
+          brew-technieken en kies tussen Arabica- en Liberica-bonen met
+          deskundige inzichten.
+        en-nz: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, meistern Sie
+          neue Cold Brew-Techniken und entscheiden Sie sich mit
+          Experteneinsichten zwischen Arabica- und Liberica-Bohnen.
+        en-us: >-
+          Unearth the finest coffee beans for summertime, master new cold brew
+          techniques, and decide between Arabica and Liberica beans with expert
+          insights.
+        fr-ca: >-
+          Découvrez les meilleurs grains de café pour l'été, maîtrisez de
+          nouvelles techniques de cold brew et choisissez entre les grains
+          Arabica et Liberica grâce aux conseils d'experts.
+        fr-ch: >-
+          Découvrez les meilleurs grains de café pour l'été, maîtrisez de
+          nouvelles techniques de cold brew et choisissez entre les grains
+          Arabica et Liberica grâce aux conseils d'experts.
+        fr-fr: >-
+          Découvrez les meilleurs grains de café pour l'été, maîtrisez de
+          nouvelles techniques de cold brew et choisissez entre les grains
+          Arabica et Liberica grâce aux conseils d'experts.
+        ja-jp: 夏に最適なコーヒー豆を見つけ、新しいコールドブリューの技術を習得し、アラビカ豆とリベリカ豆のどちらを選ぶかを専門家の見解で決めましょう。
+        nl-nl: >-
+          Ontdek de beste koffiebonen voor de zomer, beheers nieuwe cold
+          brew-technieken en kies tussen Arabica- en Liberica-bonen met
+          deskundige inzichten.
+        sv-se: >-
+          Upptäck de bästa kaffebönorna för sommaren, lär dig nya tekniker för
+          kallbryggning och välj mellan Arabica- och Libericabönor med
+          expertråd.
+        ar-uae: >-
+          اكتشف أفضل حبوب القهوة لفصل الصيف، وتعلم تقنيات جديدة لتحضير القهوة
+          الباردة، وقرر بين حبوب أرابيكا وليبيريكا بمساعدة رؤى الخبراء.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Opdag de bedste kaffebønner til sommeren, udforsk nye teknikker til
+          koldbrygning, og lær eksperttips til japansk iskaffe. Plus, find ud
+          af, hvilke bønner der passer bedst til din smag—Arabica eller
+          Liberica.
+        de-at: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, erkunden Sie
+          neue Cold-Brew-Techniken und lernen Sie Expertentipps für japanischen
+          Eiskaffee. Außerdem erfahren Sie, welche Bohnen am besten zu Ihrem
+          Geschmack passen – Arabica oder Liberica.
+        de-ch: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, erkunden Sie
+          neue Cold-Brew-Techniken und lernen Sie Experten-Tipps für japanischen
+          Eiskaffee. Außerdem erfahren Sie, welche Bohnen am besten zu Ihrem
+          Geschmack passen—Arabica oder Liberica.
+        de-de: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, erkunden Sie
+          neue Cold-Brew-Techniken und lernen Sie Experten-Tipps für japanischen
+          Eiskaffee. Außerdem erfahren Sie, welche Bohnen am besten zu Ihrem
+          Geschmack passen—Arabica oder Liberica.
+        en-au: >-
+          Découvrez les meilleurs grains de café pour l'été, explorez de
+          nouvelles techniques de brassage à froid et apprenez des astuces
+          d'experts pour le café glacé japonais. De plus, découvrez quels grains
+          conviennent le mieux à votre palais—Arabica ou Liberica.
+        en-ca: >-
+          Discover the best coffee beans for the summer, explore new cold
+          brewing techniques, and learn expert tips for Japanese iced coffee.
+          Plus, find out which beans suit your palate best—Arabica or Liberica.
+        en-gb: >-
+          Discover the best coffee beans for the summer, explore new cold
+          brewing techniques, and learn expert tips for Japanese iced coffee.
+          Plus, find out which beans suit your palate best—Arabica or Liberica.
+        en-nl: >-
+          Ontdek de beste koffiebonen voor de zomer, verken nieuwe koude
+          brouwtechnieken en leer deskundige tips voor Japanse ijskoffie. Ontdek
+          bovendien welke bonen het beste bij uw smaak passen—Arabica of
+          Liberica.
+        en-nz: >-
+          Entdecken Sie die besten Kaffeebohnen für den Sommer, erkunden Sie
+          neue Cold-Brew-Techniken und lernen Sie Expertentipps für japanischen
+          Eiskaffee. Außerdem erfahren Sie, welche Bohnen am besten zu Ihrem
+          Geschmack passen—Arabica oder Liberica.
+        en-us: >-
+          Discover the best coffee beans for the summer, explore new cold
+          brewing techniques, and learn expert tips for Japanese iced coffee.
+          Plus, find out which beans suit your palate best — Arabica or
+          Liberica. Additional content provided.
+        fr-ca: >-
+          Découvrez les meilleurs grains de café pour l'été, explorez de
+          nouvelles techniques d'infusion à froid et apprenez des astuces
+          d'experts pour le café glacé japonais. De plus, découvrez quels grains
+          conviennent le mieux à votre palais—Arabica ou Liberica.
+        fr-ch: >-
+          Découvrez les meilleurs grains de café pour l'été, explorez de
+          nouvelles techniques d'infusion à froid et apprenez des astuces
+          d'experts pour le café glacé japonais. De plus, découvrez quels grains
+          conviennent le mieux à votre palais—Arabica ou Liberica.
+        fr-fr: >-
+          Découvrez les meilleurs grains de café pour l'été, explorez de
+          nouvelles techniques d'infusion à froid et apprenez des astuces
+          d'experts pour le café glacé japonais. De plus, découvrez quels grains
+          conviennent le mieux à votre palais—Arabica ou Liberica.
+        ja-jp: >-
+          夏に最適なコーヒー豆を見つけ、新しいコールドブリュー技術を探求し、日本のアイスコーヒーの専門家によるヒントを学びましょう。また、アラビカ種とリベリカ種のどちらがあなたの味覚に最適かを見つけてください。
+        nl-nl: >-
+          Ontdek de beste koffiebonen voor de zomer, verken nieuwe cold
+          brew-technieken en leer deskundige tips voor Japanse ijskoffie. Ontdek
+          bovendien welke bonen het beste bij jouw smaak passen—Arabica of
+          Liberica.
+        sv-se: >-
+          Upptäck de bästa kaffebönorna för sommaren, utforska nya
+          kallbryggningstekniker och lär dig experttips för japanskt iskaffe.
+          Dessutom, ta reda på vilka bönor som passar din smak bäst—Arabica
+          eller Liberica.
+        ar-uae: >-
+          اكتشف أفضل حبوب القهوة لفصل الصيف، واستكشف تقنيات التخمير البارد
+          الجديدة، وتعلم نصائح الخبراء حول القهوة اليابانية المثلجة. بالإضافة
+          إلى ذلك، اكتشف أي الحبوب تناسب ذوقك أكثر - أرابيكا أو ليبيريكا.
+  _dataResources:
+    ref-f6663a55-c9e0-46e8-8e06-5abcf3f33d7d-author:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 4741fead-d17b-4cbe-afd3-9f3d0ae46b1d
+    ref-f6663a55-c9e0-46e8-8e06-5abcf3f33d7d-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 8f126a53-19d3-46d9-a855-63be62ffca1d
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

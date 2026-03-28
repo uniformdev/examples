@@ -1,0 +1,234 @@
+created: '2026-03-10T23:35:49.168409+00:00'
+modified: '2026-03-10T23:35:49.168409+00:00'
+pattern: false
+entry:
+  _id: 2b754075-62b2-49bd-aa8a-dd47435e9791
+  _name: Robusta
+  _slug: robusta
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/ezRRRnFSR-SQNVaHCcZvJg-robusta.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Robusta
+        de-at: Robusta
+        de-ch: Robusta
+        de-de: Robusta
+        en-au: Robusta
+        en-ca: Robusta
+        en-gb: Robusta
+        en-nl: Robusta
+        en-nz: Robusta
+        en-us: Robusta
+        fr-ca: Robusta
+        fr-ch: Robusta
+        fr-fr: Robusta
+        ja-jp: ロブスタ
+        nl-nl: Robusta
+        sv-se: Robusta
+        ar-uae: روبوستا
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Oplev de dristige og intense smagsnuancer af Robusta kaffebønner.
+          Kendt for deres høje koffeinindhold og robuste smag, tilbyder Robusta
+          bønner en dyb, jordagtig smag med et strejf af bitterhed, hvilket gør
+          dem perfekte til espresso og stærke kaffeblandinger. Vores udvalg af
+          Robusta bønner er hentet fra de bedste kaffeproducerende regioner,
+          hvilket sikrer høj kvalitet og enestående smag. Uanset om du
+          foretrækker en kraftfuld morgenbryg eller en rig espresso, leverer
+          Robusta bønner en fyldig kaffeoplevelse. Udforsk vores
+          Robusta-kollektion og nyd styrken og karakteren af disse fornemme
+          bønner.
+        de-at: >-
+          Erleben Sie die kräftigen und intensiven Aromen von
+          Robusta-Kaffeebohnen. Bekannt für ihren hohen Koffeingehalt und
+          robusten Geschmack, bieten Robusta-Bohnen einen tiefen, erdigen
+          Geschmack mit einem Hauch von Bitterkeit, was sie perfekt für Espresso
+          und starke Kaffeeblends macht. Unsere Auswahl an Robusta-Bohnen stammt
+          aus den besten Kaffeeanbaugebieten und garantiert hohe Qualität und
+          außergewöhnlichen Geschmack. Egal, ob Sie einen kraftvollen
+          Morgenkaffee oder einen reichen Espresso bevorzugen, Robusta-Bohnen
+          bieten ein vollmundiges Kaffeeerlebnis. Entdecken Sie unsere
+          Robusta-Kollektion und genießen Sie die Stärke und den Charakter
+          dieser herausragenden Bohnen.
+        de-ch: >-
+          Erleben Sie die kräftigen und intensiven Aromen von
+          Robusta-Kaffeebohnen. Bekannt für ihren hohen Koffeingehalt und
+          robusten Geschmack, bieten Robusta-Bohnen einen tiefen, erdigen
+          Geschmack mit einem Hauch von Bitterkeit, was sie perfekt für Espresso
+          und starke Kaffeeblendungen macht. Unsere Auswahl an Robusta-Bohnen
+          stammt aus den besten Kaffeeanbaugebieten und garantiert hohe Qualität
+          und außergewöhnlichen Geschmack. Egal, ob Sie einen kraftvollen
+          Morgenkaffee oder einen reichen Espresso bevorzugen, Robusta-Bohnen
+          bieten ein vollmundiges Kaffeeerlebnis. Entdecken Sie unsere
+          Robusta-Kollektion und genießen Sie die Stärke und den Charakter
+          dieser besonderen Bohnen.
+        de-de: >-
+          Erleben Sie die kräftigen und intensiven Aromen von
+          Robusta-Kaffeebohnen. Bekannt für ihren hohen Koffeingehalt und
+          robusten Geschmack, bieten Robusta-Bohnen einen tiefen, erdigen
+          Geschmack mit einem Hauch von Bitterkeit, was sie perfekt für Espresso
+          und starke Kaffeeblendungen macht. Unsere Auswahl an Robusta-Bohnen
+          stammt aus den besten Kaffeeanbaugebieten und garantiert hohe Qualität
+          und außergewöhnlichen Geschmack. Egal, ob Sie einen kraftvollen
+          Morgenkaffee oder einen reichen Espresso bevorzugen, Robusta-Bohnen
+          bieten ein vollmundiges Kaffeeerlebnis. Entdecken Sie unsere
+          Robusta-Kollektion und genießen Sie die Stärke und den Charakter
+          dieser besonderen Bohnen.
+        en-au: >-
+          Découvrez les saveurs audacieuses et intenses des grains de café
+          Robusta. Connus pour leur teneur élevée en caféine et leur goût
+          robuste, les grains de Robusta offrent une saveur profonde et terreuse
+          avec une pointe d'amertume, les rendant parfaits pour l'espresso et
+          les mélanges de café forts. Notre sélection de grains de Robusta est
+          issue des meilleures régions productrices de café, garantissant une
+          qualité supérieure et un goût exceptionnel. Que vous préfériez une
+          infusion puissante le matin ou un espresso riche, les grains de
+          Robusta offrent une expérience de café corsée. Explorez notre
+          collection de Robusta et appréciez la force et le caractère de ces
+          grains distingués.
+        en-ca: >-
+          Experience the bold and intense flavours of Robusta coffee beans.
+          Known for their high caffeine content and robust taste, Robusta beans
+          offer a deep, earthy flavour with a hint of bitterness, making them
+          perfect for espresso and strong coffee blends. Our selection of
+          Robusta beans is sourced from top coffee-growing regions, ensuring
+          high quality and exceptional taste. Whether you prefer a powerful
+          morning brew or a rich espresso, Robusta beans deliver a full-bodied
+          coffee experience. Explore our Robusta collection and enjoy the
+          strength and character of these distinguished beans.
+        en-gb: >-
+          Experience the bold and intense flavours of Robusta coffee beans.
+          Known for their high caffeine content and robust taste, Robusta beans
+          offer a deep, earthy flavour with a hint of bitterness, making them
+          perfect for espresso and strong coffee blends. Our selection of
+          Robusta beans is sourced from top coffee-growing regions, ensuring
+          high quality and exceptional taste. Whether you prefer a powerful
+          morning brew or a rich espresso, Robusta beans deliver a full-bodied
+          coffee experience. Explore our Robusta collection and enjoy the
+          strength and character of these distinguished beans.
+        en-nl: >-
+          Ervaar de gedurfde en intense smaken van Robusta-koffiebonen. Bekend
+          om hun hoge cafeïnegehalte en robuuste smaak, bieden Robusta-bonen een
+          diepe, aardse smaak met een vleugje bitterheid, waardoor ze perfect
+          zijn voor espresso en sterke koffiemelanges. Onze selectie
+          Robusta-bonen is afkomstig uit toonaangevende koffieproducerende
+          regio's, wat zorgt voor hoge kwaliteit en een uitzonderlijke smaak. Of
+          je nu de voorkeur geeft aan een krachtige ochtendbrouwsel of een rijke
+          espresso, Robusta-bonen leveren een volle koffie-ervaring. Ontdek onze
+          Robusta-collectie en geniet van de kracht en het karakter van deze
+          onderscheidende bonen.
+        en-nz: >-
+          Erleben Sie die kräftigen und intensiven Aromen von
+          Robusta-Kaffeebohnen. Bekannt für ihren hohen Koffeingehalt und
+          robusten Geschmack, bieten Robusta-Bohnen einen tiefen, erdigen
+          Geschmack mit einem Hauch von Bitterkeit, was sie perfekt für Espresso
+          und starke Kaffeeblends macht. Unsere Auswahl an Robusta-Bohnen stammt
+          aus den besten Kaffeeanbaugebieten und garantiert hohe Qualität und
+          außergewöhnlichen Geschmack. Ob Sie einen kräftigen Morgenkaffee oder
+          einen reichen Espresso bevorzugen, Robusta-Bohnen bieten ein
+          vollmundiges Kaffeeerlebnis. Entdecken Sie unsere Robusta-Kollektion
+          und genießen Sie die Stärke und den Charakter dieser besonderen
+          Bohnen.
+        en-us: >-
+          Experience the bold and intense flavors of Robusta coffee beans. Known
+          for their high caffeine content and robust taste, Robusta beans offer
+          a deep, earthy flavor with a hint of bitterness, making them perfect
+          for espresso and strong coffee blends. Our selection of Robusta beans
+          is sourced from top coffee-growing regions, ensuring high quality and
+          exceptional taste. Whether you prefer a powerful morning brew or a
+          rich espresso, Robusta beans deliver a full-bodied coffee experience.
+          Explore our Robusta collection and enjoy the strength and character of
+          these distinguished beans.
+        fr-ca: >-
+          Découvrez les saveurs audacieuses et intenses des grains de café
+          Robusta. Connus pour leur teneur élevée en caféine et leur goût
+          robuste, les grains Robusta offrent une saveur profonde et terreuse
+          avec une pointe d'amertume, les rendant parfaits pour l'espresso et
+          les mélanges de café forts. Notre sélection de grains Robusta est
+          issue des meilleures régions productrices de café, garantissant une
+          qualité supérieure et un goût exceptionnel. Que vous préfériez un café
+          puissant le matin ou un espresso riche, les grains Robusta offrent une
+          expérience caféinée corsée. Explorez notre collection de Robusta et
+          appréciez la force et le caractère de ces grains distingués.
+        fr-ch: >-
+          Découvrez les saveurs audacieuses et intenses des grains de café
+          Robusta. Réputés pour leur teneur élevée en caféine et leur goût
+          robuste, les grains de Robusta offrent une saveur profonde et terreuse
+          avec une pointe d'amertume, ce qui les rend parfaits pour l'espresso
+          et les mélanges de café forts. Notre sélection de grains de Robusta
+          est issue des meilleures régions productrices de café, garantissant
+          une qualité supérieure et un goût exceptionnel. Que vous préfériez un
+          café puissant le matin ou un espresso riche, les grains de Robusta
+          offrent une expérience de café corsée. Explorez notre collection de
+          Robusta et appréciez la force et le caractère de ces grains
+          distingués.
+        fr-fr: >-
+          Découvrez les saveurs audacieuses et intenses des grains de café
+          Robusta. Réputés pour leur teneur élevée en caféine et leur goût
+          robuste, les grains de Robusta offrent une saveur profonde et terreuse
+          avec une pointe d'amertume, ce qui les rend parfaits pour l'espresso
+          et les mélanges de café forts. Notre sélection de grains de Robusta
+          est issue des meilleures régions productrices de café, garantissant
+          une qualité supérieure et un goût exceptionnel. Que vous préfériez un
+          café puissant le matin ou un espresso riche, les grains de Robusta
+          offrent une expérience de café corsée. Explorez notre collection de
+          Robusta et appréciez la force et le caractère de ces grains
+          distingués.
+        ja-jp: >-
+          ロブスタコーヒー豆の大胆で強烈な風味を体験してください。高いカフェイン含有量と力強い味わいで知られるロブスタ豆は、深みのある土のような風味とほのかな苦味を持ち、エスプレッソや濃いコーヒーブレンドに最適です。当社のロブスタ豆のセレクションは、最高のコーヒー生産地域から調達されており、高品質で卓越した味を保証します。力強い朝の一杯や濃厚なエスプレッソをお好みの方に、ロブスタ豆はフルボディのコーヒー体験を提供します。ロブスタコレクションを探求し、これらの特徴ある豆の強さと個性をお楽しみください。
+        nl-nl: >-
+          Ervaar de gedurfde en intense smaken van Robusta-koffiebonen. Bekend
+          om hun hoge cafeïnegehalte en robuuste smaak, bieden Robusta-bonen een
+          diepe, aardse smaak met een vleugje bitterheid, waardoor ze perfect
+          zijn voor espresso en sterke koffiemelanges. Onze selectie van
+          Robusta-bonen is afkomstig uit toonaangevende koffieproducerende
+          regio's, wat zorgt voor hoge kwaliteit en uitzonderlijke smaak. Of u
+          nu de voorkeur geeft aan een krachtige ochtendbrouwsel of een rijke
+          espresso, Robusta-bonen leveren een volle koffie-ervaring. Ontdek onze
+          Robusta-collectie en geniet van de kracht en het karakter van deze
+          voorname bonen.
+        sv-se: >-
+          Upplev de djärva och intensiva smakerna av Robustakaffebönor. Kända
+          för sitt höga koffeininnehåll och robusta smak, erbjuder Robustabönor
+          en djup, jordig smak med en antydan av bitterhet, vilket gör dem
+          perfekta för espresso och starka kaffeblandningar. Vårt urval av
+          Robustabönor kommer från ledande kaffeodlingsregioner, vilket
+          garanterar hög kvalitet och enastående smak. Oavsett om du föredrar en
+          kraftfull morgonbryggning eller en rik espresso, levererar
+          Robustabönor en fyllig kaffeupplevelse. Utforska vår Robustakollektion
+          och njut av styrkan och karaktären hos dessa framstående bönor.
+        ar-uae: >-
+          اختبر النكهات الجريئة والقوية لحبوب قهوة الروبوستا. معروفة بمحتواها
+          العالي من الكافيين وطعمها القوي، تقدم حبوب الروبوستا نكهة عميقة
+          وترابية مع لمسة من المرارة، مما يجعلها مثالية للإسبريسو وخلطات القهوة
+          القوية. يتم اختيار حبوب الروبوستا لدينا من أفضل مناطق زراعة القهوة،
+          مما يضمن جودة عالية وطعمًا استثنائيًا. سواء كنت تفضل مشروبًا قويًا في
+          الصباح أو إسبريسو غنيًا، فإن حبوب الروبوستا تقدم تجربة قهوة كاملة
+          الجسم. استكشف مجموعتنا من الروبوستا واستمتع بالقوة والشخصية لهذه
+          الحبوب المتميزة.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

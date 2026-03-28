@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: b6695c1f-3305-42b6-ad81-b2acbeb0506f
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: BB_OrganicBlend.png
+    file:
+      type: file
+      value: 3a2fed0e-f93b-4065-ba87-c4d6fefac903
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/g-uO-LMiSAGOdxuTKLAnYg-BB_OrganicBlend.png
+      type: text
+    size:
+      value: 1812194
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:57.869248+00:00'
+modified: '2026-03-10T23:27:57.869248+00:00'

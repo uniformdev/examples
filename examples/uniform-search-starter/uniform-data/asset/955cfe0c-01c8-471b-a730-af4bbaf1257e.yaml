@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 955cfe0c-01c8-471b-a730-af4bbaf1257e
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: black-mountain-chambord-french-press-coffee-maker-1.png
+    file:
+      type: file
+      value: f9768455-6797-40c6-b2ba-3afdab8c8c62
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/3q0c0shQRG6UzKYMAj-etQ-black-mountain-chambord-french-press-coffee-maker-1.png
+      type: text
+    size:
+      value: 288022
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:33.55513+00:00'
+modified: '2026-03-10T23:27:33.55513+00:00'

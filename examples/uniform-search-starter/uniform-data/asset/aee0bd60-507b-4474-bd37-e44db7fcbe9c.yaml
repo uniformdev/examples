@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: aee0bd60-507b-4474-bd37-e44db7fcbe9c
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: water-reservoir-with-flip-top-lid-1.png
+    file:
+      type: file
+      value: 2de36737-cb72-4c4e-af4d-9d3fd4b13d84
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/tqQBIQmmS_OE1pm7wlKQ1g-water-reservoir-with-flip-top-lid-1.png
+      type: text
+    size:
+      value: 92391
+      type: number
+    width:
+      value: 506
+      type: number
+    height:
+      value: 506
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:52.36171+00:00'
+modified: '2026-03-10T23:27:52.36171+00:00'

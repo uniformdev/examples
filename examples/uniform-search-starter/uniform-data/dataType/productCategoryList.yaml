@@ -1,0 +1,27 @@
+id: productCategoryList
+displayName: Product Category List
+path: /query
+custom:
+  allowedContentTypes:
+    - productCategory
+method: GET
+purgeKey: 05d4765c-53ee-4278-9ddf-63f0b1aacb19
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

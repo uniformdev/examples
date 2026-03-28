@@ -1,0 +1,208 @@
+created: '2026-03-10T23:32:12.074332+00:00'
+modified: '2026-03-10T23:32:12.074332+00:00'
+pattern: false
+entry:
+  _id: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _name: Accessories
+  _slug: accessories
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/wq9nI8ViTFmM1qoxJfIFrw-accessories.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Tilbehør
+        de-at: Zubehör
+        de-ch: Zubehör
+        de-de: Zubehör
+        en-au: Accessoires
+        en-ca: Accessories
+        en-gb: Accessories
+        en-nl: Accessoires
+        en-nz: Zubehör
+        en-us: Accessories
+        fr-ca: Accessoires
+        fr-ch: Accessoires
+        fr-fr: Accessoires
+        ja-jp: アクセサリー
+        nl-nl: Accessoires
+        sv-se: Tillbehör
+        ar-uae: إكسسوارات
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Forbedr din kaffebrygningsoplevelse med vores udvalg af højkvalitets
+          kaffeudstyr. Fra præcise måleskeer og elegante filtre til holdbare
+          opbevaringsbeholdere og stilfulde krus, inkluderer vores sortiment
+          alt, hvad du behøver for at perfektionere din kafferutine. Hvert
+          tilbehør er designet til at komplementere din bryggeproces, så du kan
+          nyde den bedste kop kaffe hver gang. Udforsk vores kollektion af
+          kaffeudstyr og find de perfekte redskaber til at løfte din daglige
+          kafferitual.
+        de-at: >-
+          Verbessern Sie Ihr Kaffeeerlebnis mit unserer Auswahl an hochwertigen
+          Kaffeezubehör. Von präzisen Messlöffeln und eleganten Filtern bis hin
+          zu langlebigen Aufbewahrungsbehältern und stilvollen Tassen – unsere
+          Auswahl umfasst alles, was Sie benötigen, um Ihre Kaffeeroutine zu
+          perfektionieren. Jedes Zubehörteil ist darauf ausgelegt, Ihren
+          Brühvorgang zu ergänzen, damit Sie jedes Mal die beste Tasse Kaffee
+          genießen können. Entdecken Sie unsere Kollektion an Kaffeezubehör und
+          finden Sie die perfekten Werkzeuge, um Ihr tägliches Kaffeeritual zu
+          bereichern.
+        de-ch: >-
+          Verbessern Sie Ihr Kaffeeerlebnis mit unserer Auswahl an hochwertigen
+          Kaffeezubehör. Von präzisen Messlöffeln und eleganten Filtern bis hin
+          zu robusten Aufbewahrungsbehältern und stilvollen Tassen – unsere
+          Auswahl umfasst alles, was Sie benötigen, um Ihre Kaffeeroutine zu
+          perfektionieren. Jedes Zubehörteil ist darauf ausgelegt, Ihren
+          Brühprozess zu ergänzen, damit Sie jedes Mal die beste Tasse Kaffee
+          genießen können. Entdecken Sie unsere Kollektion an Kaffeezubehör und
+          finden Sie die perfekten Werkzeuge, um Ihr tägliches Kaffeeritual zu
+          bereichern.
+        de-de: >-
+          Verbessern Sie Ihr Kaffeeerlebnis mit unserer Auswahl an hochwertigen
+          Kaffeezubehör. Von präzisen Messlöffeln und eleganten Filtern bis hin
+          zu robusten Aufbewahrungsbehältern und stilvollen Tassen – unsere
+          Auswahl umfasst alles, was Sie benötigen, um Ihre Kaffeeroutine zu
+          perfektionieren. Jedes Zubehörteil ist darauf ausgelegt, Ihren
+          Brühprozess zu ergänzen, damit Sie jedes Mal die beste Tasse Kaffee
+          genießen können. Entdecken Sie unsere Kollektion an Kaffeezubehör und
+          finden Sie die perfekten Werkzeuge, um Ihr tägliches Kaffeeritual zu
+          bereichern.
+        en-au: >-
+          Améliorez votre expérience de préparation du café avec notre gamme
+          d'accessoires de café de haute qualité. Des cuillères doseuses
+          précises et des filtres élégants aux contenants de stockage durables
+          et aux tasses stylées, notre sélection comprend tout ce dont vous avez
+          besoin pour parfaire votre routine café. Chaque accessoire est conçu
+          pour compléter votre processus de préparation, vous assurant de
+          savourer la meilleure tasse de café à chaque fois. Explorez notre
+          collection d'accessoires de café et trouvez les outils parfaits pour
+          élever votre rituel quotidien du café.
+        en-ca: >-
+          Enhance your coffee brewing experience with our range of high-quality
+          coffee accessories. From precise measuring spoons and elegant filters
+          to durable storage containers and stylish mugs, our selection includes
+          everything you need to perfect your coffee routine. Each accessory is
+          designed to complement your brewing process, ensuring you enjoy the
+          best cup of coffee every time. Explore our coffee accessories
+          collection and find the perfect tools to elevate your daily coffee
+          ritual.
+        en-gb: >-
+          Enhance your coffee brewing experience with our range of high-quality
+          coffee accessories. From precise measuring spoons and elegant filters
+          to durable storage containers and stylish mugs, our selection includes
+          everything you need to perfect your coffee routine. Each accessory is
+          designed to complement your brewing process, ensuring you enjoy the
+          best cup of coffee every time. Explore our coffee accessories
+          collection and find the perfect tools to elevate your daily coffee
+          ritual.
+        en-nl: >-
+          Verbeter je koffiezetervaring met ons assortiment hoogwaardige
+          koffieaccessoires. Van precieze maatlepels en elegante filters tot
+          duurzame opbergcontainers en stijlvolle mokken, onze selectie omvat
+          alles wat je nodig hebt om je koffieroutine te perfectioneren. Elk
+          accessoire is ontworpen om je zetproces te complementeren, zodat je
+          elke keer van de beste kop koffie geniet. Ontdek onze collectie
+          koffieaccessoires en vind de perfecte tools om je dagelijkse
+          koffieritueel te verbeteren.
+        en-nz: >-
+          Verbessern Sie Ihr Kaffeezubereitungserlebnis mit unserer Auswahl an
+          hochwertigen Kaffeezubehör. Von präzisen Messlöffeln und eleganten
+          Filtern bis hin zu langlebigen Aufbewahrungsbehältern und stilvollen
+          Tassen umfasst unsere Auswahl alles, was Sie benötigen, um Ihre
+          Kaffeegewohnheiten zu perfektionieren. Jedes Zubehörteil ist darauf
+          ausgelegt, Ihren Brühprozess zu ergänzen, damit Sie jedes Mal die
+          beste Tasse Kaffee genießen können. Entdecken Sie unsere Kollektion an
+          Kaffeezubehör und finden Sie die perfekten Werkzeuge, um Ihr tägliches
+          Kaffeeritual zu bereichern.
+        en-us: >-
+          Enhance your coffee brewing experience with our range of high-quality
+          coffee accessories. From precise measuring spoons and elegant filters
+          to durable storage containers and stylish mugs, our selection includes
+          everything you need to perfect your coffee routine. Each accessory is
+          designed to complement your brewing process, ensuring you enjoy the
+          best cup of coffee every time. Explore our coffee accessories
+          collection and find the perfect tools to elevate your daily coffee
+          ritual.
+        fr-ca: >-
+          Améliorez votre expérience de préparation de café avec notre gamme
+          d'accessoires de café de haute qualité. Des cuillères doseuses
+          précises et des filtres élégants aux contenants de rangement durables
+          et aux tasses stylées, notre sélection comprend tout ce dont vous avez
+          besoin pour parfaire votre routine café. Chaque accessoire est conçu
+          pour compléter votre processus de préparation, vous assurant de
+          savourer la meilleure tasse de café à chaque fois. Explorez notre
+          collection d'accessoires de café et trouvez les outils parfaits pour
+          élever votre rituel quotidien du café.
+        fr-ch: >-
+          Améliorez votre expérience de préparation de café avec notre gamme
+          d'accessoires de café de haute qualité. Des cuillères de mesure
+          précises et des filtres élégants aux conteneurs de stockage durables
+          et aux tasses stylées, notre sélection comprend tout ce dont vous avez
+          besoin pour perfectionner votre routine de café. Chaque accessoire est
+          conçu pour compléter votre processus de préparation, garantissant que
+          vous profitez de la meilleure tasse de café à chaque fois. Explorez
+          notre collection d'accessoires de café et trouvez les outils parfaits
+          pour élever votre rituel quotidien du café.
+        fr-fr: >-
+          Améliorez votre expérience de préparation de café avec notre gamme
+          d'accessoires de café de haute qualité. Des cuillères de mesure
+          précises et des filtres élégants aux conteneurs de stockage durables
+          et aux tasses stylées, notre sélection comprend tout ce dont vous avez
+          besoin pour perfectionner votre routine de café. Chaque accessoire est
+          conçu pour compléter votre processus de préparation, garantissant que
+          vous profitez de la meilleure tasse de café à chaque fois. Explorez
+          notre collection d'accessoires de café et trouvez les outils parfaits
+          pour élever votre rituel quotidien du café.
+        ja-jp: >-
+          高品質なコーヒーアクセサリーのラインナップで、コーヒーの抽出体験を向上させましょう。正確な計量スプーンやエレガントなフィルターから、耐久性のある保存容器やスタイリッシュなマグカップまで、コーヒーのルーチンを完璧にするために必要なすべてが揃っています。各アクセサリーは抽出プロセスを補完するように設計されており、毎回最高の一杯を楽しめることを保証します。コーヒーアクセサリーコレクションを探索し、日々のコーヒー習慣を高めるための完璧なツールを見つけてください。
+        nl-nl: >-
+          Verbeter uw koffiezetervaring met ons assortiment hoogwaardige
+          koffieaccessoires. Van nauwkeurige maatlepels en elegante filters tot
+          duurzame opbergcontainers en stijlvolle mokken, onze selectie omvat
+          alles wat u nodig heeft om uw koffieroutine te perfectioneren. Elk
+          accessoire is ontworpen om uw zetproces aan te vullen, zodat u elke
+          keer van de beste kop koffie kunt genieten. Ontdek onze collectie
+          koffieaccessoires en vind de perfecte tools om uw dagelijkse
+          koffieritueel te verbeteren.
+        sv-se: >-
+          Förbättra din kaffebryggningsupplevelse med vårt sortiment av
+          högkvalitativa kaffeaccessoarer. Från precisa måttskedar och eleganta
+          filter till hållbara förvaringsbehållare och stiliga muggar, vårt
+          urval inkluderar allt du behöver för att fullända din kafferutin.
+          Varje accessoar är designad för att komplettera din bryggningsprocess
+          och säkerställa att du njuter av den bästa koppen kaffe varje gång.
+          Utforska vår kollektion av kaffeaccessoarer och hitta de perfekta
+          verktygen för att höja din dagliga kafferitual.
+        ar-uae: >-
+          عزز تجربة تحضير القهوة الخاصة بك مع مجموعتنا من ملحقات القهوة عالية
+          الجودة. من الملاعق القياسية الدقيقة والفلاتر الأنيقة إلى حاويات
+          التخزين المتينة والأكواب العصرية، تتضمن مجموعتنا كل ما تحتاجه لتحسين
+          روتين القهوة الخاص بك. كل ملحق مصمم ليكمل عملية التحضير الخاصة بك، مما
+          يضمن لك الاستمتاع بأفضل كوب من القهوة في كل مرة. استكشف مجموعة ملحقات
+          القهوة لدينا وابحث عن الأدوات المثالية لرفع مستوى طقوس القهوة اليومية
+          الخاصة بك.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

@@ -1,0 +1,68 @@
+composition:
+  _name: Products Details
+  _id: d3883501-b8b2-4922-907f-b2cef3817b77
+  _slug: ':product-slug'
+  type: page
+  _dataResources:
+    Product Content:
+      type: product
+      variables:
+        slug: ${product-slug}
+        locale: ${locale}
+  _overrides:
+    d3883501-b8b2-4922-907f-b2cef3817b77:
+      parameters:
+        $enr:
+          type: $enr
+          value: ${#jptr:/Product Content/entry/fields/enrichments/value}
+        pageTitle:
+          type: text
+          locales:
+            en-us: ${#jptr:/Product Content/entry/fields/name/value}
+        pageKeywords:
+          type: text
+          locales:
+            en-us: product, uniform, component starter kit, add to cart
+        openGraphType:
+          type: select
+          value: website
+        openGraphImage:
+          type: asset
+          value: ${#jptr:/Product Content/entry/fields/ogImage/value}
+        openGraphTitle:
+          type: text
+          locales:
+            en-us: ${#jptr:/Product Content/entry/fields/metaTitle/value}
+        pageDescription:
+          type: text
+          locales:
+            en-us: ${#jptr:/Product Content/entry/fields/shortDescription/value}
+        openGraphDescription:
+          type: text
+          locales:
+            en-us: ${#jptr:/Product Content/entry/fields/metaDescription/value}
+    d3883501-b8b2-4922-907f-b2cef3817b77|dc2e95be-21b5-4476-a309-f8a34922f528:
+      slots:
+        $slotSectionItems:
+          - _id: e2667e9a-55c0-4277-8ca1-b4c4e274290d
+            type: hero
+            parameters:
+              image:
+                type: asset
+                value: ${#jptr:/Product Content/entry/fields/primaryImage/value}
+              titleText:
+                type: text
+                locales:
+                  en-us: ${#jptr:/Product Content/entry/fields/name/value}
+              descriptionText:
+                type: text
+                locales:
+                  en-us: >-
+                    ${#jptr:/Product
+                    Content/entry/fields/shortDescription/value}
+  _locales:
+    - en-us
+  _pattern: f9c058ea-c40d-4435-ac5a-53423cf654dc
+created: '2026-03-10T23:29:43.101072+00:00'
+modified: '2026-03-26T00:54:20.745627+00:00'
+pattern: false

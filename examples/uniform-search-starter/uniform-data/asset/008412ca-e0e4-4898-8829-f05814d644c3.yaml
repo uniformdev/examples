@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 008412ca-e0e4-4898-8829-f05814d644c3
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: icon-chevron-blue.svg
+    file:
+      type: file
+      value: 3767517e-e3b4-4700-ae21-52d859d27799
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/zHjhrXp5R-6EfrA__6ydOA-icon-chevron-blue.svg
+      type: text
+    size:
+      value: 217
+      type: number
+    width:
+      value: 24
+      type: number
+    height:
+      value: 24
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:24.470794+00:00'
+modified: '2026-03-10T23:26:24.470794+00:00'

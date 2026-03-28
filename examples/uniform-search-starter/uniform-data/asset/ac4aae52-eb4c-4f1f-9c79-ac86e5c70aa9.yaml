@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ac4aae52-eb4c-4f1f-9c79-ac86e5c70aa9
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: impresso-perk-1.png
+    file:
+      type: file
+      value: 9e2608bc-2037-4d27-96ef-7004d05fc6c8
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/2N3SwUN5Q9ajIz-jaYhlUA-impresso-perk-1.png
+      type: text
+    size:
+      value: 37026
+      type: number
+    width:
+      value: 386
+      type: number
+    height:
+      value: 386
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:48.186757+00:00'
+modified: '2026-03-10T23:27:48.186757+00:00'

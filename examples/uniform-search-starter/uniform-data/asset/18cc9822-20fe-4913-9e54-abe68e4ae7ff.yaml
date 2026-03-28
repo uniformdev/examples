@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 18cc9822-20fe-4913-9e54-abe68e4ae7ff
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: debunking-the-hipster-myth.jpg
+    file:
+      type: file
+      value: 5e7cc2e5-7d08-4195-8ef8-7967a96e0381
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/gl-AHN4jTJiwY9vgp0pVsQ-debunking-the-hipster-myth.jpg
+      type: text
+    size:
+      value: 4189576
+      type: number
+    width:
+      value: 6000
+      type: number
+    height:
+      value: 4000
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:31.286366+00:00'
+modified: '2026-03-10T23:26:31.286366+00:00'

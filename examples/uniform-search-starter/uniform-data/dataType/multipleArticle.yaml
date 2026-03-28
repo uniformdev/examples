@@ -1,0 +1,17 @@
+id: multipleArticle
+displayName: Multiple Article
+ttl: 30
+path: /multiple
+custom:
+  proposedName: Multiple Article
+  allowedContentTypes:
+    - article
+method: GET
+purgeKey: f45762df-79b8-4da2-8ae6-c2bffb1f362c
+archetype: multipleEntries
+variables:
+  entryIds:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

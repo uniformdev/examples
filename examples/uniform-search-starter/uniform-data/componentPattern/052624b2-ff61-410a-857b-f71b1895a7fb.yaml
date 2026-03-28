@@ -1,0 +1,257 @@
+composition:
+  _name: Article Search
+  _id: 052624b2-ff61-410a-857b-f71b1895a7fb
+  type: searchEngine
+  parameters:
+    orderBy:
+      type: $block
+      value:
+        - _id: d4096feb-1cad-413e-8a2e-a6ffccea811a
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: relevance
+            title:
+              type: text
+              locales:
+                en-us: Relevance
+            direction:
+              type: select
+              value: DESC
+        - _id: 2a53ef92-66ce-4c25-96b0-33ddf6ade010
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: created_at
+            title:
+              type: text
+              locales:
+                en-us: Newest Arrivals
+            direction:
+              type: select
+              value: DESC
+        - _id: 452e6eab-9055-4bc5-b3bb-2885ed788653
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: fields.title
+            title:
+              type: text
+              locales:
+                en-us: 'Alphabetically: A-Z'
+            direction:
+              type: select
+              value: ASC
+        - _id: 1e2086c5-ee74-4edc-8e79-8856678d86d1
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: fields.title
+            title:
+              type: text
+              locales:
+                en-us: 'Alphabetically: Z-A'
+            direction:
+              type: select
+              value: DESC
+        - _id: d7339332-cbd4-4ac2-966a-3af951e08cea
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: fields.rating
+            title:
+              type: text
+              locales:
+                en-us: 'Rating: Highest first'
+            direction:
+              type: select
+              value: DESC
+        - _id: 7ef0e605-c3d1-4ac8-8793-63b7b409394d
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: fields.rating
+            title:
+              type: text
+              locales:
+                en-us: 'Rating: Lowest first'
+            direction:
+              type: select
+              value: ASC
+    filterBy:
+      type: $block
+      value:
+        - _id: a4e55b43-0c34-46f1-990c-5b45ace694e7
+          type: filterBy
+          fields:
+            type:
+              type: select
+              value: select
+            title:
+              type: text
+              locales:
+                en-us: By Article Category
+            values:
+              type: $block
+              value:
+                - _id: 39e62a10-68b5-4534-80a2-9ad7c55acb07
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: Coffee
+                    value:
+                      type: text
+                      value: coffee
+                - _id: 06cbec00-0e1e-4683-aeda-846774f2ffac
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: Guides
+                    value:
+                      type: text
+                      value: guides
+            fieldId:
+              type: text
+              value: category
+            fieldKey:
+              type: text
+              value: category
+            enableFaceting:
+              type: checkbox
+              value: true
+        - _id: c1e35169-72dc-494d-ba9a-03bc76aed46e
+          type: filterBy
+          fields:
+            type:
+              type: select
+              value: multiSelect
+            title:
+              type: text
+              locales:
+                en-us: Refine by Author
+            values:
+              type: $block
+              value:
+                - _id: 593837d2-8451-4884-aeb8-05165c9f3642
+                  type: $loop
+                  fields:
+                    body:
+                      type: $block
+                      value:
+                        - _id: c8677ac4-7123-440d-939f-3b2afd396d22
+                          type: filterByItem
+                          fields:
+                            title:
+                              type: text
+                              locales:
+                                en-us: >-
+                                  ${#jptr:/Author List entries Loop
+                                  Item/entry/fields/name/value}
+                            value:
+                              type: text
+                              value: >-
+                                ${#jptr:/Author List entries Loop
+                                Item/entry/_slug}
+                  _dataResources:
+                    Author List entries Loop Item:
+                      type: sys-reserved-loop
+                      variables:
+                        connectedData: '#jptr:/Author List/entries:fa=c'
+            fieldId:
+              type: text
+              value: author
+            fieldKey:
+              type: text
+              value: author
+            enableFaceting:
+              type: checkbox
+              value: true
+    pageSizes:
+      type: $block
+      value:
+        - _id: 8dbd1da1-4b00-4fe3-8670-7d402adf8800
+          type: pageSize
+          fields:
+            size:
+              type: number
+              value: '6'
+        - _id: 0843f4b1-24fb-46db-9401-83c03f72d85e
+          type: pageSize
+          fields:
+            size:
+              type: number
+              value: '8'
+        - _id: 54840be6-ad8c-4c8d-a9e9-d2817796ec78
+          type: pageSize
+          fields:
+            size:
+              type: number
+              value: '10'
+    baseFilters:
+      type: $block
+      value: []
+    collections:
+      type: multi-select
+      value:
+        - entries
+    contentType:
+      type: select
+      value: article
+  slots:
+    search-top:
+      - _id: 9e2cc4fe-eac2-4019-8718-ec07f77aad28
+        type: searchBox
+        _overridability:
+          hideLockedParameters: true
+      - _id: a360c1ae-e539-4ecd-bfeb-ce7f235520fe
+        type: searchSorting
+        _overridability:
+          hideLockedParameters: true
+    search-main:
+      - _id: c5a546d5-db88-48f0-82b0-da003d417e11
+        type: searchFilters
+        _overridability:
+          hideLockedParameters: true
+      - _id: 07723461-9e34-43ee-ab77-ab91d6d576f0
+        type: searchList
+        _overridability:
+          hideLockedParameters: true
+    search-bottom:
+      - _id: 0c8baa9c-6493-4d67-ad16-7211efbe42eb
+        type: searchPageSize
+        _overridability:
+          hideLockedParameters: true
+      - _id: c4c119f4-5b14-4927-a1fc-06af1f68d363
+        type: searchPagination
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    Author List:
+      type: authorList
+      variables:
+        locale: ${locale}
+        search: ''
+        filters: '{"type[eq]":"author"}'
+        contentTypes: author
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
+  _overridability:
+    parameters:
+      boostEnrichments: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-us
+created: '2026-03-26T04:23:05.013049+00:00'
+modified: '2026-03-26T05:25:57.112322+00:00'
+pattern: true
+categoryId: adaebea8-ba58-494b-9c3b-9f82906d9415

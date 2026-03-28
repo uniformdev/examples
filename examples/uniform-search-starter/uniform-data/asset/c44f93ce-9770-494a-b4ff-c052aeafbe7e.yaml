@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: c44f93ce-9770-494a-b4ff-c052aeafbe7e
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: pour-over.png
+    file:
+      type: file
+      value: e7d90ba7-b2a0-41df-a3b6-39659cb4ed8e
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/6ciDZlz7QT6fYttMLsUv3w-pour-over.png
+      type: text
+    size:
+      value: 456188
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:06.901889+00:00'
+modified: '2026-03-10T23:28:06.901889+00:00'

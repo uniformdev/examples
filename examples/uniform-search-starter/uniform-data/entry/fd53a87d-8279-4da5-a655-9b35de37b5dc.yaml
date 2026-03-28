@@ -1,0 +1,163 @@
+created: '2026-03-10T23:35:52.592235+00:00'
+modified: '2026-03-10T23:35:52.592235+00:00'
+pattern: false
+entry:
+  _id: fd53a87d-8279-4da5-a655-9b35de37b5dc
+  _name: Royale
+  _slug: royale
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/qizLl8MQQJCLf2ju68V0wg-royale.png
+  type: brand
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Royale
+        de-at: Royale
+        de-ch: Royale
+        de-de: Royale
+        en-au: Royale
+        en-ca: Royale
+        en-gb: Royale
+        en-nl: Royale
+        en-nz: Royale
+        en-us: Royale
+        fr-ca: Royale
+        fr-ch: Royale
+        fr-fr: Royale
+        ja-jp: ロワイヤル
+        nl-nl: Royale
+        sv-se: Royale
+        ar-uae: رويال
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Royale er indbegrebet af luksus og elegance i kaffens verden. Vores
+          engagement er at levere førsteklasses kaffemaskiner og udsøgte
+          kaffeprodukter, der imødekommer de mest kræsne smagsløg. Med fokus på
+          sofistikering og kvalitet forvandler Royale din kaffeoplevelse til en
+          kongelig affære og sikrer, at hver kop er et ægte mesterværk.
+        de-at: >-
+          Royale verkörpert Luxus und Eleganz in der Welt des Kaffees. Unser
+          Engagement besteht darin, erstklassige Kaffeemaschinen und exquisite
+          Kaffeeprodukte anzubieten, die den anspruchsvollsten Geschmäckern
+          gerecht werden. Mit einem Fokus auf Raffinesse und Qualität verwandelt
+          Royale Ihr Kaffeeerlebnis in eine königliche Angelegenheit und sorgt
+          dafür, dass jede Tasse ein wahres Meisterwerk ist.
+        de-ch: >-
+          Royale verkörpert Luxus und Eleganz in der Welt des Kaffees. Unser
+          Engagement besteht darin, erstklassige Kaffeemaschinen und exquisite
+          Kaffeeprodukte anzubieten, die den anspruchsvollsten Geschmäckern
+          gerecht werden. Mit einem Fokus auf Raffinesse und Qualität verwandelt
+          Royale Ihr Kaffeeerlebnis in eine königliche Angelegenheit und stellt
+          sicher, dass jede Tasse ein wahres Meisterwerk ist.
+        de-de: >-
+          Royale verkörpert Luxus und Eleganz in der Welt des Kaffees. Unser
+          Engagement besteht darin, erstklassige Kaffeemaschinen und exquisite
+          Kaffeeprodukte anzubieten, die den anspruchsvollsten Geschmäckern
+          gerecht werden. Mit einem Fokus auf Raffinesse und Qualität verwandelt
+          Royale Ihr Kaffeeerlebnis in eine königliche Angelegenheit und stellt
+          sicher, dass jede Tasse ein wahres Meisterwerk ist.
+        en-au: >-
+          Royale incarne le luxe et l'élégance dans le monde du café. Notre
+          engagement est de fournir des cafetières haut de gamme et des produits
+          de café exquis qui répondent aux goûts les plus exigeants. Avec un
+          accent sur la sophistication et la qualité, Royale transforme votre
+          expérience café en une affaire royale, garantissant que chaque tasse
+          est un véritable chef-d'œuvre.
+        en-ca: >-
+          Royale incarne le luxe et l'élégance dans le monde du café. Notre
+          engagement est de fournir des cafetières haut de gamme et des produits
+          de café exquis qui répondent aux goûts les plus exigeants. Avec un
+          accent sur la sophistication et la qualité, Royale transforme votre
+          expérience café en une affaire royale, garantissant que chaque tasse
+          est un véritable chef-d'œuvre.
+        en-gb: >-
+          Royale epitomises luxury and elegance in the world of coffee. Our
+          commitment is to provide premium coffee makers and exquisite coffee
+          products that cater to the most discerning tastes. With a focus on
+          sophistication and quality, Royale transforms your coffee experience
+          into a regal affair, ensuring each cup is a true masterpiece.
+        en-nl: >-
+          Royale belichaamt luxe en elegantie in de wereld van koffie. Onze
+          toewijding is om premium koffiemachines en verfijnde koffieproducten
+          te leveren die voldoen aan de meest veeleisende smaken. Met een focus
+          op verfijning en kwaliteit, transformeert Royale uw koffie-ervaring in
+          een koninklijke aangelegenheid, waarbij elke kop een waar meesterwerk
+          is.
+        en-nz: >-
+          Royale verkörpert Luxus und Eleganz in der Welt des Kaffees. Unser
+          Engagement besteht darin, erstklassige Kaffeemaschinen und exquisite
+          Kaffeeprodukte anzubieten, die den anspruchsvollsten Geschmäckern
+          gerecht werden. Mit einem Fokus auf Raffinesse und Qualität verwandelt
+          Royale Ihr Kaffeeerlebnis in eine königliche Angelegenheit und stellt
+          sicher, dass jede Tasse ein wahres Meisterwerk ist.
+        en-us: >-
+          Royale epitomizes luxury and elegance in the world of coffee. Our
+          commitment is to provide premium coffee makers and exquisite coffee
+          products that cater to the most discerning tastes. With a focus on
+          sophistication and quality, Royale transforms your coffee experience
+          into a regal affair, ensuring each cup is a true masterpiece.
+        fr-ca: >-
+          Royale incarne le luxe et l'élégance dans le monde du café. Notre
+          engagement est de fournir des cafetières haut de gamme et des produits
+          de café exquis qui répondent aux goûts les plus exigeants. Avec un
+          accent sur la sophistication et la qualité, Royale transforme votre
+          expérience café en une affaire royale, garantissant que chaque tasse
+          est un véritable chef-d'œuvre.
+        fr-ch: >-
+          Royale incarne le luxe et l'élégance dans le monde du café. Notre
+          engagement est de fournir des machines à café haut de gamme et des
+          produits de café exquis qui répondent aux goûts les plus exigeants.
+          Avec un accent sur la sophistication et la qualité, Royale transforme
+          votre expérience café en une affaire royale, garantissant que chaque
+          tasse est un véritable chef-d'œuvre.
+        fr-fr: >-
+          Royale incarne le luxe et l'élégance dans le monde du café. Notre
+          engagement est de fournir des machines à café haut de gamme et des
+          produits de café exquis qui répondent aux goûts les plus exigeants.
+          Avec un accent sur la sophistication et la qualité, Royale transforme
+          votre expérience café en une affaire royale, garantissant que chaque
+          tasse est un véritable chef-d'œuvre.
+        ja-jp: >-
+          ロワイヤルは、コーヒーの世界における贅沢と優雅さの象徴です。私たちの使命は、最も目の肥えた方々の好みに応えるプレミアムなコーヒーメーカーと洗練されたコーヒー製品を提供することです。洗練と品質に重点を置き、ロワイヤルはコーヒー体験を王室のようなものに変え、各カップが真の傑作であることを保証します。
+        nl-nl: >-
+          Royale belichaamt luxe en elegantie in de wereld van koffie. Onze
+          toewijding is om premium koffiemachines en verfijnde koffieproducten
+          te leveren die voldoen aan de meest veeleisende smaken. Met een focus
+          op verfijning en kwaliteit, transformeert Royale uw koffie-ervaring in
+          een koninklijke aangelegenheid, waarbij elke kop een waar meesterwerk
+          is.
+        sv-se: >-
+          Royale personifierar lyx och elegans i kaffevärlden. Vårt engagemang
+          är att erbjuda premium kaffemaskiner och utsökta kaffeprodukter som
+          tillgodoser de mest kräsna smakerna. Med fokus på sofistikering och
+          kvalitet förvandlar Royale din kaffeupplevelse till en kunglig affär
+          och säkerställer att varje kopp är ett sant mästerverk.
+        ar-uae: >-
+          رويال يجسد الفخامة والأناقة في عالم القهوة. التزامنا هو تقديم صانعات
+          قهوة فاخرة ومنتجات قهوة رائعة تلبي أذواق الأكثر تميزًا. مع التركيز على
+          الرقي والجودة، تحول رويال تجربتك في القهوة إلى مناسبة ملكية، مما يضمن
+          أن كل فنجان هو تحفة حقيقية.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

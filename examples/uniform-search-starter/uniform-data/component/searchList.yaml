@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchList
+name: Search List
+icon: play-list-search
+parameters:
+  - id: cardButtonText
+    name: Card Button Text
+    type: text
+    helpText: Applies if the button exists in the card
+    typeConfig: null
+    localizable: true
+  - id: d6e80361-d979-4bfb-b5ef-e7b89d88fb2d
+    name: 'No Results Settings '
+    type: group
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - noResultsFoundText
+        - tryDifferentFiltersText
+        - clearAllFilterText
+  - id: noResultsFoundText
+    name: No Results Found Text
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: tryDifferentFiltersText
+    name: Try Different Filters Text
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: clearAllFilterText
+    name: Clear All Filter Text
+    type: text
+    typeConfig: null
+    localizable: true
+categoryId: 624b55ca-4671-46e2-8fd5-4a9b34b4c121
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/coffee-shop-template/preview-images/entries_search_list.png
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2026-03-10T23:28:50.259989+00:00'
+updated: '2026-03-26T00:19:45.515147+00:00'

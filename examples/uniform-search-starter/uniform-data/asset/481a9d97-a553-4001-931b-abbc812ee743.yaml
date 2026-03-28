@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 481a9d97-a553-4001-931b-abbc812ee743
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: coffee-permanent-filter-1.png
+    file:
+      type: file
+      value: 835f29e1-2ad4-4c60-adbe-92c35858ceb8
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/DYHi8wPoTOiBAooW707gRQ-coffee-permanent-filter-1.png
+      type: text
+    size:
+      value: 53290
+      type: number
+    width:
+      value: 800
+      type: number
+    height:
+      value: 600
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:51.120109+00:00'
+modified: '2026-03-10T23:26:51.120109+00:00'

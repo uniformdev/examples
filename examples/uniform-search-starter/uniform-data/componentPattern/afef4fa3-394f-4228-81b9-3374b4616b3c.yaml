@@ -1,0 +1,433 @@
+composition:
+  _name: Product Search
+  _id: afef4fa3-394f-4228-81b9-3374b4616b3c
+  type: searchEngine
+  parameters:
+    orderBy:
+      type: $block
+      value:
+        - _id: d4096feb-1cad-413e-8a2e-a6ffccea811a
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: relevance
+            title:
+              type: text
+              locales:
+                en-us: Relevance
+            direction:
+              type: select
+              value: DESC
+        - _id: 2a53ef92-66ce-4c25-96b0-33ddf6ade010
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: created_at
+            title:
+              type: text
+              locales:
+                en-us: Newest Arrivals
+            direction:
+              type: select
+              value: DESC
+        - _id: 452e6eab-9055-4bc5-b3bb-2885ed788653
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: title
+            title:
+              type: text
+              locales:
+                en-us: 'Alphabetically: A-Z'
+            direction:
+              type: select
+              value: ASC
+        - _id: 1e2086c5-ee74-4edc-8e79-8856678d86d1
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: title
+            title:
+              type: text
+              locales:
+                en-us: 'Alphabetically: Z-A'
+            direction:
+              type: select
+              value: DESC
+        - _id: d7339332-cbd4-4ac2-966a-3af951e08cea
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: rating
+            title:
+              type: text
+              locales:
+                en-us: 'Rating: Highest first'
+            direction:
+              type: select
+              value: DESC
+        - _id: 7ef0e605-c3d1-4ac8-8793-63b7b409394d
+          type: orderBy
+          fields:
+            field:
+              type: text
+              value: rating
+            title:
+              type: text
+              locales:
+                en-us: 'Rating: Lowest first'
+            direction:
+              type: select
+              value: ASC
+    filterBy:
+      type: $block
+      value:
+        - _id: a4e55b43-0c34-46f1-990c-5b45ace694e7
+          type: filterBy
+          fields:
+            type:
+              type: select
+              value: select
+            title:
+              type: text
+              locales:
+                en-us: By Product Type
+            values:
+              type: $block
+              value:
+                - _id: 39e62a10-68b5-4534-80a2-9ad7c55acb07
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: Coffee Makers
+                    value:
+                      type: text
+                      value: coffee-makers
+                - _id: 06cbec00-0e1e-4683-aeda-846774f2ffac
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: Coffee Beans
+                    value:
+                      type: text
+                      value: beans
+                - _id: 4bd5f148-8937-44f0-be36-815adb67569a
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: Accessories
+                    value:
+                      type: text
+                      value: accessories
+            fieldId:
+              type: text
+              value: category
+            fieldKey:
+              type: text
+              value: category
+            enableFaceting:
+              type: checkbox
+              value: true
+        - _id: 87dea12d-bc3b-4b7d-8b46-5b64f15d4654
+          type: filterBy
+          fields:
+            type:
+              type: select
+              value: multiSelect
+            title:
+              type: text
+              locales:
+                en-us: Filter by subcategory
+            values:
+              type: $block
+              value:
+                - _id: 18213ddb-3069-427c-b8f3-93a0189f84b2
+                  type: $loop
+                  fields:
+                    body:
+                      type: $block
+                      value:
+                        - _id: 7e04ec3f-7366-417b-ac04-9fafbd9df852
+                          type: filterByItem
+                          fields:
+                            title:
+                              type: text
+                              locales:
+                                en-us: >-
+                                  ${#jptr:/All Product Categories entries Loop
+                                  Item/entry/fields/title/value}
+                            value:
+                              type: text
+                              value: >-
+                                ${#jptr:/All Product Categories entries Loop
+                                Item/entry/_slug}
+                  _dataResources:
+                    All Product Categories entries Loop Item:
+                      type: sys-reserved-loop
+                      variables:
+                        connectedData: '#jptr:/All Product Categories/entries:fa=c'
+            fieldId:
+              type: text
+              value: subcategory
+            fieldKey:
+              type: text
+              value: subcategory
+            enableFaceting:
+              type: checkbox
+              value: true
+        - _id: c1e35169-72dc-494d-ba9a-03bc76aed46e
+          type: filterBy
+          fields:
+            type:
+              type: select
+              value: multiSelect
+            title:
+              type: text
+              locales:
+                en-us: Refine by brand
+            values:
+              type: $block
+              value:
+                - _id: 84f8bb98-1bb0-444a-9f86-530f5b6a408b
+                  type: $loop
+                  fields:
+                    body:
+                      type: $block
+                      value:
+                        - _id: 11363fe9-01cc-487c-9288-c3db3c3bea0c
+                          type: filterByItem
+                          fields:
+                            title:
+                              type: text
+                              locales:
+                                en-us: >-
+                                  ${#jptr:/All Product Categories entries Loop
+                                  Item/entry/fields/title/value}
+                            value:
+                              type: text
+                              value: >-
+                                ${#jptr:/All Product Categories entries Loop
+                                Item/entry/_slug}
+                  _dataResources:
+                    All Product Categories entries Loop Item:
+                      type: sys-reserved-loop
+                      variables:
+                        connectedData: '#jptr:/All Product Brands/entries:fa=c'
+            fieldId:
+              type: text
+              value: brand
+            fieldKey:
+              type: text
+              value: brand
+            enableFaceting:
+              type: checkbox
+              value: true
+        - _id: 6bb609be-43c8-4b6f-b6fe-dbaf4e266db5
+          type: filterBy
+          fields:
+            type:
+              type: select
+              value: range
+            title:
+              type: text
+              locales:
+                en-us: Refine by customer rating
+            values:
+              type: $block
+              value:
+                - _id: a9dbba2f-64ac-4ed4-b501-9c78d339b6f2
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: '0'
+                    value:
+                      type: text
+                      value: '0'
+                - _id: 69661140-7aec-49e3-a288-c0b69100ca83
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: '1'
+                    value:
+                      type: text
+                      value: '1'
+                - _id: d62707d6-f9e9-4b44-8ff0-537a1097841e
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: '2'
+                    value:
+                      type: text
+                      value: '2'
+                - _id: f63585fa-2454-4583-952a-c3ea759db8f3
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: '3'
+                    value:
+                      type: text
+                      value: '3'
+                - _id: d3658452-4518-4a2f-9cba-9f7aa5ab453a
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: '4'
+                    value:
+                      type: text
+                      value: '4'
+                - _id: 66bbfb57-4748-4234-a3f3-26db60120875
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: '5'
+                    value:
+                      type: text
+                      value: '5'
+            fieldId:
+              type: text
+              value: rating
+            fieldKey:
+              type: text
+              value: rating
+    pageSizes:
+      type: $block
+      value:
+        - _id: 8dbd1da1-4b00-4fe3-8670-7d402adf8800
+          type: pageSize
+          fields:
+            size:
+              type: number
+              value: '6'
+        - _id: 0843f4b1-24fb-46db-9401-83c03f72d85e
+          type: pageSize
+          fields:
+            size:
+              type: number
+              value: '8'
+        - _id: 54840be6-ad8c-4c8d-a9e9-d2817796ec78
+          type: pageSize
+          fields:
+            size:
+              type: number
+              value: '10'
+    baseFilters:
+      type: $block
+      value:
+        - _id: 69908ba5-e709-4e0a-9cec-6deb7de6ae5b
+          type: filterBy
+          fields:
+            type:
+              type: select
+              value: select
+            title:
+              type: text
+              locales:
+                en-us: Product
+            values:
+              type: $block
+              value:
+                - _id: 44a1184f-f731-4176-84dd-89282ff8cdc6
+                  type: filterByItem
+                  fields:
+                    title:
+                      type: text
+                      locales:
+                        en-us: Product
+                    value:
+                      type: text
+                      value: product
+            fieldId:
+              type: text
+              value: contentType
+            fieldKey:
+              type: text
+              value: contentType
+    collections:
+      type: multi-select
+      value:
+        - entries
+    contentType:
+      type: select
+      value: product
+  slots:
+    search-top:
+      - _id: 9e2cc4fe-eac2-4019-8718-ec07f77aad28
+        type: searchBox
+        _overridability:
+          hideLockedParameters: true
+      - _id: a360c1ae-e539-4ecd-bfeb-ce7f235520fe
+        type: searchSorting
+        _overridability:
+          hideLockedParameters: true
+    search-main:
+      - _id: c5a546d5-db88-48f0-82b0-da003d417e11
+        type: searchFilters
+        _overridability:
+          hideLockedParameters: true
+      - _id: 07723461-9e34-43ee-ab77-ab91d6d576f0
+        type: searchList
+        _overridability:
+          hideLockedParameters: true
+    search-bottom:
+      - _id: 0c8baa9c-6493-4d67-ad16-7211efbe42eb
+        type: searchPageSize
+        _overridability:
+          hideLockedParameters: true
+      - _id: c4c119f4-5b14-4927-a1fc-06af1f68d363
+        type: searchPagination
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    All Product Brands:
+      type: brandList
+      variables:
+        locale: ${locale}
+        search: ''
+        filters: '{"type[eq]":"brand"}'
+        uiFilters: '[{"field":"type","operator":"eq","value":"brand"}]'
+        contentTypes: brand
+      isPatternParameter: false
+      ignorePatternParameterDefault: false
+    All Product Categories:
+      type: productCategoryList
+      variables:
+        locale: ${locale}
+        search: ''
+        filters: '{"type[eq]":"productCategory"}'
+        uiFilters: '[{"field":"type","operator":"eq","value":"productCategory"}]'
+        contentTypes: productCategory
+      isPatternParameter: false
+      ignorePatternParameterDefault: false
+  _overridability:
+    parameters:
+      boostEnrichments: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-us
+created: '2026-03-26T04:23:04.685451+00:00'
+modified: '2026-03-26T05:18:52.598644+00:00'
+pattern: true
+categoryId: adaebea8-ba58-494b-9c3b-9f82906d9415

@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: image-text
+parameters:
+  - id: 66c64fb5-2d29-4bc8-8b98-02c37b519cee
+    name: Content
+    type: group
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - eyebrowTitleText
+        - titleText
+        - descriptionText
+        - image
+  - id: eyebrowTitleText
+    name: Eyebrow Text
+    type: text
+    guidance: >-
+      Use the Eyebrow Text parameter to specify a short heading or label that
+      appears above the main title, providing context or categorization for the
+      content.
+    typeConfig: null
+    localizable: true
+  - id: titleText
+    name: Title
+    type: text
+    guidance: >-
+      Use the Title parameter to specify the main heading or name of the hero,
+      clearly describing its purpose or content.
+    typeConfig: null
+    localizable: true
+  - id: descriptionText
+    name: Description
+    type: text
+    guidance: >-
+      Use the Description parameter to specify supplementary text that provides
+      additional details or context about the hero's content or purpose.
+    typeConfig: null
+    localizable: true
+  - id: image
+    name: Image
+    type: asset
+    guidance: Use the Image parameter to add a background image to the hero section.
+    typeConfig:
+      max: 1
+      min: 0
+      allowedTypes:
+        - image
+    allowConditionalValues: true
+categoryId: f22b05f0-c4bf-4158-8ebc-4856e4d453af
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/coffee-shop-template/preview-images/hero-fixed.jpg
+useTeamPermissions: true
+slots: []
+titleParameter: titleText
+canBeComposition: false
+created: '2026-03-10T23:28:51.847754+00:00'
+updated: '2026-03-26T01:02:28.016817+00:00'

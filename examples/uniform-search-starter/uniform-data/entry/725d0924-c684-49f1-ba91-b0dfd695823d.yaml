@@ -1,0 +1,194 @@
+created: '2026-03-10T23:34:44.179932+00:00'
+modified: '2026-03-10T23:34:44.179932+00:00'
+pattern: false
+entry:
+  _id: 725d0924-c684-49f1-ba91-b0dfd695823d
+  _name: JavaDrip
+  _slug: javadrip
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/sLGmOo4iRH6DYaxtN_s1kQ-javadrip.png
+  type: brand
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: JavaDrip
+        de-at: JavaDrip
+        de-ch: JavaDrip
+        de-de: JavaDrip
+        en-au: JavaDrip
+        en-ca: JavaDrip
+        en-gb: JavaDrip
+        en-nl: JavaDrip
+        en-nz: JavaDrip
+        en-us: JavaDrip
+        fr-ca: JavaDrip
+        fr-ch: JavaDrip
+        fr-fr: JavaDrip
+        ja-jp: ジャバドリップ
+        nl-nl: JavaDrip
+        sv-se: JavaDrip
+        ar-uae: جافا دريب
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          JavaDrip redefinerer kaffeoplevelsen med sine innovative
+          bryggeløsninger og premium kaffeprodukter. Vores mission er at
+          kombinere moderne teknologi med en passion for udsøgt kaffe, og
+          tilbyde både bekvemmelighed og kvalitet i hver kop. Uanset om du
+          brygger derhjemme eller i et professionelt miljø, sikrer JavaDrip en
+          perfekt dryp hver gang, og leverer rige smagsnuancer og en glat
+          finish, som kaffelskere begærer.
+        de-at: >-
+          JavaDrip definiert das Kaffeeerlebnis neu mit seinen innovativen
+          Brühlösungen und Premium-Kaffeeprodukten. Unsere Mission ist es,
+          moderne Technologie mit einer Leidenschaft für außergewöhnlichen
+          Kaffee zu verbinden und dabei sowohl Bequemlichkeit als auch Qualität
+          in jeder Tasse zu bieten. Egal, ob Sie zu Hause oder in einem
+          professionellen Umfeld brühen, JavaDrip sorgt jedes Mal für einen
+          perfekten Tropfen und liefert reichhaltige Aromen und ein sanftes
+          Finish, das Kaffeeliebhaber begehrt.
+        de-ch: >-
+          JavaDrip definiert das Kaffeeerlebnis neu mit seinen innovativen
+          Brühlösungen und Premium-Kaffeeprodukten. Unsere Mission ist es,
+          moderne Technologie mit einer Leidenschaft für außergewöhnlichen
+          Kaffee zu verbinden und dabei sowohl Komfort als auch Qualität in
+          jeder Tasse zu bieten. Egal, ob Sie zu Hause oder in einem
+          professionellen Umfeld brühen, JavaDrip sorgt jedes Mal für einen
+          perfekten Tropfen und liefert reichhaltige Aromen und ein sanftes
+          Finish, das Kaffeeliebhaber schätzen.
+        de-de: >-
+          JavaDrip definiert das Kaffeeerlebnis neu mit seinen innovativen
+          Brühlösungen und Premium-Kaffeeprodukten. Unsere Mission ist es,
+          moderne Technologie mit einer Leidenschaft für außergewöhnlichen
+          Kaffee zu verbinden und dabei sowohl Komfort als auch Qualität in
+          jeder Tasse zu bieten. Egal, ob Sie zu Hause oder in einem
+          professionellen Umfeld brühen, JavaDrip sorgt jedes Mal für einen
+          perfekten Tropfen und liefert reichhaltige Aromen und ein sanftes
+          Finish, das Kaffeeliebhaber schätzen.
+        en-au: >-
+          JavaDrip redéfinit l'expérience du café avec ses solutions de brassage
+          innovantes et ses produits de café haut de gamme. Notre mission est de
+          combiner la technologie moderne avec une passion pour le café
+          exceptionnel, offrant à la fois commodité et qualité dans chaque
+          tasse. Que vous prépariez votre café à la maison ou dans un cadre
+          professionnel, JavaDrip garantit un goutte-à-goutte parfait à chaque
+          fois, délivrant des saveurs riches et une finition douce que les
+          amateurs de café recherchent.
+        en-ca: >-
+          JavaDrip is redefining the coffee experience with its innovative
+          brewing solutions and premium coffee products. Our mission is to
+          combine modern technology with a passion for exceptional coffee,
+          providing both convenience and quality in every cup. Whether you’re
+          brewing at home or in a professional setting, JavaDrip ensures a
+          perfect drip every time, delivering rich flavours and a smooth finish
+          that coffee lovers crave.
+        en-gb: >-
+          JavaDrip is redefining the coffee experience with its innovative
+          brewing solutions and premium coffee products. Our mission is to
+          combine modern technology with a passion for exceptional coffee,
+          providing both convenience and quality in every cup. Whether you’re
+          brewing at home or in a professional setting, JavaDrip ensures a
+          perfect drip every time, delivering rich flavours and a smooth finish
+          that coffee lovers crave.
+        en-nl: >-
+          JavaDrip herdefinieert de koffie-ervaring met zijn innovatieve
+          zetoplossingen en premium koffieproducten. Onze missie is om moderne
+          technologie te combineren met een passie voor uitzonderlijke koffie,
+          waarbij we zowel gemak als kwaliteit in elke kop bieden. Of je nu
+          thuis of in een professionele omgeving zet, JavaDrip zorgt elke keer
+          voor een perfecte druppel, met rijke smaken en een soepele afdronk
+          waar koffieliefhebbers naar verlangen.
+        en-nz: >-
+          JavaDrip definiert das Kaffeeerlebnis neu mit seinen innovativen
+          Brühlösungen und Premium-Kaffeeprodukten. Unsere Mission ist es,
+          moderne Technologie mit einer Leidenschaft für außergewöhnlichen
+          Kaffee zu verbinden und in jeder Tasse sowohl Komfort als auch
+          Qualität zu bieten. Egal, ob Sie zu Hause oder in einem
+          professionellen Umfeld brühen, JavaDrip sorgt jedes Mal für einen
+          perfekten Tropfen und liefert reichhaltige Aromen und ein sanftes
+          Finish, nach dem sich Kaffeeliebhaber sehnen.
+        en-us: >-
+          JavaDrip is redefining the coffee experience with its innovative
+          brewing solutions and premium coffee products. Our mission is to
+          combine modern technology with a passion for exceptional coffee,
+          providing both convenience and quality in every cup. Whether you’re
+          brewing at home or in a professional setting, JavaDrip ensures a
+          perfect drip every time, delivering rich flavors and a smooth finish
+          that coffee lovers crave.
+        fr-ca: >-
+          JavaDrip redéfinit l'expérience du café avec ses solutions de brassage
+          innovantes et ses produits de café haut de gamme. Notre mission est de
+          combiner la technologie moderne avec une passion pour le café
+          exceptionnel, offrant à la fois commodité et qualité dans chaque
+          tasse. Que vous prépariez du café à la maison ou dans un cadre
+          professionnel, JavaDrip garantit un goutte-à-goutte parfait à chaque
+          fois, délivrant des saveurs riches et une finition douce que les
+          amateurs de café recherchent.
+        fr-ch: >-
+          JavaDrip redéfinit l'expérience du café avec ses solutions de brassage
+          innovantes et ses produits de café haut de gamme. Notre mission est de
+          combiner la technologie moderne avec une passion pour le café
+          exceptionnel, offrant à la fois commodité et qualité dans chaque
+          tasse. Que vous prépariez votre café à la maison ou dans un cadre
+          professionnel, JavaDrip garantit un goutte-à-goutte parfait à chaque
+          fois, délivrant des saveurs riches et une finition douce que les
+          amateurs de café recherchent.
+        fr-fr: >-
+          JavaDrip redéfinit l'expérience du café avec ses solutions de brassage
+          innovantes et ses produits de café haut de gamme. Notre mission est de
+          combiner la technologie moderne avec une passion pour le café
+          exceptionnel, offrant à la fois commodité et qualité dans chaque
+          tasse. Que vous prépariez votre café à la maison ou dans un cadre
+          professionnel, JavaDrip garantit un goutte-à-goutte parfait à chaque
+          fois, délivrant des saveurs riches et une finition douce que les
+          amateurs de café recherchent.
+        ja-jp: >-
+          JavaDripは、その革新的な抽出ソリューションとプレミアムコーヒー製品でコーヒー体験を再定義しています。私たちの使命は、現代の技術と卓越したコーヒーへの情熱を組み合わせ、便利さと品質をすべてのカップに提供することです。家庭でもプロの環境でも、JavaDripは毎回完璧なドリップを保証し、コーヒー愛好家が求める豊かな風味と滑らかな仕上がりを届けます。
+        nl-nl: >-
+          JavaDrip herdefinieert de koffie-ervaring met zijn innovatieve
+          brouwoplossingen en premium koffieproducten. Onze missie is om moderne
+          technologie te combineren met een passie voor uitzonderlijke koffie,
+          waarbij we zowel gemak als kwaliteit in elke kop bieden. Of je nu
+          thuis of in een professionele omgeving brouwt, JavaDrip zorgt elke
+          keer voor een perfecte druppel, met rijke smaken en een soepele
+          afdronk waar koffieliefhebbers naar verlangen.
+        sv-se: >-
+          JavaDrip omdefinierar kaffeupplevelsen med sina innovativa
+          brygglösningar och premiumkaffeprodukter. Vårt uppdrag är att
+          kombinera modern teknik med en passion för exceptionellt kaffe, och
+          erbjuda både bekvämlighet och kvalitet i varje kopp. Oavsett om du
+          brygger hemma eller i en professionell miljö, säkerställer JavaDrip
+          ett perfekt dropp varje gång, och levererar rika smaker och en mjuk
+          avslutning som kaffeälskare längtar efter.
+        ar-uae: >-
+          تقوم JavaDrip بإعادة تعريف تجربة القهوة من خلال حلول التخمير المبتكرة
+          ومنتجات القهوة الفاخرة. مهمتنا هي دمج التكنولوجيا الحديثة مع شغفنا
+          بالقهوة الاستثنائية، لتوفير الراحة والجودة في كل فنجان. سواء كنت تقوم
+          بالتخمير في المنزل أو في بيئة احترافية، تضمن JavaDrip تقطيرًا مثاليًا
+          في كل مرة، مما يقدم نكهات غنية ونهاية سلسة يعشقها محبو القهوة.
+    displayPriority:
+      type: checkbox
+      value: true
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

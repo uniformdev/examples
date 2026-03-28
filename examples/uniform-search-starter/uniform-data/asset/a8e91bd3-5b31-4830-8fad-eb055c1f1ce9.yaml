@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: a8e91bd3-5b31-4830-8fad-eb055c1f1ce9
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: royale-boulder-camping-french-press-2.png
+    file:
+      type: file
+      value: ac5353fc-8c75-4e61-a051-57fd98b436f5
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/NJFM5SakRIyslx1iizQUvw-royale-boulder-camping-french-press-2.png
+      type: text
+    size:
+      value: 250630
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:48.847955+00:00'
+modified: '2026-03-10T23:27:48.847955+00:00'

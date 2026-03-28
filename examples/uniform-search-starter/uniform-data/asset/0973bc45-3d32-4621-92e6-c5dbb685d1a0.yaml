@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 0973bc45-3d32-4621-92e6-c5dbb685d1a0
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: a-propper-cuppa.svg
+    file:
+      type: file
+      value: ac42001a-9c10-45dc-b21a-0257141fa9e4
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/B_r4VtuDQZ-Pa0sMuXBkcg-a-propper-cuppa.svg
+      type: text
+    size:
+      value: 3682
+      type: number
+    width:
+      value: 82
+      type: number
+    height:
+      value: 88
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:27.21416+00:00'
+modified: '2026-03-10T23:26:27.21416+00:00'

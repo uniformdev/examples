@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7f3fa336-640d-46c9-9287-d44de3c3cc13
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Joanne_Setting.png
+    file:
+      type: file
+      value: b7835406-cb20-40fa-b3f2-1b61ee089f3b
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/Axp8Jg0KSMeFJ__0rV1RNg-Joanne_Setting.png
+      type: text
+    size:
+      value: 1603409
+      type: number
+    width:
+      value: 1167
+      type: number
+    height:
+      value: 775
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:24.992667+00:00'
+modified: '2026-03-10T23:27:24.992667+00:00'

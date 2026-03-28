@@ -1,0 +1,15 @@
+id: author
+displayName: Author
+path: /single
+custom:
+  allowedContentTypes:
+    - author
+method: GET
+purgeKey: ad5c0ba8-be0c-4e03-8c50-023b88d8edea
+archetype: singleEntry
+variables:
+  entryId:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

@@ -1,0 +1,264 @@
+created: '2026-03-10T23:32:28.455014+00:00'
+modified: '2026-03-10T23:32:28.455014+00:00'
+pattern: false
+entry:
+  _id: ae8e04c4-f20b-46f5-9eb4-7d8f82bbee38
+  _name: Beans
+  _slug: beans
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/hT8WTebfR12WMakbRwx5tg-beans.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Bønner
+        de-at: Bohnen
+        de-ch: Bohnen
+        de-de: Bohnen
+        en-au: Haricots
+        en-ca: Beans
+        en-gb: Beans
+        en-nl: Bonen
+        en-nz: Bohnen
+        en-us: Beans
+        fr-ca: Haricots
+        fr-ch: Haricots
+        fr-fr: Haricots
+        ja-jp: 豆類
+        nl-nl: Bonen
+        sv-se: Bönor
+        ar-uae: فاصوليا
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Fordyb dig i verdenen af førsteklasses kaffebønner, omhyggeligt
+          udvalgt og hentet fra de fineste kaffedyrkningsområder rundt om i
+          verden. Vores samling af bønner tilbyder et bredt udvalg af
+          smagsnuancer og aromaer, fra de lyse og frugtige noter af afrikanske
+          bønner til de rige og chokoladeagtige undertoner af sydamerikanske
+          sorter. Uanset om du foretrækker enkeltoprindelsesbønner for deres
+          unikke egenskaber eller ekspertblandede bønner for en afbalanceret
+          kop, imødekommer vores udvalg enhver kaffeentusiasts smagsløg. Oplev
+          den friskhed og kvalitet, som kun hele bønner kan give, og løft din
+          kaffebrygningsrutine til et nyt niveau af fremragende kvalitet.
+          Udforsk vores bønnekategori og find din perfekte ristning i dag.
+        de-at: >-
+          Tauchen Sie ein in die Welt der Premium-Kaffeebohnen, sorgfältig
+          ausgewählt und aus den besten Kaffeeanbaugebieten rund um den Globus
+          bezogen. Unsere Sammlung von Bohnen bietet eine vielfältige Palette an
+          Geschmacksrichtungen und Aromen, von den hellen und fruchtigen Noten
+          afrikanischer Bohnen bis zu den reichen und schokoladigen Untertönen
+          südamerikanischer Sorten. Ob Sie Bohnen mit einer einzigen Herkunft
+          für ihre einzigartigen Eigenschaften oder fachmännisch
+          zusammengestellte Mischungen für eine ausgewogene Tasse bevorzugen,
+          unsere Auswahl spricht den Gaumen jedes Kaffeeliebhabers an. Erleben
+          Sie die Frische und Qualität, die nur ganze Bohnen bieten können, und
+          heben Sie Ihre Kaffeezubereitung auf ein neues Niveau der Exzellenz.
+          Entdecken Sie unsere Bohnenkategorie und finden Sie noch heute Ihren
+          perfekten Röstgrad.
+        de-ch: >-
+          Tauchen Sie ein in die Welt der Premium-Kaffeebohnen, die sorgfältig
+          ausgewählt und aus den besten Kaffeeanbaugebieten der Welt bezogen
+          werden. Unsere Sammlung von Bohnen bietet eine vielfältige Palette von
+          Geschmacksrichtungen und Aromen, von den hellen und fruchtigen Noten
+          afrikanischer Bohnen bis zu den reichen und schokoladigen Untertönen
+          südamerikanischer Sorten. Ob Sie Bohnen aus einem Anbaugebiet wegen
+          ihrer einzigartigen Eigenschaften bevorzugen oder fachmännisch
+          zusammengestellte Mischungen für eine ausgewogene Tasse, unsere
+          Auswahl spricht den Gaumen jedes Kaffeeliebhabers an. Erleben Sie die
+          Frische und Qualität, die nur ganze Bohnen bieten können, und heben
+          Sie Ihre Kaffeezubereitung auf ein neues Niveau der Exzellenz.
+          Entdecken Sie unsere Bohnenkategorie und finden Sie heute Ihren
+          perfekten Röstgrad.
+        de-de: >-
+          Tauchen Sie ein in die Welt der Premium-Kaffeebohnen, die sorgfältig
+          ausgewählt und aus den besten Kaffeeanbaugebieten der Welt bezogen
+          werden. Unsere Sammlung von Bohnen bietet eine vielfältige Palette von
+          Geschmacksrichtungen und Aromen, von den hellen und fruchtigen Noten
+          afrikanischer Bohnen bis zu den reichen und schokoladigen Untertönen
+          südamerikanischer Sorten. Ob Sie Bohnen aus einem Anbaugebiet wegen
+          ihrer einzigartigen Eigenschaften bevorzugen oder fachmännisch
+          zusammengestellte Mischungen für eine ausgewogene Tasse, unsere
+          Auswahl spricht den Gaumen jedes Kaffeeliebhabers an. Erleben Sie die
+          Frische und Qualität, die nur ganze Bohnen bieten können, und heben
+          Sie Ihre Kaffeezubereitung auf ein neues Niveau der Exzellenz.
+          Entdecken Sie unsere Bohnenkategorie und finden Sie heute Ihren
+          perfekten Röstgrad.
+        en-au: >-
+          Plongez-vous dans le monde des grains de café premium, soigneusement
+          sélectionnés et provenant des meilleures régions productrices de café
+          à travers le globe. Notre collection de grains offre une gamme
+          diversifiée de saveurs et d'arômes, allant des notes vives et fruitées
+          des grains africains aux nuances riches et chocolatées des variétés
+          sud-américaines. Que vous préfériez les grains d'origine unique pour
+          leurs caractéristiques uniques ou des mélanges habilement élaborés
+          pour une tasse équilibrée, notre sélection répond aux goûts de chaque
+          amateur de café. Découvrez la fraîcheur et la qualité que seuls les
+          grains entiers peuvent offrir, et élevez votre routine de préparation
+          de café à un nouveau niveau d'excellence. Explorez notre catégorie de
+          grains et trouvez votre torréfaction parfaite dès aujourd'hui.
+        en-ca: >-
+          Immerse yourself in the world of premium coffee beans, carefully
+          selected and sourced from the finest coffee-growing regions around the
+          globe. Our collection of beans offers a diverse range of flavours and
+          aromas, from the bright and fruity notes of African beans to the rich
+          and chocolatey undertones of South American varieties. Whether you
+          prefer single-origin beans for their unique characteristics or
+          expertly crafted blends for a balanced cup, our selection caters to
+          every coffee enthusiast’s palate. Experience the freshness and quality
+          that only whole beans can provide, and elevate your coffee brewing
+          routine to a new level of excellence. Explore our beans category and
+          find your perfect roast today.
+        en-gb: >-
+          Immerse yourself in the world of premium coffee beans, carefully
+          selected and sourced from the finest coffee-growing regions around the
+          globe. Our collection of beans offers a diverse range of flavours and
+          aromas, from the bright and fruity notes of African beans to the rich
+          and chocolatey undertones of South American varieties. Whether you
+          prefer single-origin beans for their unique characteristics or
+          expertly crafted blends for a balanced cup, our selection caters to
+          every coffee enthusiast’s palate. Experience the freshness and quality
+          that only whole beans can provide, and elevate your coffee brewing
+          routine to a new level of excellence. Explore our beans category and
+          find your perfect roast today.
+        en-nl: >-
+          Dompel jezelf onder in de wereld van premium koffiebonen, zorgvuldig
+          geselecteerd en afkomstig uit de beste koffieproducerende regio's over
+          de hele wereld. Onze collectie bonen biedt een diverse reeks smaken en
+          aroma's, van de heldere en fruitige tonen van Afrikaanse bonen tot de
+          rijke en chocoladeachtige ondertonen van Zuid-Amerikaanse variëteiten.
+          Of je nu de voorkeur geeft aan single-origin bonen vanwege hun unieke
+          kenmerken of aan vakkundig samengestelde melanges voor een
+          uitgebalanceerde kop, onze selectie voldoet aan de smaak van elke
+          koffieliefhebber. Ervaar de versheid en kwaliteit die alleen hele
+          bonen kunnen bieden en til je koffiezetroutine naar een nieuw niveau
+          van uitmuntendheid. Ontdek onze bonencategorie en vind vandaag nog
+          jouw perfecte branding.
+        en-nz: >-
+          Tauchen Sie ein in die Welt der Premium-Kaffeebohnen, die sorgfältig
+          ausgewählt und aus den besten Kaffeeanbaugebieten der Welt bezogen
+          werden. Unsere Sammlung von Bohnen bietet eine vielfältige Palette von
+          Geschmacksrichtungen und Aromen, von den hellen und fruchtigen Noten
+          afrikanischer Bohnen bis zu den reichen und schokoladigen Untertönen
+          südamerikanischer Sorten. Ob Sie Bohnen mit einem Ursprung für ihre
+          einzigartigen Eigenschaften bevorzugen oder fachmännisch
+          zusammengestellte Mischungen für eine ausgewogene Tasse, unsere
+          Auswahl bedient den Gaumen jedes Kaffee-Enthusiasten. Erleben Sie die
+          Frische und Qualität, die nur ganze Bohnen bieten können, und heben
+          Sie Ihre Kaffeebrüh-Routine auf ein neues Niveau der Exzellenz.
+          Entdecken Sie unsere Bohnenkategorie und finden Sie noch heute Ihren
+          perfekten Röstgrad.
+        en-us: >-
+          Immerse yourself in the world of premium coffee beans, carefully
+          selected and sourced from the finest coffee-growing regions around the
+          globe. Our collection of beans offers a diverse range of flavors and
+          aromas, from the bright and fruity notes of African beans to the rich
+          and chocolatey undertones of South American varieties. Whether you
+          prefer single-origin beans for their unique characteristics or
+          expertly crafted blends for a balanced cup, our selection caters to
+          every coffee enthusiast’s palate. Experience the freshness and quality
+          that only whole beans can provide, and elevate your coffee brewing
+          routine to a new level of excellence. Explore our beans category and
+          find your perfect roast today
+        fr-ca: >-
+          Plongez dans le monde des grains de café premium, soigneusement
+          sélectionnés et provenant des meilleures régions productrices de café
+          à travers le globe. Notre collection de grains offre une gamme
+          diversifiée de saveurs et d'arômes, allant des notes vives et fruitées
+          des grains africains aux nuances riches et chocolatées des variétés
+          sud-américaines. Que vous préfériez les grains d'origine unique pour
+          leurs caractéristiques uniques ou les mélanges habilement conçus pour
+          une tasse équilibrée, notre sélection répond aux goûts de chaque
+          amateur de café. Découvrez la fraîcheur et la qualité que seuls les
+          grains entiers peuvent offrir, et élevez votre routine de préparation
+          de café à un nouveau niveau d'excellence. Explorez notre catégorie de
+          grains et trouvez votre torréfaction parfaite dès aujourd'hui.
+        fr-ch: >-
+          Plongez-vous dans l'univers des grains de café premium, soigneusement
+          sélectionnés et provenant des meilleures régions productrices de café
+          à travers le monde. Notre collection de grains offre une gamme
+          diversifiée de saveurs et d'arômes, des notes vives et fruitées des
+          grains africains aux nuances riches et chocolatées des variétés
+          sud-américaines. Que vous préfériez les grains d'origine unique pour
+          leurs caractéristiques uniques ou les mélanges habilement élaborés
+          pour une tasse équilibrée, notre sélection répond à tous les palais
+          des amateurs de café. Découvrez la fraîcheur et la qualité que seuls
+          les grains entiers peuvent offrir, et élevez votre routine de
+          préparation de café à un nouveau niveau d'excellence. Explorez notre
+          catégorie de grains et trouvez votre torréfaction parfaite dès
+          aujourd'hui.
+        fr-fr: >-
+          Plongez-vous dans l'univers des grains de café premium, soigneusement
+          sélectionnés et provenant des meilleures régions productrices de café
+          à travers le monde. Notre collection de grains offre une gamme
+          diversifiée de saveurs et d'arômes, des notes vives et fruitées des
+          grains africains aux nuances riches et chocolatées des variétés
+          sud-américaines. Que vous préfériez les grains d'origine unique pour
+          leurs caractéristiques uniques ou les mélanges habilement élaborés
+          pour une tasse équilibrée, notre sélection répond à tous les palais
+          des amateurs de café. Découvrez la fraîcheur et la qualité que seuls
+          les grains entiers peuvent offrir, et élevez votre routine de
+          préparation de café à un nouveau niveau d'excellence. Explorez notre
+          catégorie de grains et trouvez votre torréfaction parfaite dès
+          aujourd'hui.
+        ja-jp: >-
+          世界中の最高のコーヒー生産地域から厳選されたプレミアムコーヒー豆の世界に浸ってください。私たちのコレクションには、アフリカの豆の明るくフルーティーな香りから、南米の品種の豊かでチョコレートのような香りまで、多様な風味と香りが揃っています。ユニークな特徴を持つシングルオリジン豆や、バランスの取れた一杯を提供する熟練のブレンドをお好みであれば、私たちのセレクションはすべてのコーヒー愛好家の味覚に応えます。ホールビーンズだけが提供できる新鮮さと品質を体験し、コーヒーの淹れ方を新たなレベルの卓越性へと引き上げましょう。私たちの豆のカテゴリーを探索し、あなたにぴったりのローストを見つけてください。
+        nl-nl: >-
+          Dompel jezelf onder in de wereld van premium koffiebonen, zorgvuldig
+          geselecteerd en afkomstig uit de beste koffieproducerende regio's over
+          de hele wereld. Onze collectie bonen biedt een divers scala aan smaken
+          en aroma's, van de heldere en fruitige tonen van Afrikaanse bonen tot
+          de rijke en chocoladerijke ondertonen van Zuid-Amerikaanse
+          variëteiten. Of je nu de voorkeur geeft aan single-origin bonen
+          vanwege hun unieke eigenschappen of aan vakkundig samengestelde
+          melanges voor een uitgebalanceerde kop, onze selectie voldoet aan de
+          smaak van elke koffieliefhebber. Ervaar de versheid en kwaliteit die
+          alleen hele bonen kunnen bieden, en til je koffiezetroutine naar een
+          nieuw niveau van perfectie. Verken onze bonencategorie en vind vandaag
+          nog jouw perfecte branding.
+        sv-se: >-
+          Fördjupa dig i världen av premiumkaffebönor, noggrant utvalda och
+          hämtade från de finaste kaffedistrikten runt om i världen. Vår samling
+          av bönor erbjuder ett brett utbud av smaker och aromer, från de ljusa
+          och fruktiga tonerna av afrikanska bönor till de rika och chokladiga
+          undertonerna av sydamerikanska sorter. Oavsett om du föredrar enskilda
+          ursprungsbönor för deras unika egenskaper eller skickligt sammansatta
+          blandningar för en balanserad kopp, tillgodoser vårt urval varje
+          kaffeentusiasts smaklökar. Upplev den fräschör och kvalitet som endast
+          hela bönor kan erbjuda, och höj din kaffebryggningsrutin till en ny
+          nivå av excellens. Utforska vår bönkategori och hitta din perfekta
+          rostning idag.
+        ar-uae: >-
+          اغمر نفسك في عالم حبوب القهوة الفاخرة، المختارة بعناية والمستوردة من
+          أفضل مناطق زراعة القهوة حول العالم. تقدم مجموعتنا من الحبوب مجموعة
+          متنوعة من النكهات والروائح، بدءًا من النوتات الزاهية والفواكه لحبوب
+          القهوة الأفريقية إلى النغمات الغنية والشوكولاتية لأنواع أمريكا
+          الجنوبية. سواء كنت تفضل الحبوب ذات المنشأ الواحد لخصائصها الفريدة أو
+          الخلطات المصنوعة ببراعة للحصول على كوب متوازن، فإن مجموعتنا تلبي ذوق
+          كل عشاق القهوة. اختبر النضارة والجودة التي لا توفرها إلا الحبوب
+          الكاملة، وارفع مستوى روتين تحضير القهوة الخاص بك إلى مستوى جديد من
+          التميز. استكشف فئة حبوب القهوة لدينا واعثر على التحميص المثالي لك
+          اليوم.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

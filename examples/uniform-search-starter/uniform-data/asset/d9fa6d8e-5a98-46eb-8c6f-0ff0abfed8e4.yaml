@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: d9fa6d8e-5a98-46eb-8c6f-0ff0abfed8e4
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: coffee-world.jpg
+    file:
+      type: file
+      value: 279cc41f-e283-4693-bdd7-8de016a4bf2f
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/8xm13hUqQDSbCTdJO4-SOQ-coffee-world.jpg
+      type: text
+    size:
+      value: 1997200
+      type: number
+    width:
+      value: 5332
+      type: number
+    height:
+      value: 2999
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:15.083841+00:00'
+modified: '2026-03-10T23:28:15.083841+00:00'

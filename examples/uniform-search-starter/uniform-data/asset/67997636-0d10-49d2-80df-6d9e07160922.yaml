@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 67997636-0d10-49d2-80df-6d9e07160922
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: —Pngtree—note-purple-musical-notation-smudges_1589090.png
+    file:
+      type: file
+      value: 6b02f3c4-2651-41b4-8f8c-6a39f3d08d59
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/-kLaC2-6SQuX523gnQi2fA-percentE2percent80percent94PngtreepercentE2percent80percent94note-purple-musical-notation-smudges_1589090.png
+      type: text
+    size:
+      value: 5839209
+      type: number
+    width:
+      value: 4961
+      type: number
+    height:
+      value: 3543
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:38.683862+00:00'
+modified: '2026-03-10T23:28:38.683862+00:00'

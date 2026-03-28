@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: c3a61f6c-91c9-46fd-ba5b-6c177a6e36e2
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: MA_Pump.png
+    file:
+      type: file
+      value: 43b6959a-3ec5-4973-a729-75661822a0d4
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/aKh5e4t1QoqU8QsjWp9O1A-MA_Pump.png
+      type: text
+    size:
+      value: 1420201
+      type: number
+    width:
+      value: 1166
+      type: number
+    height:
+      value: 774
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:03.137743+00:00'
+modified: '2026-03-10T23:28:03.137743+00:00'

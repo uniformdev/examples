@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 331d82fe-c3dc-41bd-b558-7b19e4ee6bfe
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: contact-us-og-image.png
+    file:
+      type: file
+      value: 5336c8e0-6336-4cd2-b92b-3ee4b4a215b4
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/FKehikMrRtanRtZhlGLe7A-contact-us-og-image.png
+      type: text
+    size:
+      value: 1576765
+      type: number
+    width:
+      value: 1808
+      type: number
+    height:
+      value: 908
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:41.945209+00:00'
+modified: '2026-03-10T23:26:41.945209+00:00'

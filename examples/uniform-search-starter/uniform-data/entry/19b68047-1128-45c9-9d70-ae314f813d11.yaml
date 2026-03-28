@@ -1,0 +1,52 @@
+created: '2026-03-10T23:33:22.646416+00:00'
+modified: '2026-03-10T23:33:22.646416+00:00'
+pattern: false
+entry:
+  _id: 19b68047-1128-45c9-9d70-ae314f813d11
+  _name: Elena Harris
+  _slug: elena-harris
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/RTTViASjR1idTvKo3fwF9A-author-logo-placeholder.png
+  type: author
+  fields:
+    name:
+      type: text
+      locales:
+        da-dk: Elena Harris
+        de-at: Elena Harris
+        de-ch: Elena Harris
+        de-de: Elena Harris
+        en-au: Elena Harris
+        en-ca: Elena Harris
+        en-gb: Elena Harris
+        en-nl: Elena Harris
+        en-nz: Elena Harris
+        en-us: Elena Harris
+        fr-ca: Elena Harris
+        fr-ch: Elena Harris
+        fr-fr: Elena Harris
+        ja-jp: エレナ・ハリス
+        nl-nl: Elena Harris
+        sv-se: Elena Harris
+        ar-uae: إلينا هاريس
+    thumbnail:
+      type: asset
+      value: []
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

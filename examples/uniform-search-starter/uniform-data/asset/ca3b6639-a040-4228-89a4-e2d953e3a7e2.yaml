@@ -1,0 +1,24 @@
+asset:
+  type: other
+  _id: ca3b6639-a040-4228-89a4-e2d953e3a7e2
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Royale_IQ_Espresso_Machine_User_Guide.pdf
+    file:
+      type: file
+      value: 2dc2fc28-9eee-4e9a-b121-2474c39afe07
+    mediaType:
+      value: application/pdf
+      type: text
+    url:
+      value: >-
+        https://files.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/JCM8vfjIRYyDAi-6uUbsAA-Royale_IQ_Espresso_Machine_User_Guide.pdf
+      type: text
+    size:
+      value: 3628
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:39.895436+00:00'
+modified: '2026-03-10T23:28:39.895436+00:00'

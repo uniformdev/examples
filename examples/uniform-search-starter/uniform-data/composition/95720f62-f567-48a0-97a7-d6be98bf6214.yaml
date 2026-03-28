@@ -1,0 +1,25 @@
+composition:
+  _name: Products
+  _id: 95720f62-f567-48a0-97a7-d6be98bf6214
+  _slug: products
+  type: searchDemoPage
+  slots:
+    pageContent:
+      - _id: 8d8ab6af-06a4-4cfc-9752-04daabb1efd7
+        type: searchEngine
+        _pattern: afef4fa3-394f-4228-81b9-3374b4616b3c
+  _overrides:
+    8d8ab6af-06a4-4cfc-9752-04daabb1efd7:
+      dataResources:
+        Document List Content:
+          type: documentList
+          variables:
+            locale: ${locale}
+            search: ''
+            filters: '{"type[eq]":"document"}'
+            contentTypes: document
+  _locales:
+    - en-us
+created: '2026-03-26T04:23:04.068796+00:00'
+modified: '2026-03-26T05:26:32.476585+00:00'
+pattern: false

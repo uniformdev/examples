@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchDemoPage
+name: Search Demo Page
+icon: infinity
+parameters:
+  - id: pageTitle
+    name: Page Title
+    type: text
+    typeConfig: null
+    localizable: true
+useTeamPermissions: true
+slots:
+  - id: pageContent
+    name: Page Content
+    allowedComponents:
+      - hero
+      - searchEngine
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: pageTitle
+canBeComposition: true
+created: '2026-03-25T23:29:27.086361+00:00'
+updated: '2026-03-25T23:29:59.373422+00:00'

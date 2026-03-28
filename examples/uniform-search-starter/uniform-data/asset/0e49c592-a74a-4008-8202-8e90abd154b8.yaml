@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 0e49c592-a74a-4008-8202-8e90abd154b8
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: kosmic-coffee-pour-over-glass-coffeemaker-1.png
+    file:
+      type: file
+      value: 30a34569-cf13-4068-8fa6-fff9fda70363
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/fIfHHb7mTCq8wdbwd9pnYg-kosmic-coffee-pour-over-glass-coffeemaker-1.png
+      type: text
+    size:
+      value: 172183
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:30.024452+00:00'
+modified: '2026-03-10T23:26:30.024452+00:00'

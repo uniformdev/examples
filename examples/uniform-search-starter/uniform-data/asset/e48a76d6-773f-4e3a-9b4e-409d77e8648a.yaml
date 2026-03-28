@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: e48a76d6-773f-4e3a-9b4e-409d77e8648a
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: coffee.png
+    file:
+      type: file
+      value: 3ff76bc4-89d0-4b69-8c22-9312b68cf66f
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/ERyPBWhHSd6iEobb2Fvq9w-coffee.png
+      type: text
+    size:
+      value: 1206370
+      type: number
+    width:
+      value: 1920
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:20.513482+00:00'
+modified: '2026-03-10T23:28:20.513482+00:00'

@@ -1,0 +1,11 @@
+asset:
+  type: other
+  _id: 0aafe2e9-468c-43e1-81f3-fda6c02388e7
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: man.png
+    custom: {}
+created: '2026-03-10T23:26:20.271328+00:00'
+modified: '2026-03-10T23:26:20.271328+00:00'

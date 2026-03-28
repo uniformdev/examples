@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7e2d6341-389a-4bc5-b32b-e1ff671c5747
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Summer-2025-Watching-a-race.png
+    file:
+      type: file
+      value: c9b8a5be-c46a-473c-9cc6-6df281ab9cd8
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/2XtFGAw1QaGgZyF53tpLsA-Summer-2025-Watching-a-race.png
+      type: text
+    size:
+      value: 2147107
+      type: number
+    width:
+      value: 1536
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:22.066523+00:00'
+modified: '2026-03-10T23:27:22.066523+00:00'

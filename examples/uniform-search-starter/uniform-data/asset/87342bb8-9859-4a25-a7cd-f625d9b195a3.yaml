@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 87342bb8-9859-4a25-a7cd-f625d9b195a3
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: espresso-machine-with-latte-and-cold-brew.jpeg
+    file:
+      type: file
+      value: ed9617ac-c434-423a-9f28-cc61a085319e
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/KpdMqPrnTiq9V5FJv_QrQA-espresso-machine-with-latte-and-cold-brew.jpeg
+      type: text
+    size:
+      value: 368912
+      type: number
+    width:
+      value: 3000
+      type: number
+    height:
+      value: 1999
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:24.444472+00:00'
+modified: '2026-03-10T23:27:24.444472+00:00'

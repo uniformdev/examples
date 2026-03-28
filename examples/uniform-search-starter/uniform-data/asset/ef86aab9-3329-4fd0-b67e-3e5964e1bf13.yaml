@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ef86aab9-3329-4fd0-b67e-3e5964e1bf13
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: whats-up-with-the-slow-drip.jpg
+    file:
+      type: file
+      value: c4906294-fe1a-4b94-a000-00bace128d4c
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/1MI-RO03RXmDj5k0FsRcAA-whats-up-with-the-slow-drip.jpg
+      type: text
+    size:
+      value: 1558105
+      type: number
+    width:
+      value: 4928
+      type: number
+    height:
+      value: 3264
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:29.261474+00:00'
+modified: '2026-03-10T23:28:29.261474+00:00'

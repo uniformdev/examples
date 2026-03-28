@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: a0b71c82-b18b-4def-8884-1ef489e4450f
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: arabica.png
+    file:
+      type: file
+      value: 32b7a527-491e-4836-a744-a356a89653dd
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/Lh2HMMcyT7iTa6HO3kPalg-arabica.png
+      type: text
+    size:
+      value: 270380
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:42.376077+00:00'
+modified: '2026-03-10T23:27:42.376077+00:00'

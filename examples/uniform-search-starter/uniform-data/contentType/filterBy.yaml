@@ -1,0 +1,54 @@
+id: filterBy
+name: Filter By
+created: '2026-03-10T23:29:05.158394+00:00'
+updated: '2026-03-10T23:29:05.158394+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: type
+    name: Type
+    type: select
+    typeConfig:
+      options:
+        - text: Select
+          value: select
+        - text: Multi Select
+          value: multiSelect
+        - text: Range
+          value: range
+      required: true
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: fieldKey
+    name: Field Key
+    type: text
+    helpText: 'Example: fields.category.slug'
+    typeConfig:
+      required: true
+  - id: fieldId
+    name: Field Id
+    type: text
+    typeConfig:
+      required: true
+  - id: enableFaceting
+    name: Enable Faceting
+    type: checkbox
+    typeConfig: null
+  - id: values
+    name: Values
+    type: $block
+    typeConfig:
+      required: true
+      allowedTypes:
+        - $loop
+        - filterByItem
+entryName: title
+description: ''
+icon: read
+type: block
+permissions: []
+previewConfigurations: []

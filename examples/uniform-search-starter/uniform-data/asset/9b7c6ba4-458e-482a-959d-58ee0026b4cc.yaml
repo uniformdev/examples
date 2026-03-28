@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 9b7c6ba4-458e-482a-959d-58ee0026b4cc
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: kosmic-coffee-barista-express-espresso-machine-2.png
+    file:
+      type: file
+      value: 0b7a0f02-611f-426d-8aa7-7b837ce36584
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/kaVwW9woRQW0aHEu2BOiGQ-kosmic-coffee-barista-express-espresso-machine-2.png
+      type: text
+    size:
+      value: 499098
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:37.854265+00:00'
+modified: '2026-03-10T23:27:37.854265+00:00'

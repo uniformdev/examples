@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 4a540191-b713-42b0-a2f6-e96ce1450aca
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: beans-heart.jpg
+    file:
+      type: file
+      value: 0d81a7d7-f5b1-48a0-869f-dd23aff77741
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/IPvCOaPhQ2KWWR--ptzQ6w-beans-heart.jpg
+      type: text
+    size:
+      value: 1836620
+      type: number
+    width:
+      value: 4608
+      type: number
+    height:
+      value: 3072
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:55.308129+00:00'
+modified: '2026-03-10T23:26:55.308129+00:00'

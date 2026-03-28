@@ -1,0 +1,167 @@
+composition:
+  _name: 🌐 Global Page Template
+  _id: f9c058ea-c40d-4435-ac5a-53423cf654dc
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      locales:
+        en-us: Java Drip
+    backgroundColor:
+      type: dex-color-palette-parameter
+      value: page-background-primary
+  slots:
+    pageContent:
+      - _id: dc2e95be-21b5-4476-a309-f8a34922f528
+        type: $slotSection
+        parameters:
+          name:
+            type: text
+            value: Page Content
+          specific:
+            type: array
+            value:
+              - $test
+              - $localization
+              - $loop
+              - $personalization
+              - addToCardButton
+              - $p:20161830-c75e-4695-8622-41032f5be75d
+              - aiShoppingAssistantButton
+              - $p:d4bbbede-ffc9-481f-ae83-2d5339f26ee0
+              - $p:17068a41-f3e9-475b-9a20-730c88c9bf79
+              - $p:f184bdb0-45ce-4b52-9984-8130e23f9dc5
+              - $p:56b810a4-2f30-4984-adb2-3c26d816b506
+              - $p:90cf0a21-78be-4cc6-b460-acb78b5c1f31
+              - $p:192fccfb-4b6b-4fbd-bd6d-e7c5234a497e
+              - badge
+              - banner
+              - button
+              - card
+              - $p:aae3fcf0-6a47-4e0e-89f5-ab8a111ddb0f
+              - carousel
+              - $p:4f048835-75c4-4aab-b51a-dd23ca6f29ae
+              - $p:6e3f6afb-48aa-4678-bfa7-1519f538b505
+              - completeCheckoutButton
+              - container
+              - $p:e1162711-ee40-4a8b-b932-859ef691b90c
+              - $p:bc7c73d1-3a48-4290-b898-396eac1c398d
+              - divider
+              - dynamicProductRecommendations
+              - searchBox
+              - searchEngine
+              - searchFilters
+              - searchList
+              - searchPageSize
+              - searchPagination
+              - searchSorting
+              - searchTotalAmount
+              - $p:e23064ac-00d3-4740-b62d-50d8b080c5a1
+              - $p:0315f542-1052-4ba4-829d-f0949328f8a2
+              - featuredSection
+              - hero
+              - flex
+              - flexCard
+              - flexItem
+              - flexibleHero
+              - $p:90d8eead-1a79-4352-9b3c-34222e5e691d
+              - grid
+              - $p:eea0b9bb-82f4-4de6-9aa5-af290540615d
+              - $p:a3c4f529-c614-401d-b8e2-9829e236a312
+              - $p:2fa494d2-d69a-49bc-b728-229a1684d77f
+              - iconLabel
+              - image
+              - imageGallery
+              - input
+              - $p:500a64fc-09e7-44b5-b12b-089e232ebe88
+              - $p:efb7c9ed-2372-4069-b4d9-2ec45a8efbcb
+              - link
+              - $p:31191bc7-7e6e-4748-89c2-8e73db05237d
+              - $p:d7181e81-f3d1-4e21-af6f-1e73c8dfa6b5
+              - $p:52b2cfa0-9e8d-446e-bc8b-425d8f806a09
+              - $p:5af78ee1-29c2-4852-94ae-c337a0fe5513
+              - $p:44fd1bfe-eec0-490a-bb6d-9bde004d62bf
+              - modal
+              - modalLayout
+              - navigationFlyout
+              - $p:d9dd4b0a-358f-4b10-be48-77c5088020cc
+              - $p:c2122c4c-1d68-44db-b880-19612776c3df
+              - $p:27a48f0e-04a5-423e-95e4-d73bbed53e87
+              - $p:53b59aed-e378-4fcb-9135-20247d92074e
+              - $p:00a7ebd9-8743-4158-aa06-bc671a05529b
+              - productCard
+              - $p:665b55aa-f241-413e-8778-cff9a2f1f8aa
+              - $p:75d65dd3-32ce-40ac-aa3d-59b171811d6e
+              - $p:438c8041-7889-45a5-8304-8c98f0291b6c
+              - $p:3283c3c3-e271-4a9a-80e0-735457a6c486
+              - $p:9de9d5d6-88b3-4ec9-9d6f-79a33f1af368
+              - $p:6ac15a92-bef3-4cf1-9bff-a2bcb666b73d
+              - $p:9fa8b4cd-24ab-4d1a-b2c5-946925aec3e0
+              - $p:7af3df14-8092-4f3d-bb2c-ff9778e3c884
+              - $p:0c4c3dd0-72d3-4d77-878a-e2d06d56017e
+              - $p:afef4fa3-394f-4228-81b9-3374b4616b3c
+              - $p:e1383714-61c0-4647-a00b-bb12371df0d7
+              - $p:67fd3820-7df7-4ace-aec8-bf57b5a2abd3
+              - quantitySelector
+              - quirkSelector
+              - readMore
+              - review
+              - richText
+              - $p:646faee6-b476-43c6-a1a8-eebe85699889
+              - $p:4a0a5fb2-25d0-4563-955b-714233ddffe6
+              - section
+              - $p:0bc0e924-445c-47de-9217-3dc6f889f1e7
+              - $p:8e2bc34a-eb79-4492-9eb2-139a351351c8
+              - shoppingCart
+              - shoppingCartIcon
+              - $p:90b32c21-f5d8-4a40-b971-c97c359ecce9
+              - $p:c895d189-c093-4ee8-aeef-5cdccd7efd2e
+              - spacer
+              - $p:3d2b341b-aa4a-4692-8354-a60aa94ff76c
+              - $p:7b0d3fc3-d88f-4259-9650-de58fa6aeca7
+              - $p:0628b755-8e3d-4a92-a576-aa3cf354a921
+              - tab
+              - table
+              - tabs
+              - $p:8060e691-b0b3-428c-92f1-278fc76baf47
+              - testimonial
+              - text
+              - $p:6fc97589-a549-4105-8b4f-387f64ea2780
+              - video
+              - aiConfiguration
+              - entryPreview
+              - $p:35c08420-320a-4e68-914b-6d1b362e1704
+              - $p:3fde766b-b504-48fa-9402-16e202d0e0b2
+              - $p:7274b41a-f63c-46eb-b9de-abb5b81fcec7
+              - $p:0993e09d-9e20-469e-a8e1-3a56a2a6168b
+              - $p:8887d174-2083-4745-abd1-988e53910884
+              - accordion
+              - $p:052624b2-ff61-410a-857b-f71b1895a7fb
+          groupType:
+            type: text
+            value: specific
+        _overridability:
+          hideLockedParameters: true
+  _overridability:
+    parameters:
+      $viz: 'yes'
+      pageTitle: 'yes'
+      twitterCard: 'yes'
+      pageKeywords: 'yes'
+      twitterImage: 'yes'
+      twitterTitle: 'yes'
+      openGraphType: 'yes'
+      openGraphImage: 'yes'
+      openGraphTitle: 'yes'
+      pageDescription: 'yes'
+      twitterDescription: 'yes'
+      openGraphDescription: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-us
+created: '2026-03-26T04:22:52.992439+00:00'
+modified: '2026-03-26T05:24:50.045554+00:00'
+pattern: true
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/coffee-shop-template/preview-images/global_page_template.png
+categoryId: c7a1d1d9-cc3f-431c-b55e-6c4af1285108

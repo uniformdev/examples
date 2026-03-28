@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 71a28c67-915b-407e-ba36-d8646bd38520
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: icon-uniform-logo_white.svg
+    file:
+      type: file
+      value: 4a931464-9185-411c-8c78-e0ba296bb3d0
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/xcpMFSBwT02SljnZ4622XA-icon-uniform-logo_white.svg
+      type: text
+    size:
+      value: 2398
+      type: number
+    width:
+      value: 159
+      type: number
+    height:
+      value: 41
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:11.422759+00:00'
+modified: '2026-03-10T23:27:11.422759+00:00'

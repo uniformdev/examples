@@ -1,0 +1,240 @@
+created: '2026-03-10T23:35:17.39051+00:00'
+modified: '2026-03-10T23:35:17.39051+00:00'
+pattern: false
+entry:
+  _id: 4e8f00c8-a2da-4a73-8431-8888d88def25
+  _name: Liberica
+  _slug: liberica
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/4bZQMZ0-TsyuxLI96K-sbQ-liberica.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Liberica
+        de-at: Liberica
+        de-ch: Liberica
+        de-de: Liberica
+        en-au: Liberica
+        en-ca: Liberica
+        en-gb: Liberica
+        en-nl: Liberica
+        en-nz: Liberica
+        en-us: Liberica
+        fr-ca: Liberica
+        fr-ch: Libérica
+        fr-fr: Libérica
+        ja-jp: リベリカ
+        nl-nl: Liberica
+        sv-se: Liberica
+        ar-uae: ليبيريكا
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Opdag de sjældne og eksotiske smagsnuancer af Liberica kaffebønner,
+          kendt for deres kraftige, røgede og frugtige noter. Liberica bønner er
+          større og mere asymmetriske end andre kaffebønner, hvilket giver en
+          unik smagsoplevelse, der værdsættes af kaffeentusiaster. Vores udvalg
+          af Liberica bønner er hentet fra de bedste kaffeproducerende regioner,
+          hvilket sikrer høj kvalitet og enestående smag. Uanset om du ønsker at
+          prøve noget nyt eller forkæle dig selv med en særpræget
+          kaffeoplevelse, giver Liberica bønner en rig og mindeværdig kop.
+          Udforsk vores Liberica-kollektion og nyd den unikke karakter af disse
+          enestående bønner.
+        de-at: >-
+          Entdecken Sie die seltenen und exotischen Aromen der
+          Liberica-Kaffeebohnen, bekannt für ihre kräftigen, rauchigen und
+          fruchtigen Noten. Liberica-Bohnen sind größer und asymmetrischer als
+          andere Kaffeebohnen und bieten ein einzigartiges Geschmackserlebnis,
+          das von Kaffeekennern geschätzt wird. Unsere Auswahl an
+          Liberica-Bohnen stammt aus den besten Kaffeeanbauregionen und
+          garantiert hohe Qualität und außergewöhnlichen Geschmack. Ob Sie etwas
+          Neues ausprobieren oder ein unverwechselbares Kaffeeerlebnis genießen
+          möchten, Liberica-Bohnen bieten eine reichhaltige und unvergessliche
+          Tasse. Entdecken Sie unsere Liberica-Kollektion und genießen Sie den
+          einzigartigen Charakter dieser außergewöhnlichen Bohnen.
+        de-ch: >-
+          Entdecken Sie die seltenen und exotischen Aromen der
+          Liberica-Kaffeebohnen, bekannt für ihre kräftigen, rauchigen und
+          fruchtigen Noten. Liberica-Bohnen sind größer und asymmetrischer als
+          andere Kaffeebohnen und bieten ein einzigartiges Geschmackserlebnis,
+          das von Kaffeekennern geschätzt wird. Unsere Auswahl an
+          Liberica-Bohnen stammt aus den besten Kaffeeanbaugebieten und
+          garantiert hohe Qualität und außergewöhnlichen Geschmack. Egal, ob Sie
+          etwas Neues ausprobieren oder ein unverwechselbares Kaffeeerlebnis
+          genießen möchten, Liberica-Bohnen bieten eine reichhaltige und
+          unvergessliche Tasse. Entdecken Sie unsere Liberica-Kollektion und
+          genießen Sie den einzigartigen Charakter dieser außergewöhnlichen
+          Bohnen.
+        de-de: >-
+          Entdecken Sie die seltenen und exotischen Aromen der
+          Liberica-Kaffeebohnen, bekannt für ihre kräftigen, rauchigen und
+          fruchtigen Noten. Liberica-Bohnen sind größer und asymmetrischer als
+          andere Kaffeebohnen und bieten ein einzigartiges Geschmackserlebnis,
+          das von Kaffeekennern geschätzt wird. Unsere Auswahl an
+          Liberica-Bohnen stammt aus den besten Kaffeeanbaugebieten und
+          garantiert hohe Qualität und außergewöhnlichen Geschmack. Egal, ob Sie
+          etwas Neues ausprobieren oder ein unverwechselbares Kaffeeerlebnis
+          genießen möchten, Liberica-Bohnen bieten eine reichhaltige und
+          unvergessliche Tasse. Entdecken Sie unsere Liberica-Kollektion und
+          genießen Sie den einzigartigen Charakter dieser außergewöhnlichen
+          Bohnen.
+        en-au: >-
+          Découvrez les saveurs rares et exotiques des grains de café Liberica,
+          connus pour leurs notes audacieuses, fumées et fruitées. Les grains de
+          Liberica sont plus grands et plus asymétriques que les autres grains
+          de café, offrant une expérience gustative unique prisée par les
+          connaisseurs de café. Notre sélection de grains de Liberica est issue
+          des meilleures régions productrices de café, garantissant une qualité
+          supérieure et une saveur exceptionnelle. Que vous cherchiez à essayer
+          quelque chose de nouveau ou à vous adonner à une expérience de café
+          distinctive, les grains de Liberica offrent une tasse riche et
+          mémorable. Explorez notre collection de Liberica et savourez le
+          caractère unique de ces grains exceptionnels.
+        en-ca: >-
+          Discover the rare and exotic flavours of Liberica coffee beans, known
+          for their bold, smoky, and fruity notes. Liberica beans are larger and
+          more asymmetrical than other coffee beans, offering a unique taste
+          experience cherished by coffee connoisseurs. Our selection of Liberica
+          beans is sourced from the best coffee-growing regions, ensuring high
+          quality and exceptional flavour. Whether you’re looking to try
+          something new or indulge in a distinctive coffee experience, Liberica
+          beans provide a rich and memorable cup. Explore our Liberica
+          collection and savour the unique character of these exceptional beans.
+        en-gb: >-
+          Discover the rare and exotic flavours of Liberica coffee beans, known
+          for their bold, smoky, and fruity notes. Liberica beans are larger and
+          more asymmetrical than other coffee beans, offering a unique taste
+          experience cherished by coffee connoisseurs. Our selection of Liberica
+          beans is sourced from the best coffee-growing regions, ensuring high
+          quality and exceptional flavour. Whether you’re looking to try
+          something new or indulge in a distinctive coffee experience, Liberica
+          beans provide a rich and memorable cup. Explore our Liberica
+          collection and savour the unique character of these exceptional beans.
+        en-nl: >-
+          Ontdek de zeldzame en exotische smaken van Liberica-koffiebonen,
+          bekend om hun gedurfde, rokerige en fruitige tonen. Liberica-bonen
+          zijn groter en asymmetrischer dan andere koffiebonen, en bieden een
+          unieke smaakervaring die gewaardeerd wordt door koffiekenners. Onze
+          selectie van Liberica-bonen is afkomstig uit de beste
+          koffieproducerende regio's, wat zorgt voor hoge kwaliteit en
+          uitzonderlijke smaak. Of je nu iets nieuws wilt proberen of wilt
+          genieten van een onderscheidende koffie-ervaring, Liberica-bonen
+          bieden een rijke en gedenkwaardige kop. Verken onze Liberica-collectie
+          en proef het unieke karakter van deze uitzonderlijke bonen.
+        en-nz: >-
+          Entdecken Sie die seltenen und exotischen Aromen der
+          Liberica-Kaffeebohnen, bekannt für ihre kräftigen, rauchigen und
+          fruchtigen Noten. Liberica-Bohnen sind größer und asymmetrischer als
+          andere Kaffeebohnen und bieten ein einzigartiges Geschmackserlebnis,
+          das von Kaffeekennern geschätzt wird. Unsere Auswahl an
+          Liberica-Bohnen stammt aus den besten Kaffeeanbaugebieten und
+          garantiert hohe Qualität und außergewöhnlichen Geschmack. Egal, ob Sie
+          etwas Neues ausprobieren oder ein unverwechselbares Kaffeeerlebnis
+          genießen möchten, Liberica-Bohnen bieten eine reichhaltige und
+          unvergessliche Tasse. Entdecken Sie unsere Liberica-Kollektion und
+          genießen Sie den einzigartigen Charakter dieser außergewöhnlichen
+          Bohnen.
+        en-us: >-
+          Discover the rare and exotic flavors of Liberica coffee beans, known
+          for their bold, smoky, and fruity notes. Liberica beans are larger and
+          more asymmetrical than other coffee beans, offering a unique taste
+          experience cherished by coffee connoisseurs. Our selection of Liberica
+          beans is sourced from the best coffee-growing regions, ensuring high
+          quality and exceptional flavor. Whether you’re looking to try
+          something new or indulge in a distinctive coffee experience, Liberica
+          beans provide a rich and memorable cup. Explore our Liberica
+          collection and savor the unique character of these exceptional beans.
+        fr-ca: >-
+          Découvrez les saveurs rares et exotiques des grains de café Liberica,
+          connus pour leurs notes audacieuses, fumées et fruitées. Les grains de
+          Liberica sont plus gros et plus asymétriques que les autres grains de
+          café, offrant une expérience gustative unique prisée par les
+          connaisseurs de café. Notre sélection de grains de Liberica est issue
+          des meilleures régions productrices de café, garantissant une qualité
+          supérieure et une saveur exceptionnelle. Que vous cherchiez à essayer
+          quelque chose de nouveau ou à vous offrir une expérience de café
+          distinctive, les grains de Liberica offrent une tasse riche et
+          mémorable. Explorez notre collection de Liberica et savourez le
+          caractère unique de ces grains exceptionnels.
+        fr-ch: >-
+          Découvrez les saveurs rares et exotiques des grains de café Liberica,
+          connus pour leurs notes audacieuses, fumées et fruitées. Les grains de
+          Liberica sont plus grands et plus asymétriques que les autres grains
+          de café, offrant une expérience gustative unique appréciée par les
+          connaisseurs de café. Notre sélection de grains de Liberica est issue
+          des meilleures régions productrices de café, garantissant une qualité
+          supérieure et une saveur exceptionnelle. Que vous cherchiez à essayer
+          quelque chose de nouveau ou à vous adonner à une expérience de café
+          distinctive, les grains de Liberica offrent une tasse riche et
+          mémorable. Explorez notre collection de Liberica et savourez le
+          caractère unique de ces grains exceptionnels.
+        fr-fr: >-
+          Découvrez les saveurs rares et exotiques des grains de café Liberica,
+          connus pour leurs notes audacieuses, fumées et fruitées. Les grains de
+          Liberica sont plus grands et plus asymétriques que les autres grains
+          de café, offrant une expérience gustative unique appréciée par les
+          connaisseurs de café. Notre sélection de grains de Liberica est issue
+          des meilleures régions productrices de café, garantissant une qualité
+          supérieure et une saveur exceptionnelle. Que vous cherchiez à essayer
+          quelque chose de nouveau ou à vous adonner à une expérience de café
+          distinctive, les grains de Liberica offrent une tasse riche et
+          mémorable. Explorez notre collection de Liberica et savourez le
+          caractère unique de ces grains exceptionnels.
+        ja-jp: >-
+          リベリカコーヒー豆の希少でエキゾチックな風味を発見してください。リベリカ豆は、大胆でスモーキー、そしてフルーティーなノートで知られています。他のコーヒー豆よりも大きく、非対称な形状を持つリベリカ豆は、コーヒー愛好家に愛されるユニークな味わいを提供します。私たちのリベリカ豆のセレクションは、最高のコーヒー栽培地域から調達されており、高品質で卓越した風味を保証します。新しいものを試したい方や、特別なコーヒー体験を楽しみたい方に、リベリカ豆は豊かで記憶に残る一杯を提供します。リベリカコレクションを探索し、これらの特別な豆のユニークなキャラクターを味わってください。
+        nl-nl: >-
+          Ontdek de zeldzame en exotische smaken van Liberica-koffiebonen,
+          bekend om hun gedurfde, rokerige en fruitige tonen. Liberica-bonen
+          zijn groter en asymmetrischer dan andere koffiebonen, en bieden een
+          unieke smaakervaring die gewaardeerd wordt door koffiekenners. Onze
+          selectie van Liberica-bonen is afkomstig uit de beste
+          koffieproducerende regio's, wat zorgt voor hoge kwaliteit en
+          uitzonderlijke smaak. Of je nu iets nieuws wilt proberen of wilt
+          genieten van een onderscheidende koffie-ervaring, Liberica-bonen
+          zorgen voor een rijke en gedenkwaardige kop. Verken onze
+          Liberica-collectie en geniet van het unieke karakter van deze
+          uitzonderlijke bonen.
+        sv-se: >-
+          Upptäck de sällsynta och exotiska smakerna av Liberica-kaffebönor,
+          kända för sina djärva, rökiga och fruktiga toner. Liberica-bönor är
+          större och mer asymmetriska än andra kaffebönor, vilket erbjuder en
+          unik smakupplevelse som uppskattas av kaffeälskare. Vårt urval av
+          Liberica-bönor kommer från de bästa kaffeodlingsregionerna, vilket
+          garanterar hög kvalitet och enastående smak. Oavsett om du vill prova
+          något nytt eller njuta av en distinkt kaffeupplevelse, ger
+          Liberica-bönor en rik och minnesvärd kopp. Utforska vår
+          Liberica-kollektion och njut av den unika karaktären hos dessa
+          exceptionella bönor.
+        ar-uae: >-
+          اكتشف النكهات النادرة والفريدة لحبوب قهوة ليبيريكا، المعروفة بنوتاتها
+          الجريئة والدخانية والفواكهية. حبوب ليبيريكا أكبر وأكثر عدم تماثل من
+          حبوب القهوة الأخرى، مما يوفر تجربة طعم فريدة يقدرها عشاق القهوة. يتم
+          اختيار حبوب ليبيريكا لدينا من أفضل مناطق زراعة القهوة، مما يضمن جودة
+          عالية ونكهة استثنائية. سواء كنت تبحث عن تجربة جديدة أو ترغب في
+          الاستمتاع بتجربة قهوة مميزة، توفر حبوب ليبيريكا كوبًا غنيًا ولا يُنسى.
+          استكشف مجموعتنا من حبوب ليبيريكا واستمتع بالطابع الفريد لهذه الحبوب
+          الاستثنائية.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

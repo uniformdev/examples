@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: a6db99c5-39b8-4555-b79a-8e101c585b46
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: coffee-makers.png
+    file:
+      type: file
+      value: ea582045-a27e-4d9b-8874-bf2d44214403
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/Rb3rL9EuTOiY9RU_mwJp0w-coffee-makers.png
+      type: text
+    size:
+      value: 2109433
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:46.316324+00:00'
+modified: '2026-03-10T23:27:46.316324+00:00'

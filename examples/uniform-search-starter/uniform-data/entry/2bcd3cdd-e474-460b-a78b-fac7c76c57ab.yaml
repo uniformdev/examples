@@ -1,0 +1,67 @@
+created: '2026-03-10T23:33:22.261906+00:00'
+modified: '2026-03-10T23:33:22.261906+00:00'
+pattern: false
+entry:
+  _id: 2bcd3cdd-e474-460b-a78b-fac7c76c57ab
+  _name: Drip Coffee
+  _slug: drip-coffee
+  type: productCategory
+  fields:
+    title:
+      type: text
+      locales:
+        da-dk: Drypkaffe
+        de-at: Filterkaffee
+        de-ch: Filterkaffee
+        de-de: Filterkaffee
+        en-au: Café Filtré
+        en-ca: Drip Coffee
+        en-gb: Filter Coffee
+        en-nl: Filterkoffie
+        en-nz: Filterkaffee
+        en-us: Drip Coffee
+        fr-ca: Café filtre
+        fr-ch: Café filtre
+        fr-fr: Café filtre
+        ja-jp: ドリップコーヒー
+        nl-nl: Filterkoffie
+        sv-se: Droppkaffe
+        ar-uae: قهوة بالتنقيط
+    description:
+      type: text
+      locales:
+        da-dk: Ligesom du får i en amerikansk diner
+        de-at: Genau wie in einem amerikanischen Diner
+        de-ch: Genau wie in einem amerikanischen Diner
+        de-de: Genau wie in einem amerikanischen Diner
+        en-au: Comme dans un diner américain
+        en-ca: Just like you get in an American diner
+        en-gb: Just like you get in an American diner
+        en-nl: Net zoals je krijgt in een Amerikaanse diner
+        en-nz: Genau wie in einem amerikanischen Diner
+        en-us: Just like you get in an American diner
+        fr-ca: Comme dans un diner américain
+        fr-ch: Comme dans un diner américain
+        fr-fr: Comme dans un diner américain
+        ja-jp: アメリカンダイナーで手に入るようなもの
+        nl-nl: Net zoals je krijgt in een Amerikaanse diner
+        sv-se: Precis som du får på en amerikansk diner
+        ar-uae: تماماً كما تحصل عليه في مطعم أمريكي
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

@@ -1,0 +1,212 @@
+created: '2026-03-10T23:36:19.482207+00:00'
+modified: '2026-03-10T23:36:19.482207+00:00'
+pattern: false
+entry:
+  _id: ba6763eb-aa88-4bec-bbcb-20613499cfad
+  _name: Turkish
+  _slug: turkish
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/WtUSRn0sQ8abgbBAESnwGg-turkish.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Tyrkisk
+        de-at: Türkisch
+        de-ch: Türkisch
+        de-de: Türkisch
+        en-au: Turc
+        en-ca: Turkish
+        en-gb: Turkish
+        en-nl: Turks
+        en-nz: Türkisch
+        en-us: Turkish
+        fr-ca: Turc
+        fr-ch: Turc
+        fr-fr: Turc
+        ja-jp: トルコ語
+        nl-nl: Turks
+        sv-se: Turkiska
+        ar-uae: التركية
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Forkæl dig selv med den rige, aromatiske oplevelse af traditionel
+          tyrkisk kaffe. Vores kollektion inkluderer højkvalitets tyrkiske
+          kaffebønner og fint fremstillede cezves (tyrkiske kaffekander), der
+          fremhæver de autentiske smage og teksturer fra denne gamle
+          bryggemetode. Tyrkisk kaffe er kendt for sin unikke
+          tilberedningsproces og dristige, robuste smag, der skaber en virkelig
+          særpræget kaffeoplevelse. Udforsk vores udvalg og nyd den kulturelle
+          rigdom og den dybe, tilfredsstillende smag af tyrkisk kaffe i dit eget
+          hjem.
+        de-at: >-
+          Genießen Sie das reichhaltige, aromatische Erlebnis von traditionellem
+          türkischem Kaffee. Unsere Kollektion umfasst hochwertige türkische
+          Kaffeebohnen und fein gearbeitete Cezves (türkische Kaffeekannen), die
+          die authentischen Aromen und Texturen dieser alten Brühmethode zur
+          Geltung bringen. Türkischer Kaffee ist bekannt für seinen
+          einzigartigen Zubereitungsprozess und seinen kräftigen, robusten
+          Geschmack, der ein wirklich unverwechselbares Kaffeeerlebnis schafft.
+          Entdecken Sie unsere Auswahl und genießen Sie die kulturelle Vielfalt
+          und den tiefen, befriedigenden Geschmack von türkischem Kaffee in
+          Ihrem eigenen Zuhause.
+        de-ch: >-
+          Genießen Sie das reichhaltige, aromatische Erlebnis von traditionellem
+          türkischem Kaffee. Unsere Kollektion umfasst hochwertige türkische
+          Kaffeebohnen und fein gearbeitete Cezves (türkische Kaffeekannen), die
+          die authentischen Aromen und Texturen dieser alten Brühmethode zur
+          Geltung bringen. Türkischer Kaffee ist bekannt für seinen
+          einzigartigen Zubereitungsprozess und seinen kräftigen, robusten
+          Geschmack, der ein wirklich unverwechselbares Kaffeeerlebnis schafft.
+          Entdecken Sie unsere Auswahl und genießen Sie die kulturelle Vielfalt
+          und den tiefen, befriedigenden Geschmack von türkischem Kaffee in
+          Ihrem eigenen Zuhause.
+        de-de: >-
+          Genießen Sie das reichhaltige, aromatische Erlebnis von traditionellem
+          türkischem Kaffee. Unsere Kollektion umfasst hochwertige türkische
+          Kaffeebohnen und fein gearbeitete Cezves (türkische Kaffeekannen), die
+          die authentischen Aromen und Texturen dieser alten Brühmethode zur
+          Geltung bringen. Türkischer Kaffee ist bekannt für seinen
+          einzigartigen Zubereitungsprozess und seinen kräftigen, robusten
+          Geschmack, der ein wirklich unverwechselbares Kaffeeerlebnis schafft.
+          Entdecken Sie unsere Auswahl und genießen Sie die kulturelle Vielfalt
+          und den tiefen, befriedigenden Geschmack von türkischem Kaffee in
+          Ihrem eigenen Zuhause.
+        en-au: >-
+          Offrez-vous l'expérience riche et aromatique du café turc
+          traditionnel. Notre collection comprend des grains de café turc de
+          haute qualité et des cezves (pots à café turcs) finement conçus qui
+          révèlent les saveurs et textures authentiques de cette méthode de
+          préparation ancienne. Le café turc est réputé pour son processus de
+          préparation unique et sa saveur audacieuse et robuste, créant une
+          expérience café vraiment distinctive. Explorez notre sélection et
+          savourez la richesse culturelle et le goût profond et satisfaisant du
+          café turc chez vous.
+        en-ca: >-
+          Indulge in the rich, aromatic experience of traditional Turkish
+          coffee. Our collection includes high-quality Turkish coffee beans and
+          finely crafted cezves (Turkish coffee pots) that bring out the
+          authentic flavours and textures of this ancient brewing method.
+          Turkish coffee is known for its unique preparation process and bold,
+          robust flavour, creating a truly distinctive coffee experience.
+          Explore our selection and enjoy the cultural richness and deep,
+          satisfying taste of Turkish coffee in your own home.
+        en-gb: >-
+          Indulge in the rich, aromatic experience of traditional Turkish
+          coffee. Our collection includes high-quality Turkish coffee beans and
+          finely crafted cezves (Turkish coffee pots) that bring out the
+          authentic flavours and textures of this ancient brewing method.
+          Turkish coffee is known for its unique preparation process and bold,
+          robust flavour, creating a truly distinctive coffee experience.
+          Explore our selection and enjoy the cultural richness and deep,
+          satisfying taste of Turkish coffee in your own home.
+        en-nl: >-
+          Geniet van de rijke, aromatische ervaring van traditionele Turkse
+          koffie. Onze collectie omvat hoogwaardige Turkse koffiebonen en fijn
+          vervaardigde cezves (Turkse koffiepotten) die de authentieke smaken en
+          texturen van deze oude zetmethode naar voren brengen. Turkse koffie
+          staat bekend om zijn unieke bereidingsproces en gedurfde, robuuste
+          smaak, wat zorgt voor een werkelijk onderscheidende koffie-ervaring.
+          Ontdek ons assortiment en geniet van de culturele rijkdom en de diepe,
+          bevredigende smaak van Turkse koffie in uw eigen huis.
+        en-nz: >-
+          Genießen Sie das reiche, aromatische Erlebnis von traditionellem
+          türkischem Kaffee. Unsere Kollektion umfasst hochwertige türkische
+          Kaffeebohnen und fein gearbeitete Cezves (türkische Kaffeekannen), die
+          die authentischen Aromen und Texturen dieser alten Brühmethode zur
+          Geltung bringen. Türkischer Kaffee ist bekannt für seinen
+          einzigartigen Zubereitungsprozess und seinen kräftigen, robusten
+          Geschmack, der ein wirklich unverwechselbares Kaffeeerlebnis schafft.
+          Entdecken Sie unsere Auswahl und genießen Sie die kulturelle Vielfalt
+          und den tiefen, befriedigenden Geschmack von türkischem Kaffee in
+          Ihrem eigenen Zuhause.
+        en-us: >-
+          Indulge in the rich, aromatic experience of traditional Turkish
+          coffee. Our collection includes high-quality Turkish coffee beans and
+          finely crafted cezves (Turkish coffee pots) that bring out the
+          authentic flavors and textures of this ancient brewing method. Turkish
+          coffee is known for its unique preparation process and bold, robust
+          flavor, creating a truly distinctive coffee experience. Explore our
+          selection and enjoy the cultural richness and deep, satisfying taste
+          of Turkish coffee in your own home.
+        fr-ca: >-
+          Laissez-vous tenter par l'expérience riche et aromatique du café turc
+          traditionnel. Notre collection comprend des grains de café turc de
+          haute qualité et des cezves (pots à café turcs) finement conçus qui
+          révèlent les saveurs et textures authentiques de cette ancienne
+          méthode de préparation. Le café turc est réputé pour son processus de
+          préparation unique et sa saveur audacieuse et robuste, créant une
+          expérience de café vraiment distinctive. Explorez notre sélection et
+          profitez de la richesse culturelle et du goût profond et satisfaisant
+          du café turc dans le confort de votre foyer.
+        fr-ch: >-
+          Offrez-vous l'expérience riche et aromatique du café turc
+          traditionnel. Notre collection comprend des grains de café turc de
+          haute qualité et des cezves (pots à café turcs) finement conçus qui
+          révèlent les saveurs et textures authentiques de cette ancienne
+          méthode de préparation. Le café turc est réputé pour son processus de
+          préparation unique et sa saveur audacieuse et robuste, créant une
+          expérience café vraiment distinctive. Explorez notre sélection et
+          profitez de la richesse culturelle et du goût profond et satisfaisant
+          du café turc chez vous.
+        fr-fr: >-
+          Offrez-vous l'expérience riche et aromatique du café turc
+          traditionnel. Notre collection comprend des grains de café turc de
+          haute qualité et des cezves (pots à café turcs) finement conçus qui
+          révèlent les saveurs et textures authentiques de cette ancienne
+          méthode de préparation. Le café turc est réputé pour son processus de
+          préparation unique et sa saveur audacieuse et robuste, créant une
+          expérience café vraiment distinctive. Explorez notre sélection et
+          profitez de la richesse culturelle et du goût profond et satisfaisant
+          du café turc chez vous.
+        ja-jp: >-
+          伝統的なトルココーヒーの豊かで芳醇な体験をお楽しみください。当店のコレクションには、高品質のトルココーヒー豆と、古代の抽出方法の本格的な風味と食感を引き出す精巧に作られたジェズヴェ（トルココーヒーポット）が含まれています。トルココーヒーは、その独特な準備過程と力強く濃厚な風味で知られており、真に独特なコーヒー体験を生み出します。私たちのセレクションを探索し、ご自宅でトルココーヒーの文化的な豊かさと深く満足のいく味わいをお楽しみください。
+        nl-nl: >-
+          Geniet van de rijke, aromatische ervaring van traditionele Turkse
+          koffie. Onze collectie omvat hoogwaardige Turkse koffiebonen en fijn
+          vervaardigde cezves (Turkse koffiepotten) die de authentieke smaken en
+          texturen van deze oude zetmethode naar voren brengen. Turkse koffie
+          staat bekend om zijn unieke bereidingsproces en gedurfde, robuuste
+          smaak, wat zorgt voor een werkelijk onderscheidende koffie-ervaring.
+          Ontdek ons assortiment en geniet van de culturele rijkdom en diepe,
+          bevredigende smaak van Turkse koffie in uw eigen huis.
+        sv-se: >-
+          Njut av den rika, aromatiska upplevelsen av traditionellt turkiskt
+          kaffe. Vår kollektion inkluderar högkvalitativa turkiska kaffebönor
+          och fint hantverkade cezves (turkiska kaffekannor) som framhäver de
+          autentiska smakerna och texturerna i denna urgamla bryggmetod.
+          Turkiskt kaffe är känt för sin unika tillredningsprocess och djärva,
+          robusta smak, vilket skapar en verkligt distinkt kaffeupplevelse.
+          Utforska vårt urval och njut av den kulturella rikedom och djupa,
+          tillfredsställande smak av turkiskt kaffe i ditt eget hem.
+        ar-uae: >-
+          استمتع بالتجربة الغنية والعطرية للقهوة التركية التقليدية. تشمل
+          مجموعتنا حبوب قهوة تركية عالية الجودة وأواني قهوة تركية (جذوة) مصممة
+          بدقة لتبرز النكهات والقوام الأصيل لهذه الطريقة القديمة في التحضير.
+          تُعرف القهوة التركية بعملية تحضيرها الفريدة ونكهتها الجريئة والقوية،
+          مما يخلق تجربة قهوة مميزة حقًا. استكشف مجموعتنا واستمتع بالغنى الثقافي
+          والطعم العميق والمُرضي للقهوة التركية في منزلك.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 93d6a4fb-9226-46be-855e-57adc6d6ccbe
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: turkish.png
+    file:
+      type: file
+      value: 354a5605-852d-4f93-856e-79b77eda58ec
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/vXs07t75RaW0DzcYAH4AhA-turkish.png
+      type: text
+    size:
+      value: 865119
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:31.84089+00:00'
+modified: '2026-03-10T23:27:31.84089+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: b207e5e2-a19f-4bda-a9c2-e96a64e1d62c
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: icon-cart.svg
+    file:
+      type: file
+      value: d23b35bb-c04d-4bde-bf7d-15435850034e
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/zWtXCu7ARqmp1gS-iciqCw-icon-cart.svg
+      type: text
+    size:
+      value: 872
+      type: number
+    width:
+      value: 24
+      type: number
+    height:
+      value: 24
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:55.062259+00:00'
+modified: '2026-03-10T23:27:55.062259+00:00'

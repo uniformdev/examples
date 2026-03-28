@@ -1,0 +1,11 @@
+asset:
+  type: other
+  _id: 4469d093-0095-43fe-a6f1-9ccd66da351c
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: icon-cart-white.svg
+    custom: {}
+created: '2026-03-10T23:26:20.77074+00:00'
+modified: '2026-03-10T23:26:20.77074+00:00'

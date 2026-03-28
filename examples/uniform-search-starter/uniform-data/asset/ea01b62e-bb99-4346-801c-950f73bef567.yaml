@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ea01b62e-bb99-4346-801c-950f73bef567
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: the-art-of-the-perfect-espresso.jpg
+    file:
+      type: file
+      value: 2f838ca5-ae6c-40c0-854e-c046ce9c997b
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/-sHF-8rJR7WTAXAfGyOTTQ-the-art-of-the-perfect-espresso.jpg
+      type: text
+    size:
+      value: 2353234
+      type: number
+    width:
+      value: 5837
+      type: number
+    height:
+      value: 3891
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:26.619615+00:00'
+modified: '2026-03-10T23:28:26.619615+00:00'

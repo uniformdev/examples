@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 0ddd8a84-8178-4a7c-959b-54aa7b0d057b
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: black-mountain-pour-over-hario-glass-1.png
+    file:
+      type: file
+      value: f332e82a-6be9-4127-95c3-57a200c9e819
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/2k3Zh5FGTMGC2fdIMM0cGQ-black-mountain-pour-over-hario-glass-1.png
+      type: text
+    size:
+      value: 39231
+      type: number
+    width:
+      value: 386
+      type: number
+    height:
+      value: 386
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:24.744724+00:00'
+modified: '2026-03-10T23:26:24.744724+00:00'

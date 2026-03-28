@@ -1,0 +1,23 @@
+id: articleCategory
+name: Article Category
+created: '2026-03-10T23:29:04.063916+00:00'
+updated: '2026-03-10T23:29:04.063916+00:00'
+slugSettings:
+  unique: 'no'
+  required: 'yes'
+  regularExpression: ''
+  regularExpressionMessage: ''
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+entryName: title
+description: ''
+icon: duplicate
+type: contentType
+permissions: []
+previewConfigurations: []

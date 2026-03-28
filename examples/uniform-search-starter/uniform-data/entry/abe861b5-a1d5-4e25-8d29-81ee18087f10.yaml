@@ -1,0 +1,3724 @@
+created: '2026-03-10T23:33:48.145172+00:00'
+modified: '2026-03-10T23:33:48.145172+00:00'
+pattern: false
+entry:
+  _id: abe861b5-a1d5-4e25-8d29-81ee18087f10
+  _name: 'EspressoGPT: Elevating Coffee Brewing to Futuristic Heights'
+  _slug: espressogpt-elevating-coffee-brewing-to-futuristic-heights
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/VWeHc5TSSeyH8uXwrlGsEQ-image.png
+  type: article
+  fields:
+    title:
+      type: text
+      locales:
+        da-dk: 'EspressoGPT: Løfter Kaffebrygning til Futuristiske Højder'
+        de-at: 'EspressoGPT: Kaffeezubereitung auf futuristische Höhen heben'
+        de-ch: 'EspressoGPT: Kaffeezubereitung auf futuristische Höhen heben'
+        de-de: 'EspressoGPT: Kaffeezubereitung auf futuristische Höhen heben'
+        en-au: 'EspressoGPT : Élever l''Art du Café à des Sommets Futuristes'
+        en-ca: 'EspressoGPT: Elevating Coffee Brewing to Futuristic Heights'
+        en-gb: |-
+          EspressoGPT: Elevating Coffee Brewing to Futuristic Heights
+
+          Field description: Title of the article (shown to readers).
+          Content type: article
+        en-nl: 'EspressoGPT: Koffiezetten naar Futuristische Hoogten Tillen'
+        en-nz: 'EspressoGPT: Kaffeezubereitung auf futuristische Höhen heben'
+        en-us: 'EspressoGPT: Elevating Coffee Brewing to Futuristic Heights'
+        fr-ca: >-
+          EspressoGPT : Élever l'Art de Préparer le Café à des Sommets
+          Futuristes
+        fr-ch: 'EspressoGPT : Élever l''Art du Café à des Sommets Futuristes'
+        fr-fr: 'EspressoGPT : Élever l''Art du Café à des Sommets Futuristes'
+        ja-jp: 'エスプレッソGPT: コーヒー醸造を未来的な高みへ'
+        nl-nl: 'EspressoGPT: Het Koffiezetten naar Futuristische Hoogten Brengen'
+        sv-se: 'EspressoGPT: Höjer Kaffebryggning till Futuristiska Höjder'
+        ar-uae: 'إسبريسو جي بي تي: رفع مستوى تحضير القهوة إلى آفاق مستقبلية'
+    author:
+      type: contentReference
+      value: ${#jptr:/ref-abe861b5-a1d5-4e25-8d29-81ee18087f10-author/entries/0}
+    content:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'I kaffens verden for feinschmeckere står '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' som et fyrtårn af innovation og smag, der problemfrit smelter fremtidens teknologier sammen med den tidløse tiltrækning af en perfekt kop kaffe. Som navnet antyder, er denne revolutionerende kaffemaskine mere end blot et bryggeapparat—det er en medrivende rejse ind i kaffens fremtid.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Fra det øjeblik man engagerer '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , udfolder der sig en uovertruffen oplevelse. Udover blot
+                      at brygge espresso, fører denne maskine entusiaster ind i
+                      et univers, hvor smag og sofistikation mødes. Foreningen
+                      af banebrydende teknologi og essensen af en veludført kop
+                      kaffe definerer essensen af EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      I sin kerne ligger jagten på den 'perfekte kaffebønne', en
+                      filosofi der indkapsler en omhyggelig rejse drevet af
+                      passion, præcision og urokkelig dedikation. Denne
+                      forpligtelse til ekspertise er mærkbar i alle aspekter af
+                      EspressoGPT, der overskrider de konventionelle grænser for
+                      kaffebrygning.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      En af dens definerende egenskaber er det intuitive
+                      interface holografiske display, et vidunder af moderne
+                      ingeniørkunst, der problemfrit guider brugerne gennem en
+                      personlig kaffebrygningsoplevelse. Med et strejf af
+                      innovation løfter dette holografiske display ikke kun
+                      æstetikken, men forbedrer også brugerens interaktion med
+                      maskinen, hvilket gør brygning til en kunstnerisk og
+                      engagerende proces.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Men det, der virkelig adskiller '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' er dens anvendelse af AI-drevne smagspræferencer. Ved at udnytte kunstig intelligens'' kapaciteter lærer og tilpasser denne maskine sig til individuelle præferencer og skaber en skræddersyet kaffeoplevelse med hver brygning. Borte er dagene med forsøg og fejl—EspressoGPT forstår intuitivt og forfiner sit output for at passe til hver brugers unikke smag.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Desuden er designet af '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' ikke kun funktionelt; det er et vidnesbyrd om en filosofi. De slanke og moderne æstetik komplementerer dens teknologiske dygtighed og præsenterer et visuelt slående apparat, der problemfrit integreres i enhver indstilling. Det er ikke bare et produkt; det er en legemliggørelse af en forpligtelse til ekspertise, en dedikation til at levere toppen af kaffeoplevelse til et globalt fællesskab af entusiaster.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Afslutningsvis er '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' ikke bare en kaffemaskine—det er en manifestation af en vision, der overskrider det almindelige. Det epitomiserer foreningen af innovation og tradition og lover en fremtid, hvor hver brygget kop er en medrivende oplevelse skræddersyet til perfektion. For kaffeelskere, der søger en blanding af banebrydende teknologi og uovertruffen smag, står EspressoGPT som en hyldest til kaffebrygningens udvikling og inviterer alle til at nyde fremtiden i hver slurk.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Im Reich der Kaffee-Enthusiasten steht der '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' als Leuchtfeuer der Innovation und des Geschmacks, das zukünftige Technologien nahtlos mit dem zeitlosen Reiz einer perfekten Tasse Kaffee verbindet. Wie der Name schon sagt, ist diese revolutionäre Kaffeemaschine mehr als nur ein Brühgerät – sie ist eine immersive Reise in die Zukunft des Kaffees.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Vom Moment der Aktivierung des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' entfaltet sich ein unvergleichliches Erlebnis. Diese Maschine geht über das bloße Brühen von Espresso hinaus und führt Enthusiasten in ein Universum, in dem Geschmack und Raffinesse aufeinandertreffen. Die Verbindung von modernster Technologie und dem Wesen einer gut zubereiteten Tasse Kaffee definiert das Wesen des EspressoGPT.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Im Kern steht das Streben nach der 'perfekten
+                      Kaffeebohne', eine Philosophie, die eine akribische Reise
+                      verkörpert, die von Leidenschaft, Präzision und
+                      unerschütterlicher Hingabe angetrieben wird. Dieses
+                      Engagement für Exzellenz ist in jedem Aspekt des
+                      EspressoGPT spürbar und überschreitet die konventionellen
+                      Grenzen der Kaffeezubereitung.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Eines seiner herausragenden Merkmale ist das intuitive
+                      holografische Display, ein Wunderwerk der modernen
+                      Technik, das Benutzer nahtlos durch ein personalisiertes
+                      Kaffeezubereitungserlebnis führt. Mit einem Hauch von
+                      Innovation hebt dieses holografische Display nicht nur die
+                      Ästhetik hervor, sondern verbessert auch die Interaktion
+                      des Benutzers mit der Maschine, wodurch das Brühen zu
+                      einem kunstvollen und fesselnden Prozess wird.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Was den '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' jedoch wirklich auszeichnet, ist die Nutzung KI-gesteuerter Geschmacksvorlieben. Durch die Nutzung der Fähigkeiten der künstlichen Intelligenz lernt und passt sich diese Maschine an individuelle Vorlieben an und kreiert bei jedem Brühvorgang ein maßgeschneidertes Kaffeeerlebnis. Die Zeiten von Versuch und Irrtum sind vorbei – EspressoGPT versteht intuitiv und verfeinert seine Ausgabe, um den einzigartigen Gaumen jedes Benutzers zu treffen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Darüber hinaus ist das Design des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur funktional; es ist ein Zeugnis einer Philosophie. Die schlanke und moderne Ästhetik ergänzt seine technologische Leistungsfähigkeit und präsentiert ein visuell beeindruckendes Gerät, das sich nahtlos in jede Umgebung einfügt. Es ist nicht nur ein Produkt; es ist die Verkörperung eines Engagements für Exzellenz, einer Hingabe, das Beste des Kaffeegenusses einer globalen Gemeinschaft von Enthusiasten zu bieten.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Abschließend ist der '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur eine Kaffeemaschine – er ist die Manifestation einer Vision, die das Gewöhnliche übersteigt. Er verkörpert die Vereinigung von Innovation und Tradition und verspricht eine Zukunft, in der jede gebrühte Tasse ein immersives Erlebnis ist, das zur Perfektion maßgeschneidert ist. Für Kaffeeliebhaber, die eine Mischung aus modernster Technologie und unvergleichlichem Geschmack suchen, steht der EspressoGPT als Ode an die Evolution der Kaffeezubereitung und lädt alle ein, die Zukunft in jedem Schluck zu genießen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Im Reich der Kaffee-Enthusiasten steht der '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' als Leuchtfeuer der Innovation und des Geschmacks, das zukünftige Technologien nahtlos mit dem zeitlosen Reiz einer perfekten Tasse Kaffee verbindet. Wie der Name schon sagt, ist diese revolutionäre Kaffeemaschine mehr als nur ein Brühgerät – sie ist eine immersive Reise in die Zukunft des Kaffees.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Vom Moment der Aktivierung des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' entfaltet sich ein unvergleichliches Erlebnis. Über das bloße Brühen von Espresso hinaus führt diese Maschine Enthusiasten in ein Universum, in dem Geschmack und Raffinesse aufeinandertreffen. Die Verbindung von modernster Technologie und der Essenz einer gut zubereiteten Tasse Kaffee definiert das Wesen des EspressoGPT.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Im Kern liegt das Streben nach der 'perfekten
+                      Kaffeebohne', eine Philosophie, die eine akribische Reise
+                      verkörpert, die von Leidenschaft, Präzision und
+                      unerschütterlicher Hingabe angetrieben wird. Dieses
+                      Engagement für Exzellenz ist in jedem Aspekt des
+                      EspressoGPT spürbar und überschreitet die konventionellen
+                      Grenzen der Kaffeezubereitung.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Eines seiner herausragenden Merkmale ist das intuitive
+                      Interface mit holografischem Display, ein Wunderwerk
+                      moderner Technik, das Benutzer nahtlos durch ein
+                      personalisiertes Kaffeezubereitungserlebnis führt. Mit
+                      einem Hauch von Innovation hebt dieses holografische
+                      Display nicht nur die Ästhetik an, sondern verbessert auch
+                      die Interaktion des Benutzers mit der Maschine, wodurch
+                      das Brühen zu einem kunstvollen und ansprechenden Prozess
+                      wird.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Was den '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' wirklich auszeichnet, ist seine Nutzung von KI-gesteuerten Geschmacksvorlieben. Durch die Nutzung der Fähigkeiten der künstlichen Intelligenz lernt und passt sich diese Maschine an individuelle Vorlieben an und schafft bei jedem Brühvorgang ein maßgeschneidertes Kaffeeerlebnis. Die Zeiten von Versuch und Irrtum sind vorbei – EspressoGPT versteht intuitiv und verfeinert seine Ausgabe, um den einzigartigen Gaumen jedes Benutzers zu treffen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Darüber hinaus ist das Design des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur funktional; es ist ein Zeugnis einer Philosophie. Die schlanke und moderne Ästhetik ergänzt seine technologische Leistungsfähigkeit und präsentiert ein visuell beeindruckendes Gerät, das sich nahtlos in jede Umgebung einfügt. Es ist nicht nur ein Produkt; es ist die Verkörperung eines Engagements für Exzellenz, einer Hingabe, den Gipfel des Kaffeegenusses einer globalen Gemeinschaft von Enthusiasten zu bieten.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Abschließend ist der '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur eine Kaffeemaschine – es ist die Manifestation einer Vision, die das Gewöhnliche übersteigt. Es verkörpert die Vereinigung von Innovation und Tradition und verspricht eine Zukunft, in der jede gebrühte Tasse ein immersives Erlebnis ist, das zur Perfektion maßgeschneidert ist. Für Kaffeeliebhaber, die eine Mischung aus modernster Technologie und unvergleichlichem Geschmack suchen, steht der EspressoGPT als Ode an die Evolution der Kaffeezubereitung und lädt alle ein, die Zukunft in jedem Schluck zu genießen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Im Reich der Kaffee-Enthusiasten steht der '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' als Leuchtfeuer der Innovation und des Geschmacks, das zukünftige Technologien nahtlos mit dem zeitlosen Reiz einer perfekten Tasse Kaffee verbindet. Wie der Name schon sagt, ist diese revolutionäre Kaffeemaschine mehr als nur ein Brühgerät – sie ist eine immersive Reise in die Zukunft des Kaffees.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Vom Moment der Aktivierung des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' entfaltet sich ein unvergleichliches Erlebnis. Über das bloße Brühen von Espresso hinaus führt diese Maschine Enthusiasten in ein Universum, in dem Geschmack und Raffinesse aufeinandertreffen. Die Verbindung von modernster Technologie und der Essenz einer gut zubereiteten Tasse Kaffee definiert das Wesen des EspressoGPT.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Im Kern liegt das Streben nach der 'perfekten
+                      Kaffeebohne', eine Philosophie, die eine akribische Reise
+                      verkörpert, die von Leidenschaft, Präzision und
+                      unerschütterlicher Hingabe angetrieben wird. Dieses
+                      Engagement für Exzellenz ist in jedem Aspekt des
+                      EspressoGPT spürbar und überschreitet die konventionellen
+                      Grenzen der Kaffeezubereitung.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Eines seiner herausragenden Merkmale ist das intuitive
+                      Interface mit holografischem Display, ein Wunderwerk
+                      moderner Technik, das Benutzer nahtlos durch ein
+                      personalisiertes Kaffeezubereitungserlebnis führt. Mit
+                      einem Hauch von Innovation hebt dieses holografische
+                      Display nicht nur die Ästhetik an, sondern verbessert auch
+                      die Interaktion des Benutzers mit der Maschine, wodurch
+                      das Brühen zu einem kunstvollen und ansprechenden Prozess
+                      wird.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Was den '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' wirklich auszeichnet, ist seine Nutzung von KI-gesteuerten Geschmacksvorlieben. Durch die Nutzung der Fähigkeiten der künstlichen Intelligenz lernt und passt sich diese Maschine an individuelle Vorlieben an und schafft bei jedem Brühvorgang ein maßgeschneidertes Kaffeeerlebnis. Die Zeiten von Versuch und Irrtum sind vorbei – EspressoGPT versteht intuitiv und verfeinert seine Ausgabe, um den einzigartigen Gaumen jedes Benutzers zu treffen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Darüber hinaus ist das Design des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur funktional; es ist ein Zeugnis einer Philosophie. Die schlanke und moderne Ästhetik ergänzt seine technologische Leistungsfähigkeit und präsentiert ein visuell beeindruckendes Gerät, das sich nahtlos in jede Umgebung einfügt. Es ist nicht nur ein Produkt; es ist die Verkörperung eines Engagements für Exzellenz, einer Hingabe, den Gipfel des Kaffeegenusses einer globalen Gemeinschaft von Enthusiasten zu bieten.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Abschließend ist der '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur eine Kaffeemaschine – es ist die Manifestation einer Vision, die das Gewöhnliche übersteigt. Es verkörpert die Vereinigung von Innovation und Tradition und verspricht eine Zukunft, in der jede gebrühte Tasse ein immersives Erlebnis ist, das zur Perfektion maßgeschneidert ist. Für Kaffeeliebhaber, die eine Mischung aus modernster Technologie und unvergleichlichem Geschmack suchen, steht der EspressoGPT als Ode an die Evolution der Kaffeezubereitung und lädt alle ein, die Zukunft in jedem Schluck zu genießen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dans le domaine des amateurs de café, le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' se dresse comme un phare d''innovation et de goût, fusionnant harmonieusement les technologies futures avec l''attrait intemporel d''une tasse de café parfaite. Comme son nom l''indique, cette machine à café révolutionnaire est plus qu''un simple appareil de brassage—c''est un voyage immersif dans l''avenir du café.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dès que l''on engage le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , une expérience inégalée se déploie. Au-delà de la simple
+                      préparation d'un espresso, cette machine introduit les
+                      passionnés dans un univers où goût et sophistication
+                      convergent. Le mariage de la technologie de pointe et de
+                      l'essence d'une tasse de café bien préparée définit
+                      l'essence de l'EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Au cœur de celle-ci se trouve la quête du 'grain de café
+                      parfait', une philosophie qui encapsule un voyage
+                      méticuleux alimenté par la passion, la précision et un
+                      dévouement sans faille. Cet engagement envers l'excellence
+                      est palpable dans chaque aspect de l'EspressoGPT,
+                      transcendant les limites conventionnelles de la
+                      fabrication de café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      L'une de ses caractéristiques définissantes est
+                      l'interface intuitive à affichage holographique, une
+                      merveille de l'ingénierie moderne qui guide sans effort
+                      les utilisateurs à travers une expérience de préparation
+                      de café personnalisée. Avec une touche d'innovation, cet
+                      affichage holographique non seulement élève l'esthétique
+                      mais améliore également l'interaction de l'utilisateur
+                      avec la machine, faisant de la préparation un processus
+                      artistique et engageant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Cependant, ce qui distingue vraiment le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' est son utilisation des préférences gustatives alimentées par l''IA. En exploitant les capacités de l''intelligence artificielle, cette machine apprend et s''adapte aux préférences individuelles, créant une expérience de café sur mesure à chaque préparation. Fini les jours d''essais et d''erreurs—l''EspressoGPT comprend intuitivement et affine sa production pour s''adapter au palais unique de chaque utilisateur.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: De plus, le design de l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas seulement fonctionnel ; c''est un témoignage d''une philosophie. L''esthétique élégante et moderne complète sa prouesse technologique, présentant un appareil visuellement frappant qui s''intègre parfaitement dans n''importe quel cadre. Ce n''est pas juste un produit ; c''est une incarnation d''un engagement envers l''excellence, une dédication à offrir le summum du plaisir du café à une communauté mondiale d''enthousiastes.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: En conclusion, l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas qu''une machine à café—c''est une manifestation d''une vision qui transcende l''ordinaire. Il incarne l''union de l''innovation et de la tradition, promettant un avenir où chaque tasse préparée est une expérience immersive taillée à la perfection. Pour les amateurs de café à la recherche d''un mélange de technologie de pointe et de goût inégalé, l''EspressoGPT se dresse comme une ode à l''évolution de la fabrication du café, invitant tous à savourer l''avenir à chaque gorgée.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dans le domaine des amateurs de café, le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' se dresse comme un phare d''innovation et de goût, fusionnant harmonieusement les technologies futures avec l''attrait intemporel d''une tasse de café parfaite. Comme son nom l''indique, cette machine à café révolutionnaire est plus qu''un simple appareil de brassage—c''est un voyage immersif dans l''avenir du café.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dès le moment où l''on engage le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , une expérience sans pareille se déploie. Au-delà de
+                      simplement préparer un espresso, cette machine introduit
+                      les passionnés dans un univers où le goût et la
+                      sophistication convergent. Le mariage de la technologie de
+                      pointe et de l'essence d'une tasse de café bien conçue
+                      définit l'essence de l'EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Au cœur de celle-ci se trouve la quête du 'grain de café
+                      parfait', une philosophie qui encapsule un voyage
+                      méticuleux alimenté par la passion, la précision et un
+                      dévouement inébranlable. Cet engagement envers
+                      l'excellence est palpable dans chaque aspect de
+                      l'EspressoGPT, transcendant les frontières
+                      conventionnelles de la fabrication du café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      L'une de ses caractéristiques distinctives est l'interface
+                      intuitive à affichage holographique, une merveille de
+                      l'ingénierie moderne qui guide sans effort les
+                      utilisateurs à travers une expérience de préparation de
+                      café personnalisée. Avec une touche d'innovation, cet
+                      affichage holographique non seulement élève l'esthétique
+                      mais améliore également l'interaction de l'utilisateur
+                      avec la machine, faisant de la préparation un processus
+                      artistique et engageant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Cependant, ce qui distingue vraiment le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' est son utilisation des préférences gustatives alimentées par l''IA. En exploitant les capacités de l''intelligence artificielle, cette machine apprend et s''adapte aux préférences individuelles, créant une expérience de café sur mesure à chaque infusion. Fini les jours d''essais et d''erreurs—l''EspressoGPT comprend intuitivement et affine sa production pour s''adapter au palais unique de chaque utilisateur.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'De plus, le design de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas seulement fonctionnel; c''est un témoignage d''une philosophie. L''esthétique élégante et moderne complète sa prouesse technologique, présentant un appareil visuellement frappant qui s''intègre parfaitement dans n''importe quel cadre. Ce n''est pas juste un produit; c''est une incarnation d''un engagement envers l''excellence, une dédicace à offrir le summum du plaisir du café à une communauté mondiale de passionnés.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'En conclusion, '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas juste une machine à café—c''est une manifestation d''une vision qui transcende l''ordinaire. Il incarne l''union de l''innovation et de la tradition, promettant un avenir où chaque tasse préparée est une expérience immersive taillée à la perfection. Pour les amateurs de café en quête d''un mélange de technologie de pointe et de goût inégalé, l''EspressoGPT se dresse comme une ode à l''évolution de la fabrication du café, invitant tous à savourer l''avenir à chaque gorgée.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'In the realm of coffee aficionados, the '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' stands as a beacon of innovation and taste, seamlessly merging future technologies with the timeless allure of a perfect cup of coffee. As its name suggests, this revolutionary coffee machine is more than just a brewing apparatus—it''s an immersive journey into the future of coffee.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'From the moment one engages the '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , an unparalleled experience unfolds. Beyond merely
+                      brewing espresso, this machine ushers enthusiasts into a
+                      universe where taste and sophistication converge. The
+                      marriage of cutting-edge technology and the essence of a
+                      well-crafted cup of coffee defines the essence of
+                      EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      At its core lies the pursuit of the 'perfect coffee bean',
+                      a philosophy that encapsulates a meticulous journey
+                      fuelled by passion, precision, and unwavering dedication.
+                      This commitment to excellence is palpable in every aspect
+                      of the EspressoGPT, transcending the conventional
+                      boundaries of coffee-making.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      One of its defining features is the intuitive interface
+                      holographic display, a marvel of modern engineering that
+                      seamlessly guides users through a personalised
+                      coffee-making experience. With a touch of innovation, this
+                      holographic display not only elevates the aesthetics but
+                      also enhances the user's interaction with the machine,
+                      making brewing an artful and engaging process.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'However, what truly sets the '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' apart is its utilisation of AI-powered taste preferences. By harnessing the capabilities of artificial intelligence, this machine learns and adapts to individual preferences, crafting a bespoke coffee experience with each brew. Gone are the days of trial and error—EspressoGPT intuitively understands and refines its output to suit the unique palate of every user.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Moreover, the design of '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' isn''t merely functional; it''s a testament to a philosophy. The sleek and modern aesthetics complement its technological prowess, presenting a visually striking appliance that seamlessly integrates into any setting. It''s not just a product; it''s an embodiment of a commitment to excellence, a dedication to delivering the pinnacle of coffee enjoyment to a global community of enthusiasts.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'In conclusion, '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' isn''t just a coffee machine—it''s a manifestation of a vision that transcends the ordinary. It epitomises the union of innovation and tradition, promising a future where every cup brewed is an immersive experience tailored to perfection. For coffee lovers seeking a blend of cutting-edge technology and unparalleled taste, the EspressoGPT stands as an ode to the evolution of coffee-making, inviting all to savour the future in every sip.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'In het rijk van koffieliefhebbers staat de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' als een baken van innovatie en smaak, waarbij toekomstige technologieën naadloos worden gecombineerd met de tijdloze aantrekkingskracht van een perfect kopje koffie. Zoals de naam al doet vermoeden, is deze revolutionaire koffiemachine meer dan alleen een brouwapparaat—het is een meeslepende reis naar de toekomst van koffie.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Vanaf het moment dat men de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' activeert, ontvouwt zich een ongeëvenaarde ervaring. Deze machine gaat verder dan alleen het zetten van espresso en leidt enthousiastelingen naar een universum waar smaak en verfijning samenkomen. De combinatie van geavanceerde technologie en de essentie van een goed gemaakte kop koffie definieert de essentie van EspressoGPT.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      In de kern ligt de zoektocht naar de 'perfecte
+                      koffieboon', een filosofie die een nauwgezette reis omvat,
+                      gedreven door passie, precisie en onwankelbare toewijding.
+                      Deze toewijding aan uitmuntendheid is voelbaar in elk
+                      aspect van de EspressoGPT en overstijgt de conventionele
+                      grenzen van koffiezetten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Een van de bepalende kenmerken is het intuïtieve interface
+                      holografische display, een wonder van moderne techniek dat
+                      gebruikers naadloos begeleidt door een gepersonaliseerde
+                      koffiezetervaring. Met een vleugje innovatie verhoogt dit
+                      holografische display niet alleen de esthetiek, maar
+                      verbetert het ook de interactie van de gebruiker met de
+                      machine, waardoor het zetten van koffie een kunstzinnig en
+                      boeiend proces wordt.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Wat de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' echt onderscheidt, is het gebruik van AI-gestuurde smaakvoorkeuren. Door de mogelijkheden van kunstmatige intelligentie te benutten, leert en past deze machine zich aan individuele voorkeuren aan, waardoor een op maat gemaakte koffie-ervaring wordt gecreëerd bij elke zetbeurt. De dagen van vallen en opstaan zijn voorbij—EspressoGPT begrijpt intuïtief en verfijnt zijn output om te voldoen aan het unieke smaakpalet van elke gebruiker.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Bovendien is het ontwerp van de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' niet alleen functioneel; het is een bewijs van een filosofie. De slanke en moderne esthetiek vult zijn technologische bekwaamheid aan en presenteert een visueel opvallend apparaat dat naadloos in elke omgeving past. Het is niet zomaar een product; het is een belichaming van een toewijding aan uitmuntendheid, een toewijding om het toppunt van koffiegenot te leveren aan een wereldwijde gemeenschap van liefhebbers.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Tot slot is de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' niet zomaar een koffiemachine—het is een manifestatie van een visie die het gewone overstijgt. Het belichaamt de vereniging van innovatie en traditie, en belooft een toekomst waarin elke gezette kop een meeslepende ervaring is die op maat is gemaakt voor perfectie. Voor koffieliefhebbers die op zoek zijn naar een mix van geavanceerde technologie en ongeëvenaarde smaak, staat de EspressoGPT als een ode aan de evolutie van koffiezetten en nodigt iedereen uit om de toekomst in elke slok te proeven.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Im Reich der Kaffee-Enthusiasten steht das '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' als Leuchtfeuer der Innovation und des Geschmacks, das nahtlos zukünftige Technologien mit dem zeitlosen Reiz einer perfekten Tasse Kaffee verbindet. Wie der Name schon sagt, ist diese revolutionäre Kaffeemaschine mehr als nur ein Brühgerät – sie ist eine immersive Reise in die Zukunft des Kaffees.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Vom Moment der Inbetriebnahme des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' entfaltet sich ein unvergleichliches Erlebnis. Über das bloße Brühen von Espresso hinaus führt diese Maschine Enthusiasten in ein Universum, in dem Geschmack und Raffinesse aufeinandertreffen. Die Verbindung von modernster Technologie und der Essenz einer gut zubereiteten Tasse Kaffee definiert das Wesen des EspressoGPT.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Im Kern liegt das Streben nach der 'perfekten
+                      Kaffeebohne', eine Philosophie, die eine akribische Reise
+                      voller Leidenschaft, Präzision und unerschütterlicher
+                      Hingabe umfasst. Dieses Engagement für Exzellenz ist in
+                      jedem Aspekt des EspressoGPT spürbar und überschreitet die
+                      konventionellen Grenzen der Kaffeezubereitung.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Eines seiner herausragenden Merkmale ist das intuitive
+                      holografische Display, ein Wunderwerk moderner Technik,
+                      das Benutzer nahtlos durch ein personalisiertes
+                      Kaffeeerlebnis führt. Mit einem Hauch von Innovation hebt
+                      dieses holografische Display nicht nur die Ästhetik,
+                      sondern auch die Benutzerinteraktion mit der Maschine auf
+                      ein neues Niveau und macht das Brühen zu einem kunstvollen
+                      und ansprechenden Prozess.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Was das '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' wirklich auszeichnet, ist seine Nutzung von KI-gesteuerten Geschmacksvorlieben. Durch die Nutzung der Fähigkeiten der künstlichen Intelligenz lernt und passt sich diese Maschine an individuelle Vorlieben an und schafft mit jedem Brühvorgang ein maßgeschneidertes Kaffeeerlebnis. Die Zeiten des Ausprobierens und Fehlermachens sind vorbei – EspressoGPT versteht intuitiv und verfeinert seine Ausgabe, um den einzigartigen Geschmack jedes Benutzers zu treffen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Darüber hinaus ist das Design des '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur funktional; es ist ein Zeugnis einer Philosophie. Die schlanke und moderne Ästhetik ergänzt seine technologische Leistungsfähigkeit und präsentiert ein visuell beeindruckendes Gerät, das sich nahtlos in jede Umgebung einfügt. Es ist nicht nur ein Produkt; es ist der Inbegriff eines Engagements für Exzellenz, eine Hingabe, das Beste des Kaffeegenusses einer globalen Gemeinschaft von Enthusiasten zu bieten.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Abschließend ist das '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' nicht nur eine Kaffeemaschine – es ist die Manifestation einer Vision, die das Gewöhnliche übersteigt. Es verkörpert die Vereinigung von Innovation und Tradition und verspricht eine Zukunft, in der jede gebrühte Tasse ein immersives Erlebnis ist, das zur Perfektion maßgeschneidert ist. Für Kaffeeliebhaber, die eine Mischung aus modernster Technologie und unvergleichlichem Geschmack suchen, steht das EspressoGPT als Ode an die Evolution der Kaffeezubereitung und lädt alle ein, die Zukunft in jedem Schluck zu genießen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'In the realm of coffee aficionados, the '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' stands as a beacon of innovation and taste, seamlessly merging future technologies with the timeless allure of a perfect cup of coffee. As its name suggests, this revolutionary coffee machine is more than just a brewing apparatus—it''s an immersive journey into the future of coffee.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'From the moment one engages the '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , an unparalleled experience unfolds. Beyond merely
+                      brewing espresso, this machine ushers enthusiasts into a
+                      universe where taste and sophistication converge. The
+                      marriage of cutting-edge technology and the essence of a
+                      well-crafted cup of coffee defines the essence of
+                      EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      At its core lies the pursuit of the 'perfect coffee bean',
+                      a philosophy that encapsulates a meticulous journey fueled
+                      by passion, precision, and unwavering dedication. This
+                      commitment to excellence is palpable in every aspect of
+                      the EspressoGPT, transcending the conventional boundaries
+                      of coffee-making.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      One of its defining features is the intuitive interface
+                      holographic display, a marvel of modern engineering that
+                      seamlessly guides users through a personalized
+                      coffee-making experience. With a touch of innovation, this
+                      holographic display not only elevates the aesthetics but
+                      also enhances the user's interaction with the machine,
+                      making brewing an artful and engaging process.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'However, what truly sets the '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' apart is its utilization of AI-powered taste preferences. By harnessing the capabilities of artificial intelligence, this machine learns and adapts to individual preferences, crafting a bespoke coffee experience with each brew. Gone are the days of trial and error—EspressoGPT intuitively understands and refines its output to suit the unique palate of every user.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Moreover, the design of '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' isn''t merely functional; it''s a testament to a philosophy. The sleek and modern aesthetics complement its technological prowess, presenting a visually striking appliance that seamlessly integrates into any setting. It''s not just a product; it''s an embodiment of a commitment to excellence, a dedication to delivering the pinnacle of coffee enjoyment to a global community of enthusiasts.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'In conclusion, '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' isn''t just a coffee machine—it''s a manifestation of a vision that transcends the ordinary. It epitomizes the union of innovation and tradition, promising a future where every cup brewed is an immersive experience tailored to perfection. For coffee lovers seeking a blend of cutting-edge technology and unparalleled taste, the EspressoGPT stands as an ode to the evolution of coffee-making, inviting all to savor the future in every sip.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dans le royaume des amateurs de café, le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' se dresse comme un phare d''innovation et de goût, fusionnant harmonieusement les technologies futures avec l''attrait intemporel d''une tasse de café parfaite. Comme son nom l''indique, cette machine à café révolutionnaire est plus qu''un simple appareil de brassage—c''est un voyage immersif vers l''avenir du café.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dès que l''on engage le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , une expérience inégalée se déploie. Au-delà de la simple
+                      préparation d'un espresso, cette machine introduit les
+                      passionnés dans un univers où goût et sophistication
+                      convergent. L'alliance de la technologie de pointe et de
+                      l'essence d'une tasse de café bien préparée définit
+                      l'essence de l'EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Au cœur de celle-ci réside la quête du 'grain de café
+                      parfait', une philosophie qui encapsule un parcours
+                      méticuleux alimenté par la passion, la précision et un
+                      dévouement sans faille. Cet engagement envers l'excellence
+                      est palpable dans chaque aspect de l'EspressoGPT,
+                      transcendant les frontières conventionnelles de la
+                      fabrication du café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      L'une de ses caractéristiques distinctives est l'interface
+                      intuitive à affichage holographique, une merveille de
+                      l'ingénierie moderne qui guide sans effort les
+                      utilisateurs à travers une expérience de préparation de
+                      café personnalisée. Avec une touche d'innovation, cet
+                      affichage holographique non seulement élève l'esthétique
+                      mais améliore également l'interaction de l'utilisateur
+                      avec la machine, rendant le brassage un processus
+                      artistique et engageant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: Cependant, ce qui distingue vraiment l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' est son utilisation des préférences gustatives alimentées par l''IA. En exploitant les capacités de l''intelligence artificielle, cette machine apprend et s''adapte aux préférences individuelles, créant une expérience de café sur mesure à chaque infusion. Fini les jours d''essais et d''erreurs—EspressoGPT comprend intuitivement et affine sa production pour s''adapter au palais unique de chaque utilisateur.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: De plus, le design de l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas seulement fonctionnel; c''est un témoignage d''une philosophie. L''esthétique élégante et moderne complète sa prouesse technologique, présentant un appareil visuellement frappant qui s''intègre parfaitement dans n''importe quel cadre. Ce n''est pas juste un produit; c''est l''incarnation d''un engagement envers l''excellence, une dédication à offrir le summum du plaisir du café à une communauté mondiale d''enthousiastes.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: En conclusion, l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas juste une machine à café—c''est la manifestation d''une vision qui transcende l''ordinaire. Elle incarne l''union de l''innovation et de la tradition, promettant un avenir où chaque tasse préparée est une expérience immersive taillée à la perfection. Pour les amateurs de café en quête d''un mélange de technologie de pointe et de goût inégalé, l''EspressoGPT se dresse comme une ode à l''évolution de la fabrication du café, invitant tous à savourer l''avenir à chaque gorgée.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dans le domaine des amateurs de café, le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' se dresse comme un phare d''innovation et de goût, fusionnant harmonieusement les technologies futures avec l''attrait intemporel d''une tasse de café parfaite. Comme son nom l''indique, cette machine à café révolutionnaire est plus qu''un simple appareil de brassage—c''est un voyage immersif vers l''avenir du café.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dès le moment où l''on engage le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , une expérience inégalée se déploie. Au-delà de la simple
+                      préparation d'un espresso, cette machine introduit les
+                      passionnés dans un univers où le goût et la sophistication
+                      convergent. Le mariage de la technologie de pointe et de
+                      l'essence d'une tasse de café bien préparée définit
+                      l'essence de l'EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Au cœur de celle-ci se trouve la quête du 'grain de café
+                      parfait', une philosophie qui encapsule un voyage
+                      méticuleux alimenté par la passion, la précision et un
+                      dévouement sans faille. Cet engagement envers l'excellence
+                      est palpable dans chaque aspect de l'EspressoGPT,
+                      transcendant les limites conventionnelles de la
+                      fabrication du café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      L'une de ses caractéristiques déterminantes est
+                      l'interface intuitive à affichage holographique, une
+                      merveille de l'ingénierie moderne qui guide sans effort
+                      les utilisateurs à travers une expérience de préparation
+                      de café personnalisée. Avec une touche d'innovation, cet
+                      affichage holographique non seulement élève l'esthétique
+                      mais améliore également l'interaction de l'utilisateur
+                      avec la machine, rendant le brassage un processus
+                      artistique et engageant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Cependant, ce qui distingue vraiment le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' est son utilisation des préférences gustatives alimentées par l''IA. En exploitant les capacités de l''intelligence artificielle, cette machine apprend et s''adapte aux préférences individuelles, créant une expérience de café sur mesure à chaque brassage. Fini les jours d''essais et d''erreurs—EspressoGPT comprend intuitivement et affine sa production pour s''adapter au palais unique de chaque utilisateur.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: De plus, le design de l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas seulement fonctionnel; c''est un témoignage d''une philosophie. L''esthétique élégante et moderne complète sa prouesse technologique, présentant un appareil visuellement frappant qui s''intègre parfaitement dans n''importe quel environnement. Ce n''est pas juste un produit; c''est une incarnation d''un engagement envers l''excellence, une dévotion à offrir le summum du plaisir du café à une communauté mondiale de passionnés.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: En conclusion, l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas seulement une machine à café—c''est une manifestation d''une vision qui transcende l''ordinaire. Il incarne l''union de l''innovation et de la tradition, promettant un avenir où chaque tasse préparée est une expérience immersive taillée à la perfection. Pour les amateurs de café en quête d''un mélange de technologie de pointe et de goût inégalé, l''EspressoGPT se dresse comme une ode à l''évolution de la fabrication du café, invitant tous à savourer l''avenir dans chaque gorgée.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dans le domaine des amateurs de café, le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' se dresse comme un phare d''innovation et de goût, fusionnant harmonieusement les technologies futures avec l''attrait intemporel d''une tasse de café parfaite. Comme son nom l''indique, cette machine à café révolutionnaire est plus qu''un simple appareil de brassage—c''est un voyage immersif vers l''avenir du café.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dès le moment où l''on engage le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , une expérience inégalée se déploie. Au-delà de la simple
+                      préparation d'un espresso, cette machine introduit les
+                      passionnés dans un univers où le goût et la sophistication
+                      convergent. Le mariage de la technologie de pointe et de
+                      l'essence d'une tasse de café bien préparée définit
+                      l'essence de l'EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Au cœur de celle-ci se trouve la quête du 'grain de café
+                      parfait', une philosophie qui encapsule un voyage
+                      méticuleux alimenté par la passion, la précision et un
+                      dévouement sans faille. Cet engagement envers l'excellence
+                      est palpable dans chaque aspect de l'EspressoGPT,
+                      transcendant les limites conventionnelles de la
+                      fabrication du café.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      L'une de ses caractéristiques déterminantes est
+                      l'interface intuitive à affichage holographique, une
+                      merveille de l'ingénierie moderne qui guide sans effort
+                      les utilisateurs à travers une expérience de préparation
+                      de café personnalisée. Avec une touche d'innovation, cet
+                      affichage holographique non seulement élève l'esthétique
+                      mais améliore également l'interaction de l'utilisateur
+                      avec la machine, rendant le brassage un processus
+                      artistique et engageant.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Cependant, ce qui distingue vraiment le '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' est son utilisation des préférences gustatives alimentées par l''IA. En exploitant les capacités de l''intelligence artificielle, cette machine apprend et s''adapte aux préférences individuelles, créant une expérience de café sur mesure à chaque brassage. Fini les jours d''essais et d''erreurs—EspressoGPT comprend intuitivement et affine sa production pour s''adapter au palais unique de chaque utilisateur.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: De plus, le design de l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas seulement fonctionnel; c''est un témoignage d''une philosophie. L''esthétique élégante et moderne complète sa prouesse technologique, présentant un appareil visuellement frappant qui s''intègre parfaitement dans n''importe quel environnement. Ce n''est pas juste un produit; c''est une incarnation d''un engagement envers l''excellence, une dévotion à offrir le summum du plaisir du café à une communauté mondiale de passionnés.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: En conclusion, l'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' n''est pas seulement une machine à café—c''est une manifestation d''une vision qui transcende l''ordinaire. Il incarne l''union de l''innovation et de la tradition, promettant un avenir où chaque tasse préparée est une expérience immersive taillée à la perfection. Pour les amateurs de café en quête d''un mélange de technologie de pointe et de goût inégalé, l''EspressoGPT se dresse comme une ode à l''évolution de la fabrication du café, invitant tous à savourer l''avenir dans chaque gorgée.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: コーヒー愛好家の世界では、
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      は革新と味の灯台として立ち、未来の技術と完璧な一杯のコーヒーの時代を超えた魅力をシームレスに融合させています。その名が示すように、この革新的なコーヒーマシンは単なる抽出装置ではなく、コーヒーの未来への没入型の旅です。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 「
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      」を使い始めた瞬間から、比類のない体験が展開されます。単にエスプレッソを抽出するだけでなく、このマシンは愛好家を味と洗練が融合する宇宙へと誘います。最先端技術と巧みに作られた一杯のコーヒーの本質の結婚がEspressoGPTの本質を定義します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      その核心には「完璧なコーヒー豆」の追求があり、情熱、精度、揺るぎない献身によって燃料を供給される綿密な旅を体現しています。この卓越性へのコミットメントはEspressoGPTのあらゆる側面に感じられ、コーヒー作りの従来の境界を超えています。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      その特徴の一つは直感的なインターフェースホログラフィックディスプレイであり、現代工学の驚異であり、ユーザーを個別のコーヒー作り体験へとシームレスに導きます。革新の一触で、このホログラフィックディスプレイは美観を高めるだけでなく、ユーザーのマシンとのインタラクションを向上させ、抽出を芸術的で魅力的なプロセスにします。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: しかし、
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      を真に際立たせるのは、AI駆動の味の好みの利用です。人工知能の能力を活用することで、このマシンは個々の好みに学習し適応し、各抽出でオーダーメイドのコーヒー体験を作り出します。試行錯誤の時代は終わり、EspressoGPTは直感的に理解し、各ユーザーの独自の味覚に合わせて出力を洗練します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: さらに、
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      のデザインは単に機能的なものではなく、哲学の証です。スリムでモダンな美学はその技術的な力を補完し、どんな環境にもシームレスに統合される視覚的に印象的な家電を提示します。それは単なる製品ではなく、卓越性へのコミットメントの具現化であり、グローバルな愛好家コミュニティに最高のコーヒーの楽しみを届けることへの献身です。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 結論として、
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      は単なるコーヒーマシンではなく、普通を超えるビジョンの具現化です。それは革新と伝統の融合を体現し、抽出されるすべてのカップが完璧に合わせた没入型体験を約束します。最先端技術と比類のない味のブレンドを求めるコーヒー愛好家にとって、EspressoGPTはコーヒー作りの進化への賛歌として立ち、すべての一口で未来を味わうよう招待します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'In het rijk van koffieliefhebbers staat de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' als een baken van innovatie en smaak, waarbij toekomstige technologieën naadloos worden gecombineerd met de tijdloze aantrekkingskracht van een perfect kopje koffie. Zoals de naam al doet vermoeden, is deze revolutionaire koffiemachine meer dan alleen een zetapparaat—het is een meeslepende reis naar de toekomst van koffie.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Vanaf het moment dat men de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' activeert, ontvouwt zich een ongeëvenaarde ervaring. Deze machine gaat verder dan alleen espresso zetten en voert liefhebbers naar een universum waar smaak en verfijning samenkomen. De combinatie van geavanceerde technologie en de essentie van een goed gemaakte kop koffie definieert de essentie van EspressoGPT.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      In de kern ligt de zoektocht naar de 'perfecte
+                      koffieboon', een filosofie die een nauwgezette reis omvat,
+                      gedreven door passie, precisie en onwankelbare toewijding.
+                      Deze toewijding aan uitmuntendheid is voelbaar in elk
+                      aspect van de EspressoGPT en overstijgt de conventionele
+                      grenzen van koffiezetten.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Een van de bepalende kenmerken is het intuïtieve interface
+                      holografische display, een wonder van moderne techniek dat
+                      gebruikers naadloos begeleidt door een gepersonaliseerde
+                      koffie-ervaring. Met een vleugje innovatie verhoogt dit
+                      holografische display niet alleen de esthetiek, maar
+                      verbetert het ook de interactie van de gebruiker met de
+                      machine, waardoor het zetten van koffie een kunstzinnig en
+                      boeiend proces wordt.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Wat de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' echt onderscheidt, is het gebruik van AI-aangedreven smaakvoorkeuren. Door de mogelijkheden van kunstmatige intelligentie te benutten, leert en past deze machine zich aan individuele voorkeuren aan, waardoor een op maat gemaakte koffie-ervaring bij elke zetbeurt ontstaat. De dagen van vallen en opstaan zijn voorbij—EspressoGPT begrijpt intuïtief en verfijnt zijn output om aan de unieke smaak van elke gebruiker te voldoen.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Bovendien is het ontwerp van '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' niet alleen functioneel; het is een testament aan een filosofie. De strakke en moderne esthetiek vult zijn technologische bekwaamheid aan en presenteert een visueel opvallend apparaat dat naadloos in elke omgeving past. Het is niet alleen een product; het is een belichaming van een toewijding aan uitmuntendheid, een toewijding om het toppunt van koffiegenot te leveren aan een wereldwijde gemeenschap van liefhebbers.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Tot slot is de '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' niet zomaar een koffiemachine—het is een manifestatie van een visie die het gewone overstijgt. Het belichaamt de vereniging van innovatie en traditie en belooft een toekomst waarin elke gezette kop een meeslepende ervaring is die op perfectie is afgestemd. Voor koffieliefhebbers die op zoek zijn naar een mix van geavanceerde technologie en ongeëvenaarde smaak, staat de EspressoGPT als een ode aan de evolutie van koffiezetten en nodigt iedereen uit om de toekomst in elke slok te proeven.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'I kaffekännarnas värld står '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' som en fyr av innovation och smak, som sömlöst förenar framtidens teknologier med den tidlösa lockelsen av en perfekt kopp kaffe. Som namnet antyder är denna revolutionerande kaffemaskin mer än bara en bryggapparat—det är en uppslukande resa in i kaffets framtid.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Från det ögonblick man aktiverar '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' utspelar sig en oöverträffad upplevelse. Utöver att bara brygga espresso, för denna maskin entusiaster in i ett universum där smak och sofistikering möts. Äktenskapet mellan banbrytande teknik och essensen av en välgjord kopp kaffe definierar essensen av EspressoGPT.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      I dess kärna ligger strävan efter den 'perfekta
+                      kaffebönan', en filosofi som innesluter en noggrann resa
+                      driven av passion, precision och orubblig hängivenhet.
+                      Detta engagemang för excellens är påtagligt i varje aspekt
+                      av EspressoGPT, och överskrider de konventionella
+                      gränserna för kaffetillverkning.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      En av dess definierande egenskaper är den intuitiva
+                      gränssnittets holografiska display, ett under av modern
+                      ingenjörskonst som sömlöst vägleder användare genom en
+                      personlig kaffetillverkningsupplevelse. Med en touch av
+                      innovation höjer denna holografiska display inte bara
+                      estetiken utan förbättrar också användarens interaktion
+                      med maskinen, vilket gör bryggningen till en konstnärlig
+                      och engagerande process.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Det som verkligen skiljer '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' åt är dess användning av AI-drivna smakpreferenser. Genom att utnyttja kapaciteterna hos artificiell intelligens lär sig och anpassar sig denna maskin till individuella preferenser, och skapar en skräddarsydd kaffeupplevelse med varje bryggning. Borta är dagarna av försök och misstag—EspressoGPT förstår intuitivt och förfinar sitt resultat för att passa varje användares unika smak.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Dessutom är designen av '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' inte bara funktionell; det är ett bevis på en filosofi. Den eleganta och moderna estetiken kompletterar dess teknologiska styrka och presenterar en visuellt slående apparat som sömlöst integreras i vilken miljö som helst. Det är inte bara en produkt; det är en förkroppsligande av ett engagemang för excellens, en hängivenhet till att leverera höjdpunkten av kaffeupplevelse till en global gemenskap av entusiaster.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'Sammanfattningsvis är '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' inte bara en kaffemaskin—det är en manifestation av en vision som överskrider det vanliga. Det förkroppsligar föreningen av innovation och tradition, och lovar en framtid där varje kopp som bryggs är en uppslukande upplevelse skräddarsydd till perfektion. För kaffelovers som söker en blandning av banbrytande teknik och oöverträffad smak står EspressoGPT som en hyllning till kaffetillverkningens utveckling, och bjuder in alla att njuta av framtiden i varje klunk.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'في عالم عشاق القهوة، يقف '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' كمنارة للابتكار والذوق، حيث يدمج بسلاسة بين تقنيات المستقبل والجاذبية الأزلية لفنجان القهوة المثالي. كما يوحي اسمه، فإن آلة القهوة الثورية هذه ليست مجرد جهاز تخمير—إنها رحلة غامرة إلى مستقبل القهوة.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'من اللحظة التي يبدأ فيها الشخص باستخدام '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: >-
+                      , تتكشف تجربة لا مثيل لها. فهذه الآلة تتجاوز مجرد تحضير
+                      الإسبريسو، حيث تأخذ عشاق القهوة إلى عالم يتلاقى فيه الذوق
+                      مع الرقي. يجسد الزواج بين التكنولوجيا المتطورة وجوهر فنجان
+                      القهوة المصنوع بإتقان جوهر EspressoGPT.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      في جوهرها تكمن السعي وراء 'حبوب القهوة المثالية'، وهي
+                      فلسفة تجسد رحلة دقيقة مدفوعة بالشغف والدقة والتفاني الذي
+                      لا يتزعزع. هذا الالتزام بالتميز ملموس في كل جانب من جوانب
+                      EspressoGPT، متجاوزًا الحدود التقليدية لصنع القهوة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      إحدى ميزاتها المميزة هي واجهة العرض الهولوغرافي التفاعلية،
+                      وهي أعجوبة من الهندسة الحديثة التي توجه المستخدمين بسلاسة
+                      خلال تجربة صنع القهوة الشخصية. بلمسة من الابتكار، لا ترفع
+                      هذه الشاشة الهولوغرافية من الجماليات فحسب، بل تعزز أيضًا
+                      تفاعل المستخدم مع الآلة، مما يجعل عملية التخمير فنًا
+                      وتجربة ممتعة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'ومع ذلك، ما يميز حقًا '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' هو استخدامه لتفضيلات الذوق المدعومة بالذكاء الاصطناعي. من خلال تسخير قدرات الذكاء الاصطناعي، تتعلم هذه الآلة وتتكيف مع التفضيلات الفردية، مما يصنع تجربة قهوة مخصصة مع كل تحضير. ولتذهب أيام التجربة والخطأ—فإن EspressoGPT يفهم بديهياً ويصقل إنتاجه ليناسب الذوق الفريد لكل مستخدم.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'علاوة على ذلك، فإن تصميم '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' ليس مجرد وظيفي؛ إنه شهادة على فلسفة. تتكامل الجماليات الأنيقة والعصرية مع براعتها التكنولوجية، مما يقدم جهازًا ملفتًا للنظر يندمج بسلاسة في أي بيئة. إنه ليس مجرد منتج؛ إنه تجسيد للالتزام بالتميز، وتفاني في تقديم قمة الاستمتاع بالقهوة لمجتمع عالمي من عشاق القهوة.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: 'في الختام، '
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                  - mode: normal
+                    text: EspressoGPT
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 1
+                    version: 1
+                  - mode: normal
+                    text: ' ليست مجرد آلة قهوة—إنها تجسيد لرؤية تتجاوز العادي. إنها تجسد اتحاد الابتكار والتقاليد، وتعد بمستقبل حيث كل فنجان يتم تحضيره هو تجربة غامرة مصممة بإتقان. بالنسبة لعشاق القهوة الذين يبحثون عن مزيج من التكنولوجيا المتطورة والذوق الذي لا مثيل له، فإن EspressoGPT تقف كتحية لتطور صنع القهوة، داعية الجميع لتذوق المستقبل في كل رشفة.'
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    ogImage:
+      type: asset
+      value:
+        - _id: c1c86cf5-9749-491e-b699-391fb73a8b93
+          type: image
+          fields:
+            id:
+              type: text
+              value: e2498392-c75c-418a-bb5d-d9433ab4f20a
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/B0rE3jzkQkuqcHI2POqIng-image.png
+              type: text
+            file:
+              type: file
+              value: 582ecdd2-738c-421d-b5e5-2448217d0f51
+            size:
+              value: 432902
+              type: number
+            title:
+              type: text
+              value: image.png
+            width:
+              value: 1486
+              type: number
+            height:
+              value: 960
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-abe861b5-a1d5-4e25-8d29-81ee18087f10-category/entries/0}
+    metaTitle:
+      type: text
+      locales:
+        da-dk: 'EspressoGPT: Løfter Kaffebrygning til Futuristiske Højder'
+        de-at: 'EspressoGPT: Kaffeezubereitung auf futuristische Höhen heben'
+        de-ch: 'EspressoGPT: Kaffeezubereitung auf futuristische Höhen heben'
+        de-de: 'EspressoGPT: Kaffeezubereitung auf futuristische Höhen heben'
+        en-au: 'EspressoGPT : Élever l''Art du Café à des Sommets Futuristes'
+        en-ca: 'EspressoGPT: Elevating Coffee Brewing to Futuristic Heights'
+        en-gb: 'EspressoGPT: Elevating Coffee Brewing to Futuristic Heights'
+        en-nl: 'EspressoGPT: Koffiezetten naar Futuristische Hoogten Tillen'
+        en-nz: 'EspressoGPT: Kaffeebrühen auf futuristische Höhen heben'
+        en-us: 'EspressoGPT: Elevating Coffee Brewing to Futuristic Heights'
+        fr-ca: 'EspressoGPT : Élever l''Art du Café à des Sommets Futuristes'
+        fr-ch: 'EspressoGPT : Élever l''Art du Café à des Sommets Futuristes'
+        fr-fr: 'EspressoGPT : Élever l''Art du Café à des Sommets Futuristes'
+        ja-jp: 'エスプレッソGPT: コーヒー抽出を未来的な高みへ'
+        nl-nl: 'EspressoGPT: Koffiezetten naar Futuristische Hoogten Brengen'
+        sv-se: 'EspressoGPT: Höjer Kaffebryggning till Futuristiska Höjder'
+        ar-uae: 'إسبريسو جي بي تي: رفع تحضير القهوة إلى آفاق مستقبلية'
+    thumbnail:
+      type: asset
+      value:
+        - _id: cb1d1c26-19df-4e2b-8556-f6ef0f9e88d1
+          type: image
+          fields:
+            id:
+              type: text
+              value: e2498392-c75c-418a-bb5d-d9433ab4f20a
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/B0rE3jzkQkuqcHI2POqIng-image.png
+              type: text
+            file:
+              type: file
+              value: 582ecdd2-738c-421d-b5e5-2448217d0f51
+            size:
+              value: 432902
+              type: number
+            title:
+              type: text
+              value: image.png
+            width:
+              value: 1486
+              type: number
+            height:
+              value: 960
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    enrichments:
+      type: $enr
+      value:
+        - cat: topic
+          key: coffee
+          str: 5
+    publishDate:
+      type: date
+      value: '2025-03-15'
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Hvor fremtidens teknologier møder tidløs smag. Oplev kaffe som aldrig
+          før. Fra det øjeblik du tænder for EspressoGPT, brygger du ikke bare
+          en espresso—du træder ind i kaffens fremtid.
+        de-at: >-
+          Wo Zukunftstechnologien auf zeitlosen Geschmack treffen. Erleben Sie
+          Kaffee wie nie zuvor. Ab dem Moment, in dem Sie den EspressoGPT
+          einschalten, brühen Sie nicht nur einen Espresso – Sie betreten die
+          Zukunft des Kaffees.
+        de-ch: >-
+          Wo zukunftsweisende Technologien auf zeitlosen Geschmack treffen.
+          Erleben Sie Kaffee wie nie zuvor. Ab dem Moment, in dem Sie das
+          EspressoGPT einschalten, brühen Sie nicht nur einen Espresso – Sie
+          betreten die Zukunft des Kaffees.
+        de-de: >-
+          Wo zukunftsweisende Technologien auf zeitlosen Geschmack treffen.
+          Erleben Sie Kaffee wie nie zuvor. Ab dem Moment, in dem Sie das
+          EspressoGPT einschalten, brühen Sie nicht nur einen Espresso – Sie
+          betreten die Zukunft des Kaffees.
+        en-au: >-
+          Là où les technologies futures rencontrent le goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne faites pas que préparer un espresso—vous entrez
+          dans le futur du café.
+        en-ca: >-
+          Where future technologies meet timeless taste. Experience coffee like
+          never before. From the moment you power up the EspressoGPT, you're not
+          just brewing an espresso—you're entering the future of coffee.
+        en-gb: >-
+          Where future technologies meet timeless taste. Experience coffee like
+          never before. From the moment you power up the EspressoGPT, you're not
+          just brewing an espresso—you're entering the future of coffee.
+        en-nl: >-
+          Waar toekomstige technologieën tijdloze smaak ontmoeten. Ervaar koffie
+          als nooit tevoren. Vanaf het moment dat je de EspressoGPT inschakelt,
+          zet je niet alleen een espresso—je betreedt de toekomst van koffie.
+        en-nz: >-
+          Wo zukunftsweisende Technologien auf zeitlosen Geschmack treffen.
+          Erleben Sie Kaffee wie nie zuvor. Ab dem Moment, in dem Sie den
+          EspressoGPT einschalten, brühen Sie nicht nur einen Espresso – Sie
+          betreten die Zukunft des Kaffees.
+        en-us: >-
+          Where future technologies meet timeless taste.  Experience coffee like
+          never before. From the moment you power up the EspressoGPT, you're not
+          just brewing an espresso—you're entering the future of coffee
+        fr-ca: >-
+          Là où les technologies futures rencontrent un goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne faites pas que préparer un espresso—vous entrez
+          dans le futur du café.
+        fr-ch: >-
+          Là où les technologies futures rencontrent le goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne faites pas que préparer un espresso—vous entrez
+          dans le futur du café.
+        fr-fr: >-
+          Là où les technologies futures rencontrent le goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne faites pas que préparer un espresso—vous entrez
+          dans le futur du café.
+        ja-jp: >-
+          未来の技術が時を超えた味わいと出会う場所。これまでにないコーヒー体験を。エスプレッソGPTを起動した瞬間から、ただエスプレッソを淹れるだけでなく、コーヒーの未来に足を踏み入れるのです。
+        nl-nl: >-
+          Waar toekomstige technologieën tijdloze smaak ontmoeten. Ervaar koffie
+          als nooit tevoren. Vanaf het moment dat je de EspressoGPT inschakelt,
+          zet je niet alleen een espresso—je betreedt de toekomst van koffie.
+        sv-se: >-
+          Där framtidens teknik möter tidlös smak. Upplev kaffe som aldrig förr.
+          Från det ögonblick du startar EspressoGPT brygger du inte bara en
+          espresso—du går in i kaffets framtid.
+        ar-uae: >-
+          حيث تلتقي تقنيات المستقبل مع الذوق الخالد. اختبر القهوة كما لم تفعل من
+          قبل. من اللحظة التي تشغل فيها EspressoGPT، أنت لا تقوم فقط بصنع
+          إسبرسو—بل تدخل مستقبل القهوة.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Hvor fremtidens teknologier møder tidløs smag. Oplev kaffe som aldrig
+          før. Fra det øjeblik du tænder EspressoGPT, brygger du ikke bare en
+          espresso—du træder ind i kaffens fremtid.
+        de-at: >-
+          Wo zukunftsweisende Technologien auf zeitlosen Geschmack treffen.
+          Erleben Sie Kaffee wie nie zuvor. Ab dem Moment, in dem Sie das
+          EspressoGPT einschalten, brühen Sie nicht nur einen Espresso – Sie
+          betreten die Zukunft des Kaffees.
+        de-ch: >-
+          Wo zukunftsweisende Technologien auf zeitlosen Geschmack treffen.
+          Erleben Sie Kaffee wie nie zuvor. Ab dem Moment, in dem Sie den
+          EspressoGPT einschalten, brühen Sie nicht nur einen Espresso—Sie
+          betreten die Zukunft des Kaffees.
+        de-de: >-
+          Wo zukunftsweisende Technologien auf zeitlosen Geschmack treffen.
+          Erleben Sie Kaffee wie nie zuvor. Ab dem Moment, in dem Sie den
+          EspressoGPT einschalten, brühen Sie nicht nur einen Espresso—Sie
+          betreten die Zukunft des Kaffees.
+        en-au: >-
+          Là où les technologies futures rencontrent le goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne faites pas que préparer un espresso—vous entrez
+          dans le futur du café.
+        en-ca: >-
+          Where future technologies meet timeless taste. Experience coffee like
+          never before. From the moment you power up the EspressoGPT, you're not
+          just brewing an espresso—you're entering the future of coffee.
+        en-gb: >-
+          Where future technologies meet timeless taste. Experience coffee like
+          never before. From the moment you power up the EspressoGPT, you're not
+          just brewing an espresso—you're entering the future of coffee.
+        en-nl: >-
+          Waar toekomstige technologieën tijdloze smaak ontmoeten. Ervaar koffie
+          als nooit tevoren. Vanaf het moment dat je de EspressoGPT inschakelt,
+          zet je niet alleen een espresso—je betreedt de toekomst van koffie.
+        en-nz: >-
+          Wo zukunftsweisende Technologien auf zeitlosen Geschmack treffen.
+          Erleben Sie Kaffee wie nie zuvor. Ab dem Moment, in dem Sie das
+          EspressoGPT einschalten, brühen Sie nicht nur einen Espresso – Sie
+          betreten die Zukunft des Kaffees.
+        en-us: >-
+          Where future technologies meet timeless taste.  Experience coffee like
+          never before. From the moment you power up the EspressoGPT, you're not
+          just brewing an espresso—you're entering the future of coffee
+        fr-ca: >-
+          Là où les technologies futures rencontrent le goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne préparez pas seulement un espresso—vous entrez
+          dans le futur du café.
+        fr-ch: >-
+          Là où les technologies du futur rencontrent le goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne faites pas que préparer un espresso—vous entrez
+          dans le futur du café.
+        fr-fr: >-
+          Là où les technologies du futur rencontrent le goût intemporel.
+          Découvrez le café comme jamais auparavant. Dès que vous allumez
+          l'EspressoGPT, vous ne faites pas que préparer un espresso—vous entrez
+          dans le futur du café.
+        ja-jp: >-
+          未来の技術が時を超えた味わいと出会う場所。これまでにないコーヒー体験を。エスプレッソGPTを起動した瞬間から、ただのエスプレッソを淹れるのではなく、コーヒーの未来に足を踏み入れるのです。
+        nl-nl: >-
+          Waar toekomstige technologieën tijdloze smaak ontmoeten. Ervaar koffie
+          als nooit tevoren. Vanaf het moment dat je de EspressoGPT inschakelt,
+          zet je niet alleen een espresso—je betreedt de toekomst van koffie.
+        sv-se: >-
+          Där framtidens teknik möter tidlös smak. Upplev kaffe som aldrig förr.
+          Från det ögonblick du startar EspressoGPT brygger du inte bara en
+          espresso—du kliver in i kaffets framtid.
+        ar-uae: >-
+          حيث تلتقي تقنيات المستقبل مع الذوق الخالد. اختبر القهوة كما لم تفعل من
+          قبل. من اللحظة التي تقوم فيها بتشغيل EspressoGPT، أنت لا تقوم فقط
+          بتحضير الإسبريسو - بل تدخل مستقبل القهوة.
+  _dataResources:
+    ref-abe861b5-a1d5-4e25-8d29-81ee18087f10-author:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 43fdda6b-7531-4e87-9f93-2bccbe77a10a
+    ref-abe861b5-a1d5-4e25-8d29-81ee18087f10-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 8f126a53-19d3-46d9-a855-63be62ffca1d
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

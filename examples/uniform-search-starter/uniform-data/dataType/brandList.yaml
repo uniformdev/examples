@@ -1,0 +1,27 @@
+id: brandList
+displayName: Brand List
+path: /query
+custom:
+  allowedContentTypes:
+    - brand
+method: GET
+purgeKey: 1c014c0a-a1c5-46a6-b561-0d1111504429
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

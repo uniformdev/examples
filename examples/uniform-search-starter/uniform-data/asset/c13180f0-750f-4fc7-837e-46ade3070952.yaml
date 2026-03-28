@@ -1,0 +1,11 @@
+asset:
+  type: other
+  _id: c13180f0-750f-4fc7-837e-46ade3070952
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: favourite-icon-white.svg
+    custom: {}
+created: '2026-03-10T23:26:20.786409+00:00'
+modified: '2026-03-10T23:26:20.786409+00:00'

@@ -1,0 +1,22 @@
+id: subCategory
+name: Sub Category
+cap: 100
+values:
+  - id: accessories
+    value: Accessories
+  - id: arabica
+    value: Arabica
+  - id: espresso
+    value: Espresso
+  - id: french-press
+    value: French Press
+  - id: liberica
+    value: Liberica
+  - id: percolators
+    value: Percolators
+  - id: pour-over
+    value: Pour-Over
+  - id: robusta
+    value: Robusta
+  - id: turkish
+    value: Turkish

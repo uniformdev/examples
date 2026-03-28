@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: d79b41a7-364a-408d-926e-a690ca776d73
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: carbon-neutral-energy-source.png
+    file:
+      type: file
+      value: 41f50f2b-d677-4106-9d94-d9b544d45cb1
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/ij-RwemnTZ-WVZqgEZassQ-carbon-neutral-energy-source.png
+      type: text
+    size:
+      value: 1976
+      type: number
+    width:
+      value: 60
+      type: number
+    height:
+      value: 57
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:13.610709+00:00'
+modified: '2026-03-10T23:28:13.610709+00:00'

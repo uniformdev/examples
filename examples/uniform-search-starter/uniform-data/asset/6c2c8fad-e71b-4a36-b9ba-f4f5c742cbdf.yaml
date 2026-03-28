@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 6c2c8fad-e71b-4a36-b9ba-f4f5c742cbdf
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: royale.png
+    file:
+      type: file
+      value: 9fa019a8-764f-4280-9999-abf2e0c0097b
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/AREADKWIQW680kfxHCr84Q-royale.png
+      type: text
+    size:
+      value: 938485
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:08.171893+00:00'
+modified: '2026-03-10T23:27:08.171893+00:00'

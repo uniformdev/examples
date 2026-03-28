@@ -1,0 +1,176 @@
+created: '2026-03-10T23:34:57.428143+00:00'
+modified: '2026-03-10T23:34:57.428143+00:00'
+pattern: false
+entry:
+  _id: 9ade18d3-c6b0-4928-b86b-9ff43d676159
+  _name: Kosmic Coffee
+  _slug: kosmic-coffee
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/VVUvV-GZQuu1y4Kp_6sUQA-kosmic-coffee.png
+  type: brand
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Kosmic Kaffe
+        de-at: Kosmic Kaffee
+        de-ch: Kosmic Kaffee
+        de-de: Kosmic Kaffee
+        en-au: Café Kosmic
+        en-ca: Kosmic Coffee
+        en-gb: Kosmic Coffee
+        en-nl: Kosmic Koffie
+        en-nz: Kosmic Kaffee
+        en-us: Kosmic Coffee
+        fr-ca: Café Kosmic
+        fr-ch: Kosmic Coffee
+        fr-fr: Kosmic Coffee
+        ja-jp: コズミックコーヒー
+        nl-nl: Kosmic Koffie
+        sv-se: Kosmic Coffee
+        ar-uae: كوزميك كوفي
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Kosmic Coffee tager dig med på en ekstraordinær rejse gennem smagenes
+          og aromaernes univers. Vores mission er at skabe stjerneklare
+          kaffeoplevelser med innovative kaffemaskiner og førsteklasses
+          kaffeprodukter. Uanset om du er en kaffeentusiast eller lige er
+          begyndt på din kaffeoplevelse, er Kosmic Coffee dedikeret til at
+          levere kvalitet og smag ud over det sædvanlige i hver kop.
+        de-at: >-
+          Kosmic Coffee nimmt Sie mit auf eine außergewöhnliche Reise durch das
+          Universum der Aromen und Geschmäcker. Unsere Mission ist es,
+          herausragende Kaffeeerlebnisse mit innovativen Kaffeemaschinen und
+          hochwertigen Kaffeeprodukten zu schaffen. Egal, ob Sie ein
+          Kaffeekenner sind oder gerade erst Ihr Kaffeeabenteuer beginnen,
+          Kosmic Coffee ist bestrebt, in jeder Tasse Qualität und Geschmack von
+          einer anderen Welt zu liefern.
+        de-ch: >-
+          Kosmic Coffee nimmt Sie mit auf eine außergewöhnliche Reise durch das
+          Universum der Aromen und Geschmäcker. Unsere Mission ist es,
+          herausragende Kaffeeerlebnisse mit innovativen Kaffeemaschinen und
+          hochwertigen Kaffeeprodukten zu schaffen. Ob Sie ein Kaffeeliebhaber
+          sind oder gerade erst Ihr Kaffeeabenteuer beginnen, Kosmic Coffee ist
+          bestrebt, in jeder Tasse eine Qualität und einen Geschmack zu liefern,
+          die nicht von dieser Welt sind.
+        de-de: >-
+          Kosmic Coffee nimmt Sie mit auf eine außergewöhnliche Reise durch das
+          Universum der Aromen und Geschmäcker. Unsere Mission ist es,
+          herausragende Kaffeeerlebnisse mit innovativen Kaffeemaschinen und
+          hochwertigen Kaffeeprodukten zu schaffen. Ob Sie ein Kaffeeliebhaber
+          sind oder gerade erst Ihr Kaffeeabenteuer beginnen, Kosmic Coffee ist
+          bestrebt, in jeder Tasse eine Qualität und einen Geschmack zu liefern,
+          die nicht von dieser Welt sind.
+        en-au: >-
+          Kosmic Coffee vous emmène dans un voyage extraordinaire à travers
+          l'univers des saveurs et des arômes. Notre mission est de créer des
+          expériences café stellaires avec des cafetières innovantes et des
+          produits de café haut de gamme. Que vous soyez un passionné de café ou
+          que vous commenciez tout juste votre aventure café, Kosmic Coffee
+          s'engage à offrir une qualité et un goût hors du commun dans chaque
+          tasse.
+        en-ca: >-
+          Kosmic Coffee vous emmène dans un voyage extraordinaire à travers
+          l'univers des saveurs et des arômes. Notre mission est de créer des
+          expériences de café stellaires avec des cafetières innovantes et des
+          produits de café de première qualité. Que vous soyez un passionné de
+          café ou que vous commenciez tout juste votre aventure café, Kosmic
+          Coffee s'engage à offrir une qualité et un goût hors du commun dans
+          chaque tasse.
+        en-gb: >-
+          Kosmic Coffee takes you on an extraordinary journey through the
+          universe of flavours and aromas. Our mission is to craft stellar
+          coffee experiences with innovative coffee makers and premium coffee
+          products. Whether you’re a coffee aficionado or just starting your
+          coffee adventure, Kosmic Coffee is dedicated to delivering
+          out-of-this-world quality and taste in every cup.
+        en-nl: >-
+          Kosmic Coffee neemt je mee op een buitengewone reis door het universum
+          van smaken en aroma's. Onze missie is om buitengewone
+          koffie-ervaringen te creëren met innovatieve koffiezetapparaten en
+          premium koffieproducten. Of je nu een koffiekenner bent of net aan je
+          koffieavontuur begint, Kosmic Coffee is toegewijd aan het leveren van
+          buitenaardse kwaliteit en smaak in elke kop.
+        en-nz: >-
+          Kosmic Coffee nimmt Sie mit auf eine außergewöhnliche Reise durch das
+          Universum der Aromen und Geschmäcker. Unsere Mission ist es,
+          herausragende Kaffeeerlebnisse mit innovativen Kaffeemaschinen und
+          hochwertigen Kaffeeprodukten zu schaffen. Ob Sie ein Kaffeekenner sind
+          oder gerade erst Ihr Kaffeeabenteuer beginnen, Kosmic Coffee ist
+          bestrebt, in jeder Tasse eine Qualität und einen Geschmack zu liefern,
+          die nicht von dieser Welt sind.
+        en-us: >-
+          Kosmic Coffee takes you on an extraordinary journey through the
+          universe of flavors and aromas. Our mission is to craft stellar coffee
+          experiences with innovative coffee makers and premium coffee products.
+          Whether you’re a coffee aficionado or just starting your coffee
+          adventure, Kosmic Coffee is dedicated to delivering out-of-this-world
+          quality and taste in every cup.
+        fr-ca: >-
+          Kosmic Coffee vous emmène dans un voyage extraordinaire à travers
+          l'univers des saveurs et des arômes. Notre mission est de créer des
+          expériences café stellaires avec des machines à café innovantes et des
+          produits de café haut de gamme. Que vous soyez un passionné de café ou
+          que vous commenciez juste votre aventure café, Kosmic Coffee s'engage
+          à offrir une qualité et un goût hors du commun dans chaque tasse.
+        fr-ch: >-
+          Kosmic Coffee vous emmène dans un voyage extraordinaire à travers
+          l'univers des saveurs et des arômes. Notre mission est de créer des
+          expériences café stellaires avec des machines à café innovantes et des
+          produits de café haut de gamme. Que vous soyez un passionné de café ou
+          que vous commenciez tout juste votre aventure café, Kosmic Coffee
+          s'engage à offrir une qualité et un goût hors du commun dans chaque
+          tasse.
+        fr-fr: >-
+          Kosmic Coffee vous emmène dans un voyage extraordinaire à travers
+          l'univers des saveurs et des arômes. Notre mission est de créer des
+          expériences café stellaires avec des machines à café innovantes et des
+          produits de café haut de gamme. Que vous soyez un passionné de café ou
+          que vous commenciez tout juste votre aventure café, Kosmic Coffee
+          s'engage à offrir une qualité et un goût hors du commun dans chaque
+          tasse.
+        ja-jp: >-
+          コズミックコーヒーは、風味と香りの宇宙を巡る特別な旅へとあなたを誘います。私たちの使命は、革新的なコーヒーメーカーとプレミアムなコーヒー製品で、星のように輝くコーヒー体験を創り出すことです。コーヒー愛好家であろうと、コーヒーの冒険を始めたばかりであろうと、コズミックコーヒーは、どの一杯にも驚異的な品質と味をお届けすることに専念しています。
+        nl-nl: >-
+          Kosmic Coffee neemt je mee op een buitengewone reis door het universum
+          van smaken en aroma's. Onze missie is om sterrenkoffie-ervaringen te
+          creëren met innovatieve koffiemachines en premium koffieproducten. Of
+          je nu een koffieliefhebber bent of net begint aan je koffieavontuur,
+          Kosmic Coffee is toegewijd aan het leveren van buitenaardse kwaliteit
+          en smaak in elke kop.
+        sv-se: >-
+          Kosmic Coffee tar dig med på en extraordinär resa genom smakernas och
+          aromernas universum. Vårt uppdrag är att skapa stjärnklara
+          kaffeupplevelser med innovativa kaffemaskiner och
+          premiumkaffeprodukter. Oavsett om du är en kaffeentusiast eller precis
+          har börjat din kaffeäventyr, är Kosmic Coffee dedikerad till att
+          leverera utomjordisk kvalitet och smak i varje kopp.
+        ar-uae: >-
+          تأخذك كوزميك كوفي في رحلة استثنائية عبر عالم النكهات والروائح. مهمتنا
+          هي ابتكار تجارب قهوة مميزة باستخدام صانعي القهوة المبتكرين ومنتجات
+          القهوة الفاخرة. سواء كنت من عشاق القهوة أو بدأت للتو مغامرتك في عالم
+          القهوة، فإن كوزميك كوفي ملتزمة بتقديم جودة وطعم لا مثيل لهما في كل
+          فنجان.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

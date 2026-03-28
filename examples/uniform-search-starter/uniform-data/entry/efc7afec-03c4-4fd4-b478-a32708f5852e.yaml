@@ -1,0 +1,1027 @@
+created: '2026-03-10T23:36:25.986271+00:00'
+modified: '2026-03-10T23:36:25.986271+00:00'
+pattern: false
+entry:
+  _id: efc7afec-03c4-4fd4-b478-a32708f5852e
+  _name: Water Reservoir with Flip-Top Lid
+  _slug: water-reservoir-with-flip-top-lid
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/OeJqAb8qSAKSCoSIl2hfxw-water-reservoir-with-flip-top-lid-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Oplev den ultimative bekvemmelighed med dette
+                      vandreservoir, der har et praktisk flip-top låg, perfekt
+                      til specialkaffemaskiner. Dette gennemtænkte design gør
+                      genopfyldning til en leg, med en sikker flip-top åbning,
+                      der hjælper med at forhindre spild og minimere rod.
+                      Fremstillet af materialer af høj kvalitet og holdbarhed,
+                      sikrer dette reservoir en langvarig og pålidelig vandkilde
+                      til din kaffemaskine, hvilket opretholder en stabil,
+                      optimal strømning for at fremhæve det bedste i din kaffe.
+                      Uanset om du brygger en enkelt kop eller en hel kande, er
+                      dette reservoir bygget til at holde trit med dine daglige
+                      kafferitualer og leverer den perfekte blanding af
+                      funktionalitet og kvalitet.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erleben Sie ultimativen Komfort mit diesem Wasserbehälter,
+                      der über einen praktischen Klappdeckel verfügt und perfekt
+                      für Spezialitäten-Kaffeemaschinen geeignet ist. Dieser
+                      durchdacht gestaltete Behälter macht das Nachfüllen zum
+                      Kinderspiel, mit einer sicheren Klappöffnung, die hilft,
+                      Verschüttungen zu verhindern und Unordnung zu minimieren.
+                      Hergestellt aus hochwertigen, langlebigen Materialien,
+                      sorgt dieser Behälter für eine langanhaltende und
+                      zuverlässige Wasserquelle für Ihre Kaffeemaschine und hält
+                      einen gleichmäßigen, optimalen Fluss aufrecht, um das
+                      Beste aus Ihrem Kaffee herauszuholen. Egal, ob Sie eine
+                      einzelne Tasse oder eine volle Kanne brühen, dieser
+                      Behälter ist darauf ausgelegt, mit Ihren täglichen
+                      Kaffeeritualen Schritt zu halten und bietet die perfekte
+                      Mischung aus Funktionalität und Qualität.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erleben Sie ultimativen Komfort mit diesem Wasserbehälter,
+                      der über einen praktischen Klappdeckel verfügt und perfekt
+                      für Spezialitäten-Kaffeemaschinen geeignet ist. Dieser
+                      durchdacht gestaltete Behälter macht das Nachfüllen zum
+                      Kinderspiel, mit einer sicheren Klappöffnung, die hilft,
+                      Verschüttungen zu verhindern und Unordnung zu minimieren.
+                      Hergestellt aus hochwertigen, langlebigen Materialien,
+                      gewährleistet dieser Behälter eine langanhaltende und
+                      zuverlässige Wasserquelle für Ihre Kaffeemaschine und
+                      sorgt für einen gleichmäßigen, optimalen Fluss, um das
+                      Beste aus Ihrem Kaffee herauszuholen. Egal, ob Sie eine
+                      einzelne Tasse oder eine volle Kanne brühen, dieser
+                      Behälter ist darauf ausgelegt, mit Ihren täglichen
+                      Kaffeeritualen Schritt zu halten und bietet die perfekte
+                      Mischung aus Funktionalität und Qualität.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erleben Sie ultimativen Komfort mit diesem Wasserbehälter,
+                      der über einen praktischen Klappdeckel verfügt und perfekt
+                      für Spezialitäten-Kaffeemaschinen geeignet ist. Dieser
+                      durchdacht gestaltete Behälter macht das Nachfüllen zum
+                      Kinderspiel, mit einer sicheren Klappöffnung, die hilft,
+                      Verschüttungen zu verhindern und Unordnung zu minimieren.
+                      Hergestellt aus hochwertigen, langlebigen Materialien,
+                      gewährleistet dieser Behälter eine langanhaltende und
+                      zuverlässige Wasserquelle für Ihre Kaffeemaschine und
+                      sorgt für einen gleichmäßigen, optimalen Fluss, um das
+                      Beste aus Ihrem Kaffee herauszuholen. Egal, ob Sie eine
+                      einzelne Tasse oder eine volle Kanne brühen, dieser
+                      Behälter ist darauf ausgelegt, mit Ihren täglichen
+                      Kaffeeritualen Schritt zu halten und bietet die perfekte
+                      Mischung aus Funktionalität und Qualität.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Découvrez le summum de la commodité avec ce réservoir
+                      d'eau doté d'un couvercle rabattable pratique, parfait
+                      pour les machines à café spécialisées. Ce réservoir
+                      soigneusement conçu facilite le remplissage, avec une
+                      ouverture sécurisée à rabat qui aide à prévenir les
+                      déversements et minimise le désordre. Fabriqué à partir de
+                      matériaux durables et de haute qualité, ce réservoir
+                      garantit une source d'eau fiable et durable pour votre
+                      machine à café, maintenant un débit optimal et constant
+                      pour révéler le meilleur de votre café. Que vous prépariez
+                      une seule tasse ou une carafe entière, ce réservoir est
+                      conçu pour suivre vos rituels quotidiens de café, offrant
+                      le parfait mélange de fonctionnalité et de qualité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Découvrez le summum de la commodité avec ce réservoir
+                      d'eau doté d'un couvercle à rabat pratique, parfait pour
+                      les cafetières spécialisées. Ce réservoir soigneusement
+                      conçu facilite le remplissage, avec une ouverture
+                      sécurisée à rabat qui aide à prévenir les déversements et
+                      minimise le désordre. Fabriqué à partir de matériaux
+                      durables et de haute qualité, ce réservoir assure une
+                      source d'eau fiable et durable pour votre cafetière,
+                      maintenant un débit optimal et régulier pour faire
+                      ressortir le meilleur de votre café. Que vous prépariez
+                      une seule tasse ou une carafe complète, ce réservoir est
+                      conçu pour suivre vos rituels quotidiens de café, offrant
+                      le parfait mélange de fonctionnalité et de qualité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Experience the ultimate in convenience with this Water
+                      Reservoir featuring a practical flip-top lid, perfect for
+                      speciality coffee makers. This thoughtfully designed
+                      reservoir makes refilling a breeze, with a secure,
+                      flip-top opening that helps prevent spills and minimises
+                      mess. Crafted from high-quality, durable materials, this
+                      reservoir ensures a long-lasting and reliable water source
+                      for your coffee maker, maintaining a steady, optimal flow
+                      to bring out the best in your coffee. Whether you're
+                      brewing a single cup or a full carafe, this reservoir is
+                      built to keep up with your daily coffee rituals, providing
+                      the perfect blend of functionality and quality.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ervaar het ultieme gemak met dit Waterreservoir met een
+                      praktische klapdeksel, perfect voor speciale
+                      koffiemachines. Dit doordacht ontworpen reservoir maakt
+                      bijvullen eenvoudig, met een veilige klapdeksel die helpt
+                      morsen te voorkomen en rommel tot een minimum beperkt.
+                      Gemaakt van hoogwaardige, duurzame materialen, zorgt dit
+                      reservoir voor een langdurige en betrouwbare waterbron
+                      voor uw koffiemachine, met een constante, optimale stroom
+                      om het beste in uw koffie naar boven te halen. Of u nu een
+                      enkele kop of een volle kan zet, dit reservoir is gebouwd
+                      om uw dagelijkse koffierituelen bij te houden, met de
+                      perfecte mix van functionaliteit en kwaliteit.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erleben Sie das ultimative Maß an Komfort mit diesem
+                      Wasserbehälter, der über einen praktischen Klappdeckel
+                      verfügt und perfekt für Spezialitäten-Kaffeemaschinen
+                      geeignet ist. Dieser durchdacht gestaltete Behälter macht
+                      das Nachfüllen zum Kinderspiel, mit einer sicheren,
+                      klappbaren Öffnung, die hilft, Verschüttungen zu
+                      verhindern und Unordnung zu minimieren. Hergestellt aus
+                      hochwertigen, langlebigen Materialien, sorgt dieser
+                      Behälter für eine langanhaltende und zuverlässige
+                      Wasserquelle für Ihre Kaffeemaschine und hält einen
+                      gleichmäßigen, optimalen Fluss aufrecht, um das Beste aus
+                      Ihrem Kaffee herauszuholen. Egal, ob Sie eine einzelne
+                      Tasse oder eine volle Kanne brühen, dieser Behälter ist
+                      darauf ausgelegt, mit Ihren täglichen Kaffeeritualen
+                      Schritt zu halten und bietet die perfekte Mischung aus
+                      Funktionalität und Qualität.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Experience the ultimate in convenience with this Water
+                      Reservoir featuring a practical flip-top lid, perfect for
+                      specialty coffee makers. This thoughtfully designed
+                      reservoir makes refilling a breeze, with a secure,
+                      flip-top opening that helps prevent spills and minimizes
+                      mess. Crafted from high-quality, durable materials, this
+                      reservoir ensures a long-lasting and reliable water source
+                      for your coffee maker, maintaining a steady, optimal flow
+                      to bring out the best in your coffee. Whether you're
+                      brewing a single cup or a full carafe, this reservoir is
+                      built to keep up with your daily coffee rituals, providing
+                      the perfect blend of functionality and quality.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Découvrez le summum de la commodité avec ce réservoir
+                      d'eau doté d'un couvercle à rabat pratique, parfait pour
+                      les cafetières spécialisées. Ce réservoir soigneusement
+                      conçu facilite le remplissage grâce à une ouverture
+                      sécurisée à rabat qui aide à prévenir les déversements et
+                      minimise les dégâts. Fabriqué à partir de matériaux
+                      durables et de haute qualité, ce réservoir assure une
+                      source d'eau fiable et durable pour votre cafetière,
+                      maintenant un débit optimal et constant pour révéler le
+                      meilleur de votre café. Que vous prépariez une seule tasse
+                      ou une carafe complète, ce réservoir est conçu pour suivre
+                      vos rituels quotidiens de café, offrant le parfait mélange
+                      de fonctionnalité et de qualité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Découvrez le summum de la commodité avec ce réservoir
+                      d'eau doté d'un couvercle à rabat pratique, parfait pour
+                      les machines à café spécialisées. Ce réservoir conçu avec
+                      soin facilite le remplissage, avec une ouverture sécurisée
+                      à rabat qui aide à prévenir les déversements et minimise
+                      les dégâts. Fabriqué à partir de matériaux de haute
+                      qualité et durables, ce réservoir assure une source d'eau
+                      fiable et durable pour votre machine à café, maintenant un
+                      débit optimal et constant pour révéler le meilleur de
+                      votre café. Que vous prépariez une tasse ou une carafe
+                      entière, ce réservoir est conçu pour suivre vos rituels
+                      quotidiens de café, offrant le parfait mélange de
+                      fonctionnalité et de qualité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Découvrez le summum de la commodité avec ce réservoir
+                      d'eau doté d'un couvercle à rabat pratique, parfait pour
+                      les machines à café spécialisées. Ce réservoir conçu avec
+                      soin facilite le remplissage, avec une ouverture sécurisée
+                      à rabat qui aide à prévenir les déversements et minimise
+                      les dégâts. Fabriqué à partir de matériaux de haute
+                      qualité et durables, ce réservoir assure une source d'eau
+                      fiable et durable pour votre machine à café, maintenant un
+                      débit optimal et constant pour révéler le meilleur de
+                      votre café. Que vous prépariez une tasse ou une carafe
+                      entière, ce réservoir est conçu pour suivre vos rituels
+                      quotidiens de café, offrant le parfait mélange de
+                      fonctionnalité et de qualité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      このウォーターリザーバーは、便利なフリップトップリッドを備えており、スペシャルティコーヒーメーカーに最適です。この考え抜かれたデザインのリザーバーは、しっかりとしたフリップトップの開口部でこぼれを防ぎ、混乱を最小限に抑えながら、簡単に補充できます。高品質で耐久性のある素材で作られたこのリザーバーは、コーヒーメーカーに長持ちで信頼性のある水源を提供し、コーヒーの味を最大限に引き出すために安定した最適な流れを維持します。シングルカップでもフルカラフェでも、このリザーバーは日々のコーヒーの儀式に対応するように設計されており、機能性と品質の完璧なブレンドを提供します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Ervaar het ultieme gemak met dit waterreservoir met een
+                      praktische klapdeksel, perfect voor speciale
+                      koffiezetapparaten. Dit doordacht ontworpen reservoir
+                      maakt bijvullen eenvoudig, met een veilige klapdeksel die
+                      helpt morsen te voorkomen en rommel te minimaliseren.
+                      Gemaakt van hoogwaardige, duurzame materialen, zorgt dit
+                      reservoir voor een langdurige en betrouwbare waterbron
+                      voor uw koffiezetapparaat, met een constante, optimale
+                      stroom om het beste uit uw koffie te halen. Of u nu een
+                      enkele kop of een volle kan zet, dit reservoir is gebouwd
+                      om uw dagelijkse koffierituelen bij te houden en biedt de
+                      perfecte mix van functionaliteit en kwaliteit.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Upplev den ultimata bekvämligheten med denna
+                      vattenreservoar som har ett praktiskt lock med flip-top,
+                      perfekt för specialkaffebryggare. Denna genomtänkta
+                      reservoar gör påfyllning enkel, med en säker öppning med
+                      flip-top som hjälper till att förhindra spill och minimera
+                      stök. Tillverkad av högkvalitativa, hållbara material,
+                      säkerställer denna reservoar en långvarig och pålitlig
+                      vattenkälla för din kaffebryggare, och bibehåller ett
+                      stadigt, optimalt flöde för att få fram det bästa i ditt
+                      kaffe. Oavsett om du brygger en enda kopp eller en hel
+                      karaff, är denna reservoar byggd för att hålla jämna steg
+                      med dina dagliga kaffevanor, och erbjuder den perfekta
+                      blandningen av funktionalitet och kvalitet.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      اختبر الراحة المطلقة مع خزان المياه هذا الذي يتميز بغطاء
+                      علوي عملي قابل للفتح، مثالي لصانعي القهوة المتخصصين. تم
+                      تصميم هذا الخزان بعناية لجعل إعادة التعبئة سهلة، مع فتحة
+                      آمنة قابلة للفتح تساعد في منع الانسكابات وتقليل الفوضى.
+                      مصنوع من مواد عالية الجودة ومتينة، يضمن هذا الخزان مصدر
+                      مياه موثوق وطويل الأمد لصانع القهوة الخاص بك، مع الحفاظ
+                      على تدفق ثابت ومثالي لإبراز أفضل ما في قهوتك. سواء كنت
+                      تحضر كوبًا واحدًا أو إبريقًا كاملاً، فإن هذا الخزان مصمم
+                      ليتماشى مع طقوس القهوة اليومية الخاصة بك، مما يوفر المزيج
+                      المثالي من الوظيفة والجودة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Vandreservoir med låg, der kan vippes op
+        de-at: Wasserbehälter mit Klappdeckel
+        de-ch: Wasserreservoir mit Klappdeckel
+        de-de: Wasserreservoir mit Klappdeckel
+        en-au: Réservoir d'eau avec couvercle à rabat
+        en-ca: Water Reservoir with Flip-Top Lid
+        en-gb: Water Reservoir with Flip-Top Lid
+        en-nl: Waterreservoir met Klapdeksel
+        en-nz: Wasserreservoir mit Klappdeckel
+        en-us: Water Reservoir with Flip-Top Lid
+        fr-ca: Réservoir d'eau avec couvercle à rabat
+        fr-ch: Réservoir d'eau avec couvercle à rabat
+        fr-fr: Réservoir d'eau avec couvercle à rabat
+        ja-jp: フリップトップリッド付きウォーターリザーバー
+        nl-nl: Waterreservoir met Klapdeksel
+        sv-se: Vattenreservoar med lock som kan fällas upp
+        ar-uae: خزان مياه بغطاء علوي قابل للفتح
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-efc7afec-03c4-4fd4-b478-a32708f5852e-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Vandreservoir med låg, der kan vippes op
+        de-at: Wasserbehälter mit Klappdeckel
+        de-ch: Wasserreservoir mit Klappdeckel
+        de-de: Wasserreservoir mit Klappdeckel
+        en-au: Réservoir d'eau avec couvercle à rabat
+        en-ca: Water Reservoir with Flip-Top Lid
+        en-gb: Water Reservoir with Flip-Top Lid
+        en-nl: Waterreservoir met Klapdeksel
+        en-nz: Wasserbehälter mit Klappdeckel
+        en-us: Water Reservoir with Flip-Top Lid
+        fr-ca: Réservoir d'eau avec couvercle à rabat
+        fr-ch: Réservoir d'eau avec couvercle à rabat
+        fr-fr: Réservoir d'eau avec couvercle à rabat
+        ja-jp: フリップトップリッド付きウォーターリザーバー
+        nl-nl: Waterreservoir met Klapdeksel
+        sv-se: Vattenreservoar med lock som fälls upp
+        ar-uae: خزان مياه بغطاء علوي قابل للفتح
+    rating:
+      type: number
+      value: '3.7'
+    ogImage:
+      type: asset
+      value:
+        - _id: 79de7fc6-b35b-49df-a194-265b90ba84ab
+          type: image
+          fields:
+            id:
+              type: text
+              value: aee0bd60-507b-4474-bd37-e44db7fcbe9c
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/tqQBIQmmS_OE1pm7wlKQ1g-water-reservoir-with-flip-top-lid-1.png
+              type: text
+            file:
+              type: file
+              value: a499d8ed-a237-4135-9c03-e1b0fd6f0ae8
+            size:
+              value: 92391
+              type: number
+            title:
+              type: text
+              value: water-reservoir-with-flip-top-lid-1.png
+            width:
+              value: 506
+              type: number
+            height:
+              value: 506
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-efc7afec-03c4-4fd4-b478-a32708f5852e-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: b4dadf3b-f97f-4ad4-a9b8-808299364a20
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '149'
+            price:
+              type: number
+              locales:
+                da-dk: '24.95'
+                de-at: '24.95'
+                de-ch: '24.95'
+                de-de: '24.95'
+                en-au: '24.95'
+                en-ca: '24.95'
+                en-gb: '24.95'
+                en-nl: '24.95'
+                en-nz: '24.95'
+                en-us: '24.95'
+                fr-ca: '24.95'
+                fr-ch: '24.95'
+                fr-fr: '24.95'
+                ja-jp: '24.95'
+                nl-nl: '24.95'
+                sv-se: '24.95'
+                ar-uae: '24.95'
+            title:
+              type: text
+              locales:
+                da-dk: Vandreservoir med låg, der kan åbnes
+                de-at: Wasserreservoir mit Klappdeckel
+                de-ch: Wasserreservoir mit Klappdeckel
+                de-de: Wasserreservoir mit Klappdeckel
+                en-au: Réservoir d'eau avec couvercle à rabat
+                en-ca: Water Reservoir with Flip-Top Lid
+                en-gb: Water Reservoir with Flip-Top Lid
+                en-nl: Waterreservoir met Klapdeksel
+                en-nz: Wasserbehälter mit Klappdeckel
+                en-us: Water Reservoir with Flip-Top Lid
+                fr-ca: Réservoir d'eau avec couvercle à rabat
+                fr-ch: Réservoir d'eau avec couvercle à rabat
+                fr-fr: Réservoir d'eau avec couvercle à rabat
+                ja-jp: フリップトップリッド付き貯水タンク
+                nl-nl: Waterreservoir met Klapdeksel
+                sv-se: Vattenreservoar med lock som kan fällas upp
+                ar-uae: خزان مياه بغطاء علوي قابل للفتح
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: f8d858d5-f134-480c-93c5-7168f0745f09
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: aee0bd60-507b-4474-bd37-e44db7fcbe9c
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/tqQBIQmmS_OE1pm7wlKQ1g-water-reservoir-with-flip-top-lid-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: a499d8ed-a237-4135-9c03-e1b0fd6f0ae8
+                    size:
+                      value: 92391
+                      type: number
+                    title:
+                      type: text
+                      value: water-reservoir-with-flip-top-lid-1.png
+                    width:
+                      value: 506
+                      type: number
+                    height:
+                      value: 506
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Vandreservoir med låg, der kan vippes op
+        de-at: Wasserbehälter mit Klappdeckel
+        de-ch: Wasserreservoir mit Klappdeckel
+        de-de: Wasserreservoir mit Klappdeckel
+        en-au: Réservoir d'eau avec couvercle à rabat
+        en-ca: Water Reservoir with Flip-Top Lid
+        en-gb: Water Reservoir with Flip-Top Lid
+        en-nl: Waterreservoir met Klapdeksel
+        en-nz: Wasserreservoir mit Klappdeckel
+        en-us: Water Reservoir with Flip-Top Lid
+        fr-ca: Réservoir d'eau avec couvercle à rabat
+        fr-ch: Réservoir d'eau avec couvercle à rabat
+        fr-fr: Réservoir d'eau avec couvercle à rabat
+        ja-jp: フリップトップリッド付きウォーターリザーバー
+        nl-nl: Waterreservoir met Klapdeksel
+        sv-se: Vattenreservoar med lock som kan fällas upp
+        ar-uae: خزان مياه بغطاء علوي قابل للفتح
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: 79de7fc6-b35b-49df-a194-265b90ba84ab
+          type: image
+          fields:
+            id:
+              type: text
+              value: aee0bd60-507b-4474-bd37-e44db7fcbe9c
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/tqQBIQmmS_OE1pm7wlKQ1g-water-reservoir-with-flip-top-lid-1.png
+              type: text
+            file:
+              type: file
+              value: a499d8ed-a237-4135-9c03-e1b0fd6f0ae8
+            size:
+              value: 92391
+              type: number
+            title:
+              type: text
+              value: water-reservoir-with-flip-top-lid-1.png
+            width:
+              value: 506
+              type: number
+            height:
+              value: 506
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Genopfyld hurtigt specialkaffemaskiner med vores spildfri
+          vandreservoir og flip-top låg, der forbedrer din bryggeoplevelse.
+        de-at: >-
+          Füllen Sie Spezial-Kaffeemaschinen schnell mit unserem auslaufsicheren
+          Wasserbehälter und Klappdeckel nach, um Ihr Brüherlebnis zu
+          verbessern.
+        de-ch: >-
+          Füllen Sie Spezialkaffeemaschinen schnell mit unserem auslaufsicheren
+          Wasserbehälter und Klappdeckel nach, um Ihr Brüherlebnis zu
+          verbessern.
+        de-de: >-
+          Füllen Sie Spezialkaffeemaschinen schnell mit unserem auslaufsicheren
+          Wasserbehälter und Klappdeckel nach, um Ihr Brüherlebnis zu
+          verbessern.
+        en-au: >-
+          Rechargez rapidement les cafetières spécialisées avec notre réservoir
+          d'eau anti-éclaboussures et couvercle rabattable, améliorant ainsi
+          votre expérience de préparation.
+        en-ca: >-
+          Quickly refill specialty coffee makers with our spill-free Water
+          Reservoir & Flip-Top Lid, enhancing your brewing experience.
+        en-gb: >-
+          Quickly refill speciality coffee makers with our spill-free Water
+          Reservoir & Flip-Top Lid, enhancing your brewing experience.
+        en-nl: >-
+          Vul snel speciale koffiemachines bij met ons morsvrije Waterreservoir
+          & Flip-Top deksel, en verbeter uw brouwervaring.
+        en-nz: >-
+          Schnelles Nachfüllen von Spezialkaffeemaschinen mit unserem
+          auslaufsicheren Wasserreservoir und Klappdeckel, um Ihr Brüherlebnis
+          zu verbessern.
+        en-us: >-
+          Quickly refill specialty coffee makers with our spill-free Water
+          Reservoir & Flip-Top Lid, enhancing your brewing experience.
+        fr-ca: >-
+          Rechargez rapidement les cafetières spécialisées avec notre réservoir
+          d'eau anti-éclaboussures et couvercle à rabat, améliorant ainsi votre
+          expérience de préparation.
+        fr-ch: >-
+          Rechargez rapidement les cafetières spécialisées avec notre réservoir
+          d'eau anti-éclaboussures et couvercle à rabat, améliorant ainsi votre
+          expérience de préparation.
+        fr-fr: >-
+          Rechargez rapidement les cafetières spécialisées avec notre réservoir
+          d'eau anti-éclaboussures et couvercle à rabat, améliorant ainsi votre
+          expérience de préparation.
+        ja-jp: スピルフリーのウォーターリザーバーとフリップトップリッドで、スペシャルティコーヒーメーカーを素早く補充し、抽出体験を向上させましょう。
+        nl-nl: >-
+          Vul snel speciale koffiemachines bij met ons morsvrije waterreservoir
+          en klapdeksel, en verbeter uw brouwerijervaring.
+        sv-se: >-
+          Fyll snabbt på specialkaffebryggare med vår spillfria vattenreservoar
+          och lock med flip-top, och förbättra din bryggupplevelse.
+        ar-uae: >-
+          قم بإعادة تعبئة صانعات القهوة المتخصصة بسرعة باستخدام خزان المياه
+          الخالي من الانسكاب وغطاء الفتح العلوي، مما يعزز تجربة التخمير الخاصة
+          بك.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Designet for nemhed og bekvemmelighed, denne vandbeholder med et
+          flip-top låg muliggør hurtig, spildfri påfyldning, specielt
+          skræddersyet til specialkaffemaskiner for at forbedre din
+          bryggeoplevelse.
+        de-at: >-
+          Entwickelt für Einfachheit und Komfort, ermöglicht dieses
+          Wasserreservoir mit Klappdeckel ein schnelles, tropffreies Nachfüllen,
+          speziell abgestimmt auf Spezialitäten-Kaffeemaschinen, um Ihr
+          Brüherlebnis zu verbessern.
+        de-ch: >-
+          Entwickelt für Einfachheit und Komfort, ermöglicht dieses
+          Wasserreservoir mit Klappdeckel ein schnelles, kleckerfreies
+          Nachfüllen, speziell abgestimmt auf Spezialitäten-Kaffeemaschinen, um
+          Ihr Brüherlebnis zu verbessern.
+        de-de: >-
+          Entwickelt für Einfachheit und Komfort, ermöglicht dieses
+          Wasserreservoir mit Klappdeckel ein schnelles, kleckerfreies
+          Nachfüllen, speziell abgestimmt auf Spezialitäten-Kaffeemaschinen, um
+          Ihr Brüherlebnis zu verbessern.
+        en-au: >-
+          Conçu pour la facilité et la commodité, ce réservoir d'eau avec
+          couvercle à rabat permet un remplissage rapide et sans éclaboussures,
+          spécialement adapté aux cafetières spécialisées pour améliorer votre
+          expérience de préparation.
+        en-ca: >-
+          Designed for ease and convenience, this Water Reservoir with a
+          Flip-Top Lid allows quick, spill-free refilling, specifically tailored
+          for specialty coffee makers to enhance your brewing experience.
+        en-gb: >-
+          Designed for ease and convenience, this Water Reservoir with a
+          Flip-Top Lid allows quick, spill-free refilling, specifically tailored
+          for speciality coffee makers to enhance your brewing experience.
+        en-nl: >-
+          Ontworpen voor gemak en gebruiksvriendelijkheid, maakt dit
+          Waterreservoir met een Klapdeksel snel en morsvrij bijvullen mogelijk,
+          speciaal afgestemd op speciale koffiemachines om uw brouwerijervaring
+          te verbeteren.
+        en-nz: >-
+          Entwickelt für Einfachheit und Komfort ermöglicht dieses
+          Wasserreservoir mit Klappdeckel ein schnelles, verschüttungsfreies
+          Nachfüllen, speziell abgestimmt auf Spezialkaffeemaschinen, um Ihr
+          Brüherlebnis zu verbessern.
+        en-us: >-
+          Designed for ease and convenience, this Water Reservoir with a
+          Flip-Top Lid allows quick, spill-free refilling, specifically tailored
+          for specialty coffee makers to enhance your brewing experience.
+        fr-ca: >-
+          Conçu pour la facilité et la commodité, ce réservoir d'eau avec
+          couvercle à rabat permet un remplissage rapide et sans déversement,
+          spécialement adapté aux cafetières spécialisées pour améliorer votre
+          expérience de préparation.
+        fr-ch: >-
+          Conçu pour la facilité et la commodité, ce réservoir d'eau avec
+          couvercle à rabat permet un remplissage rapide et sans éclaboussures,
+          spécialement adapté aux machines à café spécialisées pour améliorer
+          votre expérience de préparation.
+        fr-fr: >-
+          Conçu pour la facilité et la commodité, ce réservoir d'eau avec
+          couvercle à rabat permet un remplissage rapide et sans éclaboussures,
+          spécialement adapté aux machines à café spécialisées pour améliorer
+          votre expérience de préparation.
+        ja-jp: >-
+          使いやすさと便利さを追求したこのフリップトップリッド付きウォーターリザーバーは、簡単でこぼれない補充を可能にし、特にスペシャルティコーヒーメーカー用に設計されており、抽出体験を向上させます。
+        nl-nl: >-
+          Ontworpen voor gemak en gebruiksvriendelijkheid, maakt dit
+          Waterreservoir met een Flip-Top Deksel snel en morsvrij bijvullen
+          mogelijk, speciaal afgestemd op speciale koffiemachines om uw
+          brouwerijervaring te verbeteren.
+        sv-se: >-
+          Designad för enkelhet och bekvämlighet, denna vattenreservoar med ett
+          lock som kan fällas upp möjliggör snabb, spillfri påfyllning,
+          speciellt anpassad för specialkaffemaskiner för att förbättra din
+          bryggupplevelse.
+        ar-uae: >-
+          مصمم لسهولة وراحة الاستخدام، هذا الخزان المائي بغطاء علوي قابل للفتح
+          يتيح إعادة التعبئة بسرعة وبدون انسكاب، ومخصص خصيصًا لصانعي القهوة
+          المتخصصين لتحسين تجربة التحضير الخاصة بك.
+  _dataResources:
+    ref-efc7afec-03c4-4fd4-b478-a32708f5852e-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-efc7afec-03c4-4fd4-b478-a32708f5852e-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

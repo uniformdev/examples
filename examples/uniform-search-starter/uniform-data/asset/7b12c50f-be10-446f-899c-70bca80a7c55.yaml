@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7b12c50f-be10-446f-899c-70bca80a7c55
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: coffee-removable-filter-holder-1.png
+    file:
+      type: file
+      value: 39a751d8-c350-4d7e-90f4-1cebcd21ef13
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/1xRHDTT8SoS2SwtSG5XdmQ-coffee-removable-filter-holder-1.png
+      type: text
+    size:
+      value: 61687
+      type: number
+    width:
+      value: 800
+      type: number
+    height:
+      value: 600
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:18.646518+00:00'
+modified: '2026-03-10T23:27:18.646518+00:00'

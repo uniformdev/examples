@@ -1,0 +1,169 @@
+{
+  "project": {
+    "pz": {
+      "agg": {
+        "coffeeAficionado": {
+          "inputs": [
+            {
+              "dim": "aficionado"
+            }
+          ]
+        },
+        "uniformFf": {
+          "inputs": [
+            {
+              "dim": "specialLaunchCampaign"
+            }
+          ]
+        }
+      },
+      "enr": {
+        "int": {
+          "cap": 100
+        },
+        "subCategory": {
+          "cap": 100
+        },
+        "brand": {
+          "cap": 100
+        },
+        "topic": {
+          "cap": 100
+        }
+      },
+      "sig": {
+        "addedToCart": {
+          "str": 10,
+          "cap": 100,
+          "dur": "s",
+          "crit": {
+            "op": "|",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "isCartEmpty",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "false"
+                }
+              }
+            ]
+          },
+          "conversion": {
+            "freq": "O"
+          }
+        },
+        "aficionado": {
+          "str": 50,
+          "cap": 100,
+          "dur": "s",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "segment",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "aficionado"
+                }
+              }
+            ]
+          }
+        },
+        "beansBundleMembership": {
+          "str": 50,
+          "cap": 100,
+          "dur": "s",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "path": {
+                  "cs": false,
+                  "op": "~",
+                  "rhs": "beans-bundle"
+                },
+                "type": "PV"
+              }
+            ]
+          },
+          "conversion": {
+            "freq": "O"
+          }
+        },
+        "completedPurchase": {
+          "str": 25,
+          "cap": 100,
+          "dur": "s",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "EVT",
+                "event": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "purchase-complete"
+                }
+              }
+            ]
+          },
+          "conversion": {
+            "freq": "O"
+          }
+        },
+        "interestedInBeans": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": true,
+                  "op": "//",
+                  "rhs": "\\bbns\\b"
+                },
+                "subtype": "UTM_TAX",
+                "queryName": "utm_campaign",
+                "utm_mapper_taxonomy_id": "580abb9f-38b5-4489-bf2a-83d7cc87a44a"
+              }
+            ]
+          }
+        },
+        "specialLaunchCampaign": {
+          "str": 50,
+          "cap": 100,
+          "dur": "s",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "uniformff"
+                },
+                "queryName": "utm_campaign"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "test": {
+    }
+  }
+}

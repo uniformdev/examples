@@ -1,0 +1,88 @@
+composition:
+  _name: Article Details
+  _id: 15e5e99e-1ff0-463d-9e98-7920f6ba6b95
+  _slug: ':article-slug'
+  type: page
+  _dataResources:
+    Article Content:
+      type: article
+      variables:
+        slug: ${article-slug}
+        locale: ${locale}
+  _overrides:
+    15e5e99e-1ff0-463d-9e98-7920f6ba6b95:
+      parameters:
+        $enr:
+          type: $enr
+          value: ${#jptr:/Article Content/entry/fields/enrichments/value}
+        pageTitle:
+          type: text
+          locales:
+            en-us: ${#jptr:/Article Content/entry/fields/title/value}
+        twitterCard:
+          type: select
+          value: summary_large_image
+        pageKeywords:
+          type: text
+          locales:
+            en-us: article, uniform, csk, coffee
+        twitterImage:
+          type: asset
+          value: ${#jptr:/Article Content/entry/fields/ogImage/value}
+        twitterTitle:
+          type: text
+          locales:
+            en-us: ${#jptr:/Article Content/entry/fields/metaTitle/value}
+        openGraphType:
+          type: select
+          value: article
+        openGraphImage:
+          type: asset
+          value: ${#jptr:/Article Content/entry/fields/ogImage/value}
+        openGraphTitle:
+          type: text
+          locales:
+            en-us: ${#jptr:/Article Content/entry/fields/metaTitle/value}
+        pageDescription:
+          type: text
+          locales:
+            en-us: ${#jptr:/Article Content/entry/fields/shortDescription/value}
+        twitterDescription:
+          type: text
+          locales:
+            en-us: ${#jptr:/Article Content/entry/fields/title/value}
+        openGraphDescription:
+          type: text
+          locales:
+            en-us: ${#jptr:/Article Content/entry/fields/metaDescription/value}
+    15e5e99e-1ff0-463d-9e98-7920f6ba6b95|dc2e95be-21b5-4476-a309-f8a34922f528:
+      slots:
+        $slotSectionItems:
+          - _id: 10b5db11-87ee-499d-a8c4-3a68cb005890
+            type: hero
+            parameters:
+              image:
+                type: asset
+                value: ${#jptr:/Article Content/entry/fields/thumbnail/value}
+              titleText:
+                type: text
+                locales:
+                  en-us: ${#jptr:/Article Content/entry/fields/title/value}
+              descriptionText:
+                type: text
+                locales:
+                  en-us: >-
+                    ${#jptr:/Article
+                    Content/entry/fields/shortDescription/value}
+              eyebrowTitleText:
+                type: text
+                locales:
+                  en-us: >-
+                    By ${#jptr:/Article
+                    Content/entry/fields/author/value/entry/fields/name/value}
+  _locales:
+    - en-us
+  _pattern: f9c058ea-c40d-4435-ac5a-53423cf654dc
+created: '2026-03-10T23:29:13.404917+00:00'
+modified: '2026-03-26T01:09:18.706806+00:00'
+pattern: false

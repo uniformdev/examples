@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 9e908952-8fda-4d10-959a-3af9d558ebe0
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: water-filter-1.png
+    file:
+      type: file
+      value: 7b8ed060-00f5-4c9a-845d-b74116d2d04a
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/zbU2IW9sQC6PX-WSp6HESg-water-filter-1.png
+      type: text
+    size:
+      value: 15603
+      type: number
+    width:
+      value: 386
+      type: number
+    height:
+      value: 386
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:40.075499+00:00'
+modified: '2026-03-10T23:27:40.075499+00:00'

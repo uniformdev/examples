@@ -1,0 +1,192 @@
+created: '2026-03-10T23:33:40.895388+00:00'
+modified: '2026-03-10T23:33:40.895388+00:00'
+pattern: false
+entry:
+  _id: 89ff9053-0c46-4c5d-be39-6d24907ba240
+  _name: Espresso
+  _slug: espresso
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/4net4vchT1i4KnF4767AWQ-espresso.png
+  type: productCategory
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Espresso
+        de-at: Espresso
+        de-ch: Espresso
+        de-de: Espresso
+        en-au: Expresso
+        en-ca: Espresso
+        en-gb: Espresso
+        en-nl: Espresso
+        en-nz: Espresso
+        en-us: Espresso
+        fr-ca: Espresso
+        fr-ch: Expresso
+        fr-fr: Expresso
+        ja-jp: エスプレッソ
+        nl-nl: Espresso
+        sv-se: Espresso
+        ar-uae: إسبريسو
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Dyk ned i verdenen af rig, koncentreret kaffe med vores premium udvalg
+          af espressoprodukter. Fra espressobønner af høj kvalitet til
+          topmoderne maskiner, vi tilbyder alt, hvad du behøver for at skabe det
+          perfekte espressoshot. Kendt for sin intense smag og fløjlsagtige
+          crema, er espresso hjertet i mange elskede kaffedrikke. Udforsk vores
+          sortiment og opdag, hvordan du kan nyde café-kvalitet espresso i
+          komforten af dit eget hjem.
+        de-at: >-
+          Tauchen Sie ein in die Welt des reichhaltigen, konzentrierten Kaffees
+          mit unserer Premium-Auswahl an Espresso-Produkten. Von hochwertigen
+          Espressobohnen bis hin zu erstklassigen Maschinen bieten wir alles,
+          was Sie benötigen, um den perfekten Espresso zuzubereiten. Bekannt für
+          seinen intensiven Geschmack und die samtige Crema, ist Espresso das
+          Herzstück vieler beliebter Kaffeegetränke. Entdecken Sie unser
+          Sortiment und erfahren Sie, wie Sie Espresso in Café-Qualität im
+          Komfort Ihres eigenen Zuhauses genießen können.
+        de-ch: >-
+          Tauchen Sie ein in die Welt des reichhaltigen, konzentrierten Kaffees
+          mit unserer Premium-Auswahl an Espresso-Produkten. Von hochwertigen
+          Espressobohnen bis hin zu erstklassigen Maschinen bieten wir alles,
+          was Sie benötigen, um den perfekten Espresso zuzubereiten. Bekannt für
+          seinen intensiven Geschmack und die samtige Crema, ist Espresso das
+          Herzstück vieler beliebter Kaffeegetränke. Entdecken Sie unser
+          Sortiment und erfahren Sie, wie Sie Espresso in Café-Qualität ganz
+          bequem zu Hause genießen können.
+        de-de: >-
+          Tauchen Sie ein in die Welt des reichhaltigen, konzentrierten Kaffees
+          mit unserer Premium-Auswahl an Espresso-Produkten. Von hochwertigen
+          Espressobohnen bis hin zu erstklassigen Maschinen bieten wir alles,
+          was Sie benötigen, um den perfekten Espresso zuzubereiten. Bekannt für
+          seinen intensiven Geschmack und die samtige Crema, ist Espresso das
+          Herzstück vieler beliebter Kaffeegetränke. Entdecken Sie unser
+          Sortiment und erfahren Sie, wie Sie Espresso in Café-Qualität ganz
+          bequem zu Hause genießen können.
+        en-au: >-
+          Plongez dans le monde du café riche et concentré avec notre sélection
+          premium de produits espresso. Des grains d'espresso de haute qualité
+          aux machines haut de gamme, nous fournissons tout ce dont vous avez
+          besoin pour créer le parfait shot d'espresso. Connu pour sa saveur
+          intense et sa crema veloutée, l'espresso est le cœur de nombreuses
+          boissons au café appréciées. Explorez notre gamme et découvrez comment
+          vous pouvez savourer un espresso de qualité café dans le confort de
+          votre propre maison.
+        en-ca: >-
+          Dive into the world of rich, concentrated coffee with our premium
+          selection of espresso products. From high-quality espresso beans to
+          top-of-the-line machines, we provide everything you need to create the
+          perfect shot of espresso. Known for its intense flavour and velvety
+          crema, espresso is the heart of many beloved coffee beverages. Explore
+          our range and discover how you can enjoy café-quality espresso in the
+          comfort of your own home.
+        en-gb: >-
+          Dive into the world of rich, concentrated coffee with our premium
+          selection of espresso products. From high-quality espresso beans to
+          top-of-the-line machines, we provide everything you need to create the
+          perfect shot of espresso. Known for its intense flavour and velvety
+          crema, espresso is the heart of many beloved coffee beverages. Explore
+          our range and discover how you can enjoy café-quality espresso in the
+          comfort of your own home.
+        en-nl: >-
+          Duik in de wereld van rijke, geconcentreerde koffie met onze premium
+          selectie espressoproducten. Van hoogwaardige espressobonen tot
+          eersteklas machines, wij bieden alles wat je nodig hebt om het
+          perfecte shot espresso te creëren. Bekend om zijn intense smaak en
+          fluweelzachte crema, is espresso het hart van vele geliefde
+          koffiedrankjes. Ontdek ons assortiment en ontdek hoe je thuis kunt
+          genieten van espresso van cafékwaliteit.
+        en-nz: >-
+          Tauchen Sie ein in die Welt des reichhaltigen, konzentrierten Kaffees
+          mit unserer Premium-Auswahl an Espresso-Produkten. Von hochwertigen
+          Espressobohnen bis hin zu erstklassigen Maschinen bieten wir alles,
+          was Sie benötigen, um den perfekten Espresso-Shot zu kreieren. Bekannt
+          für seinen intensiven Geschmack und die samtige Crema, ist Espresso
+          das Herzstück vieler beliebter Kaffeegetränke. Entdecken Sie unser
+          Sortiment und erfahren Sie, wie Sie Espresso in Café-Qualität im
+          Komfort Ihres eigenen Zuhauses genießen können.
+        en-us: >-
+          Dive into the world of rich, concentrated coffee with our premium
+          selection of espresso products. From high-quality espresso beans to
+          top-of-the-line machines, we provide everything you need to create the
+          perfect shot of espresso. Known for its intense flavor and velvety
+          crema, espresso is the heart of many beloved coffee beverages. Explore
+          our range and discover how you can enjoy café-quality espresso in the
+          comfort of your own home.
+        fr-ca: >-
+          Plongez dans le monde du café riche et concentré avec notre sélection
+          premium de produits espresso. Des grains d'espresso de haute qualité
+          aux machines haut de gamme, nous fournissons tout ce dont vous avez
+          besoin pour créer le parfait shot d'espresso. Connu pour sa saveur
+          intense et sa crema veloutée, l'espresso est le cœur de nombreuses
+          boissons caféinées appréciées. Explorez notre gamme et découvrez
+          comment vous pouvez savourer un espresso de qualité café dans le
+          confort de votre foyer.
+        fr-ch: >-
+          Plongez dans l'univers du café riche et concentré avec notre sélection
+          premium de produits espresso. Des grains d'espresso de haute qualité
+          aux machines haut de gamme, nous fournissons tout ce dont vous avez
+          besoin pour créer le parfait espresso. Connu pour sa saveur intense et
+          sa crema veloutée, l'espresso est le cœur de nombreuses boissons
+          caféinées appréciées. Explorez notre gamme et découvrez comment vous
+          pouvez savourer un espresso de qualité café dans le confort de votre
+          propre maison.
+        fr-fr: >-
+          Plongez dans l'univers du café riche et concentré avec notre sélection
+          premium de produits espresso. Des grains d'espresso de haute qualité
+          aux machines haut de gamme, nous fournissons tout ce dont vous avez
+          besoin pour créer le parfait espresso. Connu pour sa saveur intense et
+          sa crema veloutée, l'espresso est le cœur de nombreuses boissons
+          caféinées appréciées. Explorez notre gamme et découvrez comment vous
+          pouvez savourer un espresso de qualité café dans le confort de votre
+          propre maison.
+        ja-jp: >-
+          濃厚で凝縮されたコーヒーの世界に飛び込んで、当社のプレミアムなエスプレッソ製品をお楽しみください。高品質のエスプレッソ豆から最先端のマシンまで、完璧なエスプレッソショットを作るために必要なすべてを提供しています。強い風味と滑らかなクレマで知られるエスプレッソは、多くの愛されるコーヒー飲料の中心です。私たちのラインナップを探索し、ご自宅でカフェクオリティのエスプレッソを楽しむ方法を発見してください。
+        nl-nl: >-
+          Duik in de wereld van rijke, geconcentreerde koffie met onze premium
+          selectie van espressoproducten. Van hoogwaardige espressobonen tot
+          eersteklas machines, wij bieden alles wat je nodig hebt om het
+          perfecte shot espresso te creëren. Bekend om zijn intense smaak en
+          fluweelzachte crema, is espresso het hart van vele geliefde
+          koffiedrankjes. Ontdek ons assortiment en ontdek hoe je kunt genieten
+          van café-kwaliteit espresso in het comfort van je eigen huis.
+        sv-se: >-
+          Dyk ner i världen av fylligt, koncentrerat kaffe med vårt premiumutbud
+          av espressoprodukter. Från högkvalitativa espressobönor till
+          förstklassiga maskiner, vi erbjuder allt du behöver för att skapa den
+          perfekta espressoshoten. Känd för sin intensiva smak och sammetslena
+          crema, är espresso hjärtat i många älskade kaffedrycker. Utforska vårt
+          sortiment och upptäck hur du kan njuta av café-kvalitet espresso i
+          ditt eget hems bekvämlighet.
+        ar-uae: >-
+          استمتع بعالم القهوة الغنية والمركزة مع تشكيلتنا المميزة من منتجات
+          الإسبريسو. من حبوب الإسبريسو عالية الجودة إلى الآلات المتطورة، نوفر لك
+          كل ما تحتاجه لتحضير كوب مثالي من الإسبريسو. معروف بنكهته القوية
+          وكريمته المخملية، يُعتبر الإسبريسو قلب العديد من المشروبات القهوة
+          المحبوبة. اكتشف مجموعتنا وتعرف على كيفية الاستمتاع بإسبريسو بجودة
+          المقاهي في راحة منزلك.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

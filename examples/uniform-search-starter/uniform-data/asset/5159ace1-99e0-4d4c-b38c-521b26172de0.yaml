@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5159ace1-99e0-4d4c-b38c-521b26172de0
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: columbian-blend-coffee-1.png
+    file:
+      type: file
+      value: 67c1bfc3-4f37-4efc-9b6b-d667da18c599
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/JADZPvZHTnCSbyoYgc4uxg-columbian-blend-coffee-1.png
+      type: text
+    size:
+      value: 176541
+      type: number
+    width:
+      value: 1280
+      type: number
+    height:
+      value: 1280
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:59.454999+00:00'
+modified: '2026-03-10T23:26:59.454999+00:00'

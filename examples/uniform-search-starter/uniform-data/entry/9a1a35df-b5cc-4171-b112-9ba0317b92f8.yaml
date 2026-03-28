@@ -1,0 +1,150 @@
+created: '2026-03-10T23:35:27.555483+00:00'
+modified: '2026-03-10T23:35:27.555483+00:00'
+pattern: false
+entry:
+  _id: 9a1a35df-b5cc-4171-b112-9ba0317b92f8
+  _name: My the best test title
+  _slug: my-test-entry
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/-kLaC2-6SQuX523gnQi2fA-percentE2percent80percent94PngtreepercentE2percent80percent94note-purple-musical-notation-smudges_1589090.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Test body example, added a new thing. PDF is a sample,
+                      updated text.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: null
+                textStyle: ''
+                textFormat: 0
+            direction: null
+    name:
+      type: text
+      locales:
+        en-us: Best Coffee Machine
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-9a1a35df-b5cc-4171-b112-9ba0317b92f8-brand/entries/0}
+    title:
+      type: text
+      locales:
+        en-us: My the best test title
+    rating:
+      type: number
+      value: 3
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-9a1a35df-b5cc-4171-b112-9ba0317b92f8-category/entries/0}
+    metaTitle:
+      type: text
+      locales:
+        en-us: Unique SEOXYZ title
+    subcategory:
+      type: contentReference
+      value: ${#jptr:/ref-9a1a35df-b5cc-4171-b112-9ba0317b92f8-subcategory/entries/0}
+    primaryImage:
+      type: asset
+      value:
+        - _id: 5979c39d-e4bc-412a-9bd5-42e2d32fd341
+          type: image
+          fields:
+            id:
+              type: text
+              value: 67997636-0d10-49d2-80df-6d9e07160922
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/-kLaC2-6SQuX523gnQi2fA-percentE2percent80percent94PngtreepercentE2percent80percent94note-purple-musical-notation-smudges_1589090.png
+              type: text
+            file:
+              type: file
+              value: 6b02f3c4-2651-41b4-8f8c-6a39f3d08d59
+            size:
+              value: 5839209
+              type: number
+            title:
+              type: text
+              value: —Pngtree—note-purple-musical-notation-smudges_1589090.png
+            width:
+              value: 4961
+              type: number
+            height:
+              value: 3543
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    documentation:
+      type: asset
+      locales:
+        en-us:
+          - _id: a633e7f5-f2b9-4199-bde6-1da1cbd9dd61
+            type: other
+            fields:
+              id:
+                type: text
+                value: 74bc2f46-a95c-4ab3-9e36-98b099c2655f
+              url:
+                value: >-
+                  https://files.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/XkeZyX20RBGSfzXjIux8dA-Coffee-Drip-Brewing-Manual.pdf
+                type: text
+              file:
+                type: file
+                value: b588c6ca-bf66-4a2a-bc6c-8c7d4e7758b0
+              size:
+                value: 64494
+                type: number
+              title:
+                type: text
+                value: Coffee-Drip-Brewing-Manual.pdf
+              mediaType:
+                value: application/pdf
+                type: text
+            _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        en-us: Test meta description
+    shortDescription:
+      type: text
+      locales:
+        en-us: >-
+          This is a test description for the new entry, updated description with
+          PDzfd.
+  _dataResources:
+    ref-9a1a35df-b5cc-4171-b112-9ba0317b92f8-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-9a1a35df-b5cc-4171-b112-9ba0317b92f8-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 2f6cc670-cdaa-4532-b70e-424206c8d0ba
+    ref-9a1a35df-b5cc-4171-b112-9ba0317b92f8-subcategory:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 89ff9053-0c46-4c5d-be39-6d24907ba240
+  _locales:
+    - en-us

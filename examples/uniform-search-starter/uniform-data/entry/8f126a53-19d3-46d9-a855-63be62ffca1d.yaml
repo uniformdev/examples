@@ -1,0 +1,47 @@
+created: '2026-03-10T23:33:01.138567+00:00'
+modified: '2026-03-10T23:33:01.138567+00:00'
+pattern: false
+entry:
+  _id: 8f126a53-19d3-46d9-a855-63be62ffca1d
+  _name: Coffee
+  _slug: coffee
+  type: articleCategory
+  fields:
+    title:
+      type: text
+      locales:
+        da-dk: Kaffe
+        de-at: Kaffee
+        de-ch: Kaffee
+        de-de: Kaffee
+        en-au: Café
+        en-ca: Coffee
+        en-gb: Coffee
+        en-nl: Koffie
+        en-nz: Kaffee
+        en-us: Coffee
+        fr-ca: Café
+        fr-ch: Café
+        fr-fr: Café
+        ja-jp: コーヒー
+        nl-nl: Koffie
+        sv-se: Kaffe
+        ar-uae: قهوة
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

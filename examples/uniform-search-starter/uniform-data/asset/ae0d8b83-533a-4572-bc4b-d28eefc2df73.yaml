@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ae0d8b83-533a-4572-bc4b-d28eefc2df73
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: percolators.png
+    file:
+      type: file
+      value: 859ff9b9-c8c1-4ef0-99b8-e79dd8a9cc82
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/Kv6t3AFQTO-DywW7i12XFA-percolators.png
+      type: text
+    size:
+      value: 987680
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:51.600572+00:00'
+modified: '2026-03-10T23:27:51.600572+00:00'

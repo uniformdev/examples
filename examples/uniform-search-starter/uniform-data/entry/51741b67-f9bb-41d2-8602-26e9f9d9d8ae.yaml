@@ -1,0 +1,1316 @@
+created: '2026-03-10T23:33:59.236972+00:00'
+modified: '2026-03-10T23:33:59.236972+00:00'
+pattern: false
+entry:
+  _id: 51741b67-f9bb-41d2-8602-26e9f9d9d8ae
+  _name: Frother Whisk
+  _slug: frother-whisk
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/KuYCCispR22ZM9KUbM2eIA-frother-whisk-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Forbedr dine kaffekreationer med Frother Whisk, et
+                      uundværligt tilbehør til din specialkaffemaskine. Denne
+                      højkvalitets piskeris er designet til at levere
+                      barista-niveau mælkeskumning, perfekt til at forbedre dine
+                      lattes, cappuccinoer, macchiatoer og mere. Dens design
+                      sikrer jævn og konsekvent luftning, hvilket producerer
+                      rig, fløjlsagtig skum med lethed.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Uanset om du er en kaffeentusiast, der elsker at
+                      eksperimentere med lattekunst, eller blot nyder den
+                      cremede tekstur af godt skummet mælk, hjælper Frother
+                      Whisk dig med at opnå den café-stil finish derhjemme.
+                      Kompatibel med specialkaffemaskiner, er denne piskeris nem
+                      at bruge og rengøre, hvilket gør din kaffeoplevelse endnu
+                      mere fornøjelig. Forkæl dig selv med perfekt tekstureret
+                      mælk hver gang og tilføj et strejf af luksus til din
+                      morgenrutine med Frother Whisk.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhöhen Sie Ihre Kaffeekreationen mit dem
+                      Milchaufschäumer-Quirl, einem unverzichtbaren Zubehör für
+                      Ihre Spezialitäten-Kaffeemaschine. Dieser hochwertige
+                      Quirl ist darauf ausgelegt, Milchaufschäumen auf
+                      Barista-Niveau zu liefern, perfekt zum Verfeinern Ihrer
+                      Lattes, Cappuccinos, Macchiatos und mehr. Sein Design
+                      sorgt für eine gleichmäßige und konsistente Belüftung und
+                      erzeugt mühelos reichhaltigen, samtigen Schaum.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Egal, ob Sie ein Kaffeeliebhaber sind, der gerne mit Latte
+                      Art experimentiert, oder einfach die cremige Textur von
+                      gut aufgeschäumter Milch genießt, der
+                      Milchaufschäumer-Quirl hilft Ihnen, diesen Café-Stil zu
+                      Hause zu erreichen. Kompatibel mit
+                      Spezialitäten-Kaffeemaschinen ist dieser Quirl einfach zu
+                      bedienen und zu reinigen, was Ihr Kaffeeerlebnis noch
+                      angenehmer macht. Genießen Sie jedes Mal perfekt
+                      texturierte Milch und verleihen Sie Ihrer Morgenroutine
+                      mit dem Milchaufschäumer-Quirl einen Hauch von Luxus.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhöhen Sie Ihre Kaffeekreationen mit dem
+                      Milchaufschäumer-Quirl, einem unverzichtbaren Zubehör für
+                      Ihre Spezialitäten-Kaffeemaschine. Dieser hochwertige
+                      Quirl ist darauf ausgelegt, Milchaufschäumen auf
+                      Barista-Niveau zu liefern, perfekt zum Verfeinern Ihrer
+                      Lattes, Cappuccinos, Macchiatos und mehr. Sein Design
+                      sorgt für eine gleichmäßige und konsistente Belüftung und
+                      erzeugt mühelos reichhaltigen, samtigen Schaum.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Egal, ob Sie ein Kaffee-Enthusiast sind, der gerne mit
+                      Latte-Art experimentiert, oder einfach die cremige Textur
+                      von gut aufgeschäumter Milch genießt, der
+                      Milchaufschäumer-Quirl hilft Ihnen, diesen
+                      Café-Stil-Abschluss zu Hause zu erreichen. Kompatibel mit
+                      Spezialitäten-Kaffeemaschinen, ist dieser Quirl einfach zu
+                      bedienen und zu reinigen, was Ihr Kaffeeerlebnis noch
+                      angenehmer macht. Genießen Sie jedes Mal perfekt
+                      texturierte Milch und verleihen Sie Ihrer Morgenroutine
+                      mit dem Milchaufschäumer-Quirl einen Hauch von Luxus.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhöhen Sie Ihre Kaffeekreationen mit dem
+                      Milchaufschäumer-Quirl, einem unverzichtbaren Zubehör für
+                      Ihre Spezialitäten-Kaffeemaschine. Dieser hochwertige
+                      Quirl ist darauf ausgelegt, Milchaufschäumen auf
+                      Barista-Niveau zu liefern, perfekt zum Verfeinern Ihrer
+                      Lattes, Cappuccinos, Macchiatos und mehr. Sein Design
+                      sorgt für eine gleichmäßige und konsistente Belüftung und
+                      erzeugt mühelos reichhaltigen, samtigen Schaum.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Egal, ob Sie ein Kaffee-Enthusiast sind, der gerne mit
+                      Latte-Art experimentiert, oder einfach die cremige Textur
+                      von gut aufgeschäumter Milch genießt, der
+                      Milchaufschäumer-Quirl hilft Ihnen, diesen
+                      Café-Stil-Abschluss zu Hause zu erreichen. Kompatibel mit
+                      Spezialitäten-Kaffeemaschinen, ist dieser Quirl einfach zu
+                      bedienen und zu reinigen, was Ihr Kaffeeerlebnis noch
+                      angenehmer macht. Genießen Sie jedes Mal perfekt
+                      texturierte Milch und verleihen Sie Ihrer Morgenroutine
+                      mit dem Milchaufschäumer-Quirl einen Hauch von Luxus.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Élevez vos créations de café avec le Fouet Mousseur, un
+                      accessoire indispensable pour votre machine à café
+                      spécialisée. Ce fouet de haute qualité est conçu pour
+                      offrir une mousse de lait de niveau barista, parfaite pour
+                      sublimer vos lattes, cappuccinos, macchiatos et plus
+                      encore. Son design assure une aération douce et constante,
+                      produisant une mousse riche et veloutée avec facilité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous soyez un passionné de café qui aime expérimenter
+                      avec l'art du latte ou que vous appréciez simplement la
+                      texture crémeuse du lait bien mousseux, le Fouet Mousseur
+                      vous aide à obtenir cette finition de style café à la
+                      maison. Compatible avec les machines à café spécialisées,
+                      ce fouet est facile à utiliser et à nettoyer, rendant
+                      votre expérience de préparation de café encore plus
+                      agréable. Offrez-vous un lait parfaitement texturé à
+                      chaque fois et ajoutez une touche de luxe à votre routine
+                      matinale avec le Fouet Mousseur.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Élevez vos créations de café avec le Fouet Mousseur, un
+                      accessoire indispensable pour votre machine à café
+                      spécialisée. Ce fouet de haute qualité est conçu pour
+                      offrir un moussage de lait de niveau barista, parfait pour
+                      améliorer vos lattes, cappuccinos, macchiatos, et plus
+                      encore. Son design assure une aération douce et constante,
+                      produisant une mousse riche et veloutée avec facilité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous soyez un amateur de café qui aime expérimenter
+                      avec l'art du latte ou que vous appréciez simplement la
+                      texture crémeuse d'un lait bien moussé, le Fouet Mousseur
+                      vous aide à obtenir cette finition de style café à la
+                      maison. Compatible avec les machines à café spécialisées,
+                      ce fouet est facile à utiliser et à nettoyer, rendant
+                      votre expérience de préparation de café encore plus
+                      agréable. Offrez-vous un lait parfaitement texturé à
+                      chaque fois et ajoutez une touche de luxe à votre routine
+                      matinale avec le Fouet Mousseur.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elevate your coffee creations with the Frother Whisk, a
+                      must-have accessory for your speciality coffee maker. This
+                      high-quality whisk is crafted to deliver barista-level
+                      milk frothing, perfect for enhancing your lattes,
+                      cappuccinos, macchiatos, and more. Its design ensures
+                      smooth and consistent aeration, producing rich, velvety
+                      foam with ease.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Whether you're a coffee enthusiast who loves experimenting
+                      with latte art or simply enjoy the creamy texture of
+                      well-frothed milk, the Frother Whisk helps you achieve
+                      that café-style finish at home. Compatible with speciality
+                      coffee makers, this whisk is easy to use and clean, making
+                      your coffee-making experience even more enjoyable. Indulge
+                      in perfectly textured milk every time and add a touch of
+                      luxury to your morning routine with the Frother Whisk.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verhoog je koffiecreaties met de Frother Whisk, een
+                      onmisbare accessoire voor je speciale koffiemachine. Deze
+                      hoogwaardige garde is ontworpen om melk op barista-niveau
+                      te schuimen, perfect voor het verbeteren van je lattes,
+                      cappuccino's, macchiato's en meer. Het ontwerp zorgt voor
+                      een soepele en consistente beluchting, waardoor rijke,
+                      fluweelzachte schuim met gemak wordt geproduceerd.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Of je nu een koffieliefhebber bent die graag
+                      experimenteert met latte art of gewoon geniet van de
+                      romige textuur van goed opgeschuimde melk, de Frother
+                      Whisk helpt je die caféstijl-afwerking thuis te bereiken.
+                      Compatibel met speciale koffiemachines, is deze garde
+                      gemakkelijk te gebruiken en schoon te maken, waardoor je
+                      koffie-ervaring nog aangenamer wordt. Geniet elke keer van
+                      perfect getextureerde melk en voeg een vleugje luxe toe
+                      aan je ochtendroutine met de Frother Whisk.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Erhöhen Sie Ihre Kaffeekreationen mit dem
+                      Milchaufschäumer-Quirl, einem unverzichtbaren Zubehör für
+                      Ihre Spezialitäten-Kaffeemaschine. Dieser hochwertige
+                      Quirl ist darauf ausgelegt, Milchaufschäumen auf
+                      Barista-Niveau zu liefern, perfekt zum Verfeinern Ihrer
+                      Lattes, Cappuccinos, Macchiatos und mehr. Sein Design
+                      sorgt für eine gleichmäßige und konsistente Belüftung und
+                      erzeugt mühelos reichen, samtigen Schaum.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Egal, ob Sie ein Kaffee-Enthusiast sind, der gerne mit
+                      Latte Art experimentiert, oder einfach nur die cremige
+                      Textur von gut aufgeschäumter Milch genießt, der
+                      Milchaufschäumer-Quirl hilft Ihnen, diesen Café-Stil zu
+                      Hause zu erreichen. Kompatibel mit
+                      Spezialitäten-Kaffeemaschinen, ist dieser Quirl einfach zu
+                      bedienen und zu reinigen, was Ihr Kaffeeerlebnis noch
+                      angenehmer macht. Genießen Sie jedes Mal perfekt
+                      texturierte Milch und verleihen Sie Ihrer Morgenroutine
+                      mit dem Milchaufschäumer-Quirl einen Hauch von Luxus.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Elevate your coffee creations with the Frother Whisk, a
+                      must-have accessory for your specialty coffee maker. This
+                      high-quality whisk is crafted to deliver barista-level
+                      milk frothing, perfect for enhancing your lattes,
+                      cappuccinos, macchiatos, and more. Its design ensures
+                      smooth and consistent aeration, producing rich, velvety
+                      foam with ease.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Whether you're a coffee enthusiast who loves experimenting
+                      with latte art or simply enjoy the creamy texture of
+                      well-frothed milk, the Frother Whisk helps you achieve
+                      that café-style finish at home. Compatible with specialty
+                      coffee makers, this whisk is easy to use and clean, making
+                      your coffee-making experience even more enjoyable. Indulge
+                      in perfectly textured milk every time and add a touch of
+                      luxury to your morning routine with the Frother Whisk.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Élevez vos créations de café avec le Fouet Mousseur, un
+                      accessoire indispensable pour votre machine à café
+                      spécialisée. Ce fouet de haute qualité est conçu pour
+                      offrir une mousse de lait digne d'un barista, parfaite
+                      pour sublimer vos lattes, cappuccinos, macchiatos et plus
+                      encore. Son design assure une aération douce et constante,
+                      produisant une mousse riche et veloutée avec facilité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous soyez un amateur de café qui aime expérimenter
+                      avec l'art du latte ou que vous appréciiez simplement la
+                      texture crémeuse du lait bien moussé, le Fouet Mousseur
+                      vous aide à obtenir cette finition de style café à la
+                      maison. Compatible avec les machines à café spécialisées,
+                      ce fouet est facile à utiliser et à nettoyer, rendant
+                      votre expérience de préparation de café encore plus
+                      agréable. Offrez-vous un lait parfaitement texturé à
+                      chaque fois et ajoutez une touche de luxe à votre routine
+                      matinale avec le Fouet Mousseur.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Élevez vos créations de café avec le Fouet Mousseur, un
+                      accessoire indispensable pour votre machine à café
+                      spécialisée. Ce fouet de haute qualité est conçu pour
+                      offrir une mousse de lait de niveau barista, parfait pour
+                      améliorer vos lattes, cappuccinos, macchiatos, et plus
+                      encore. Son design assure une aération douce et constante,
+                      produisant une mousse riche et veloutée avec facilité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous soyez un amateur de café qui aime expérimenter
+                      avec l'art du latte ou que vous appréciez simplement la
+                      texture crémeuse du lait bien moussé, le Fouet Mousseur
+                      vous aide à obtenir cette finition de style café à la
+                      maison. Compatible avec les machines à café spécialisées,
+                      ce fouet est facile à utiliser et à nettoyer, rendant
+                      votre expérience de préparation de café encore plus
+                      agréable. Profitez d'un lait parfaitement texturé à chaque
+                      fois et ajoutez une touche de luxe à votre routine
+                      matinale avec le Fouet Mousseur.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Élevez vos créations de café avec le Fouet Mousseur, un
+                      accessoire indispensable pour votre machine à café
+                      spécialisée. Ce fouet de haute qualité est conçu pour
+                      offrir une mousse de lait de niveau barista, parfait pour
+                      améliorer vos lattes, cappuccinos, macchiatos, et plus
+                      encore. Son design assure une aération douce et constante,
+                      produisant une mousse riche et veloutée avec facilité.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Que vous soyez un amateur de café qui aime expérimenter
+                      avec l'art du latte ou que vous appréciez simplement la
+                      texture crémeuse du lait bien moussé, le Fouet Mousseur
+                      vous aide à obtenir cette finition de style café à la
+                      maison. Compatible avec les machines à café spécialisées,
+                      ce fouet est facile à utiliser et à nettoyer, rendant
+                      votre expérience de préparation de café encore plus
+                      agréable. Profitez d'un lait parfaitement texturé à chaque
+                      fois et ajoutez une touche de luxe à votre routine
+                      matinale avec le Fouet Mousseur.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      フローサーホイッパーでコーヒークリエーションを高めましょう。これは、スペシャルティコーヒーメーカーに欠かせないアクセサリーです。この高品質のホイッパーは、バリスタレベルのミルク泡立てを実現するために作られており、ラテ、カプチーノ、マキアートなどを引き立てるのに最適です。そのデザインはスムーズで一貫したエアレーションを保証し、簡単にリッチでベルベットのような泡を作り出します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      ラテアートを試すのが好きなコーヒー愛好家でも、泡立てたミルクのクリーミーな食感を楽しむだけでも、フローサーホイッパーは自宅でカフェスタイルの仕上がりを実現するのに役立ちます。スペシャルティコーヒーメーカーに対応しており、使いやすく掃除も簡単で、コーヒー作りの体験をさらに楽しいものにします。毎回完璧なテクスチャーのミルクを楽しみ、フローサーホイッパーで朝のルーチンに贅沢さを加えましょう。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Verhoog je koffiecreaties met de Frother Whisk, een
+                      onmisbare accessoire voor je speciale koffiemachine. Deze
+                      hoogwaardige garde is ontworpen om melk op barista-niveau
+                      te schuimen, perfect voor het verbeteren van je lattes,
+                      cappuccino's, macchiato's en meer. Het ontwerp zorgt voor
+                      een soepele en consistente beluchting, waardoor je
+                      moeiteloos rijke, fluweelzachte schuim krijgt.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Of je nu een koffieliefhebber bent die graag
+                      experimenteert met latte art of gewoon geniet van de
+                      romige textuur van goed opgeschuimde melk, de Frother
+                      Whisk helpt je die caféstijl afwerking thuis te bereiken.
+                      Compatibel met speciale koffiemachines, is deze garde
+                      gemakkelijk te gebruiken en schoon te maken, waardoor je
+                      koffie-ervaring nog aangenamer wordt. Geniet elke keer van
+                      perfect getextureerde melk en voeg een vleugje luxe toe
+                      aan je ochtendroutine met de Frother Whisk.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Höj dina kaffekreationer med Frother Whisk, ett
+                      måste-tillbehör för din specialkaffemaskin. Denna
+                      högkvalitativa visp är utformad för att leverera
+                      baristanivå av mjölkskumning, perfekt för att förbättra
+                      dina lattes, cappuccinos, macchiatos och mer. Dess design
+                      säkerställer jämn och konsekvent luftning, vilket ger rik,
+                      sammetslen skum med lätthet.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Oavsett om du är en kaffeentusiast som älskar att
+                      experimentera med lattekonst eller helt enkelt njuter av
+                      den krämiga texturen av välskummad mjölk, hjälper Frother
+                      Whisk dig att uppnå den där kaféstilen hemma. Kompatibel
+                      med specialkaffemaskiner, är denna visp lätt att använda
+                      och rengöra, vilket gör din kaffeupplevelse ännu mer
+                      njutbar. Njut av perfekt texturerad mjölk varje gång och
+                      lägg till en touch av lyx till din morgonrutin med Frother
+                      Whisk.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      ارفع مستوى إبداعاتك في القهوة مع خفاقة الرغوة، وهي ملحق لا
+                      غنى عنه لماكينة القهوة المتخصصة لديك. تم تصميم هذه الخفاقة
+                      عالية الجودة لتقديم رغوة حليب بمستوى باريستا، مما يجعلها
+                      مثالية لتحسين اللاتيه والكابتشينو والماكياتو والمزيد. يضمن
+                      تصميمها تهوية سلسة ومتسقة، مما ينتج رغوة غنية وناعمة
+                      بسهولة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      سواء كنت من عشاق القهوة الذين يحبون تجربة فن اللاتيه أو
+                      ببساطة تستمتع بقوام الحليب المخفوق جيدًا، فإن خفاقة الرغوة
+                      تساعدك على تحقيق تلك اللمسة النهائية بأسلوب المقهى في
+                      المنزل. متوافقة مع ماكينات القهوة المتخصصة، هذه الخفاقة
+                      سهلة الاستخدام والتنظيف، مما يجعل تجربة صنع القهوة أكثر
+                      متعة. استمتع بحليب ذو قوام مثالي في كل مرة وأضف لمسة من
+                      الفخامة إلى روتينك الصباحي مع خفاقة الرغوة.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Frother Piskeris
+        de-at: Milchaufschäumer Schneebesen
+        de-ch: Milchaufschäumer Schneebesen
+        de-de: Milchaufschäumer Schneebesen
+        en-au: Fouet Mousseur
+        en-ca: Frother Whisk
+        en-gb: Frother Whisk
+        en-nl: Frother Garde
+        en-nz: Milchaufschäumer Schneebesen
+        en-us: Frother Whisk
+        fr-ca: Fouet Mousseur
+        fr-ch: Fouet Mousseur
+        fr-fr: Fouet Mousseur
+        ja-jp: フロッサーウィスク
+        nl-nl: Frother Garde
+        sv-se: Visp för skummare
+        ar-uae: خفاق رغوة
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-51741b67-f9bb-41d2-8602-26e9f9d9d8ae-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Mælkeskummer Piskeris
+        de-at: Milchaufschäumer Schneebesen
+        de-ch: Milchaufschäumer Schneebesen
+        de-de: Milchaufschäumer Schneebesen
+        en-au: Fouet Mousseur
+        en-ca: Frother Whisk
+        en-gb: Frother Whisk
+        en-nl: Frother Klopper
+        en-nz: Milchaufschäumer Schneebesen
+        en-us: Frother Whisk
+        fr-ca: Fouet Mousseur
+        fr-ch: Fouet Mousseur
+        fr-fr: Fouet Mousseur
+        ja-jp: フローサーホイッパー
+        nl-nl: Frother Garde
+        sv-se: Visp för skummare
+        ar-uae: خفاق رغوة
+    rating:
+      type: number
+      value: '4.0'
+    ogImage:
+      type: asset
+      value:
+        - _id: 3f785774-9905-4d3a-85a4-596916d8eaf3
+          type: image
+          fields:
+            id:
+              type: text
+              value: d66e581a-f8e3-41fb-a554-ae3dea6ba2b7
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/0m7lK8o5ROKCT_VatXDxHA-frother-whisk-1.png
+              type: text
+            file:
+              type: file
+              value: 7cd8ad8b-7193-4841-948d-a725cae15c5e
+            size:
+              value: 7402
+              type: number
+            title:
+              type: text
+              value: frother-whisk-1.png
+            width:
+              value: 250
+              type: number
+            height:
+              value: 250
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-51741b67-f9bb-41d2-8602-26e9f9d9d8ae-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: 7e3f512b-d331-4917-80b9-f71490bd3519
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '150'
+            price:
+              type: number
+              locales:
+                da-dk: '9.95'
+                de-at: '9.95'
+                de-ch: '9.95'
+                de-de: '9.95'
+                en-au: '9.95'
+                en-ca: '9.95'
+                en-gb: '9.95'
+                en-nl: '9.95'
+                en-nz: '9.95'
+                en-us: '9.95'
+                fr-ca: '9.95'
+                fr-ch: '9.95'
+                fr-fr: '9.95'
+                ja-jp: '9.95'
+                nl-nl: '9.95'
+                sv-se: '9.95'
+                ar-uae: '9.95'
+            title:
+              type: text
+              locales:
+                da-dk: Skummepisker
+                de-at: Milchaufschäumer Schneebesen
+                de-ch: Milchaufschäumer Schneebesen
+                de-de: Milchaufschäumer Schneebesen
+                en-au: Fouet Mousseur
+                en-ca: Frother Whisk
+                en-gb: Frother Whisk
+                en-nl: Frother Garde
+                en-nz: Milchaufschäumer Schneebesen
+                en-us: Frother Whisk
+                fr-ca: Fouet Mousseur
+                fr-ch: Fouet Mousseur
+                fr-fr: Fouet Mousseur
+                ja-jp: フローサーホイッパー
+                nl-nl: Opschuimer Garde
+                sv-se: Visp för Skummare
+                ar-uae: خفاق رغوة
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: ac6395de-314d-4807-8c0a-816257cf3ec9
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: d66e581a-f8e3-41fb-a554-ae3dea6ba2b7
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/0m7lK8o5ROKCT_VatXDxHA-frother-whisk-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: 7cd8ad8b-7193-4841-948d-a725cae15c5e
+                    size:
+                      value: 7402
+                      type: number
+                    title:
+                      type: text
+                      value: frother-whisk-1.png
+                    width:
+                      value: 250
+                      type: number
+                    height:
+                      value: 250
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Frother Piskeris
+        de-at: Milchaufschäumer Schneebesen
+        de-ch: Frother-Schneebesen
+        de-de: Frother-Schneebesen
+        en-au: Fouet Mousseur
+        en-ca: Frother Whisk
+        en-gb: Frother Whisk
+        en-nl: Frother Garde
+        en-nz: Milchaufschäumer Schneebesen
+        en-us: Frother Whisk
+        fr-ca: Fouet Mousseur
+        fr-ch: Fouet Mousseur
+        fr-fr: Fouet Mousseur
+        ja-jp: フローサーウィスク
+        nl-nl: Frother Garde
+        sv-se: Skummare Visp
+        ar-uae: خفاق رغوة
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: 3f785774-9905-4d3a-85a4-596916d8eaf3
+          type: image
+          fields:
+            id:
+              type: text
+              value: d66e581a-f8e3-41fb-a554-ae3dea6ba2b7
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/0m7lK8o5ROKCT_VatXDxHA-frother-whisk-1.png
+              type: text
+            file:
+              type: file
+              value: 7cd8ad8b-7193-4841-948d-a725cae15c5e
+            size:
+              value: 7402
+              type: number
+            title:
+              type: text
+              value: frother-whisk-1.png
+            width:
+              value: 250
+              type: number
+            height:
+              value: 250
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Skab café-kvalitet skummet mælk derhjemme med Frother Whisk—perfekt
+          til lattes og cappuccinoer.
+        de-at: >-
+          Erzeugen Sie zu Hause milchigen Schaum in Café-Qualität mit dem
+          Milchaufschäumer—perfekt für Lattes und Cappuccinos.
+        de-ch: >-
+          Erstellen Sie zu Hause milchigen Schaum in Café-Qualität mit dem
+          Milchaufschäumer—perfekt für Lattes und Cappuccinos.
+        de-de: >-
+          Erstellen Sie zu Hause milchigen Schaum in Café-Qualität mit dem
+          Milchaufschäumer—perfekt für Lattes und Cappuccinos.
+        en-au: >-
+          Créez du lait mousseux de qualité café chez vous avec le Fouet
+          Mousseur—parfait pour les lattes et cappuccinos.
+        en-ca: >-
+          Create café-quality frothed milk at home with the Frother
+          Whisk—perfect for lattes and cappuccinos.
+        en-gb: >-
+          Create café-quality frothed milk at home with the Frother
+          Whisk—perfect for lattes and cappuccinos.
+        en-nl: >-
+          Creëer café-kwaliteit opgeschuimde melk thuis met de Frother
+          Whisk—perfect voor lattes en cappuccino's.
+        en-nz: >-
+          Erstellen Sie zu Hause milchschaum in Café-Qualität mit dem
+          Milchaufschäumer—perfekt für Lattes und Cappuccinos.
+        en-us: >-
+          Create café-quality frothed milk at home with the Frother
+          Whisk—perfect for lattes and cappuccinos.
+        fr-ca: >-
+          Créez du lait mousseux de qualité café à la maison avec le Fouet
+          Mousseur—parfait pour les lattes et cappuccinos.
+        fr-ch: >-
+          Créez une mousse de lait de qualité café chez vous avec le Fouet
+          Mousseur—parfait pour les lattes et cappuccinos.
+        fr-fr: >-
+          Créez une mousse de lait de qualité café chez vous avec le Fouet
+          Mousseur—parfait pour les lattes et cappuccinos.
+        ja-jp: フローサーホイッスで自宅でカフェクオリティの泡立てミルクを作りましょう。ラテやカプチーノに最適です。
+        nl-nl: >-
+          Creëer thuis café-kwaliteit opgeschuimde melk met de Frother
+          Whisk—perfect voor lattes en cappuccino's.
+        sv-se: >-
+          Skapa café-kvalitet på skummad mjölk hemma med Frother Whisk—perfekt
+          för lattes och cappuccinos.
+        ar-uae: >-
+          اصنع حليباً مزبداً بجودة المقاهي في المنزل باستخدام خفاقة الرغوة -
+          مثالية للاتيه والكابتشينو.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Frother Whisk er designet til specialkaffemaskiner, så du kan lave
+          perfekt skummet mælk til lattes, cappuccinoer og andre café-stil
+          drikkevarer derhjemme.
+        de-at: >-
+          Der Milchaufschäumer Quirl ist für Spezialitäten-Kaffeemaschinen
+          konzipiert und ermöglicht es Ihnen, perfekt aufgeschäumte Milch für
+          Lattes, Cappuccinos und andere Café-Getränke zu Hause zu kreieren.
+        de-ch: >-
+          Der Frother Whisk ist für Spezialitäten-Kaffeemaschinen konzipiert und
+          ermöglicht es Ihnen, perfekt aufgeschäumte Milch für Lattes,
+          Cappuccinos und andere Café-Getränke zu Hause zuzubereiten.
+        de-de: >-
+          Der Frother Whisk ist für Spezialitäten-Kaffeemaschinen konzipiert und
+          ermöglicht es Ihnen, perfekt aufgeschäumte Milch für Lattes,
+          Cappuccinos und andere Café-Getränke zu Hause zuzubereiten.
+        en-au: >-
+          Le Fouet Mousseur est conçu pour les machines à café spécialisées,
+          vous permettant de créer une mousse de lait parfaite pour les lattes,
+          cappuccinos et autres boissons de style café à la maison.
+        en-ca: >-
+          The Frother Whisk is designed for specialty coffee makers, enabling
+          you to create perfectly frothed milk for lattes, cappuccinos, and
+          other café-style beverages at home.
+        en-gb: >-
+          The Frother Whisk is designed for speciality coffee makers, enabling
+          you to create perfectly frothed milk for lattes, cappuccinos, and
+          other café-style beverages at home.
+        en-nl: >-
+          De Frother Whisk is ontworpen voor speciale koffiemakers, waarmee je
+          perfect opgeschuimde melk kunt creëren voor lattes, cappuccino's en
+          andere café-stijl dranken thuis.
+        en-nz: >-
+          Der Frother Whisk ist für Spezialitäten-Kaffeemaschinen konzipiert und
+          ermöglicht es Ihnen, perfekt aufgeschäumte Milch für Lattes,
+          Cappuccinos und andere Café-Getränke zu Hause zu kreieren.
+        en-us: >-
+          The Frother Whisk is designed for specialty coffee makers, enabling
+          you to create perfectly frothed milk for lattes, cappuccinos, and
+          other café-style beverages at home.
+        fr-ca: >-
+          Le Fouet Mousseur est conçu pour les machines à café spécialisées,
+          vous permettant de créer une mousse de lait parfaite pour les lattes,
+          cappuccinos et autres boissons de style café à la maison.
+        fr-ch: >-
+          Le Fouet Mousseur est conçu pour les machines à café spécialisées,
+          vous permettant de créer une mousse de lait parfaite pour les lattes,
+          cappuccinos et autres boissons de style café à la maison.
+        fr-fr: >-
+          Le Fouet Mousseur est conçu pour les machines à café spécialisées,
+          vous permettant de créer une mousse de lait parfaite pour les lattes,
+          cappuccinos et autres boissons de style café à la maison.
+        ja-jp: >-
+          フロッサーホイッパーは、スペシャルティコーヒーメーカー向けに設計されており、自宅でラテやカプチーノ、その他のカフェスタイルの飲み物に最適な泡立てたミルクを作ることができます。
+        nl-nl: >-
+          De Frother Whisk is ontworpen voor speciale koffiemakers, zodat je
+          perfect opgeschuimde melk kunt maken voor lattes, cappuccino's en
+          andere café-achtige dranken thuis.
+        sv-se: >-
+          Frother Whisk är utformad för specialkaffemaskiner och gör det möjligt
+          för dig att skapa perfekt skummad mjölk för lattes, cappuccinos och
+          andra caféliknande drycker hemma.
+        ar-uae: >-
+          خفاق الرغوة مصمم لصانعي القهوة المتخصصين، مما يتيح لك إعداد حليب مخفوق
+          بشكل مثالي لتحضير اللاتيه، الكابتشينو، والمشروبات الأخرى على طراز
+          المقاهي في المنزل.
+  _dataResources:
+    ref-51741b67-f9bb-41d2-8602-26e9f9d9d8ae-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-51741b67-f9bb-41d2-8602-26e9f9d9d8ae-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

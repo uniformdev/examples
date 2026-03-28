@@ -1,0 +1,18 @@
+id: productMultipleManualSelect
+displayName: Product multiple manual select
+ttl: 30
+path: /multiple
+custom:
+  maxDepth: 2
+  proposedName: Multiple Product
+  allowedContentTypes:
+    - product
+method: GET
+purgeKey: 69561124-a76d-4a73-8004-4d0d62684be5
+archetype: multipleEntries
+variables:
+  entryIds:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

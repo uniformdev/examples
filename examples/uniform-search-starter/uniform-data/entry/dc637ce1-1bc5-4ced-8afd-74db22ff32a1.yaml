@@ -1,0 +1,212 @@
+created: '2026-03-10T23:32:34.960646+00:00'
+modified: '2026-03-10T23:32:34.960646+00:00'
+pattern: false
+entry:
+  _id: dc637ce1-1bc5-4ced-8afd-74db22ff32a1
+  _name: Black Mountain
+  _slug: black-mountain
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/F_gMaCSiTf-lrwFQTvkPfA-black-mountain.png
+  type: brand
+  fields:
+    logo:
+      type: asset
+      value: []
+    title:
+      type: text
+      locales:
+        da-dk: Black Mountain
+        de-at: Black Mountain
+        de-ch: Schwarzer Berg
+        de-de: Schwarzer Berg
+        en-au: Montagne Noire
+        en-ca: Black Mountain
+        en-gb: Black Mountain
+        en-nl: Zwarte Berg
+        en-nz: Schwarzer Berg
+        en-us: Black Mountain
+        fr-ca: Montagne Noire
+        fr-ch: Montagne Noire
+        fr-fr: Montagne Noire
+        ja-jp: ブラックマウンテン
+        nl-nl: Zwarte Berg
+        sv-se: Svart Berg
+        ar-uae: بلاك ماونتن
+    description:
+      type: text
+      locales:
+        da-dk: >-
+          Black Mountain er dedikeret til at forbedre din kaffeoplevelse med
+          premium kaffemaskiner og et bredt udvalg af kaffeprodukter. Vores
+          mission er at kombinere moderne teknologi med traditionelt
+          kaffehåndværk for at levere enestående smag og bekvemmelighed. Fra
+          avancerede espressomaskiner til omhyggeligt fremstillede kaffebønner,
+          er Black Mountain din partner i hvert trin af din kaffeoplevelse.
+          Opdag den perfekte bryg med vores innovative og pålidelige
+          kaffeløsninger, designet til både entusiaster og professionelle.
+        de-at: >-
+          Black Mountain ist bestrebt, Ihr Kaffeeerlebnis mit hochwertigen
+          Kaffeemaschinen und einer breiten Palette von Kaffeeprodukten zu
+          verbessern. Unsere Mission ist es, moderne Technologie mit
+          traditioneller Kaffeekunst zu verbinden, um außergewöhnlichen
+          Geschmack und Komfort zu bieten. Von hochmodernen Espressomaschinen
+          bis hin zu sorgfältig verarbeiteten Kaffeebohnen ist Black Mountain
+          Ihr Partner in jedem Schritt Ihrer Kaffee-Reise. Entdecken Sie den
+          perfekten Kaffee mit unseren innovativen und zuverlässigen
+          Kaffeelösungen, die sowohl für Enthusiasten als auch für Profis
+          entwickelt wurden.
+        de-ch: >-
+          Black Mountain ist bestrebt, Ihr Kaffeeerlebnis mit hochwertigen
+          Kaffeemaschinen und einer breiten Palette von Kaffeeprodukten zu
+          verbessern. Unsere Mission ist es, moderne Technologie mit
+          traditioneller Kaffeekunst zu verbinden, um außergewöhnlichen
+          Geschmack und Komfort zu bieten. Von hochmodernen Espressomaschinen
+          bis hin zu sorgfältig verarbeiteten Kaffeebohnen ist Black Mountain
+          Ihr Partner in jedem Schritt Ihrer Kaffee-Reise. Entdecken Sie den
+          perfekten Brühvorgang mit unseren innovativen und zuverlässigen
+          Kaffeelösungen, die sowohl für Enthusiasten als auch für Profis
+          entwickelt wurden.
+        de-de: >-
+          Black Mountain ist bestrebt, Ihr Kaffeeerlebnis mit hochwertigen
+          Kaffeemaschinen und einer breiten Palette von Kaffeeprodukten zu
+          verbessern. Unsere Mission ist es, moderne Technologie mit
+          traditioneller Kaffeekunst zu verbinden, um außergewöhnlichen
+          Geschmack und Komfort zu bieten. Von hochmodernen Espressomaschinen
+          bis hin zu sorgfältig verarbeiteten Kaffeebohnen ist Black Mountain
+          Ihr Partner in jedem Schritt Ihrer Kaffee-Reise. Entdecken Sie den
+          perfekten Brühvorgang mit unseren innovativen und zuverlässigen
+          Kaffeelösungen, die sowohl für Enthusiasten als auch für Profis
+          entwickelt wurden.
+        en-au: >-
+          Black Mountain est dédié à l'amélioration de votre expérience café
+          avec des cafetières haut de gamme et une large gamme de produits de
+          café. Notre mission est de combiner la technologie moderne avec
+          l'artisanat traditionnel du café pour offrir un goût exceptionnel et
+          une commodité optimale. Des machines à expresso à la pointe de la
+          technologie aux grains de café méticuleusement élaborés, Black
+          Mountain est votre partenaire à chaque étape de votre parcours café.
+          Découvrez la boisson parfaite avec nos solutions café innovantes et
+          fiables, conçues pour les amateurs et les professionnels.
+        en-ca: >-
+          Black Mountain is dedicated to enhancing your coffee experience with
+          premium coffee makers and a wide range of coffee products. Our mission
+          is to blend modern technology with traditional coffee craftsmanship to
+          deliver exceptional taste and convenience. From state-of-the-art
+          espresso machines to meticulously crafted coffee beans, Black Mountain
+          is your partner in every step of your coffee journey. Discover the
+          perfect brew with our innovative and reliable coffee solutions,
+          designed for both enthusiasts and professionals.
+        en-gb: >-
+          Black Mountain is dedicated to enhancing your coffee experience with
+          premium coffee makers and a wide range of coffee products. Our mission
+          is to blend modern technology with traditional coffee craftsmanship to
+          deliver exceptional taste and convenience. From state-of-the-art
+          espresso machines to meticulously crafted coffee beans, Black Mountain
+          is your partner in every step of your coffee journey. Discover the
+          perfect brew with our innovative and reliable coffee solutions,
+          designed for both enthusiasts and professionals.
+        en-nl: >-
+          Black Mountain is toegewijd aan het verbeteren van uw koffie-ervaring
+          met premium koffiezetapparaten en een breed scala aan koffieproducten.
+          Onze missie is om moderne technologie te combineren met traditionele
+          koffieambacht om uitzonderlijke smaak en gemak te leveren. Van
+          geavanceerde espressomachines tot zorgvuldig vervaardigde koffiebonen,
+          Black Mountain is uw partner in elke stap van uw koffieavontuur.
+          Ontdek de perfecte zet met onze innovatieve en betrouwbare
+          koffieoplossingen, ontworpen voor zowel liefhebbers als professionals.
+        en-nz: >-
+          Black Mountain widmet sich der Verbesserung Ihres Kaffeeerlebnisses
+          mit erstklassigen Kaffeemaschinen und einer breiten Palette von
+          Kaffeeprodukten. Unsere Mission ist es, moderne Technologie mit
+          traditioneller Kaffeekunst zu verbinden, um außergewöhnlichen
+          Geschmack und Komfort zu bieten. Von hochmodernen Espressomaschinen
+          bis hin zu sorgfältig hergestellten Kaffeebohnen ist Black Mountain
+          Ihr Partner in jedem Schritt Ihrer Kaffee-Reise. Entdecken Sie den
+          perfekten Brühvorgang mit unseren innovativen und zuverlässigen
+          Kaffeelösungen, die sowohl für Enthusiasten als auch für Profis
+          entwickelt wurden.
+        en-us: >-
+          Black Mountain is dedicated to enhancing your coffee experience with
+          premium coffee makers and a wide range of coffee products. Our mission
+          is to blend modern technology with traditional coffee craftsmanship to
+          deliver exceptional taste and convenience. From state-of-the-art
+          espresso machines to meticulously crafted coffee beans, Black Mountain
+          is your partner in every step of your coffee journey. Discover the
+          perfect brew with our innovative and reliable coffee solutions,
+          designed for both enthusiasts and professionals.
+        fr-ca: >-
+          Black Mountain est dédié à améliorer votre expérience café avec des
+          cafetières haut de gamme et une large gamme de produits de café. Notre
+          mission est de combiner la technologie moderne avec l'artisanat
+          traditionnel du café pour offrir un goût exceptionnel et une commodité
+          optimale. Des machines à espresso à la fine pointe de la technologie
+          aux grains de café méticuleusement élaborés, Black Mountain est votre
+          partenaire à chaque étape de votre parcours café. Découvrez l'infusion
+          parfaite avec nos solutions café innovantes et fiables, conçues pour
+          les passionnés et les professionnels.
+        fr-ch: >-
+          Black Mountain est dédié à améliorer votre expérience café avec des
+          machines à café haut de gamme et une large gamme de produits de café.
+          Notre mission est de marier la technologie moderne avec l'artisanat
+          traditionnel du café pour offrir un goût exceptionnel et une commodité
+          optimale. Des machines à espresso à la pointe de la technologie aux
+          grains de café méticuleusement sélectionnés, Black Mountain est votre
+          partenaire à chaque étape de votre parcours café. Découvrez l'infusion
+          parfaite avec nos solutions café innovantes et fiables, conçues pour
+          les amateurs comme pour les professionnels.
+        fr-fr: >-
+          Black Mountain est dédié à améliorer votre expérience café avec des
+          machines à café haut de gamme et une large gamme de produits de café.
+          Notre mission est de marier la technologie moderne avec l'artisanat
+          traditionnel du café pour offrir un goût exceptionnel et une commodité
+          optimale. Des machines à espresso à la pointe de la technologie aux
+          grains de café méticuleusement sélectionnés, Black Mountain est votre
+          partenaire à chaque étape de votre parcours café. Découvrez l'infusion
+          parfaite avec nos solutions café innovantes et fiables, conçues pour
+          les amateurs comme pour les professionnels.
+        ja-jp: >-
+          ブラックマウンテンは、プレミアムなコーヒーメーカーと幅広いコーヒー製品を通じて、コーヒー体験を向上させることに専念しています。私たちの使命は、現代の技術と伝統的なコーヒーの職人技を融合させ、卓越した味と利便性を提供することです。最先端のエスプレッソマシンから、丹念に作られたコーヒー豆まで、ブラックマウンテンはコーヒージャーニーのあらゆるステップであなたのパートナーです。愛好家にもプロフェッショナルにも向けて設計された、革新的で信頼性のあるコーヒーソリューションで、完璧な一杯を見つけてください。
+        nl-nl: >-
+          Black Mountain is toegewijd aan het verbeteren van uw koffie-ervaring
+          met premium koffiemachines en een breed scala aan koffieproducten.
+          Onze missie is om moderne technologie te combineren met traditionele
+          koffieambacht om uitzonderlijke smaak en gemak te leveren. Van
+          geavanceerde espressomachines tot zorgvuldig vervaardigde koffiebonen,
+          Black Mountain is uw partner in elke stap van uw koffieavontuur.
+          Ontdek de perfecte zet met onze innovatieve en betrouwbare
+          koffieoplossingen, ontworpen voor zowel liefhebbers als professionals.
+        sv-se: >-
+          Black Mountain är dedikerad till att förbättra din kaffeupplevelse med
+          premium kaffebryggare och ett brett utbud av kaffeprodukter. Vårt
+          uppdrag är att blanda modern teknik med traditionellt kaffehantverk
+          för att leverera exceptionell smak och bekvämlighet. Från toppmoderna
+          espressomaskiner till noggrant framställda kaffebönor, är Black
+          Mountain din partner i varje steg av din kaffeupplevelse. Upptäck den
+          perfekta brygden med våra innovativa och pålitliga kaffelösningar,
+          utformade för både entusiaster och yrkesverksamma.
+        ar-uae: >-
+          بلاك ماونتن مكرسة لتعزيز تجربتك في القهوة من خلال ماكينات القهوة
+          الفاخرة ومجموعة واسعة من منتجات القهوة. مهمتنا هي دمج التكنولوجيا
+          الحديثة مع الحرفية التقليدية في صناعة القهوة لتقديم طعم استثنائي وراحة
+          فائقة. من آلات الإسبريسو المتطورة إلى حبوب القهوة المصنوعة بعناية،
+          بلاك ماونتن هي شريكك في كل خطوة من رحلتك في عالم القهوة. اكتشف التحضير
+          المثالي مع حلول القهوة المبتكرة والموثوقة لدينا، المصممة لكل من الهواة
+          والمحترفين.
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

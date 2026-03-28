@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 7f6474dd-2e56-4448-83ea-289f729472a2
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: landing-page-og-image.png
+    file:
+      type: file
+      value: 2066bf91-0823-49cb-8838-d5ba7cf3e17d
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/QRduzfokQYSeh4KMlHQzMw-landing-page-og-image.png
+      type: text
+    size:
+      value: 757648
+      type: number
+    width:
+      value: 1808
+      type: number
+    height:
+      value: 908
+      type: number
+    custom: {}
+created: '2026-03-10T23:27:26.674718+00:00'
+modified: '2026-03-10T23:27:26.674718+00:00'

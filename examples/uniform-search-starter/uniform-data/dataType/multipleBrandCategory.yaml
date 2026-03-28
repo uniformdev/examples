@@ -1,0 +1,18 @@
+id: multipleBrandCategory
+displayName: Multiple Brand Category
+ttl: 30
+body: ''
+path: /multiple
+custom:
+  proposedName: Multiple Brand
+  allowedContentTypes:
+    - brand
+method: GET
+purgeKey: 42b958ad-c8fa-4475-a5ea-522719f88c79
+archetype: multipleEntries
+variables:
+  entryIds:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

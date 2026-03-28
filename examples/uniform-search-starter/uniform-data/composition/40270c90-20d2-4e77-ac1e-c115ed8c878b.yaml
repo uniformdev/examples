@@ -1,0 +1,42 @@
+composition:
+  _name: Home Page
+  _id: 40270c90-20d2-4e77-ac1e-c115ed8c878b
+  _slug: /
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      locales:
+        en-us: Search Demo Page
+  slots:
+    pageContent:
+      - _id: e7bf93b6-104e-4a5a-87d9-480af87f8713
+        type: hero
+        parameters:
+          titleText:
+            type: text
+            locales:
+              en-us: Search Demo
+      - _id: 56a43bbf-8718-4d08-b40e-ac3ba415e1cf
+        type: searchEngine
+        _pattern: afef4fa3-394f-4228-81b9-3374b4616b3c
+  _overrides:
+    56a43bbf-8718-4d08-b40e-ac3ba415e1cf:
+      parameters:
+        boostEnrichments:
+          type: multi-select
+          value:
+            - subCategory,subcategory
+      dataResources:
+        Document List Content:
+          type: documentList
+          variables:
+            locale: ${locale}
+            search: ''
+            filters: '{"type[eq]":"document"}'
+            contentTypes: document
+  _locales:
+    - en-us
+created: '2026-03-25T23:11:29.344312+00:00'
+modified: '2026-03-25T23:28:29.11694+00:00'
+pattern: false

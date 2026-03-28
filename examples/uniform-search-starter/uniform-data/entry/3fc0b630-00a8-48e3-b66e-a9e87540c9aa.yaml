@@ -1,0 +1,1091 @@
+created: '2026-03-10T23:36:23.244176+00:00'
+modified: '2026-03-10T23:36:23.244176+00:00'
+pattern: false
+entry:
+  _id: 3fc0b630-00a8-48e3-b66e-a9e87540c9aa
+  _name: Water filter
+  _slug: water-filter
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/JGHN5TxuQ3uXrQMQa8sVyw-water-filter-1.png
+  type: product
+  fields:
+    body:
+      type: richText
+      locales:
+        da-dk:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimer din kaffemaskines ydeevne med dette premium
+                      vandfilter, specielt fremstillet med ionbytterharpiks og
+                      naturlig kokosnød granuleret aktivt kul for enestående
+                      vandrensning. Dette avancerede filtreringssystem fjerner
+                      effektivt ubehagelige lugte, reducerer rust, klor og andre
+                      urenheder, hvilket sikrer, at din kaffe brygges med det
+                      reneste vand muligt. Ved at forhindre kalkdannelse
+                      forbedrer dette filter ikke kun smagen af din kaffe, men
+                      beskytter og forlænger også levetiden for din
+                      kaffemaskine, så den holdes i topform for konsekvente,
+                      kvalitetsbryg. Ideel til kaffeentusiaster, der søger en
+                      glattere, renere smag, er dette filter en praktisk
+                      tilføjelse til enhver hjemmeopsætning, der giver ro i
+                      sindet og forlænget maskinlevetid med hver kop.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-at:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimieren Sie die Leistung Ihrer Kaffeemaschine mit
+                      diesem Premium-Wasserfilter, der speziell mit
+                      Ionenaustauscherharz und natürlicher
+                      Kokosnuss-Granulat-Aktivkohle für außergewöhnliche
+                      Wasserreinigung entwickelt wurde. Dieses fortschrittliche
+                      Filtersystem entfernt effektiv unangenehme Gerüche,
+                      reduziert Rost, Chlor und andere Verunreinigungen und
+                      sorgt dafür, dass Ihr Kaffee mit dem reinsten Wasser
+                      gebraut wird. Durch die Verhinderung von Kalkbildung
+                      verbessert dieser Filter nicht nur den Geschmack Ihres
+                      Kaffees, sondern schützt und verlängert auch die
+                      Lebensdauer Ihrer Kaffeemaschine, sodass sie in bestem
+                      Zustand für gleichbleibende, hochwertige Brühvorgänge
+                      bleibt. Ideal für Kaffeeliebhaber, die einen weicheren,
+                      saubereren Geschmack suchen, ist dieser Filter eine
+                      praktische Ergänzung für jede Heimaufstellung und bietet
+                      mit jeder Tasse ein beruhigendes Gefühl und eine
+                      verlängerte Lebensdauer der Maschine.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimieren Sie die Leistung Ihrer Kaffeemaschine mit
+                      diesem Premium-Wasserfilter, der speziell mit
+                      Ionenaustauschharz und natürlicher
+                      Kokosnuss-Granulat-Aktivkohle für außergewöhnliche
+                      Wasserreinigung entwickelt wurde. Dieses fortschrittliche
+                      Filtersystem entfernt effektiv unangenehme Gerüche,
+                      reduziert Rost, Chlor und andere Verunreinigungen und
+                      sorgt dafür, dass Ihr Kaffee mit dem reinsten Wasser
+                      gebrüht wird. Durch die Verhinderung von Kalkbildung
+                      verbessert dieser Filter nicht nur den Geschmack Ihres
+                      Kaffees, sondern schützt und verlängert auch die
+                      Lebensdauer Ihrer Kaffeemaschine, sodass sie in
+                      einwandfreiem Zustand für gleichbleibend hochwertige
+                      Brühvorgänge bleibt. Ideal für Kaffeeliebhaber, die einen
+                      weicheren, saubereren Geschmack suchen, ist dieser Filter
+                      eine praktische Ergänzung für jede Heimaufstellung und
+                      bietet mit jeder Tasse ein beruhigendes Gefühl und eine
+                      verlängerte Maschinenlebensdauer.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        de-de:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimieren Sie die Leistung Ihrer Kaffeemaschine mit
+                      diesem Premium-Wasserfilter, der speziell mit
+                      Ionenaustauschharz und natürlicher
+                      Kokosnuss-Granulat-Aktivkohle für außergewöhnliche
+                      Wasserreinigung entwickelt wurde. Dieses fortschrittliche
+                      Filtersystem entfernt effektiv unangenehme Gerüche,
+                      reduziert Rost, Chlor und andere Verunreinigungen und
+                      sorgt dafür, dass Ihr Kaffee mit dem reinsten Wasser
+                      gebrüht wird. Durch die Verhinderung von Kalkbildung
+                      verbessert dieser Filter nicht nur den Geschmack Ihres
+                      Kaffees, sondern schützt und verlängert auch die
+                      Lebensdauer Ihrer Kaffeemaschine, sodass sie in
+                      einwandfreiem Zustand für gleichbleibend hochwertige
+                      Brühvorgänge bleibt. Ideal für Kaffeeliebhaber, die einen
+                      weicheren, saubereren Geschmack suchen, ist dieser Filter
+                      eine praktische Ergänzung für jede Heimaufstellung und
+                      bietet mit jeder Tasse ein beruhigendes Gefühl und eine
+                      verlängerte Maschinenlebensdauer.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-au:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimisez les performances de votre machine à café avec ce
+                      filtre à eau premium, spécialement conçu avec de la résine
+                      échangeuse d'ions et du charbon actif granulaire de noix
+                      de coco naturel pour une purification exceptionnelle de
+                      l'eau. Ce système de filtration avancé élimine
+                      efficacement les odeurs désagréables, réduit la rouille,
+                      le chlore et d'autres impuretés, garantissant que votre
+                      café est préparé avec l'eau la plus pure possible. En
+                      prévenant la formation de tartre, ce filtre améliore non
+                      seulement la saveur de votre café mais protège et prolonge
+                      également la durée de vie de votre machine à café, la
+                      maintenant en parfait état pour des infusions de qualité
+                      constante. Idéal pour les amateurs de café recherchant un
+                      goût plus doux et plus propre, ce filtre est un ajout
+                      pratique à tout équipement domestique, offrant
+                      tranquillité d'esprit et longévité accrue de la machine à
+                      chaque tasse.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimisez la performance de votre machine à café avec ce
+                      filtre à eau de qualité supérieure, spécialement conçu
+                      avec de la résine échangeuse d'ions et du charbon actif
+                      granulaire de noix de coco naturel pour une purification
+                      de l'eau exceptionnelle. Ce système de filtration avancé
+                      élimine efficacement les odeurs désagréables, réduit la
+                      rouille, le chlore et d'autres impuretés, garantissant que
+                      votre café est infusé avec l'eau la plus pure possible. En
+                      prévenant la formation de tartre, ce filtre améliore non
+                      seulement la saveur de votre café mais protège et prolonge
+                      également la durée de vie de votre machine à café, la
+                      maintenant en condition optimale pour des infusions de
+                      qualité constante. Idéal pour les amateurs de café à la
+                      recherche d'un goût plus doux et plus propre, ce filtre
+                      est un ajout pratique à tout ensemble domestique, offrant
+                      tranquillité d'esprit et longévité accrue de la machine à
+                      chaque tasse.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-gb:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimise your coffee machine's performance with this
+                      premium water filter, specially crafted with ion-exchange
+                      resin and natural coconut granular activated carbon for
+                      exceptional water purification. This advanced filtration
+                      system effectively removes unpleasant odours, reduces
+                      rust, chlorine, and other impurities, ensuring your coffee
+                      is brewed with the purest water possible. By preventing
+                      scale formation, this filter not only enhances the flavour
+                      of your coffee but also protects and prolongs the life of
+                      your coffee machine, keeping it in peak condition for
+                      consistent, quality brews. Ideal for coffee enthusiasts
+                      seeking a smoother, cleaner taste, this filter is a
+                      practical addition to any home setup, providing peace of
+                      mind and enhanced machine longevity with every cup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimaliseer de prestaties van uw koffiemachine met dit
+                      premium waterfilter, speciaal vervaardigd met
+                      ionenwisselhars en natuurlijke kokosnootkorrel
+                      geactiveerde koolstof voor uitzonderlijke waterzuivering.
+                      Dit geavanceerde filtratiesysteem verwijdert effectief
+                      onaangename geuren, vermindert roest, chloor en andere
+                      onzuiverheden, waardoor uw koffie wordt gezet met het
+                      zuiverste water mogelijk. Door kalkaanslag te voorkomen,
+                      verbetert dit filter niet alleen de smaak van uw koffie,
+                      maar beschermt het ook de levensduur van uw koffiemachine
+                      en verlengt het deze, zodat deze in topconditie blijft
+                      voor consistente, kwaliteitsvolle brouwsels. Ideaal voor
+                      koffieliefhebbers die op zoek zijn naar een zachtere,
+                      schonere smaak, is dit filter een praktische aanvulling op
+                      elke thuisopstelling, die gemoedsrust en verbeterde
+                      machinelevensduur biedt bij elke kop.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-nz:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimieren Sie die Leistung Ihrer Kaffeemaschine mit
+                      diesem Premium-Wasserfilter, der speziell mit
+                      Ionenaustauscherharz und natürlicher
+                      Kokosnuss-Granulat-Aktivkohle für außergewöhnliche
+                      Wasserreinigung entwickelt wurde. Dieses fortschrittliche
+                      Filtersystem entfernt effektiv unangenehme Gerüche,
+                      reduziert Rost, Chlor und andere Verunreinigungen und
+                      sorgt dafür, dass Ihr Kaffee mit dem reinsten Wasser
+                      gebrüht wird. Durch die Verhinderung von Kalkbildung
+                      verbessert dieser Filter nicht nur den Geschmack Ihres
+                      Kaffees, sondern schützt und verlängert auch die
+                      Lebensdauer Ihrer Kaffeemaschine, sodass sie in
+                      einwandfreiem Zustand für gleichbleibend hochwertige
+                      Brühvorgänge bleibt. Ideal für Kaffeeliebhaber, die einen
+                      weicheren, saubereren Geschmack suchen, ist dieser Filter
+                      eine praktische Ergänzung für jedes Heimsetup und bietet
+                      mit jeder Tasse ein beruhigendes Gefühl und eine
+                      verlängerte Maschinenlebensdauer.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        en-us:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimize your coffee machine's performance with this
+                      premium water filter, specially crafted with ion-exchange
+                      resin and natural coconut granular activated carbon for
+                      exceptional water purification. This advanced filtration
+                      system effectively removes unpleasant odors, reduces rust,
+                      chlorine, and other impurities, ensuring your coffee is
+                      brewed with the purest water possible. By preventing scale
+                      formation, this filter not only enhances the flavor of
+                      your coffee but also protects and prolongs the life of
+                      your coffee machine, keeping it in peak condition for
+                      consistent, quality brews. Ideal for coffee enthusiasts
+                      seeking a smoother, cleaner taste, this filter is a
+                      practical addition to any home setup, providing peace of
+                      mind and enhanced machine longevity with every cup.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ca:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimisez la performance de votre machine à café avec ce
+                      filtre à eau premium, spécialement conçu avec de la résine
+                      échangeuse d'ions et du charbon actif granulaire de noix
+                      de coco naturelle pour une purification de l'eau
+                      exceptionnelle. Ce système de filtration avancé élimine
+                      efficacement les odeurs désagréables, réduit la rouille,
+                      le chlore et d'autres impuretés, garantissant que votre
+                      café est infusé avec l'eau la plus pure possible. En
+                      prévenant la formation de tartre, ce filtre améliore non
+                      seulement la saveur de votre café mais protège et prolonge
+                      également la durée de vie de votre machine à café, la
+                      maintenant en condition optimale pour des infusions de
+                      qualité constantes. Idéal pour les amateurs de café à la
+                      recherche d'un goût plus doux et plus propre, ce filtre
+                      est un ajout pratique à toute installation domestique,
+                      offrant tranquillité d'esprit et longévité accrue de la
+                      machine à chaque tasse.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-ch:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimisez les performances de votre machine à café avec ce
+                      filtre à eau premium, spécialement conçu avec de la résine
+                      échangeuse d'ions et du charbon actif granulé de noix de
+                      coco naturel pour une purification exceptionnelle de
+                      l'eau. Ce système de filtration avancé élimine
+                      efficacement les odeurs désagréables, réduit la rouille,
+                      le chlore et d'autres impuretés, garantissant que votre
+                      café est préparé avec l'eau la plus pure possible. En
+                      prévenant la formation de tartre, ce filtre améliore non
+                      seulement la saveur de votre café, mais protège également
+                      et prolonge la durée de vie de votre machine à café, la
+                      maintenant en parfait état pour des infusions de qualité
+                      constante. Idéal pour les amateurs de café à la recherche
+                      d'un goût plus doux et plus propre, ce filtre est un ajout
+                      pratique à tout équipement domestique, offrant
+                      tranquillité d'esprit et longévité accrue de la machine à
+                      chaque tasse.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        fr-fr:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimisez les performances de votre machine à café avec ce
+                      filtre à eau premium, spécialement conçu avec de la résine
+                      échangeuse d'ions et du charbon actif granulé de noix de
+                      coco naturel pour une purification exceptionnelle de
+                      l'eau. Ce système de filtration avancé élimine
+                      efficacement les odeurs désagréables, réduit la rouille,
+                      le chlore et d'autres impuretés, garantissant que votre
+                      café est préparé avec l'eau la plus pure possible. En
+                      prévenant la formation de tartre, ce filtre améliore non
+                      seulement la saveur de votre café, mais protège également
+                      et prolonge la durée de vie de votre machine à café, la
+                      maintenant en parfait état pour des infusions de qualité
+                      constante. Idéal pour les amateurs de café à la recherche
+                      d'un goût plus doux et plus propre, ce filtre est un ajout
+                      pratique à tout équipement domestique, offrant
+                      tranquillité d'esprit et longévité accrue de la machine à
+                      chaque tasse.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ja-jp:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      このプレミアムウォーターフィルターでコーヒーマシンの性能を最適化しましょう。イオン交換樹脂と天然ココナッツ粒状活性炭で特別に作られたこのフィルターは、優れた水の浄化を実現します。この高度なろ過システムは、不快な臭いを効果的に除去し、錆、塩素、その他の不純物を減少させ、可能な限り純粋な水でコーヒーを抽出します。スケールの形成を防ぐことで、このフィルターはコーヒーの風味を向上させるだけでなく、コーヒーマシンを保護し、その寿命を延ばし、常に最高の状態を保ち、一貫した高品質の抽出を可能にします。より滑らかでクリーンな味を求めるコーヒー愛好家に最適で、このフィルターはどの家庭にも実用的な追加であり、毎杯のコーヒーに安心感とマシンの寿命の延長を提供します。
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        nl-nl:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimaliseer de prestaties van uw koffiemachine met dit
+                      premium waterfilter, speciaal vervaardigd met
+                      ionenwisselaarhars en natuurlijke kokosnootkorrelige
+                      actieve kool voor uitzonderlijke waterzuivering. Dit
+                      geavanceerde filtratiesysteem verwijdert effectief
+                      onaangename geuren, vermindert roest, chloor en andere
+                      onzuiverheden, waardoor uw koffie wordt gezet met het
+                      zuiverst mogelijke water. Door kalkaanslag te voorkomen,
+                      verbetert dit filter niet alleen de smaak van uw koffie,
+                      maar beschermt en verlengt het ook de levensduur van uw
+                      koffiemachine, waardoor deze in topconditie blijft voor
+                      consistente, kwaliteitsvolle brouwsels. Ideaal voor
+                      koffieliefhebbers die op zoek zijn naar een zachtere,
+                      schonere smaak, is dit filter een praktische aanvulling op
+                      elke thuisopstelling, die gemoedsrust en een langere
+                      levensduur van de machine biedt bij elke kop.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        sv-se:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      Optimera din kaffemaskins prestanda med detta premium
+                      vattenfilter, speciellt utformat med jonbytesharts och
+                      naturligt kokosnötgranulerat aktivt kol för exceptionell
+                      vattenrening. Detta avancerade filtreringssystem tar
+                      effektivt bort obehagliga lukter, minskar rost, klor och
+                      andra föroreningar, vilket säkerställer att ditt kaffe
+                      bryggs med det renaste vattnet möjligt. Genom att
+                      förhindra kalkbildning förbättrar detta filter inte bara
+                      smaken på ditt kaffe utan skyddar och förlänger även
+                      livslängden på din kaffemaskin, vilket håller den i
+                      toppskick för konsekventa, kvalitetsbryggningar. Perfekt
+                      för kaffeentusiaster som söker en mjukare, renare smak, är
+                      detta filter ett praktiskt tillskott till varje
+                      hemmauppsättning, som ger sinnesro och förbättrad
+                      maskinlivslängd med varje kopp.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+        ar-uae:
+          root:
+            type: root
+            format: ''
+            indent: 0
+            version: 1
+            children:
+              - type: paragraph
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - mode: normal
+                    text: >-
+                      قم بتحسين أداء ماكينة القهوة الخاصة بك مع فلتر المياه
+                      الفاخر هذا، المصمم خصيصًا براتنج تبادل الأيونات وفحم جوز
+                      الهند الحبيبي المنشط الطبيعي لتنقية المياه بشكل استثنائي.
+                      يقوم نظام الترشيح المتقدم هذا بإزالة الروائح الكريهة
+                      بفعالية، ويقلل من الصدأ والكلور والشوائب الأخرى، مما يضمن
+                      تحضير قهوتك بأصفى مياه ممكنة. من خلال منع تكوين الرواسب،
+                      لا يعزز هذا الفلتر نكهة قهوتك فحسب، بل يحمي أيضًا ويطيل
+                      عمر ماكينة القهوة الخاصة بك، مما يبقيها في حالة ممتازة
+                      لتحضير قهوة ذات جودة متسقة. مثالي لعشاق القهوة الذين
+                      يبحثون عن طعم أنعم وأنظف، هذا الفلتر هو إضافة عملية لأي
+                      إعداد منزلي، مما يوفر راحة البال وطول عمر الماكينة مع كل
+                      فنجان.
+                    type: text
+                    style: ''
+                    detail: 0
+                    format: 0
+                    version: 1
+                direction: ltr
+                textStyle: ''
+                textFormat: 0
+            direction: ltr
+    name:
+      type: text
+      locales:
+        da-dk: Vandfilter
+        de-at: Wasserfilter
+        de-ch: Wasserfilter
+        de-de: Wasserfilter
+        en-au: Filtre à eau
+        en-ca: Water filter
+        en-gb: Water filter
+        en-nl: Waterfilter
+        en-nz: Wasserfilter
+        en-us: Water filter
+        fr-ca: Filtre à eau
+        fr-ch: Filtre à eau
+        fr-fr: Filtre à eau
+        ja-jp: 浄水器
+        nl-nl: Waterfilter
+        sv-se: Vattenfilter
+        ar-uae: فلتر ماء
+    brand:
+      type: contentReference
+      value: ${#jptr:/ref-3fc0b630-00a8-48e3-b66e-a9e87540c9aa-brand/entries/0}
+    title:
+      type: text
+      locales:
+        da-dk: Vandfilter
+        de-at: Wasserfilter
+        de-ch: Wasserfilter
+        de-de: Wasserfilter
+        en-au: Filtre à eau
+        en-ca: Water filter
+        en-gb: Water filter
+        en-nl: Waterfilter
+        en-nz: Wasserfilter
+        en-us: Water filter
+        fr-ca: Filtre à eau
+        fr-ch: Filtre à eau
+        fr-fr: Filtre à eau
+        ja-jp: 浄水器
+        nl-nl: Waterfilter
+        sv-se: Vattenfilter
+        ar-uae: فلتر ماء
+    rating:
+      type: number
+      value: '4.2'
+    ogImage:
+      type: asset
+      value:
+        - _id: 77353f1e-01bf-4099-841f-8c32ecd4426b
+          type: image
+          fields:
+            id:
+              type: text
+              value: 9e908952-8fda-4d10-959a-3af9d558ebe0
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/zbU2IW9sQC6PX-WSp6HESg-water-filter-1.png
+              type: text
+            file:
+              type: file
+              value: 5950f866-842e-4794-b2bd-b1ec922664f8
+            size:
+              value: 15603
+              type: number
+            title:
+              type: text
+              value: water-filter-1.png
+            width:
+              value: 386
+              type: number
+            height:
+              value: 386
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    category:
+      type: contentReference
+      value: ${#jptr:/ref-3fc0b630-00a8-48e3-b66e-a9e87540c9aa-category/entries/0}
+    variants:
+      type: $block
+      value:
+        - _id: 5f0d39f0-f548-4ec5-9f53-693b49fc10a7
+          type: variant
+          fields:
+            code:
+              type: text
+              value: '143'
+            price:
+              type: number
+              locales:
+                da-dk: '65.00'
+                de-at: '65.00'
+                de-ch: '65.00'
+                de-de: '65.00'
+                en-au: '65.00'
+                en-ca: '65.00'
+                en-gb: '65.00'
+                en-nl: '65.00'
+                en-nz: '65.00'
+                en-us: '65.00'
+                fr-ca: '65.00'
+                fr-ch: '65.00'
+                fr-fr: '65.00'
+                ja-jp: '65.00'
+                nl-nl: '65.00'
+                sv-se: '65.00'
+                ar-uae: '65.00'
+            title:
+              type: text
+              locales:
+                da-dk: Vandfilter
+                de-at: Wasserfilter
+                de-ch: Wasserfilter
+                de-de: Wasserfilter
+                en-au: Filtre à eau
+                en-ca: Water filter
+                en-gb: Water filter
+                en-nl: Waterfilter
+                en-nz: Wasserfilter
+                en-us: Water filter
+                fr-ca: Filtre à eau
+                fr-ch: Filtre à eau
+                fr-fr: Filtre à eau
+                ja-jp: 浄水器
+                nl-nl: Waterfilter
+                sv-se: Vattenfilter
+                ar-uae: فلتر ماء
+            currency:
+              type: text
+              locales:
+                da-dk: DKK
+                de-at: EUR
+                de-ch: EUR
+                de-de: EUR
+                en-au: EUR
+                en-ca: CAD
+                en-gb: GBP
+                en-nl: EUR
+                en-nz: EUR
+                en-us: USD
+                fr-ca: CAD
+                fr-ch: EUR
+                fr-fr: EUR
+                ja-jp: JPY
+                nl-nl: EUR
+                sv-se: SEK
+                ar-uae: AED
+            imageGallery:
+              type: asset
+              value:
+                - _id: f8c73ffe-bc32-40a8-8938-33f60dea468b
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 9e908952-8fda-4d10-959a-3af9d558ebe0
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/zbU2IW9sQC6PX-WSp6HESg-water-filter-1.png
+                      type: text
+                    file:
+                      type: file
+                      value: 5950f866-842e-4794-b2bd-b1ec922664f8
+                    size:
+                      value: 15603
+                      type: number
+                    title:
+                      type: text
+                      value: water-filter-1.png
+                    width:
+                      value: 386
+                      type: number
+                    height:
+                      value: 386
+                      type: number
+                    mediaType:
+                      value: image/png
+                      type: text
+                  _source: uniform-assets
+    metaTitle:
+      type: text
+      locales:
+        da-dk: Vandfilter
+        de-at: Wasserfilter
+        de-ch: Wasserfilter
+        de-de: Wasserfilter
+        en-au: Filtre à eau
+        en-ca: Water filter
+        en-gb: Water filter
+        en-nl: Waterfilter
+        en-nz: Wasserfilter
+        en-us: Water filter
+        fr-ca: Filtre à eau
+        fr-ch: Filtre à eau
+        fr-fr: Filtre à eau
+        ja-jp: 浄水器
+        nl-nl: Waterfilter
+        sv-se: Vattenfilter
+        ar-uae: فلتر ماء
+    enrichments:
+      type: $enr
+      value:
+        - cat: brand
+          key: javadrip
+          str: 5
+    primaryImage:
+      type: asset
+      value:
+        - _id: 77353f1e-01bf-4099-841f-8c32ecd4426b
+          type: image
+          fields:
+            id:
+              type: text
+              value: 9e908952-8fda-4d10-959a-3af9d558ebe0
+            url:
+              value: >-
+                https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/zbU2IW9sQC6PX-WSp6HESg-water-filter-1.png
+              type: text
+            file:
+              type: file
+              value: 5950f866-842e-4794-b2bd-b1ec922664f8
+            size:
+              value: 15603
+              type: number
+            title:
+              type: text
+              value: water-filter-1.png
+            width:
+              value: 386
+              type: number
+            height:
+              value: 386
+              type: number
+            mediaType:
+              value: image/png
+              type: text
+          _source: uniform-assets
+    metaDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Forbedr kaffens smag ved at reducere forurenende stoffer og kalk med
+          dette ionbytnings- og kokoskulfilter. Forlænger maskinens levetid.
+        de-at: >-
+          Verbessern Sie den Kaffeegeschmack, indem Sie Schadstoffe und Kalk mit
+          diesem Ionenaustausch- und Kokoskohlefilter reduzieren. Verlängert die
+          Lebensdauer der Maschine.
+        de-ch: >-
+          Verbessern Sie den Kaffeegeschmack, indem Sie Schadstoffe und Kalk mit
+          diesem Ionenaustausch- und Kokoskohlefilter reduzieren. Verlängert die
+          Lebensdauer der Maschine.
+        de-de: >-
+          Verbessern Sie den Kaffeegeschmack, indem Sie Schadstoffe und Kalk mit
+          diesem Ionenaustausch- und Kokoskohlefilter reduzieren. Verlängert die
+          Lebensdauer der Maschine.
+        en-au: >-
+          Améliorez la saveur du café en réduisant les polluants et le tartre
+          grâce à ce filtre à échange d'ions et charbon de coco. Prolonge la
+          durée de vie de la machine.
+        en-ca: >-
+          Enhancez la saveur du café en réduisant les polluants et le tartre
+          avec ce filtre à échange d'ions et de carbone de noix de coco.
+          Prolonge la durée de vie de la machine.
+        en-gb: >-
+          Enhance coffee flavour by reducing pollutants and scale with this
+          ion-exchange and coconut carbon filter. Prolongs machine life.
+        en-nl: >-
+          Verbeter de koffiesmaak door verontreinigingen en kalkaanslag te
+          verminderen met dit ionenwissel- en kokosnootkoolstoffilter. Verlengt
+          de levensduur van de machine.
+        en-nz: >-
+          Verbessern Sie den Kaffeegeschmack, indem Sie Schadstoffe und Kalk mit
+          diesem Ionenaustausch- und Kokoskohlefilter reduzieren. Verlängert die
+          Lebensdauer der Maschine.
+        en-us: >-
+          Enhance coffee flavor by reducing pollutants and scale with this
+          ion-exchange and coconut carbon filter. Prolongs machine life.
+        fr-ca: >-
+          Améliorez la saveur du café en réduisant les polluants et le tartre
+          grâce à ce filtre à échange d'ions et charbon de coco. Prolonge la
+          durée de vie de la machine.
+        fr-ch: >-
+          Améliorez la saveur du café en réduisant les polluants et le tartre
+          avec ce filtre à échange d'ions et charbon de coco. Prolonge la durée
+          de vie de la machine.
+        fr-fr: >-
+          Améliorez la saveur du café en réduisant les polluants et le tartre
+          avec ce filtre à échange d'ions et charbon de coco. Prolonge la durée
+          de vie de la machine.
+        ja-jp: イオン交換とココナッツカーボンフィルターで汚染物質とスケールを減らし、コーヒーの風味を向上。機械の寿命を延ばします。
+        nl-nl: >-
+          Verbeter de koffiesmaak door verontreinigingen en kalkaanslag te
+          verminderen met dit ionenwissel- en kokosnootkoolstoffilter. Verlengt
+          de levensduur van de machine.
+        sv-se: >-
+          Förbättra kaffets smak genom att minska föroreningar och kalk med
+          detta jonbytes- och kokosnötkolfilter. Förlänger maskinens livslängd.
+        ar-uae: >-
+          حسّن نكهة القهوة عن طريق تقليل الملوثات والرواسب باستخدام هذا الفلتر
+          الذي يعتمد على تبادل الأيونات وفحم جوز الهند. يطيل من عمر الآلة.
+    shortDescription:
+      type: text
+      locales:
+        da-dk: >-
+          Dette filter bruger ionbytterharpiks og naturlig kokosnød granuleret
+          aktivt kul, fjerner effektivt lugt, reducerer rust, klor og andre
+          forurenende stoffer; Kaffemaskinen kan forhindre dannelse af kalk og
+          forlænge kaffemaskinens levetid.
+        de-at: >-
+          Dieser Filter verwendet Ionenaustauscherharz und natürliche
+          Kokosnuss-Granulat-Aktivkohle, um Gerüche effektiv zu entfernen, Rost,
+          Chlor und andere Schadstoffe zu reduzieren; Die Kaffeemaschine kann
+          die Bildung von Kalk verhindern und die Lebensdauer der Kaffeemaschine
+          verlängern.
+        de-ch: >-
+          Dieser Filter verwendet Ionenaustauscherharz und natürliche
+          Kokosnuss-Granulat-Aktivkohle, um Gerüche effektiv zu entfernen, Rost,
+          Chlor und andere Schadstoffe zu reduzieren; Die Kaffeemaschine kann
+          die Bildung von Kalk verhindern und die Lebensdauer der Kaffeemaschine
+          verlängern.
+        de-de: >-
+          Dieser Filter verwendet Ionenaustauscherharz und natürliche
+          Kokosnuss-Granulat-Aktivkohle, um Gerüche effektiv zu entfernen, Rost,
+          Chlor und andere Schadstoffe zu reduzieren; Die Kaffeemaschine kann
+          die Bildung von Kalk verhindern und die Lebensdauer der Kaffeemaschine
+          verlängern.
+        en-au: >-
+          Ce filtre utilise une résine échangeuse d'ions et du charbon actif
+          granulé de noix de coco naturelle, élimine efficacement les odeurs,
+          réduit la rouille, le chlore et d'autres polluants ; La machine à café
+          peut prévenir la formation de tartre, prolonger la durée de vie de la
+          machine à café.
+        en-ca: >-
+          This filter uses ion-exchange resin and natural coconut granular
+          activated carbon to effectively remove odour, reduce rust, chlorine,
+          and other pollutants. The coffee machine can prevent the formation of
+          scale and prolong the service life of the coffee machine.
+        en-gb: >-
+          This filter uses ion-exchange resin and natural coconut granular
+          activated carbon, effectively removing odour, reducing rust, chlorine
+          and other pollutants; Coffee machine can prevent the formation of
+          scale, prolonging the service life of the coffee machine.
+        en-nl: >-
+          Dit filter maakt gebruik van ionenwisselaarhars en natuurlijke
+          kokosnootkorrelige actieve kool, verwijdert effectief geur, vermindert
+          roest, chloor en andere verontreinigingen; Koffiezetapparaat kan de
+          vorming van kalkaanslag voorkomen en de levensduur van het
+          koffiezetapparaat verlengen.
+        en-nz: >-
+          Dieser Filter verwendet Ionenaustauscherharz und natürliche
+          Kokosnuss-Granulat-Aktivkohle, um Gerüche effektiv zu entfernen, Rost,
+          Chlor und andere Schadstoffe zu reduzieren; Die Kaffeemaschine kann
+          die Bildung von Kalk verhindern und die Lebensdauer der Kaffeemaschine
+          verlängern.
+        en-us: >-
+          This filter is using ion-exchange resin and natural coconut granular
+          activated carbon, effectively remove odor, reduce rust, chlorine and
+          other pollutants; Coffee machine can prevent the formation of scale,
+          prolong the service life of the coffee machine.
+        fr-ca: >-
+          Ce filtre utilise de la résine échangeuse d'ions et du charbon actif
+          granulaire de noix de coco naturelle, élimine efficacement les odeurs,
+          réduit la rouille, le chlore et d'autres polluants; La machine à café
+          peut prévenir la formation de tartre, prolongeant ainsi la durée de
+          vie de la machine à café.
+        fr-ch: >-
+          Ce filtre utilise une résine échangeuse d'ions et du charbon actif
+          granulé de noix de coco naturel, éliminant efficacement les odeurs,
+          réduisant la rouille, le chlore et d'autres polluants ; La machine à
+          café peut prévenir la formation de tartre, prolongeant ainsi la durée
+          de vie de la machine à café.
+        fr-fr: >-
+          Ce filtre utilise une résine échangeuse d'ions et du charbon actif
+          granulé de noix de coco naturel, éliminant efficacement les odeurs,
+          réduisant la rouille, le chlore et d'autres polluants ; La machine à
+          café peut prévenir la formation de tartre, prolongeant ainsi la durée
+          de vie de la machine à café.
+        ja-jp: >-
+          このフィルターはイオン交換樹脂と天然ココナッツ粒状活性炭を使用しており、効果的に臭いを除去し、錆、塩素、その他の汚染物質を減少させます。コーヒーマシンはスケールの形成を防ぎ、コーヒーマシンの寿命を延ばします。
+        nl-nl: >-
+          Dit filter maakt gebruik van ionenwisselaarhars en natuurlijke
+          kokosnootkorrel geactiveerde koolstof, verwijdert effectief geur,
+          vermindert roest, chloor en andere verontreinigingen;
+          Koffiezetapparaat kan de vorming van kalkaanslag voorkomen, de
+          levensduur van het koffiezetapparaat verlengen.
+        sv-se: >-
+          Detta filter använder jonbytesharts och naturligt kokosnötgranulerat
+          aktivt kol, vilket effektivt tar bort lukt, minskar rost, klor och
+          andra föroreningar; Kaffemaskinen kan förhindra bildandet av kalk och
+          förlänga kaffemaskinens livslängd.
+        ar-uae: >-
+          يستخدم هذا الفلتر راتنج التبادل الأيوني وحبيبات الفحم النشط الطبيعي من
+          جوز الهند، ويزيل الروائح بشكل فعال، ويقلل من الصدأ والكلور والملوثات
+          الأخرى؛ يمكن لآلة القهوة أن تمنع تكوين الرواسب الكلسية، مما يطيل من
+          عمر خدمة آلة القهوة.
+  _dataResources:
+    ref-3fc0b630-00a8-48e3-b66e-a9e87540c9aa-brand:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 725d0924-c684-49f1-ba91-b0dfd695823d
+    ref-3fc0b630-00a8-48e3-b66e-a9e87540c9aa-category:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 6b8b91ea-1922-4c2a-8233-4a4a20ab285b
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

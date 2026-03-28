@@ -1,0 +1,24 @@
+asset:
+  type: other
+  _id: 7821d180-088c-480d-bc39-1ff552bb0735
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Royale-iQ-Espresso-Machine.pdf
+    file:
+      type: file
+      value: 60cce91d-12c5-4c74-86ca-3a6c5a604e0f
+    mediaType:
+      value: application/pdf
+      type: text
+    url:
+      value: >-
+        https://files.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/0hMmFqAoTsS_uZf2yMXLLA-Royale-iQ-Espresso-Machine.pdf
+      type: text
+    size:
+      value: 393123
+      type: number
+    custom: {}
+created: '2026-03-10T23:28:39.540647+00:00'
+modified: '2026-03-10T23:28:39.540647+00:00'

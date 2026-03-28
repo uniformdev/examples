@@ -1,0 +1,204 @@
+created: '2026-03-10T23:34:50.225278+00:00'
+modified: '2026-03-10T23:34:50.225278+00:00'
+pattern: false
+entry:
+  _id: 3c1cdfc4-9e1f-40dc-bb27-b3d88492520d
+  _name: Johnathan Meyers
+  _slug: johnathan-meyers
+  _thumbnail: >-
+    https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/ZymZg3FKQzWsArNPvLoV5w-author-logo-placeholder.png
+  type: author
+  fields:
+    name:
+      type: text
+      locales:
+        da-dk: Johnathan Meyers
+        de-at: Johnathan Meyers
+        de-ch: Johnathan Meyers
+        de-de: Johnathan Meyers
+        en-au: Johnathan Meyers
+        en-ca: Johnathan Meyers
+        en-gb: Johnathan Meyers
+        en-nl: Johnathan Meyers
+        en-nz: Johnathan Meyers
+        en-us: Johnathan Meyers
+        fr-ca: Johnathan Meyers
+        fr-ch: Johnathan Meyers
+        fr-fr: Johnathan Meyers
+        ja-jp: ジョナサン・マイヤーズ
+        nl-nl: Johnathan Meyers
+        sv-se: Johnathan Meyers
+        ar-uae: جوناثان مايرز
+    about:
+      type: text
+      locales:
+        da-dk: >-
+          Johnathan Meyers er en passioneret kaffeentusiast og erfaren barista
+          med over et årti i kaffeindustrien. Kendt for sin dybe viden om
+          kaffebønner og bryggeteknikker har Johnathan dedikeret sin karriere
+          til at forstå nuancerne i smag, oprindelse og ristningsniveauer. Fra
+          at udforske kaffefarme i Latinamerika til at mestre kunsten af det
+          perfekte espresso-shot, bringer han en rigdom af erfaring og en ægte
+          kærlighed til kaffe til hver artikel, han skriver.
+        de-at: >-
+          Johnathan Meyers ist ein leidenschaftlicher Kaffee-Enthusiast und
+          erfahrener Barista mit über einem Jahrzehnt Erfahrung in der
+          Kaffeeindustrie. Bekannt für sein tiefes Wissen über Kaffeebohnen und
+          Brühtechniken, hat Johnathan seine Karriere der Erforschung der
+          Feinheiten von Geschmack, Herkunft und Röstgraden gewidmet. Vom
+          Erkunden von Kaffeefarmen in Lateinamerika bis hin zur
+          Perfektionierung der Kunst des perfekten Espresso-Shots bringt er ein
+          reiches Maß an Erfahrung und eine echte Liebe zum Kaffee in jeden
+          Artikel, den er schreibt.
+        de-ch: >-
+          Johnathan Meyers ist ein leidenschaftlicher Kaffee-Enthusiast und
+          erfahrener Barista mit über einem Jahrzehnt Erfahrung in der
+          Kaffeeindustrie. Bekannt für sein tiefes Wissen über Kaffeebohnen und
+          Brühtechniken, hat Johnathan seine Karriere der Erforschung der
+          Feinheiten von Geschmack, Herkunft und Röstgraden gewidmet. Von der
+          Erkundung von Kaffeefarmen in Lateinamerika bis hin zur Meisterschaft
+          in der Kunst des perfekten Espresso-Shots bringt er ein reichhaltiges
+          Erfahrungsspektrum und eine echte Liebe zum Kaffee in jeden Artikel
+          ein, den er schreibt.
+        de-de: >-
+          Johnathan Meyers ist ein leidenschaftlicher Kaffee-Enthusiast und
+          erfahrener Barista mit über einem Jahrzehnt Erfahrung in der
+          Kaffeeindustrie. Bekannt für sein tiefes Wissen über Kaffeebohnen und
+          Brühtechniken, hat Johnathan seine Karriere der Erforschung der
+          Feinheiten von Geschmack, Herkunft und Röstgraden gewidmet. Von der
+          Erkundung von Kaffeefarmen in Lateinamerika bis hin zur Meisterschaft
+          in der Kunst des perfekten Espresso-Shots bringt er ein reichhaltiges
+          Erfahrungsspektrum und eine echte Liebe zum Kaffee in jeden Artikel
+          ein, den er schreibt.
+        en-au: >-
+          Johnathan Meyers est un passionné de café et un barista expérimenté
+          avec plus de dix ans d'expérience dans l'industrie du café. Connu pour
+          sa connaissance approfondie des grains de café et des techniques de
+          préparation, Johnathan a consacré sa carrière à comprendre les
+          subtilités des saveurs, des origines et des niveaux de torréfaction.
+          De l'exploration des plantations de café en Amérique latine à la
+          maîtrise de l'art du parfait espresso, il apporte une richesse
+          d'expérience et un véritable amour du café à chaque article qu'il
+          écrit.
+        en-ca: >-
+          Johnathan Meyers is a passionate coffee enthusiast and experienced
+          barista with over a decade in the coffee industry. Known for his deep
+          knowledge of coffee beans and brewing techniques, Johnathan has
+          dedicated his career to understanding the intricacies of flavour,
+          origin, and roast levels. From exploring coffee farms in Latin America
+          to mastering the art of the perfect espresso shot, he brings a wealth
+          of experience and a genuine love for coffee to every article he
+          writes.
+        en-gb: >-
+          Johnathan Meyers is a passionate coffee enthusiast and experienced
+          barista with over a decade in the coffee industry. Known for his deep
+          knowledge of coffee beans and brewing techniques, Johnathan has
+          dedicated his career to understanding the intricacies of flavour,
+          origin, and roast levels. From exploring coffee farms in Latin America
+          to mastering the art of the perfect espresso shot, he brings a wealth
+          of experience and a genuine love for coffee to every article he
+          writes.
+        en-nl: >-
+          Johnathan Meyers is een gepassioneerde koffieliefhebber en ervaren
+          barista met meer dan tien jaar ervaring in de koffie-industrie. Bekend
+          om zijn diepe kennis van koffiebonen en zetmethoden, heeft Johnathan
+          zijn carrière gewijd aan het begrijpen van de nuances van smaak,
+          herkomst en brandniveaus. Van het verkennen van koffieboerderijen in
+          Latijns-Amerika tot het beheersen van de kunst van het perfecte
+          espresso-shot, hij brengt een schat aan ervaring en een oprechte
+          liefde voor koffie in elk artikel dat hij schrijft.
+        en-nz: >-
+          Johnathan Meyers ist ein leidenschaftlicher Kaffee-Enthusiast und
+          erfahrener Barista mit über einem Jahrzehnt Erfahrung in der
+          Kaffeeindustrie. Bekannt für sein tiefes Wissen über Kaffeebohnen und
+          Brühtechniken, hat Johnathan seine Karriere der Erforschung der
+          Feinheiten von Geschmack, Herkunft und Röstgraden gewidmet. Vom
+          Erkunden von Kaffeefarmen in Lateinamerika bis hin zur
+          Perfektionierung der Kunst des perfekten Espresso-Shots bringt er ein
+          reiches Maß an Erfahrung und eine echte Liebe zum Kaffee in jeden
+          Artikel, den er schreibt.
+        en-us: >-
+          Johnathan Meyers is a passionate coffee enthusiast and experienced
+          barista with over a decade in the coffee industry. Known for his deep
+          knowledge of coffee beans and brewing techniques, Johnathan has
+          dedicated his career to understanding the intricacies of flavor,
+          origin, and roast levels. From exploring coffee farms in Latin America
+          to mastering the art of the perfect espresso shot, he brings a wealth
+          of experience and a genuine love for coffee to every article he
+          writes.
+        fr-ca: >-
+          Johnathan Meyers est un passionné de café et un barista expérimenté
+          avec plus d'une décennie d'expérience dans l'industrie du café. Connu
+          pour sa profonde connaissance des grains de café et des techniques de
+          préparation, Johnathan a consacré sa carrière à comprendre les
+          subtilités des saveurs, des origines et des niveaux de torréfaction.
+          De l'exploration des plantations de café en Amérique latine à la
+          maîtrise de l'art du parfait espresso, il apporte une richesse
+          d'expérience et un véritable amour du café à chaque article qu'il
+          écrit.
+        fr-ch: >-
+          Johnathan Meyers est un passionné de café et un barista expérimenté
+          avec plus de dix ans dans l'industrie du café. Connu pour sa
+          connaissance approfondie des grains de café et des techniques de
+          préparation, Johnathan a consacré sa carrière à comprendre les
+          subtilités des saveurs, des origines et des niveaux de torréfaction.
+          De l'exploration des plantations de café en Amérique latine à la
+          maîtrise de l'art du parfait espresso, il apporte une richesse
+          d'expérience et un véritable amour pour le café à chaque article qu'il
+          écrit.
+        fr-fr: >-
+          Johnathan Meyers est un passionné de café et un barista expérimenté
+          avec plus de dix ans dans l'industrie du café. Connu pour sa
+          connaissance approfondie des grains de café et des techniques de
+          préparation, Johnathan a consacré sa carrière à comprendre les
+          subtilités des saveurs, des origines et des niveaux de torréfaction.
+          De l'exploration des plantations de café en Amérique latine à la
+          maîtrise de l'art du parfait espresso, il apporte une richesse
+          d'expérience et un véritable amour pour le café à chaque article qu'il
+          écrit.
+        ja-jp: >-
+          ジョナサン・マイヤーズは情熱的なコーヒー愛好家であり、コーヒー業界で10年以上の経験を持つ熟練のバリスタです。コーヒー豆や抽出技術に関する深い知識で知られるジョナサンは、風味、産地、焙煎レベルの複雑さを理解することにキャリアを捧げてきました。ラテンアメリカのコーヒー農園を探索することから、完璧なエスプレッソショットの技術を習得することまで、彼は豊富な経験と本物のコーヒーへの愛を、彼が書くすべての記事に注ぎ込んでいます。
+        nl-nl: >-
+          Johnathan Meyers is een gepassioneerde koffieliefhebber en ervaren
+          barista met meer dan tien jaar ervaring in de koffie-industrie. Bekend
+          om zijn diepgaande kennis van koffiebonen en zetmethoden, heeft
+          Johnathan zijn carrière gewijd aan het begrijpen van de complexiteit
+          van smaak, herkomst en brandniveaus. Van het verkennen van
+          koffieboerderijen in Latijns-Amerika tot het beheersen van de kunst
+          van het perfecte espresso shot, hij brengt een schat aan ervaring en
+          een oprechte liefde voor koffie in elk artikel dat hij schrijft.
+        sv-se: >-
+          Johnathan Meyers är en passionerad kaffeentusiast och erfaren barista
+          med över ett decennium inom kaffeindustrin. Känd för sin djupa kunskap
+          om kaffebönor och bryggtekniker har Johnathan ägnat sin karriär åt att
+          förstå smakens, ursprungets och rostningsgradens komplexitet. Från att
+          utforska kaffegårdar i Latinamerika till att bemästra konsten av den
+          perfekta espressoshoten, tar han med sig en stor erfarenhet och en
+          genuin kärlek till kaffe i varje artikel han skriver.
+        ar-uae: >-
+          جوناثان مايرز هو عاشق شغوف للقهوة وبارستا ذو خبرة تزيد عن عقد من الزمن
+          في صناعة القهوة. معروف بمعرفته العميقة بحبوب القهوة وتقنيات التحضير،
+          كرس جوناثان مسيرته لفهم تعقيدات النكهة والأصل ومستويات التحميص. من
+          استكشاف مزارع القهوة في أمريكا اللاتينية إلى إتقان فن إعداد الإسبرسو
+          المثالي، يجلب ثروة من الخبرة وحبًا حقيقيًا للقهوة إلى كل مقال يكتبه.
+    thumbnail:
+      type: asset
+      value: []
+  _locales:
+    - en-us
+    - fr-ca
+    - en-ca
+    - en-gb
+    - de-de
+    - en-nz
+    - de-at
+    - nl-nl
+    - en-nl
+    - da-dk
+    - sv-se
+    - fr-fr
+    - en-au
+    - ja-jp
+    - ar-uae
+    - de-ch
+    - fr-ch

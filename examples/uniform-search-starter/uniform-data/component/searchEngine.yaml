@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchEngine
+name: Search Engine
+icon: search
+parameters:
+  - id: collections
+    name: Collections
+    type: multi-select
+    helpText: searching within selected collections
+    typeConfig:
+      options:
+        - text: Entries
+          value: entries
+        - text: Compositions
+          value: compositions
+        - text: Assets
+          value: assets
+  - id: contentType
+    name: Content Type
+    type: select
+    typeConfig:
+      options:
+        - text: Article
+          value: article
+        - text: Product
+          value: product
+      required: true
+  - id: orderBy
+    name: Order By
+    type: $block
+    helpText: First item in the list is default
+    typeConfig:
+      required: false
+      allowedTypes:
+        - orderBy
+  - id: filterBy
+    name: Filter By
+    type: $block
+    helpText: If Base Filters are defined, values list will be filtered as well
+    typeConfig:
+      required: true
+      allowedTypes:
+        - filterBy
+  - id: baseFilters
+    name: Base Filters
+    type: $block
+    helpText: Filters, that will be applied additionally for each request
+    typeConfig:
+      allowedTypes:
+        - filterBy
+  - id: pageSizes
+    name: Page Sizes
+    type: $block
+    helpText: First is default
+    typeConfig:
+      min: 1
+      required: true
+      allowedTypes:
+        - pageSize
+categoryId: 624b55ca-4671-46e2-8fd5-4a9b34b4c121
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/csk-v-next/coffee-shop-template/preview-images/entries-search-engine.jpg
+useTeamPermissions: true
+slots:
+  - id: search-top
+    name: Search Top
+    allowedComponents:
+      - searchBox
+      - searchSorting
+      - searchTotalAmount
+      - searchPageSize
+      - searchPagination
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: search-main
+    name: Search Main
+    allowedComponents:
+      - searchFilters
+      - searchList
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: search-bottom
+    name: Search Bottom
+    allowedComponents:
+      - searchTotalAmount
+      - searchPageSize
+      - searchPagination
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-03-26T04:22:22.556392+00:00'
+updated: '2026-03-26T04:54:25.499581+00:00'

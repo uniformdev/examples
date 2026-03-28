@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 446ef76a-b4e9-422f-a1da-fceccb8afe60
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: cervello-di-caffe-2.png
+    file:
+      type: file
+      value: b5e57e39-f732-4251-8861-d6d6e382fdc8
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/XsiRdEJVRKG-39gEpj4OFQ/wxDsBx60Rci0wjXyHqmgxA-cervello-di-caffe-2.png
+      type: text
+    size:
+      value: 370612
+      type: number
+    width:
+      value: 980
+      type: number
+    height:
+      value: 1021
+      type: number
+    custom: {}
+created: '2026-03-10T23:26:52.518708+00:00'
+modified: '2026-03-10T23:26:52.518708+00:00'
