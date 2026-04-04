@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@uniformdev/canvas": "^19.24.0",
-    "@uniformdev/canvas-next": "^19.24.0",
+    "@uniformdev/canvas-next": "^19.191.0",
     "@uniformdev/project-map": "^19.24.0",
     "@uniformdev/canvas-algolia": "17.8.0",
     "@uniformdev/canvas-react": "^19.24.0",
