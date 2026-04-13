@@ -1,7 +1,7 @@
 import React from 'react';
 import { Index } from 'react-instantsearch-hooks-web';
 import componentResolver from '@/components/componentResolver';
-import { ComponentProps, Slot } from '@uniformdev/canvas-react';
+import { ComponentProps, UniformSlot } from '@uniformdev/canvas-react';
 import { getDefaultIndexName } from '../context/CanvasAlgoliaProvider';
 import ErrorPropertyCallout from '@/components/ErrorPropertyCallout';
 
@@ -25,7 +25,7 @@ const CanvasIndex = (componentProps: ComponentProps<CanvasIndexProps>) => {
   return (
     <div className="index">
       <Index {...indexProps} indexName={indexName}>
-        <Slot name="widgets" resolveRenderer={componentResolver} />
+        <UniformSlot name="widgets" resolveRenderer={componentResolver} />
       </Index>
     </div>
   );
