@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: algolia-pagination
 name: Pagination
 icon: browser
@@ -5,7 +7,6 @@ parameters:
   - id: paginationParams
     name: Pagination Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Pagination
   - id: pageSize
@@ -19,5 +20,5 @@ parameters:
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-02-02T08:20:26.092299+00:00'
-updated: '2023-02-02T08:20:26.092299+00:00'
+created: '2026-04-13T23:39:03.268543+00:00'
+updated: '2026-04-13T23:40:14.569371+00:00'

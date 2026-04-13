@@ -32,9 +32,9 @@ composition:
                       limit: 10
                       operator: and
                       showMore: false
-                      attribute: brand
+                      attribute: properties.Country
                       searchable: false
-                      allowedIndex: Products
+                      allowedIndex: olympic_cities
                       escapeFacetValues: true
             - _id: 634756e8-64ae-40b7-811e-9f8c18fd6de6
               type: algolia-hits
@@ -62,8 +62,10 @@ composition:
             type: algolia-components
             value:
               instantSearchProps:
-                indexName: Products
+                indexName: olympic_cities
                 stalledSearchDelay: 200
-created: '2023-06-14T00:48:54.017582+00:00'
-modified: '2023-06-14T01:10:55.302981+00:00'
+  _locales:
+    - en
+created: '2026-04-13T23:39:04.692806+00:00'
+modified: '2026-04-13T23:41:16.173394+00:00'
 pattern: false

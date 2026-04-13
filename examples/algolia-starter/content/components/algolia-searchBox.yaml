@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: algolia-searchBox
 name: Search Box
 icon: search
@@ -5,11 +7,10 @@ parameters:
   - id: searchBoxParams
     name: Search Box Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Search Box
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-02-02T08:20:25.513316+00:00'
-updated: '2023-02-02T08:20:25.513316+00:00'
+created: '2026-04-13T23:39:03.421789+00:00'
+updated: '2026-04-13T23:40:14.677319+00:00'

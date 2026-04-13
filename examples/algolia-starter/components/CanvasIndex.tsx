@@ -1,5 +1,5 @@
 import React from 'react';
-import { Index } from 'react-instantsearch-hooks-web';
+import { Index } from 'react-instantsearch';
 import componentResolver from '@/components/componentResolver';
 import { ComponentProps, UniformSlot } from '@uniformdev/canvas-react';
 import { getDefaultIndexName } from '../context/CanvasAlgoliaProvider';

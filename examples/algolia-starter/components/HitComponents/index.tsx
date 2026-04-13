@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hits } from 'react-instantsearch-hooks-web';
+import { Hits } from 'react-instantsearch';
 import { ComponentInstance } from '@uniformdev/canvas';
 import Hit from "@/components/HitComponents/Hit";
 

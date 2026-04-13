@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: algolia-refinementList
 name: Refinement List
 icon: image-text
@@ -5,11 +7,10 @@ parameters:
   - id: refinementListParams
     name: Refinement List Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Refinement List
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2023-02-02T08:20:26.144578+00:00'
-updated: '2023-02-02T08:20:26.144578+00:00'
+created: '2026-04-13T23:39:03.304277+00:00'
+updated: '2026-04-13T23:40:14.73108+00:00'

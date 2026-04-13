@@ -1,12 +1,12 @@
 import React from "react";
 import { ComponentProps, UniformSlot } from "@uniformdev/canvas-react";
 import componentResolver from "./componentResolver";
-import algoliasearch from "algoliasearch/lite";
-import { InstantSearch } from "react-instantsearch-hooks-web";
+import { liteClient as algoliasearch } from "algoliasearch/lite";
+import { InstantSearch } from "react-instantsearch";
 import CanvasAlgoliaProvider from "../context/CanvasAlgoliaProvider";
 import ErrorPropertyCallout from "@/components/ErrorPropertyCallout";
 
-const searchClient = algoliasearch(process.env.ALGOLIA_APPLICATION_ID!, process.env.ALGOLIA_API_KEY!);
+const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APPLICATION_ID!, process.env.NEXT_PUBLIC_ALGOLIA_API_KEY!);
 
 type CanvasInstantSearchProps = {
   title?: string;
@@ -37,6 +37,7 @@ const CanvasInstantSearch = ({
         {...instantSearchProps}
         indexName={instantSearchProps.indexName}
         searchClient={searchClient}
+        future={{ preserveSharedStateOnUnmount: true }}
       >
         <UniformSlot name="widgets" resolveRenderer={componentResolver} />
       </InstantSearch>

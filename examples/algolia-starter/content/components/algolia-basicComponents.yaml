@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: algolia-basicComponents
 name: Basic Components
 icon: template
@@ -5,25 +7,21 @@ parameters:
   - id: searchBoxParams
     name: Search Box Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Search Box
   - id: refinementListParams
     name: Refinement List Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Refinement List
   - id: hitsParams
     name: Hits Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Hits
   - id: paginationParams
     name: Pagination Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Pagination
   - id: pageSize
@@ -43,5 +41,5 @@ slots:
       - algolia-hit
     inheritAllowedComponents: false
 canBeComposition: false
-created: '2023-02-02T08:20:24.916884+00:00'
-updated: '2023-02-02T08:20:24.916884+00:00'
+created: '2026-04-13T23:39:01.279425+00:00'
+updated: '2026-04-13T23:40:14.500433+00:00'

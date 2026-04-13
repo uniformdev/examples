@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: algolia-index
 name: Index
 icon: database
@@ -5,7 +7,6 @@ parameters:
   - id: indexParams
     name: Index Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Index
       indexConfiguration:
@@ -22,5 +23,5 @@ slots:
       - algolia-basicComponents
     inheritAllowedComponents: false
 canBeComposition: false
-created: '2023-02-02T08:20:25.029524+00:00'
-updated: '2023-02-02T08:20:25.029524+00:00'
+created: '2026-04-13T23:39:01.723632+00:00'
+updated: '2026-04-13T23:40:14.560674+00:00'

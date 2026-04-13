@@ -1,5 +1,5 @@
 import React from 'react';
-import { SearchBox } from 'react-instantsearch-hooks-web';
+import { SearchBox } from 'react-instantsearch';
 import { ComponentProps } from '@uniformdev/canvas-react';
 
 type CanvasSearchBoxProps = {
