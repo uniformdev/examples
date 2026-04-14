@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: algolia-hits
 name: Hits
 icon: play-list-search
@@ -5,7 +7,6 @@ parameters:
   - id: hitsParams
     name: Hits Parameters
     type: algolia-components
-    helpText: ''
     typeConfig:
       selectedComponent: Hits
 useTeamPermissions: true
@@ -17,5 +18,5 @@ slots:
       - algolia-hit
     inheritAllowedComponents: false
 canBeComposition: false
-created: '2023-02-02T08:20:25.118977+00:00'
-updated: '2023-02-02T08:20:25.118977+00:00'
+created: '2026-04-13T23:39:01.399713+00:00'
+updated: '2026-04-13T23:40:14.653687+00:00'

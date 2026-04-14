@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: algolia-page
 name: Algolia Demo Page
 icon: file-document
@@ -5,7 +7,6 @@ parameters:
   - id: metaTitle
     name: Meta Title
     type: text
-    helpText: ''
     typeConfig:
       required: true
 useTeamPermissions: true
@@ -16,5 +17,5 @@ slots:
       - algolia-instantSearch
     inheritAllowedComponents: false
 canBeComposition: true
-created: '2023-02-02T08:20:26.115707+00:00'
-updated: '2023-02-02T08:20:26.115707+00:00'
+created: '2026-04-13T23:39:03.424104+00:00'
+updated: '2026-04-13T23:40:14.543386+00:00'
