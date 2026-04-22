@@ -1,0 +1,19 @@
+{
+  "type": "bulk-publish-experiment",
+  "displayName": "Bulk Publish Experiment",
+  "baseLocationUrl": "https://localhost:9002",
+  "identityDelegation": true,
+  "locations": {
+    "projectTools": [
+      {
+        "id": "bulk-publish-tool",
+        "name": "Bulk Publish Tool",
+        "url": "/bulk-publish",
+        "iconUrl": "https://uniform.app/uniform.png"
+      }
+    ],
+    "settings": {
+      "url": "/settings"
+    }
+  }
+}
