@@ -1,3 +1,5 @@
+import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from './csrf';
+
 /**
  * Returns whether an httpOnly delegation cookie is already active (GET /api/status).
  */
@@ -12,11 +14,16 @@ export async function checkActive(): Promise<boolean> {
 
 /**
  * POSTs the one-time Mesh session token to /api/session so the server can exchange it and set the sealed cookie.
+ * The custom `X-Mesh-Csrf` header is what our BFF uses to distinguish this call
+ * from a cross-site CSRF attempt — see `lib/csrf.ts`.
  */
 export async function onSessionToken(sessionToken: string): Promise<void> {
   const res = await fetch('/api/session', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      [CSRF_HEADER_NAME]: CSRF_HEADER_VALUE,
+    },
     body: JSON.stringify({ sessionToken }),
   });
   if (!res.ok) {

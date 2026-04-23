@@ -26,6 +26,8 @@ export function readMeshDelegationCookieFromRequest(req: NextApiRequest): string
 export async function unsealMeshDelegationSession(jwe: string): Promise<DelegationSession | null> {
   const secret = process.env.MESH_SESSION_SECRET;
   if (!secret) {
+    // eslint-disable-next-line no-console
+    console.error('MESH_SESSION_SECRET env variable is not set');
     return null;
   }
   return unsealSession(jwe, secret);
@@ -71,7 +73,7 @@ export async function loadMeshDelegationSession(
       expiresAt: Date.now() + refreshed.expiresIn * 1000,
     };
     const sealed = await sealSession(session, sessionSecret);
-    const cookieOpts = createCookieOptions(apiHost);
+    const cookieOpts = createCookieOptions();
     res.setHeader('Set-Cookie', serializeCookie(cookieOpts.name, sealed, cookieOpts));
   }
 

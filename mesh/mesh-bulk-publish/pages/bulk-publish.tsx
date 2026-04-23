@@ -1,5 +1,4 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { Callout, LoadingOverlay } from '@uniformdev/design-system';
 import {
   DelegationGate,
   DelegationProvider,
@@ -8,6 +7,7 @@ import {
 } from '@uniformdev/mesh-sdk-react';
 import { useEffect, useState } from 'react';
 
+import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from '../lib/csrf';
 import { checkActive, onSessionToken } from '../lib/delegationSessionCallbacks';
 import type { CompositionListItem, CompositionsPageResponse } from './api/compositions';
 
@@ -23,7 +23,10 @@ async function fetchCompositionsPage(projectId: string, offset: number): Promise
 async function publishCompositions(projectId: string, compositionIds: string[]): Promise<void> {
   const res = await fetch('/api/publish', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      [CSRF_HEADER_NAME]: CSRF_HEADER_VALUE,
+    },
     body: JSON.stringify({ projectId, compositionIds }),
   });
   if (!res.ok && res.status !== 207) {
@@ -166,23 +169,7 @@ export default function BulkPublish() {
 
   return (
     <DelegationProvider sdk={sdk} checkActive={checkActive} onSessionToken={onSessionToken}>
-      <DelegationGate
-        loadingComponent={<LoadingOverlay isActive={true} statusMessage="Connecting to Uniform..." />}
-        disabledComponent={
-          <Callout type="caution" title="Feature unavailable">
-            This app requires permissions that are not currently enabled. Please contact your Uniform
-            administrator to enable identity delegation for this integration.
-          </Callout>
-        }
-        errorComponent={({ error }) => (
-          <Callout type="error" title="Connection error">
-            <p>Failed to establish a secure connection with Uniform.</p>
-            <pre style={{ marginTop: 8, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-              {error.message}
-            </pre>
-          </Callout>
-        )}
-      >
+      <DelegationGate>
         <BulkPublishContent />
       </DelegationGate>
     </DelegationProvider>

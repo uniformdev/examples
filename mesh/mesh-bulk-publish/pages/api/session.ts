@@ -45,10 +45,15 @@ import { DelegationTokenClient } from '@uniformdev/mesh-sdk';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 import { createCookieOptions, sealSession, serializeCookie } from '../../lib/cookieUtils';
+import { requireCsrfHeader } from '../../lib/csrf';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method Not Allowed' });
+    return;
+  }
+
+  if (!requireCsrfHeader(req, res)) {
     return;
   }
 
@@ -88,7 +93,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       expiresAt: Date.now() + token.expiresIn * 1000,
     };
     const sealed = await sealSession(session, process.env.MESH_SESSION_SECRET!);
-    const cookieOpts = createCookieOptions(apiHost);
+    const cookieOpts = createCookieOptions();
     res.setHeader('Set-Cookie', serializeCookie(cookieOpts.name, sealed, cookieOpts));
     res.status(200).json({ status: 'ok' });
   } catch (err) {

@@ -15,7 +15,7 @@ import {
 } from '../cookieUtils.js';
 
 /**
- * @typedef {{ accessToken: string; refreshToken: string; expiresAt: number }} DelegationSession
+ * @typedef {{ accessToken: string; refreshToken: string | undefined; expiresAt: number }} DelegationSession
  */
 
 /**
@@ -78,7 +78,7 @@ export async function resolveDelegationSession(cookieHeader) {
       expiresAt: Date.now() + refreshed.expiresIn * 1000,
     };
     const sealed = await sealSession(session, meshSecret);
-    const cookieOpts = createCookieOptions(apiHost);
+    const cookieOpts = createCookieOptions();
     setCookieHeader = serializeCookie(cookieOpts.name, sealed, cookieOpts);
   }
 

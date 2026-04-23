@@ -1,10 +1,23 @@
 /**
- * POST /api/publish — publish selected compositions (same semantics as mesh-bulk-publish).
+ * POST /api/publish
+ *
+ * Accepts a list of composition IDs and publishes each via CanvasClient + delegation Bearer token.
+ *
+ * Body:     { projectId: string; compositionIds: string[] }
+ * Response: { published: number; failed: Array<{ id: string; error: string }> }
+ *           HTTP 200 if all succeeded, HTTP 207 if any failed.
  */
+import { requireCsrfHeader } from '../csrf.js';
 import { createDelegationCanvasClient } from '../services/delegationCanvasClient.js';
 import { resolveDelegationSession } from '../services/delegationSession.js';
 
 export async function postApiPublish(req, res) {
+  if (!requireCsrfHeader(req, res)) {
+    // eslint-disable-next-line no-console
+    console.error('CSRF header required');
+    return;
+  }
+
   const { projectId, compositionIds } = req.body ?? {};
   if (!projectId || typeof projectId !== 'string') {
     res.status(400).json({ error: 'projectId is required' });

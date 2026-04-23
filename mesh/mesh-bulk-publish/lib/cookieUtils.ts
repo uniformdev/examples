@@ -11,9 +11,37 @@
  *      marked HttpOnly, so `document.cookie` cannot read it.
  *   2. The raw tokens never appear in API responses — the browser only
  *      receives an opaque encrypted blob via Set-Cookie.
- *   3. Automatic CSRF protection — SameSite=Lax means the cookie is sent
- *      on same-site navigations and same-site fetch, but NOT on cross-site
- *      requests initiated by third-party pages.
+ *
+ * COOKIE CONTEXT: WE LIVE IN AN IFRAME
+ * ------------------------------------
+ * This app is embedded inside the Uniform dashboard as a Mesh iframe. From
+ * the browser's point of view every request our JS makes to our own backend
+ * is a CROSS-SITE subresource request (top-level site = uniform.app, request
+ * site = our host). That changes what cookie flags make sense:
+ *
+ *   - SameSite=Lax would be stored but NEVER returned on our own fetches
+ *     from inside the iframe (Chrome warns about this explicitly). So we
+ *     must use `SameSite=None` to get the cookie attached at all.
+ *   - `SameSite=None` requires `Secure`, so the cookie only flows over
+ *     HTTPS. Plain-HTTP localhost is no longer supported — run dev on
+ *     https://localhost:<port> (Next.js supports `next dev --experimental-https`).
+ *   - `Partitioned` is ALWAYS emitted — it opts us into CHIPS (Cookies
+ *     Having Independent Partitioned State). The cookie is keyed to BOTH
+ *     our origin AND the embedding top-level site, which (a) survives
+ *     Chrome's third-party cookie phase-out and (b) gives us isolation per
+ *     embedding host even in scenarios where the browser would otherwise
+ *     treat us as first-party (e.g. local dev with dashboard on
+ *     localhost:3000 and this app on localhost:9002 — same site by the
+ *     registrable-domain rules, but we still want per-host sessions).
+ *
+ * CSRF PROTECTION
+ * ---------------
+ * Switching to `SameSite=None` gives up the free CSRF protection that Lax
+ * provides. We compensate with a custom request header check — see
+ * `lib/csrf.ts` and `requireCsrfHeader`. State-changing routes
+ * (POST /api/session, POST /api/publish, …) require that header; a browser
+ * will not attach it on a cross-origin request without a CORS preflight, so
+ * third-party pages cannot forge these calls.
  *
  * COOKIE SEALING: JWE, NOT JWT
  * -----------------------------
@@ -77,8 +105,13 @@ export interface DelegationSession {
 export interface CookieOptions {
   name: string;
   httpOnly: boolean;
-  secure: boolean;
-  sameSite: 'lax';
+  /**
+   * Always `true` — `SameSite=None` is only accepted by browsers when
+   * paired with `Secure`, and our cookie is always `SameSite=None` because
+   * we are embedded in a cross-site iframe.
+   */
+  secure: true;
+  sameSite: 'none';
   path: string;
   maxAge: number;
 }
@@ -122,15 +155,15 @@ export async function unsealSession(cookie: string, secret: string): Promise<Del
     const key = await deriveKey(secret);
     const { payload } = await jwtDecrypt(cookie, key);
     const { accessToken, refreshToken, expiresAt } = payload as unknown as Record<string, unknown>;
-    if (
-      typeof accessToken !== 'string' ||
-      typeof refreshToken !== 'string' ||
-      typeof expiresAt !== 'number'
-    ) {
+    if (typeof accessToken !== 'string' || typeof expiresAt !== 'number') {
+      // eslint-disable-next-line no-console
+      console.error('Invalid cookie payload', { accessToken, refreshToken, expiresAt });
       return null;
     }
-    return { accessToken, refreshToken, expiresAt };
+    return { accessToken, refreshToken: refreshToken as string | undefined, expiresAt };
   } catch {
+    // eslint-disable-next-line no-console
+    console.error('Error decrypting cookie');
     return null;
   }
 }
@@ -154,41 +187,45 @@ export function parseCookies(header: string): Record<string, string> {
  * Security flags applied:
  *   - HttpOnly: JavaScript (including injected scripts or browser extensions)
  *     cannot read this cookie via document.cookie.
- *   - Secure: cookie is only sent over HTTPS. Skipped for plain-HTTP localhost
- *     because browsers refuse Secure cookies on http:// origins during development.
- *   - SameSite=Lax: cookie is sent on top-level same-site navigations and
- *     same-site fetch/XHR, but NOT on cross-site requests. This prevents CSRF
- *     without breaking normal same-origin API calls from the Mesh iframe.
+ *   - Secure: cookie is only sent over HTTPS. Always set. Plain-HTTP localhost
+ *     is intentionally NOT supported — use `next dev --experimental-https` or
+ *     an HTTPS dev proxy.
+ *   - SameSite=None: required so the browser attaches the cookie on requests
+ *     made from inside a cross-site iframe (which is how the Mesh dashboard
+ *     loads us). CSRF is handled separately via the custom-header check in
+ *     `lib/csrf.ts`.
+ *   - Partitioned: ALWAYS emitted. Opts into CHIPS so the cookie is stored
+ *     under a partition keyed by (our origin × top-level site). This both
+ *     survives the third-party cookie phase-out and gives us "free"
+ *     isolation between embedding hosts even in scenarios where the browser
+ *     treats us as first-party (e.g. local dev with dashboard and Mesh app
+ *     both on localhost but on different ports — same site, different
+ *     origins). There is no supported configuration in which we want this
+ *     flag off, so it is not a knob.
  */
 export function serializeCookie(name: string, value: string, opts: CookieOptions): string {
   const parts = [`${name}=${value}`, 'HttpOnly'];
   if (opts.secure) {
     parts.push('Secure');
   }
-  parts.push(`SameSite=${opts.sameSite}`, `Path=${opts.path}`, `Max-Age=${opts.maxAge}`);
+  parts.push(`SameSite=${opts.sameSite}`, `Path=${opts.path}`, `Max-Age=${opts.maxAge}`, 'Partitioned');
   return parts.join('; ');
 }
 
 /**
- * Builds cookie options from the Uniform API host.
- * Secure=false is set only for plain-HTTP localhost to allow local development
- * without HTTPS — all non-localhost environments always use Secure=true.
+ * Builds cookie options for the delegation session cookie.
+ *
+ * `Secure` is always `true` and `SameSite=None; Partitioned` is always emitted
+ * (by `serializeCookie`) because we are loaded as a cross-site iframe by the
+ * Uniform dashboard — there is no configuration in which weaker flags would
+ * be correct.
  */
-export function createCookieOptions(apiHost: string): CookieOptions {
-  let secure = true;
-  try {
-    const url = new URL(apiHost);
-    if (url.protocol === 'http:' && (url.hostname === 'localhost' || url.hostname === '127.0.0.1')) {
-      secure = false;
-    }
-  } catch {
-    /* invalid URL — keep secure */
-  }
+export function createCookieOptions(): CookieOptions {
   return {
     name: COOKIE_NAME,
     httpOnly: true,
-    secure,
-    sameSite: 'lax',
+    secure: true,
+    sameSite: 'none',
     path: COOKIE_PATH,
     maxAge: SESSION_TTL_SECONDS,
   };

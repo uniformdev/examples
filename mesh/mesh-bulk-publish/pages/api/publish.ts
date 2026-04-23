@@ -10,11 +10,18 @@
 import { CanvasClient } from '@uniformdev/canvas';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+import { requireCsrfHeader } from '../../lib/csrf';
 import { loadMeshDelegationSession } from '../../lib/util/delegationSession';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method Not Allowed' });
+    return;
+  }
+
+  if (!requireCsrfHeader(req, res)) {
+    // eslint-disable-next-line no-console
+    console.error('CSRF header required');
     return;
   }
 

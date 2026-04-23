@@ -4,6 +4,13 @@
  */
 import { initializeUniformMeshSDK } from '@uniformdev/mesh-sdk';
 
+/**
+ * Request header the Mesh iframe must attach to every state-changing call.
+ * Must match the constants in src/csrf.js on the server side.
+ */
+const CSRF_HEADER_NAME = 'x-mesh-csrf';
+const CSRF_HEADER_VALUE = '1';
+
 function showEl(id, visible) {
   const el = document.getElementById(id);
   if (el) {
@@ -20,10 +27,18 @@ async function checkActive() {
   return body.status === 'active';
 }
 
+/**
+ * POSTs the one-time Mesh session token to /api/session so the server can exchange it and set the sealed cookie.
+ * The custom `X-Mesh-Csrf` header is what our BFF uses to distinguish this call
+ * from a cross-site CSRF attempt — see `src/csrf.js`.
+ */
 async function onSessionToken(sessionToken) {
   const res = await fetch('/api/session', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      [CSRF_HEADER_NAME]: CSRF_HEADER_VALUE,
+    },
     body: JSON.stringify({ sessionToken }),
   });
   if (!res.ok) {
@@ -175,7 +190,10 @@ document.body.addEventListener('click', async (e) => {
     try {
       const res = await fetch('/api/publish', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          [CSRF_HEADER_NAME]: CSRF_HEADER_VALUE,
+        },
         body: JSON.stringify({ projectId, compositionIds: ids }),
       });
       const body = await res.json().catch(() => ({}));
