@@ -5,6 +5,7 @@ import {
   useMeshLocation,
   useUniformMeshSdk,
 } from '@uniformdev/mesh-sdk-react';
+import { CANVAS_PUBLISHED_STATE } from '@uniformdev/canvas';
 import { useEffect, useState } from 'react';
 
 import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from '../lib/csrf';
@@ -15,7 +16,7 @@ async function fetchCompositionsPage(projectId: string, offset: number): Promise
   const params = new URLSearchParams({ projectId, offset: String(offset) });
   const res = await fetch(`/api/compositions?${params.toString()}`);
   if (!res.ok) {
-    throw new Error(`Failed to fetch compositions (${res.status})`);
+    throw new Error(`Failed to fetch compositions (${res.status}): ${await res.text()}`);
   }
   return res.json() as Promise<CompositionsPageResponse>;
 }
@@ -29,8 +30,8 @@ async function publishCompositions(projectId: string, compositionIds: string[]):
     },
     body: JSON.stringify({ projectId, compositionIds }),
   });
-  if (!res.ok && res.status !== 207) {
-    throw new Error(`Publish failed (${res.status})`);
+  if (!res.ok) {
+    throw new Error(`Publish failed (${res.status}): ${await res.text()}`);
   }
 }
 
@@ -72,6 +73,7 @@ function BulkPublishContent() {
   const hasMore = page?.hasMore ?? false;
   const rangeStart = compositions.length === 0 ? 0 : (page?.offset ?? 0) + 1;
   const rangeEnd = (page?.offset ?? 0) + compositions.length;
+  const publishable = compositions.filter((c) => c.state !== CANVAS_PUBLISHED_STATE);
 
   const toggleSelect = (id: string) => {
     setSelected((prev) => {
@@ -86,7 +88,9 @@ function BulkPublishContent() {
   };
 
   const toggleAll = () => {
-    setSelected(selected.size === compositions.length ? new Set() : new Set(compositions.map((c) => c.id)));
+    setSelected(
+      selected.size === publishable.length ? new Set() : new Set(publishable.map((c) => c.id))
+    );
   };
 
   return (
@@ -118,8 +122,8 @@ function BulkPublishContent() {
         <button type="button" onClick={() => setPageOffset((o) => o + pageSize)} disabled={!hasMore}>
           Next page
         </button>
-        <button onClick={toggleAll}>
-          {selected.size === compositions.length ? 'Deselect all' : 'Select all'}
+        <button onClick={toggleAll} disabled={publishable.length === 0}>
+          {selected.size === publishable.length && publishable.length > 0 ? 'Deselect all' : 'Select all'}
         </button>
         <button
           onClick={() => publishMutation.mutate([...selected])}
@@ -144,20 +148,28 @@ function BulkPublishContent() {
           </tr>
         </thead>
         <tbody>
-          {compositions.map((c) => (
-            <tr key={c.id}>
-              <td>
-                <input type="checkbox" checked={selected.has(c.id)} onChange={() => toggleSelect(c.id)} />
-              </td>
-              <td>{c.name}</td>
-              <td title={c.componentTypeId}>
-                {c.componentTypeIcon ? `${c.componentTypeIcon} ` : ''}
-                {c.componentTypeName}
-              </td>
-              <td>{c.state === 64 ? 'Published' : 'Draft'}</td>
-              <td>{c.projectMapPath ?? '—'}</td>
-            </tr>
-          ))}
+          {compositions.map((c) => {
+              const isPublished = c.state === CANVAS_PUBLISHED_STATE;
+              return (
+                <tr key={c.id}>
+                  <td>
+                    <input
+                      type="checkbox"
+                      checked={selected.has(c.id)}
+                      disabled={isPublished}
+                      onChange={() => toggleSelect(c.id)}
+                    />
+                  </td>
+                  <td>{c.name}</td>
+                  <td title={c.componentTypeId}>
+                    {c.componentTypeIcon ? `${c.componentTypeIcon} ` : ''}
+                    {c.componentTypeName}
+                  </td>
+                  <td>{isPublished ? 'Published' : 'Draft'}</td>
+                  <td>{c.projectMapPath ?? '—'}</td>
+                </tr>
+              );
+            })}
         </tbody>
       </table>
     </div>

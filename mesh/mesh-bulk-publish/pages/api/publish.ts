@@ -52,10 +52,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const results = await Promise.allSettled(
     compositionIds.map(async (id) => {
-      const compositionResponse = await canvasClient.getCompositionById({ compositionId: id });
-      if (compositionResponse.state === 64) {
-        return { id, modified: 'yep' };
-      }
+      const compositionResponse = await canvasClient.getCompositionById({ compositionId: id, state: 0 });
       const updatedComposition = await canvasClient.updateComposition({
         composition: compositionResponse.composition,
         state: 64,
