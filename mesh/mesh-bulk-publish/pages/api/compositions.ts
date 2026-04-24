@@ -1,9 +1,12 @@
 /**
- * GET /api/compositions?projectId=<uuid>&offset=<number>
+ * GET /api/compositions?projectId=<uuid>&offset=<number>&keyword=<string>
  *
  * BFF: paginates the **draft** composition list (state 0) with `limit` 20 and `offset`.
+ * Optional **keyword** is forwarded to Canvas (`keyword` list param): matches name, slug, or definition name.
+ * Excludes **patterns** (`pattern: false`) so only real composition instances are listed.
  * Loads **published** snapshots for the same IDs in a second request (state 64 + `compositionIDs`)
  * so each row shows the correct published vs draft status (Uniform list API accepts one state per call).
+ * Rows on each page are sorted with **not yet published** compositions first, then published.
  *
  * Response: CompositionsPageResponse
  */
@@ -85,18 +88,40 @@ function parseOffset(raw: string | string[] | undefined): number {
   return Number.isFinite(n) && n >= 0 ? n : 0;
 }
 
+const KEYWORD_MAX_LENGTH = 256;
+
+/**
+ * Normalizes optional list `keyword` from the query string (trimmed, length-capped); returns `undefined` when empty.
+ */
+function parseKeyword(raw: string | string[] | undefined): string | undefined {
+  if (typeof raw !== 'string') {
+    return undefined;
+  }
+  const t = raw.trim().slice(0, KEYWORD_MAX_LENGTH);
+  return t.length > 0 ? t : undefined;
+}
+
+/**
+ * Puts compositions that have no published snapshot first; keeps relative order within each group (stable sort).
+ */
+function sortUnpublishedFirst(a: CompositionListItem, b: CompositionListItem): number {
+  const rank = (item: CompositionListItem): number => (item.state === CANVAS_PUBLISHED_STATE ? 1 : 0);
+  return rank(a) - rank(b);
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
   if (req.method !== 'GET') {
     res.status(405).json({ error: 'Method Not Allowed' });
     return;
   }
 
-  const { projectId, offset: offsetParam } = req.query;
+  const { projectId, offset: offsetParam, keyword: keywordParam } = req.query;
   if (!projectId || typeof projectId !== 'string') {
     res.status(400).json({ error: 'projectId query param is required' });
     return;
   }
   const offset = parseOffset(offsetParam);
+  const keyword = parseKeyword(keywordParam);
 
   const session = await loadMeshDelegationSession(req, res);
   if (!session) {
@@ -111,22 +136,30 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     edgeApiHost,
     projectId,
     bearerToken: session.accessToken,
+    bypassCache: true,
   });
 
-  const listParams = {
+  const listParamsBase = {
     skipPatternResolution: true as const,
     skipOverridesResolution: true as const,
     withProjectMapNodes: true as const,
+    /** Real composition instances only (excludes composition/component patterns). */
+    pattern: false as const,
     orderBy: ['updated_at_DESC'],
     limit: COMPOSITIONS_PAGE_SIZE,
-    offset,
     state: CANVAS_DRAFT_STATE,
+  };
+
+  const draftListParams = {
+    ...listParamsBase,
+    offset,
+    ...(keyword !== undefined ? { keyword } : {}),
   };
 
   try {
     const [draftList, definitionsBody] = await Promise.all([
       canvasClient
-        .getCompositionList(listParams)
+        .getCompositionList(draftListParams)
         .then((body) => body as unknown as CanvasCompositionListEnvelope),
       canvasClient.getComponentDefinitions() as Promise<ComponentDefinitionGetResponse>,
     ]);
@@ -139,7 +172,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     let publishedEnvelope: CanvasCompositionListEnvelope = { compositions: [] };
     if (ids.length > 0) {
       publishedEnvelope = (await canvasClient.getCompositionList({
-        ...listParams,
+        ...listParamsBase,
         offset: 0,
         limit: COMPOSITIONS_PAGE_SIZE,
         state: CANVAS_PUBLISHED_STATE,
@@ -149,19 +182,21 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const publishedIds = new Set(publishedEnvelope.compositions.map(({ composition: c }) => c._id));
 
-    const items: CompositionListItem[] = draftRows.map((composition) => {
-      const componentTypeId = compositionComponentTypeId(composition);
-      const def = typeMap.get(componentTypeId);
-      return {
-        id: composition._id,
-        name: composition._name,
-        state: publishedIds.has(composition._id) ? CANVAS_PUBLISHED_STATE : CANVAS_DRAFT_STATE,
-        componentTypeId,
-        componentTypeName: def?.name ?? (componentTypeId || '—'),
-        componentTypeIcon: def?.icon ?? null,
-        projectMapPath: composition.projectMapNodes?.[0]?.path ?? null,
-      };
-    });
+    const items: CompositionListItem[] = draftRows
+      .map((composition) => {
+        const componentTypeId = compositionComponentTypeId(composition);
+        const def = typeMap.get(componentTypeId);
+        return {
+          id: composition._id,
+          name: composition._name,
+          state: publishedIds.has(composition._id) ? CANVAS_PUBLISHED_STATE : CANVAS_DRAFT_STATE,
+          componentTypeId,
+          componentTypeName: def?.name ?? (componentTypeId || '—'),
+          componentTypeIcon: def?.icon ?? null,
+          projectMapPath: composition.projectMapNodes?.[0]?.path ?? null,
+        };
+      })
+      .sort(sortUnpublishedFirst);
 
     const payload: CompositionsPageResponse = {
       items,

@@ -1,19 +1,28 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { CANVAS_PUBLISHED_STATE } from '@uniformdev/canvas';
 import {
   DelegationGate,
   DelegationProvider,
   useMeshLocation,
   useUniformMeshSdk,
 } from '@uniformdev/mesh-sdk-react';
-import { CANVAS_PUBLISHED_STATE } from '@uniformdev/canvas';
 import { useEffect, useState } from 'react';
+
+const SEARCH_DEBOUNCE_MS = 350;
 
 import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from '../lib/csrf';
 import { checkActive, onSessionToken } from '../lib/delegationSessionCallbacks';
 import type { CompositionListItem, CompositionsPageResponse } from './api/compositions';
 
-async function fetchCompositionsPage(projectId: string, offset: number): Promise<CompositionsPageResponse> {
+async function fetchCompositionsPage(
+  projectId: string,
+  offset: number,
+  keyword: string
+): Promise<CompositionsPageResponse> {
   const params = new URLSearchParams({ projectId, offset: String(offset) });
+  if (keyword.length > 0) {
+    params.set('keyword', keyword);
+  }
   const res = await fetch(`/api/compositions?${params.toString()}`);
   if (!res.ok) {
     throw new Error(`Failed to fetch compositions (${res.status}): ${await res.text()}`);
@@ -42,14 +51,31 @@ function BulkPublishContent() {
 
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [pageOffset, setPageOffset] = useState(0);
+  const [searchInput, setSearchInput] = useState('');
+  const [debouncedKeyword, setDebouncedKeyword] = useState('');
+
+  useEffect(() => {
+    const handle = window.setTimeout(() => {
+      const next = searchInput.trim();
+      setDebouncedKeyword((prev) => {
+        if (prev !== next) {
+          setPageOffset(0);
+        }
+        return next;
+      });
+    }, SEARCH_DEBOUNCE_MS);
+    return () => {
+      window.clearTimeout(handle);
+    };
+  }, [searchInput]);
 
   useEffect(() => {
     setSelected(new Set());
-  }, [pageOffset]);
+  }, [pageOffset, debouncedKeyword]);
 
   const { data, isLoading, error } = useQuery({
-    queryKey: ['compositions', projectId, pageOffset],
-    queryFn: () => fetchCompositionsPage(projectId, pageOffset),
+    queryKey: ['compositions', projectId, pageOffset, debouncedKeyword],
+    queryFn: () => fetchCompositionsPage(projectId, pageOffset, debouncedKeyword),
   });
 
   const publishMutation = useMutation({
@@ -88,14 +114,26 @@ function BulkPublishContent() {
   };
 
   const toggleAll = () => {
-    setSelected(
-      selected.size === publishable.length ? new Set() : new Set(publishable.map((c) => c.id))
-    );
+    setSelected(selected.size === publishable.length ? new Set() : new Set(publishable.map((c) => c.id)));
   };
 
   return (
     <div>
       <h1>Bulk Publish</h1>
+      <div style={{ marginBottom: '1rem' }}>
+        <label htmlFor="composition-search" style={{ display: 'block', marginBottom: '0.25rem', fontWeight: 600 }}>
+          Search compositions
+        </label>
+        <input
+          id="composition-search"
+          type="search"
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+          placeholder="Matches name, slug, or definition name…"
+          autoComplete="off"
+          style={{ width: '100%', maxWidth: '28rem', padding: '0.5rem 0.6rem', boxSizing: 'border-box' }}
+        />
+      </div>
       <p>
         {compositions.length === 0
           ? 'No compositions on this page.'
@@ -149,27 +187,27 @@ function BulkPublishContent() {
         </thead>
         <tbody>
           {compositions.map((c) => {
-              const isPublished = c.state === CANVAS_PUBLISHED_STATE;
-              return (
-                <tr key={c.id}>
-                  <td>
-                    <input
-                      type="checkbox"
-                      checked={selected.has(c.id)}
-                      disabled={isPublished}
-                      onChange={() => toggleSelect(c.id)}
-                    />
-                  </td>
-                  <td>{c.name}</td>
-                  <td title={c.componentTypeId}>
-                    {c.componentTypeIcon ? `${c.componentTypeIcon} ` : ''}
-                    {c.componentTypeName}
-                  </td>
-                  <td>{isPublished ? 'Published' : 'Draft'}</td>
-                  <td>{c.projectMapPath ?? '—'}</td>
-                </tr>
-              );
-            })}
+            const isPublished = c.state === CANVAS_PUBLISHED_STATE;
+            return (
+              <tr key={c.id}>
+                <td>
+                  <input
+                    type="checkbox"
+                    checked={selected.has(c.id)}
+                    disabled={isPublished}
+                    onChange={() => toggleSelect(c.id)}
+                  />
+                </td>
+                <td>{c.name}</td>
+                <td title={c.componentTypeId}>
+                  {c.componentTypeIcon ? `${c.componentTypeIcon} ` : ''}
+                  {c.componentTypeName}
+                </td>
+                <td>{isPublished ? 'Published' : 'Draft'}</td>
+                <td>{c.projectMapPath ?? '—'}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

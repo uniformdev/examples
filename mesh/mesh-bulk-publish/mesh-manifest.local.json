@@ -1,15 +1,9 @@
 {
   "type": "bulk-publish-experiment",
   "displayName": "Bulk Publish Experiment",
-  "logoIconUrl": "https://uniform.app/uniform.png",
-  "badgeIconUrl": "https://uniform.app/uniform.png",
-  "category": "unknown",
+  "baseLocationUrl": "https://localhost:9002",
   "identityDelegation": true,
-  "baseLocationUrl": "https://project-lq3uv.vercel.app",
   "locations": {
-    "settings": {
-      "url": "/settings"
-    },
     "projectTools": [
       {
         "id": "bulk-publish-tool",
@@ -17,6 +11,9 @@
         "url": "/bulk-publish",
         "iconUrl": "https://uniform.app/uniform.png"
       }
-    ]
+    ],
+    "settings": {
+      "url": "/settings"
+    }
   }
 }
