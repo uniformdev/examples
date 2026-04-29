@@ -34,6 +34,14 @@ export const runtime = 'experimental-edge';
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Previewing the AuthContainer Guest and Authorized views
+
+![preview-auth-container-screenshot.png](preview-auth-container-screenshot.png)
+
+This example includes two preview URLs, one for the guest view and one for the authorized logged in view.
+
+The logged in view will simulate a user being logged in and will show the authorized slot for any content within AuthContainer. It will not affect the personalization containers within the Canvas UI.
+
 ## Setting up Edge Config
 
 If you leave Edge Config variables blank, reads from Edge Config are skipped. Instead, the local development server will use DEFAULT_ACCESS_CONFIG and production will default to
