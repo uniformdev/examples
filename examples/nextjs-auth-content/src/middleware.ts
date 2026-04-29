@@ -4,7 +4,7 @@ import {
   buildQuirksFromUser,
   checkProtectedRouteAccess,
   getDisplayUserFromRequest,
-} from './src/lib/auth/middleware-helpers';
+} from './lib/auth/middleware-helpers';
 
 export async function middleware(req: NextRequest) {
   // ---------------------------------------------------
