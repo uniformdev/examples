@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: authContainer
+name: Auth Container
+icon: shield
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: authorized
+    name: Authorized
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+  - id: unauthorized
+    name: Unauthorized
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2026-04-29T09:28:02.249924+00:00'
+updated: '2026-04-29T09:28:33.295255+00:00'

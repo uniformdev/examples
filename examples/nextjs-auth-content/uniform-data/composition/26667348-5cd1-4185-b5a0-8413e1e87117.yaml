@@ -1,0 +1,118 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 2e949634-6676-42d3-a5df-d031f7f68ddf
+        type: $personalization
+        slots:
+          pz:
+            - _id: 29c61d5a-02bf-4cc4-a28b-c232c0506bb4
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Hello Again
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: authenticated
+                        r: 'true'
+                        t: q
+                        op: '='
+                    name: Authenticated
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: We have special content for logged in users.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+            - _id: 86a22bfd-582b-49a9-a6b8-c7264da72ce3
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Welcome!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: hero-86a2
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: This is default content shown to every visitor.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home-Hero
+      - _id: 9fe1ccf0-fc67-4d1b-bd6a-26a2cae00b80
+        type: authContainer
+        slots:
+          authorized:
+            - _id: a87121cd-33a4-47ab-ac84-225c83c24241
+              type: content
+              parameters:
+                body:
+                  type: text
+                  value: Authorized Content
+          unauthorized:
+            - _id: 0bca8df4-1972-459e-a910-e922932c8387
+              type: content
+              parameters:
+                body:
+                  type: text
+                  value: Unauthorized Content
+  _dataResources: {}
+  _locales:
+    - en-GB
+created: '2026-04-24T15:42:34.244667+00:00'
+modified: '2026-04-29T10:53:26.286996+00:00'
+pattern: false

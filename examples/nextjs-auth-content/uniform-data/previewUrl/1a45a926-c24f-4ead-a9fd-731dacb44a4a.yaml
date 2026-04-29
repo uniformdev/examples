@@ -1,0 +1,5 @@
+id: 1a45a926-c24f-4ead-a9fd-731dacb44a4a
+name: Logged In
+url: >-
+  http://localhost:3000/api/preview?secret=hello-world&is_authenticated_editing_mode=true
+order: 2
