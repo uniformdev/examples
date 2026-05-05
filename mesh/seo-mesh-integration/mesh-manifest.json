@@ -1,0 +1,38 @@
+{
+  "type": "lighthouse-reports",
+  "displayName": "Lighthouse Reports",
+  "logoIconUrl": "https://svgmix.com/uploads/dcaf69-google-lighthouse-icon-may-2019.svg",
+  "badgeIconUrl": "https://svgmix.com/uploads/dcaf69-google-lighthouse-icon-may-2019.svg",
+  "category": "unknown",
+  "baseLocationUrl": "http://localhost:9000/",
+  "locations": {
+    "install": {
+      "description": ["Allows the AI Agents to generate Lighthouse reports."],
+      "informationUrl": "https://developer.chrome.com/docs/lighthouse/overview"
+    },
+    "settings": {
+      "url": "/settings"
+    },
+    "aiAgents": {
+      "functionCalling": {
+        "handlerUrl": "/api/handleFunctionCall",
+        "functions": [
+          {
+            "definition": {
+              "name": "get_seo_analysis",
+              "description": "Analyzes the provided HTML for SEO issues and returns the analysis.",
+              "strict": false,
+              "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+              }
+            },
+            "systemParameters": ["pageHtml"],
+            "includedAgents": ["sage"]
+          }
+        ]
+      }
+    }
+  }
+}
