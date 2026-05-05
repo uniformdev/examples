@@ -5,6 +5,7 @@ export default function ChartPage() {
         <canvas id="myChart"></canvas>
       </div>
 
+      {/* eslint-disable-next-line @next/next/no-sync-scripts -- inline script below depends on Chart global being loaded synchronously first */}
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
       <script

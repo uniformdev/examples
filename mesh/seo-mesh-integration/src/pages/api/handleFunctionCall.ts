@@ -10,7 +10,7 @@ const totalChecks = 8;
 type SeoAnalyzerResult = { source: string; report: string[] };
 type SeoAnalysis = SeoAnalyzerResult & { score: number };
 
-function hasOneHeading1(dom: any) {
+function hasOneHeading1(dom: { window: { document: Document } }) {
   return new Promise((resolve, reject) => {
     const headings = dom.window.document.querySelectorAll('h1');
     if (headings.length === 1) {

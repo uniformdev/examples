@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev --port 9000",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@uniformdev/mesh-sdk": "20.60.2",
