@@ -4,7 +4,10 @@ import { nextCookies } from 'better-auth/next-js';
 export type { Session, User } from 'better-auth';
 
 export const auth = betterAuth({
+
   // Base URL for your application
+  // This can be dynamic if you need to support multiple environments
+  // https://better-auth.com/docs/guides/dynamic-base-url
   baseURL: process.env.BETTER_AUTH_URL || 'http://localhost:3000',
 
   // Logging configuration
