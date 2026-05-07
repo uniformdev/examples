@@ -16,7 +16,7 @@ export const runtime = 'experimental-edge';
 4. Configure a Google OAuth client ID and secret in .env
 5. Install dependencies:
     ```bash
-    npm i install
+    npm install
     ```
 6. One-time: push content into your empty project with this command:
     ```bash

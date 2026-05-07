@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} main`}>
         <nav>
           <ul>
-            <li><Link href="/examples/nextjs-auth-content/public">Home</Link></li>
+            <li><Link href="/">Home</Link></li>
             <li><Link href="/protected">Protected</Link></li>
           </ul>
         </nav>
