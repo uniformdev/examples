@@ -8,6 +8,7 @@ const REQUIRED = [
   'UNIFORM_INTEGRATION_ID',
   'UNIFORM_INTEGRATION_SECRET',
   'MESH_SESSION_SECRET',
+  'MESH_ALLOWED_ORIGINS',
 ];
 
 export function assertRequiredEnv() {

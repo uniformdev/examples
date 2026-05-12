@@ -7,14 +7,12 @@
  * Response: { published: number; failed: Array<{ id: string; error: string }> }
  *           HTTP 200 if all succeeded, HTTP 207 if any failed.
  */
-import { requireCsrfHeader } from '../csrf.js';
+import { requireMeshCsrf } from '../csrf.js';
 import { createDelegationCanvasClient } from '../services/delegationCanvasClient.js';
 import { resolveDelegationSession } from '../services/delegationSession.js';
 
 export async function postApiPublish(req, res) {
-  if (!requireCsrfHeader(req, res)) {
-    // eslint-disable-next-line no-console
-    console.error('CSRF header required');
+  if (!requireMeshCsrf(req, res)) {
     return;
   }
 

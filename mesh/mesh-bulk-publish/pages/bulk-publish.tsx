@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 const SEARCH_DEBOUNCE_MS = 350;
 
-import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from '../lib/csrf';
+import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from '@uniformdev/mesh-identity-delegation-session';
 import { checkActive, onSessionToken } from '../lib/delegationSessionCallbacks';
 import type { CompositionListItem, CompositionsPageResponse } from './api/compositions';
 

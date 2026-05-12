@@ -6,7 +6,7 @@ This example is the same **Identity Delegation** story as the Next.js bulk-publi
 
 - **Identity delegation** — the integration receives a delegation handoff from Mesh; the server exchanges it for tokens and stores them in an **httpOnly** **JWE**-sealed session cookie.
 - **BFF pattern** — `/api/*` routes decrypt the session, refresh tokens when needed, and call **Uniform Canvas** with a **Bearer** token (via `createDelegationCanvasClient` / `CanvasClient` configured for delegation only, no API key on the client).
-- **JWE and session token exchange** — see `src/services/delegationSession.js`, `cookieUtils.js`, and the API route handlers for the end-to-end flow.
+- **JWE and session token exchange** — see `src/services/delegationSession.js`, the shared `@uniformdev/mesh-identity-delegation-session` helpers, and the API route handlers for the end-to-end flow.
 
 ## Why delegation instead of API keys?
 
@@ -25,4 +25,4 @@ Your integration runs **inside the Uniform Canvas** UI, which is **HTTPS-only**.
 
 ## Run locally
 
-Copy `.env.example` to `.env`, install dependencies, then `pnpm dev` (client bundle is built in `predev`). The dev server runs over **HTTPS**; if you do not set `HTTPS_KEY` and `HTTPS_CERT`, it uses a **generated self-signed** certificate for that process (your browser may show a trust warning). Point your Mesh app’s `baseLocationUrl` in `mesh-manifest.json` at `https://localhost:9003` and set `"identityDelegation": true`.
+Copy `.env.example` to `.env`, install dependencies, then `pnpm dev` (client bundle is built in `predev`). The dev server runs over **HTTPS**; if you do not set `HTTPS_KEY` and `HTTPS_CERT`, it uses a **generated self-signed** certificate for that process (your browser may show a trust warning). Set `MESH_ALLOWED_ORIGINS` to your app origin (for local dev that is `https://localhost:9003`). Point your Mesh app’s `baseLocationUrl` in `mesh-manifest.json` at `https://localhost:9003` and set `"identityDelegation": true`.

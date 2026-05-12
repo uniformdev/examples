@@ -1,15 +1,5 @@
-/**
- * Mesh SDK init + identity delegation (same flow as mesh-bulk-publish _app.tsx),
- * then drives HTMX 4 to load the compositions table partial.
- */
+import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from '@uniformdev/mesh-identity-delegation-session';
 import { initializeUniformMeshSDK } from '@uniformdev/mesh-sdk';
-
-/**
- * Request header the Mesh iframe must attach to every state-changing call.
- * Must match the constants in src/csrf.js on the server side.
- */
-const CSRF_HEADER_NAME = 'x-mesh-csrf';
-const CSRF_HEADER_VALUE = '1';
 
 function showEl(id, visible) {
   const el = document.getElementById(id);

@@ -16,5 +16,6 @@ export function createDelegationCanvasClient(projectId, bearerToken) {
     edgeApiHost,
     projectId,
     bearerToken,
+    bypassCache: true,
   });
 }

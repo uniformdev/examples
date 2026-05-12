@@ -8,16 +8,14 @@
   },
   "dependencies": {
     "@tanstack/react-query": "5.90.5",
-    "@uniformdev/canvas": "20.50.2-alpha.39",
-    "@uniformdev/context": "20.50.2-alpha.39",
-    "@uniformdev/design-system": "20.50.2-alpha.39",
-    "@uniformdev/mesh-sdk": "20.50.2-alpha.39",
-    "@uniformdev/mesh-sdk-react": "20.50.2-alpha.39",
-    "jose": "6.2.2",
+    "@uniformdev/canvas": "20.50.2-alpha.77",
+    "@uniformdev/context": "20.50.2-alpha.77",
+    "@uniformdev/mesh-identity-delegation-session": "20.50.2-alpha.77",
+    "@uniformdev/mesh-sdk": "20.50.2-alpha.77",
+    "@uniformdev/mesh-sdk-react": "20.50.2-alpha.77",
     "next": "16.0.10",
     "react": "19.2.1",
-    "react-dom": "19.2.1",
-    "zod": "4.0.17"
+    "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@types/node": "24.3.1",

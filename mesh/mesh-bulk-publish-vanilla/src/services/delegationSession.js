@@ -1,22 +1,12 @@
-/**
- * Shared delegation cookie handling: parse, unseal, and proactive access-token refresh
- * (used by BFF routes that call Uniform APIs with the user's Bearer token).
- */
-import { DelegationTokenClient } from '@uniformdev/mesh-sdk';
-
 import {
-  COOKIE_NAME,
-  createCookieOptions,
+  DELEGATION_COOKIE_NAME,
   needsRefresh,
   parseCookies,
-  sealSession,
-  serializeCookie,
-  unsealSession,
-} from '../cookieUtils.js';
-
-/**
- * @typedef {{ accessToken: string; refreshToken: string | undefined; expiresAt: number }} DelegationSession
- */
+  sealDelegationSession,
+  serializeSessionCookie,
+  unsealDelegationSession,
+} from '@uniformdev/mesh-identity-delegation-session';
+import { DelegationTokenClient } from '@uniformdev/mesh-sdk';
 
 /**
  * Reads the sealed cookie and returns a session without calling the token endpoint.
@@ -27,11 +17,11 @@ import {
  */
 export async function readDelegationSessionWithoutRefresh(cookieHeader) {
   const meshSecret = process.env.MESH_SESSION_SECRET;
-  const cookie = parseCookies(cookieHeader ?? '')[COOKIE_NAME];
+  const cookie = parseCookies(cookieHeader)[DELEGATION_COOKIE_NAME];
   if (!cookie) {
     return null;
   }
-  return unsealSession(cookie, meshSecret);
+  return unsealDelegationSession(cookie, meshSecret);
 }
 
 /**
@@ -46,14 +36,12 @@ export async function readDelegationSessionWithoutRefresh(cookieHeader) {
  */
 export async function resolveDelegationSession(cookieHeader) {
   const meshSecret = process.env.MESH_SESSION_SECRET;
-  const apiHost = process.env.UNIFORM_API_HOST;
-
-  const cookie = parseCookies(cookieHeader ?? '')[COOKIE_NAME];
+  const cookie = parseCookies(cookieHeader)[DELEGATION_COOKIE_NAME];
   if (!cookie) {
     return { ok: false, status: 401, error: 'No delegation session' };
   }
 
-  let session = await unsealSession(cookie, meshSecret);
+  let session = await unsealDelegationSession(cookie, meshSecret);
   if (!session) {
     return { ok: false, status: 401, error: 'Invalid delegation session' };
   }
@@ -61,11 +49,11 @@ export async function resolveDelegationSession(cookieHeader) {
   let setCookieHeader;
 
   if (needsRefresh(session)) {
-    // Dashboard did not give consent for refreshing the token
     if (!session.refreshToken) {
       return { ok: false, status: 401, error: 'No refresh token' };
     }
 
+    const apiHost = process.env.UNIFORM_API_HOST;
     const client = new DelegationTokenClient({
       apiHost,
       integrationId: process.env.UNIFORM_INTEGRATION_ID,
@@ -77,9 +65,8 @@ export async function resolveDelegationSession(cookieHeader) {
       refreshToken: refreshed.refreshToken,
       expiresAt: Date.now() + refreshed.expiresIn * 1000,
     };
-    const sealed = await sealSession(session, meshSecret);
-    const cookieOpts = createCookieOptions();
-    setCookieHeader = serializeCookie(cookieOpts.name, sealed, cookieOpts);
+    const sealed = await sealDelegationSession(session, meshSecret);
+    setCookieHeader = serializeSessionCookie(DELEGATION_COOKIE_NAME, sealed);
   }
 
   return { ok: true, session, setCookieHeader };

@@ -1,12 +1,3 @@
-/**
- * POST /api/publish
- *
- * Accepts a list of composition IDs and publishes each via CanvasClient + delegation Bearer token.
- *
- * Body:     { projectId: string; compositionIds: string[] }
- * Response: { published: number; failed: Array<{ id: string; error: string }> }
- *           HTTP 200 if all succeeded, HTTP 207 if any failed.
- */
 import { CanvasClient } from '@uniformdev/canvas';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
@@ -48,6 +39,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     edgeApiHost,
     projectId,
     bearerToken: session.accessToken,
+    bypassCache: true,
   });
 
   const results = await Promise.allSettled(
