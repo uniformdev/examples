@@ -1,0 +1,70 @@
+composition:
+  _name: Protected
+  _id: a9766da0-dde6-421d-97c2-1400c99caaaf
+  _slug: protected
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Protected
+    accessType:
+      type: select
+      value: authenticatedRouteAndChildren
+  slots:
+    content:
+      - _id: d925266c-518f-44f5-b6dd-5f9f1e6496bf
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Protected
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          This page is protected by edge routing. A guest
+                          visiting this page will be redirected to log in.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          To test this example in local development, use the
+                          test-webhook.sh script to populate the protected
+                          routes.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+  _locales:
+    - en-GB
+created: '2026-04-24T16:23:09.268553+00:00'
+modified: '2026-04-29T11:01:53.988398+00:00'
+pattern: false

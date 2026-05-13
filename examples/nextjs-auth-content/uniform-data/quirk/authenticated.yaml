@@ -1,0 +1,8 @@
+id: authenticated
+name: Authenticated
+description: ''
+options:
+  - name: Guest
+    value: 'false'
+  - name: Logged In
+    value: 'true'

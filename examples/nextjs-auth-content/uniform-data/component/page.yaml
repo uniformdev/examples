@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: file-document
+parameters:
+  - id: metaTitle
+    name: Meta Title
+    type: text
+    typeConfig:
+      required: true
+  - id: accessType
+    name: Access Type
+    type: select
+    typeConfig:
+      editor: radio
+      options:
+        - text: Public
+          value: public
+        - text: Authenticated Child Routes
+          value: authenticatedChildRoutes
+        - text: Authenticated Route
+          value: authenticatedRoute
+        - text: Authenticated Route And Children
+          value: authenticatedRouteAndChildren
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - hero
+      - $personalization
+      - $test
+      - $localization
+      - authContainer
+    inheritAllowedComponents: false
+slugSettings:
+  unique: global
+  required: 'yes'
+  regularExpression: ''
+  regularExpressionMessage: ''
+canBeComposition: true
+created: '2026-04-24T15:42:32.923215+00:00'
+updated: '2026-04-29T09:29:11.503725+00:00'

@@ -1,0 +1,9 @@
+id: da3264ee-2e45-40a0-b554-ea88d7d05f1d
+name: Protected
+order: 500
+path: /protected
+type: composition
+pathSegment: protected
+data: {}
+compositionId: a9766da0-dde6-421d-97c2-1400c99caaaf
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb
