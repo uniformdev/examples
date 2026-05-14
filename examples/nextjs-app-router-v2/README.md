@@ -25,7 +25,7 @@ See [this live url](https://nextjs-app-router-v2.vercel.app/) to experience pers
 
 1. Install dependencies:
     ```bash
-    npm i install
+    npm i
     ```
 
 1. One-time: push content into your empty project with this command:

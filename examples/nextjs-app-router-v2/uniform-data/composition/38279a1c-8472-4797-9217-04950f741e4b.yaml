@@ -1,8 +1,14 @@
 composition:
   _name: Page composition
   _id: 38279a1c-8472-4797-9217-04950f741e4b
+  _slug: page-composition
   type: page
-  parameters: {}
-created: '2025-08-27T22:58:10.43113+00:00'
-modified: '2025-08-27T22:58:10.43113+00:00'
+  parameters:
+    metaTitle:
+      type: text
+      value: Meta Title
+  _locales:
+    - en-US
+created: '2026-05-14T08:06:12.027089+00:00'
+modified: '2026-05-14T08:46:13.945857+00:00'
 pattern: false
