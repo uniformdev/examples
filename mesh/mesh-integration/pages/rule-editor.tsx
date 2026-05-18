@@ -1,4 +1,4 @@
-import { AddListButton, Button, Input, InputSelect, useMeshLocation } from '@uniformdev/mesh-sdk-react';
+import { AddListButton, Button, DateEditor, Input, InputSelect, useMeshLocation } from '@uniformdev/mesh-sdk-react';
 import type { NextPage } from 'next';
 
 import { DEFAULT_FACTS, IntegrationSettings, getConfiguredFacts } from '../lib/jsonRulesSettings';
@@ -28,6 +28,16 @@ function asString(v: unknown): string {
 
 function parseValue(s: string, op: string): unknown {
   return op === 'in' ? s.split(',').map((x) => x.trim()).filter(Boolean) : s;
+}
+
+// Heuristic: a fact is a date-time fact if its name mentions "date" or "time".
+// Covers the customer's sample (appointment_date, appointment_end_time,
+// marketing_campaign_start_date, …). The date picker is only used for single
+// values — the "is one of" operator still falls back to comma-separated text.
+function isDateFact(fact: string | undefined): boolean {
+  if (!fact) return false;
+  const lower = fact.toLowerCase();
+  return lower.includes('date') || lower.includes('time');
 }
 
 const RuleEditor: NextPage = () => {
@@ -91,15 +101,31 @@ const RuleEditor: NextPage = () => {
               );
             }}
           />
-          <Input
-            label={c.operator === 'in' ? 'Values (comma-separated)' : 'Value'}
-            name={`value-${i}`}
-            value={asString(c.value)}
-            disabled={isReadOnly}
-            onChange={(e) =>
-              update(rows.map((r, j) => (j === i ? { ...r, value: parseValue(e.target.value, r.operator ?? 'equal') } : r)))
-            }
-          />
+          {isDateFact(c.fact) && c.operator !== 'in' ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+              <label style={{ fontSize: 12, fontWeight: 500 }} htmlFor={`value-${i}`}>Value</label>
+              <DateEditor
+                ariaLabel="Value"
+                editorType="date"
+                filterFieldName={`value-${i}`}
+                value={asString(c.value)}
+                readOnly={isReadOnly}
+                onChange={(next) =>
+                  update(rows.map((r, j) => (j === i ? { ...r, value: next ?? '' } : r)))
+                }
+              />
+            </div>
+          ) : (
+            <Input
+              label={c.operator === 'in' ? 'Values (comma-separated)' : 'Value'}
+              name={`value-${i}`}
+              value={asString(c.value)}
+              disabled={isReadOnly}
+              onChange={(e) =>
+                update(rows.map((r, j) => (j === i ? { ...r, value: parseValue(e.target.value, r.operator ?? 'equal') } : r)))
+              }
+            />
+          )}
           <Button
             type="button"
             buttonType="secondary"
