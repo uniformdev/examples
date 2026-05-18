@@ -1,6 +1,8 @@
 import { AddListButton, Button, Input, InputSelect, useMeshLocation } from '@uniformdev/mesh-sdk-react';
 import type { NextPage } from 'next';
 
+import { DEFAULT_FACTS, IntegrationSettings, getConfiguredFacts } from '../lib/jsonRulesSettings';
+
 type Condition = {
   fact?: string;
   operator?: string;
@@ -29,9 +31,17 @@ function parseValue(s: string, op: string): unknown {
 }
 
 const RuleEditor: NextPage = () => {
-  const { value, setValue, isReadOnly } = useMeshLocation<'personalizationCriteria', RuleCriteria>(
+  const { value, setValue, isReadOnly, metadata } = useMeshLocation<'personalizationCriteria', RuleCriteria>(
     'personalizationCriteria'
   );
+
+  // Integration settings are typed `unknown` by the SDK; cast to our shape.
+  // Falls back to the bundled defaults when settings haven't been configured.
+  const facts = getConfiguredFacts(metadata.settings as IntegrationSettings | undefined);
+  const factOptions = [
+    { label: 'Select a fact…', value: '' },
+    ...facts.map((f) => ({ label: f, value: f })),
+  ];
 
   // Criteria may be missing or come from a different algorithm if the author switched
   // algorithms on the container — fall back to an empty row list in that case.
@@ -39,15 +49,31 @@ const RuleEditor: NextPage = () => {
 
   const update = (next: Condition[]) => setValue(() => ({ newValue: { conditions: { all: next } } }));
 
+  const isDefault = rows.length === 0;
+
   return (
     <div>
+      <h2>Variant matching conditions</h2>
+      {isDefault ? (
+        <p style={{ padding: '12px 16px', background: '#f5f5f5', borderRadius: 4 }}>
+          <strong>Default variant.</strong> No conditions defined — this variant always matches.
+          Place it last in the variant list so it is selected only when no other variant&apos;s
+          conditions are met. Add a condition below to restrict it.
+        </p>
+      ) : (
+        <p>
+          <strong>ALL</strong> of the following conditions must be true for this variant to match:
+        </p>
+      )}
+
       {rows.map((c, i) => (
         <div key={i} style={{ display: 'flex', gap: 8, marginBottom: 8, alignItems: 'flex-end' }}>
-          <Input
+          <InputSelect
             label="Fact"
             name={`fact-${i}`}
             value={c.fact ?? ''}
             disabled={isReadOnly}
+            options={factOptions}
             onChange={(e) => update(rows.map((r, j) => (j === i ? { ...r, fact: e.target.value } : r)))}
           />
           <InputSelect
@@ -87,8 +113,15 @@ const RuleEditor: NextPage = () => {
       <AddListButton
         buttonText="Add condition"
         disabled={isReadOnly}
-        onButtonClick={() => update([...rows, { fact: '', operator: 'equal', value: '' }])}
+        onButtonClick={() => update([...rows, { fact: facts[0] ?? '', operator: 'equal', value: '' }])}
       />
+
+      {isDefault && facts.length === 0 && (
+        <p style={{ marginTop: 16, color: '#9c5d00' }}>
+          No facts are configured. Add facts on the integration settings page first.
+          Defaults: {DEFAULT_FACTS.join(', ')}.
+        </p>
+      )}
     </div>
   );
 };
