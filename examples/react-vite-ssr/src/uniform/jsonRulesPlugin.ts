@@ -49,6 +49,22 @@ function safeJson(s: string): Record<string, unknown> {
 
 type MatchedVariant = PersonalizedVariant<RuleCriteria> & { control: boolean };
 
+// A variant with no conditions (or an empty top-level `all: []`) is treated
+// as a default — it always matches. Place such variants last in the variant
+// list so they are selected only when no other variant matched first.
+function isDefaultVariant(conditions: Condition | undefined): boolean {
+  if (!conditions) return true;
+  if (
+    Array.isArray(conditions.all) &&
+    conditions.all.length === 0 &&
+    !conditions.any &&
+    !conditions.fact
+  ) {
+    return true;
+  }
+  return false;
+}
+
 const algorithm: PersonalizationSelectionAlgorithm<RuleCriteria> = ({
   variations,
   context,
@@ -58,8 +74,9 @@ const algorithm: PersonalizationSelectionAlgorithm<RuleCriteria> = ({
   const facts = typeof raw === "string" ? safeJson(raw) : {};
   const matched: MatchedVariant[] = [];
   for (const v of variations) {
-    if (!v.pz?.conditions) continue;
-    if (evaluate(v.pz.conditions, facts)) {
+    const conditions = v.pz?.conditions;
+    const matches = isDefaultVariant(conditions) || evaluate(conditions!, facts);
+    if (matches) {
       matched.push({ ...v, control: false });
       if (matched.length >= take) break;
     }
