@@ -1,5 +1,6 @@
 import { AddListButton, Button, DateEditor, Input, InputSelect, useMeshLocation } from '@uniformdev/mesh-sdk-react';
 import type { NextPage } from 'next';
+import { useEffect } from 'react';
 
 import { DEFAULT_FACTS, IntegrationSettings, getConfiguredFacts } from '../lib/jsonRulesSettings';
 
@@ -11,7 +12,15 @@ type Condition = {
   any?: Condition[];
 };
 
-type RuleCriteria = { conditions: Condition };
+// The stored value is shaped by the platform's VariationMatchMetadata: it always
+// has a `name` (managed by the parent UI) and may have a stale `crit` array from
+// the default-algorithm variant initializer. Acknowledge both so we can clear
+// `crit` — leaving it intact triggers the platform's "Please select a valid
+// dimension" validator at publish time.
+type RuleCriteria = {
+  conditions?: Condition;
+  crit?: unknown[];
+};
 
 const OPERATOR_OPTIONS = [
   { label: 'equals', value: 'equal' },
@@ -57,7 +66,23 @@ const RuleEditor: NextPage = () => {
   // algorithms on the container — fall back to an empty row list in that case.
   const rows: Condition[] = Array.isArray(value?.conditions?.all) ? value!.conditions!.all! : [];
 
-  const update = (next: Condition[]) => setValue(() => ({ newValue: { conditions: { all: next } } }));
+  // Clear the platform's default `crit` once when the editor mounts on a variant
+  // that was created via the "personalize" action but never edited with this
+  // algorithm. Without this, a default variant (no conditions) cannot be
+  // published because the seeded `crit: [{ l: '', op: '>', r: 0 }]` fails the
+  // dimension validator.
+  useEffect(() => {
+    if (!isReadOnly && Array.isArray(value?.crit) && value!.crit!.length > 0) {
+      setValue((previous) => ({ newValue: { ...(previous ?? {}), crit: [] } }));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Always send `crit: []` so it overrides any stale legacy `crit` left from the
+  // built-in algorithm. Our custom selection algorithm reads `conditions`, not
+  // `crit`, but the platform validator still inspects `crit` on every variant.
+  const update = (next: Condition[]) =>
+    setValue(() => ({ newValue: { crit: [], conditions: { all: next } } }));
 
   const isDefault = rows.length === 0;
 
