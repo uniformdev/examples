@@ -26,7 +26,16 @@
           "configureUrl": "/",
           "renderableInPropertyPanel": true
         }
-      ]
+      ],
+      "personalization": {
+        "selectionAlgorithms": {
+          "json-rules-engine": {
+            "displayName": "Custom Rules",
+            "description": "Match a variant when conditions on visitor facts hold (date and value comparisons).",
+            "criteriaEditorUrl": "/rule-editor"
+          }
+        }
+      }
     },
     "settings": {
       "url": "/"
