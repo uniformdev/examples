@@ -3,6 +3,8 @@ import { UniformComposition } from "@uniformdev/canvas-react";
 import { Context } from "@uniformdev/context";
 import { UniformContext } from "@uniformdev/context-react";
 import { manifest } from "./uniform/manifest";
+import { jsonRulesPlugin } from "./uniform/jsonRulesPlugin";
+import { useLoadVisitorFacts } from "./uniform/factsLoader";
 
 import "./components";
 
@@ -16,7 +18,22 @@ declare global {
 }
 
 // TODO: load the manifest from Uniform
-const context = new Context({ manifest: manifest, defaultConsent: true });
+const context = new Context({
+  manifest: manifest,
+  defaultConsent: true,
+  plugins: [jsonRulesPlugin],
+});
+
+function AppInner({ composition }: { composition?: RootComponentInstance }) {
+  useLoadVisitorFacts();
+  return (
+    <UniformComposition
+      data={composition}
+      behaviorTracking="onLoad"
+      resolveRenderer={resolveRenderer}
+    />
+  );
+}
 
 function App({ composition }: { composition?: RootComponentInstance } = {}) {
   let data = composition;
@@ -26,11 +43,7 @@ function App({ composition }: { composition?: RootComponentInstance } = {}) {
 
   return (
     <UniformContext context={context}>
-      <UniformComposition
-        data={data}
-        behaviorTracking="onLoad"
-        resolveRenderer={resolveRenderer}
-      />
+      <AppInner composition={data} />
     </UniformContext>
   );
 }
