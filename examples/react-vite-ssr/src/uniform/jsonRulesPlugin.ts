@@ -1,7 +1,10 @@
 import { ContextPlugin, PersonalizationSelectionAlgorithm, PersonalizedVariant } from "@uniformdev/context";
 import { Engine } from "json-rules-engine";
 
-export const VISITOR_FACTS_QUIRK = "visitor_facts";
+// Visitor facts live as individual Uniform quirks (one per fact). Storing them
+// flat instead of in a single JSON blob means each fact is also a top-level
+// entry in the `ufvdqk` cookie / dev tools panel, and any server-side code
+// that reads quirks can pull e.g. `quirks.first_name` directly.
 
 // Sync surface of json-rules-engine's Operator + its operators registry.
 // Both are runtime public API but the published types don't expose `operators`
@@ -38,15 +41,6 @@ function evaluate(c: Condition, facts: Record<string, unknown>): boolean {
   return op.evaluate(facts[c.fact], c.value);
 }
 
-function safeJson(s: string): Record<string, unknown> {
-  try {
-    const v = JSON.parse(s);
-    return v && typeof v === "object" ? v : {};
-  } catch {
-    return {};
-  }
-}
-
 type MatchedVariant = PersonalizedVariant<RuleCriteria> & { control: boolean };
 
 // A variant with no conditions (or an empty top-level `all: []`) is treated
@@ -70,8 +64,10 @@ const algorithm: PersonalizationSelectionAlgorithm<RuleCriteria> = ({
   context,
   take = 1,
 }) => {
-  const raw = context.quirks[VISITOR_FACTS_QUIRK];
-  const facts = typeof raw === "string" ? safeJson(raw) : {};
+  // Each quirk is a fact; rule conditions reference them by name. Cast to
+  // unknown so the operator dispatch can accept arbitrary value types (string
+  // dates, numerics-as-strings, etc.) without further coercion.
+  const facts = context.quirks as Record<string, unknown>;
   const matched: MatchedVariant[] = [];
   for (const v of variations) {
     const conditions = v.pz?.conditions;

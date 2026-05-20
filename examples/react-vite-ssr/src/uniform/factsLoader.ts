@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useUniformContext } from "@uniformdev/context-react";
-import { VISITOR_FACTS_QUIRK } from "./jsonRulesPlugin";
 
 // v1 sample facts. FLAT object — top-level keys only, no nested structure.
 // Keys MUST match the fact identifiers offered in the rule editor
@@ -27,8 +26,10 @@ const SAMPLE_VISITOR_FACTS: Record<string, unknown> = {
 export function useLoadVisitorFacts() {
   const { context } = useUniformContext();
   useEffect(() => {
-    context.update({
-      quirks: { [VISITOR_FACTS_QUIRK]: JSON.stringify(SAMPLE_VISITOR_FACTS) },
-    });
+    // Spread each fact as its own Uniform quirk. The rule engine reads facts
+    // off context.quirks directly, and downstream consumers (Uniform dev tools
+    // panel, optional cookie persistence, server-side code) see one quirk per
+    // fact instead of a single JSON-stringified blob.
+    context.update({ quirks: { ...SAMPLE_VISITOR_FACTS } as Record<string, string> });
   }, [context]);
 }

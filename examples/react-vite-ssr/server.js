@@ -6,8 +6,27 @@ import {
   EMPTY_COMPOSITION,
   IN_CONTEXT_EDITOR_CONFIG_CHECK_QUERY_STRING_PARAM,
 } from "@uniformdev/canvas";
+import { parseQuirkCookie, UNIFORM_DEFAULT_QUIRK_COOKIE_NAME } from "@uniformdev/context";
 
 import { getComposition } from "./src/uniform/api.js";
+
+// Pulls the visitor's quirks out of the request's `ufvdqk` cookie, written by
+// the client-side CookieTransitionDataStore on every context.update({ quirks }).
+// Returns an empty object on first visits (no cookie yet) — SSR then renders
+// with default token values until the client hydrates and the next page-load
+// gets the personalized SSR output.
+function getRequestQuirks(req) {
+  const header = req.headers.cookie ?? "";
+  const pairs = header.split(";").map((s) => s.trim()).filter(Boolean);
+  for (const pair of pairs) {
+    const eq = pair.indexOf("=");
+    if (eq === -1) continue;
+    const name = pair.slice(0, eq);
+    if (name !== UNIFORM_DEFAULT_QUIRK_COOKIE_NAME) continue;
+    return parseQuirkCookie(decodeURIComponent(pair.slice(eq + 1)));
+  }
+  return {};
+}
 
 // For now, we will use the same path we use to render composition.
 // But it's recommended to have a dedicated route for the playground and use <UniformPlayground />
@@ -78,7 +97,7 @@ app.use("*", async (req, res) => {
       composition = EMPTY_COMPOSITION;
       // TODO: check if the preview secret is correct before moving forward
     } else {
-      composition = await getComposition(path);
+      composition = await getComposition(path, getRequestQuirks(req));
     }
 
     const rendered = await render({ composition });
