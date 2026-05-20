@@ -29,10 +29,18 @@ const firstNameEnhancer = ({ parameter }) => {
 };
 
 export async function getComposition(path) {
+  const projectId = process.env.UNIFORM_PROJECT_ID;
+  const apiKey = process.env.UNIFORM_API_KEY;
+
+  if (!projectId || !apiKey) {
+    throw new Error(
+      "Missing Uniform credentials: ensure UNIFORM_PROJECT_ID and UNIFORM_API_KEY are set in your .env file."
+    );
+  }
+
   const client = new RouteClient({
-    projectId: "99495eba-c588-4672-89d9-715cca3539f3",
-    apiKey:
-      "uf18jlavcqyh9y0s7x2zz4q6cg7xvvx8e5n40zyfl6vw76ldqkgywszwnjpze7yzw4upvnknep6fse6nx03l2kr6a72tnr4wy",
+    projectId,
+    apiKey,
   });
 
   const response = await client.getRoute({
