@@ -1,6 +1,6 @@
 import { RootComponentInstance } from "@uniformdev/canvas";
 import { UniformComposition } from "@uniformdev/canvas-react";
-import { Context } from "@uniformdev/context";
+import { Context, enableContextDevTools } from "@uniformdev/context";
 import { UniformContext } from "@uniformdev/context-react";
 import { manifest } from "./uniform/manifest";
 import { jsonRulesPlugin } from "./uniform/jsonRulesPlugin";
@@ -21,7 +21,10 @@ declare global {
 const context = new Context({
   manifest: manifest,
   defaultConsent: true,
-  plugins: [jsonRulesPlugin],
+  // enableContextDevTools is what posts the `uniform:context:hello` handshake
+  // that activates the Uniform Context Chrome extension. Detection is algorithm-
+  // agnostic — the extension only needs this plugin registered to attach.
+  plugins: [jsonRulesPlugin, enableContextDevTools()],
 });
 
 function AppInner({ composition }: { composition?: RootComponentInstance }) {
