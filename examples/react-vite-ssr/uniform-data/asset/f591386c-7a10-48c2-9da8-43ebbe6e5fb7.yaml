@@ -1,0 +1,11 @@
+asset:
+  type: image
+  _id: f591386c-7a10-48c2-9da8-43ebbe6e5fb7
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: Email-Icon-SVG.svg
+    custom: {}
+created: '2026-05-15T15:37:44.20487+00:00'
+modified: '2026-05-15T15:37:44.20487+00:00'

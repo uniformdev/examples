@@ -1,0 +1,11 @@
+asset:
+  type: image
+  _id: e7b13ecc-6363-40fc-9eca-34ae000ab4ca
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: image.png
+    custom: {}
+created: '2026-05-15T15:37:50.533416+00:00'
+modified: '2026-05-15T15:37:50.533416+00:00'

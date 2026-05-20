@@ -1,0 +1,11 @@
+asset:
+  type: image
+  _id: dde44197-2161-43d0-a9e8-a3e1f7241998
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: demo-qr-code.svg
+    custom: {}
+created: '2026-05-15T15:37:50.432173+00:00'
+modified: '2026-05-15T15:37:50.432173+00:00'
