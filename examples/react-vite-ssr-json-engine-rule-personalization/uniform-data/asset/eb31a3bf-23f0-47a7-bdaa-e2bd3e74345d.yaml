@@ -1,0 +1,11 @@
+asset:
+  type: image
+  _id: eb31a3bf-23f0-47a7-bdaa-e2bd3e74345d
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: fisherman_wharf.jpg
+    custom: {}
+created: '2026-05-15T15:37:48.245517+00:00'
+modified: '2026-05-15T15:37:48.245517+00:00'

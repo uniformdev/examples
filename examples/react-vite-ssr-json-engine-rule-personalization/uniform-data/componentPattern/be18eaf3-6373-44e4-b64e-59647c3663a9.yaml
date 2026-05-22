@@ -1,0 +1,38 @@
+composition:
+  _name: Super Hero
+  _id: be18eaf3-6373-44e4-b64e-59647c3663a9
+  type: hero
+  parameters:
+    title:
+      type: text
+      value: Super Hero
+    description:
+      type: richText
+      value:
+        root:
+          type: root
+          format: ''
+          indent: 0
+          version: 1
+          children:
+            - type: paragraph
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - mode: normal
+                  text: >-
+                    This is a pattern for the Hero component with default
+                    content.
+                  type: text
+                  style: ''
+                  detail: 0
+                  format: 0
+                  version: 1
+              direction: ltr
+          direction: ltr
+  _overridability:
+    hideLockedParameters: true
+created: '2024-06-15T22:56:18.368799+00:00'
+modified: '2024-06-15T23:09:01.213362+00:00'
+pattern: true

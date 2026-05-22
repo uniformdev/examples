@@ -1,0 +1,53 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h4 {
+  margin-top: 1em !important;
+}
+
+td, th {
+  padding: 1em 0;
+  vertical-align: top;
+  line-height: 1.2em;
+}
+
+th {
+  text-align: left;
+  width: 10rem;
+}
+
+small {
+  display: block;
+  font-weight: normal;
+}
+
+.helloWrapper {
+  border: 2px solid black;
+  margin: 2px;
+  padding: 0 1em;
+}
+
+pre, code {
+  font-size: 0.8em !important;
+  margin: 0 !important;
+  white-space: pre-wrap !important;
+}
+
+ol > li {
+  list-style: decimal;
+  margin-left: 1em;
+}

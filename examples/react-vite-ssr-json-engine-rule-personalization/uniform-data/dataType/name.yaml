@@ -1,0 +1,18 @@
+id: name
+displayName: Name
+ttl: 30
+body: ''
+path: /staticdata
+custom:
+  json:
+    First Name: $first_name
+  proposedName: JSON Data
+method: GET
+purgeKey: f3a75b6d-d48d-461d-9045-e2e9896851c4
+archetype: staticData
+variables:
+  json:
+    type: text
+    default: ''
+dataSourceId: userTokens
+allowedOnComponents: []
