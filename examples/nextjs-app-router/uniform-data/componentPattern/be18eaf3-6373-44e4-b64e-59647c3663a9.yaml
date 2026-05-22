@@ -34,6 +34,8 @@ composition:
           direction: ltr
   _overridability:
     hideLockedParameters: true
+  _locales:
+    - en
 created: '2024-07-17T16:23:53.997281+00:00'
-modified: '2024-11-07T21:37:38.03832+00:00'
+modified: '2025-12-09T04:35:45.949463+00:00'
 pattern: true

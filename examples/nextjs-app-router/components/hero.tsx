@@ -1,40 +1,35 @@
 import {
+  ComponentParameter,
   ComponentProps,
   UniformRichText,
   UniformText,
-} from "@uniformdev/canvas-next-rsc/component";
-import { ResolveComponentResultWithType } from "@/uniform/models";
+} from "@uniformdev/next-app-router/component";
 
 export const HeroComponent = ({
+  parameters: { title, description },
+  // you can get variant if needed
+  // variant,
   component,
-  context,
 }: ComponentProps<HeroProps>) => {
   return (
     <>
       <UniformText
         component={component}
-        context={context}
-        parameterId="title"
-        as="h1"
+        parameter={title}
         className="title"
-        placeholder="Enter hero title"
+        placeholder={"title goes here"}
+        as="h1"
       />
       <UniformRichText
         component={component}
-        parameterId="description"
-        className="description"
-        placeholder="Enter hero description"
+        parameter={description}
+        placeholder={"description goes here"}
       />
     </>
   );
 };
 
 export type HeroProps = {
-  title: string;
-  description: string;
-};
-
-export const heroMapping: ResolveComponentResultWithType = {
-  type: "hero",
-  component: HeroComponent,
+  title: ComponentParameter<string>;
+  description: ComponentParameter<string>;
 };
