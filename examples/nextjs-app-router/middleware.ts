@@ -8,6 +8,10 @@ export default uniformMiddleware({
   rewriteRequestPath: async ({ url }) => ({
     path: formatPath(url.pathname, locales[0]),
   }),
+  // Default SDK rewrite is /uniform/playground/<code>; this app uses /playground/[code].
+  // Canvas still hits /uniform/playground; only the internal rewrite target changes.
+  rewriteDestinationPath: async ({ code, source }) =>
+    source === "playground" ? `/playground/${code}` : "",
 });
 
 export const formatPath = (path: string, locale?: string | null): string => {
