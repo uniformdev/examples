@@ -1,23 +1,66 @@
-# Hello World starter for Next.js app router
+# New Next.js 16 App Router Starter
 
-> ⚠️ This starter is using older version of Next.js SDK and is deprecated in favor of [v2](../nextjs-app-router-v2/).
+Featuring `Cache Components` support (disabled by default in this starter, read later on how to enable).
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Demo
 
-## Pre-requisites
-
-1. Uniform account with an empty project.
+See [this live url](https://nextjs-app-router-v2.vercel.app/) to experience personalization and edge personalization.
 
 ## Getting Started
 
-1. Install dependencies with `npm install`
-1. Change the API key and Project ID env vars in `.env` with your own.
-    > Make sure your API key has "Developer" role to be able to push content.
-2. `npm run uniform:push` to push content from disk (`/uniform-data` folder) to your project. 
-3. Run the development server:
+1. Prepare an empty Uniform project.
+
+1. Set your own Uniform env vars with developer permission API key in `.env`.
+
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+1. One-time: push content into your empty project with this command:
+    ```bash
+    npm run uniform:push
+    ```
+
+1. Publish manifest with Uniform personalization and test configuration:
+    ```bash
+    npm run uniform:manifest
+    ```
+
+1. Run the dev server:
 
     ```bash
     npm run dev
     ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Production build
+
+Run `npm run build` for production build and `npm start` to start server in production mode locally.
+
+## Important: Uniform Preview support
+
+In order to support Uniform preview for Next.js 16 on Vercel, you need to leave `middleware.ts` named as such, don't rename it to `proxy.ts` and keep this export in it:
+
+```
+export const runtime = 'experimental-edge';
+```
+
+## How to enable cache components support
+
+Cache components allow to stream dynamic user state-dependent experience without blocking full page rendering. Depending on your use case you may or may not need this feature, so it is not enabled by default.
+
+1. Enable `cache components` feature in next.config
+```bash
+    const nextConfig: NextConfig = {
+        cacheComponents: true,
+    };
+```
+
+2. Update your `./app/uniform/[code]/page.tsx` to import `resolveRouteFromCode` function from another path:
+```bash
+import { resolveRouteFromCode } from '@uniformdev/next-app-router/cache';
+```
+
+3. Uncomment the remaining parts commented out related to cache component support in `./app/uniform/[code]/page.tsx`

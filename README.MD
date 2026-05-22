@@ -8,7 +8,7 @@ This repo contains various examples to facilitate your getting-started experienc
 
 These starters don't have a lot of functionality, they are single page, single component sort of "hello world" starters typically used to learn the essentials of Uniform SDK and be used as a starting point for the greenfield projects. Preview, personalization and A/B testing is enabled on all of these starters.
 
-- [Hello world starter for Next.js 16 App Router](./examples/nextjs-app-router-v2) - essential 1 page, 1 component starter. V2 starter is highly recommended over V1.
+- 🆕 Recommended start -> [Hello world starter for Next.js 16 App Router](./examples/nextjs-app-router) - the latest Next.js App Router Starter.
 
 - [Hello world starter for Next.js Page Router](./examples/nextjs-starter) - essential 1 page, 1 component starter.
 

@@ -1,32 +1,31 @@
 {
-  "name": "@uniformdev/nextjs-app-router-starter",
-  "version": "20.35.0",
+  "name": "@uniformdev/next-app-router-starter",
+  "version": "20.64.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "uniform:pull": "uniform sync pull",
     "uniform:push": "uniform sync push",
-    "uniform:publish": "uniform context manifest publish"
+    "uniform:manifest": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/canvas-next-rsc": "20.49.3",
-    "@uniformdev/canvas-next-rsc-client": "20.49.3",
-    "@uniformdev/canvas-next-rsc-shared": "20.49.3",
-    "@uniformdev/context": "20.49.3",
-    "@uniformdev/insights": "20.49.3",
-    "next": "^15.5.12",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "@uniformdev/context": "20.64.0",
+    "@uniformdev/insights": "20.64.0",
+    "@uniformdev/next-app-router": "20.64.0",
+    "@uniformdev/next-app-router-client": "20.64.0",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19.2.3",
-    "@types/react-dom": "^19.2.3",
-    "@uniformdev/cli": "20.49.3",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^5"
+    "@tailwindcss/postcss": "4.3.0",
+    "@types/node": "25.9.1",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "@uniformdev/cli": "20.64.0",
+    "tailwindcss": "4.3.0",
+    "typescript": "6.0.3"
   }
 }

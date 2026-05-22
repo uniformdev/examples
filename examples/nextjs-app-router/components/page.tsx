@@ -1,27 +1,27 @@
 import {
   ComponentProps,
   UniformSlot,
-} from "@uniformdev/canvas-next-rsc/component";
-import { ResolveComponentResultWithType } from "@/uniform/models";
+} from "@uniformdev/next-app-router/component";
 
-export const PageComponent = ({
-  component,
-  context,
-  slots,
-}: ComponentProps<PageProps, PageSlots>) => {
+export type PageProps = unknown;
+export type PageSlots = "content" | "header" | "footer";
+
+export const Page = ({ slots }: ComponentProps<PageProps, PageSlots>) => {
   return (
-    <>
-      <UniformSlot context={context} data={component} slot={slots.header} />
-      <UniformSlot context={context} data={component} slot={slots.content} />
-      <UniformSlot context={context} data={component} slot={slots.footer} />
-    </>
+    <div className="flex min-h-screen flex-col">
+      <header className="border-b border-neutral-200 bg-white">
+        <div className="mx-auto w-full max-w-5xl px-6 py-4">
+          <UniformSlot slot={slots.header} />
+        </div>
+      </header>
+      <main className="flex-1">
+        <UniformSlot slot={slots.content} />
+      </main>
+      <footer className="mt-auto border-t border-neutral-200 bg-white">
+        <div className="mx-auto w-full max-w-5xl px-6 py-8">
+          <UniformSlot slot={slots.footer} />
+        </div>
+      </footer>
+    </div>
   );
-};
-
-type PageProps = {};
-type PageSlots = "content" | "header" | "footer";
-
-export const pageMapping: ResolveComponentResultWithType = {
-  type: "page",
-  component: PageComponent,
 };

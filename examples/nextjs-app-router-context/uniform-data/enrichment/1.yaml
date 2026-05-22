@@ -1,8 +1,0 @@
-id: '1'
-name: Profile
-cap: 100
-values:
-  - id: dev
-    value: Developer
-  - id: mkt
-    value: Marketer

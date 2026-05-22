@@ -1,7 +1,0 @@
-id: techies
-name: Techies
-description: ''
-type: 0
-inputs:
-  - dim: 1_dev
-    sign: +
