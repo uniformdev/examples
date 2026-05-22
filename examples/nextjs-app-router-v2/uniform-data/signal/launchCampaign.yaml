@@ -11,6 +11,6 @@ crit:
         op: '='
         rhs: launch
       queryName: utm_campaign
-dur: t
+dur: p
 description: ''
 str: 50

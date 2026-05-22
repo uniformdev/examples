@@ -7,13 +7,12 @@ import {
 // TODO: Uncomment this to use resolveComponent with cache components support
 // import { resolveRouteFromCode } from "@uniformdev/next-app-router/cache";
 import { resolveComponent } from "@/components/resolveComponent";
-import { CustomUniformClientContext } from "@/components/CustomUniformClientContext";
+import { CustomUniformClientContext } from "@/lib/uniform/CustomUniformClientContext";
 
 export const generateStaticParams = async () => {
   return createUniformStaticParams({
-    // paths: ["/"],
     // Important: for localized sites, you need to add the locales to the paths
-    paths: ["/", "/about", "/news"],
+    paths: ["/en"],
   });
 };
 

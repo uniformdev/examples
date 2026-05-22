@@ -8,9 +8,18 @@ parameters:
     name: Meta Title
     type: text
     typeConfig:
-      required: true
+      required: false
+    localizable: true
 useTeamPermissions: true
 slots:
+  - id: header
+    name: Header
+    maxComponents: 1
+    allowedComponents:
+      - header
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
   - id: content
     name: Content
     allowedComponents:
@@ -19,11 +28,19 @@ slots:
       - $test
       - $localization
     inheritAllowedComponents: false
+  - id: footer
+    name: Footer
+    maxComponents: 1
+    allowedComponents:
+      - footer
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
 slugSettings:
   unique: global
   required: 'yes'
   regularExpression: ''
   regularExpressionMessage: ''
 canBeComposition: true
-created: '2025-03-13T17:06:13.452815+00:00'
-updated: '2025-03-13T17:06:13.452815+00:00'
+created: '2023-06-29T04:47:25.676613+00:00'
+updated: '2024-12-07T00:27:25.002787+00:00'

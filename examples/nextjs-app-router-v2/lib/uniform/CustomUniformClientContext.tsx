@@ -14,7 +14,6 @@ export const CustomUniformClientContext: ClientContextComponent = ({
   manifest,
   disableDevTools,
   defaultConsent,
-  experimentalQuirkSerialization,
   compositionMetadata,
 }) => {
   const router = useRouter();
@@ -38,7 +37,7 @@ export const CustomUniformClientContext: ClientContextComponent = ({
           onAfterMessageReceived: () => {
             router.refresh();
           },
-        })
+        }),
       );
     }
 
@@ -46,7 +45,6 @@ export const CustomUniformClientContext: ClientContextComponent = ({
       manifest,
       plugins,
       defaultConsent,
-      experimental_quirksEnabled: experimentalQuirkSerialization,
     });
   }, compositionMetadata);
 

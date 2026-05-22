@@ -1,7 +1,4 @@
 export const FooterComponent = () => {
-  return (
-    <>
-      <pre>Footer goes here.</pre>
-    </>
-  );
+  // TODO: implement your footer component here
+  return <></>;
 };
