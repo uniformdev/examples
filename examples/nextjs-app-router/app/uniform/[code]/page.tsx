@@ -17,6 +17,8 @@ export const generateStaticParams = async () => {
 };
 
 export default async function UniformPage(props: UniformPageParameters) {
+  // TODO: Uncomment this to use resolveComponent with cache components support
+  // 'use cache';
   const { code } = await props.params;
   return (
     <UniformComposition
