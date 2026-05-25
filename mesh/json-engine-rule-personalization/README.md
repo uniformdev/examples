@@ -23,8 +23,6 @@ Supported operators in the editor: `equal`, `notEqual`, `greaterThanInclusive` (
 
 ## Installation
 
-> Using `npx @uniformdev/cli@latest new-integration` will perform all of these steps for you!
-
 ### Manual installation via CLI
 
 - You will need a Uniform team and project, plus a team-admin API key.
