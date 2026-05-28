@@ -7,8 +7,12 @@ The two approaches sit at opposite ends of a tradeoff:
 
 | Approach | Server-side re-render | Browser reload | Items in client RSC payload | Where pagination state lives |
 | --- | --- | --- | --- | --- |
-| **#1 — Datasource pagination via query strings** | Yes (route segment re-renders, fetch cached) | No (soft nav) | Only the visible window | URL query string |
+| **#1 — Datasource pagination via query strings** | Yes (route segment re-renders, fetch cached) | No (soft nav) | Only the current page | URL query string (`?page=`) |
 | **#2 — Pagination container with `UniformSlot` wrapper** | No (no round trip after first render) | No | All items rendered upfront | Client component `useState` |
+
+Both demos show **page-at-a-time** navigation with Prev / Next buttons; what
+differs is *where* the slicing happens and consequently what's in the page
+payload.
 
 Pick the one that matches your bottleneck — both are demonstrated here as separate
 commits so you can read the diff for each independently.
@@ -50,51 +54,51 @@ Open <http://localhost:3000/en/pagination-datasource> and
 
 **Route:** `/en/pagination-datasource` (composition `01 - Datasource Pagination`).
 **Files:** [`components/paginatedList.tsx`](./components/paginatedList.tsx),
-[`components/loadMore.tsx`](./components/loadMore.tsx).
+[`components/paginationControls.tsx`](./components/paginationControls.tsx).
 
-The page size is a number in the URL (`?limit=5`, `?limit=10`, …). The list
-re-renders **on the server** every time the page size changes, but it does so
-through a soft navigation — no full document reload, and only the components
-inside the new window are ever sent to the client.
+The current page is a number in the URL (`?page=1`, `?page=2`, …). Page size
+is a constant in `paginatedList.tsx` (5). Each click on Prev / Next causes a
+**server-side re-render** of the route segment with the new page, through a
+soft navigation — no full document reload, and only the current page's items
+are ever sent to the client.
 
 How the data actually flows from the URL into the component:
 
-1. The user clicks **Load more**, which calls
-   `router.replace('?limit=10', { scroll: false })` inside `useTransition`.
-   Soft navigation — no page reload, the existing list stays visible while the
-   server works.
-2. The middleware sees the new URL. **Because `limit` is declared as an allowed
-   query string on the project map node**, it survives `buildRoutePath` and gets
-   baked into the route the Route API is asked for. Without this declaration,
-   query params are stripped here and never reach the API or the data resource.
+1. The user clicks **Next**, which calls
+   `router.replace('?page=2', { scroll: false })` inside `useTransition`.
+   Soft navigation — no page reload, the existing page stays visible while
+   the server works.
+2. The middleware sees the new URL. **Because `page` is declared as an allowed
+   query string on the project map node**, it survives `buildRoutePath` and
+   gets baked into the route the Route API is asked for. Without this
+   declaration, query params are stripped here and never reach the API.
 
    > ⚠️ **Project gotcha**: this starter customises the middleware with
    > `rewriteRequestPath`, and that custom function must forward `url.search`
    > as well. See [`middleware.ts`](./middleware.ts) — the path returned to the
    > SDK is `formatPath(url.pathname, locales[0]) + url.search`. If you drop
    > `url.search` here, the SDK never sees the query and Approach #1 silently
-   > falls back to the default `limit`.
-3. The Uniform Route API resolves the route with `limit=10`, returns the
-   edgehanced composition, and exposes `limit` as a *dynamic input* on the
+   > falls back to the default `page`.
+3. The Uniform Route API resolves the route with `page=2`, returns the
+   edgehanced composition, and exposes `page` as a *dynamic input* on the
    response.
 4. `UniformComposition` lands the dynamic inputs on every component as
-   `props.context.dynamicInputs`. `PaginatedList` reads `context.dynamicInputs.limit`,
-   slices its source data to that length, and renders.
+   `props.context.dynamicInputs`. `PaginatedList` reads
+   `context.dynamicInputs.page`, slices its source data to that window, and
+   renders.
 
-Key consequence: **the unrendered tail of the list never crosses the wire**.
-Whether your underlying data has 47 items or 47,000, only the visible window
-is rendered server-side and serialised into the RSC payload. The trade-off is
-the cumulative re-send — each "load more" re-renders the cumulative window
-(`?limit=10` re-renders all 10, not just the new 5) — but the upstream Route
+Key consequence: **only the current page ever crosses the wire**. Whether
+your underlying data has 47 items or 47,000, exactly `PAGE_SIZE` items are
+rendered server-side and serialised into the RSC payload. The trade-off is
+that every Prev/Next click is a server round-trip — but the upstream Route
 fetch is cached per path (which includes the query string), so the marginal
-cost is small.
+cost is small. Each distinct `?page=N` becomes its own cache entry.
 
-What you need on the Uniform side: nothing beyond a project map node with the
-query string declared. The screenshot of the node has `allowedQueryStrings:
-[{ name: "limit", defaultValue: "5" }]`. No data type / data resource is
-required for this minimal demo — the "data source" here is a constant array
-in code that stands in for whatever real source you'd plug into the same
-place.
+What you need on the Uniform side: nothing beyond a project map node with
+the query string declared. The node has `allowedQueryStrings: [{ name: "page",
+defaultValue: "1" }]`. No data type / data resource is required for this
+minimal demo — the "data source" here is a constant array in code that
+stands in for whatever real source you'd plug into the same place.
 
 ### Approach #2 — Pagination container with `UniformSlot` wrapper
 

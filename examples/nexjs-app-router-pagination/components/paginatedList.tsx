@@ -4,16 +4,15 @@ import {
   UniformText,
 } from "@uniformdev/next-app-router/component";
 
-import { LoadMore } from "./loadMore";
+import { PaginationControls } from "./paginationControls";
 
-const DEFAULT_LIMIT = 5;
-const STEP = 5;
+const PAGE_SIZE = 5;
 
 // A stand-in for whatever "data source" you actually have (CMS query, search
 // index, internal API, ...). What matters for the demo is that the *length*
-// of what we render is driven by the `limit` query string — so when `limit`
-// grows, the server-rendered output grows, and when it doesn't, the unrendered
-// tail never crosses the wire.
+// of what we render is driven by the `page` query string — so when `page`
+// changes, the server-rendered output shifts to the new window, and items
+// from other pages never cross the wire.
 const TOTAL_ITEMS = 47;
 const SOURCE_DATA = Array.from({ length: TOTAL_ITEMS }, (_, i) => ({
   id: `item-${i + 1}`,
@@ -30,17 +29,18 @@ export const PaginatedList = ({
   context,
   component,
 }: ComponentProps<PaginatedListProps>) => {
-  // `limit` is declared as an allowed query string on the project map node, so
-  // the middleware forwards it to the Route API, the Route API exposes it as
-  // a dynamic input, and the SDK lands it here on the server. There is no
-  // client-side rendering of list items at all — only the visible window is
-  // ever sent down.
-  const limit = Math.max(
-    1,
-    Number(context.dynamicInputs?.limit) || DEFAULT_LIMIT,
-  );
-  const visible = SOURCE_DATA.slice(0, limit);
-  const hasMore = SOURCE_DATA.length > limit;
+  // `page` is declared as an allowed query string on the project map node,
+  // so middleware forwards it to the Route API, which exposes it as a
+  // dynamic input. There's no client-side rendering of list items at all —
+  // the user sees exactly one page worth of items, and that's all that
+  // crosses the wire.
+  const totalPages = Math.max(1, Math.ceil(SOURCE_DATA.length / PAGE_SIZE));
+  const requested = Number(context.dynamicInputs?.page) || 1;
+  const currentPage = Math.min(Math.max(1, requested), totalPages);
+
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const end = start + PAGE_SIZE;
+  const visible = SOURCE_DATA.slice(start, end);
 
   return (
     <section className="mx-auto w-full max-w-3xl px-6 py-12">
@@ -65,10 +65,11 @@ export const PaginatedList = ({
         ))}
       </ul>
       <p className="mt-4 text-xs text-neutral-500">
-        Showing {visible.length} of {SOURCE_DATA.length}. Each item is rendered
-        server-side; only the visible window is sent to the client.
+        Items {start + 1}–{Math.min(end, SOURCE_DATA.length)} of{" "}
+        {SOURCE_DATA.length}. Only this page is rendered server-side; the rest
+        of the list never crosses the wire.
       </p>
-      {hasMore ? <LoadMore currentLimit={limit} step={STEP} /> : null}
+      <PaginationControls currentPage={currentPage} totalPages={totalPages} />
     </section>
   );
 };
