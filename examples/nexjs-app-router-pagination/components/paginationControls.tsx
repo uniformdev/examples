@@ -1,40 +1,39 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 
 export type PaginationControlsProps = {
+  /** e.g. `/en/pagination-datasource` — the page number is appended. */
+  basePath: string;
+  /** 1-indexed. */
   currentPage: number;
-  totalPages: number;
+  /** True if the current page is the last one (partial / empty slot). */
+  isLastPage: boolean;
 };
 
 export const PaginationControls = ({
+  basePath,
   currentPage,
-  totalPages,
+  isLastPage,
 }: PaginationControlsProps) => {
   const router = useRouter();
-  const searchParams = useSearchParams();
   const [pending, startTransition] = useTransition();
 
   const goTo = (page: number) => {
-    const next = new URLSearchParams(searchParams);
-    next.set("page", String(page));
-
     // Soft navigation:
-    // - router.replace keeps the URL bookmarkable without polluting history
-    //   (one back leaves the page entirely instead of stepping through every
-    //   page click)
+    // - router.replace keeps history clean (one back leaves the page entirely
+    //   instead of stepping through every page click)
     // - { scroll: false } keeps the user where they are
     // - useTransition keeps the current page visible while the server re-
-    //   renders the segment with the new `page` and exposes `pending` for
-    //   an inline loading state
+    //   renders, and exposes `pending` for an inline loading state
     startTransition(() => {
-      router.replace(`?${next.toString()}`, { scroll: false });
+      router.replace(`${basePath}/${page}`, { scroll: false });
     });
   };
 
   const hasPrev = currentPage > 1;
-  const hasNext = currentPage < totalPages;
+  const hasNext = !isLastPage;
 
   return (
     <div className="mt-6 flex items-center justify-between gap-4">
@@ -47,7 +46,7 @@ export const PaginationControls = ({
         ← Previous
       </button>
       <p className="text-xs text-neutral-500">
-        {pending ? "Loading…" : `Page ${currentPage} of ${totalPages}`}
+        {pending ? "Loading…" : `Page ${currentPage}`}
       </p>
       <button
         type="button"

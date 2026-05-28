@@ -5,10 +5,10 @@ with `@uniformdev/next-app-router` (the App Router / RSC SDK).
 
 The two approaches sit at opposite ends of a tradeoff:
 
-| Approach | Server-side re-render | Browser reload | Items in client RSC payload | Where pagination state lives |
-| --- | --- | --- | --- | --- |
-| **#1 — Datasource pagination via query strings** | Yes (route segment re-renders, fetch cached) | No (soft nav) | Only the current page | URL query string (`?page=`) |
-| **#2 — Pagination container with `UniformSlot` wrapper** | No (no round trip after first render) | No | All items rendered upfront | Client component `useState` |
+| Approach | Server-side re-render | Browser reload | Items in client RSC payload | Where pagination state lives | Slicing |
+| --- | --- | --- | --- | --- | --- |
+| **#1 — Datasource pagination via dynamic path segment** | Yes (route segment re-renders, fetch cached) | No (soft nav) | Only the current page | URL path (`/pagination-datasource/<page>`) | In the Uniform data resource (server-side, before any code runs) |
+| **#2 — Pagination container with `UniformSlot` wrapper** | No (no round trip after first render) | No | All items rendered upfront | Client component `useState` | In the React component (client-side, after server sent everything) |
 
 Both demos show **page-at-a-time** navigation with Prev / Next buttons; what
 differs is *where* the slicing happens and consequently what's in the page
@@ -21,7 +21,7 @@ commits so you can read the diff for each independently.
 
 After running the example you'll have two demo pages under the home locale:
 
-- `/en/pagination-datasource` — Composition **#1**, query-string driven, soft navigation.
+- `/en/pagination-datasource/1` — Composition **#1**, real blog entries from a Uniform data resource, soft navigation.
 - `/en/pagination-slot` — Composition **#2**, client-side reveal via `UniformSlot`.
 
 The original starter home page at `/en` is left intact so you can compare a baseline
@@ -50,55 +50,56 @@ Open <http://localhost:3000/en/pagination-datasource> and
 
 ## How each approach works
 
-### Approach #1 — Datasource pagination via query strings
+### Approach #1 — Datasource pagination via dynamic path segment
 
-**Route:** `/en/pagination-datasource` (composition `01 - Datasource Pagination`).
-**Files:** [`components/paginatedList.tsx`](./components/paginatedList.tsx),
-[`components/paginationControls.tsx`](./components/paginationControls.tsx).
+**Route:** `/en/pagination-datasource/<page>` (composition `01 - Datasource Pagination`).
+**Files:**
+- [`components/paginatedList.tsx`](./components/paginatedList.tsx) — server component, renders the data-resource cards.
+- [`components/paginationControls.tsx`](./components/paginationControls.tsx) — client component, Prev / Next soft-nav.
+- [`middleware.ts`](./middleware.ts) — rewrites `/pagination-datasource/<page>` to `/pagination-datasource/<offset>` before the SDK sees it.
+- [`lib/paginationDatasource.ts`](./lib/paginationDatasource.ts) — `PAGE_SIZE` (default 5) and the page↔offset helpers, shared between middleware and component so they can't drift.
 
-The current page is a number in the URL (`?page=1`, `?page=2`, …). Page size
-is a constant in `paginatedList.tsx` (5). Each click on Prev / Next causes a
-**server-side re-render** of the route segment with the new page, through a
-soft navigation — no full document reload, and only the current page's items
-are ever sent to the client.
+All the actual content comes from Uniform. The composition has a `paginatedList` whose `cards` slot
+holds a `$loop` bound to a `Query Blog Entry Content` data resource (`queryBlogEntry` data type),
+with the `offset` variable bound to the project map node's `:offset` dynamic input. Page size is
+the data resource's `limit` (5). **The code does not contain any sample data, mapping, or slicing —
+the only computation in TypeScript is `(page - 1) * PAGE_SIZE`.**
 
-How the data actually flows from the URL into the component:
+How the data actually flows from the URL into the rendered cards:
 
-1. The user clicks **Next**, which calls
-   `router.replace('?page=2', { scroll: false })` inside `useTransition`.
-   Soft navigation — no page reload, the existing page stays visible while
-   the server works.
-2. The middleware sees the new URL. **Because `page` is declared as an allowed
-   query string on the project map node**, it survives `buildRoutePath` and
-   gets baked into the route the Route API is asked for. Without this
-   declaration, query params are stripped here and never reach the API.
+1. Visitor browses to `/en/pagination-datasource/3` (or clicks Next from page 2). The browser URL
+   uses **page numbers** because that's what humans want to see and share.
+2. The middleware's `rewriteRequestPath` transforms the path: `page = 3` → `offset = (3-1) * 5 = 10`,
+   producing `/en/pagination-datasource/10`. This rewrite is what Uniform sees — the browser URL
+   doesn't change.
+3. The project map node `/:locale/pagination-datasource/:offset` matches, and Uniform exposes
+   `offset = "10"` as a dynamic input. The `queryBlogEntry` data resource's `offset` variable is
+   bound to that dynamic input, and `limit` is bound to `5`. The Route API resolves the data
+   resource against the underlying blog entry source and returns exactly the 5-item window.
+4. The `$loop` expands its template card per entry server-side. `paginatedList` receives
+   `slots.cards` already containing 5 rendered card components with title/description bound to
+   blog fields — nothing left to do but `<UniformSlot slot={slots.cards} />`.
+5. `paginatedList` also reads `context.dynamicInputs.offset` to compute the current page back
+   (`offset / PAGE_SIZE + 1`) and hands it to `PaginationControls`. Next is disabled when the
+   returned slot has fewer than `PAGE_SIZE` items — the partial page is unambiguously the last one.
 
-   > ⚠️ **Project gotcha**: this starter customises the middleware with
-   > `rewriteRequestPath`, and that custom function must forward `url.search`
-   > as well. See [`middleware.ts`](./middleware.ts) — the path returned to the
-   > SDK is `formatPath(url.pathname, locales[0]) + url.search`. If you drop
-   > `url.search` here, the SDK never sees the query and Approach #1 silently
-   > falls back to the default `page`.
-3. The Uniform Route API resolves the route with `page=2`, returns the
-   edgehanced composition, and exposes `page` as a *dynamic input* on the
-   response.
-4. `UniformComposition` lands the dynamic inputs on every component as
-   `props.context.dynamicInputs`. `PaginatedList` reads
-   `context.dynamicInputs.page`, slices its source data to that window, and
-   renders.
+Key consequence: **only the current page ever crosses the wire, and the code knows nothing about
+the entries**. The data resource handles all slicing on the Uniform side; the React component is
+content-agnostic. The trade-off is that every Prev/Next click is a server round-trip — but the
+upstream Route fetch is cached per resolved path (which includes the offset), so distinct pages
+each become their own cache entry.
 
-Key consequence: **only the current page ever crosses the wire**. Whether
-your underlying data has 47 items or 47,000, exactly `PAGE_SIZE` items are
-rendered server-side and serialised into the RSC payload. The trade-off is
-that every Prev/Next click is a server round-trip — but the upstream Route
-fetch is cached per path (which includes the query string), so the marginal
-cost is small. Each distinct `?page=N` becomes its own cache entry.
+What you need on the Uniform side:
 
-What you need on the Uniform side: nothing beyond a project map node with
-the query string declared. The node has `allowedQueryStrings: [{ name: "page",
-defaultValue: "1" }]`. No data type / data resource is required for this
-minimal demo — the "data source" here is a constant array in code that
-stands in for whatever real source you'd plug into the same place.
+- A `paginatedList` component definition with a `cards` slot.
+- A dynamic project map node `/:locale/pagination-datasource/:offset` attached to the composition.
+- The composition's data resource has `offset = ${offset}` and `limit = 5` in its variables (so
+  the dynamic input drives the slice).
+
+> ⚠️ **Project gotcha**: this starter customises the middleware with `rewriteRequestPath`, so the
+> page→offset translation has to live in *that* function — adding a generic Next.js rewrite in
+> `next.config.ts` wouldn't run before the Uniform SDK sees the path. See
+> [`middleware.ts`](./middleware.ts).
 
 ### Approach #2 — Pagination container with `UniformSlot` wrapper
 

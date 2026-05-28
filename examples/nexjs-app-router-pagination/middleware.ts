@@ -1,17 +1,21 @@
 import { uniformMiddleware } from "@uniformdev/next-app-router/middleware";
 
+import { rewritePaginationDatasourcePath } from "./lib/paginationDatasource";
+
 // Important: the list of locales can be retrieved from Uniform API for multi-lingual solutions
 const locales = ["en"]; // example locales, adjust as needed
 
 export default uniformMiddleware({
-  // since the default locale in the starter is 'en', in order for the app to respond on locale-less path, we add this rewrite
-  // IMPORTANT: include url.search so query strings declared on the project map
-  // node (see /en/pagination-datasource) survive into the Route API call and
-  // come back as `context.dynamicInputs`. Without this, the SDK sees only the
-  // pathname and the query is silently stripped.
-  rewriteRequestPath: async ({ url }) => ({
-    path: `${formatPath(url.pathname, locales[0])}${url.search}`,
-  }),
+  // The visitor sees `/en/pagination-datasource/<page>`, but Uniform's project
+  // map node is `:offset`-based (the data resource binds its offset variable
+  // to that segment). Translate `page` → `offset` here so the SDK requests the
+  // right slice. `url.search` is forwarded too, in case other parts of the app
+  // use declared query strings.
+  rewriteRequestPath: async ({ url }) => {
+    const localised = formatPath(url.pathname, locales[0]);
+    const rewritten = rewritePaginationDatasourcePath(localised);
+    return { path: `${rewritten}${url.search}` };
+  },
   // Default SDK rewrite is /uniform/playground/<code>; this app uses /playground/[code].
   // Canvas still hits /uniform/playground; only the internal rewrite target changes.
   rewriteDestinationPath: async ({ code, source }) =>
