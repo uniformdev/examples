@@ -6,7 +6,7 @@ import {
 } from "@uniformdev/next-app-router/component";
 
 import { offsetToPage, PAGE_SIZE } from "../lib/paginationDatasource";
-import { PaginationControls } from "./paginationControls";
+import { RouterPagination } from "./routerPagination";
 
 export type PaginatedListProps = {
   heading?: ComponentParameter<string>;
@@ -42,7 +42,7 @@ export const PaginatedList = ({
         <UniformSlot slot={slots.cards} />
       </div>
 
-      <PaginationControls
+      <RouterPagination
         basePath={`/${locale}/pagination-datasource`}
         currentPage={currentPage}
         // We don't know the total page count from the slot alone, but a partial

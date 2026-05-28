@@ -48,14 +48,21 @@ composition with the pagination demos.
 Open <http://localhost:3000/en/pagination-datasource> and
 <http://localhost:3000/en/pagination-slot> to see the two approaches side by side.
 
+> The pagination demos share a single set of Prev / Next controls
+> ([`components/paginationControls.tsx`](./components/paginationControls.tsx)).
+> Each approach wires those controls to a different state mechanism
+> (router navigation vs. `useState`) but the rendered UI is identical.
+
 ## How each approach works
 
 ### Approach #1 — Datasource pagination via dynamic path segment
 
 **Route:** `/en/pagination-datasource/<page>` (composition `01 - Datasource Pagination`).
+A bare `/en/pagination-datasource` (no page number) is treated as page 1.
 **Files:**
 - [`components/paginatedList.tsx`](./components/paginatedList.tsx) — server component, renders the data-resource cards.
-- [`components/paginationControls.tsx`](./components/paginationControls.tsx) — client component, Prev / Next soft-nav.
+- [`components/routerPagination.tsx`](./components/routerPagination.tsx) — client component, wires `PaginationControls` to a router soft navigation.
+- [`components/paginationControls.tsx`](./components/paginationControls.tsx) — generic Prev / Next UI, also used by Approach #2.
 - [`middleware.ts`](./middleware.ts) — rewrites `/pagination-datasource/<page>` to `/pagination-datasource/<offset>` before the SDK sees it.
 - [`lib/paginationDatasource.ts`](./lib/paginationDatasource.ts) — `PAGE_SIZE` (default 5) and the page↔offset helpers, shared between middleware and component so they can't drift.
 
@@ -68,7 +75,9 @@ the only computation in TypeScript is `(page - 1) * PAGE_SIZE`.**
 How the data actually flows from the URL into the rendered cards:
 
 1. Visitor browses to `/en/pagination-datasource/3` (or clicks Next from page 2). The browser URL
-   uses **page numbers** because that's what humans want to see and share.
+   uses **page numbers** because that's what humans want to see and share. A bare path
+   `/en/pagination-datasource` (or `…/`) is treated as page 1 — the middleware fills in the
+   missing offset rather than letting Uniform 404.
 2. The middleware's `rewriteRequestPath` transforms the path: `page = 3` → `offset = (3-1) * 5 = 10`,
    producing `/en/pagination-datasource/10`. This rewrite is what Uniform sees — the browser URL
    doesn't change.
@@ -128,12 +137,14 @@ const visibleItems = allItems.slice(offset + start, offset + start + pageSize);
 ```
 
 The composition simply authors `paginationContainer` with 11 `card` children
-in its `cards` slot. The container's `defaultLimit` (page size),
-`defaultOffset`, and `loadMoreText` (Next-button label) parameters drive the
-windowing. Paging is **purely a client state change** — no server round-trip,
-instant page changes, no URL change. The user sees exactly one page at a time;
-clicking Prev/Next moves to the adjacent page (not cumulative — old items
-disappear when you move forward).
+in its `cards` slot. The container's `defaultLimit` (page size) and
+`defaultOffset` parameters drive the windowing. Prev / Next come from the
+shared [`PaginationControls`](./components/paginationControls.tsx) — same
+component the datasource demo uses — wired here to a `useState` page index
+instead of a router. Paging is **purely a client state change** — no server
+round-trip, instant page changes, no URL change. The user sees exactly one
+page at a time; clicking Prev / Next moves to the adjacent page (not
+cumulative — old items disappear when you move forward).
 
 **The tradeoff.** Because `PaginationContainer` is a client component
 (it needs `useState`), every element passed to it as part of the `slots` prop

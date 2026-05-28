@@ -14,32 +14,51 @@
 
 export const PAGE_SIZE = 5;
 
-const PATH_MARKER = "/pagination-datasource/";
+const PATH_BASE = "/pagination-datasource";
 
 /**
- * If `pathname` is `/{locale}/pagination-datasource/{page}`, return the same
- * path with `{page}` replaced by the corresponding offset. Otherwise return
- * the path unchanged. The trailing portion after the page number (if any) is
- * preserved.
+ * Rewrite the visitor-facing path into the offset-based path Uniform expects.
+ *
+ * Handles three shapes:
+ *   - `/{locale}/pagination-datasource`        → `/{locale}/pagination-datasource/0`
+ *   - `/{locale}/pagination-datasource/`       → `/{locale}/pagination-datasource/0`
+ *   - `/{locale}/pagination-datasource/{page}` → `/{locale}/pagination-datasource/{offset}`
+ *
+ * Any unrelated path is returned unchanged.
  */
 export const rewritePaginationDatasourcePath = (pathname: string): string => {
-  const markerIdx = pathname.indexOf(PATH_MARKER);
-  if (markerIdx === -1) return pathname;
+  const baseIdx = pathname.indexOf(PATH_BASE);
+  if (baseIdx === -1) return pathname;
 
-  const head = pathname.slice(0, markerIdx + PATH_MARKER.length);
-  const tail = pathname.slice(markerIdx + PATH_MARKER.length);
-  const match = tail.match(/^(\d+)(\/.*)?$/);
+  // Ensure the marker is followed by '/' or end-of-string so we don't match
+  // unrelated paths like "/pagination-datasource-other".
+  const afterBaseIdx = baseIdx + PATH_BASE.length;
+  const charAfter = pathname[afterBaseIdx];
+  if (charAfter !== undefined && charAfter !== "/") return pathname;
+
+  const head = pathname.slice(0, afterBaseIdx);
+  const tail = pathname.slice(afterBaseIdx); // includes leading "/" if present
+
+  // No page in URL: treat as page 1 / offset 0 so the Route API matches the
+  // `:offset` project map node instead of 404-ing.
+  if (tail === "" || tail === "/") {
+    return `${head}/0`;
+  }
+
+  const match = tail.match(/^\/(\d+)(\/.*)?$/);
   if (!match) return pathname;
 
   const page = parseInt(match[1]!, 10);
   const rest = match[2] ?? "";
   const offset = Math.max(0, (page - 1) * PAGE_SIZE);
-  return `${head}${offset}${rest}`;
+  return `${head}/${offset}${rest}`;
 };
 
 /**
  * Convert an offset that arrived on the server (via Uniform dynamic inputs)
  * back into the 1-indexed page number the visitor would have typed.
  */
-export const offsetToPage = (offset: number): number =>
-  Math.max(1, Math.floor(offset / PAGE_SIZE) + 1);
+export const offsetToPage = (offset: number): number => {
+  if (!Number.isFinite(offset) || offset < 0) return 1;
+  return Math.floor(offset / PAGE_SIZE) + 1;
+};
