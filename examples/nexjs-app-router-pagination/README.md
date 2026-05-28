@@ -92,6 +92,11 @@ How the data actually flows from the URL into the rendered cards:
    (`offset / PAGE_SIZE + 1`) and hands it to `PaginationControls`. Next is disabled when the
    returned slot has fewer than `PAGE_SIZE` items — the partial page is unambiguously the last one.
 
+The button labels themselves come from the composition. `paginatedList` exposes
+`previousLabel` and `nextLabel` text parameters that are rendered through
+`<UniformText>`, so authors can edit them inline in the Canvas editor (or change
+them per locale) without touching code.
+
 Key consequence: **only the current page ever crosses the wire, and the code knows nothing about
 the entries**. The data resource handles all slicing on the Uniform side; the React component is
 content-agnostic. The trade-off is that every Prev/Next click is a server round-trip — but the
@@ -100,7 +105,8 @@ each become their own cache entry.
 
 What you need on the Uniform side:
 
-- A `paginatedList` component definition with a `cards` slot.
+- A `paginatedList` component definition with a `cards` slot and four parameters: `heading`,
+  `previousLabel`, `nextLabel` (text, localizable).
 - A dynamic project map node `/:locale/pagination-datasource/:offset` attached to the composition.
 - The composition's data resource has `offset = ${offset}` and `limit = 5` in its variables (so
   the dynamic input drives the slice).
@@ -136,19 +142,23 @@ const visibleItems = allItems.slice(offset + start, offset + start + pageSize);
 // …render visibleItems + Prev/Next buttons driven by a useState page index.
 ```
 
-The composition simply authors `paginationContainer` with 11 `card` children
-in its `cards` slot. The container's `defaultLimit` (page size) and
-`defaultOffset` parameters drive the windowing. Prev / Next come from the
-shared [`PaginationControls`](./components/paginationControls.tsx) — same
-component the datasource demo uses — wired here to a `useState` page index
-instead of a router. Paging is **purely a client state change** — no server
-round-trip, instant page changes, no URL change. The user sees exactly one
-page at a time; clicking Prev / Next moves to the adjacent page (not
-cumulative — old items disappear when you move forward).
+In the composition, `paginationContainer.cards` is filled by a `$loop` bound to
+the **same `Query Blog Entry Content` data resource as Approach #1** — but here
+the resource fetches a bigger window (50 items, no offset) and the container
+slices them client-side. The container's parameters are `defaultLimit` (page
+size), `defaultOffset`, plus `previousLabel` / `nextLabel` — the same label
+parameters Approach #1 uses, so authors edit them the same way. Prev / Next
+come from the shared
+[`PaginationControls`](./components/paginationControls.tsx) — same component
+the datasource demo uses — wired here to a `useState` page index instead of a
+router. Paging is **purely a client state change** — no server round-trip,
+instant page changes, no URL change. The user sees exactly one page at a
+time; clicking Prev / Next moves to the adjacent page (not cumulative — old
+items disappear when you move forward).
 
 **The tradeoff.** Because `PaginationContainer` is a client component
 (it needs `useState`), every element passed to it as part of the `slots` prop
-gets serialized into the RSC payload. That means **all 11 cards are rendered
+gets serialized into the RSC payload. That means **all 50 cards are rendered
 server-side and shipped to the browser on first load**, even though only one
 page is visible. Paging here is a *visual* pagination, not a payload reduction.
 You're trading payload size for zero-latency page changes.

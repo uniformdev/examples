@@ -4,6 +4,7 @@ import {
   ComponentParameter,
   ComponentProps,
   getUniformSlot,
+  UniformText,
 } from "@uniformdev/next-app-router/component";
 import { useState } from "react";
 
@@ -16,16 +17,15 @@ export type PaginationContainerProps = {
   defaultOffset?: ComponentParameter<number>;
   /** Page size — how many items are visible at a time. */
   defaultLimit?: ComponentParameter<number>;
-  /** Kept on the component definition for backwards compatibility, unused in page mode. */
-  step?: ComponentParameter<number>;
-  /** Kept on the component definition for backwards compatibility, unused since the controls use fixed labels. */
-  loadMoreText?: ComponentParameter<string>;
+  previousLabel?: ComponentParameter<string>;
+  nextLabel?: ComponentParameter<string>;
 };
 export type PaginationContainerSlots = "cards";
 
 export const PaginationContainer = ({
-  parameters: { defaultOffset, defaultLimit },
+  parameters: { defaultOffset, defaultLimit, previousLabel, nextLabel },
   slots,
+  component,
 }: ComponentProps<PaginationContainerProps, PaginationContainerSlots>) => {
   // Page index (0-based internally), held in client state. Prev / Next change
   // the page; the user only ever sees one page at a time.
@@ -58,6 +58,30 @@ export const PaginationContainer = ({
         hasNext={clampedPage < totalPages - 1}
         onPrev={() => setPage((p) => Math.max(0, p - 1))}
         onNext={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+        previousLabel={
+          previousLabel ? (
+            <UniformText
+              component={component}
+              parameter={previousLabel}
+              placeholder="← Previous"
+              as="span"
+            />
+          ) : (
+            "← Previous"
+          )
+        }
+        nextLabel={
+          nextLabel ? (
+            <UniformText
+              component={component}
+              parameter={nextLabel}
+              placeholder="Next →"
+              as="span"
+            />
+          ) : (
+            "Next →"
+          )
+        }
       >
         Page {clampedPage + 1} of {totalPages}
       </PaginationControls>

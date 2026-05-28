@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useTransition } from "react";
+import { ReactNode, useTransition } from "react";
 
 import { PaginationControls } from "./paginationControls";
 
@@ -20,12 +20,16 @@ export type RouterPaginationProps = {
   currentPage: number;
   /** True if the current page is the last one. */
   isLastPage: boolean;
+  previousLabel: ReactNode;
+  nextLabel: ReactNode;
 };
 
 export const RouterPagination = ({
   basePath,
   currentPage,
   isLastPage,
+  previousLabel,
+  nextLabel,
 }: RouterPaginationProps) => {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
@@ -47,6 +51,8 @@ export const RouterPagination = ({
       onPrev={() => goTo(currentPage - 1)}
       onNext={() => goTo(currentPage + 1)}
       pending={pending}
+      previousLabel={previousLabel}
+      nextLabel={nextLabel}
     >
       Page {currentPage}
     </PaginationControls>
