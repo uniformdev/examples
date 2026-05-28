@@ -5,8 +5,12 @@ const locales = ["en"]; // example locales, adjust as needed
 
 export default uniformMiddleware({
   // since the default locale in the starter is 'en', in order for the app to respond on locale-less path, we add this rewrite
+  // IMPORTANT: include url.search so query strings declared on the project map
+  // node (see /en/pagination-datasource) survive into the Route API call and
+  // come back as `context.dynamicInputs`. Without this, the SDK sees only the
+  // pathname and the query is silently stripped.
   rewriteRequestPath: async ({ url }) => ({
-    path: formatPath(url.pathname, locales[0]),
+    path: `${formatPath(url.pathname, locales[0])}${url.search}`,
   }),
   // Default SDK rewrite is /uniform/playground/<code>; this app uses /playground/[code].
   // Canvas still hits /uniform/playground; only the internal rewrite target changes.
