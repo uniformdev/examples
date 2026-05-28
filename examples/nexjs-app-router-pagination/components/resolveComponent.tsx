@@ -9,6 +9,8 @@ import { Page } from "./page";
 import { HeaderComponent } from "./header";
 import { FooterComponent } from "./footer";
 import { PaginatedList } from "./paginatedList";
+import { PaginationContainer } from "./paginationContainer";
+import { Card } from "./card";
 
 const componentMap: Record<string, ResolveComponentResult["component"]> = {
   page: Page,
@@ -16,6 +18,8 @@ const componentMap: Record<string, ResolveComponentResult["component"]> = {
   header: HeaderComponent,
   footer: FooterComponent,
   paginatedList: PaginatedList,
+  paginationContainer: PaginationContainer,
+  card: Card,
 };
 
 const DefaultNotFoundComponent = ({ type }: ComponentProps) => {

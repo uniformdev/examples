@@ -89,6 +89,48 @@ required for this minimal demo — the "data source" here is a constant array
 in code that stands in for whatever real source you'd plug into the same
 place.
 
+### Approach #2 — Pagination container with `UniformSlot` wrapper
+
+**Route:** `/en/pagination-slot` (composition `02 - Pagination Container`).
+**Files:** [`components/paginationContainer.tsx`](./components/paginationContainer.tsx),
+[`components/card.tsx`](./components/card.tsx).
+
+This is the App Router port of the well-known pages-router pattern where a
+`PaginationContainer` wraps a slot, holds the current page in `useState`, and
+slices the slot's children to reveal more on each click. In the pages-router
+SDK (`@uniformdev/canvas-react`) the slice happens inside
+`<UniformSlot wrapperComponent={({ items }) => …} />`. The App Router SDK
+(`@uniformdev/next-app-router`) doesn't have an `items`-style wrapper prop —
+its `UniformSlot` is per-child only. The clean equivalent is to call
+[`getUniformSlot({ slot })`](https://github.com/uniformdev/uniform/blob/main/packages/next-app-router/src/components/getUniformSlot.ts)
+directly — it returns the items as an array of React nodes that you slice and
+render however you want. That's what `paginationContainer.tsx` does.
+
+```tsx
+"use client";
+
+const allItems = getUniformSlot({ slot: slots.cards }) ?? [];
+const visibleItems = allItems.slice(offset, sliceEnd);
+// …render visibleItems + a button that bumps a useState counter.
+```
+
+The composition simply authors `paginationContainer` with 11 `card` children
+in its `cards` slot. The container's `defaultLimit`, `step`, `defaultOffset`,
+and `loadMoreText` parameters drive the windowing. Load more is **purely a
+client state change** — no server round-trip, instant reveal, no URL change.
+
+**The tradeoff.** Because `PaginationContainer` is a client component
+(it needs `useState`), every element passed to it as part of the `slots` prop
+gets serialized into the RSC payload. That means **all 11 cards are rendered
+server-side and shipped to the browser on first load**, regardless of how many
+are visible. Slicing here is a *visual* pagination, not a payload reduction.
+You're trading payload size for zero-latency Load more.
+
+When to prefer #2: small bounded slots (a handful to maybe a few dozen items)
+where the simplicity of pure-client state is worth it. When to prefer #1:
+the underlying list is large enough that shipping the unrendered tail is
+actually expensive.
+
 
 
 ## Important: Uniform Preview support
