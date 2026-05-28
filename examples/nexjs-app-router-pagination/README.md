@@ -46,10 +46,50 @@ Open <http://localhost:3000/en/pagination-datasource> and
 
 ## How each approach works
 
-The detailed write-up for each approach is added in its own commit:
+### Approach #1 — Datasource pagination via query strings
 
-- Approach #1 → see the section below once that commit is in your tree.
-- Approach #2 → likewise.
+**Route:** `/en/pagination-datasource` (composition `01 - Datasource Pagination`).
+**Files:** [`components/paginatedList.tsx`](./components/paginatedList.tsx),
+[`components/loadMore.tsx`](./components/loadMore.tsx).
+
+The page size is a number in the URL (`?limit=5`, `?limit=10`, …). The list
+re-renders **on the server** every time the page size changes, but it does so
+through a soft navigation — no full document reload, and only the components
+inside the new window are ever sent to the client.
+
+How the data actually flows from the URL into the component:
+
+1. The user clicks **Load more**, which calls
+   `router.replace('?limit=10', { scroll: false })` inside `useTransition`.
+   Soft navigation — no page reload, the existing list stays visible while the
+   server works.
+2. The middleware sees the new URL. **Because `limit` is declared as an allowed
+   query string on the project map node**, it survives `buildRoutePath` and gets
+   baked into the route the Route API is asked for. Without this declaration,
+   query params are stripped here and never reach the API or the data resource.
+3. The Uniform Route API resolves the route with `limit=10`, returns the
+   edgehanced composition, and exposes `limit` as a *dynamic input* on the
+   response.
+4. `UniformComposition` lands the dynamic inputs on every component as
+   `props.context.dynamicInputs`. `PaginatedList` reads `context.dynamicInputs.limit`,
+   slices its source data to that length, and renders.
+
+Key consequence: **the unrendered tail of the list never crosses the wire**.
+Whether your underlying data has 47 items or 47,000, only the visible window
+is rendered server-side and serialised into the RSC payload. The trade-off is
+the cumulative re-send — each "load more" re-renders the cumulative window
+(`?limit=10` re-renders all 10, not just the new 5) — but the upstream Route
+fetch is cached per path (which includes the query string), so the marginal
+cost is small.
+
+What you need on the Uniform side: nothing beyond a project map node with the
+query string declared. The screenshot of the node has `allowedQueryStrings:
+[{ name: "limit", defaultValue: "5" }]`. No data type / data resource is
+required for this minimal demo — the "data source" here is a constant array
+in code that stands in for whatever real source you'd plug into the same
+place.
+
+
 
 ## Important: Uniform Preview support
 

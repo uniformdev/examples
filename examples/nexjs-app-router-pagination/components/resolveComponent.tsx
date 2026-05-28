@@ -8,12 +8,14 @@ import { HeroComponent } from "./hero";
 import { Page } from "./page";
 import { HeaderComponent } from "./header";
 import { FooterComponent } from "./footer";
+import { PaginatedList } from "./paginatedList";
 
 const componentMap: Record<string, ResolveComponentResult["component"]> = {
   page: Page,
   hero: HeroComponent,
   header: HeaderComponent,
   footer: FooterComponent,
+  paginatedList: PaginatedList,
 };
 
 const DefaultNotFoundComponent = ({ type }: ComponentProps) => {
