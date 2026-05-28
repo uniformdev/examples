@@ -29,17 +29,40 @@ composition with the pagination demos.
 
 ## Getting started
 
-1. Set Uniform env vars in `.env` (see `.env.example`). The two demo compositions are
-   already pushed to the connected Uniform project.
+1. **Prepare a Uniform project.** An empty project works — `uniform:push` will
+   create everything this example needs.
 
-1. Install dependencies and pull the latest content state into git:
+1. **Set your Uniform env vars** in `.env` — see `.env.example`. You need at
+   least `UNIFORM_API_KEY`, `UNIFORM_PROJECT_ID`, and the matching
+   `NEXT_PUBLIC_UNIFORM_PROJECT_ID`.
+
+1. **Install dependencies.**
 
    ```bash
    npm install
-   npm run uniform:pull
    ```
 
-1. Run the dev server:
+1. **Push the bundled content into your project.** The committed
+   `uniform-data/` folder is the source of truth — component definitions,
+   compositions, project map nodes, the `blogEntry` content type, the blog
+   data resources, and 10 demo entries. One command uploads all of it:
+
+   ```bash
+   npm run uniform:push
+   ```
+
+   If your project already has any of these entities, the CLI will print a
+   summary and you can resolve overlaps in the Uniform UI before running it
+   again.
+
+1. **Publish the context manifest.** Required for personalization /
+   test / data-resource resolution at the edge.
+
+   ```bash
+   npm run uniform:manifest
+   ```
+
+1. **Run the dev server.**
 
    ```bash
    npm run dev
@@ -47,6 +70,10 @@ composition with the pagination demos.
 
 Open <http://localhost:3000/en/pagination-datasource> and
 <http://localhost:3000/en/pagination-slot> to see the two approaches side by side.
+
+> **Editing content in Uniform later?** Pull the changes back into git with
+> `npm run uniform:pull` and commit the diff so the example stays
+> reproducible.
 
 > The pagination demos share a single set of Prev / Next controls
 > ([`components/paginationControls.tsx`](./components/paginationControls.tsx)).
