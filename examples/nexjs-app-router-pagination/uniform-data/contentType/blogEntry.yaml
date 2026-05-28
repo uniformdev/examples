@@ -1,0 +1,27 @@
+id: blogEntry
+name: Blog Entry
+created: '2026-05-28T04:17:36.633472+00:00'
+updated: '2026-05-28T04:17:36.633472+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    guidance: Short blog post title.
+    typeConfig:
+      required: true
+    localizable: false
+  - id: shortDescription
+    name: Short Description
+    type: text
+    guidance: 1-2 sentence summary for demo purposes.
+    typeConfig:
+      required: true
+    localizable: false
+entryName: title
+description: Structured content for demo blog posts used in pagination examples.
+icon: file-document
+type: contentType
+permissions: []
+previewConfigurations: []

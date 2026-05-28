@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: paginationContainer
+name: Pagination Container
+icon: screen
+parameters:
+  - id: defaultOffset
+    name: Default Offset
+    type: number
+    guidance: Index to start rendering items from. Defaults to 0.
+  - id: defaultLimit
+    name: Default Limit
+    type: number
+    guidance: Number of items shown initially. Defaults to 3.
+  - id: previousLabel
+    name: Previous Label
+    type: text
+    guidance: Label for the Previous (Prev page) button.
+    localizable: true
+  - id: nextLabel
+    name: Next Label
+    type: text
+    guidance: Label for the Next (Next page) button.
+    localizable: true
+description: >-
+  Client-side paged wrapper. Renders a fixed-size window from its `cards` slot
+  with Prev / Next controls.
+useTeamPermissions: true
+slots:
+  - id: cards
+    name: Cards
+    allowedComponents:
+      - card
+      - $loop
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: nextLabel
+canBeComposition: false
+created: '2026-05-28T04:11:50.06089+00:00'
+updated: '2026-05-28T15:06:11.980136+00:00'

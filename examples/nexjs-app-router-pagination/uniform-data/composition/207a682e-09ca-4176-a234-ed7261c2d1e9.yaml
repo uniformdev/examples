@@ -1,0 +1,76 @@
+composition:
+  _name: 02 - Pagination Container
+  _id: 207a682e-09ca-4176-a234-ed7261c2d1e9
+  _slug: datasource-pagination-02
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      locales:
+        en: Pagination Container
+  slots:
+    footer:
+      - _id: e5abd671-47eb-42fa-a406-0060d8db4e2b
+        type: footer
+    header:
+      - _id: 49cd6ed6-db80-4d2c-b373-541c26f0ec00
+        type: header
+    content:
+      - _id: 0aeb1b95-57dc-444a-b36b-da3eab327e05
+        type: paginationContainer
+        slots:
+          cards:
+            - _id: 6f2f285a-1bac-4535-89bd-de59cc33aeb2
+              type: $loop
+              slots:
+                body:
+                  - _id: 4798aea6-25f9-42a5-a901-7146c575455b
+                    type: card
+                    parameters:
+                      title:
+                        type: text
+                        locales:
+                          en: >-
+                            ${#jptr:/Query Blog Entry Content entries Loop
+                            Item/entry/fields/title/value}
+                      description:
+                        type: text
+                        locales:
+                          en: >-
+                            ${#jptr:/Query Blog Entry Content entries Loop
+                            Item/entry/fields/shortDescription/value}
+              _dataResources:
+                Query Blog Entry Content entries Loop Item:
+                  type: sys-reserved-loop
+                  variables:
+                    connectedData: '#jptr:/Query Blog Entry Content/entries:fa=c'
+        parameters:
+          nextLabel:
+            type: text
+            locales:
+              en: Next →
+          defaultLimit:
+            type: number
+            value: 3
+          defaultOffset:
+            type: number
+            value: 0
+          previousLabel:
+            type: text
+            locales:
+              en: ← Previous
+  _dataResources:
+    Query Blog Entry Content:
+      type: queryBlogEntry
+      variables:
+        limit: '50'
+        locale: ${locale}
+        search: ''
+        filters: '{"type[eq]":"blogEntry"}'
+        orderBy: fields.title_ASC
+        contentTypes: blogEntry
+  _locales:
+    - en
+created: '2026-05-28T04:16:34.780027+00:00'
+modified: '2026-05-28T15:12:55.619834+00:00'
+pattern: false

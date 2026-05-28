@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: paginatedList
+name: Paginated List
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Optional heading shown above the list
+    localizable: true
+  - id: previousLabel
+    name: Previous Label
+    type: text
+    guidance: Label for the Previous (Prev page) button.
+    localizable: true
+  - id: nextLabel
+    name: Next Label
+    type: text
+    guidance: Label for the Next (Next page) button.
+    localizable: true
+description: >-
+  Server-rendered list whose page comes from the `:offset` dynamic project map
+  segment. Renders a `cards` slot bound to a content data resource.
+useTeamPermissions: true
+slots:
+  - id: cards
+    name: Cards
+    allowedComponents:
+      - card
+      - $loop
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: heading
+canBeComposition: false
+created: '2026-05-28T04:11:46.439065+00:00'
+updated: '2026-05-28T15:21:06.831231+00:00'
