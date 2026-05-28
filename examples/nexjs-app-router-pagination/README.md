@@ -67,6 +67,13 @@ How the data actually flows from the URL into the component:
    query string on the project map node**, it survives `buildRoutePath` and gets
    baked into the route the Route API is asked for. Without this declaration,
    query params are stripped here and never reach the API or the data resource.
+
+   > ⚠️ **Project gotcha**: this starter customises the middleware with
+   > `rewriteRequestPath`, and that custom function must forward `url.search`
+   > as well. See [`middleware.ts`](./middleware.ts) — the path returned to the
+   > SDK is `formatPath(url.pathname, locales[0]) + url.search`. If you drop
+   > `url.search` here, the SDK never sees the query and Approach #1 silently
+   > falls back to the default `limit`.
 3. The Uniform Route API resolves the route with `limit=10`, returns the
    edgehanced composition, and exposes `limit` as a *dynamic input* on the
    response.
@@ -97,7 +104,7 @@ place.
 
 This is the App Router port of the well-known pages-router pattern where a
 `PaginationContainer` wraps a slot, holds the current page in `useState`, and
-slices the slot's children to reveal more on each click. In the pages-router
+slices the slot's children to show one page at a time. In the pages-router
 SDK (`@uniformdev/canvas-react`) the slice happens inside
 `<UniformSlot wrapperComponent={({ items }) => …} />`. The App Router SDK
 (`@uniformdev/next-app-router`) doesn't have an `items`-style wrapper prop —
@@ -110,26 +117,31 @@ render however you want. That's what `paginationContainer.tsx` does.
 "use client";
 
 const allItems = getUniformSlot({ slot: slots.cards }) ?? [];
-const visibleItems = allItems.slice(offset, sliceEnd);
-// …render visibleItems + a button that bumps a useState counter.
+const start = clampedPage * pageSize;
+const visibleItems = allItems.slice(offset + start, offset + start + pageSize);
+// …render visibleItems + Prev/Next buttons driven by a useState page index.
 ```
 
 The composition simply authors `paginationContainer` with 11 `card` children
-in its `cards` slot. The container's `defaultLimit`, `step`, `defaultOffset`,
-and `loadMoreText` parameters drive the windowing. Load more is **purely a
-client state change** — no server round-trip, instant reveal, no URL change.
+in its `cards` slot. The container's `defaultLimit` (page size),
+`defaultOffset`, and `loadMoreText` (Next-button label) parameters drive the
+windowing. Paging is **purely a client state change** — no server round-trip,
+instant page changes, no URL change. The user sees exactly one page at a time;
+clicking Prev/Next moves to the adjacent page (not cumulative — old items
+disappear when you move forward).
 
 **The tradeoff.** Because `PaginationContainer` is a client component
 (it needs `useState`), every element passed to it as part of the `slots` prop
 gets serialized into the RSC payload. That means **all 11 cards are rendered
-server-side and shipped to the browser on first load**, regardless of how many
-are visible. Slicing here is a *visual* pagination, not a payload reduction.
-You're trading payload size for zero-latency Load more.
+server-side and shipped to the browser on first load**, even though only one
+page is visible. Paging here is a *visual* pagination, not a payload reduction.
+You're trading payload size for zero-latency page changes.
 
 When to prefer #2: small bounded slots (a handful to maybe a few dozen items)
-where the simplicity of pure-client state is worth it. When to prefer #1:
-the underlying list is large enough that shipping the unrendered tail is
-actually expensive.
+where the simplicity of pure-client state is worth it, and where shipping the
+hidden pages with the initial document is acceptable. When to prefer #1: the
+underlying list is large enough that shipping the unrendered tail is actually
+expensive.
 
 
 
