@@ -1,0 +1,209 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  parameters:
+    metaTitle:
+      type: text
+      value: Home
+  slots:
+    content:
+      - _id: 76dcdf46-3694-4a5b-8366-c815cdfc7e4b
+        type: $personalization
+        slots:
+          pz:
+            - _id: 619bc2ef-b373-4a85-86cd-f1908c22ada6
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: >-
+                    Order status: Active || Name: ${#jptr:/Name Content/First
+                    Name}
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: hero-619b
+                    conditions:
+                      all:
+                        - fact: order_status
+                          value: Active
+                          operator: equal
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: 'Hello, '
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - type: variable
+                              version: 1
+                              reference: '#jptr:/Name Content/First Name'
+                            - mode: normal
+                              text: '!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+            - _id: caf249b6-1ccc-46d6-8fa7-d643d0526923
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Personilized
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: hero-caf2
+                    conditions:
+                      all:
+                        - fact: appointment_date
+                          value: '2026-05-11'
+                          operator: greaterThanInclusive
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                This is default content. To trigger a simple
+                                personalization 
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=launch
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: click here
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 1
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: '!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+            - _id: 94b108a0-8e52-4a12-8e21-980c98d4da3d
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: Hello world!
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit: []
+                    name: hero-94b1
+                description:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                This is default content. To trigger a simple
+                                personalization 
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: /?utm_campaign=launch
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: click here
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 1
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: '!'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+        parameters:
+          algorithm:
+            type: pzAlgorithm
+            value: json-rules-engine
+          trackingEventName:
+            type: text
+            value: pz-Home-Hero
+  _dataResources:
+    Name Content:
+      type: name
+      variables: {}
+created: '2026-05-06T21:29:57.439536+00:00'
+modified: '2026-05-19T21:01:15.117718+00:00'
+pattern: false

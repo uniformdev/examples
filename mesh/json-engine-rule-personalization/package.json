@@ -1,0 +1,30 @@
+{
+  "name": "mesh-json-engine-rule-personalization",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9000",
+    "build": "next build",
+    "start": "next start -p 9000",
+    "lint": "next lint",
+    "register-to-team": "uniform integration definition register ./mesh-manifest.json",
+    "unregister-from-team": "uniform integration definition remove integration-custom-p13n",
+    "install-to-project": "uniform integration install integration-custom-p13n",
+    "uninstall-from-project": "uniform integration uninstall integration-custom-p13n"
+  },
+  "dependencies": {
+    "@uniformdev/cli": "20.55.0",
+    "@uniformdev/mesh-sdk-react": "20.55.0",
+    "next": "15.1.11",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "eslint": "9.35.0",
+    "eslint-config-next": "16.0.10",
+    "typescript": "5.9.2"
+  }
+}

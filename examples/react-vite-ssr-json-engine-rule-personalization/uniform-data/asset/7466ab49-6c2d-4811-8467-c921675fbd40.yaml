@@ -1,0 +1,11 @@
+asset:
+  type: image
+  _id: 7466ab49-6c2d-4811-8467-c921675fbd40
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: golden_gate_bridge_at_sunset.jpg
+    custom: {}
+created: '2026-05-15T15:37:43.177109+00:00'
+modified: '2026-05-15T15:37:43.177109+00:00'
