@@ -14,14 +14,14 @@
   },
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
-    "@uniformdev/context": "20.50.0",
-    "@uniformdev/context-edge-netlify": "20.50.0",
-    "@uniformdev/context-next": "20.50.0",
-    "@uniformdev/context-react": "20.50.0",
+    "@uniformdev/context": "20.66.1",
+    "@uniformdev/context-edge-netlify": "20.66.1",
+    "@uniformdev/context-next": "20.66.1",
+    "@uniformdev/context-react": "20.66.1",
     "cookie": "^1.1.1",
-    "next": "^15.5.12",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "next": "15.5.19",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@types/cookie": "^0.4.1",
