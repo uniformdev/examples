@@ -1,12 +1,14 @@
-import { EnrichmentData, PersonalizedVariant } from "@uniformdev/context";
+import { TestVariant, EnrichmentData, PersonalizedVariant } from "@uniformdev/context";
 
 export enum ComponentType {
   PersonalizedHero = "personalizedhero",
+  ABTestHero = "abtesthero",
   RegistrationForm = "registrationform",
   Hero = "hero",
 }
 
 export type PageComponentType =
+  | ABTestHeroData
   | HeroData
   | PersonalizedHeroData
   | RegistrationFormData;
@@ -34,6 +36,12 @@ export type PersonalizedHeroData = {
   type: ComponentType.PersonalizedHero;
 
   variations: (BaseHeroData & PersonalizedVariant)[];
+};
+
+
+export type ABTestHeroData = {
+  type: ComponentType.ABTestHero;
+  variants: (BaseHeroData & TestVariant)[];
 };
 
 export type RegistrationFormData = {

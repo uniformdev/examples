@@ -1,4 +1,3 @@
-import { getEnrichmentVectorKey } from "@uniformdev/context";
 import { ComponentType, Page } from "../../lib/models";
 
 const indexPage: Page = {
@@ -6,90 +5,27 @@ const indexPage: Page = {
   slug: "/",
   components: [
     {
-      type: ComponentType.PersonalizedHero,
-      variations: [
+      type: ComponentType.ABTestHero,
+      variants: [
         {
-          title: "Thank you for joining!",
+          title: "control",
           buttonLinkSlug: "https://uniform.dev",
           buttonText: "See sessions",
           description:
-            "Now check out the conference sessions and add them to your agenda",
+            "content from the control",
           image:
             "https://images.ctfassets.net/qefyoudbvm9s/26T6EMvuCgohcpN4uacXTc/83576ffec18a5aba6903a1df98b1ccee/success.svg",
-          id: "registered",
-          pz: {
-            crit: [
-              {
-                l: "registrationComplete",
-                op: ">",
-                r: 0,
-              },
-            ],
-          },
+          id: "control",
         },
         {
-          title: "Developer Hero",
+          title: "variant",
           buttonLinkSlug: "https://uniform.dev",
-          buttonText: "Whoa, I am a developer!",
+          buttonText: "content from the variant",
           description:
             "Hey, we think you may be a developer. This might be of interest to you!",
           image:
             "https://images.ctfassets.net/qefyoudbvm9s/5y9i3cZVJslNZOY7Is0UEh/c0c53b561e81092f279fb6cccb2cd415/developer.svg",
-          id: "dev",
-          pz: {
-            crit: [
-              {
-                l: getEnrichmentVectorKey("1", "dev"),
-                op: "+",
-              },
-            ],
-          },
-        },
-        {
-          title: "Marketer Hero",
-          buttonLinkSlug: "https://uniform.dev",
-          buttonText: "Whoa, I am a marketer!",
-          description:
-            "Hey, we think you may be a marketer. This might be of interest to you!",
-          image:
-            "https://images.ctfassets.net/qefyoudbvm9s/2HquYLn9LDf6yqxmQ2525o/8fea360afc9f55883e3866a853c26503/marketer.svg",
-          id: "mktg",
-          pz: {
-            crit: [
-              {
-                l: getEnrichmentVectorKey("1", "mktg"),
-                op: "+",
-              },
-            ],
-          },
-        },
-        {
-          title: "Call for papers open now!",
-          buttonLinkSlug: "https://uniform.dev",
-          buttonText: "Submit your talk",
-          description: "We can't wait to receive your talk submission!",
-          image:
-            "https://images.ctfassets.net/qefyoudbvm9s/61CDPV29br6sNo9wwH2VRg/49bbfdbb5e192bdcae7dec41b9342078/registered.svg",
-          id: "utmCampaign",
-          pz: {
-            crit: [
-              {
-                l: "callForPapers",
-                op: ">",
-                r: 0,
-              },
-            ],
-          },
-        },
-        {
-          title: "Welcome to UniformConf",
-          buttonLinkSlug: "https://uniform.dev",
-          buttonText: "Button Text",
-          description:
-            "Whether you are a developer or a marketer, we got great content for you.",
-          image:
-            "https://images.ctfassets.net/qefyoudbvm9s/1SvhzHGTcZUWO0J92wzBWq/868898caff791fa28b83f3108ff26b91/default.svg",
-          id: "default",
+          id: "variant"
         },
       ],
     },
