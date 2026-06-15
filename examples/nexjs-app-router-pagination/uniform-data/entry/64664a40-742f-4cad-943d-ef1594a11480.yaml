@@ -1,0 +1,19 @@
+created: '2026-05-28T04:18:00.279572+00:00'
+modified: '2026-05-28T04:18:00.279572+00:00'
+pattern: false
+entry:
+  _id: 64664a40-742f-4cad-943d-ef1594a11480
+  _name: Demo Blog Post 1
+  _slug: demo-blog-post-1
+  type: blogEntry
+  fields:
+    title:
+      type: text
+      value: Demo Blog Post 1
+    shortDescription:
+      type: text
+      value: >-
+        A quick demo article about launch-day checklists, written to populate
+        pagination examples with believable sample content.
+  _locales:
+    - en

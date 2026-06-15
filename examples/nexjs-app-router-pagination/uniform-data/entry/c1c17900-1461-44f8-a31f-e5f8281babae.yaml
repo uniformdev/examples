@@ -1,0 +1,19 @@
+created: '2026-05-28T04:17:59.800238+00:00'
+modified: '2026-05-28T04:17:59.800238+00:00'
+pattern: false
+entry:
+  _id: c1c17900-1461-44f8-a31f-e5f8281babae
+  _name: Demo Blog Post 3
+  _slug: demo-blog-post-3
+  type: blogEntry
+  fields:
+    title:
+      type: text
+      value: Demo Blog Post 3
+    shortDescription:
+      type: text
+      value: >-
+        A fictional recap of customer interviews that revealed surprising
+        interest in faster checkout flows.
+  _locales:
+    - en

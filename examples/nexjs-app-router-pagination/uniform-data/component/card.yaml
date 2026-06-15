@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: card
+name: Card
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Short card title
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Short card description
+    localizable: true
+description: Simple card used as a child of the pagination container.
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2026-05-28T04:11:48.598058+00:00'
+updated: '2026-05-28T04:11:48.598058+00:00'

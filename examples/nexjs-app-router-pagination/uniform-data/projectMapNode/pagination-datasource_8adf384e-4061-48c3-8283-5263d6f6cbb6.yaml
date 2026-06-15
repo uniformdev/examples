@@ -1,0 +1,8 @@
+id: 8adf384e-4061-48c3-8283-5263d6f6cbb6
+name: 01 - Datasource Pagination
+order: 600
+path: /:locale/pagination-datasource
+type: placeholder
+pathSegment: pagination-datasource
+data: {}
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

@@ -1,0 +1,9 @@
+id: 3c129604-d50d-4a54-8907-34c6b7f24ddf
+name: 02 - Pagination Container
+order: 700
+path: /:locale/pagination-slot
+type: composition
+pathSegment: pagination-slot
+data: {}
+compositionId: 207a682e-09ca-4176-a234-ed7261c2d1e9
+projectMapId: 8a35c419-5150-4f76-aa21-7e4976c9dfcb

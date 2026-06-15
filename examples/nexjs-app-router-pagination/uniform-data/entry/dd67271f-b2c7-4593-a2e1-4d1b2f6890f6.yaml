@@ -1,0 +1,19 @@
+created: '2026-05-28T04:18:02.05282+00:00'
+modified: '2026-05-28T04:18:02.05282+00:00'
+pattern: false
+entry:
+  _id: dd67271f-b2c7-4593-a2e1-4d1b2f6890f6
+  _name: Demo Blog Post 9
+  _slug: demo-blog-post-9
+  type: blogEntry
+  fields:
+    title:
+      type: text
+      value: Demo Blog Post 9
+    shortDescription:
+      type: text
+      value: >-
+        A pretend editorial note on balancing SEO goals with cleaner, more
+        readable landing page copy.
+  _locales:
+    - en
