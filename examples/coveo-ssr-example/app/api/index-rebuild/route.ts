@@ -17,7 +17,7 @@
  * (search title, search description, URL) and optionally pushes to Coveo and/or writes debug JSON.
  */
 
-import { connection, NextRequest, NextResponse } from 'next/server';
+import { after, NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 import { ProjectMapClient } from '@uniformdev/project-map';
@@ -44,8 +44,6 @@ type PushRunState = {
 type PushResult = { ok: true; skipped?: true } | { ok: false; error: string };
 
 export async function GET(request: NextRequest) {
-  await connection();
-
   const searchParams = new URL(request.url).searchParams;
   const secret = searchParams.get('secret');
   const expectedSecret = process.env.UNIFORM_PREVIEW_SECRET;
@@ -69,9 +67,16 @@ export async function GET(request: NextRequest) {
 
   try {
     const locale = searchParams.get('locale') || 'en';
-    rebuildIndexInBackground(locale).catch(err => {
-      console.error('Error in background index rebuild:', err);
+
+    // Schedule rebuild after the response is sent (extends serverless lifetime on Vercel via waitUntil)
+    after(async () => {
+      try {
+        await rebuildIndexInBackground(locale);
+      } catch (err) {
+        console.error('Error in background index rebuild:', err);
+      }
     });
+
     return NextResponse.json({ success: true, message: 'rebuild requested accepted' });
   } catch (error) {
     console.error('Error in index rebuild endpoint:', error);
@@ -179,8 +184,6 @@ async function rebuildIndexInBackground(_locale: string) {
         if (!firstError) firstError = pushResult.error;
         console.error(`Push failed for ${nodePath}:`, pushResult.error);
       }
-
-      await new Promise(r => setTimeout(r, 250));
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
       if (!firstError) firstError = msg;
@@ -200,6 +203,31 @@ async function rebuildIndexInBackground(_locale: string) {
   }
 
   console.log('Index rebuild completed');
+}
+
+const COVEO_PUSH_MAX_RETRIES = 3;
+const COVEO_PUSH_BASE_BACKOFF_MS = 500;
+const COVEO_PUSH_MAX_BACKOFF_MS = 10000;
+
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function getRetryAfterDelayMs(retryAfterHeader: string | null): number | undefined {
+  if (!retryAfterHeader) return undefined;
+
+  const numericSeconds = Number(retryAfterHeader);
+  if (!Number.isNaN(numericSeconds) && numericSeconds >= 0) {
+    return Math.round(numericSeconds * 1000);
+  }
+
+  const retryDate = Date.parse(retryAfterHeader);
+  if (!Number.isNaN(retryDate)) {
+    const delayMs = retryDate - Date.now();
+    return delayMs > 0 ? delayMs : 0;
+  }
+
+  return undefined;
 }
 
 async function pushToCoveo(
@@ -222,29 +250,51 @@ async function pushToCoveo(
 
   const encodedId = encodeURIComponent(documentId);
   const url = `https://api.cloud.coveo.com/push/v1/organizations/${coveoOrgId}/sources/${coveoSourceId}/documents?documentId=${encodedId}&orderingId=${state.orderingId}`;
+  const requestBody = JSON.stringify(doc);
 
   try {
-    const res = await fetch(url, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${coveoBearerToken}`,
-      },
-      body: JSON.stringify(doc),
-    });
+    for (let attempt = 0; attempt <= COVEO_PUSH_MAX_RETRIES; attempt++) {
+      const res = await fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${coveoBearerToken}`,
+        },
+        body: requestBody,
+      });
 
-    if (!res.ok) {
+      if (res.ok) {
+        return { ok: true };
+      }
+
+      if (res.status === 429 && attempt < COVEO_PUSH_MAX_RETRIES) {
+        const retryAfterMs = getRetryAfterDelayMs(res.headers.get('retry-after'));
+        const exponentialBackoffMs = Math.min(
+          COVEO_PUSH_BASE_BACKOFF_MS * 2 ** attempt,
+          COVEO_PUSH_MAX_BACKOFF_MS
+        );
+        const jitterMs = Math.floor(Math.random() * 250);
+        const delayMs = retryAfterMs ?? exponentialBackoffMs + jitterMs;
+
+        console.warn(
+          `Coveo rate limited (429) for ${documentId}. Retrying in ${delayMs}ms (attempt ${attempt + 1}/${COVEO_PUSH_MAX_RETRIES}).`
+        );
+        await sleep(delayMs);
+        continue;
+      }
+
       const text = await res.text();
       return {
         ok: false,
         error: `Coveo PUT ${res.status}: ${text}`,
       };
     }
-    return { ok: true };
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     return { ok: false, error: msg };
   }
+
+  return { ok: false, error: `Coveo PUT failed after retries for ${documentId}` };
 }
 
 async function deleteOldItemsFromCoveo(state: PushRunState): Promise<boolean> {
