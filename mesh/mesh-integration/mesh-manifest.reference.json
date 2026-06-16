@@ -27,6 +27,7 @@
             "displayName": "Reference Archetype",
             "dataEditorUrl": "/reference/dataResource",
             "typeEditorUrl": "/reference/dataType",
+            "dataResourceSelectorUrl": "/reference/dataResourceSelector",
             "typeEditorLocations": {
               "teDialog": {
                 "url": "../namedDialog"
@@ -121,7 +122,20 @@
         {
           "id": "composition-editor-tool",
           "name": "Composition Editor Tool",
-          "url": "/reference/canvas-editor-tools",
+          "url": "/reference/canvasEditorTools",
+          "iconUrl": "/uniform.png"
+        },
+        {
+          "id": "composition-editor-tool-2",
+          "name": "Composition Editor Tool 2",
+          "url": "/reference/canvasEditorTools",
+          "iconUrl": "/cat.svg",
+          "editorTypes": ["composition"]
+        },
+        {
+          "id": "translation-tool",
+          "name": "Example Translation Tool",
+          "url": "/reference/canvasEditorToolsTranslation",
           "iconUrl": "/uniform.png"
         }
       ]
