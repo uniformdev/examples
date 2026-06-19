@@ -217,6 +217,17 @@ function BulkPublishContent() {
 export default function BulkPublish() {
   const sdk = useUniformMeshSdk();
 
+  /**
+   * How to close this location for users without the necessary permissions?
+   */
+  // if (!metadata.user.isAdmin) {
+  //   return <p>You are not authorized to access this page.</p>;
+  // }
+
+  // if (!metadata.user.permissions.includes('COMPOSITIONS_PUBLISH')) {
+  //   return <p>You are not authorized to publish compositions.</p>;
+  // }
+
   return (
     <DelegationProvider sdk={sdk} checkActive={checkActive} onSessionToken={onSessionToken}>
       <DelegationGate>

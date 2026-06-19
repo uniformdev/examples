@@ -1,7 +1,16 @@
+/**
+ * POST /api/publish
+ *
+ * Accepts a list of composition IDs and publishes each via CanvasClient + delegation Bearer token.
+ *
+ * Body:     { projectId: string; compositionIds: string[] }
+ * Response: { published: number; failed: Array<{ id: string; error: string }> }
+ *           HTTP 200 if all succeeded, HTTP 207 if any failed.
+ */
 import { CanvasClient } from '@uniformdev/canvas';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { requireCsrfHeader } from '../../lib/csrf';
+import { requireMeshCsrf } from '../../lib/util/csrf';
 import { loadMeshDelegationSession } from '../../lib/util/delegationSession';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
@@ -10,9 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return;
   }
 
-  if (!requireCsrfHeader(req, res)) {
-    // eslint-disable-next-line no-console
-    console.error('CSRF header required');
+  if (!requireMeshCsrf(req, res)) {
     return;
   }
 

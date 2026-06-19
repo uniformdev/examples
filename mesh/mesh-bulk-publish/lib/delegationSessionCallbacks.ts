@@ -1,7 +1,14 @@
 import { CSRF_HEADER_NAME, CSRF_HEADER_VALUE } from '@uniformdev/mesh-identity-delegation-session';
 
+/**
+ * Returns whether an httpOnly delegation cookie is already active (GET /api/status).
+ */
 export async function checkActive(): Promise<boolean> {
-  const res = await fetch('/api/status');
+  const res = await fetch('/api/status', {
+    headers: {
+      [CSRF_HEADER_NAME]: CSRF_HEADER_VALUE,
+    },
+  });
   if (!res.ok) {
     return false;
   }
@@ -9,6 +16,12 @@ export async function checkActive(): Promise<boolean> {
   return body.status === 'active';
 }
 
+/**
+ * POSTs the one-time Mesh session token to /api/session so the server can exchange it and set the sealed cookie.
+ * The custom `X-Mesh-Csrf` header is what our BFF uses to distinguish this call
+ * from a cross-site CSRF attempt — see `lib/util/csrf.ts` (which composes
+ * `verifyCsrf` from `@uniformdev/mesh-identity-delegation-session`).
+ */
 export async function onSessionToken(sessionToken: string): Promise<void> {
   const res = await fetch('/api/session', {
     method: 'POST',
