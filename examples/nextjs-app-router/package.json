@@ -17,9 +17,10 @@
     "@uniformdev/canvas-next-rsc-shared": "20.49.3",
     "@uniformdev/context": "20.49.3",
     "@uniformdev/insights": "20.49.3",
-    "next": "^15.5.12",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "next": "^15.5.19",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "vercel": "^54.14.5"
   },
   "devDependencies": {
     "@types/node": "^20",
