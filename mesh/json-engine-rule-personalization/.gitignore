@@ -38,3 +38,6 @@ next-env.d.ts
 
 # uniform
 /edgehancer/dist/
+
+# local sqlite mock of cloudflare d1
+/.data/

@@ -1,14 +1,14 @@
 {
-  "type": "integration-custom-p13n",
-  "displayName": "Custom personalization engine using CacheControl/json-rules-engine",
+  "type": "segment-targeting",
+  "displayName": "Segment Targeting",
   "category": "unknown",
   "baseLocationUrl": "http://localhost:9000",
   "locations": {
     "canvas": {
       "personalization": {
         "selectionAlgorithms": {
-          "json-rules-engine": {
-            "displayName": "JSON Rules Engine",
+          "custom-segment-targeting": {
+            "displayName": "Segment Targeting",
             "description": "Match a variant when conditions on visitor facts hold (date and value comparisons).",
             "criteriaEditorUrl": "/rule-editor"
           }
