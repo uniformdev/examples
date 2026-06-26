@@ -1,0 +1,19 @@
+{
+  "type": "mesh-build-publish-vanilla-experiment",
+  "displayName": "Bulk Publish (Express + HTMX)",
+  "baseLocationUrl": "https://localhost:9003",
+  "identityDelegation": true,
+  "locations": {
+    "projectTools": [
+      {
+        "id": "bulk-publish-vanilla-tool",
+        "name": "Bulk Publish (Vanilla)",
+        "url": "/bulk-publish",
+        "iconUrl": "https://uniform.app/uniform.png"
+      }
+    ],
+    "settings": {
+      "url": "/settings"
+    }
+  }
+}

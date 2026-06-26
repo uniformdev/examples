@@ -1,0 +1,34 @@
+{
+  "type": "bulk-publish-experiment",
+  "displayName": "Bulk Publish Experiment",
+  "baseLocationUrl": "https://localhost:9002",
+  "identityDelegation": true,
+  "locations": {
+    "projectTools": [
+      {
+        "id": "bulk-publish-tool",
+        "name": "Bulk Publish Tool",
+        "url": "/bulk-publish",
+        "iconUrl": "https://uniform.app/uniform.png"
+      },
+      {
+        "id": "admin-only-tool",
+        "name": "Admin Only Tool",
+        "url": "/admin-only-tool",
+        "iconUrl": "https://uniform.app/uniform.png",
+        "access": {
+          "teamAdminRequired": true
+        }
+      },
+      {
+        "id": "metadata-role-check-tool",
+        "name": "Workflow insights",
+        "url": "/metadata-role-check",
+        "iconUrl": "https://uniform.app/uniform.png"
+      }
+    ],
+    "settings": {
+      "url": "/settings"
+    }
+  }
+}
