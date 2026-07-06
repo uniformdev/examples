@@ -8,7 +8,6 @@ composition:
       type: text
       locales:
         en: Home
-        fr: Page d'accueil
   slots:
     footer:
       - _id: 5051d5e2-47a0-4e50-af70-0a567ad1b564
@@ -94,50 +93,6 @@ composition:
                             textStyle: ''
                             textFormat: 0
                         direction: ltr
-                    fr:
-                      root:
-                        type: root
-                        format: ''
-                        indent: 0
-                        version: 1
-                        children:
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  Ce contenu est personnalisé pour votre session
-                                  puisque vous avez déclenché un signal appelé «
-                                  Lancement » (via chaîne de requête). 
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 0
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  Il s'agit d'un exemple très simple, que vous
-                                  pouvez personnaliser en fonction de critères
-                                  plus complexes et de données externes.
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 0
-                        direction: ltr
             - _id: 94b108a0-8e52-4a12-8e21-980c98d4da3d
               type: hero
               parameters:
@@ -200,54 +155,6 @@ composition:
                             textFormat: 1
                         direction: ltr
                         textFormat: 1
-                    fr:
-                      root:
-                        type: root
-                        format: ''
-                        indent: 0
-                        version: 1
-                        children:
-                          - type: paragraph
-                            format: ''
-                            indent: 0
-                            version: 1
-                            children:
-                              - mode: normal
-                                text: >-
-                                  Il s'agit du contenu par défaut. Pour
-                                  déclencher une simple personnalisation 
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                              - link:
-                                  path: /?utm_campaign=launch
-                                  type: url
-                                type: link
-                                format: ''
-                                indent: 0
-                                version: 1
-                                children:
-                                  - mode: normal
-                                    text: cliquez ici
-                                    type: text
-                                    style: ''
-                                    detail: 0
-                                    format: 1
-                                    version: 1
-                                direction: ltr
-                              - mode: normal
-                                text: '!'
-                                type: text
-                                style: ''
-                                detail: 0
-                                format: 0
-                                version: 1
-                            direction: ltr
-                            textStyle: ''
-                            textFormat: 1
-                        direction: ltr
         parameters:
           count:
             type: number
@@ -255,14 +162,9 @@ composition:
           trackingEventName:
             type: text
             value: home-hero
-  _dataResources:
-    hw:
-      type: helloWorld
-      variables: {}
+  _dataResources: {}
   _locales:
     - en
-    - fr
-    - es
-created: '2023-06-29T04:47:27.348771+00:00'
-modified: '2026-02-26T00:41:06.188231+00:00'
+created: '2026-07-06T22:01:16.295329+00:00'
+modified: '2026-07-06T22:13:53.054619+00:00'
 pattern: false
