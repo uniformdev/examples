@@ -43,7 +43,7 @@
     "@uniformdev/context-react": "^19.48.0",
     "@uniformdev/project-map": "^19.48.0",
     "dotenv": "^16.0.3",
-    "gatsby": "^5.15.0",
+    "gatsby": "^5.16.0",
     "gatsby-plugin-gatsby-cloud": "^5.10.0",
     "gatsby-plugin-google-analytics": "^5.10.0",
     "gatsby-plugin-image": "^3.2.0",
