@@ -8,10 +8,10 @@
     "start": "next start -p 9002"
   },
   "dependencies": {
-    "@uniformdev/canvas": "20.72.4-alpha.16",
-    "@uniformdev/context": "20.72.4-alpha.16",
-    "@uniformdev/mesh-sdk": "20.72.4-alpha.16",
-    "@uniformdev/mesh-sdk-react": "20.72.4-alpha.16",
+    "@uniformdev/canvas": "20.73.0",
+    "@uniformdev/context": "20.73.0",
+    "@uniformdev/mesh-sdk": "20.73.0",
+    "@uniformdev/mesh-sdk-react": "20.73.0",
     "next": "16.2.9",
     "react": "19.2.1",
     "react-dom": "19.2.1"

@@ -421,6 +421,32 @@ Add custom tools to project navigation.
 ]
 ```
 
+## Identity Delegation (RFC 8693)
+
+Identity delegation lets a Mesh integration **BFF** call Uniform APIs on behalf of the signed-in user, respecting their permissions and authoring. The browser obtains a short-lived Mesh session token; your server exchanges it (RFC 8693) for a delegation access token and makes Uniform API calls server-side. The access token is not exposed to client JavaScript.
+
+### When to use
+
+Use identity delegation when the integration must **read or write Uniform APIs** and the default client-side Mesh SDK surface (`value`, `metadata`, `getDataResource`) is **not enough** — for example project tools or canvas/entry editor tools backed by a BFF.
+
+Do **not** add delegation when the location only needs Mesh location data or external-system APIs.
+
+### Compared to API key
+
+| | API key / service account | Identity delegation |
+| --- | --- | --- |
+| User identity | Integration-level | Current user; content updates get the user's author ref |
+| Security | Broader blast radius if leaked | HTTPS, HttpOnly sealed cookie, CSRF-guarded BFF, short TTL, dedicated audit |
+| Complexity | Lower | Higher — requires BFF, HTTPS (including local dev), cookie and CSRF setup |
+| Use when | External APIs, data connectors, settings | Uniform API read/write from tools or custom BFF routes |
+
+### Learn more (sources of truth)
+
+Do **not** treat this file as the setup guide. Follow the official documentation and the reference example:
+
+- [Identity delegation documentation](https://docs.uniform.app/docs/integrations/mesh-integrations/identity-delegation)
+- Reference implementation: [`mesh/mesh-auth`](mesh-auth/) — delegation flow, BFF routes, CSRF, manifest `access`, and `metadata.user` authorization patterns
+
 ## Development Patterns and Best Practices
 
 > **⚠️ IMPORTANT**: After creating your integration, you MUST register it with Uniform before you can use it. See the "Installation and Deployment" section for detailed steps.
@@ -677,7 +703,8 @@ If you prefer not to use CLI or don't have the environment variables set up:
 
 ### HTTPS Requirements
 - All production integrations must use HTTPS
-- Local development can use HTTP (localhost only)
+- Local development can use HTTP (localhost only) for most integrations
+- Identity delegation requires HTTPS in local dev as well — see [identity delegation docs](https://docs.uniform.app/docs/integrations/mesh-integrations/identity-delegation) and `mesh/mesh-auth`
 
 ### CORS Configuration
 - Mesh integration URLs must be accessible to https://uniform.app
