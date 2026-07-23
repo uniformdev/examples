@@ -1,0 +1,31 @@
+composition:
+  _name: Common Page
+  _id: 60b2314c-4c92-4a58-ab8d-f948a861b88c
+  type: page
+  slots:
+    footer:
+      - _id: 45a99c71-1e63-432f-9e9c-23b36562b58a
+        type: footer
+        _overridability:
+          hideLockedParameters: true
+    header:
+      - _id: 20fb3a53-5ee2-43bb-b4f3-1c99a9b6e550
+        type: header
+        _overridability:
+          hideLockedParameters: true
+    content:
+      - _id: 198c14ce-6c49-4f2c-83e5-d35ff3ae815a
+        type: $slotSection
+        parameters:
+          name:
+            type: text
+            value: Content
+        _overridability:
+          hideLockedParameters: true
+  _overridability:
+    hideLockedParameters: true
+  _locales:
+    - en
+created: '2025-12-09T04:36:37.864521+00:00'
+modified: '2025-12-09T04:36:59.748764+00:00'
+pattern: true
