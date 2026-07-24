@@ -423,6 +423,8 @@ Add custom tools to project navigation.
 
 ## Identity Delegation (RFC 8693)
 
+⚠️ **Developer Preview**: Identity delegation is currently in Developer Preview.
+
 Identity delegation lets a Mesh integration **BFF** call Uniform APIs on behalf of the signed-in user, respecting their permissions and authoring. The browser obtains a short-lived Mesh session token; your server exchanges it (RFC 8693) for a delegation access token and makes Uniform API calls server-side. The access token is not exposed to client JavaScript.
 
 ### When to use

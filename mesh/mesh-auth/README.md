@@ -2,7 +2,7 @@
 
 Reference Mesh integration for **authentication and authorization** with the Mesh SDK.
 
-- **Identity delegation** — session token exchange, JWE-sealed `HttpOnly` cookie, CSRF-guarded BFF routes
+- **Identity delegation** — session token exchange, JWE-sealed `HttpOnly` cookie, CSRF-guarded BFF routes ⚠️ *Developer Preview*
 - **Manifest access control** — `access.teamAdminRequired` on a project tool
 - **Metadata access control** — `metadata.user` role and permission checks (defense in depth)
 

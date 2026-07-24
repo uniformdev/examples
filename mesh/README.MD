@@ -120,6 +120,7 @@ Example: mesh-auth
 Locations: Project tools, canvas/entry editor tools (with BFF)
 Features: User-scoped Uniform API calls, manifest access control, metadata-based UI gating
 When: Integration must read/write Uniform APIs and client-side Mesh SDK is not enough
+Status: Developer Preview
 Docs: https://docs.uniform.app/docs/integrations/mesh-integrations/identity-delegation
 ```
 
