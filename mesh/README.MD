@@ -114,6 +114,16 @@ Locations: Canvas parameter types
 Features: Custom validation, dynamic token support
 ```
 
+### Identity Delegation (Uniform API access)
+```
+Example: mesh-auth
+Locations: Project tools, canvas/entry editor tools (with BFF)
+Features: User-scoped Uniform API calls, manifest access control, metadata-based UI gating
+When: Integration must read/write Uniform APIs and client-side Mesh SDK is not enough
+Status: Developer Preview
+Docs: https://docs.uniform.app/docs/integrations/mesh-integrations/identity-delegation
+```
+
 ## Technology Requirements
 
 ### Mandatory
@@ -123,6 +133,7 @@ Features: Custom validation, dynamic token support
 - **Language**: TypeScript (strongly recommended)
 
 ### Optional Enhancements
+- **Identity delegation**: Call Uniform APIs on behalf of the signed-in user via a BFF (RFC 8693)
 - **Custom Edgehancers**: Server-side JavaScript execution at edge
 - **Dialog Management**: Modal interfaces and nested workflows
 - **Validation Framework**: Custom validation logic and error handling
@@ -150,8 +161,9 @@ Features: Custom validation, dynamic token support
 ## Security and Best Practices
 
 ### Security
-- Use HTTPS for all production integrations
+- Use HTTPS for all production integrations (required for identity delegation, including local dev)
 - Store sensitive data in integration settings (not public config)
+- For Uniform API access from tools or a BFF, use [identity delegation](https://docs.uniform.app/docs/integrations/mesh-integrations/identity-delegation) instead of embedding API keys — see [`mesh-auth`](mesh-auth/)
 - Configure appropriate CORS headers
 - Validate all user inputs
 
@@ -183,9 +195,10 @@ Features: Custom validation, dynamic token support
 
 ### Advanced Pattern
 1. **Custom Edgehancers**: Server-side data processing
-2. **Personalization**: Custom audience algorithms
-3. **AI Integration**: Content generation workflows
-4. **Multi-location**: Complex integrations spanning multiple locations
+2. **Identity delegation**: User-scoped Uniform API access from tools via BFF
+3. **Personalization**: Custom audience algorithms
+4. **AI Integration**: Content generation workflows
+5. **Multi-location**: Complex integrations spanning multiple locations
 
 ## Limitations and Considerations
 
@@ -231,6 +244,7 @@ Features: Custom validation, dynamic token support
 
 ### Documentation
 - [Uniform Mesh SDK Documentation](https://sdk.uniform.app/mesh-sdk-react)
+- [Identity delegation](https://docs.uniform.app/docs/integrations/mesh-integrations/identity-delegation)
 - [Design System Storybook](https://design.uniform.app/)
 - [Integration Examples Repository](https://github.com/uniformdev/examples/tree/main/mesh)
 

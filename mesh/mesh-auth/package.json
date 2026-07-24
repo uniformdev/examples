@@ -1,0 +1,25 @@
+{
+  "name": "mesh-auth-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack --experimental-https -p 9002",
+    "build": "next build --webpack",
+    "start": "next start -p 9002"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "20.73.0",
+    "@uniformdev/context": "20.73.0",
+    "@uniformdev/mesh-sdk": "20.73.0",
+    "@uniformdev/mesh-sdk-react": "20.73.0",
+    "next": "16.2.9",
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.2"
+  }
+}

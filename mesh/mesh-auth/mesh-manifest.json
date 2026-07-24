@@ -1,0 +1,35 @@
+{
+  "type": "mesh-auth",
+  "displayName": "Mesh Auth Example (local)",
+  "baseLocationUrl": "https://localhost:9002",
+  "identityDelegation": true,
+  "scopes": ["user:read"],
+  "locations": {
+    "projectTools": [
+      {
+        "id": "delegation-demo",
+        "name": "Delegation Demo",
+        "url": "/delegation-demo",
+        "iconUrl": "https://uniform.app/uniform.png"
+      },
+      {
+        "id": "admin-only-tool",
+        "name": "Admin Only Tool",
+        "url": "/admin-only-tool",
+        "iconUrl": "https://uniform.app/uniform.png",
+        "access": {
+          "teamAdminRequired": true
+        }
+      },
+      {
+        "id": "metadata-role-check-tool",
+        "name": "Metadata Role Check",
+        "url": "/metadata-role-check",
+        "iconUrl": "https://uniform.app/uniform.png"
+      }
+    ],
+    "settings": {
+      "url": "/settings"
+    }
+  }
+}
