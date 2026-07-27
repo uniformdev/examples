@@ -12,6 +12,7 @@ import {
 } from '@uniformdev/canvas-angular';
 import { enableContextDevTools } from '@uniformdev/context';
 import { provideUniformContext } from '@uniformdev/context-angular';
+import { provideUniformToolbar } from '@uniformdev/toolbar-angular';
 
 import { resolveUniformManifest } from '../uniform/manifest-source';
 import { routes } from './app.routes';
@@ -35,6 +36,10 @@ export const appConfig: ApplicationConfig = {
       plugins: [enableContextDevTools()],
       // Demo only: consent granted by default so visitor data persists across requests.
       defaultConsent: true,
+    }),
+    // Optional: quirk groupings / labels for the product toolbar (<uniform-toolbar />).
+    provideUniformToolbar({
+      quirkGroups: [{ title: 'Geo', ids: ['vc-city', 'vc-country'] }],
     }),
     provideUniformComponents(
       [

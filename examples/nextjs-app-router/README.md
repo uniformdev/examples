@@ -39,6 +39,29 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Run `npm run build` for production build and `npm start` to start server in production mode locally.
 
+## Uniform toolbar
+
+In development, the floating product toolbar mounts from
+`lib/uniform/CustomUniformClientContext.tsx` (same Context instance as
+`UniformComposition`).
+
+Until the packages are on npm, this starter depends on a local clone via `file:`:
+
+```
+../../../toolbar/packages/toolbar
+../../../toolbar/packages/toolbar-element
+../../../toolbar/packages/toolbar-react
+```
+
+`.npmrc` sets `install-links=true` so those `file:` deps are copied instead of
+symlinked — required for Next.js Turbopack (symlinks outside the project resolve as
+missing modules).
+
+Toolbar peers expect `@uniformdev/context` `^20.72`. This starter is still on `20.70` —
+install with `npm install --legacy-peer-deps` until you bump the Uniform packages.
+After publish, switch the toolbar deps to the published versions (for example `^20.73.0`)
+and you can drop `install-links`.
+
 ## Important: Uniform Preview support
 
 In order to support Uniform preview for Next.js 16 on Vercel, you need to leave `middleware.ts` named as such, don't rename it to `proxy.ts` and keep this export in it:
