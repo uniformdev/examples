@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.angular/
+out-tsc/
+.env
+.env.local
+*.log
+.DS_Store
+*.tgz

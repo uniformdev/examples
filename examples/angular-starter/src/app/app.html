@@ -1,0 +1,36 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      queryParamsHandling="preserve"
+    >
+      <span class="brand">Angular Starter for Uniform</span></a
+    >
+    <!-- queryParamsHandling="preserve" keeps preview mode (?preview=...) across navigations -->
+    <nav class="site-nav" aria-label="Main">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        queryParamsHandling="preserve"
+        >Home</a
+      >
+      <a routerLink="/developers" routerLinkActive="active" queryParamsHandling="preserve"
+        >For Developers</a
+      >
+      <a routerLink="/marketers" routerLinkActive="active" queryParamsHandling="preserve"
+        >For Marketers</a
+      >
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <router-outlet />
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <app-context-toolbar />
+  </div>
+</footer>
