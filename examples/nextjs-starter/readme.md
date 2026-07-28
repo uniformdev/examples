@@ -23,3 +23,25 @@ Both SSR (default) and SSG are supported, see `/pages/[[...slug]].tsx.ssg` and `
 ## Edge personalization on Vercel
 
 See the steps in `middleware.ts.disabled` on how to activate the mode.
+
+## Uniform toolbar
+
+In development, the floating product toolbar mounts from `components/UniformToolbar.tsx`
+(wired in `pages/_app.tsx` under `<UniformContext>`).
+
+Until the packages are on npm, this starter depends on a local clone via `file:`:
+
+```
+../../../toolbar/packages/toolbar
+../../../toolbar/packages/toolbar-element
+../../../toolbar/packages/toolbar-react
+```
+
+`.npmrc` sets `install-links=true` so those `file:` deps are copied instead of
+symlinked — required for Next.js Turbopack (symlinks outside the project resolve as
+missing modules).
+
+Toolbar peers expect `@uniformdev/context` `^20.72`. This starter is still on `20.64` —
+install with `npm install --legacy-peer-deps` until you bump the Uniform packages.
+After publish, switch the toolbar deps to the published versions (for example `^20.73.0`)
+and you can drop `install-links`.

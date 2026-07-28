@@ -1,6 +1,7 @@
 import { UniformContext } from "@uniformdev/context-react";
 import { UniformAppProps } from "@uniformdev/context-next";
 import createUniformContext from "lib/uniform/uniformContext";
+import { AppUniformToolbar } from "../components/UniformToolbar";
 
 // IMPORTANT: importing all components registered in Canvas
 import "../components/canvasComponents";
@@ -22,6 +23,7 @@ function MyApp({
       //outputType={"edge"}
     >
       <Component {...pageProps} />
+      <AppUniformToolbar />
     </UniformContext>
   );
 }

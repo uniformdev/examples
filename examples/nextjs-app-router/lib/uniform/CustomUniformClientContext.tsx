@@ -7,8 +7,10 @@ import { useRouter } from "next/navigation";
 import {
   createClientUniformContext,
   useInitUniformContext,
+  useUniformContext,
   ClientContextComponent,
 } from "@uniformdev/next-app-router-client";
+import { UniformToolbar } from "@uniformdev/toolbar-react";
 
 export const CustomUniformClientContext: ClientContextComponent = ({
   manifest,
@@ -48,5 +50,20 @@ export const CustomUniformClientContext: ClientContextComponent = ({
     });
   }, compositionMetadata);
 
-  return null;
+  return <AppUniformToolbar />;
 };
+
+function AppUniformToolbar() {
+  const { context } = useUniformContext();
+
+  return (
+    <UniformToolbar
+      // Local file: installs resolve @uniformdev/context from the toolbar monorepo
+      // and the starter separately. Drop the cast after installing from npm with a
+      // matching @uniformdev/context (^20.72).
+      context={context as never}
+      simulator
+      enabled={process.env.NODE_ENV === "development"}
+    />
+  );
+}
