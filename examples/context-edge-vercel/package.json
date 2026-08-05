@@ -17,7 +17,7 @@
     "@uniformdev/context-next": "20.43.1",
     "@uniformdev/context-react": "20.43.1",
     "cookie": "^0.5.0",
-    "next": "^15.5.9",
+    "next": "^16.1.5",
     "react": "^19",
     "react-dom": "^19"
   },
