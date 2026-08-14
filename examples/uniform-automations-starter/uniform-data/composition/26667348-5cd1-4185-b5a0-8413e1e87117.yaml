@@ -1,0 +1,52 @@
+composition:
+  _name: Home
+  _id: 26667348-5cd1-4185-b5a0-8413e1e87117
+  _slug: /
+  type: page
+  _locales:
+    - en-US
+  parameters:
+    metaTitle:
+      type: text
+      locales:
+        en-US: Home
+  slots:
+    content:
+      - _id: 94b108a0-8e52-4a12-8e21-980c98d4da3d
+        type: hero
+        parameters:
+          title:
+            type: text
+            locales:
+              en-US: Automations starter
+          description:
+            type: richText
+            locales:
+              en-US:
+                root:
+                  type: root
+                  format: ''
+                  indent: 0
+                  version: 1
+                  children:
+                    - type: paragraph
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - mode: normal
+                          text: >-
+                            Edit this page in Canvas to trigger
+                            composition.changed automations, or submit it for AI
+                            Review.
+                          type: text
+                          style: ''
+                          detail: 0
+                          format: 0
+                          version: 1
+                      direction: ltr
+                  direction: ltr
+created: '2023-02-16T15:35:55.638176+00:00'
+modified: '2024-04-12T00:50:36.82462+00:00'
+pattern: false
+workflowId: 9a7fe4d0-3fa3-4d32-ba88-bf315ea0adb5

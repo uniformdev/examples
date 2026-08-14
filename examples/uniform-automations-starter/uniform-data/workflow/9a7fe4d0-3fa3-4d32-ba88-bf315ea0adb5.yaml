@@ -1,0 +1,85 @@
+id: 9a7fe4d0-3fa3-4d32-ba88-bf315ea0adb5
+name: AI Workflow
+initialStage: 9bc41950-f10c-4f19-adcd-2fdef9fbdff7
+stages:
+  1ee833c8-977a-4436-b41b-89ab4b954509:
+    name: Translation
+    permissions:
+      editor:
+        write: true
+    transitions:
+      - name: Send for human approval
+        to: 886e5871-dca3-47fb-bba4-9d76fd89b905
+        permissions:
+          editor:
+            execute: true
+    icon: globe-alt
+    order: 0
+  9bc41950-f10c-4f19-adcd-2fdef9fbdff7:
+    name: Editing
+    permissions:
+      developer:
+        write: true
+      editor:
+        write: true
+    transitions:
+      - name: Submit for review
+        to: 38adbba7-95af-481f-b884-b624394c3180
+        permissions:
+          editor:
+            execute: true
+          developer:
+            execute: true
+    icon: pen
+    order: 1
+  38adbba7-95af-481f-b884-b624394c3180:
+    name: AI Review
+    requireValidity: true
+    permissions:
+      editor:
+        write: true
+    transitions:
+      - name: Reject
+        to: 9bc41950-f10c-4f19-adcd-2fdef9fbdff7
+        permissions:
+          editor:
+            execute: true
+      - name: Approve
+        to: 1ee833c8-977a-4436-b41b-89ab4b954509
+        permissions:
+          editor:
+            execute: true
+    icon: bot
+    order: 2
+  79e890fe-8f21-41fa-8ba9-9e99d06493ec:
+    name: Approved
+    autoPublish: true
+    permissions: {}
+    transitions:
+      - name: Edit
+        to: 9bc41950-f10c-4f19-adcd-2fdef9fbdff7
+        permissions:
+          editor:
+            execute: true
+          developer:
+            execute: true
+    icon: lock
+    order: 3
+  886e5871-dca3-47fb-bba4-9d76fd89b905:
+    name: Final approval
+    permissions: {}
+    transitions:
+      - name: Approve for publish
+        to: 79e890fe-8f21-41fa-8ba9-9e99d06493ec
+        permissions:
+          editor:
+            execute: true
+      - name: Return to editing
+        to: 9bc41950-f10c-4f19-adcd-2fdef9fbdff7
+        permissions:
+          editor:
+            execute: true
+          developer:
+            execute: true
+    icon: check-o
+    order: 4

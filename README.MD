@@ -38,6 +38,7 @@ These starters focus on specific Uniform feature and capabilities:
 - 🆕 [Search starter](./examples/nextjs-search) - essential search API example starter based on Next.js 15 app router.
 - [Next.js starter for App Router](./examples/nextjs-app-router-localization-starter) - essential localization enabled starter for Next.js with app router and React Server Components.
 - [Next.js starter for Page Router](./examples/nextjs-page-router-localization-starter) - essential localization enabled starter for Next.js.
+- 🆕 [Automations starter](./examples/uniform-automations-starter) - Next.js hello-world site plus worked examples of authoring and deploying Uniform Automations (event, schedule, webhook, AI tool, and Scout workflow).
 
 
 
