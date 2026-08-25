@@ -1,14 +1,37 @@
 import {
   NotificationsClient,
   type AutomationLogger,
-  type NotificationPostParameters,
+  type NotificationEntity,
+  type UniformConnectionParams,
 } from "@uniformdev/automations-sdk";
+import type { WebhookInitiator } from "@uniformdev/webhooks";
 import { errorMessage } from "./errors";
+import { truncate } from "./utils";
 
-/** The shape of a workflow trigger's initiator we read to pick a recipient. */
-export interface NotificationInitiator {
-  id?: string;
-  is_api_key?: boolean;
+/** Longest summary the Notifications API accepts; a longer body is rejected. */
+export const MAX_NOTIFICATION_SUMMARY = 256;
+
+/** Entity name floor, so the rest of a summary cannot squeeze the name to nothing. */
+const MIN_ENTITY_NAME = 20;
+
+/**
+ * Fits a notification summary into the Notifications API's character cap.
+ *
+ * `summarize` is the message with the entity name substituted in. The name is
+ * the only unbounded part, so it absorbs the truncation and the rest of the
+ * template always survives. The closing clip is a last resort for the case
+ * where even the shortest name does not fit.
+ */
+export function buildNotificationSummary(
+  entityName: string,
+  summarize: (name: string) => string,
+  maxLength = MAX_NOTIFICATION_SUMMARY
+): string {
+  const nameBudget = maxLength - summarize("").length;
+  return truncate(
+    summarize(truncate(entityName, Math.max(nameBudget, MIN_ENTITY_NAME))),
+    maxLength
+  );
 }
 
 /**
@@ -36,9 +59,9 @@ export function configuredNotificationRecipients(): string[] {
  * webhook runs, or an API-key initiator).
  */
 export function resolveNotificationRecipients(
-  initiator?: NotificationInitiator
+  initiator?: WebhookInitiator
 ): string[] {
-  if (initiator && !initiator.is_api_key && initiator.id) {
+  if (initiator && !initiator.is_api_key) {
     return [initiator.id];
   }
   return configuredNotificationRecipients();
@@ -47,22 +70,11 @@ export function resolveNotificationRecipients(
 /**
  * In-app Uniform notifications for automations.
  *
- * Backed by the experimental `NotificationsClient` from
- * `@uniformdev/automations-sdk`.
+ * Backed by `NotificationsClient` from `@uniformdev/automations-sdk`.
  * Sending is best-effort: when there are no recipients it no-ops, and any
  * delivery failure is logged but never thrown, so a notification issue never
  * fails the automation run.
  */
-
-/** Run credentials (matches the other Uniform clients). */
-type Credentials = ConstructorParameters<typeof NotificationsClient>[0];
-
-/**
- * The entity a notification links to. An internal reference (`entry`,
- * `composition`, and so on) makes the notification open the entity in-app; an
- * `external` reference opens the URL as an outbound link.
- */
-export type NotificationEntity = NonNullable<NotificationPostParameters["entity"]>;
 
 export interface UniformNotification {
   /** Uniform identity subject IDs to notify (not email addresses). */
@@ -84,7 +96,7 @@ export interface UniformNotification {
  */
 export async function sendUniformNotification(
   notification: UniformNotification,
-  credentials: Credentials,
+  credentials: UniformConnectionParams,
   log: AutomationLogger
 ): Promise<void> {
   const { recipients, projectId, summary, entity } = notification;

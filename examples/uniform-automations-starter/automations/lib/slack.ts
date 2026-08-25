@@ -19,73 +19,20 @@ const NOTIFICATION_EMOJI: Record<NotificationLevel, string> = {
   error: "❌",
 };
 
-/** A single URL action button rendered in the notification's actions block. */
-export interface SlackActionButton {
-  /** Button text. */
-  label: string;
-  /** URL opened when the button is clicked. */
-  url: string;
-  /** When "primary", the button is visually emphasized. */
-  style?: "primary";
-}
-
 export interface SlackNotification {
   level: NotificationLevel;
   /** Entity display name, shown as the headline. */
   title: string;
   /** One-line status describing what happened. */
   headline: string;
-  /** Optional prose summary (e.g. of what an AI agent changed). */
-  summary?: string;
-  /** Optional label for the summary section heading. Defaults to "Summary". */
-  summaryLabel?: string;
-  /** Optional deterministic warnings to call out. */
-  warnings?: string[];
   /** Optional deep link back to the entity in Uniform. */
   entityUrl?: string;
-  /** Optional label for the deep-link button. Defaults to "Open in Uniform". */
-  buttonLabel?: string;
-  /**
-   * Optional multiple action buttons. When provided (and non-empty), these
-   * replace the single `entityUrl`/`buttonLabel` button.
-   */
-  actions?: SlackActionButton[];
 }
 
 /** Slack `header` blocks are plain text capped at 150 characters. */
 const HEADER_MAX = 150;
-/** Slack `section` text fields are capped at 3000 characters. */
-const SECTION_MAX = 3000;
 
-const DEFAULT_SUMMARY_LABEL = "Summary";
 const DEFAULT_BUTTON_LABEL = "Open in Uniform";
-
-/**
- * Converts the standard Markdown that AI agents return into Slack's "mrkdwn"
- * flavor so it renders instead of showing raw syntax. Handles ATX headings,
- * `**bold**`/`__bold__`, `[text](url)` links, and `-`/`*` bullets. Slack already
- * supports `_italic_`, so it is left as-is. See https://docs.slack.dev/block-kit.
- */
-export function toSlackMrkdwn(markdown: string): string {
-  return markdown
-    .split("\n")
-    .map((line) => {
-      // ATX headings (`#`..`######`) become bold lines.
-      const heading = line.match(/^\s*#{1,6}\s+(.*)$/);
-      if (heading) {
-        return `*${heading[1].trim()}*`;
-      }
-      // Normalize `-`/`*` bullet markers to Slack bullets, preserving indent.
-      return line.replace(/^(\s*)[-*]\s+/, "$1• ");
-    })
-    .join("\n")
-    // `[text](url)` -> `<url|text>`.
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "<$2|$1>")
-    // `**bold**` / `__bold__` -> `*bold*` (run after bullets so a leading
-    // `**` is never mistaken for a bullet marker).
-    .replace(/\*\*([^*]+)\*\*/g, "*$1*")
-    .replace(/__([^_]+)__/g, "*$1*");
-}
 
 /**
  * A minimal subset of the Slack Block Kit block shapes these notifications emit.
@@ -105,28 +52,12 @@ type SlackBlock =
       }[];
     };
 
-/** Formats a list of strings into Slack bullet lines. */
-function bulletList(items: string[]): string {
-  return items.map((item) => `• ${item}`).join("\n");
-}
-
 /**
  * Renders a Slack message as a Block Kit `blocks` array: a status header, the
- * headline, an optional summary and warnings section, and an optional deep-link
- * button. Sections and the button are omitted when their data is absent.
+ * headline, and an optional deep-link button.
  */
 export function buildSlackBlocks(notification: SlackNotification): SlackBlock[] {
-  const {
-    level,
-    title,
-    headline,
-    summary,
-    summaryLabel,
-    warnings,
-    entityUrl,
-    buttonLabel,
-    actions,
-  } = notification;
+  const { level, title, headline, entityUrl } = notification;
 
   const blocks: SlackBlock[] = [
     {
@@ -139,57 +70,27 @@ export function buildSlackBlocks(notification: SlackNotification): SlackBlock[] 
     },
     {
       type: "section",
-      text: { type: "mrkdwn", text: truncate(headline, SECTION_MAX) },
+      text: { type: "mrkdwn", text: headline },
     },
   ];
 
-  if (summary?.trim()) {
-    blocks.push({
-      type: "section",
-      text: {
-        type: "mrkdwn",
-        text: truncate(
-          `*${summaryLabel ?? DEFAULT_SUMMARY_LABEL}*\n${toSlackMrkdwn(summary.trim())}`,
-          SECTION_MAX
-        ),
-      },
-    });
-  }
-
-  if (warnings && warnings.length > 0) {
-    blocks.push({
-      type: "section",
-      text: {
-        type: "mrkdwn",
-        text: truncate(`*Warnings*\n${bulletList(warnings)}`, SECTION_MAX),
-      },
-    });
-  }
-
-  // Prefer the multi-button `actions` list; otherwise fall back to the single
-  // `entityUrl` button so existing callers keep their behavior.
-  const buttons: SlackActionButton[] =
-    actions && actions.length > 0
-      ? actions
-      : entityUrl
-        ? [{ label: buttonLabel ?? DEFAULT_BUTTON_LABEL, url: entityUrl, style: "primary" }]
-        : [];
-
-  if (buttons.length > 0) {
+  if (entityUrl) {
     blocks.push(
       { type: "divider" },
       {
         type: "actions",
-        elements: buttons.map((button) => ({
-          type: "button",
-          text: {
-            type: "plain_text",
-            text: button.label,
-            emoji: true,
+        elements: [
+          {
+            type: "button",
+            text: {
+              type: "plain_text",
+              text: DEFAULT_BUTTON_LABEL,
+              emoji: true,
+            },
+            url: entityUrl,
+            style: "primary",
           },
-          url: button.url,
-          ...(button.style ? { style: button.style } : {}),
-        })),
+        ],
       }
     );
   }
@@ -203,23 +104,11 @@ export function buildSlackBlocks(notification: SlackNotification): SlackBlock[] 
  * content.
  */
 export function buildSlackText(notification: SlackNotification): string {
-  const { level, title, headline, summary, warnings, entityUrl, buttonLabel, actions } =
-    notification;
+  const { level, title, headline, entityUrl } = notification;
 
   const parts = [`${NOTIFICATION_EMOJI[level]} ${title}`, headline];
-  if (summary?.trim()) {
-    parts.push(toSlackMrkdwn(summary.trim()));
-  }
-  if (warnings && warnings.length > 0) {
-    parts.push(`Warnings:\n${bulletList(warnings)}`);
-  }
-
-  // Mirror the block buttons: prefer the multi-button `actions` list, otherwise
-  // fall back to the single `entityUrl` link.
-  if (actions && actions.length > 0) {
-    parts.push(actions.map((a) => `<${a.url}|${a.label}>`).join("  "));
-  } else if (entityUrl) {
-    parts.push(`<${entityUrl}|${buttonLabel ?? DEFAULT_BUTTON_LABEL}>`);
+  if (entityUrl) {
+    parts.push(`<${entityUrl}|${DEFAULT_BUTTON_LABEL}>`);
   }
   return parts.join("\n\n");
 }

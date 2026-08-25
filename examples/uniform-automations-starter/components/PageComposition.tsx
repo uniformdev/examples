@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { RootComponentInstance } from "@uniformdev/canvas";
 import { UniformComposition } from "@uniformdev/canvas-react";

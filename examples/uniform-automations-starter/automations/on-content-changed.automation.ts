@@ -43,7 +43,6 @@ export default defineAutomation({
         entryId: input.id,
         state: input.state,
         editionId: input.editionId,
-        releaseId: input.trigger?.type === 'release' ? input.trigger.id : undefined,
       });
 
       // do stuff - i.e. update the entry, send email, etc.
@@ -63,7 +62,6 @@ export default defineAutomation({
         compositionId: input.id,
         state: input.state,
         editionId: input.editionId,
-        releaseId: input.trigger?.type === 'release' ? input.trigger.id : undefined,
       });
 
       log.info(`The retrieved composition is named "${changedComposition.composition._name}"`);

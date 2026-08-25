@@ -1,7 +1,7 @@
 import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from "@uniformdev/canvas";
 import { ProjectMapClient } from "@uniformdev/project-map";
 
-const getState = (preview: boolean | undefined) =>
+const getState = (preview: boolean) =>
   process.env.NODE_ENV === "development" || preview
     ? CANVAS_DRAFT_STATE
     : CANVAS_PUBLISHED_STATE;
@@ -24,7 +24,7 @@ export async function getCompositionsForNavigation(preview: boolean) {
     // getting the first level nodes of composition type from project map
     depth: 1,
   });
-  return response.nodes
+  return (response.nodes ?? [])
     .filter(
       // excluding nodes that are placeholders
       (node) => node.path && node.type === "composition" && node.compositionId

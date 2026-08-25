@@ -1,6 +1,6 @@
 {
   "name": "@uniformdev/uniform-automations-starter",
-  "version": "20.72.3-alpha.45",
+  "version": "20.74.7",
   "private": true,
   "engines": {
     "node": ">=20.9.0"
@@ -14,20 +14,21 @@
     "uniform:push": "uniform sync push",
     "uniform:publish": "uniform context manifest publish",
     "typecheck": "tsc --noEmit",
+    "test": "vitest run",
     "automation:list": "uniform automation list",
     "automation:deploy": "uniform automation deploy ./automations",
     "automation:delete": "uniform automation delete ./automations"
   },
   "dependencies": {
-    "@uniformdev/automations-sdk": "20.72.3-alpha.45",
-    "@uniformdev/canvas": "20.72.3-alpha.45",
-    "@uniformdev/canvas-next": "20.72.3-alpha.45",
-    "@uniformdev/canvas-react": "20.72.3-alpha.45",
-    "@uniformdev/context": "20.72.3-alpha.45",
-    "@uniformdev/context-next": "20.72.3-alpha.45",
-    "@uniformdev/context-react": "20.72.3-alpha.45",
-    "@uniformdev/project-map": "^20.72.3-alpha.45",
-    "@uniformdev/webhooks": "20.72.3-alpha.45",
+    "@uniformdev/automations-sdk": "20.74.7",
+    "@uniformdev/canvas": "20.74.7",
+    "@uniformdev/canvas-next": "20.74.7",
+    "@uniformdev/canvas-react": "20.74.7",
+    "@uniformdev/context": "20.74.7",
+    "@uniformdev/context-next": "20.74.7",
+    "@uniformdev/context-react": "20.74.7",
+    "@uniformdev/project-map": "20.74.7",
+    "@uniformdev/webhooks": "20.74.7",
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6",
@@ -37,7 +38,8 @@
     "@types/node": "^20.9.0",
     "@types/react": "^19.2.3",
     "@types/react-dom": "^19.2.3",
-    "@uniformdev/cli": "20.72.3-alpha.45",
-    "typescript": "^5"
+    "@uniformdev/cli": "20.74.7",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
   }
 }

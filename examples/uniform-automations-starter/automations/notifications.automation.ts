@@ -1,5 +1,6 @@
 import { defineAutomation } from '@uniformdev/automations-sdk';
 import {
+  buildNotificationSummary,
   resolveNotificationRecipients,
   sendUniformNotification,
 } from './lib/notifications';
@@ -35,14 +36,16 @@ export default defineAutomation({
   },
   handler: async ({ input, log, uniformCredentials }) => {
     const entityType = input.eventType.startsWith('entry') ? 'entry' : 'composition';
-    const headline = `${entityType === 'entry' ? 'Entry' : 'Composition'} **${input.name}** changed.`;
 
     await Promise.all([
       sendUniformNotification(
         {
           recipients: resolveNotificationRecipients(input.initiator),
           projectId: input.project.id,
-          summary: `${entityType === 'entry' ? 'Entry' : 'Composition'} **${input.name}** changed.`,
+          summary: buildNotificationSummary(
+            input.name,
+            (name) => `${entityType === 'entry' ? 'Entry' : 'Composition'} **${name}** changed.`
+          ),
           entity: {
             entityId: input.id,
             type: entityType,

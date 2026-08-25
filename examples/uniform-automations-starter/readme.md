@@ -37,6 +37,10 @@ uniform-data/                Canvas site, locales, and the AI Workflow definitio
 
 The CLI auto-loads `.env`.
 
+Automations are plain functions: `npm test` imports a default export and calls it
+with a payload. No local Uniform, no SDK mocks. The returned `{ outcome, logs }` is
+the assertion surface — for an `aiTool`, those logs are also what Scout receives.
+
 ## Deploying automations
 
 Deploy is push-only (you cannot read deployed code back) and enables the automation immediately.
@@ -51,9 +55,6 @@ You can still deploy a single file with `uniform automation deploy ./automations
 Secrets use `UNIFORM_ENV_*` variables, inlined by the CLI at deploy time from a **literal**
 `process.env.UNIFORM_ENV_FOO`. A computed lookup (`process.env[someVar]`) is not inlined and reads
 as `undefined` at runtime. `.env.example` lists each variable and which automation needs it.
-
-> Automations currently ship as a preview. Uniform packages in this starter are pinned to
-> `20.72.3-alpha.45` (the automations SDK + CLI line).
 
 ## Basics
 
@@ -75,16 +76,17 @@ as `undefined` at runtime. `.env.example` lists each variable and which automati
 
 ## AI workflow demo
 
-Scout reviews content entering the AI Review stage, then translates and publishes it. The three
-automations sit in `automations/` with the rest; they share IDs from
-`automations/lib/workflow.ts`. The workflow, locales (`en-US`, `es-MX`), and sample
-composition are in `uniform-data/` and are pushed with `npm run uniform:push`.
+Scout reviews content entering the AI Review stage, then translates it and sends
+it for human approval. The three automations sit in `automations/` with the rest;
+they share IDs from `automations/lib/workflow.ts`. The workflow, locales (`en-US`,
+`es-MX`), and sample composition are in `uniform-data/` and are pushed with
+`npm run uniform:push`.
 
 | File | Kind | What it does |
 | --- | --- | --- |
 | `ai-workflow-reviewer.automation.ts` | Scout | On `workflow.transition` into AI Review: approve → Translation, or reject → Editing. |
-| `ai-workflow-translator.automation.ts` | Scout | On transition into Translation: translate en-US → es-MX and publish. Split from the reviewer so the approval's transition is not a self-retrigger (cycle protection would abort it). |
-| `ai-workflow-notify.automation.ts` | `aiTool` | Uniform and/or Slack notify (`targets`: `"uniform"` \| `"slack"`), called by the two Scout automations. A Scout automation has no code, so anything that isn't an agent capability is a tool. |
+| `ai-workflow-translator.automation.ts` | Scout | On transition into Translation: translate en-US → es-MX and send for human approval. Split from the reviewer so the approval's transition is not a self-retrigger (cycle protection would abort it). |
+| `ai-workflow-notify.automation.ts` | `aiTool` | Uniform and Slack notify, called by the two Scout automations. A Scout automation has no code, so anything that isn't an agent capability is a tool. |
 
 ```bash
 npm run uniform:push              # includes the AI Workflow, locales, and sample pages
@@ -120,7 +122,7 @@ it did.
 
 | File | Trigger | What it does |
 | --- | --- | --- |
-| `shared-content-sync.automation.ts` | `entry.published` | Copies a published entry into each spoke project, creating the content type there if missing. The only example of cross-project permissions. |
+| `shared-content-sync.automation.ts` | `entry.published` | Copies a published entry into each spoke project, writing the content type there so the target can store it (create-or-update). The only example of cross-project permissions. |
 
 `automations/lib/` is shared by the notify examples and the advanced automations: `notifications.ts`
 (in-product notifications, recipient from the run initiator), `slack.ts` (Block Kit incoming

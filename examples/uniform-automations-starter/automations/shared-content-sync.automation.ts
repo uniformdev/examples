@@ -1,7 +1,6 @@
 import {
   defineAutomation,
   type AutomationLogger,
-  type NotificationEntity,
   type UniformConnectionParams,
 } from "@uniformdev/automations-sdk";
 import {
@@ -15,10 +14,10 @@ import { ApiClientError } from "@uniformdev/context/api";
 import type { WebhookPayloadFor } from "@uniformdev/webhooks";
 import { errorMessage } from "./lib/errors";
 import {
+  buildNotificationSummary,
   resolveNotificationRecipients,
   sendUniformNotification,
 } from "./lib/notifications";
-import { truncate } from "./lib/utils";
 
 /**
  * Shared content sync.
@@ -42,25 +41,6 @@ import { truncate } from "./lib/utils";
  */
 
 /**
- * The publish events this automation fans out, each mapped to the entity type a
- * notification should link to. These keys are the only list of supported
- * events, so the map and the payload types below cannot drift apart.
- */
-const ENTITY_TYPES = {
-  "entry.published": "entry",
-} as const satisfies Record<string, NotificationEntity["type"]>;
-
-/** Uniform webhook event types this automation fans out. */
-export type SupportedEventType = keyof typeof ENTITY_TYPES;
-
-/**
- * A publish event as Uniform delivers it. The platform validates against its
- * own catalog before dispatch, so the handler receives this already typed and
- * never parses a raw body.
- */
-export type PublishedEvent = WebhookPayloadFor<SupportedEventType>;
-
-/**
  * Parses the consuming project ids from `UNIFORM_ENV_SHARED_CONTENT_TARGETS`
  * (comma-separated). Whitespace is trimmed and empty entries dropped, so an
  * unset or blank value yields an empty list and the automation no-ops.
@@ -82,7 +62,7 @@ export function configuredTargetProjectIds(): string[] {
  * Omitting the key entirely keeps it out of request bodies rather than sending
  * `editionId: undefined`.
  */
-function edition(event: PublishedEvent): { editionId?: string } {
+function edition(event: WebhookPayloadFor<"entry.published">): { editionId?: string } {
   return "editionId" in event && event.editionId
     ? { editionId: event.editionId }
     : {};
@@ -102,34 +82,6 @@ export function toTargetEntryPut(source: Entry) {
     ...body
   } = convertEntryToPutEntry(source);
   return body;
-}
-
-/** Longest summary the Notifications API accepts; a longer body is rejected. */
-const MAX_SUMMARY = 256;
-
-/** Shortest entity name still worth showing once the name has to be clipped. */
-const MIN_ENTITY_NAME = 20;
-
-/**
- * Short markdown body for the in-app notification. The entity name is the only
- * unbounded part, so it absorbs the truncation and the project counts always
- * survive. The body carries no link because the notification opens the entity
- * itself (see the `entity` reference passed alongside this summary).
- */
-export function buildNotificationSummary(
-  options: { entityName: string; copied: number; targets: number },
-  maxLength = MAX_SUMMARY,
-): string {
-  const { entityName, copied, targets } = options;
-
-  const summarize = (name: string) =>
-    `Shared content: **${name}** has been propagated to ${copied}/${targets} project(s).`;
-
-  const nameBudget = maxLength - summarize("").length;
-  return truncate(
-    summarize(truncate(entityName, Math.max(nameBudget, MIN_ENTITY_NAME))),
-    maxLength,
-  );
 }
 
 export default defineAutomation({
@@ -171,14 +123,13 @@ export default defineAutomation({
       return { outcome: "rejected" };
     }
 
-    const entityType = ENTITY_TYPES[input.eventType];
     log.info(
-      `Fanning out ${entityType} "${input.name}" (${input.id}) to ${targetProjectIds.length} project(s): ${targetProjectIds.join(", ")}.`,
+      `Fanning out entry "${input.name}" (${input.id}) to ${targetProjectIds.length} project(s): ${targetProjectIds.join(", ")}.`,
     );
 
     // Read the published entity once, then replay that single read into every
     // target so N targets cost one source read rather than N.
-    let writeToTarget: TargetWriter | null;
+    let writeToTarget: TargetWriter;
     try {
       writeToTarget = await readPublishedEntity(input, uniformCredentials);
     } catch (error) {
@@ -187,21 +138,14 @@ export default defineAutomation({
       // content model is read here too, hence naming both as the suspect.
       if (error instanceof ApiClientError && error.statusCode === 404) {
         log.warning(
-          `Skipping ${entityType} "${input.name}" (${input.id}): it or its content model is missing from this project.`,
+          `Skipping entry "${input.name}" (${input.id}): it or its content model is missing from this project.`,
         );
         return { outcome: "rejected" };
       }
       log.error(
-        `Failed to read ${entityType} "${input.name}" (${input.id}): ${errorMessage(error)}`,
+        `Failed to read entry "${input.name}" (${input.id}): ${errorMessage(error)}`,
       );
       return { outcome: "failure" };
-    }
-
-    if (!writeToTarget) {
-      log.warning(
-        `No copy behavior for event "${input.eventType}"; ignoring "${input.name}" (${input.id}).`,
-      );
-      return { outcome: "rejected" };
     }
 
     const copied = await fanOut(
@@ -218,14 +162,14 @@ export default defineAutomation({
       {
         recipients: resolveNotificationRecipients(input.initiator),
         projectId: uniformCredentials.projectId,
-        summary: buildNotificationSummary({
-          entityName: input.name,
-          copied: copied.length,
-          targets: targetProjectIds.length,
-        }),
+        summary: buildNotificationSummary(
+          input.name,
+          (name) =>
+            `Shared content: **${name}** has been propagated to ${copied.length}/${targetProjectIds.length} project(s).`,
+        ),
         entity: {
           entityId: input.id,
-          type: entityType,
+          type: "entry",
           ...edition(input),
         },
       },
@@ -249,39 +193,30 @@ export default defineAutomation({
 type TargetWriter = (target: UniformConnectionParams) => Promise<unknown>;
 
 /**
- * Reads the published entity and the content model it needs from the shared
+ * Reads the published entry and the content type it needs from the shared
  * project, and returns a writer that saves both into a target project. Reading
  * and writing are split so the source reads happen once regardless of how many
  * targets are configured.
- *
- * Returns null for an event this automation does not handle. Every branch tests
- * its own event type rather than letting one fall through as the default, so a
- * trigger added without a matching branch is refused instead of being read as
- * the wrong kind of entity.
  */
 async function readPublishedEntity(
-  event: PublishedEvent,
+  event: WebhookPayloadFor<"entry.published">,
   credentials: UniformConnectionParams,
-): Promise<TargetWriter | null> {
-  if (event.eventType === "entry.published") {
-    const entry = await new EntryManagementClient(credentials).get({
-      entryId: event.id,
-      ...edition(event),
-      state: CANVAS_PUBLISHED_STATE,
-    });
+): Promise<TargetWriter> {
+  const entry = await new EntryManagementClient(credentials).get({
+    entryId: event.id,
+    ...edition(event),
+    state: CANVAS_PUBLISHED_STATE,
+  });
 
-    const contentType = await new ContentTypeClient(credentials).get({
-      contentTypeId: entry.entry.type,
-    });
+  const contentType = await new ContentTypeClient(credentials).get({
+    contentTypeId: entry.entry.type,
+  });
 
-    const body = { ...toTargetEntryPut(entry), ...edition(event) };
-    return async (target) => {
-      await new ContentTypeClient(target).save({ contentType });
-      return new EntryManagementClient(target).saveAndPublish(body);
-    };
-  }
-
-  return null;
+  const body = { ...toTargetEntryPut(entry), ...edition(event) };
+  return async (target) => {
+    await new ContentTypeClient(target).save({ contentType });
+    return new EntryManagementClient(target).saveAndPublish(body);
+  };
 }
 
 /**
@@ -303,7 +238,7 @@ async function fanOut(
 
   return targetProjectIds.filter((projectId, index) => {
     const result = results[index];
-    if (result.status === "rejected") {
+    if (result?.status === "rejected") {
       log.error(
         `Failed to write to project ${projectId}: ${errorMessage(result.reason)}`,
       );

@@ -1,4 +1,7 @@
-import type { AutomationLogger, UniformConnectionParams } from "@uniformdev/automations-sdk";
+import type {
+  AutomationLogger,
+  UniformConnectionParams,
+} from "@uniformdev/automations-sdk";
 import { defineAutomation } from "@uniformdev/automations-sdk";
 import {
   EntityReleasesClient,
@@ -7,7 +10,11 @@ import {
   type ReleaseState,
 } from "@uniformdev/canvas";
 import { errorMessage } from "./lib/errors";
-import { resolveNotificationRecipients, sendUniformNotification } from "./lib/notifications";
+import {
+  buildNotificationSummary,
+  resolveNotificationRecipients,
+  sendUniformNotification,
+} from "./lib/notifications";
 import { truncate } from "./lib/utils";
 
 /**
@@ -45,7 +52,12 @@ import { truncate } from "./lib/utils";
  * (`launched`, `deleting`) has already been processed, so its copy of an entity
  * can no longer conflict with a base change.
  */
-export const PENDING_RELEASE_STATES: ReleaseState[] = ["open", "locked", "queued", "launching"];
+export const PENDING_RELEASE_STATES: ReleaseState[] = [
+  "open",
+  "locked",
+  "queued",
+  "launching",
+];
 
 type ConflictEntityType = "entry" | "composition";
 
@@ -64,52 +76,23 @@ const MAX_RELEASES = 6;
  */
 export type ReleaseInfo = Pick<Release, "id" | "name">;
 
-/** Longest summary the Notifications API accepts; a longer body is rejected. */
-const MAX_SUMMARY = 256;
-
 /** Longest release name kept in the summary; longer ones are clipped. */
 const MAX_RELEASE_NAME = 40;
 
-/** Entity name floor, so a long release link cannot squeeze the name to nothing. */
-const MIN_ENTITY_NAME = 20;
-
 /**
- * Short markdown body for the in-app notification.
- *
- * `MAX_SUMMARY` is a hard budget and a dashboard URL eats well over half of it,
- * so the body carries exactly one link: the release. The entity needs no link
- * because the notification itself opens it (see the `entity` reference passed
- * alongside this summary). Several conflicting releases are counted and linked
- * to the release list rather than named, which would not fit.
- *
- * The entity name absorbs whatever budget the link leaves, so the body is
- * shaped to fit rather than clipped after the fact, which would cut the link
- * URL in half. The closing clip is a last resort for the case where even the
- * shortest name does not fit.
+ * Markdown link for the notification body: the single conflicting release, or
+ * a count linking to the project's release list when there are several.
  */
-export function buildNotificationSummary(
-  options: {
-    entityName: string;
-    conflictReleases: ReleaseInfo[];
-    projectUrl: string;
-  },
-  maxLength = MAX_SUMMARY
+function getReleaseLinkMarkdown(
+  conflictReleases: ReleaseInfo[],
+  projectUrl: string
 ): string {
-  const { entityName, conflictReleases, projectUrl } = options;
-
   const dashboardUrl = projectUrl.replace(/\/+$/, "");
-  const [release] = conflictReleases;
-  const releaseLink =
-    conflictReleases.length === 1
-      ? `[${truncate(release.name, MAX_RELEASE_NAME)}](${dashboardUrl}/releases/${release.id})`
-      : `[${conflictReleases.length} pending releases](${dashboardUrl}/releases)`;
-
-  const summarize = (name: string) => `**${name}** also changed in ${releaseLink}.`;
-
-  const nameBudget = maxLength - summarize("").length;
-  const summary = summarize(truncate(entityName, Math.max(nameBudget, MIN_ENTITY_NAME)));
-
-  return truncate(summary, maxLength);
+  if (conflictReleases.length === 1) {
+    const release = conflictReleases[0];
+    return `[${truncate(release.name, MAX_RELEASE_NAME)}](${dashboardUrl}/releases/${release.id})`;
+  }
+  return `[${conflictReleases.length} pending releases](${dashboardUrl}/releases)`;
 }
 
 /**
@@ -120,7 +103,7 @@ export function buildNotificationSummary(
 async function loadReleases(
   credentials: UniformConnectionParams,
   releaseIds: string[],
-  log: AutomationLogger
+  log: AutomationLogger,
 ): Promise<ReleaseInfo[]> {
   try {
     const releases = new ReleaseClient(credentials);
@@ -128,6 +111,10 @@ async function loadReleases(
       releaseIDs: releaseIds,
       limit: releaseIds.length,
     });
+    if (results.length !== releaseIds.length) {
+      log.warning("Could not read all releases; using ids.");
+      return releaseIds.map((id) => ({ id, name: id }));
+    }
     return results;
   } catch (error) {
     log.warning(`Could not read releases (${errorMessage(error)}); using ids.`);
@@ -148,17 +135,12 @@ export default defineAutomation({
     permissions: { role: "developer" },
   },
   handler: async ({ input, log, uniformCredentials }) => {
-    if (!uniformCredentials) {
-      log.error(
-        "No Uniform credentials available; grant this automation a role so it can read releases."
-      );
-      return { outcome: "failure" };
-    }
-
     // A release being merged into base rewrites base content and emits this same
     // event. Those changes are the release doing its job, not a conflict.
     if (input.trigger?.type === "release") {
-      log.info(`"${input.name}" changed by release ${input.trigger.id} merging; ignoring.`);
+      log.info(
+        `"${input.name}" changed by release ${input.trigger.id} merging; ignoring.`,
+      );
       return { outcome: "rejected" };
     }
 
@@ -181,42 +163,41 @@ export default defineAutomation({
       .filter((releaseId): releaseId is string => !!releaseId);
 
     if (releaseIds.length === 0) {
-      log.info(`No pending release changes ${entityType} "${input.name}" (${input.id}).`);
+      log.info(
+        `No pending release changes ${entityType} "${input.name}" (${input.id}).`,
+      );
       return { outcome: "rejected" };
     }
 
-    const conflictReleases = await loadReleases(uniformCredentials, releaseIds, log);
+    const conflictReleases = await loadReleases(
+      uniformCredentials,
+      releaseIds,
+      log,
+    );
 
     log.warning(
       `Conflict on ${entityType} "${input.name}" (${input.id}): also changed in ${conflictReleases
         .map((release) => release.name)
-        .join(", ")}.`
+        .join(", ")}.`,
     );
-
-    // Link the notification to the entity so it opens in-app. Pattern edit URLs
-    // do not map onto an entry/composition reference, so those fall back to an
-    // external link.
-    const entity = /pattern/i.test(input.edit_url)
-      ? ({ type: "external", url: input.edit_url } as const)
-      : {
-          entityId: input.id,
-          type: entityType,
-          ...(input.editionId ? { editionId: input.editionId } : {}),
-        };
 
     await sendUniformNotification(
       {
         recipients: resolveNotificationRecipients(input.initiator),
         projectId: input.project.id,
-        summary: buildNotificationSummary({
-          entityName: input.name,
-          conflictReleases,
-          projectUrl: input.project.url,
-        }),
-        entity,
+        summary: buildNotificationSummary(
+          input.name,
+          (name) =>
+            `**${name}** also changed in ${getReleaseLinkMarkdown(conflictReleases, input.project.url)}.`,
+        ),
+        entity: {
+          entityId: input.id,
+          type: entityType,
+          ...(input.editionId ? { editionId: input.editionId } : {}),
+        },
       },
       uniformCredentials,
-      log
+      log,
     );
 
     return { outcome: "success" };

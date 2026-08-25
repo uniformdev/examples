@@ -12,7 +12,7 @@ export const getServerSideProps = withUniformGetServerSideProps({
   },
   handleComposition: async ({ compositionApiResponse }, { preview }) => {
     const { composition } = compositionApiResponse || {};
-    const navLinks = await getCompositionsForNavigation(preview);
+    const navLinks = await getCompositionsForNavigation(preview ?? false);
     return {
       props: {
         data: composition,

@@ -24,12 +24,13 @@ export default defineAutomation({
   },
   handler: async ({ input, log }) => {
     const res = await fetch(`https://www.dnd5eapi.co/api/2014/monsters/${input.name}`);
-    const data = await res.json();
 
     if (!res.ok) {
       log.error(`Failed to fetch creature information: ${res.statusText}`);
       return { outcome: 'failure' };
     }
+
+    const data = await res.json();
 
     // return the creature's json data as the tool result
     log.info(JSON.stringify(data, null, 2));

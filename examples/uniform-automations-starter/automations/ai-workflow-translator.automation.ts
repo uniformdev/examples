@@ -4,14 +4,14 @@ import { AI_WORKFLOW_ID, TRANSLATION_STAGE_ID } from './lib/workflow';
 
 /**
  * Translates content when it enters the AI Workflow's Translation stage: Scout translates the
- * en-US fields to es-MX and advances the entity to Approved (auto-publish), then notifies.
+ * en-US fields to es-MX, sends the entity for human approval, then notifies.
  *
  * The deployed `publicId` is the filename without extension: `ai-workflow-translator`.
  */
 export default defineScoutAutomation(
   {
     name: 'AI Workflow: Content Translation',
-    description: 'Translates content entering the Translation stage to es-MX via Scout and advances it.',
+    description: 'Translates content entering the Translation stage to es-MX via Scout and sends it for human approval.',
     triggers: [
       {
         type: 'workflow.transition',

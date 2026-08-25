@@ -22,7 +22,7 @@ export default defineAutomation({
     name: 'AI Workflow: notification',
     // Load-bearing: this is how the agent decides to call it, so it names the workflow explicitly.
     description:
-      'Posts a Uniform in-app and/or Slack notification about an AI Workflow content review or translation. Pass targets ["uniform"], ["slack"], or both. Do not call outside automations.',
+      'Posts a notification about an AI Workflow content review or translation. Do not call outside automations.',
     triggers: [{ type: 'aiTool' }],
     inputSchema: z.object({
       targets: z
@@ -33,14 +33,15 @@ export default defineAutomation({
         ),
       text: z
         .string()
+        .max(256)
         .describe(
-          'The message to post. Lead with a status emoji and the entity name, then the details — this is read by a human who was not watching the run.'
+          'The message to post, at most 256 characters. Lead with a status emoji and the entity name, then the details — this is read by a human who was not watching the run. Do not paste the entity URL into the text; pass it as entityUrl instead.'
         ),
       entityUrl: z
-        .string()
+        .url()
         .optional()
         .describe(
-          'The `entity.url` from the trigger payload, linked at the end of the message so the reader can open the content. Omit only if the payload had none.'
+          'The absolute `entity.url` from the trigger payload, linked at the end of the message so the reader can open the content. Omit only if the payload had none.'
         ),
     }),
   },
@@ -64,12 +65,6 @@ export default defineAutomation({
         }
 
         case 'uniform': {
-          if (!uniformCredentials) {
-            log.error('No Uniform credentials; cannot send an in-app notification.');
-            failed = true;
-            break;
-          }
-
           await sendUniformNotification(
             {
               recipients: configuredNotificationRecipients(),
