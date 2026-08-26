@@ -1,7 +1,10 @@
 # Uniform Automations starter
 
-Examples of authoring and deploying Uniform Automations
-with `@uniformdev/automations-sdk` and the `uniform automation` CLI.
+Examples of authoring and deploying Uniform [Automations](https://docs.uniform.app/docs/guides/automations)
+with `@uniformdev/automations-sdk` and the `uniform automation` CLI. There are two kinds:
+[code automations](https://docs.uniform.app/docs/guides/automations/code-automations) (TypeScript
+handlers you deploy with the CLI) and [Scout automations](https://docs.uniform.app/docs/guides/automations/scout-automations)
+(instructions Uniform's AI agent runs on each trigger).
 
 A Next.js site (Home + About, one page type, one Hero) is included so you have Canvas
 content to trigger automations against: edit a page, move it through the AI Workflow,
@@ -40,13 +43,14 @@ The CLI auto-loads `.env`.
 Automations are plain functions: `npm test` imports a default export and calls it
 with a payload. No local Uniform, no SDK mocks. The returned `{ outcome, logs }` is
 the assertion surface — for an `aiTool`, those logs are also what Scout receives.
+See [testing code automations](https://docs.uniform.app/docs/guides/automations/code-automations#testing).
 
 ## Deploying automations
 
 Deploy is push-only (you cannot read deployed code back) and enables the automation immediately.
 `npm run automation:deploy` / `npm run automation:delete` push or remove every `*.automation.ts`
 file in `./automations`. `npm run automation:list` shows what's deployed; runs and logs live
-under Settings → Automations.
+under Settings → Automations. See [deploying](https://docs.uniform.app/docs/guides/automations/code-automations#deploying).
 
 Some examples need extra setup (see below): `UNIFORM_ENV_*` secrets, and `shared-content-sync`
 is meant for a **hub** project.
@@ -55,8 +59,12 @@ You can still deploy a single file with `uniform automation deploy ./automations
 Secrets use `UNIFORM_ENV_*` variables, inlined by the CLI at deploy time from a **literal**
 `process.env.UNIFORM_ENV_FOO`. A computed lookup (`process.env[someVar]`) is not inlined and reads
 as `undefined` at runtime. `.env.example` lists each variable and which automation needs it.
+See [secrets and environment variables](https://docs.uniform.app/docs/guides/automations/code-automations#secrets-and-environment-variables).
 
 ## Basics
+
+Trigger types, combining them, and CEL filters are covered in the
+[triggers](https://docs.uniform.app/docs/guides/automations/triggers) guide.
 
 `npm run automation:deploy` / `npm run automation:delete`
 
@@ -76,6 +84,8 @@ as `undefined` at runtime. `.env.example` lists each variable and which automati
 
 ## AI workflow demo
 
+This is the [workflow-stage pattern](https://docs.uniform.app/docs/guides/automations/best-practices#delegate-editing-work-through-workflow-stages)
+from the best practices guide, implemented as [Scout automations](https://docs.uniform.app/docs/guides/automations/scout-automations).
 Scout reviews content entering the AI Review stage, then translates it and sends
 it for human approval. The three automations sit in `automations/` with the rest;
 they share IDs from `automations/lib/workflow.ts`. The workflow, locales (`en-US`,
@@ -98,7 +108,7 @@ npm run automation:deploy
 - Grants `editor` (a built-in role). You must hold it to deploy. Scout automations always
   need a role — without a machine identity the agent cannot act. The AI Review and Translation
   stages only allow `editor` to write and execute transitions.
-- Scout runs consume AI credits.
+- Scout runs consume [AI credits](https://docs.uniform.app/docs/guides/automations/scout-automations#ai-credits).
 - `UNIFORM_ENV_SLACK_WEBHOOK_URL` is optional; omit it to skip Slack. In-app Uniform notify
   needs `UNIFORM_ENV_NOTIFY_RECIPIENTS` (the tool run has no person behind it). Notifications
   are best-effort (the agent chooses to call the tool). The run log is the source of truth.
@@ -127,3 +137,11 @@ it did.
 `automations/lib/` is shared by the notify examples and the advanced automations: `notifications.ts`
 (in-product notifications, recipient from the run initiator), `slack.ts` (Block Kit incoming
 webhook), `errors.ts`, `utils.ts`.
+
+## Documentation
+
+- [Automations](https://docs.uniform.app/docs/guides/automations) — overview, dashboard, and execution model
+- [Triggers](https://docs.uniform.app/docs/guides/automations/triggers) — content events, schedules, incoming webhooks, AI tools, and filters
+- [Code automations](https://docs.uniform.app/docs/guides/automations/code-automations) — SDK, identity, secrets, notify, test, and deploy
+- [Scout automations](https://docs.uniform.app/docs/guides/automations/scout-automations) — instruction-based automations and AI credits
+- [Best practices](https://docs.uniform.app/docs/guides/automations/best-practices) — workflow stages, filtering, and loop protection

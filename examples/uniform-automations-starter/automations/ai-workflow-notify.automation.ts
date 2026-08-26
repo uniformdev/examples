@@ -16,6 +16,8 @@ import { notifySlack } from './lib/slack';
  * automation and reused by every automation (and by Scout in the dashboard) that needs it.
  *
  * The deployed `publicId` is the filename without extension: `ai-workflow-notify`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/triggers#ai-tool — compose Scout automations with a code tool
  */
 export default defineAutomation({
   metadata: {

@@ -13,6 +13,9 @@ import { AI_REVIEW_STAGE_ID, AI_WORKFLOW_ID } from './lib/workflow';
  * automation, so the translation run proceeds normally.
  *
  * The deployed `publicId` is the filename without extension: `ai-workflow-reviewer`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/scout-automations
+ * @see https://docs.uniform.app/docs/guides/automations/best-practices — workflow stages and loop protection
  */
 export default defineScoutAutomation(
   {

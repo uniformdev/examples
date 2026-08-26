@@ -11,6 +11,8 @@ import { CompositionManagementClient, EntryManagementClient } from '@uniformdev/
  * focused on reading the changed entity.
  *
  * The deployed `publicId` is the filename without extension: `on-content-changed`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/triggers — content events and CEL filters
  */
 export default defineAutomation({
   metadata: {

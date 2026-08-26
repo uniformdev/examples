@@ -14,6 +14,8 @@ import { notifySlack } from './lib/slack';
  * the run.
  *
  * The deployed `publicId` is the filename without extension: `notifications`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/code-automations#notify-people — dashboard notifications and Slack
  */
 export default defineAutomation({
   metadata: {

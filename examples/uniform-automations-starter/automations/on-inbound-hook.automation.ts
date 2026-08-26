@@ -18,6 +18,8 @@ const ExampleIncomingWebhookSchema = z.object({ id: z.string(), action: z.string
  *  The handler receives `input.method`, `input.headers`, `input.query`, and `input.rawBody`.
  * 
  *  The deployed `publicId` is the filename without extension: `on-inbound-hook`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/triggers#incoming-webhooks
  */
 export default defineAutomation({
   metadata: {

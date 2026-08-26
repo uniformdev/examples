@@ -38,6 +38,8 @@ import {
  *   role grants, so adding a target requires a redeploy.
  *
  * The deployed `publicId` is the filename without extension: `shared-content-sync`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/code-automations#the-automation-identity — cross-project `permissions.projects`
  */
 
 /**

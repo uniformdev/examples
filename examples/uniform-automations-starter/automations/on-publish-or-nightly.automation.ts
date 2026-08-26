@@ -17,6 +17,8 @@ import { defineAutomation } from '@uniformdev/automations-sdk';
  * handler when the condition is knowable from the payload.
  *
  * The deployed `publicId` is the filename without extension: `on-publish-or-nightly`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/triggers — multiple triggers and CEL filters
  */
 export default defineAutomation({
   metadata: {

@@ -7,6 +7,9 @@ import { AI_WORKFLOW_ID, TRANSLATION_STAGE_ID } from './lib/workflow';
  * en-US fields to es-MX, sends the entity for human approval, then notifies.
  *
  * The deployed `publicId` is the filename without extension: `ai-workflow-translator`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/scout-automations
+ * @see https://docs.uniform.app/docs/guides/automations/best-practices — workflow stages and loop protection
  */
 export default defineScoutAutomation(
   {

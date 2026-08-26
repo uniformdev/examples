@@ -8,6 +8,8 @@ import { defineAutomation } from '@uniformdev/automations-sdk';
  * NOT by the absolute number of runs completed.
  *
  * The deployed `publicId` is the filename without extension: `daily-cleanup`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/triggers#schedule — RFC 5545 rrule
  */
 export default defineAutomation({
   metadata: {

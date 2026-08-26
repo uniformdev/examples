@@ -9,6 +9,9 @@ import * as z from 'zod';
  * Unlike other triggers, the tool trigger receives credentials for the identity invoking Scout; you cannot define a role.
  *
  * The deployed `publicId` is the filename without extension: `ai-tool`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/triggers#ai-tool
+ * @see https://docs.uniform.app/docs/guides/automations/code-automations#the-automation-identity — runs as the user invoking Scout
  */
 export default defineAutomation({
   metadata: {

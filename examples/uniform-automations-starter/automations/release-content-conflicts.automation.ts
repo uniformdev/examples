@@ -45,6 +45,8 @@ import { truncate } from "./lib/utils";
  * conflict was already reported.
  *
  * The deployed `publicId` is the filename without extension: `release-content-conflicts`.
+ *
+ * @see https://docs.uniform.app/docs/guides/automations/best-practices#filter-before-you-run — handler vs filter when the condition needs a lookup
  */
 
 /**
