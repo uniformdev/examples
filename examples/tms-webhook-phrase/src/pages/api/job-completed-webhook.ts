@@ -1,4 +1,4 @@
-import { CanvasClient, ContentClient } from '@uniformdev/canvas';
+import { CompositionManagementClient, EntryManagementClient } from '@uniformdev/canvas';
 import { PhraseTmsClient, PhraseWebhookPayload } from '@uniformdev/tms-phrase';
 import { mergeTranslationToUniform, TranslationPayload } from '@uniformdev/tms-sdk';
 import { NextApiRequest, NextApiResponse } from 'next';
@@ -71,17 +71,15 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }, entityType: ${uniformEntityType}, entity: ${uniformEntityId})`
   );
 
-  const canvasClient = new CanvasClient({
+  const canvasClient = new CompositionManagementClient({
     projectId: uniformProjectId,
     apiKey: process.env.UNIFORM_API_KEY || assert('missing UNIFORM_API_KEY'),
-    bypassCache: true,
     apiHost: process.env.UNIFORM_CLI_BASE_URL,
   });
 
-  const contentClient = new ContentClient({
+  const contentClient = new EntryManagementClient({
     projectId: uniformProjectId,
     apiKey: process.env.UNIFORM_API_KEY || assert('missing UNIFORM_API_KEY'),
-    bypassCache: true,
     apiHost: process.env.UNIFORM_CLI_BASE_URL,
   });
 
@@ -94,7 +92,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       console.log('update composition: start');
 
       const compositionWithWorkflow = ensureWorkflowStage(composition);
-      await canvasClient.updateComposition(compositionWithWorkflow);
+      await canvasClient.save(compositionWithWorkflow);
 
       // eslint-disable-next-line no-console
       console.log('update composition: done');
@@ -106,7 +104,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       console.log('update entry: start');
 
       const entryWithWorkflow = ensureWorkflowStage(entry);
-      await contentClient.upsertEntry(entryWithWorkflow);
+      await contentClient.save(entryWithWorkflow);
 
       // eslint-disable-next-line no-console
       console.log('update entry: done');

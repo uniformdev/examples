@@ -1,5 +1,5 @@
 /* eslint no-console: 0 */
-import { CanvasClient, ContentClient } from '@uniformdev/canvas';
+import { CompositionManagementClient, EntryManagementClient } from '@uniformdev/canvas';
 import { mergeTranslationToUniform } from '@uniformdev/tms-sdk';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import {
@@ -86,17 +86,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }, entityType: ${uniformEntityType}, entity: ${uniformEntityId})`
       );
 
-      const canvasClient = new CanvasClient({
+      const canvasClient = new CompositionManagementClient({
         projectId: uniformProjectId,
         apiKey: uniformAPIKey,
-        bypassCache: true,
         apiHost: uniformCLIBaseUrl,
       });
 
-      const contentClient = new ContentClient({
+      const contentClient = new EntryManagementClient({
         projectId: uniformProjectId,
         apiKey: uniformAPIKey,
-        bypassCache: true,
         apiHost: uniformCLIBaseUrl,
       });
 
@@ -108,7 +106,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           console.log('update composition: start');
 
           const compositionWithWorkflow = ensureWorkflowStage(composition);
-          await canvasClient.updateComposition(compositionWithWorkflow);
+          await canvasClient.save(compositionWithWorkflow);
 
           console.log('update composition: done');
 
@@ -118,7 +116,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           console.log('update entry: start');
 
           const entryWithWorkflow = ensureWorkflowStage(entry);
-          await contentClient.upsertEntry(entryWithWorkflow);
+          await contentClient.save(entryWithWorkflow);
 
           console.log('update entry: done');
 

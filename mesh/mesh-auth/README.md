@@ -72,7 +72,6 @@ The header value is a **constant**, not a secret. It only defends because browse
    | Variable | Purpose |
    | --- | --- |
    | `UNIFORM_API_HOST` | Uniform API origin (e.g. `https://uniform.app`) |
-   | `UNIFORM_EDGE_API_HOST` | Uniform edge API host (e.g. `https://uniform.global`) |
    | `UNIFORM_INTEGRATION_ID` | Integration UUID from the dashboard |
    | `UNIFORM_INTEGRATION_SECRET` | Plaintext app secret from integration create/regenerate |
    | `MESH_SESSION_SECRET` | ≥32 random bytes for JWE sealing — `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |

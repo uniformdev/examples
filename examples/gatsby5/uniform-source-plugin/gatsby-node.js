@@ -1,5 +1,5 @@
 const {
-  CanvasClient,
+  CompositionDeliveryClient,
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
 } = require("@uniformdev/canvas");
@@ -28,9 +28,8 @@ const getProjectMapClient = () => {
   });
 };
 
-const canvasClient = new CanvasClient({
+const compositionClient = new CompositionDeliveryClient({
   apiKey: process.env.UNIFORM_API_KEY,
-  apiHost: "https://uniform.app",
   projectId: process.env.UNIFORM_PROJECT_ID,
   fetch: fetch,
 });
@@ -42,8 +41,7 @@ exports.sourceNodes = async ({
 }) => {
   const { createNode } = actions;
 
-  const { compositions } = await canvasClient.getCompositionList({
-    skipEnhance: true,
+  const { compositions } = await compositionClient.list({
     state:
       process.env.NODE_ENV === "development"
         ? CANVAS_DRAFT_STATE

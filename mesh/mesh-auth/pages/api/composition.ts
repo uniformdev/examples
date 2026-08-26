@@ -6,7 +6,7 @@
  *
  * Response: { id: string; name: string; state: number }
  */
-import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE, CanvasClient } from '@uniformdev/canvas';
+import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE, CompositionManagementClient } from '@uniformdev/canvas';
 import { ApiClientError, BearerTokenNotValidOrExpiredError } from '@uniformdev/context/api';
 import { DELEGATION_EXPIRED_CODE, DELEGATION_SESSION_EXPIRED_MESSAGE } from '@uniformdev/mesh-sdk';
 import type { NextApiRequest, NextApiResponse } from 'next';
@@ -32,10 +32,6 @@ function parseState(raw: string | string[] | undefined): number {
 
 if (!process.env.UNIFORM_API_HOST) {
   throw new Error('UNIFORM_API_HOST is not set');
-}
-
-if (!process.env.UNIFORM_EDGE_API_HOST) {
-  throw new Error('UNIFORM_EDGE_API_HOST is not set');
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse): Promise<void> {
@@ -66,16 +62,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return;
   }
 
-  const canvasClient = new CanvasClient({
+  const compositionClient = new CompositionManagementClient({
     apiHost: process.env.UNIFORM_API_HOST!,
-    edgeApiHost: process.env.UNIFORM_EDGE_API_HOST!,
     projectId,
     bearerToken: session.accessToken,
-    bypassCache: true,
   });
 
   try {
-    const response = await canvasClient.getCompositionById({ compositionId, state });
+    const response = await compositionClient.get({ compositionId, state });
     const payload: CompositionSummary = {
       id: response.composition._id,
       name: response.composition._name,

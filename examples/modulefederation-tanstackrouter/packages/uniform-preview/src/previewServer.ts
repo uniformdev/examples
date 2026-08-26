@@ -1,9 +1,10 @@
 import type { ViteDevServer } from 'vite';
 import type { IncomingMessage, ServerResponse } from 'http';
 import {
+  ApiClientError,
   CANVAS_DRAFT_STATE,
   CANVAS_PUBLISHED_STATE,
-  CanvasClient,
+  CompositionDeliveryClient,
   IN_CONTEXT_EDITOR_CONFIG_CHECK_QUERY_STRING_PARAM,
   IN_CONTEXT_EDITOR_PLAYGROUND_QUERY_STRING_PARAM,
   RouteClient,
@@ -79,7 +80,6 @@ export function setupUniformServer(server: ViteDevServer, options: UniformServer
   const {
     projectId,
     apiKey,
-    apiHost = 'https://uniform.app',
     edgeApiHost = 'https://uniform.global',
     playgroundPath,
     allowedOrigins = [],
@@ -167,7 +167,7 @@ export function setupUniformServer(server: ViteDevServer, options: UniformServer
     try {
       console.log(`Getting route for project: ${projectId} and path: ${path}`)
       const client = new RouteClient({ projectId, apiKey, edgeApiHost });
-      const response = await client.getRoute({ path });
+      const response = await client.get({ path });
 
       if (response.type === 'composition') {
         sendJson(res, 200, response.compositionApiResponse.composition);
@@ -175,8 +175,12 @@ export function setupUniformServer(server: ViteDevServer, options: UniformServer
         sendJson(res, 404, { error: 'No composition found for path' });
       }
     } catch (err) {
-      console.error('Failed to fetch composition by path', err);
-      sendJson(res, 500, { error: 'Failed to fetch composition' });
+      if (err instanceof ApiClientError && err.statusCode === 404) {
+        sendJson(res, 404, { error: 'Composition not found' });
+      } else {
+        console.error('Failed to fetch composition by path', err);
+        sendJson(res, 500, { error: 'Failed to fetch composition' });
+      }
     }
   });
 
@@ -196,17 +200,16 @@ export function setupUniformServer(server: ViteDevServer, options: UniformServer
     }
 
     try {
-      const client = new CanvasClient({ projectId, apiKey, apiHost, edgeApiHost });
-      const { composition } = await client.getCompositionById({ compositionId, state });
-
-      if (composition) {
-        sendJson(res, 200, composition);
-      } else {
-        sendJson(res, 404, { error: 'Composition not found' });
-      }
+      const client = new CompositionDeliveryClient({ projectId, apiKey, edgeApiHost });
+      const { composition } = await client.get({ compositionId, state });
+      sendJson(res, 200, composition);
     } catch (err) {
-      console.error('Failed to fetch composition by ID', err);
-      sendJson(res, 500, { error: 'Failed to fetch composition' });
+      if (err instanceof ApiClientError && err.statusCode === 404) {
+        sendJson(res, 404, { error: 'Composition not found' });
+      } else {
+        console.error('Failed to fetch composition by ID', err);
+        sendJson(res, 500, { error: 'Failed to fetch composition' });
+      }
     }
   });
 }

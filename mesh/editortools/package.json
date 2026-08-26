@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@uniformdev/canvas": "20.43.1",
-    "@uniformdev/design-system": "20.43.1",
-    "@uniformdev/mesh-edgehancer-sdk": "20.43.1",
-    "@uniformdev/mesh-sdk": "20.43.1",
-    "@uniformdev/mesh-sdk-react": "20.43.1",
+    "@uniformdev/canvas": "20.75.0",
+    "@uniformdev/design-system": "20.75.0",
+    "@uniformdev/mesh-edgehancer-sdk": "20.75.0",
+    "@uniformdev/mesh-sdk": "20.75.0",
+    "@uniformdev/mesh-sdk-react": "20.75.0",
     "next": "^15.5.9",
     "react": "^19",
     "react-dom": "^19"

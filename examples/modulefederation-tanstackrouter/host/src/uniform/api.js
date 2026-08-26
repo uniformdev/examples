@@ -2,16 +2,16 @@ import { RouteClient } from "@uniformdev/canvas";
 
 const projectId = process.env.UNIFORM_PROJECT_ID;
 const apiKey = process.env.UNIFORM_API_KEY;
-const apiHost = process.env.UNIFORM_API_HOST || "https://uniform.app";
+const edgeApiHost = process.env.UNIFORM_EDGE_API_HOST || "https://uniform.global";
 
 const client = new RouteClient({
   projectId,
   apiKey,
-  apiHost,
+  edgeApiHost,
 });
 
 export async function getComposition(path) {
-  const response = await client.getRoute({ path });
+  const response = await client.get({ path });
 
   if (response.type === "composition") {
     return response.compositionApiResponse.composition;

@@ -10,10 +10,10 @@
     "validate:env": "node ./scripts/validateEnv.js"
   },
   "dependencies": {
-    "@uniformdev/canvas": "19.166.1",
-    "@uniformdev/tms-sdk": "19.166.1",
-    "@uniformdev/tms-phrase": "19.166.1",
-    "@uniformdev/webhooks": "19.166.1",
+    "@uniformdev/canvas": "20.75.0",
+    "@uniformdev/tms-sdk": "20.75.0",
+    "@uniformdev/tms-phrase": "20.75.0",
+    "@uniformdev/webhooks": "20.75.0",
     "micro": "^10.0.1",
     "next": "14.2.35",
     "react": "^18",

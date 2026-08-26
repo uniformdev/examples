@@ -1,24 +1,21 @@
 import { SearchResultsWithPagination, SearchResult } from "@/types/search";
-import {
-  CANVAS_PUBLISHED_STATE,
-  ContentClient,
-} from "@uniformdev/canvas";
+import { EntryDeliveryClient } from "@uniformdev/canvas";
 
 export enum UniformContentType {
   ARTICLE = "article",
 }
-const getContentClient = () => {
-  return new ContentClient({
+const getEntryDeliveryClient = () => {
+  return new EntryDeliveryClient({
     apiKey: process.env.UNIFORM_API_KEY,
     projectId: process.env.UNIFORM_PROJECT_ID,
   });
 };
 
-export const getMemoizedContentClient = (() => {
-  let contentClient: ContentClient;
+export const getMemoizedEntryDeliveryClient = (() => {
+  let entryDeliveryClient: EntryDeliveryClient;
   return () => {
-    if (!contentClient) contentClient = getContentClient();
-    return contentClient;
+    if (!entryDeliveryClient) entryDeliveryClient = getEntryDeliveryClient();
+    return entryDeliveryClient;
   };
 })();
 
@@ -38,12 +35,11 @@ export const getKnowledgeBaseArticles = async ({
   orderBy?: string;
   facetFields?: string[]; // Renamed from `facets` to `facetFields`
 }): Promise<SearchResultsWithPagination> => {
-  const response = await getMemoizedContentClient().getEntries({
+  const response = await getMemoizedEntryDeliveryClient().list({
     filters: {
       ...filters,
       type: { eq: UniformContentType.ARTICLE },
     },
-    state: CANVAS_PUBLISHED_STATE,
     skipPatternResolution: true,
     resolutionDepth: 2,
     limit: perPage,
