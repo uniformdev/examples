@@ -1,0 +1,29 @@
+import Head from "next/head";
+import { RootComponentInstance } from "@uniformdev/canvas";
+import { UniformComposition } from "@uniformdev/canvas-react";
+import Navigation, { NavLink } from "./Navigation";
+import Footer from "./Footer";
+
+export interface PageCompositionProps {
+  data: RootComponentInstance;
+  navLinks: Array<NavLink>;
+}
+
+export default function PageComposition({
+  data: composition,
+  navLinks,
+}: PageCompositionProps) {
+  const { metaTitle } = composition?.parameters || {};
+  return (
+    <>
+      <Head>
+        <title>{metaTitle?.value as string}</title>
+      </Head>
+      <main className="main">
+        <Navigation navLinks={navLinks} />
+        <UniformComposition data={composition} />
+        <Footer />
+      </main>
+    </>
+  );
+}
