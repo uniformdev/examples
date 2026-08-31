@@ -4,22 +4,28 @@ const {
   CANVAS_PUBLISHED_STATE,
 } = require("@uniformdev/canvas");
 const { ProjectMapClient } = require("@uniformdev/project-map");
-const fetch = require("node-fetch");
 
-const getProjectMapClient = () => {
+const getUniformEnv = () => {
   const apiKey = process.env.UNIFORM_API_KEY;
-  const apiHost = process.env.UNIFORM_CLI_BASE_URL || "https://uniform.app";
   const projectId = process.env.UNIFORM_PROJECT_ID;
 
-  if (!apiHost)
+  if (!projectId) {
     throw new Error(
-      "apiHost is not specified. Project Map client cannot be instantiated"
+      "projectId is not specified. Uniform clients cannot be instantiated"
     );
+  }
 
-  if (!projectId)
-    throw new Error(
-      "projectId is not specified. Project Map client cannot be instantiated"
-    );
+  return {
+    apiKey,
+    projectId,
+    apiHost: process.env.UNIFORM_CLI_BASE_URL || "https://uniform.app",
+    edgeApiHost:
+      process.env.UNIFORM_CLI_BASE_EDGE_URL || "https://uniform.global",
+  };
+};
+
+const getProjectMapClient = () => {
+  const { apiKey, apiHost, projectId } = getUniformEnv();
 
   return new ProjectMapClient({
     apiKey,
@@ -28,11 +34,15 @@ const getProjectMapClient = () => {
   });
 };
 
-const compositionClient = new CompositionDeliveryClient({
-  apiKey: process.env.UNIFORM_API_KEY,
-  projectId: process.env.UNIFORM_PROJECT_ID,
-  fetch: fetch,
-});
+const getCompositionClient = () => {
+  const { apiKey, edgeApiHost, projectId } = getUniformEnv();
+
+  return new CompositionDeliveryClient({
+    apiKey,
+    edgeApiHost,
+    projectId,
+  });
+};
 
 exports.sourceNodes = async ({
   actions,
@@ -41,7 +51,7 @@ exports.sourceNodes = async ({
 }) => {
   const { createNode } = actions;
 
-  const { compositions } = await compositionClient.list({
+  const { compositions } = await getCompositionClient().list({
     state:
       process.env.NODE_ENV === "development"
         ? CANVAS_DRAFT_STATE

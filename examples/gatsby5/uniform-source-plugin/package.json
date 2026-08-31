@@ -11,8 +11,7 @@
     "@uniformdev/canvas": "20.75.0",
     "@uniformdev/canvas-react": "20.75.0",
     "@uniformdev/context": "20.75.0",
-    "@uniformdev/project-map": "20.75.0",
-    "node-fetch": "^2.6.1"
+    "@uniformdev/project-map": "20.75.0"
   },
   "keywords": [
     "gatsby",
