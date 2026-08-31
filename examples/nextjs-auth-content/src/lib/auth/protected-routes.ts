@@ -2,7 +2,7 @@ import { CompositionGetListResponse, RootComponentInstance } from '@uniformdev/c
 import { DisplayUser } from './auth-helpers';
 import { ALLOWED_PAGE_TYPES, DEFAULT_ACCESS_CONFIG } from './auth-settings';
 import { getAccessConfigFromConfig } from './protected-routes-config';
-import { canvasClient, projectMapClient } from '../uniform-client';
+import { compositionDeliveryClient, projectMapClient } from '../uniform-client';
 import { removeLocaleFromPath } from '../../utils/formatPath';
 import { normalizePath } from './normalize-route-path';
 
@@ -61,13 +61,10 @@ const getFullCompositionList = async ({
 }): Promise<CompositionGetListResponse['compositions']> => {
   try {
     // First, get the total count with a minimal request
-    const { totalCount = 0 } = await canvasClient.getCompositionList({
+    const { totalCount = 0 } = await compositionDeliveryClient.list({
       limit: 1,
       offset: 0,
       withTotalCount: true,
-      resolveData: false,
-      skipPatternResolution: true,
-      skipOverridesResolution: true,
       ...restProps,
     });
 
@@ -79,12 +76,11 @@ const getFullCompositionList = async ({
 
     // Create array of promises for parallel fetching
     const promises = Array.from({ length: totalPages }, (_, i) =>
-      canvasClient
-        .getCompositionList({
+      compositionDeliveryClient
+        .list({
           limit,
           offset: i * limit,
           withTotalCount: false,
-          resolveData: true,
           diagnostics: false,
           ...restProps,
         })

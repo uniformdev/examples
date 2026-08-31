@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { CanvasClient } from "@uniformdev/canvas";
+import { CompositionManagementClient } from "@uniformdev/canvas";
 import { CompositionWorkflowRequestPayload, CompositionWorkflowRequestResult } from "../../../lib";
 
 export async function POST(request: NextRequest) {
@@ -9,18 +9,14 @@ export async function POST(request: NextRequest) {
     return Response.json({ error: "Invalid payload" }, { status: 500 });
   }
 
-  const canvasClient = new CanvasClient({
+  const compositionClient = new CompositionManagementClient({
     projectId: payload.projectId,
     apiKey: process.env.UNIFORM_API_KEY || assert("missing UNIFORM_API_KEY"),
-    bypassCache: true,
     apiHost: process.env.UNIFORM_CLI_BASE_URL,
   });
 
-  const composition = await canvasClient.getCompositionById({
+  const composition = await compositionClient.get({
     compositionId: payload.compositionId,
-    skipDataResolution: true,
-    skipOverridesResolution: true,
-    skipPatternResolution: true,
     state: payload.state,
   });
 
@@ -34,4 +30,4 @@ export async function POST(request: NextRequest) {
 
 function assert(msg: string): never {
   throw new Error(msg);
-} 
+}

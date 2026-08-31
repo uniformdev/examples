@@ -14,9 +14,9 @@ import path from 'path';
 import { WorkflowTransitionPayload } from '@uniformdev/webhooks';
 import {
   CANVAS_DRAFT_STATE,
-  CanvasClient,
-  ContentClient,
+  CompositionManagementClient,
   EntryData,
+  EntryManagementClient,
   RootComponentInstance,
 } from '@uniformdev/canvas';
 import {
@@ -207,11 +207,10 @@ const resolveUniformEntityFromWebhook = async (
   entity?: RootComponentInstance | EntryData;
 }> => {
   if (payload.entity.type === 'component') {
-    const canvasClient = new CanvasClient({
+    const canvasClient = new CompositionManagementClient({
       apiKey: uniformApiKey,
       projectId: payload.project.id,
       apiHost: uniformApiHost,
-      bypassCache: true,
     });
 
     const compositionOrPattern = await getCompositionForTranslation({
@@ -230,11 +229,10 @@ const resolveUniformEntityFromWebhook = async (
 
     return { translationEntityType: 'composition' };
   } else {
-    const contentClient = new ContentClient({
+    const contentClient = new EntryManagementClient({
       apiKey: uniformApiKey,
       projectId: payload.project.id,
       apiHost: uniformApiHost,
-      bypassCache: true,
     });
 
     // NOTE: entityType === "entry" for both entry and entry pattern

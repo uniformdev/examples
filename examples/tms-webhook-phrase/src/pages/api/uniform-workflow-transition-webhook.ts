@@ -24,9 +24,9 @@ const phrasePassword =
 
 import {
   CANVAS_DRAFT_STATE,
-  CanvasClient,
-  ContentClient,
+  CompositionManagementClient,
   EntryData,
+  EntryManagementClient,
   RootComponentInstance,
 } from "@uniformdev/canvas";
 import { PhraseTmsClient } from "@uniformdev/tms-phrase";
@@ -76,18 +76,16 @@ export default async function handler(
    */
   const uniformProjectId =
     payload?.project?.id ?? throwError("no payload?.project?.id");
-  const canvasClient = new CanvasClient({
+  const compositionClient = new CompositionManagementClient({
     apiKey: uniformApiKey,
     projectId: uniformProjectId,
     apiHost: uniformApiHost,
-    bypassCache: true,
   });
 
-  const contentClient = new ContentClient({
+  const entryClient = new EntryManagementClient({
     apiKey: uniformApiKey,
     projectId: uniformProjectId,
     apiHost: uniformApiHost,
-    bypassCache: true,
   });
 
   console.log(" newStage: " + JSON.stringify(payload.newStage, null, 2));
@@ -111,8 +109,8 @@ export default async function handler(
   const { entity: { id: uniformEntityId, type: uniformEntityType, releaseId: uniformReleaseId} } = payload;
 
   const { entity, translationEntityType } = await resolveUniformEntityFromWebhook({
-    canvasClient,
-    contentClient,
+    compositionClient,
+    entryClient,
     entityId: uniformEntityId,
     entityType: uniformEntityType,
     releaseId: uniformReleaseId,
@@ -192,14 +190,14 @@ export default async function handler(
 }
 
 const resolveUniformEntityFromWebhook = async ({
-  canvasClient,
-  contentClient,
+  compositionClient,
+  entryClient,
   entityId,
   entityType,
   releaseId,
 }: {
-  canvasClient: CanvasClient;
-  contentClient: ContentClient;
+  compositionClient: CompositionManagementClient;
+  entryClient: EntryManagementClient;
   entityId: string;
   entityType: string;
   releaseId?: string;
@@ -209,7 +207,7 @@ const resolveUniformEntityFromWebhook = async ({
 }> => {
   if (entityType === "component") {
     const compositionOrPattern = await getCompositionForTranslation({
-      canvasClient,
+      canvasClient: compositionClient,
       compositionId: entityId,
       releaseId: releaseId,
       state: CANVAS_DRAFT_STATE,
@@ -226,7 +224,7 @@ const resolveUniformEntityFromWebhook = async ({
   } else if(entityType === "entry") {
     // NOTE: entityType === "entry" for both entry and entry pattern
     const entry = await getEntryForTranslation({
-      contentClient,
+      contentClient: entryClient,
       entryId: entityId,
       releaseId: releaseId,
       state: CANVAS_DRAFT_STATE,
@@ -241,7 +239,7 @@ const resolveUniformEntityFromWebhook = async ({
     }
 
     const entryPattern = await getEntryForTranslation({
-      contentClient,
+      contentClient: entryClient,
       entryId: entityId,
       releaseId: releaseId,
       state: CANVAS_DRAFT_STATE,

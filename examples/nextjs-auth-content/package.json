@@ -11,14 +11,14 @@
     "uniform:manifest": "uniform context manifest publish"
   },
   "dependencies": {
-    "@uniformdev/canvas": "20.49.4",
-    "@uniformdev/project-map": "20.49.4",
-    "@uniformdev/context": "20.49.4",
-    "@uniformdev/insights": "20.49.4",
-    "@uniformdev/next-app-router": "20.49.4",
-    "@uniformdev/next-app-router-client": "20.49.4",
+    "@uniformdev/canvas": "20.75.0",
+    "@uniformdev/project-map": "20.75.0",
+    "@uniformdev/context": "20.75.0",
+    "@uniformdev/insights": "20.75.0",
+    "@uniformdev/next-app-router": "20.75.0",
+    "@uniformdev/next-app-router-client": "20.75.0",
     "@vercel/edge-config": "^1.4.3",
-    "better-auth": "^1.4.7",
+    "better-auth": "1.4.7",
     "next": "^16.1.6",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
@@ -28,7 +28,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@uniformdev/cli": "20.49.4",
+    "@uniformdev/cli": "20.75.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

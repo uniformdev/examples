@@ -85,7 +85,7 @@ This adds three middleware endpoints to the Vite dev server:
 |------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `/api/preview?app=...&secret=...`                    | Handles Uniform Canvas contextual editing redirects. When the Uniform visual editor opens a preview, this endpoint redirects to the correct frontend route with `preview=true` and `compositionId` query params. |
 | `/api/composition?path=...`                          | Fetches a composition by its route path using `RouteClient` from `@uniformdev/canvas`.                                                                                                                           |
-| `/api/composition-by-id?compositionId=...&state=...` | Fetches a composition by ID using `CanvasClient`. Used during preview when the composition ID is known.                                                                                                          |
+| `/api/composition-by-id?compositionId=...&state=...` | Fetches a composition by ID using `CompositionDeliveryClient`. Used during preview when the composition ID is known.                                                                                             |
 
 The middleware also handles:
 - **CORS** — allows requests from Uniform Canvas origins (`*.uniform.app`) and configurable additional origins (used by the subapp to allow cross-MFE requests from the host)
