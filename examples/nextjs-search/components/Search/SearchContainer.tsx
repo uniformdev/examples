@@ -59,7 +59,7 @@ export const SearchContainer = ({
         setSearchResults(data.items);
 
         // Store initial facets only once
-        if (!Object.keys(facets).length) {
+        if (!Object.keys(facets ?? {}).length) {
           setFacets(data.facets);
         }
       } catch (error) {
