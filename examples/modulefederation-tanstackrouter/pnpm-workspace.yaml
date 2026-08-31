@@ -3,3 +3,6 @@ packages:
   - 'host'
   - 'subapp'
   - 'packages/*'
+allowBuilds:
+  '@swc/core': true
+  esbuild: true
