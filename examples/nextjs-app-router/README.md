@@ -45,29 +45,38 @@ In development, the floating product toolbar mounts from
 `lib/uniform/CustomUniformClientContext.tsx` (same Context instance as
 `UniformComposition`).
 
-Until the packages are on npm, this starter depends on a local clone via `file:`:
+`package.json` overrides `@uniformdev/context` so the toolbar uses the same
+version as the app. The toolbar's peer range (`^20.72`) does not include
+prerelease versions of the SDK.
 
-```
-../../../toolbar/packages/toolbar
-../../../toolbar/packages/toolbar-element
-../../../toolbar/packages/toolbar-react
-```
+## Edge personalization (NESI)
 
-`.npmrc` sets `install-links=true` so those `file:` deps are copied instead of
-symlinked — required for Next.js Turbopack (symlinks outside the project resolve as
-missing modules).
+`middleware.ts` uses `vercelUniformEdgeMiddleware` from `@uniformdev/next-app-router/vercel`.
 
-Toolbar peers expect `@uniformdev/context` `^20.72`. This starter is still on `20.70` —
-install with `npm install --legacy-peer-deps` until you bump the Uniform packages.
-After publish, switch the toolbar deps to the published versions (for example `^20.73.0`)
-and you can drop `install-links`.
+- Every visitor of a route shares one cached page (`/uniform/[code]`). Personalizations and tests
+  are in that page between NESI tags.
+- For an HTML document request, the middleware fetches the cached page and keeps only the
+  visitor's variants as it streams through. The first paint shows the right variant, with no flicker.
+- The middleware loads the published Context manifest at runtime and keeps it in the Vercel runtime
+  cache. `app/api/preview/route.ts` passes `expireVercelRuntimeCacheTags` to the POST handler, so a
+  publish expires the cached manifest and page records. Point a Uniform webhook at `/api/preview`
+  for this.
+- Pages that the middleware learns have no placements are rewritten without processing.
+  `generateStaticParams` prebuilds both edge mode values (`edgeMode: [true, false]`) for this.
+- The `missing` header rule in the matcher stops the middleware from running again on its own
+  fetch of the cached page (`x-uniform-edge-origin`).
+- Visibility rules run in the browser. NESI does not support them.
+- Outside Vercel (`next start` locally), the runtime cache falls back to memory.
 
 ## Important: Uniform Preview support
 
-In order to support Uniform preview for Next.js 16 on Vercel, you need to leave `middleware.ts` named as such, don't rename it to `proxy.ts` and keep this export in it:
+In order to support Uniform preview for Next.js 16 on Vercel, you need to leave `middleware.ts` named as such, don't rename it to `proxy.ts` ([vercel/next.js#82344](https://github.com/vercel/next.js/issues/82344)) and keep the edge runtime in its config:
 
 ```
-export const runtime = 'experimental-edge';
+export const config = {
+  matcher: [/* ... */],
+  runtime: 'experimental-edge',
+};
 ```
 
 ## How to enable cache components support
