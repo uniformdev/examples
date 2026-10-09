@@ -13,6 +13,8 @@ export const generateStaticParams = async () => {
   return createUniformStaticParams({
     // Important: for localized sites, you need to add the locales to the paths
     paths: ["/en"],
+    // Prebuild both edge mode values: the middleware skips pages it learns have no placements.
+    edgeMode: [true, false],
   });
 };
 
