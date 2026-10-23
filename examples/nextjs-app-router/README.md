@@ -41,9 +41,102 @@ Run `npm run build` for production build and `npm start` to start server in prod
 
 ## Uniform toolbar
 
-In development, the floating product toolbar mounts from
-`lib/uniform/CustomUniformClientContext.tsx` (same Context instance as
-`UniformComposition`).
+In development, the root layout (`app/layout.tsx`) renders the floating product
+toolbar from `lib/uniform/AppUniformToolbar.tsx`. The toolbar gets the Context
+from `useUniformContext()`, so it uses the same Context instance as the pages.
+
+## Uniform Context
+
+`app/layout.tsx` renders `UniformContext` one time, as the last item in `<body>`.
+It must come after the page: the edge middleware writes the visitor state only
+for the compositions that come before it. The pages pass `uniformContext={false}`
+to `UniformComposition` and `UniformPlayground`, so they do not render a second
+`UniformContext`.
+
+`UniformContext` uses the default client context component of the SDK. It starts
+the browser Context and the Context devtools. To change how the Context is made,
+for example to add a Context plugin, give your own component to
+`clientContextComponent`. See [Enable Uniform Insights](#enable-uniform-insights).
+
+## Enable Uniform Insights
+
+Uniform Insights is a Context plugin, so you must add it when the Context is made.
+
+1. Set `NEXT_PUBLIC_UNIFORM_INSIGHTS_API_KEY` and `NEXT_PUBLIC_UNIFORM_INSIGHTS_API_URL`
+   in `.env`. See `.env.example`.
+1. Make `lib/uniform/InsightsClientContext.tsx`. It is the default client context
+   component of the SDK, with the Insights plugin added:
+
+    ```tsx
+    "use client";
+
+    import { ContextPlugin, enableContextDevTools } from "@uniformdev/context";
+    import { enableUniformInsights } from "@uniformdev/insights";
+    import {
+      ClientContextComponent,
+      createClientUniformContext,
+      useInitUniformContext,
+    } from "@uniformdev/next-app-router-client";
+    import { useRouter } from "next/navigation";
+
+    export const InsightsClientContext: ClientContextComponent = ({
+      manifest,
+      disableDevTools,
+      defaultConsent,
+      experimentalQuirkSerialization,
+      cookieMaxBytes,
+      pruneUnknownTests,
+      pruneUnknownDimensions,
+      pruneZeroScores,
+    }) => {
+      const router = useRouter();
+
+      useInitUniformContext(() => {
+        const plugins: ContextPlugin[] = [
+          enableUniformInsights({
+            endpoint: {
+              type: "api",
+              projectId: process.env.NEXT_PUBLIC_UNIFORM_PROJECT_ID!,
+              apiKey: process.env.NEXT_PUBLIC_UNIFORM_INSIGHTS_API_KEY!,
+              host: process.env.NEXT_PUBLIC_UNIFORM_INSIGHTS_API_URL!,
+            },
+          }),
+        ];
+
+        if (!disableDevTools) {
+          plugins.push(
+            enableContextDevTools({
+              onAfterMessageReceived: () => {
+                router.refresh();
+              },
+            }),
+          );
+        }
+
+        return createClientUniformContext({
+          manifest,
+          plugins,
+          defaultConsent,
+          experimental_quirksEnabled: experimentalQuirkSerialization,
+          cookieMaxBytes,
+          pruneUnknownTests,
+          pruneUnknownDimensions,
+          pruneZeroScores,
+        });
+      });
+
+      return null;
+    };
+    ```
+
+1. In `app/layout.tsx`, give the component to `UniformContext`:
+
+    ```tsx
+    <UniformContext clientContextComponent={InsightsClientContext} />
+    ```
+
+Insights attributes page hits and goals to the page composition. `UniformComposition`
+and `UniformPlayground` set it by default (`pageComposition`).
 
 `package.json` overrides `@uniformdev/context` so the toolbar uses the same
 version as the app. The toolbar's peer range (`^20.72`) does not include
