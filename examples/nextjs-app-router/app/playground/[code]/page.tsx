@@ -13,8 +13,6 @@ export default async function PlaygroundPage({ params }: PlaygroundParameters) {
       code={code}
       resolveRoute={resolvePlaygroundRoute}
       resolveComponent={resolveComponent}
-      // The root layout renders `UniformContext`.
-      uniformContext={false}
     />
   );
 }

@@ -26,8 +26,6 @@ export default async function UniformPage(props: UniformPageParameters) {
       code={code}
       resolveRoute={resolveRouteFromCode}
       resolveComponent={resolveComponent}
-      // The root layout renders `UniformContext`.
-      uniformContext={false}
     />
   );
 }

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { UniformContext } from "@uniformdev/next-app-router";
 
 import { AppUniformToolbar } from "@/lib/uniform/AppUniformToolbar";
 
@@ -33,8 +32,6 @@ export default function RootLayout({
       >
         {children}
         <AppUniformToolbar />
-        {/* Last in `<body>`: the edge state script must come after the page compositions. */}
-        <UniformContext />
       </body>
     </html>
   );

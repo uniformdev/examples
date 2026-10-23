@@ -45,18 +45,9 @@ In development, the root layout (`app/layout.tsx`) renders the floating product
 toolbar from `lib/uniform/AppUniformToolbar.tsx`. The toolbar gets the Context
 from `useUniformContext()`, so it uses the same Context instance as the pages.
 
-## Uniform Context
-
-`app/layout.tsx` renders `UniformContext` one time, as the last item in `<body>`.
-It must come after the page: the edge middleware writes the visitor state only
-for the compositions that come before it. The pages pass `uniformContext={false}`
-to `UniformComposition` and `UniformPlayground`, so they do not render a second
-`UniformContext`.
-
-`UniformContext` uses the default client context component of the SDK. It starts
-the browser Context and the Context devtools. To change how the Context is made,
-for example to add a Context plugin, give your own component to
-`clientContextComponent`. See [Enable Uniform Insights](#enable-uniform-insights).
+`package.json` overrides `@uniformdev/context` so the toolbar uses the same
+version as the app. The toolbar's peer range (`^20.72`) does not include
+prerelease versions of the SDK.
 
 ## Enable Uniform Insights
 
@@ -129,18 +120,15 @@ Uniform Insights is a Context plugin, so you must add it when the Context is mad
     };
     ```
 
-1. In `app/layout.tsx`, give the component to `UniformContext`:
+1. Give the component to `UniformComposition` in `app/uniform/[code]/page.tsx`
+   and to `UniformPlayground` in `app/playground/[code]/page.tsx`:
 
     ```tsx
-    <UniformContext clientContextComponent={InsightsClientContext} />
+    clientContextComponent={InsightsClientContext}
     ```
 
 Insights attributes page hits and goals to the page composition. `UniformComposition`
 and `UniformPlayground` set it by default (`pageComposition`).
-
-`package.json` overrides `@uniformdev/context` so the toolbar uses the same
-version as the app. The toolbar's peer range (`^20.72`) does not include
-prerelease versions of the SDK.
 
 ## Edge personalization (NESI)
 
