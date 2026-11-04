@@ -8,6 +8,8 @@ import { HeroComponent } from "./hero";
 import { Page } from "./page";
 import { HeaderComponent } from "./header";
 import { FooterComponent } from "./footer";
+import { ParentLabel } from "./parentLabel";
+import type { WithParentComponent } from "@/lib/uniform/dataClient";
 
 const componentMap: Record<string, ResolveComponentResult["component"]> = {
   page: Page,
@@ -16,11 +18,15 @@ const componentMap: Record<string, ResolveComponentResult["component"]> = {
   footer: FooterComponent,
 };
 
-const DefaultNotFoundComponent = ({ type }: ComponentProps) => {
+const DefaultNotFoundComponent = ({
+  type,
+  parameters,
+}: ComponentProps<WithParentComponent>) => {
   return (
     <div>
       Component "{type}" couldn't be resolved as it is not mapped in the
       resolveComponent function yet.
+      <ParentLabel parent={parameters.parentComponent} />
     </div>
   );
 };

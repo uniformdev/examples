@@ -8,6 +8,7 @@ import {
 // import { resolveRouteFromCode } from "@uniformdev/next-app-router/cache";
 import { resolveComponent } from "@/components/resolveComponent";
 import { CustomUniformClientContext } from "@/lib/uniform/CustomUniformClientContext";
+import { dataClient } from "@/lib/uniform/dataClient";
 
 export const generateStaticParams = async () => {
   return createUniformStaticParams({
@@ -26,6 +27,8 @@ export default async function UniformPage(props: UniformPageParameters) {
       resolveRoute={resolveRouteFromCode}
       resolveComponent={resolveComponent}
       clientContextComponent={CustomUniformClientContext}
+      // adds component.data.parent ({ id, type, name }) to every child component
+      dataClient={dataClient}
     />
   );
 }
