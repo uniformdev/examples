@@ -18,12 +18,14 @@ To add parent info:
 
 1. Walk the composition tree (`walkNodeTree` from `@uniformdev/canvas`). For each component, `ancestorsAndSelf[1]` is its parent.
 2. Skip system components whose type starts with `$` (`$personalization`, `$test`, `$slotSection`). Every personalization or test variation then points at the real component that contains it, not at the wrapper.
-3. Write `{ id, type, name }` onto the child. Use the parent's `$internal_displayName` parameter as `name`, and fall back to its `type`.
+3. Write `{ id, type, name }` onto the child. Use the parent's `$internal_displayName` parameter as `name`, and fall back to its `type`. Use `null` when the parent has no `_id` (components inside patterns, for example), because some frameworks can't serialize `undefined`.
 
 Where you write it depends on what your SDK passes to components:
 
-- If components receive the full component instance, the classic `enhance()` + `EnhancerBuilder().data("parent", ...)` works, and components read `component.data.parent`.
+- If components receive the full component instance, the classic `enhance()` + `EnhancerBuilder().data("parent", ...)` works, and components read `component.data.parent`. `enhance()` resets `component.data` on every node it enhances, so if the project already calls `enhance()`, add the `parent` enhancer to that existing builder rather than calling it twice.
 - If components receive only parameters, write a parameter instead (for example `parentComponent`, type `json`).
+
+Component `_id`s are only in the API response when the request passes `withComponentIDs: true`. Without it, every parent `id` is empty while `name` and `type` still look right.
 
 ## Next.js App Router (`@uniformdev/next-app-router`)
 
@@ -37,10 +39,17 @@ The hook for enhancing is a custom data client:
 
 The data client gets the full composition, so you don't need to decode the `[code]` page-state segment or re-encode anything.
 
-Components then read it like any other parameter:
+The App Router SDK already requests component IDs on the page side, so no extra fetch option is needed.
+
+Components then read it like any other parameter. Add the parent type to the component's parameters type:
 
 ```tsx
-export const Hero = ({ parameters: { parentComponent } }: ComponentProps<HeroProps>) => (
+type ParentComponentData = { id: string | null; type: string; name: string };
+type HeroParams = { title?: ComponentParameter<string> } & {
+  parentComponent?: ComponentParameter<ParentComponentData>;
+};
+
+export const Hero = ({ parameters: { parentComponent } }: ComponentProps<HeroParams>) => (
   <p>Parent: {parentComponent?.value?.name}</p>
 );
 ```
@@ -71,7 +80,7 @@ export class CustomDataClient extends DefaultDataClient {
         parentComponent: {
           type: "json",
           value: {
-            id: parent._id,
+            id: parent._id ?? null,
             type: parent.type,
             name: typeof displayName === "string" && displayName ? displayName : parent.type,
           },
@@ -83,6 +92,10 @@ export class CustomDataClient extends DefaultDataClient {
 
 export const dataClient = new CustomDataClient();
 ```
+
+## Next.js Pages Router (`@uniformdev/canvas-next`)
+
+`@uniformdev/canvas-react` passes the full component instance to components, so the classic `.data()` enhancer works. Run it in the `handleComposition` option of `withUniformGetStaticProps` or `withUniformGetServerSideProps`, before calling the default handler, and add `withComponentIDs: true` to the handler's `requestOptions`. In components, the `component` prop can also be the root composition, which has no `data`, so check for `data` before reading `component.data.parent`.
 
 ## Caveats
 
