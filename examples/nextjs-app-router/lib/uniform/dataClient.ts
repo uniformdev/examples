@@ -29,6 +29,19 @@ export type WithParentComponent = {
   parentComponent?: ComponentParameter<ParentComponentData>;
 };
 
+/**
+ * Parameter id holding the name of the slot this component sits in on its
+ * nearest non-system parent. Unlike `component.slotName`, it skips
+ * $personalization / $test / $slotSection wrappers (whose slots are `pz`,
+ * `test`, `$slotSectionItems`) and reports the slot on the real parent.
+ */
+export const PARENT_SLOT_PARAMETER_ID = "parentSlotName";
+
+/** Add this to a component's props type to read the parent slot name. */
+export type WithParentSlotName = {
+  parentSlotName?: ComponentParameter<string>;
+};
+
 // System components ($personalization, $test, $slotSection, ...) are skipped so
 // a child (including every personalization / A/B test variation) always points
 // at its nearest "real" parent component.
@@ -51,12 +64,19 @@ const addParentParameters = (composition: ComponentInstance) => {
     }
 
     // ancestorsAndSelf[0] is the node itself, [1] its parent, and so on.
-    const parent = ancestorsAndSelf
-      .slice(1)
-      .map((ancestor) => ancestor.node as ComponentInstance)
-      .find((ancestor) => ancestor && !isSystemComponent(ancestor));
+    const parentIndex = ancestorsAndSelf.findIndex(
+      (ancestor, index) =>
+        index > 0 && !isSystemComponent(ancestor.node as ComponentInstance)
+    );
+    if (parentIndex < 1) return;
 
-    if (!parent) return;
+    const parent = ancestorsAndSelf[parentIndex].node as ComponentInstance;
+    // ancestorsAndSelf[i].parentSlot is the slot on ancestorsAndSelf[i + 1]
+    // containing ancestorsAndSelf[i], so the entry just below the parent (the
+    // node itself or its outermost system wrapper) holds the parent's slot.
+    const location = ancestorsAndSelf[parentIndex - 1];
+    const parentSlotName =
+      location.type === "slot" ? location.parentSlot : undefined;
 
     const value: ParentComponentData = {
       id: parent._id,
@@ -66,6 +86,9 @@ const addParentParameters = (composition: ComponentInstance) => {
     node.parameters = {
       ...node.parameters,
       [PARENT_PARAMETER_ID]: { type: "json", value },
+      ...(parentSlotName && {
+        [PARENT_SLOT_PARAMETER_ID]: { type: "text", value: parentSlotName },
+      }),
     };
   });
 };

@@ -5,10 +5,13 @@ import {
   UniformText,
 } from "@uniformdev/next-app-router/component";
 import { ParentLabel } from "./parentLabel";
-import type { WithParentComponent } from "@/lib/uniform/dataClient";
+import type {
+  WithParentComponent,
+  WithParentSlotName,
+} from "@/lib/uniform/dataClient";
 
 export const HeroComponent = ({
-  parameters: { title, description, parentComponent },
+  parameters: { title, description, parentComponent, parentSlotName },
   // you can get variant if needed
   // variant,
   component,
@@ -16,7 +19,7 @@ export const HeroComponent = ({
   return (
     <section className="border-b border-neutral-200 bg-white px-6 py-16 sm:py-24">
       <div className="mx-auto w-full max-w-3xl">
-        <ParentLabel parent={parentComponent} />
+        <ParentLabel parent={parentComponent} slot={parentSlotName} />
         <UniformText
           component={component}
           parameter={title}
@@ -35,7 +38,8 @@ export const HeroComponent = ({
   );
 };
 
-export type HeroProps = WithParentComponent & {
+export type HeroProps = WithParentComponent &
+  WithParentSlotName & {
   title: ComponentParameter<string>;
   description: ComponentParameter<string>;
 };
