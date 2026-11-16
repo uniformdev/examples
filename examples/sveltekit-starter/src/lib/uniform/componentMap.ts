@@ -1,6 +1,6 @@
 import type { ComponentMap } from '@uniformdev/canvas-svelte';
 
-import { Card, Container, Grid, Hero, Page, RichText } from '$lib/components/index.js';
+import { Card, Container, Grid, Hero, Page, RichText } from '#lib/components/index.js';
 
 /**
  * Maps Uniform component types to Svelte components.

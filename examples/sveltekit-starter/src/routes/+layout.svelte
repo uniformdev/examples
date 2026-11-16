@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { dev } from "$app/environment";
-  import favicon from "$lib/assets/favicon.svg";
+  import { dev } from "$app/env";
+  import favicon from "#lib/assets/favicon.svg";
   import { Context, CookieTransitionDataStore, enableContextDevTools, enableDebugConsoleLogDrain } from "@uniformdev/context";
   import { UniformContext } from "@uniformdev/context-svelte";
   import type { ManifestV2 } from "@uniformdev/context";
-  import manifestJson from "$lib/uniform/contextManifest.json";
+  import manifestJson from "#lib/uniform/contextManifest.json";
 
   let { children } = $props();
 

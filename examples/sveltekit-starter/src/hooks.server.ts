@@ -1,10 +1,13 @@
 import { sequence } from "@sveltejs/kit/hooks";
 import { createUniformHandle } from "@uniformdev/canvas-sveltekit";
 
+import { UNIFORM_PREVIEW_SECRET } from "$app/env/private";
+
 /**
- * Uniform handle hook - parses preview cookies and attaches to locals
+ * Uniform handle hook - verifies the signed preview cookie and attaches it to locals
  */
 const uniformHandle = createUniformHandle({
+  secret: () => UNIFORM_PREVIEW_SECRET,
   onPreview: (event, previewData) => {
     // Optional: Log when preview mode is active
     if (previewData.isUniformContextualEditing) {

@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 </script>
 
 <div class="error-page">
-	<h1>{$page.status}</h1>
-	<p>{$page.error?.message || 'Page not found'}</p>
+	<h1>{page.status}</h1>
+	<p>{page.error?.message || 'Page not found'}</p>
 	<a href="/">← Back to home</a>
 </div>
 
