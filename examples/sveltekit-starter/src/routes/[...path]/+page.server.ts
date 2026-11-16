@@ -1,7 +1,11 @@
 import { error } from "@sveltejs/kit";
 import { RouteClient } from "@uniformdev/canvas";
 
-import { env } from "$env/dynamic/private";
+import {
+  UNIFORM_API_KEY,
+  UNIFORM_PROJECT_ID,
+  UNIFORM_PROJECT_MAP_ID,
+} from "$app/env/private";
 
 import type { PageServerLoad } from "./$types";
 
@@ -16,7 +20,7 @@ export const config = createVercelIsrConfig({
  * Project map ID is optional - the API will use the default project map if not specified.
  */
 function hasUniformCredentials(): boolean {
-  return Boolean(env.UNIFORM_API_KEY && env.UNIFORM_PROJECT_ID);
+  return Boolean(UNIFORM_API_KEY && UNIFORM_PROJECT_ID);
 }
 
 /**
@@ -48,8 +52,8 @@ export const load: PageServerLoad = async (event) => {
 
   // Create RouteClient with SvelteKit env vars
   const client = new RouteClient({
-    apiKey: env.UNIFORM_API_KEY,
-    projectId: env.UNIFORM_PROJECT_ID,
+    apiKey: UNIFORM_API_KEY,
+    projectId: UNIFORM_PROJECT_ID,
   });
 
   const uniformLoad = createUniformLoad({
@@ -57,7 +61,7 @@ export const load: PageServerLoad = async (event) => {
     client,
 
     // Project map ID (optional - uses default if not set)
-    projectMapId: env.UNIFORM_PROJECT_MAP_ID,
+    projectMapId: UNIFORM_PROJECT_MAP_ID,
 
     // The route parameter name (matches [...path])
     param: "path",

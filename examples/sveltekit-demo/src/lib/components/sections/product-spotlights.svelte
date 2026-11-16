@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { Product } from "$lib/data/products";
-  import { formatPrice } from "$lib/data/products";
+  import type { Product } from "#lib/data/products.js";
+  import { formatPrice } from "#lib/data/products.js";
 
   interface Props {
     eyebrow: string;

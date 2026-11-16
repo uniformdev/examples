@@ -1,6 +1,6 @@
 import { createPreviewHandler } from '@uniformdev/canvas-sveltekit/preview';
 
-import { env } from '$env/dynamic/private';
+import { UNIFORM_PREVIEW_SECRET } from '$app/env/private';
 
 /**
  * Preview handler for Uniform Canvas contextual editing.
@@ -12,7 +12,7 @@ import { env } from '$env/dynamic/private';
  */
 const handlers = createPreviewHandler({
   // Validate preview requests with a secret in production
-  secret: () => env.UNIFORM_PREVIEW_SECRET ?? '',
+  secret: () => UNIFORM_PREVIEW_SECRET ?? '',
 
   // Path to the playground page for component/pattern previews
   playgroundPath: '/playground',

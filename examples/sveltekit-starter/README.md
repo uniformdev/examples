@@ -1,4 +1,4 @@
-# Svelte Starter for Uniform
+# SvelteKit 3 Starter for Uniform
 
 A SvelteKit application integrated with Uniform's visual composition and personalization platform. This starter demonstrates how to build component-driven pages with visual editing capabilities and edge-side personalization.
 

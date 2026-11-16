@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { UniformComposition, UniformSlot } from '@uniformdev/canvas-svelte';
-	import { componentMap } from '$lib/uniform/componentMap.js';
+	import { componentMap } from '#lib/uniform/componentMap.js';
 
 	let { data } = $props();
 </script>

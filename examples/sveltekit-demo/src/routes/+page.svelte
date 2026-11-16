@@ -1,14 +1,14 @@
 <script lang="ts">
-  import { categories, products } from "$lib/data/products";
-  import homeContent from "$lib/data/home-content.json";
-  import ProductSpotlights from "$lib/components/sections/product-spotlights.svelte";
-  import CategoryShowcase from "$lib/components/sections/category-showcase.svelte";
-  import FeaturedProduct from "$lib/components/sections/featured-product.svelte";
-  import ProductGrid from "$lib/components/sections/product-grid.svelte";
-  import Newsletter from "$lib/components/sections/newsletter.svelte";
+  import { categories, products } from "#lib/data/products.js";
+  import homeContent from "#lib/data/home-content.json";
+  import ProductSpotlights from "#lib/components/sections/product-spotlights.svelte";
+  import CategoryShowcase from "#lib/components/sections/category-showcase.svelte";
+  import FeaturedProduct from "#lib/components/sections/featured-product.svelte";
+  import ProductGrid from "#lib/components/sections/product-grid.svelte";
+  import Newsletter from "#lib/components/sections/newsletter.svelte";
 
   import { UniformComposition, UniformSlot } from "@uniformdev/canvas-svelte";
-  import { componentMap } from "$lib/uniform/componentMap.js";
+  import { componentMap } from "#lib/uniform/componentMap.js";
   const featuredSpotlightProduct =
     products[homeContent.productSpotlights.featuredProductIndex];
   const gridSpotlightProducts =

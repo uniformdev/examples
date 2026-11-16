@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { categories } from "$lib/data/products";
+  import { categories } from "#lib/data/products.js";
 
   interface Props {
     darkHero?: boolean;

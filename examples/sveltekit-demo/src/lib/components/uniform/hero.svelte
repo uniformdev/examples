@@ -11,10 +11,10 @@
 <script lang="ts">
   import type { ComponentProps } from "@uniformdev/canvas-svelte";
   import type { LinkParamValue, AssetParamValue } from "@uniformdev/canvas";
-  import { linkHref, assetUrl, checkbox } from "$lib/uniform/paramHelpers";
+  import { linkHref, assetUrl, checkbox } from "#lib/uniform/paramHelpers.js";
 
-  import HeroVideo from "$lib/components/hero/hero-video.svelte";
-  import HeroAurora from "$lib/components/hero/hero-aurora.svelte";
+  import HeroVideo from "#lib/components/hero/hero-video.svelte";
+  import HeroAurora from "#lib/components/hero/hero-aurora.svelte";
 
   interface Props extends ComponentProps<{
     media?: AssetParamValue;
