@@ -1,5 +1,5 @@
 import type { ComponentMap } from '@uniformdev/canvas-svelte';
-import { Page, Hero } from '$lib/components/uniform/index.js';
+import { Page, Hero } from '#lib/components/uniform/index.js';
 
 /**
  * Maps Uniform component types to Svelte components.

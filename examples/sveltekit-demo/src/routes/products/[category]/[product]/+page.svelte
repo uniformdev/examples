@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import { Button } from "$lib/components/ui/button";
+  import { page } from '$app/state';
+  import { Button } from "#lib/components/ui/button/index.js";
   import { getUniformContext } from '@uniformdev/context-svelte';
   import { 
     getProductById, 
@@ -8,13 +8,13 @@
     getProductsByCategory,
     formatPrice,
     type Product
-  } from "$lib/data/products";
+  } from "#lib/data/products.js";
 
   // Get Uniform context for tracking events
   const { context } = getUniformContext({ throwOnMissingProvider: false }) ?? {};
 
-  let productId = $derived($page.params.product ?? '');
-  let categorySlug = $derived($page.params.category ?? '');
+  let productId = $derived(page.params.product ?? '');
+  let categorySlug = $derived(page.params.category ?? '');
   
   let product = $derived(getProductById(productId));
   let category = $derived(getCategoryBySlug(categorySlug));

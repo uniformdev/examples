@@ -4,9 +4,9 @@
     getProductsByCategory, 
     getCategoryBySlug,
     formatPrice 
-  } from "$lib/data/products";
+  } from "#lib/data/products.js";
 
-  let { category, productId } = $props<{ category: string; productId: string }>();
+  let { category, productId }: { category: string; productId: string } = $props();
 
   const product = $derived(getProductById(productId));
   const currentCategory = $derived(getCategoryBySlug(category));

@@ -1,8 +1,8 @@
 import { createPreviewHandler } from '@uniformdev/canvas-sveltekit/preview';
-import { env } from '$env/dynamic/private';
+import { UNIFORM_PREVIEW_SECRET } from '$app/env/private';
 
 const handlers = createPreviewHandler({
-  secret: () => env.UNIFORM_PREVIEW_SECRET ?? '',
+  secret: () => UNIFORM_PREVIEW_SECRET ?? '',
   playgroundPath: '/playground',
   resolveFullPath: ({ path, slug }) => {
     return path || slug || '/';

@@ -1,15 +1,15 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import { Button } from "$lib/components/ui/button";
+  import { page } from '$app/state';
+  import { Button } from "#lib/components/ui/button/index.js";
   import { 
     categories, 
     products, 
     getCategoryBySlug, 
     getProductsByCategory,
     formatPrice 
-  } from "$lib/data/products";
+  } from "#lib/data/products.js";
 
-  let categorySlug = $derived($page.params.category);
+  let categorySlug = $derived(page.params.category ?? '');
   let category = $derived(getCategoryBySlug(categorySlug));
   let categoryProducts = $derived(getProductsByCategory(categorySlug));
   

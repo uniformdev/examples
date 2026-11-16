@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Category } from "$lib/data/products";
+  import type { Category } from "#lib/data/products.js";
 
   interface Props {
     headline: string;

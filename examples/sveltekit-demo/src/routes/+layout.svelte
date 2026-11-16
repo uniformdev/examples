@@ -1,14 +1,14 @@
 <script lang="ts">
   import "../app.css";
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
   import { onMount } from "svelte";
-  import Header from "$lib/components/header.svelte";
-  import Footer from "$lib/components/footer.svelte";
-  import { dev } from "$app/environment";
+  import Header from "#lib/components/header.svelte";
+  import Footer from "#lib/components/footer.svelte";
+  import { dev } from "$app/env";
   import {
     PUBLIC_UNIFORM_INSIGHTS_API_KEY,
     PUBLIC_UNIFORM_INSIGHTS_PROJECT_ID,
-  } from "$env/static/public";
+  } from "$app/env/public";
   import {
     Context,
     CookieTransitionDataStore,
@@ -19,8 +19,8 @@
   import type { ManifestV2 } from "@uniformdev/context";
   import { enableUniformInsights } from "@uniformdev/insights";
 
-  import manifestJson from "$lib/uniform/contextManifest.json";
-  import { tealiumData } from "$lib/tealium-mock";
+  import manifestJson from "#lib/uniform/contextManifest.json";
+  import { tealiumData } from "#lib/tealium-mock.js";
 
   let { children } = $props();
 
@@ -73,7 +73,7 @@
   });
 
   // Only use dark hero mode on homepage
-  const isHomepage = $derived($page.url.pathname === "/");
+  const isHomepage = $derived(page.url.pathname === "/");
 </script>
 
 <UniformContext {context} outputType={dev ? "standard" : "edge"}>
